@@ -1,0 +1,128 @@
+﻿[
+	{
+		"AlternateId": "",
+		"Name": "Speedpass at Register",
+		"ImageSrc": "",
+		"Id": "d3d1792b-2883-4e0a-859e-1b2450adc49e",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/SpeedpassatRegister"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Diesel",
+		"ImageSrc": "",
+		"Id": "f3bce7e3-8fe9-41c0-94cd-216084dba1b6",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/Diesel"
+	},
+	{
+		"AlternateId": "",
+		"Name": "UBER MasterCard",
+		"ImageSrc": "",
+		"Id": "0006cbfa-c70f-48d2-9be4-2ca80062a515",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/UBERMasterCard"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Air Pumps",
+		"ImageSrc": "",
+		"Id": "eef2426e-8a90-4a60-8d97-33a35a2647d1",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/AirPumps"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Carwash",
+		"ImageSrc": "",
+		"Id": "f7055297-8a1a-4ac5-a317-792f50603938",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/Carwash"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Plenti - Outside Only",
+		"ImageSrc": "/~/media/fuelfinder_Plenti_115x45.png",
+		"Id": "ccb48e12-2b3a-4961-bf95-8105b5c252f6",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/PlentiOutsideOnly"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Linked Speedpass and Plenti Accepted",
+		"ImageSrc": "",
+		"Id": "e56b1d15-4eb1-4d97-b762-81c92b9c32a3",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/LinkedSpeedpassandPlentiAccepted"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Speedpass at Pump",
+		"ImageSrc": "",
+		"Id": "45364884-06e2-4361-8db5-8aefbf124f36",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/SpeedpassatPump"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Plenti - Participating",
+		"ImageSrc": "/~/media/fuelfinder_Plenti_115x45_oo.png",
+		"Id": "bd99b6ed-cb58-45c4-a156-979efea132f0",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/PlentiParticipanting"
+	},
+	{
+		"AlternateId": "",
+		"Name": "ATM",
+		"ImageSrc": "",
+		"Id": "9c0c34d0-3afb-4be4-8513-a990087e9ab4",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/ATM"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Propane Exchange",
+		"ImageSrc": "",
+		"Id": "1579d58d-1a3a-4096-a0f5-ad2fe6c5776a",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/PropaneExchange"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Convenience Store",
+		"ImageSrc": "",
+		"Id": "2429d108-95e7-48c9-ab17-b3ae9c5d2ee3",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/ConvenienceStore"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Pay at the Pump",
+		"ImageSrc": "",
+		"Id": "4f2b64d8-af34-42fe-87b9-dbab6f9879c9",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/PayatthePump"
+	},
+	{
+		"AlternateId": "",
+		"Name": "Vacuums",
+		"ImageSrc": "",
+		"Id": "4a66072d-a28f-41f8-bd16-e2b82a8f627c",
+		"Language": { "Name": "en" },
+		"Version": 1,
+		"Url": "https://fnldev-Oltiva-ca.avndscxom.com/en/sitecore/content/Cross-Brand/References/Application/Store-Amenities/Vacuums"
+	}
+]

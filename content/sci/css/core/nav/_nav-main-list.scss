@@ -1,0 +1,70 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "variables";
+
+.nav-main-list-trigger,
+.nav-main-list {
+	float: right;
+}
+
+.nav-main-list-trigger {
+	padding-top: 21px;
+
+	> .icon-hamburger {
+		background-color: $nav-main-item-hover-text;
+		display: block;
+		height: 2px;
+		margin: 11px auto 15px;
+		position: relative;
+		width: 25px;
+
+		&:before, &:after {
+			background-color: $nav-main-item-hover-text;
+			content: " ";
+			display: block;
+			height: 2px;
+			position: absolute;
+			top: -8px;
+			width: 25px;
+		}
+
+		&:after {
+			top: 8px;
+		}
+	}
+}
+
+.nav-main-list {
+	display: none;
+}
+
+@include if-min(lg) {
+	.nav-main-list-trigger {
+		display: none;
+	}
+
+	.nav-main-list {
+		display: block;
+		height: 100%;
+		margin-bottom: 0;
+
+		&.nav-main-list-condensed {
+			display: table;
+
+			> li {
+				display: table-cell;
+				float: none;
+				padding-bottom: 0;
+				padding-top: 0;
+				vertical-align: middle;
+
+				> a {
+					display: table-cell;
+					height: $nav-main-height;
+					padding: 0;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

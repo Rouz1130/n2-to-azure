@@ -1,0 +1,10 @@
+﻿{
+    "component": "Inline List",
+	"versions": [
+		{
+			"version": 1,
+			"date": "6/2/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

@@ -1,0 +1,109 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+@import "variables";
+
+.nav-country {
+	float: right;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		position: relative;
+
+		> a {
+			padding: 8px 10px;
+
+			&:hover {
+				background-color: $nav-top-bar-link-hover-background;
+			}
+		}
+	}
+
+	.icon-globe-small {
+		margin-bottom: 3px;
+		top: 3px;
+	}
+
+	.nav-country-text {
+		margin-left: 5px;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.has-social {
+	.nav-country {
+		> li > a {
+			padding-left: 0;
+
+			&:before {
+				color: $nav-top-bar-divider;
+				content: '|';
+				font-size: 12px;
+				left: 0;
+				padding-right: 13px;
+				position: relative;
+				top: -4px;
+			}
+
+			&:hover:before {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.has-languages {
+	.nav-country {
+		> li > a {
+			padding-right: 0;
+
+			&:after {
+				color: $nav-top-bar-divider;
+				content: '|';
+				font-size: 12px;
+				padding-right: 13px;
+				position: relative;
+				right: -13px;
+				top: -4px;
+			}
+
+			&:hover:after {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+@include if-min(md) {
+	.no-languages {
+		.nav-country {
+			> li {
+				> a {
+					padding-right: $nav-small-gutter;
+				}
+			}
+		}
+	}
+
+	.has-social {
+		.nav-country {
+			> li > a {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@include if-min(lg) {
+	.no-languages {
+		.nav-country {
+			> li:first-child {
+				> a {
+					padding-right: $nav-large-gutter;
+				}
+			}
+		}
+	}
+}

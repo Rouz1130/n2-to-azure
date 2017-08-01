@@ -1,0 +1,10 @@
+﻿{
+    "component": "WholesaleFuelProduct",
+	"versions": [
+		{
+			"version": 1,
+			"date": "6/23/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

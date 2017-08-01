@@ -1,0 +1,101 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+html.android .app-promotion-ios,
+html.ios .app-promotion-android {
+	display: none !important;
+}
+
+.app-promotion {
+	background-color: $black10;
+	@include rem-fallback(padding, 32px / 16px);
+
+	.app-content {
+		@include rem-fallback(font-size, 20px / 16px);
+		@include rem-fallback(margin-bottom, 16px / 16px);
+	}
+
+	.app-img {
+		display: none;
+	}
+
+	.app-content-links {
+		> a {
+			display: inline-block;
+			@include rem-fallback(margin-right, 18px / 16px);
+			@include rem-fallback(margin-top, 10px / 16px);
+		}
+
+		> a:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.bp-lg {
+	> .app-promotion {
+		.app-content, .app-content-links {
+			float: left;
+			width: percentage(2.5 / 4);
+		}
+
+		.app-img {
+			display: block;
+			float: right;
+			text-align: right;
+			width: percentage(1.5 / 4);
+
+			> img {
+				@include rem-fallback(margin-left, 5px / 16px);
+			}
+		}
+	}
+
+	> .app-promotion-mini {
+		display: table;
+		width: 100%;
+
+		.app-content, .app-content-links {
+			display: table-cell;
+			float: none;
+			vertical-align: top;
+			width: auto;
+		}
+
+		.app-content {
+			width: percentage(2.5 / 4);
+		}
+
+		.app-content-links {
+			text-align: right;
+			width: percentage(1.5 / 4);
+
+			> a {
+				@include rem-fallback(margin-left, 18px / 16px);
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.bp-xl {
+	> .app-promotion {
+		.app-content, .app-content-links {
+			width: 75%;
+		}
+
+		.app-img {
+			width: 25%;
+		}
+	}
+
+	> .app-promotion-mini {
+		.app-content {
+			width: 65%;
+		}
+
+		.app-content-links {
+			width: 35%;
+		}
+	}
+}

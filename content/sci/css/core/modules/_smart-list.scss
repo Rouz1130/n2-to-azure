@@ -1,0 +1,51 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.smart-list {
+	.list > li {
+		padding: 0;
+	}
+}
+
+.smart-list-disabled {
+	color: $silver;
+}
+
+.smart-list-alphabetical-index {
+	@include rem-fallback(margin-bottom, 20px / 16px);
+	float: left;
+	font-family: "EMprintSemibold";
+	width: 100%;
+
+	> li {
+		@include rem-fallback(margin-right, 10px / 16px);
+		color: $silver;
+		float: left;
+
+		&:before {
+			color: $black15;
+			content: "|";
+			@include rem-fallback(margin-right, 10px / 16px);
+		}
+
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.smart-list-alphabetical-section {
+	@include rem-fallback(margin-bottom, 16px / 16px);
+}
+
+@include if-min(md) {
+	.col-2, .col-3, .col-4 {
+		.smart-list > .list {
+			display: inline-block;
+			float: left;
+			width: percentage(1 / 3);
+		}
+	}
+}

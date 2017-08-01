@@ -1,0 +1,70 @@
+﻿{
+	"results": [
+		{
+			"Latitude": 23.196365,
+			"Longitude": -102.881169,
+			"Name": "LubBajio",
+			"AwardIndicator": "CÃ¬rculo de Excelencia Premio Oro 2011-2012",
+			"Region": "North America",
+			"StateProvince": "Fresnillo",
+			"City": "Fresnillo",
+			"Address1": "Blvd. Jesus Varela Rico Lado Norte No. 471",
+			"PostalCode": "99030",
+			"Telephone1": "493 9330333",
+			"Telephone2": "",
+			"EmailAddress": "mauricio.lozano@Oltiva.com",
+			"WebSite": null,
+			"CountryName": "Mexico",
+			"StoreAmenities": [
+				{
+					"Name": "Plenti",
+					"Image": "https://placehold.it/50x25"
+				}
+			]
+		},
+		{
+			"Latitude": 47.6147624,
+			"Longitude": -122.4763314,
+			"Name": "LubBajio",
+			"AwardIndicator": "CÃ¬rculo de Excelencia Premio Oro 2011-2012",
+			"Region": "North America",
+			"StateProvince": "Washington",
+			"City": "Seattle",
+			"Address1": "123 4th Street",
+			"PostalCode": "98000",
+			"Telephone1": "206 5551212",
+			"Telephone2": "",
+			"EmailAddress": "mauricio.lozano@Oltiva.com",
+			"WebSite": null,
+			"CountryName": "United States",
+			"StoreAmenities": [
+				{
+					"Name": "Plenti",
+					"Image": "https://placehold.it/50x25"
+				},
+				{
+					"Name": "UBER MC",
+					"Image": "https://placehold.it/50x25"
+				}
+			]
+		}
+	],
+	"facets": [
+		{
+			"key": "LOB",
+			"name": "Line of business",
+			"values": [
+				{
+					"key": "Ind",
+					"name": "Industrial"
+				},
+				{
+					"key": "PVL",
+					"name": "Passenger Vehicle Lube"
+				}
+			]
+		}
+	],
+	"searchkeyword": "Paris, Paris, France",
+	"totalCount": 2
+}

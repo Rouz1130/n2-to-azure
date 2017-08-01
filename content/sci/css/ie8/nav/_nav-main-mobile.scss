@@ -1,0 +1,34 @@
+﻿.nav-main-mobile-panel {
+	> li {
+		> a {
+			background-image: url("../img/nav-arrow-item-ie8.png");
+			background-position: right;
+			background-repeat: no-repeat;
+		}
+		a.logo{
+			background-image:none;
+		}
+	}
+
+	.nav-main-mobile-back{
+		> a {
+			background-image: url("../img/nav-arrow-back-ie8.png");
+			background-position: 40px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	>li{
+		>a:after{
+			display:none !important;
+		}
+	}
+}
+
+.nav-mobile-logo-svg{
+	display:none;
+}
+
+.nav-mobile-logo-ie8{
+	display:block !important;
+}

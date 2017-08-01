@@ -1,0 +1,10 @@
+﻿{
+    "component": "Expanding Box",
+	"versions": [
+		{
+			"version": 1,
+			"date": "9/17/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

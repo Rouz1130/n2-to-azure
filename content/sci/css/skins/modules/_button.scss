@@ -1,0 +1,35 @@
+﻿.btn-primary {
+	background-color: $btn-primary;
+
+	&:focus {
+		background-color: $btn-primary;
+	}
+
+	&:hover {
+		background-color: $btn-primary-hover;
+	}
+}
+
+.btn-secondary {
+	background-color: $btn-secondary;
+
+	&:focus {
+		background-color: $btn-secondary;
+	}
+
+	&:hover {
+		background-color: $btn-secondary-hover;
+	}
+}
+
+.btn-tertiary {
+	background-color: $btn-tertiary;
+
+	&:focus {
+		background-color: $btn-tertiary;
+	}
+
+	&:hover {
+		background-color: $btn-tertiary-hover;
+	}
+}

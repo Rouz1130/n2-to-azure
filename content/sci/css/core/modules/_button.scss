@@ -1,0 +1,141 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.btn {
+	@include border-radius(0);
+	@include rem-fallback(font-size, 18px / 16px);
+	@include rem-fallback(padding, 10px / 16px, 50px / 16px);
+	@include rem-fallback(margin, 2px / 16px);
+	background-color: $silver;
+	border: none;
+	color: $white;
+	font-family: "EMprintSemibold";
+	position: relative;
+	max-width: 100%;
+
+	&:active, &:focus, &:visited, &:hover {
+		color: $white;
+	}
+
+	&:hover {
+		background-color: $silver-hover;
+	}
+}
+
+.btn-sm {
+	@include rem-fallback(font-size, 16px / 16px);
+	@include rem-fallback(padding, 5px / 16px, 50px / 16px);
+
+	&.btn-icon {
+		@include rem-fallback(padding, 10px / 16px, 50px / 16px);
+	}
+}
+
+.btn-lg {
+	@include rem-fallback(font-size, 20px / 16px);
+
+	> .text {
+		display: inline-block;
+		max-width: 200px;
+		text-align: left;
+		white-space: normal;
+	}
+}
+
+.btn-primary {
+	@extend .btn;
+	background-color: $blue;
+
+	&:hover {
+		background-color: $blue-hover;
+	}
+}
+
+.btn-secondary {
+	@extend .btn;
+	background-color: $cyan;
+
+	&:hover {
+		background-color: $cyan-hover;
+	}
+}
+
+.btn-tertiary {
+	@extend .btn;
+	background-color: $orange;
+
+	&:hover {
+		background-color: $orange-hover;
+	}
+}
+
+.btn-deemphasized {
+	@extend .btn;
+}
+
+.btn-link {
+	background-color: transparent;
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.btn-light {
+	@extend .btn;
+	background-color: $black10;
+	color: $black;
+
+	&:active, &:focus, &:visited, &:hover {
+		color: $black;
+	}
+}
+
+.btn-cancel.btn-link {
+	color: $red;
+
+	&:active, &:focus, &:visited, &:hover {
+		color: $red;
+	}
+}
+
+.btn-badge {
+	@extend .btn;
+
+	> .icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.btn-icon {
+	@extend .btn;
+
+	> .icon {
+		@include rem-fallback(top, -1.6px / 16px);
+		display: inline-block;
+		position: relative;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	&.btn-lg {
+		max-width: 300px;
+		min-height: 82px;
+		text-align: left;
+		white-space: normal;
+
+		> .icon {
+			@include rem-fallback(top, 10px / 16px);
+			float: left;
+		}
+	}
+}
+
+.col-1 {
+	> .btn {
+		width: 100%;
+	}
+}

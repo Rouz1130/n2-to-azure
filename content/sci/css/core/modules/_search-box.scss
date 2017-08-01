@@ -1,0 +1,106 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.search-box-placeholder {
+	@include placeholder() {
+		color: $black;
+		@include font-family(EMprintLight);
+		@include rem-fallback(font-size, 20px / 16px);
+	}
+}
+
+.search-box {
+	position: relative;
+
+	.form-group {
+		margin-bottom: 0;
+	}
+
+	.form-control {
+		@extend .search-box-placeholder;
+		@include rem-fallback(font-size, 16px / 16px);
+	}
+
+	.btn.search {
+		border: none;
+		color: $white;
+		margin: 0;
+		top: 0;
+		@include rem-fallback(height, 50px / 16px);
+		@include rem-fallback(padding, 13px / 16px, 20px / 16px);
+
+		&:focus {
+			color: $white;
+		}
+	}
+
+	.recent-searches {
+		color: $black50;
+		@include rem-fallback(margin-top, 10px / 16px);
+	}
+
+	.twitter-typeahead {
+		width: 100%;
+	}
+
+	.tt-menu {
+		background-color: $white;
+		border: 1px solid $black10;
+		@include rem-fallback(padding, 10px / 16px);
+		width: 100%;
+	}
+
+	> input::-ms-clear {
+		display: none;
+	}
+}
+
+.search-box, .search-box-with-settings {
+	.form-group-btn {
+		vertical-align: top;
+	}
+}
+
+.search-box-with-settings {
+	margin-bottom: 0;
+}
+
+.search-box-settings {
+	border-bottom: 1px solid $black10;
+	border-left: 1px solid $black10;
+	border-right: 1px solid $black10;
+	margin: 0;
+	@include rem-fallback(padding, 16px / 16px);
+	text-align: center;
+
+	> li {
+		display: inline-block;
+		list-style: none;
+		@include rem-fallback(padding, 0, 16px / 16px);
+	}
+}
+
+.search-box-setting {
+	@include font-family(EMprintSemibold);
+}
+
+.search-box-small {
+	.form-control {
+		@extend .search-box-placeholder;
+		@include rem-fallback(height, 32px / 16px);
+		@include rem-fallback(padding-right, 32px / 16px);
+
+		@include placeholder() {
+			@include rem-fallback(font-size, 12px / 12px);
+		}
+	}
+
+	.form-group-btn {
+		@include sprite($icon-search);
+		bottom: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}

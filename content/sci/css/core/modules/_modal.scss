@@ -1,0 +1,47 @@
+﻿@import "../base/mixins";
+
+.modal-content {
+	@include border-radius(0);
+	padding: 10px;
+}
+
+.modal-header {
+	border-bottom: none;
+
+	> .close {
+		font-size: 48px;
+		font-weight: normal;
+		margin-right: -5px;
+		margin-top: -16px;
+	}
+}
+
+.modal-footer {
+	border-top: none;
+	text-align: left;
+}
+
+.modal-iframe {
+	iframe {
+		border: none;
+		width: 100%;
+	}
+}
+
+/* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
+.modal.fade.modal-layer-hide {
+	display: block !important;
+	opacity: 1 !important;
+	z-index: -9999;
+
+	&.in {
+		z-index: 1050;
+	}
+}
+
+@include if-min(md) {
+	.modal-dialog {
+		max-width: 763px;
+		width: 80%;
+	}
+}

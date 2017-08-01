@@ -1,0 +1,84 @@
+﻿{
+	"results": [
+		{
+			"Id": 2667,
+			"GlobalId": "3ca5e936-dc9f-49d3-9e22-c64f4cddfe92",
+			"Latitude": 40.52632141,
+			"Longitude": -74.31711578,
+			"Name": "PetroChoice-MidAtlantic",
+			"CountryIso3": "USA",
+			"AwardIndicator": "Gold Circle of Excellence Award 2013-2014",
+			"BusinessConsultant": "",
+			"Region": "North America",
+			"StateProvince": "NJ",
+			"City": "Fords",
+			"Address1": "950 King George Road",
+			"Address2": "",
+			"PostalCode": "8863",
+			"Telephone1": "800-451-5823",
+			"Telephone2": "",
+			"EmailAddress": "",
+			"WebSite": null,
+			"CountryName": "United States",
+			"url": null
+		},
+		{
+			"Id": 2763,
+			"GlobalId": "3ca5e936-dc9f-49d3-9e22-c64f4cddfe92",
+			"Latitude": 40.589324,
+			"Longitude": -74.226856,
+			"Name": "Prime Lube Inc.",
+			"CountryIso3": "USA",
+			"AwardIndicator": "",
+			"BusinessConsultant": "",
+			"Region": "North America",
+			"StateProvince": "NJ",
+			"City": "Carteret",
+			"Address1": "800 Roosevelt Avenue",
+			"Address2": null,
+			"PostalCode": "7008",
+			"Telephone1": "732-969-9200",
+			"Telephone2": null,
+			"EmailAddress": "",
+			"WebSite": null,
+			"CountryName": "United States",
+			"url": null
+		},
+		{
+			"Id": 2774,
+			"GlobalId": "3ca5e936-dc9f-49d3-9e22-c64f4cddfe92",
+			"Latitude": 40.20954,
+			"Longitude": -75.086987,
+			"Name": "Reit Lubricants Co.",
+			"CountryIso3": "USA",
+			"AwardIndicator": "",
+			"BusinessConsultant": "",
+			"Region": "North America",
+			"StateProvince": "PA",
+			"City": "Warminster",
+			"Address1": "899 Mearns Road",
+			"Address2": null,
+			"PostalCode": "18974",
+			"Telephone1": "1-800-423-3624",
+			"Telephone2": null,
+			"EmailAddress": "",
+			"WebSite": null,
+			"CountryName": "United States",
+			"url": null
+		}
+	],
+	"facets": [
+		{
+			"key": "lob",
+			"name": "Lines of Business",
+			"values": [
+				{
+					"key": "PVL",
+					"name": "Passenger Vehicle Lube"
+				}
+			]
+		}
+	],
+	"searchkeyword": "New Jersey, NJ",
+	"totalCount": 3
+}

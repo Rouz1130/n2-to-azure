@@ -1,0 +1,30 @@
+﻿@import "../../core/base/colors";
+@import "../../core/modules/icons-generated";
+
+.select {
+    overflow:hidden;
+}
+
+.form-group {
+    > input[type="checkbox"] {
+        display:block;
+        position:absolute;
+        z-index:-999
+    }
+    > input[type="radio"] {
+        display:block;
+        position:absolute;
+        z-index:-999
+    }
+}
+
+.form-inline{
+    .form-group{
+            label{
+                display:table-cell;
+            }
+    }
+}
+
+
+

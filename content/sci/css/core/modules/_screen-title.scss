@@ -1,0 +1,193 @@
+﻿@import "../base/mixins";
+@import "../base/colors";
+@import "icons-generated";
+
+.screen-title {
+    position: relative;
+}
+
+.screen-title-image {
+    margin-bottom: 1em;
+}
+
+.screen-title-title {
+    margin-top: 0;
+    @include rem-fallback(font-size, 40px / 16px);
+}
+
+.screen-title-subtitle {
+    font-family: "EMprintSemibold";
+}
+
+.screen-title-full-overlay {
+    .screen-title-subtitle,
+    .screen-title-cta {
+        @include rem-fallback(font-size, 20px / 16px);
+        font-family: "EMprint";
+    }
+}
+
+.screen-title-below {
+    .screen-title-title {
+        @include rem-fallback(margin-top, 8px / 16px);
+    }
+}
+
+.special-screen-title-text {
+	> h1 {
+		margin-top: 0;
+	}
+}
+
+@include if-min(lg) {
+
+    .col-3, .col-4 {
+
+        .screen-title-image {
+            margin-bottom: 0;
+        }
+
+        .screen-title-table {
+            display: table;
+            width: 100%;
+        }
+
+        .screen-title-table-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .screen-title-image-wrap {
+            position: relative;
+        }
+
+        .screen-title-padded-copy {
+            padding-right: 4em;
+        }
+
+        .screen-title-lifted-copy {
+            position: relative;
+            top: -0.3rem;
+        }
+
+        .screen-title-overlay-block {
+            @include opacity(.9);
+            background-color: #fff;
+            display: block;
+            padding: 15px 20px;
+            position: absolute;
+        }
+
+        .screen-title-overlay, .screen-title-no-image {
+            > .screen-title-image-wrap {
+                margin-bottom: 1.2em;
+
+                > .screen-title-title {
+                    @extend .screen-title-overlay-block;
+                    bottom: 0;
+                    left: 0;
+                    margin: 0 0 10px 10px;
+                }
+            }
+
+            > .screen-title-copy-wrap {
+                @extend .screen-title-table;
+
+                > h3 {
+                    display: table-caption;
+                    margin-top: 0;
+                }
+
+                > .screen-title-copy {
+                    @extend .screen-title-lifted-copy;
+                    @extend .screen-title-table-cell;
+                    @extend .screen-title-padded-copy;
+                }
+
+                > .screen-title-cta {
+                    @extend .screen-title-table-cell;
+                    text-align: right;
+                }
+            }
+        }
+
+        .screen-title-full-left {
+            .screen-title-image {
+                float: left;
+                margin: 0 2em 0 0;
+                max-width: 50%;
+            }
+        }
+
+        .screen-title-full-right {
+            .screen-title-image {
+                float: right;
+                margin: 0 0 0 2em;
+                max-width: 50%;
+            }
+        }
+
+        .screen-title-split-left, .screen-title-split-right {
+            .screen-title-image, .screen-title-copy {
+                float: left;
+                position: relative;
+                padding: 0 15px;
+                width: 50%;
+            }
+        }
+
+        .screen-title-split-left {
+            .screen-title-image {
+                padding-left: 0;
+            }
+
+            .screen-title-copy {
+                padding-right: 0;
+            }
+        }
+
+        .screen-title-split-right {
+            .screen-title-image {
+                float: right;
+                padding-right: 0;
+            }
+
+            .screen-title-copy {
+                padding-left: 0;
+            }
+        }
+
+        .screen-title-full-overlay {
+            > .screen-title-copy {
+                @extend .screen-title-overlay-block;
+                left: 10px;
+                max-width: 33%;
+                top: 10px;
+            }
+        }
+    }
+}
+
+@include if-min(md) {
+    .col-3 {
+        .screen-title-full-overlay {
+            > .screen-title-copy {
+                left: 0;
+                max-width: none;
+                top: 0;
+                position: static;
+                padding:10px 0 0 0;
+            }
+        }
+    }
+}
+
+@include if-min(sm) {
+    .col-3, .col-2, .col-1 {
+        .special-screen-title {
+            > .special-screen-title-text {
+                @include rem-fallback(padding-right, 25px / 16px);
+            }
+        }
+    }
+}

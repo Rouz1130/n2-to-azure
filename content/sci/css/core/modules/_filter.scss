@@ -1,0 +1,76 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.no-js {
+	.filter-form-wrapper {
+		display: none;
+	}
+}
+
+.form-filter {
+	.btn-secondary,
+	.btn-deemphasized {
+		padding: 5px 50px;
+
+		> a {
+			color: $white;
+		}
+	}
+
+	input.check-filter[type="checkbox"] + label:before {
+		display: none;
+	}
+}
+
+input.check-filter[type="checkbox"] {
+	display: none;
+
+	& + label {
+		background-color: transparent;
+		border: none;
+		font-weight: 100;
+		height: auto;
+		margin-bottom: 15px;
+		width: auto;
+		cursor: pointer;
+	}
+
+	& + label span {
+		display: inline-block;
+		margin: -1px 10px 0 0;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+
+	&:checked + label {
+		border: none;
+		box-shadow: none;
+	}
+
+	&:checked + label span {
+		background: url(../img/icons/icon-success.png) 0 0 no-repeat;
+	}
+}
+
+
+.filter-form-wrapper {
+	.panel-group {
+		margin-bottom: 0;
+	}
+
+	.panel-group,
+	.panel.active,
+	.panel,
+	.panel-group .panel > .panel-heading {
+		border: none;
+	}
+
+	.panel-heading {
+		padding: 0;
+	}
+
+	.panel-body {
+		padding: 0;
+	}
+}

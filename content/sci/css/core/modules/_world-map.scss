@@ -1,0 +1,98 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+$world-map-label-border-width: 1px;
+$world-map-border-width: 0.75px;
+$world-map-transition-speed: 0.25s;
+
+.world-map-stroke {
+	fill: none;
+	stroke: $world-map-border-color;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: $world-map-border-width;
+}
+
+.world-map-container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.world-map {
+	background-color: $world-map-background-color;
+	position: relative;
+
+	> svg {
+		display: block;
+		margin: 0 auto;
+	}
+
+	path, rect {
+		vector-effect: non-scaling-stroke;
+	}
+
+	.water {
+		fill: $world-map-background-color;
+		pointer-events: all;
+	}
+
+	.supported {
+		@extend .world-map-stroke;
+		fill: $world-map-supported-item-fill;
+		transition: fill $world-map-transition-speed;
+
+		&.region:hover,
+		&.region.active {
+			fill: $world-map-hover-item-fill;
+		}
+	}
+
+	.unsupported {
+		@extend .world-map-stroke;
+		fill: $world-map-unsupported-item-fill;
+		pointer-events: none;
+
+		&.region {
+			fill: $world-map-supported-item-fill;
+		}
+	}
+
+	.world-map-label {
+		background-color: $world-map-label-background-color;
+		border: $world-map-label-border-width solid $world-map-label-border-color;
+		color: $world-map-label-text-color;
+		display: none;
+		@include font-family(EMprintSemibold);
+		@include rem-fallback(font-size, 14px / 16px);
+		padding: 0 5px;
+		pointer-events: none;
+		position: absolute;
+	}
+
+	&.country-mode {
+		.country.supported:hover,
+		.country.supported.active {
+			fill: $world-map-hover-item-fill;
+		}
+
+		.world-map-label {
+			&.active {
+				display: block;
+			}
+		}
+	}
+}
+
+.world-map-popover {
+	> h3 {
+		margin-top: 5px;
+	}
+}
+
+.world-map-popover-target {
+	background: transparent;
+	height: 1px;
+	pointer-events: none;
+	position: absolute;
+	width: 1px;
+}

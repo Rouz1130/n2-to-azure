@@ -1,0 +1,10 @@
+﻿{
+	"component": "Map",
+	"versions": [
+		{
+			"version": 1,
+			"date": "6/24/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

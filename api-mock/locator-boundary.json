@@ -1,0 +1,50 @@
+﻿[
+	{
+		"LocationID": 1,
+		"LocationName": "Oltiva AT BOUNDARY 1",
+		"DisplayName": "Oltiva AT BOUNDARY 1",
+		"Latitude": 32.9092,
+		"Longitude": -96.87280,
+		"AddressLine1": "3082 FOREST LANE",
+		"AddressLine2": "",
+		"City": "DALLAS",
+		"StateProvince": "TEXAS",
+		"PostalCode": "75234",
+		"Telephone": "(972) 241-3101",
+		"BrandingIcon": "A",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"Image": "https://placehold.it/50x25"
+			}
+		]
+	},
+	{
+		"LocationID": 2,
+		"LocationName": "Oltiva AT BOUNDARY 2",
+		"DisplayName": "Oltiva AT BOUNDARY 2",
+		"Latitude": 32.89690,
+		"Longitude": -96.87810,
+		"AddressLine1": "2992 Walnut Hill Ln",
+		"AddressLine2": "",
+		"City": "DALLAS",
+		"StateProvince": "TEXAS",
+		"PostalCode": "75220",
+		"Telephone": "(214) 904-9274",
+		"BrandingIcon": "B",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"Image": "https://placehold.it/50x25"
+			},
+			{
+				"Name": "UBER MC",
+				"Image": "https://placehold.it/50x25"
+			}
+		]
+	}
+]

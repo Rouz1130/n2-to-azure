@@ -1,0 +1,57 @@
+﻿[
+	{
+		"LocationID": 1,
+		"LocationName": "Oltiva AT OLIVE WAY",
+		"DisplayName": "Oltiva AT OLIVE WAY",
+		"Latitude": 47.6192095,
+		"Longitude": -122.3289398,
+		"AddressLine1": "1600 E OLIVE WAY",
+		"AddressLine2": "",
+		"City": "SEATTLE",
+		"StateProvince": "WASHINGTON",
+		"Plenti": true,
+		"PostalCode": "98102",
+		"Telephone": "(206) 568-5185",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">5:00 AM - 11:00 PM</div>",
+		"BrandingIcon": "A",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			},
+			{
+				"Name": "Plenti - Outside Only",
+				"ImageSrc": "https://placehold.it/50x25"
+			},
+			{
+				"Name": "UBER Master Card",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	},
+	{
+		"LocationID": 2,
+		"LocationName": "Oltiva AT 8TH AVE",
+		"DisplayName": "Oltiva AT 8TH AVE",
+		"Latitude": 47.6154344,
+		"Longitude": -122.3411277,
+		"AddressLine1": "2001 8TH AVE",
+		"AddressLine2": "",
+		"City": "SEATTLE",
+		"StateProvince": "WASHINGTON",
+		"PostalCode": "98121",
+		"Telephone": "(206) 467-5103",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"BrandingIcon": "B",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	}
+]

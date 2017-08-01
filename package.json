@@ -1,0 +1,23 @@
+{
+	"name": "Oltiva",
+	"version": "0.1.0",
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-cssmin": "^1.0.1",
+		"grunt-contrib-imagemin": "^1.0.1",
+		"grunt-contrib-jshint": "^1.0.0",
+		"grunt-contrib-sass": "^1.0.0",
+		"grunt-contrib-uglify": "^2.0.0",
+		"grunt-contrib-watch":  "^1.0.0",
+		"grunt-spritesmith": "^6.3.1",
+		"rtlcss": "~1.6.1",
+		"time-grunt": "~1.1.0",
+		"karma-script-launcher": "~0.1.0",
+		"karma-chrome-launcher": "~0.1.2",
+		"karma-junit-reporter": "~0.2",
+		"karma-jasmine": "~0.1.5",
+		"karma": "~0.12",
+		"grunt-karma": "~0.10.1"
+	}
+}

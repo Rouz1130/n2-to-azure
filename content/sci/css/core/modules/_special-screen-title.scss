@@ -1,0 +1,42 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.special-screen-title {
+	.img-bordered {
+		@include rem-fallback(margin, 0, 16px / 16px, 16px / 16px, 0);
+		float: left;
+	}
+}
+
+.special-screen-title-text {
+	float: left;
+	padding: 0;
+    @include rem-fallback(margin-right, 15px / 16px);
+
+	> h3 {
+		font-family: "EMprintSemibold";
+		margin: 0;
+	}
+}
+
+.special-screen-title-cta {
+	font-family: "EMprintSemibold";
+    float:left;
+}
+
+.special-screen-title-favorite.link-icon {
+	color: $silver;
+
+	> .icon {
+		@include rem-fallback(margin-right, 4px / 16px);
+		@include rem-fallback(top, 2px / 16px);
+	}
+}
+
+@include if-min(lg) {
+	.col-3, .col-4 {
+		.special-screen-title-cta.btn {
+			float: right;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+﻿{
+	"component": "Data Visualization",
+	"versions": [
+		{
+			"version": 1,
+			"date": "12/2/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

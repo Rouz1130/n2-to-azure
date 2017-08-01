@@ -1,0 +1,24 @@
+﻿<%@ Control Language="C#" Inherits="XOMFL.CommonComponents.Controls.VariantControlBase" %>
+
+<% if (Variation == 1) { %>
+
+<div class="component embed-responsive embed-responsive-16by9">
+	<div class="embed-responsive-item">
+		<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+		<object id="Video-3db25af0-bd0a-4808-9477-aacd16b4fddf" class="BrightcoveExperience">
+			<param name="bgcolor" value="#FFFFFF" />
+			<param name="width" value="480" />
+			<param name="height" value="270" />
+			<param name="wmode" value="transparent" />
+			<param name="playerKey" value="AQ~~,AAACjRz63Vk~,GqDmpPbG8tj8_nYHwj7Wkn9r_IXp5HNb" />
+			<param name="isVid" value="true" />
+			<param name="isUI" value="true" />
+			<param name="dynamicStreaming" value="true" />
+			<param name="includeAPI" value="true" />
+			<%--<param name="templateReadyHandler" value="Oltiva.Module.Public.brightcoveVideo.onTemplateReady" />--%>
+			<param name="@videoPlayer" value="3541490475001" />
+		</object>
+	</div>
+</div>
+
+<% } %>

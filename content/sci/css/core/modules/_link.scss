@@ -1,0 +1,16 @@
+﻿@import "../base/mixins";
+
+a.link-icon {
+	display: table;
+
+	> .icon {
+		@include rem-fallback(margin-right, 8px / 16px);
+		@include rem-fallback(top, 10px / 16px);
+	}
+}
+
+.link-horizontal-list {
+	> a {
+		@include rem-fallback(margin-right, 16px / 16px);
+	}
+}

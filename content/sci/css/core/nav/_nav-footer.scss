@@ -1,0 +1,382 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+@import "../modules/icons-generated";
+@import "variables";
+
+.footer-pseudo-image {
+	content: '';
+	left: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#footer {
+	color: #fff;
+	margin-top: 40px;
+
+	.social-share-icons {
+		display: block;
+		@include rem-fallback(margin-top, 13px / 16px);
+
+		> a {
+			margin-right: 8px;
+		}
+	}
+}
+
+#footer-cap {
+	@include font-family(EMprintSemibold);
+	@include rem-fallback(font-size, 18px / 16px);
+	height: 52px;
+	@include linear-gradient(to right, $footer-cap-start-color, $footer-cap-end-color);
+	padding: 14px $nav-small-gutter;
+	position: relative;
+
+	&:after {
+		background: url("../img/footer-cap.png") no-repeat;
+		content: "";
+		left: 0;
+		height: 52px;
+		@include opacity(.5);
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+#footer-top {
+	background-color: #383838;
+	box-shadow: inset 0 3px rgba(17, 17, 17, 0.1);
+	padding: 35px $nav-small-gutter 30px;
+	position: relative;
+	z-index: 0;
+
+	&:before {
+		@extend .footer-pseudo-image;
+		background: url("../img/gradient-v.png") repeat;
+		background-size: 1% 100%;
+		@include opacity(0.07);
+		z-index: -2;
+	}
+
+	&:after {
+		@extend .footer-pseudo-image;
+		background: url("../img/noise.png") repeat;
+		background-size: contain;
+		@include opacity(0.1);
+		z-index: -1;
+	}
+}
+
+#footer-bottom {
+	background-color: $footer-bottom-background;
+	padding: 35px $nav-small-gutter 25px;
+}
+
+.footer-links-wrapper {
+	overflow: hidden;
+}
+
+.footer-links {
+	list-style: none;
+	margin-left: -15px;
+	padding: 0;
+
+	> li {
+		display: inline-block;
+		@include font-family("EMprintSemibold");
+		@include rem-fallback(font-size, 14px / 16px);
+		margin: 0 15px 15px 0;
+		text-shadow: 0 -1px 1px rgba(17, 17, 17, 0.15);
+		vertical-align: middle;
+
+		> a {
+			color: #d4d4d4;
+			margin-left: 15px;
+			outline: none;
+			position: relative;
+			text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
+
+			&:before {
+				color: #808080;
+				content: '\02022';
+				font-family: 'serif';
+				@include rem-fallback(font-size, 9px / 16px);
+				left: -19px;
+				position: absolute;
+				text-shadow: 0 -1px 0 rgba(17, 17, 17, 0.4);
+				top: 3px;
+			}
+
+			&:hover {
+				border-bottom: 1px solid rgba(212, 212, 212, 0.4);
+				outline: none;
+			}
+		}
+	}
+}
+
+#footer-nav-items {
+	margin-bottom: 10px;
+
+	> li {
+		&.footer-nav-global-selector {
+			padding-left: 24px;
+
+			> a {
+				&:before {
+					font-family: 'em';
+					color: #d4d4d4;
+					content: '\e003';
+					font-size: 16px;
+					left: -24px;
+					position: absolute;
+					text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
+					top: -3px;
+				}
+			}
+		}
+	}
+}
+
+#footer-search-form {
+	position: relative;
+	width: 100%;
+
+	> .footer-search-icon {
+		background: $footer-search-input-background;
+		border: none;
+		color: #808080;
+		font-size: 16px;
+		height: 40px;
+		outline: 0;
+		padding: 11px 12px;
+		position: absolute;
+		right: 0;
+		text-decoration: none;
+		top: 0;
+
+		&:before {
+			content: '\e001';
+			font-family: 'em';
+		}
+	}
+}
+
+#footer-search {
+	background-color: $footer-search-input-background;
+	border: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0;
+	border-top: 1px solid rgba(17, 17, 17, 0.1);
+	color: #d4d4d4;
+	@include font-family("EMprint");
+	@include rem-fallback(font-size, 15px / 16px);
+	height: 45px;
+	outline: 0;
+	padding-left: 17px;
+	width: 100%;
+}
+
+.footer-logo {
+	background-image: url(../img/footer-logos.svg);
+	background-repeat: no-repeat;
+	background-size: 1100px 30px;
+	display: inline-block;
+	height: 30px;
+	text-indent: -9999em;
+}
+
+#footer-logos {
+	.logo-footer-ie8 {
+		display: none;
+	}
+
+	.footer-logo-large {
+		@extend .footer-logo;
+		background-position: -300px center;
+		height: 25px;
+		margin-bottom: 20px;
+		width: 122px;
+
+		&:hover {
+			background-position: -450px center;
+		}
+	}
+}
+
+#footer-related-companies {
+	margin-bottom: 2px;
+	padding: 0;
+
+	.list-footer-logos {
+		margin-right: 25px;
+	}
+
+	> li {
+		display: inline-block;
+		list-style: none;
+
+		> .exxon {
+			@extend .footer-logo;
+			background-position: -600px center;
+			width: 37px;
+
+			&:hover {
+				background-position: -650px center;
+			}
+		}
+
+		> .mobil {
+			@extend .footer-logo;
+			background-position: -700px center;
+			width: 38px;
+
+			&:hover {
+				background-position: -750px center;
+			}
+		}
+
+		> .esso {
+			@extend .footer-logo;
+			background-position: -800px center;
+			width: 33px;
+
+			&:hover {
+				background-position: -850px center;
+			}
+		}
+
+		> .xto {
+			@extend .footer-logo;
+			background-position: -900px center;
+			width: 40px;
+
+			&:hover {
+				background-position: -950px center;
+			}
+		}
+
+		> .imperial {
+			@extend .footer-logo;
+			background-position: -1000px center;
+			width: 47px;
+
+			&:hover {
+				background-position: -1050px center;
+			}
+		}
+	}
+}
+
+#footer-nav-terms {
+	> .footer-links {
+		margin-bottom: 0;
+
+		> li {
+			margin: 0 10px 0 0;
+
+			> a {
+				@include rem-fallback(font-size, 12px / 16px);
+
+				&:before {
+					left: -16px;
+				}
+			}
+		}
+	}
+}
+
+#footer-copyright {
+	color: #d4d4d4;
+	@include font-family("EMprintSemibold");
+	@include rem-fallback(font-size, 12px / 16px);
+	@include rem-fallback(line-height, 20px / 16px);
+	margin-top: 4px;
+	max-width: 280px;
+}
+
+@media screen and (min-width: 606px) {
+	#footer-top-wrapper {
+		display: table;
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+
+		.social-share-icons {
+			margin-right: -8px;
+			text-align: right;
+		}
+	}
+
+	#footer-search-social,
+	#footer-nav {
+		display: table-cell;
+		padding: 0;
+	}
+
+	#footer-nav {
+		padding-right: 40px;
+		width: 60%;
+	}
+
+	#footer-search-social {
+		width: 40%;
+	}
+
+	#footer-nav-items {
+		margin-bottom: -15px;
+
+		> .footer-nav-global-selector {
+			display: block;
+		}
+	}
+
+	#footer-related-companies {
+		display: inline-block;
+		margin-left: 60px;
+		position: relative;
+		top: 10px;
+	}
+
+	#footer-copyright {
+		max-width: none;
+	}
+}
+
+@media screen and (min-width: 1001px) {
+	#footer-bottom,
+	#footer-cap,
+	#footer-top {
+		padding-left: $nav-large-gutter;
+		padding-right: $nav-large-gutter;
+	}
+
+	#footer-nav {
+		width: 70%;
+	}
+
+	#footer-search-social {
+		width: 30%;
+	}
+
+	#footer-logos {
+		float: left;
+	}
+
+	#footer-nav-terms,
+	#footer-copyright {
+		clear: right;
+		float: right;
+		text-align: right;
+	}
+
+	#footer-nav-terms {
+		> .footer-links {
+			margin-right: -10px;
+		}
+	}
+}

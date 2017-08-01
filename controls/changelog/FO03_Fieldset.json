@@ -1,0 +1,10 @@
+﻿{
+    "component": "Fieldset",
+	"versions": [
+		{
+			"version": 1,
+			"date": "5/21/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

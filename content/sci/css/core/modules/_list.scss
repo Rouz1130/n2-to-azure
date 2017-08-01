@@ -1,0 +1,238 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+@mixin multi-column($variation, $breakpoint, $cols) {
+	.bp-#{$breakpoint} {
+		> .list.list-#{$variation}-up {
+			margin-left: -15px;
+			margin-right: -15px;
+
+			> li {
+				float: left;
+				padding: 0 15px;
+				width: percentage(1 / $cols);
+			}
+		}
+	}
+
+	.bp-max-#{$breakpoint} {
+		> .list.list-#{$variation}-up {
+			> li {
+				&:nth-child(#{$cols}n+1) {
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+.list {
+	list-style-type: none;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.list-img {
+	> li {
+		float: left;
+		padding-right: 10px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+@include multi-column(2, md, 2);
+@include multi-column(3, md, 2);
+@include multi-column(3, lg, 3);
+@include multi-column(4, md, 2);
+@include multi-column(4, xl, 4);
+@include multi-column(5, md, 3);
+@include multi-column(5, xl, 5);
+@include multi-column(6, md, 3);
+@include multi-column(6, xl, 6);
+
+
+/* The styles below are for application lists and should eventually be moved to app-specific stylesheets */
+
+
+.list-item-title {
+	margin-top: 10px;
+}
+
+.list-item-text-only {
+	.list-item-title {
+		margin-top: 0;
+	}
+}
+
+.list-condensed > li {
+	padding-bottom: 0;
+}
+
+/* General for list*/
+.straight-list, .split-list,
+.alphabetical-four-list, .alphabetical-three-list,
+.list-icons {
+	.list > li {
+		padding: 0;
+	}
+}
+
+/*Alphabetical four columns list & Alphabetical three columns list */
+.alphabetical-four-list {
+	.alphabetic-order {
+		padding: 0 0 0 15px;
+		width: 100%;
+		float: left;
+	}
+}
+
+.alphabetic-order {
+	font-family: "EMprintSemibold";
+
+	li {
+		float: left;
+	}
+
+	li.divider:before {
+		content: "|";
+		color: $black15;
+	}
+
+	li a {
+		margin: 0 10px 0 9px;
+	}
+}
+
+.alphabetical-column {
+	float: left;
+
+	h3 {
+		@include rem-fallback(font-size, 16px / 16px);
+	}
+}
+
+.list-item-disabled > h3, .list-item-disabled ul a {
+	color: $silver;
+}
+
+/*Items list*/
+
+.list-items {
+	ul {
+		padding-bottom: 25px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		li {
+			padding-bottom: 0;
+			@include rem-fallback(font-size, 13px / 16px);
+
+			span {
+				color: $blue;
+			}
+
+			&.title {
+				@include rem-fallback(font-size, 16px / 16px);
+				color: $blue;
+				font-family: EMprintSemibold;
+			}
+
+			&.address {
+				@include rem-fallback(font-size, 16px / 16px);
+				font-family: EMprintSemibold;
+			}
+		}
+	}
+
+	p {
+		font-family: EMprintSemibold;
+		@include rem-fallback(font-size, 16px / 16px);
+
+		span {
+			color: $blue;
+		}
+	}
+}
+
+/*List Bold*/
+
+.list-bold {
+	li {
+		padding: 0;
+		font-family: EMprintSemibold;
+		@include rem-fallback(font-size, 16px / 16px);
+		color: $blue;
+	}
+}
+
+/*Icon list*/
+.list-icons {
+	.block-list {
+
+		li {
+			border-bottom-style: dashed;
+			border-bottom-width: 1px;
+			border-color: #b5b5b5;
+			width: 100%;
+			padding: 10px 0;
+			position: relative;
+			min-height: 60px;
+			display: table;
+		}
+
+		img {
+			width: 30px;
+			position: absolute;
+			top: 15px;
+			height: 30px;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
+
+		.items-icon-list {
+			color: $black;
+			@include rem-fallback(font-size, 16px / 16px);
+			font-family: EMprint;
+			padding-left: 50px;
+			display: table-cell;
+			min-height: 24px;
+			vertical-align: middle;
+		}
+	}
+}
+
+/*Square list*/
+
+.list-bulleted {
+	list-style-type: square;
+	padding-left: 5%;
+}
+
+
+/*Columns Fix*/
+
+.col-2 {
+	.alphabetical-column > div {
+		width: 100%;
+	}
+
+	.list-bold, .list-icons {
+		width: 100%;
+		float: left;
+	}
+}
+
+.col-1 {
+	.alphabetical-column {
+		width: 100%;
+	}
+}

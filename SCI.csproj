@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F5EBEB3-3A94-462D-935C-1821AAC14605}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XOMFL.CommonComponents</RootNamespace>
+    <AssemblyName>XOMFL.CommonComponents</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeFoldersFromDeployment>Content\legacy</ExcludeFoldersFromDeployment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api-mock\ajax-form-handler.ashx.cs">
+      <DependentUpon>ajax-form-handler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api-mock\AnalyticsHandler.ashx.cs">
+      <DependentUpon>AnalyticsHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ContainerControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Content.ascx.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Content.ascx.designer.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\sci\nav\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoveoMock.ashx.cs">
+      <DependentUpon>CoveoMock.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="extensions\HttpContextExtensions.cs" />
+    <Compile Include="ImageSpecs.aspx.cs">
+      <DependentUpon>ImageSpecs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageSpecs.aspx.designer.cs">
+      <DependentUpon>ImageSpecs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenSink.aspx.designer.cs">
+      <DependentUpon>KitchenSink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="model\XomflComponentCode.cs" />
+    <Compile Include="pages\private\apps\FindDistributor.aspx.cs">
+      <DependentUpon>FindDistributor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\private\apps\FindTerminal.aspx.cs">
+      <DependentUpon>FindTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\private\apps\FindStation.aspx.cs">
+      <DependentUpon>FindStation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\private\misc\AjaxForm.aspx.cs">
+      <DependentUpon>AjaxForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SearchResults.aspx.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\Parser.cs" />
+    <Content Include="android-chrome-144x144.png" />
+    <Content Include="android-chrome-192x192.png" />
+    <Content Include="android-chrome-36x36.png" />
+    <Content Include="android-chrome-48x48.png" />
+    <Content Include="android-chrome-72x72.png" />
+    <Content Include="android-chrome-96x96.png" />
+    <Content Include="apple-touch-icon-114x114.png" />
+    <Content Include="apple-touch-icon-120x120.png" />
+    <Content Include="apple-touch-icon-144x144.png" />
+    <Content Include="apple-touch-icon-152x152.png" />
+    <Content Include="apple-touch-icon-180x180.png" />
+    <Content Include="apple-touch-icon-57x57.png" />
+    <Content Include="apple-touch-icon-60x60.png" />
+    <Content Include="apple-touch-icon-72x72.png" />
+    <Content Include="apple-touch-icon-76x76.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="browserconfig.xml" />
+    <Content Include="content\hack\analytics-shim.js" />
+    <Content Include="content\site\coal-339x159.jpg" />
+    <Content Include="content\site\coal-439x206.jpg" />
+    <Content Include="content\site\data-visualization-graph.png" />
+    <Content Include="content\site\esso-station.png" />
+    <Content Include="content\site\exxon-station.png" />
+    <Content Include="content\site\fuel-truck.png" />
+    <Content Include="content\site\mobil-station.png" />
+    <Content Include="content\site\paper-339x217.jpg" />
+    <Content Include="content\site\paper-439x281.jpg" />
+    <Content Include="content\site\resource-153x153.jpg" />
+    <Content Include="content\site\resource-90x90.jpg" />
+    <Content Include="content\site\resource-339x339.jpg" />
+    <Content Include="content\site\resource-square.jpg" />
+    <Content Include="content\site\screen-title-1340x400.jpg" />
+    <Content Include="content\site\screen-title-339x159.jpg" />
+    <Content Include="content\site\screen-title-439x206.jpg" />
+    <Content Include="content\site\screen-title-679x319.jpg" />
+    <Content Include="content\site\screen-title-963x400.jpg" />
+    <Content Include="content\site\weather-foreground-day-xl.png" />
+    <Content Include="content\site\weather-foreground-night-xl.png" />
+    <Content Include="content\site\wind-339x159.jpg" />
+    <Content Include="content\site\wind-439x206.jpg" />
+    <Content Include="content\vendor\angular\angular-cookie.min.js" />
+    <Content Include="content\vendor\jquery\jquery.cookie.js" />
+    <Content Include="content\vendor\moment\moment.min.js" />
+    <Content Include="content\vendor\typeahead\typeahead.bundle.min.js" />
+    <Content Include="content\vendor\webtrends\webtrends.min.js" />
+    <Content Include="content\sci\css\asphalt.min.css" />
+    <Content Include="content\sci\css\aviation.min.css" />
+    <Content Include="content\sci\css\basestocks.min.css" />
+    <Content Include="content\sci\css\blue-muted.min.css" />
+    <Content Include="content\sci\css\blue.min.css" />
+    <Content Include="content\sci\css\gray.min.css" />
+    <Content Include="content\sci\css\industrial.min.css" />
+    <Content Include="content\sci\css\marine.min.css" />
+    <Content Include="content\sci\css\pds.min.css" />
+    <Content Include="content\sci\css\red.min.css" />
+    <Content Include="content\sci\css\waxes.min.css" />
+    <Content Include="content\sci\css\weather.min.css" />
+    <Content Include="content\sci\css\white-oils.min.css" />
+    <Content Include="content\sci\img\footer-cap.png" />
+    <Content Include="content\sci\img\icons\icon-document.png" />
+    <Content Include="content\sci\img\icons\icon-facebook-round-clear.png" />
+    <Content Include="content\sci\img\icons\icon-facebook-round-hover.png" />
+    <Content Include="content\sci\img\icons\icon-facebook-round.png" />
+    <Content Include="content\sci\img\icons\icon-map-pin-red-small.png" />
+    <Content Include="content\sci\img\icons\icon-pin-dark-blue.png" />
+    <Content Include="content\sci\img\icons\icon-pin-gray.png" />
+    <Content Include="content\sci\img\icons\icon-pin-green.png" />
+    <Content Include="content\sci\img\icons\icon-pin-light-blue.png" />
+    <Content Include="content\sci\img\icons\icon-pin-orange.png" />
+    <Content Include="content\sci\img\icons\icon-pin-red.png" />
+    <Content Include="content\sci\img\icons\icon-primary-pin.png" />
+    <Content Include="content\sci\img\icons\icon-success-filled.png" />
+    <Content Include="content\sci\img\icons\icon-telephone.png" />
+    <Content Include="content\sci\img\logos\esso_carburants.svg" />
+    <Content Include="content\sci\img\logos\esso_fuels.svg" />
+    <Content Include="content\sci\img\logos\exxon_fuels.svg" />
+    <Content Include="content\sci\img\logos\exxon_mobil_combustibles.svg" />
+    <Content Include="content\sci\img\logos\logo-imperial-small.png" />
+    <Content Include="content\sci\img\logos\mobil_fuels.svg" />
+    <Content Include="content\sci\img\logos\mobil_industrial.svg" />
+    <Content Include="content\sci\js\apps\drill-down.min.js" />
+    <Content Include="content\sci\js\apps\drill-down\app.js" />
+    <Content Include="content\sci\js\apps\drill-down\controllers\drill-down.js" />
+    <Content Include="content\sci\js\apps\gdl.min.js" />
+    <Content Include="content\sci\js\apps\gdl\app.js" />
+    <Content Include="content\sci\js\apps\gdl\controllers\gdl.js" />
+    <Content Include="content\sci\js\apps\gdl\services\location.js" />
+    <Content Include="content\sci\js\apps\locator\services\amenities.js" />
+    <Content Include="content\sci\js\apps\shared\app.js" />
+    <Content Include="content\sci\js\apps\shared\directives\scope-property.js" />
+    <Content Include="content\sci\js\apps\shared\directives\string-template.js" />
+    <Content Include="content\sci\js\apps\shared\directives\world-map.js" />
+    <Content Include="content\sci\js\apps\shared\services\extender.js" />
+    <Content Include="content\sci\js\apps\shared\services\http-shim.js" />
+    <Content Include="content\sci\js\apps\shared\services\site-search.js" />
+    <Content Include="content\sci\js\apps\shared\services\facet.js" />
+    <Content Include="content\sci\js\core\ie8\footer-logos.js" />
+    <Content Include="content\sci\js\core\modules\_ajax-form.js" />
+    <Content Include="content\sci\js\core\modules\_list.js" />
+    <Content Include="content\sci\js\core\modules\_breadcrumb.js" />
+    <Content Include="content\sci\js\core\modules\_modal.js" />
+    <Content Include="content\sci\js\core\nav\_nav-main.js" />
+    <Content Include="content\sci\js\core\nav\_nav-language.js" />
+    <Content Include="content\sci\js\core\polyfills\_array.js" />
+    <Content Include="content\sci\js\core\polyfills\_object-keys.js" />
+    <Content Include="content\sci\js\core\utils\_geolocation.js" />
+    <Content Include="content\sci\js\core\utils\_class-toggle.js" />
+    <Content Include="content\sci\js\core\utils\_responsive-images.js" />
+    <Content Include="api-mock\AnalyticsHandler.ashx" />
+    <Content Include="api-mock\ajax-form-handler.ashx" />
+    <Content Include="content\sci\css\core\modules\_world-map.scss" />
+    <Content Include="content\sci\css\skins\modules\_button.scss" />
+    <Content Include="content\sci\css\skins\modules\_nav-header.scss" />
+    <Content Include="content\sci\css\skins\modules\_nav-main-list.scss" />
+    <Content Include="content\sci\css\skins\modules\_nav-main-search.scss" />
+    <Content Include="content\sci\css\skins\modules\_nav-main.scss" />
+    <Content Include="content\sci\css\skins\red.scss" />
+    <Content Include="content\sci\css\skins\gray.scss" />
+    <Content Include="content\sci\css\skins\blue.scss" />
+    <Content Include="content\sci\css\skins\blue-muted.scss" />
+    <Content Include="content\sci\fonts\mrseavrom.eot" />
+    <Content Include="content\sci\fonts\mrseavrom.ttf" />
+    <Content Include="content\sci\fonts\mrseavrom.woff" />
+    <None Include="content\sci\js\core\polyfills\_svg.js" />
+    <Content Include="content\sci\js\core\utils\_url-util.js" />
+    <Content Include="content\sci\js\core\utils\_site-search.js" />
+    <Content Include="content\sci\js\core\utils\_analytics.js" />
+    <Content Include="content\sci\js\core\utils\_local-time.js" />
+    <Content Include="content\sci\js\data\esso-topo.json" />
+    <Content Include="controls\snippets\R01_Resource.html" />
+    <Content Include="controls\snippets\SP10_DataVisualization.html" />
+    <Content Include="controls\sci\R01_Resource.ascx" />
+    <Content Include="controls\sci\SP10_DataVisualization.ascx" />
+    <Content Include="controls\sci\T05_ScreenTitle.ascx" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-194x194.png" />
+    <Content Include="favicon-32x32.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="grunt\app-drill-down.js" />
+    <Content Include="grunt\app-gdl.js" />
+    <Content Include="grunt\app-shared.js" />
+    <Content Include="api-mock\gdl-seattle.json" />
+    <Content Include="api-mock\gdl-jersey.json" />
+    <Content Include="api-mock\gdl-empty.json" />
+    <Content Include="api-mock\locator-amenities.json" />
+    <Content Include="api-mock\product-search.json" />
+    <None Include="content\sci\css\lob\industrial.scss" />
+    <None Include="content\sci\css\lob\aviation.scss" />
+    <None Include="content\sci\css\lob\branded-elements\_nav-main-list.scss" />
+    <None Include="content\sci\css\lob\branded-elements\_nav-main.scss" />
+    <None Include="content\sci\css\lob\branded-elements\_nav-header.scss" />
+    <None Include="content\sci\css\lob\branded-elements\_nav-main-search.scss" />
+    <None Include="content\sci\css\lob\basestocks.scss" />
+    <None Include="content\sci\css\lob\branded-elements\_button.scss" />
+    <None Include="content\sci\css\lob\marine.scss" />
+    <None Include="content\sci\css\lob\waxes.scss" />
+    <None Include="content\sci\css\lob\white-oils.scss" />
+    <None Include="content\sci\css\lob\_defaults.scss" />
+    <Content Include="content\sci\css\pds\pds.scss" />
+    <None Include="grunt\lob-css.js" />
+    <Content Include="grunt\helper.js" />
+    <Content Include="grunt\skins-css.js" />
+    <Content Include="grunt\pds-css.js" />
+    <Content Include="grunt\unit-tests.js" />
+    <Content Include="ImageSpecs.aspx" />
+    <Content Include="mstile-144x144.png" />
+    <Content Include="mstile-150x150.png" />
+    <Content Include="mstile-310x310.png" />
+    <Content Include="mstile-70x70.png" />
+    <Content Include="pages\private\apps\DrillDown.aspx" />
+    <Content Include="pages\private\apps\FindTerminal.aspx" />
+    <Content Include="pages\private\apps\GDL.aspx" />
+    <Content Include="pages\private\misc\AjaxForm.aspx" />
+    <Content Include="pages\private\misc\ContactUsFormWithSidebar.aspx" />
+    <Content Include="pages\private\misc\Utilities.aspx" />
+    <Content Include="pages\private\retail\HomeEsso2.aspx" />
+    <Content Include="pages\Skin.aspx" />
+    <Content Include="pages\SearchResults.aspx" />
+    <Content Include="pages\private\misc\Analytics.aspx" />
+    <Content Include="pages\private\apps\Weather.aspx" />
+    <Content Include="pages\test\Home.aspx" />
+    <Content Include="pages\private\industrial\EquipmentBuildersLanding.aspx" />
+    <Content Include="content\site\surfaced-item.jpg" />
+    <Content Include="content\vendor\angular\angular-sanitize.min.js" />
+    <Content Include="content\vendor\d3\d3.min.js" />
+    <Content Include="content\vendor\datamaps\datamaps.can.min.js" />
+    <Content Include="content\vendor\datamaps\datamaps.world.min.js" />
+    <Content Include="content\vendor\ie8\html5shiv.min.js" />
+    <Content Include="content\vendor\topojson\topojson.min.js" />
+    <Content Include="content\sci\img\button-close-ie.png" />
+    <Content Include="content\sci\img\logos\logo-esso-small.png" />
+    <Content Include="content\sci\img\logos\logo-exxon-small.png" />
+    <Content Include="content\sci\img\logos\logo-exxonmobil-large.png" />
+    <Content Include="content\sci\img\logos\logo-mobil-small.png" />
+    <Content Include="content\sci\img\logos\logo-xto-small.png" />
+    <Content Include="content\sci\img\logos\logo-nav-ie8.png" />
+    <Content Include="content\sci\img\nav-arrow-back-ie8.png" />
+    <Content Include="content\sci\img\nav-arrow-item-ie8.png" />
+    <Content Include="content\sci\img\nav-close-ie.png" />
+    <Content Include="api-mock\locator-seattle.json" />
+    <Content Include="api-mock\locator-dallas.json" />
+    <Content Include="api-mock\locator-boundary.json" />
+    <Content Include="api-mock\locator-china.json" />
+    <Content Include="api-mock\distributor-locator.json" />
+    <Content Include="content\Web.config" />
+    <Content Include="content\sci\css\core\layout\_spacing.scss" />
+    <None Include="content\sci\css\core\modules\_datamap.scss" />
+    <Content Include="content\sci\css\core\modules\_data-visualization.scss" />
+    <Content Include="content\sci\css\core\modules\_text-gradient.scss" />
+    <Content Include="content\sci\css\core\modules\_resource.scss" />
+    <Content Include="content\sci\css\apps\weather.scss" />
+    <None Include="content\sci\css\core\nav\_nav-language.scss" />
+    <Content Include="content\sci\css\ie8\utils\visibility.scss" />
+    <None Include="content\sci\css\lob\asphalt.scss" />
+    <None Include="content\sci\js\apps\shared\constants.js" />
+    <None Include="content\sci\js\apps\shared\services\geolocation.js" />
+    <None Include="content\sci\js\apps\shared\services\event-bus.js" />
+    <None Include="content\sci\js\apps\weather\rain.js" />
+    <None Include="content\sci\js\apps\weather\snow.js" />
+    <None Include="content\sci\js\apps\weather\clouds.js" />
+    <None Include="content\sci\js\apps\weather\init.js" />
+    <None Include="content\sci\js\apps\weather\weather.js" />
+    <Content Include="content\sci\js\apps\list.min.js" />
+    <Content Include="content\sci\js\apps\list\app.js" />
+    <Content Include="content\sci\js\apps\list\controllers\list.js" />
+    <Content Include="content\sci\js\apps\list\services\data.js" />
+    <Content Include="content\sci\js\apps\locator.min.js" />
+    <Content Include="content\sci\js\plugins\mapify-baidu.js" />
+    <Content Include="content\sci\js\plugins\mapify-baidu.min.js" />
+    <Content Include="content\sci\js\plugins\mapify-bing.min.js" />
+    <Content Include="content\sci\js\plugins\mapify-google.js" />
+    <Content Include="content\sci\js\apps\region-selector.min.js" />
+    <Content Include="content\sci\js\apps\region-selector\app.js" />
+    <Content Include="content\sci\js\apps\region-selector\controllers\region-selector.js" />
+    <Content Include="content\sci\js\apps\shared\directives\accordion-trigger.js" />
+    <Content Include="content\sci\js\apps\shared\services\array.js" />
+    <Content Include="content\sci\js\apps\shared\directives\datamap.js" />
+    <Content Include="content\sci\js\apps\shared\services\serialization.js" />
+    <Content Include="content\sci\js\apps\weather.min.js" />
+    <Content Include="content\sci\js\core\modules\_wait-message.js" />
+    <Content Include="controls\changelog\SP10_DataVisualization.json" />
+    <Content Include="controls\changelog\R01_Resource.json" />
+    <None Include="grunt\app-locator.js" />
+    <Content Include="content\sci\js\plugins\mapify-google.min.js" />
+    <Content Include="grunt\app-list.js" />
+    <Content Include="grunt\plugins.js" />
+    <Content Include="grunt\app-region-selector.js" />
+    <Content Include="grunt\app-weather.js" />
+    <Content Include="pages\private\apps\FindDistributor.aspx" />
+    <Content Include="pages\private\misc\WhiteOils.aspx" />
+    <Content Include="pages\private\apps\List.aspx" />
+    <Content Include="pages\private\retail\HomeEsso.aspx" />
+    <Content Include="pages\private\apps\FindStation.aspx" />
+    <Content Include="pages\private\legacy\IndustrialSchematics.aspx" />
+    <Content Include="pages\private\legacy\NoseToTail.aspx" />
+    <Content Include="pages\private\legacy\PairsGame.aspx" />
+    <Content Include="pages\private\apps\RecommendationWizard.aspx" />
+    <Content Include="pages\private\industrial\EquipmentBuilders.aspx" />
+    <Content Include="pages\private\retail\HomeAmerica.aspx" />
+    <Content Include="pages\private\retail\HomeEurope.aspx" />
+    <Content Include="pages\private\retail\HomeFuelAlt.aspx" />
+    <Content Include="pages\private\retail\StationDetails.aspx" />
+    <Content Include="content\site\api-mock.js" />
+    <Content Include="content\site\app-apple-store.png" />
+    <Content Include="content\site\app-artwork.jpg" />
+    <Content Include="content\site\app-google-play.png" />
+    <Content Include="content\site\carousel-01.jpg" />
+    <Content Include="content\site\carousel-02.jpg" />
+    <Content Include="content\site\faux-img.png" />
+    <Content Include="content\site\carousel-03.jpg" />
+    <Content Include="content\site\header-flipped.jpg" />
+    <Content Include="content\site\header-narrow.jpg" />
+    <Content Include="content\site\header-small.jpg" />
+    <Content Include="content\site\header-thin.jpg" />
+    <Content Include="content\site\header.jpg" />
+    <Content Include="content\site\img-logo-title.png" />
+    <Content Include="content\site\mobil-shc.jpg" />
+    <Content Include="content\site\skyline-dark.jpg" />
+    <Content Include="content\site\skyline-light.jpg" />
+    <Content Include="content\vendor\angular\angular.min.js" />
+    <Content Include="content\vendor\ie8\polyfills.min.js" />
+    <Content Include="content\vendor\ie8\rem.min.js" />
+    <Content Include="content\vendor\ie8\respond.min.js" />
+    <Content Include="content\vendor\ie8\selectivizr-min.js" />
+    <Content Include="content\vendor\jquery\jquery.validate.min.js" />
+    <Content Include="content\vendor\typeahead\typeahead.bundle.js" />
+    <Content Include="content\vendor\vendor.min.js" />
+    <Content Include="content\sci\css\distributor-locator.min.css" />
+    <Content Include="content\sci\css\ie8.min.css" />
+    <Content Include="content\sci\css\product-selector.min.css" />
+    <Content Include="content\sci\img\footer-logo.svg" />
+    <Content Include="content\sci\img\footer-logos.svg" />
+    <Content Include="content\sci\img\footer-sub-logos.svg" />
+    <Content Include="content\sci\img\gradient-v.png" />
+    <Content Include="content\sci\img\icons\icon-blue-diamond.png" />
+    <Content Include="content\sci\img\icons\icon-carousel-child-next.png" />
+    <Content Include="content\sci\img\icons\icon-carousel-child-prev.png" />
+    <Content Include="content\sci\img\icons\icon-carousel-next.png" />
+    <Content Include="content\sci\img\icons\icon-carousel-prev.png" />
+    <Content Include="content\sci\img\icons\icon-cloud.png" />
+    <Content Include="content\sci\img\icons\icon-drop-arrow-bg.jpg" />
+    <Content Include="content\sci\img\icons\icon-favorite-on.png" />
+    <Content Include="content\sci\img\icons\icon-favorite-off.png" />
+    <Content Include="content\vendor\slick\fonts\slick.svg" />
+    <Content Include="content\vendor\slick\slick.css" />
+    <Content Include="content\vendor\slick\slick.min.js" />
+    <Content Include="content\sci\css\contact-us.min.css" />
+    <Content Include="content\sci\css\core.min.css" />
+    <Content Include="content\sci\img\icons\icon-checked.png" />
+    <Content Include="content\sci\img\icons\icon-danger.png" />
+    <Content Include="content\sci\img\icons\icon-disabled.png" />
+    <Content Include="content\sci\img\icons\icon-download.png" />
+    <Content Include="content\sci\img\icons\icon-drop-arrow.png" />
+    <Content Include="content\sci\img\icons\icon-envelope-list.png" />
+    <Content Include="content\sci\img\icons\icon-facebook.png" />
+    <Content Include="content\sci\img\icons\icon-findmsds-list.png" />
+    <Content Include="content\sci\img\icons\icon-globe-large.png" />
+    <Content Include="content\sci\img\icons\icon-globe-small.png" />
+    <Content Include="content\sci\img\icons\icon-linkedin-round-hover.png" />
+    <Content Include="content\sci\img\icons\icon-linkedin-round.png" />
+    <Content Include="content\sci\img\icons\icon-linkedin-round-clear.png" />
+    <Content Include="content\sci\img\icons\icon-map-pin-blue-small.png" />
+    <Content Include="content\sci\img\icons\icon-map-pin-blue.png" />
+    <Content Include="content\sci\img\icons\icon-nav-main-menu.png" />
+    <Content Include="content\sci\img\icons\icon-nav-main-search-close.png" />
+    <Content Include="content\sci\img\icons\icon-nav-main-search.png" />
+    <Content Include="content\sci\img\icons\icon-newsletter-list.png" />
+    <Content Include="content\sci\img\icons\icon-popup-arrow.png" />
+    <Content Include="content\site\icon-sample-large.png" />
+    <Content Include="content\sci\img\icons\icon-question.png" />
+    <Content Include="content\sci\img\icons\icon-search-white.png" />
+    <Content Include="content\sci\img\icons\icon-search.png" />
+    <Content Include="content\sci\img\icons\icon-share-orange.png" />
+    <Content Include="content\sci\img\icons\icon-share.png" />
+    <Content Include="content\sci\img\icons\icon-badge-star.png" />
+    <Content Include="content\sci\img\icons.png" />
+    <Content Include="content\sci\img\icons\icon-circle-minus.png" />
+    <Content Include="content\sci\img\icons\icon-circle-plus.png" />
+    <Content Include="content\site\earth.png" />
+    <Content Include="content\site\placeholder.png" />
+    <Content Include="content\site\site.css" />
+    <Content Include="content\site\site.js" />
+    <Content Include="content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="content\vendor\jquery\jquery.min.js" />
+    <Content Include="content\sci\img\icons\icon-facebook-small.png" />
+    <Content Include="content\sci\img\icons\icon-twitter-round-hover.png" />
+    <Content Include="content\sci\img\icons\icon-twitter-round.png" />
+    <Content Include="content\sci\img\icons\icon-twitter-round-clear.png" />
+    <Content Include="content\sci\img\icons\icon-twitter-small.png" />
+    <Content Include="content\sci\img\icons\icon-success.png" />
+    <Content Include="content\sci\img\icons\icon-telephone-list.png" />
+    <Content Include="content\sci\img\icons\icon-twitter.png" />
+    <Content Include="content\sci\img\icons\icon-warning.png" />
+    <Content Include="content\sci\img\icons\icon-world-list.png" />
+    <Content Include="content\sci\img\icons\icon-world-white.png" />
+    <Content Include="content\sci\img\icons\icon-youtube-round-hover.png" />
+    <Content Include="content\sci\img\icons\icon-youtube-round.png" />
+    <Content Include="content\sci\img\icons\icon-youtube-round-clear.png" />
+    <Content Include="content\sci\img\global-selector-bg%402x.jpg" />
+    <Content Include="content\sci\img\global-selector-bg.jpg" />
+    <Content Include="content\sci\img\logos\logo-red.svg" />
+    <Content Include="content\sci\img\noise.png" />
+    <Content Include="content\sci\img\region-logo%402x.png" />
+    <Content Include="content\sci\img\region-logo.png" />
+    <None Include="content\sci\js\apps\shared\directives\map.js" />
+    <None Include="content\sci\js\apps\locator\services\location.js" />
+    <None Include="content\sci\js\apps\locator\app.js" />
+    <None Include="content\sci\js\apps\locator\controllers\locator.js" />
+    <Content Include="content\sci\js\plugins\mapify-bing.js" />
+    <Content Include="content\sci\js\apps\product-selector.min.js" />
+    <None Include="content\sci\js\apps\product-selector\controllers\wizard.js" />
+    <None Include="content\sci\js\apps\product-selector\controllers\selector.js" />
+    <None Include="content\sci\js\apps\product-selector\app.js" />
+    <None Include="content\sci\js\apps\product-selector\directives\wizard-lists.js" />
+    <None Include="content\sci\js\apps\product-selector\services\data.js" />
+    <Content Include="content\sci\js\core.min.js" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_alerts.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_buttons.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_center-block.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_forms.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_gradients.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_grid.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_image.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_labels.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_list-group.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_opacity.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_pagination.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_panels.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_resize.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_size.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_table-row.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_alerts.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_badges.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_breadcrumbs.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_button-groups.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_buttons.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_carousel.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_close.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_code.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_component-animations.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_dropdowns.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_forms.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_glyphicons.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_grid.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_input-groups.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_jumbotron.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_labels.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_list-group.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_media.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_mixins.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_modals.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_navbar.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_navs.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_normalize.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_pager.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_pagination.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_panels.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_popovers.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_print.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_progress-bars.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_responsive-embed.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_responsive-utilities.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_scaffolding.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_tables.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_theme.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_thumbnails.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_tooltip.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_type.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_utilities.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_variables.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap\_wells.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\_bootstrap.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\bootstrap-custom.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\custom\_variables.scss" />
+    <Content Include="content\vendor\bootstrap\css\source\custom\_grid.scss" />
+    <Content Include="components.json" />
+    <Content Include="content\site\coveo-sample.json" />
+    <None Include="content\sci\css\core\base\_body.scss" />
+    <None Include="content\sci\css\core\layout\_grid.scss" />
+    <Content Include="content\sci\css\core\modules\_iframe.scss" />
+    <Content Include="content\sci\css\core\modules\_expanding-box.scss" />
+    <Content Include="content\sci\css\core\modules\_wait-message.scss" />
+    <None Include="content\sci\css\core\nav\_nav-main-list.scss" />
+    <None Include="content\sci\css\core\nav\_nav-main-mobile.scss" />
+    <None Include="content\sci\css\core\nav\_nav-meganav.scss" />
+    <None Include="content\sci\css\core\nav\_nav-footer.scss" />
+    <None Include="content\sci\css\core\nav\_nav-global-selector.scss" />
+    <None Include="content\sci\css\core\nav\_nav-main.scss" />
+    <None Include="content\sci\css\core\nav\_nav-header.scss" />
+    <None Include="content\sci\css\core\modules\_legacy-app.scss" />
+    <None Include="content\sci\css\core\modules\_table-responsive.scss" />
+    <None Include="content\sci\css\core\modules\_search-box.scss" />
+    <None Include="content\sci\css\core\modules\_event-list.scss" />
+    <None Include="content\sci\css\core\modules\_static-map.scss" />
+    <None Include="content\sci\css\core\modules\_smart-list.scss" />
+    <None Include="content\sci\css\core\modules\_product-application.scss" />
+    <None Include="content\sci\css\core\modules\_component.scss" />
+    <None Include="content\sci\css\core\modules\_breadcrumb.scss" />
+    <Content Include="content\site\copy\product-detail-mobil-shc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="content\sci\css\core\modules\_resource-list.scss" />
+    <None Include="content\sci\css\core\modules\_product-list.scss" />
+    <None Include="content\sci\css\core\modules\_search-suggestions.scss" />
+    <None Include="content\sci\css\core\modules\_secondary-title.scss" />
+    <None Include="content\sci\css\core\modules\_filter.scss" />
+    <Content Include="content\vendor\slick\fonts\slick.eot" />
+    <Content Include="content\vendor\slick\fonts\slick.ttf" />
+    <Content Include="content\vendor\slick\fonts\slick.woff" />
+    <None Include="content\sci\css\core\modules\_link.scss" />
+    <None Include="content\sci\css\core\modules\_sidebar.scss" />
+    <None Include="content\sci\css\core\modules\_locator.scss" />
+    <None Include="content\sci\css\core\modules\_app-promotion.scss" />
+    <None Include="content\sci\css\core\modules\_paragraph.scss" />
+    <None Include="content\sci\css\core\modules\_image.scss" />
+    <None Include="content\sci\css\core\modules\_featured-item.scss" />
+    <None Include="content\sci\css\core\modules\_social.scss" />
+    <None Include="content\sci\css\core\modules\_special-screen-title.scss" />
+    <None Include="content\sci\css\core\modules\_social-share.scss" />
+    <None Include="content\sci\css\core\modules\_product-comparison.scss" />
+    <None Include="content\sci\css\core\modules\_surfaced-item.scss" />
+    <None Include="content\sci\css\core\modules\_screen-title.scss" />
+    <None Include="content\sci\css\core\modules\_glyph.scss" />
+    <Content Include="content\sci\css\ie8\modules\_form.scss" />
+    <None Include="content\sci\css\core\nav\_nav-top-bar.scss" />
+    <None Include="content\sci\css\core\nav\_nav-lines-brands.scss" />
+    <None Include="content\sci\css\core\nav\_nav-country.scss" />
+    <None Include="content\sci\css\core\nav\_nav-social.scss" />
+    <None Include="content\sci\css\core\nav\_nav-utility.scss" />
+    <None Include="content\sci\css\core\nav\_nav-main-search.scss" />
+    <None Include="content\sci\css\core\nav\_variables.scss" />
+    <None Include="content\sci\css\ie8\modules\_featured-item.scss" />
+    <None Include="content\sci\css\ie8\ie8.scss" />
+    <Content Include="content\sci\css\ie8\modules\_carousel.scss" />
+    <Content Include="content\sci\css\ie8\nav\_nav-main-mobile.scss" />
+    <Content Include="content\sci\css\ie8\nav\_nav-footer.scss" />
+    <Content Include="content\sci\css\ie8\nav\_nav-main.scss" />
+    <None Include="content\sci\js\core\modules\_carousel.js" />
+    <None Include="content\sci\js\core\modules\_accordion.js" />
+    <None Include="content\sci\js\core\modules\_forms.js" />
+    <None Include="content\sci\js\core\modules\_search-box.js" />
+    <None Include="content\sci\js\core\nav\_nav-global-selector.js" />
+    <None Include="content\sci\js\core\nav\_nav-meganav.js" />
+    <None Include="content\sci\js\core\nav\_nav-menu-mobile.js" />
+    <None Include="content\sci\js\core\nav\_nav-social.js" />
+    <None Include="content\sci\js\core\utils\_breakpoints.js" />
+    <None Include="content\sci\js\core\utils\_iframe-height.js" />
+    <None Include="content\sci\js\core\utils\_browser-identifiers.js" />
+    <None Include="content\sci\js\core\utils\_match-height.js" />
+    <None Include="content\sci\js\core\utils\_pubsub.js" />
+    <Content Include="controls\Component.ascx" />
+    <Content Include="controls\Content.ascx" />
+    <Content Include="controls\ControlDownload.ascx" />
+    <Content Include="controls\snippets\A16_ProductListWithDataTable.html" />
+    <Content Include="controls\snippets\A24_ProductApplication.html" />
+    <Content Include="controls\snippets\A22_SearchSuggestions.html" />
+    <Content Include="controls\snippets\A07_SearchFilter.html" />
+    <Content Include="controls\snippets\A14_ResourceList.html" />
+    <Content Include="controls\snippets\A25_WaxProduct.html" />
+    <Content Include="controls\snippets\A21_WhiteOilProduct.html" />
+    <Content Include="controls\snippets\A09_SmartListAlphabetical.html" />
+    <Content Include="controls\snippets\A08_SmartList.html" />
+    <Content Include="controls\snippets\A04_SpecialScreenTitle.html" />
+    <Content Include="controls\snippets\A05_SearchBox.html" />
+    <Content Include="controls\snippets\A03_FauxTable.html" />
+    <Content Include="controls\snippets\A02_InlineList.html" />
+    <Content Include="controls\snippets\A01_Breadcrumb.html" />
+    <Content Include="controls\snippets\A06_SearchFooter.html" />
+    <Content Include="controls\snippets\A23_ProductComparison.html" />
+    <Content Include="controls\snippets\A19_SavedItems.html" />
+    <Content Include="controls\snippets\A15_ProductList.html" />
+    <Content Include="controls\snippets\A18_ListItems.html" />
+    <Content Include="controls\snippets\A20_EventList.html" />
+    <Content Include="controls\snippets\A26_WholesaleFuelProduct.html" />
+    <Content Include="controls\snippets\B02_Table.html" />
+    <Content Include="controls\snippets\B03_Image.html" />
+    <Content Include="controls\snippets\B04_Link.html" />
+    <Content Include="controls\snippets\B07_SecondaryTitle.html" />
+    <Content Include="controls\snippets\C03_Carousel.html" />
+    <Content Include="controls\snippets\C05_ExpandingBox.html" />
+    <Content Include="controls\snippets\C04_Lightbox.html" />
+    <Content Include="controls\snippets\F03_FeaturedItem.html" />
+    <Content Include="controls\snippets\F05_FeaturedItem.html" />
+    <Content Include="controls\snippets\F04_FeaturedItem.html" />
+    <Content Include="controls\snippets\F02_FeaturedItem.html" />
+    <Content Include="controls\snippets\FO03_Fieldset.html" />
+    <Content Include="controls\snippets\FO07_Button.html" />
+    <Content Include="controls\snippets\S03_SurfacedItem.html" />
+    <Content Include="controls\snippets\S01_SurfacedItem.html" />
+    <Content Include="controls\snippets\SP01_Map.html" />
+    <Content Include="controls\snippets\SP03_Brightcove.html" />
+    <Content Include="controls\snippets\SP02_YouTube.html" />
+    <Content Include="controls\snippets\F01_FeaturedItem.html" />
+    <Content Include="controls\snippets\SP06_SocialShare.html" />
+    <Content Include="controls\snippets\SP05_ButtonBar.html" />
+    <Content Include="controls\snippets\SP04_SidebarNav.html" />
+    <Content Include="controls\snippets\SP07_AppPromotion.html" />
+    <Content Include="controls\snippets\SP08_StationLocator.html" />
+    <Content Include="controls\snippets\SP09_Social.html" />
+    <Content Include="controls\snippets\T04_ScreenTitle.html" />
+    <Content Include="controls\snippets\T03_ScreenTitle.html" />
+    <Content Include="controls\snippets\T02_ScreenTitle.html" />
+    <Content Include="controls\snippets\T01_ScreenTitle.html" />
+    <Content Include="controls\snippets\FO04_Checkbox.html" />
+    <Content Include="controls\snippets\ContactUsForm.html" />
+    <Content Include="controls\snippets\FO02_SelectBox.html" />
+    <Content Include="controls\snippets\FO01_TextInput.html" />
+    <Content Include="controls\snippets\Layout06.html" />
+    <Content Include="controls\snippets\Layout07.html" />
+    <Content Include="controls\snippets\Layout05.html" />
+    <Content Include="controls\snippets\Layout04.html" />
+    <Content Include="controls\snippets\Layout03.html" />
+    <Content Include="controls\snippets\Layout02.html" />
+    <Content Include="controls\snippets\Layout01.html" />
+    <Content Include="controls\snippets\FO05_RadioButton.html" />
+    <Content Include="controls\snippets\FO06_TextArea.html" />
+    <Content Include="controls\NavBar.ascx" />
+    <Content Include="controls\sci\A24_ProductApplication.ascx" />
+    <Content Include="controls\sci\A22_SearchSuggestions.ascx" />
+    <Content Include="controls\sci\A14_ResourceList.ascx" />
+    <Content Include="controls\sci\A16_ProductListWithDataTable.ascx" />
+    <Content Include="controls\sci\A25_WaxProduct.ascx" />
+    <Content Include="controls\sci\A09_SmartListAlphabetical.ascx" />
+    <Content Include="controls\sci\A08_SmartList.ascx" />
+    <Content Include="controls\sci\A21_WhiteOilProduct.ascx" />
+    <Content Include="controls\sci\A26_WholesaleFuelProduct.ascx" />
+    <Content Include="controls\sci\C05_ExpandingBox.ascx" />
+    <Content Include="controls\sci\A27_LegacyApp.ascx" />
+    <Content Include="controls\sci\B07_SecondaryTitle.ascx" />
+    <Content Include="controls\sci\A04_SpecialScreenTitle.ascx" />
+    <Content Include="controls\sci\A05_SearchBox.ascx" />
+    <Content Include="controls\sci\A03_FauxTable.ascx" />
+    <Content Include="controls\sci\A02_InlineList.ascx" />
+    <Content Include="controls\sci\A01_Breadcrumb.ascx" />
+    <Content Include="controls\sci\A06_SearchFooter.ascx" />
+    <Content Include="controls\sci\A15_ProductList.ascx" />
+    <Content Include="controls\sci\A23_ProductComparison.ascx" />
+    <Content Include="controls\sci\A19_SavedItems.ascx" />
+    <Content Include="controls\sci\A18_ListItems.ascx" />
+    <Content Include="controls\sci\A20_EventList.ascx" />
+    <Content Include="controls\sci\B01_Paragraph.ascx" />
+    <Content Include="controls\sci\B02_Table.ascx" />
+    <Content Include="controls\sci\B03_Image.ascx" />
+    <Content Include="controls\sci\B04_Link.ascx" />
+    <Content Include="controls\sci\nav\GlobalSelector.ascx" />
+    <Content Include="controls\sci\F05_FeaturedItem.ascx" />
+    <Content Include="controls\sci\F03_FeaturedItem.ascx" />
+    <Content Include="controls\sci\nav\MegaNav.ascx" />
+    <Content Include="controls\sci\nav\MobileMenu.ascx" />
+    <Content Include="controls\sci\S03_SurfacedItem.ascx" />
+    <Content Include="controls\sci\SP05_ButtonBar.ascx" />
+    <Content Include="controls\sci\C01_Accordion.ascx" />
+    <Content Include="controls\sci\F02_FeaturedItem.ascx" />
+    <Content Include="controls\sci\FO02_SelectBox.ascx" />
+    <Content Include="controls\sci\FO04_Checkbox.ascx" />
+    <Compile Include="controls\Component.ascx.cs">
+      <DependentUpon>Component.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Component.ascx.designer.cs">
+      <DependentUpon>Component.ascx</DependentUpon>
+    </Compile>
+    <Content Include="controls\sci\A07_SearchFilter.ascx" />
+    <Content Include="controls\sci\FO03_Fieldset.ascx" />
+    <Content Include="controls\sci\FO07_Button.ascx" />
+    <Content Include="controls\sci\S01_SurfacedItem.ascx" />
+    <Content Include="controls\sci\L01_List.ascx" />
+    <Content Include="controls\sci\F01_FeaturedItem.ascx" />
+    <Content Include="controls\sci\SP04_SidebarNav.ascx" />
+    <Content Include="controls\sci\SP06_SocialShare.ascx" />
+    <Content Include="controls\sci\SP07_AppPromotion.ascx" />
+    <Content Include="controls\sci\SP08_StationLocator.ascx" />
+    <Content Include="controls\sci\SP09_Social.ascx" />
+    <Content Include="controls\sci\F04_FeaturedItem.ascx" />
+    <Content Include="controls\sci\T04_ScreenTitle.ascx" />
+    <Content Include="controls\sci\T03_ScreenTitle.ascx" />
+    <Content Include="controls\sci\T02_ScreenTitle.ascx" />
+    <Content Include="controls\sci\T01_ScreenTitle.ascx" />
+    <Content Include="controls\sci\FO05_RadioButton.ascx" />
+    <Content Include="controls\sci\FO06_TextArea.ascx" />
+    <Content Include="controls\sci\C04_Lightbox.ascx" />
+    <Content Include="controls\sci\C03_Carousel.ascx" />
+    <Content Include="controls\sci\SP01_Map.ascx" />
+    <Content Include="controls\sci\FO01_TextInput.ascx" />
+    <Content Include="controls\sci\nav\Header.ascx" />
+    <Content Include="controls\sci\nav\Footer.ascx" />
+    <Content Include="controls\sci\SP02_YouTube.ascx" />
+    <Content Include="controls\sci\SP03_Brightcove.ascx" />
+    <Content Include="controls\sci\C02_Tabs.ascx" />
+    <Content Include="controls\sci\A17_Alert.ascx" />
+    <Content Include="controls\sci\B05_Button.ascx" />
+    <Content Include="controls\sci\B06_Heading.ascx" />
+    <Content Include="controls\KitchenSinkItem.ascx" />
+    <Content Include="controls\Snippet.ascx" />
+    <Content Include="controls\snippets\C01_Accordion.html" />
+    <Content Include="controls\snippets\B05_Button.html" />
+    <Content Include="controls\snippets\A17_Alert.html" />
+    <Content Include="controls\snippets\L01_List.html" />
+    <Content Include="controls\snippets\B01_Paragraph.html" />
+    <Content Include="controls\snippets\B06_Heading.html" />
+    <Content Include="controls\snippets\C02_Tabs.html" />
+    <Content Include="controls\Status.ascx" />
+    <Content Include="CoveoMock.ashx" />
+    <Content Include="controls\changelog\C05_ExpandingBox.json" />
+    <None Include="gruntfile.js" />
+    <Compile Include="KitchenSink.aspx.cs">
+      <DependentUpon>KitchenSink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <None Include="grunt\vendor.js" />
+    <None Include="grunt\ie8.js" />
+    <None Include="grunt\core.js" />
+    <None Include="grunt\app-product-selector.js" />
+    <None Include="grunt\sprites.js" />
+    <None Include="grunt\bootstrap.js" />
+    <None Include="grunt\monitor-files.js" />
+    <Content Include="layouts\ComponentTest.aspx" />
+    <Content Include="layouts\Layout07.aspx" />
+    <Content Include="layouts\Layout06.aspx" />
+    <Content Include="layouts\Layout05.aspx" />
+    <Content Include="layouts\Layout04.aspx" />
+    <Content Include="layouts\Layout03.aspx" />
+    <Content Include="layouts\Layout02.aspx" />
+    <Content Include="layouts\Layout01.aspx" />
+    <Content Include="pages\private\misc\IframeContent.aspx" />
+    <Content Include="pages\private\misc\ProductSeries.aspx" />
+    <Content Include="safari-pinned-tab.svg" />
+    <Content Include="Status.aspx" />
+    <Content Include="Team.aspx" />
+    <Content Include="KitchenSink.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.master" />
+    <Content Include="unit-tests\config\karma.conf.js" />
+    <Content Include="unit-tests\test\lib\angular\angular-mocks.js" />
+    <Content Include="unit-tests\test\unit\extender-service.js" />
+    <Content Include="unit-tests\test\unit\facet-service.js" />
+    <Content Include="Web.config" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="content\sci\css\core\base\_elements.scss" />
+    <None Include="content\sci\css\core\core.scss" />
+    <Content Include="Base.master" />
+    <Content Include="manifest.json" />
+    <None Include="package.json" />
+    <None Include="content\sci\css\core\base\_colors.scss" />
+    <None Include="content\sci\css\core\layout\_table.scss" />
+    <None Include="content\sci\css\core\modules\_icons.scss" />
+    <None Include="content\sci\css\core\modules\_icons-generated.scss" />
+    <None Include="content\sci\css\core\modules\_table.scss" />
+    <None Include="content\sci\css\core\modules\_heading.scss" />
+    <None Include="content\sci\css\core\modules\_button.scss" />
+    <None Include="content\sci\css\core\base\_fonts.scss" />
+    <None Include="content\sci\css\core\base\_mixins.scss" />
+    <None Include="content\sci\css\core\layout\_breakpoints.scss" />
+    <None Include="content\sci\css\core\modules\_list.scss" />
+    <None Include="content\sci\css\core\modules\_index.scss" />
+    <None Include="content\sci\css\core\modules\_modal.scss" />
+    <None Include="content\sci\css\core\modules\_accordion.scss" />
+    <None Include="content\sci\css\core\modules\_alert.scss" />
+    <None Include="content\sci\css\core\modules\_tabs.scss" />
+    <None Include="content\sci\css\core\modules\_carousel.scss" />
+    <None Include="content\sci\css\core\modules\_video.scss" />
+    <None Include="content\sci\css\core\modules\_map.scss" />
+    <None Include="content\sci\css\core\modules\_form.scss" />
+    <None Include="content\sci\css\core\modules\_search-footer.scss" />
+    <None Include="content\sci\css\apps\distributor-locator.scss" />
+    <None Include="content\sci\css\apps\product-selector.scss" />
+    <Content Include="controls\changelog\C01_Accordion.json" />
+    <Content Include="controls\changelog\T01_ScreenTitle.json" />
+    <Content Include="controls\changelog\T02_ScreenTitle.json" />
+    <Content Include="controls\changelog\T03_ScreenTitle.json" />
+    <Content Include="controls\changelog\T04_ScreenTitle.json" />
+    <Content Include="controls\changelog\A17_Alert.json" />
+    <Content Include="controls\changelog\B01_Paragraph.json" />
+    <Content Include="controls\changelog\B05_Button.json" />
+    <Content Include="controls\changelog\C03_Carousel.json" />
+    <Content Include="controls\changelog\FO04_Checkbox.json" />
+    <Content Include="controls\changelog\FO02_SelectBox.json" />
+    <Content Include="controls\changelog\B06_Heading.json" />
+    <Content Include="controls\changelog\B03_Image.json" />
+    <Content Include="controls\changelog\FO01_TextInput.json" />
+    <Content Include="controls\changelog\B04_Link.json" />
+    <Content Include="controls\changelog\C04_Lightbox.json" />
+    <Content Include="controls\changelog\C02_Tabs.json" />
+    <Content Include="controls\changelog\FO06_TextArea.json" />
+    <Content Include="controls\changelog\L01_List.json" />
+    <Content Include="controls\changelog\B02_Table.json" />
+    <Content Include="controls\changelog\A01_Breadcrumb.json" />
+    <Content Include="controls\changelog\A02_InlineList.json" />
+    <Content Include="controls\changelog\A03_FauxTable.json" />
+    <Content Include="controls\changelog\S01_SurfacedItem.json" />
+    <Content Include="controls\changelog\FO03_Fieldset.json" />
+    <Content Include="controls\changelog\FO05_RadioButton.json" />
+    <Content Include="controls\changelog\FO07_Button.json" />
+    <Content Include="controls\changelog\A05_SearchBox.json" />
+    <Content Include="controls\changelog\A18_ListItems.json" />
+    <Content Include="controls\changelog\A15_ProductList.json" />
+    <Content Include="controls\changelog\A19_SavedItems.json" />
+    <Content Include="controls\changelog\SP02_YouTube.json" />
+    <Content Include="controls\changelog\A06_SearchFooter.json" />
+    <Content Include="controls\changelog\SP03_Brightcove.json" />
+    <Content Include="controls\changelog\F01_FeaturedItem.json" />
+    <Content Include="controls\changelog\F02_FeaturedItem.json" />
+    <Content Include="controls\changelog\SP04_SidebarNav.json" />
+    <Content Include="controls\changelog\A04_SpecialScreenTitle.json" />
+    <Content Include="controls\changelog\SP05_ButtonBar.json" />
+    <Content Include="controls\changelog\A20_EventList.json" />
+    <Content Include="controls\changelog\SP06_SocialShare.json" />
+    <Content Include="controls\changelog\SP07_AppPromotion.json" />
+    <Content Include="controls\changelog\SP09_Social.json" />
+    <Content Include="controls\changelog\A23_ProductComparison.json" />
+    <Content Include="controls\changelog\F04_FeaturedItem.json" />
+    <Content Include="controls\changelog\S03_SurfacedItem.json" />
+    <Content Include="controls\changelog\F03_FeaturedItem.json" />
+    <Content Include="controls\changelog\B07_SecondaryTitle.json" />
+    <Content Include="controls\changelog\F05_FeaturedItem.json" />
+    <Content Include="controls\changelog\A08_SmartList.json" />
+    <Content Include="controls\changelog\A09_SmartListAlphabetical.json" />
+    <Content Include="controls\changelog\A21_WhiteOilProduct.json" />
+    <Content Include="controls\changelog\A25_WaxProduct.json" />
+    <Content Include="controls\changelog\A22_SearchSuggestions.json" />
+    <Content Include="controls\changelog\A26_WholesaleFuelProduct.json" />
+    <Content Include="controls\changelog\A24_ProductApplication.json" />
+    <Content Include="controls\changelog\A14_ResourceList.json" />
+    <Content Include="controls\changelog\A16_ProductListWithDataTable.json" />
+    <Content Include="controls\changelog\SP01_Map.json" />
+    <Content Include="controls\changelog\A07_SearchFilter.json" />
+    <Content Include="controls\changelog\SP08_StationLocator.json" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\ava-xom-modular-design.pubxml" />
+    <None Include="Properties\PublishProfiles\emfl-common-templates-latest.pubxml" />
+    <None Include="Properties\PublishProfiles\emfl-common-templates-test.pubxml" />
+    <Content Include="ProductSelector.master" />
+    <Content Include="unit-tests\script\start-server.bat" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controls\ControlDownload.ascx.cs">
+      <DependentUpon>ControlDownload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\ControlDownload.ascx.designer.cs">
+      <DependentUpon>ControlDownload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\KitchenSinkItem.ascx.cs">
+      <DependentUpon>KitchenSinkItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\KitchenSinkItem.ascx.designer.cs">
+      <DependentUpon>KitchenSinkItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Snippet.ascx.cs">
+      <DependentUpon>Snippet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Snippet.ascx.designer.cs">
+      <DependentUpon>Snippet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Status.ascx.cs">
+      <DependentUpon>Status.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Status.ascx.designer.cs">
+      <DependentUpon>Status.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\VariantControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\ComponentTest.aspx.cs">
+      <DependentUpon>ComponentTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\ComponentTest.aspx.designer.cs">
+      <DependentUpon>ComponentTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="model\Enums.cs" />
+    <Compile Include="model\XomflChangelog.cs" />
+    <Compile Include="model\XomflComponentList.cs" />
+    <Compile Include="model\XomflVariation.cs" />
+    <Compile Include="model\XomflComponent.cs" />
+    <Compile Include="model\XomflVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base.master.cs">
+      <DependentUpon>Base.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base.master.designer.cs">
+      <DependentUpon>Base.master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\sci\img\weather\" />
+    <Folder Include="content\sci\js\apps\locator\directives\" />
+    <Folder Include="content\sci\js\apps\region-selector\directives\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35686</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35686/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

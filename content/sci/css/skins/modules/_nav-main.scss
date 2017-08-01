@@ -1,0 +1,41 @@
+﻿@import "../../core/base/mixins";
+
+.nav-main-bar {
+	background-color: $nav-main-bar-background;
+}
+
+.nav-main-item {
+	&:hover {
+		background-color: $nav-main-item-hover-background;
+		color: $nav-main-item-hover-text;
+	}
+}
+
+.nav-main-item:hover, .nav-main-item-active {
+	@include box-shadow(0, 3px, 0, $nav-main-item-hover-border, 0, true);
+}
+
+.nav-main-item-active {
+	background-color: $nav-main-item-active-background;
+}
+
+.nav-main-item-text {
+	color: $nav-main-bar-text-light;
+}
+
+@include if-min(lg) {
+	.nav-main-item {
+		&:hover {
+			color: $nav-main-item-hover-text;
+		}
+
+		> a {
+			color: $nav-main-bar-text-dark;
+		}
+	}
+
+	.nav-main-item-active:hover {
+		background-color: $nav-main-item-active-background;
+		color: $nav-main-item-active-text;
+	}
+}

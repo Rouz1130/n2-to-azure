@@ -1,0 +1,45 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.resource-list {
+	> tbody > tr > td {
+		@include rem-fallback(padding, 16px / 16px, 24px / 16px);
+		vertical-align: middle;
+
+		&.resource-list-icon {
+			@include rem-fallback(padding, 10px / 16px);
+		}
+	}
+}
+
+.resource-list-nowrap {
+	white-space: nowrap;
+	width: 1%;
+}
+
+.resource-list-action {
+	@extend .resource-list-nowrap;
+
+	> a {
+		color: $black;
+		@include font-family(EMprintSemibold);
+		position: relative;
+		@include rem-fallback(top, -6px / 16px);
+	}
+}
+
+.resource-list-icon {
+	@extend .resource-list-nowrap;
+
+	> img {
+		display: inline-block;
+		max-width: none;
+		min-height: 60px;
+		min-width: 60px;
+	}
+}
+
+.resource-list-title {
+	display: block;
+	@include font-family(EMprintSemibold);
+}

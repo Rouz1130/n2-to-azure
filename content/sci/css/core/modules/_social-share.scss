@@ -1,0 +1,51 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.social-share {
+    @include rem-fallback(padding, 20px / 16px);
+    background-color: $black5;
+    text-align: center;
+
+    > .social-share-title {
+        @include rem-fallback(font-size, 18px / 16px);
+    }
+
+    > .social-share-icons {
+        @include rem-fallback(padding, 10px / 16px);
+        @include rem-fallback(margin-left, 0px / 16px);
+        background-color: $white;
+        display:block;
+        @include rem-fallback(margin-top, 20px / 16px);
+
+        > a {
+            margin: 5px;
+
+            > .icon {
+                top: 3px;
+            }
+        }
+    }
+
+    > .social-share-station-detail {
+
+        >a {
+            
+            > .icon{
+                top:10px;
+            }
+        }
+    }
+
+}
+
+@include if-min(md) {
+    .col-2, .col-3, .col-4 {
+        .social-share {
+            > .social-share-icons {
+                display:inline;
+               @include rem-fallback(margin-left, 16px / 16px);
+            }
+        }
+    }
+}

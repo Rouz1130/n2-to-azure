@@ -1,0 +1,20 @@
+﻿@import "icons-generated";
+
+.static-map {
+	display: inline-block;
+    position: relative;
+
+    > .map {
+        display: block;
+        width: 100%;
+    }
+
+    > .icon {
+        display: block;
+        left: 50%;
+        margin-left: -($icon-map-pin-blue-small-width / 2);
+        margin-top: -$icon-map-pin-blue-small-height;
+        position: absolute;
+        top: 50%;
+    }
+}

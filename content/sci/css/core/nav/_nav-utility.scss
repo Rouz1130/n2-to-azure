@@ -1,0 +1,35 @@
+﻿@import "../base/mixins";
+@import "../layout/breakpoints";
+
+@media screen and (max-width: $md-min - 1) {
+	.nav-mobile {
+		display: initial;
+	}
+
+	.nav-tablet,
+	.nav-tablet-up,
+	.nav-desktop {
+		display: none !important;
+	}
+}
+
+@include if-min(md) {
+	.nav-tablet,
+	.nav-tablet-up {
+		display: initial;
+	}
+
+	.nav-mobile {
+		display: none !important;
+	}
+}
+
+@include if-min(lg) {
+	.nav-desktop {
+		display: initial;
+	}
+
+	.nav-tablet {
+		display: none !important;
+	}
+}

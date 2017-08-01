@@ -1,0 +1,1 @@
+﻿angular.module('region-selector', ['ngSanitize', 'xom.shared']);

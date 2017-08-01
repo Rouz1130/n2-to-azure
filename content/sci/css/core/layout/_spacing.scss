@@ -1,0 +1,65 @@
+﻿@import "../base/mixins";
+
+.mb-xs {
+	@include rem-fallback(margin-bottom, 8px / 16px);
+}
+
+.mb-sm {
+	@include rem-fallback(margin-bottom, 16px / 16px);
+}
+
+.mb-md {
+	@include rem-fallback(margin-bottom, 32px / 16px);
+}
+
+.mb-lg {
+	@include rem-fallback(margin-bottom, 48px / 16px);
+}
+
+.mt-xs {
+	@include rem-fallback(margin-top, 8px / 16px);
+}
+
+.mt-sm {
+	@include rem-fallback(margin-top, 16px / 16px);
+}
+
+.mt-md {
+	@include rem-fallback(margin-top, 32px / 16px);
+}
+
+.mt-lg {
+	@include rem-fallback(margin-top, 48px / 16px);
+}
+
+.ml-xs {
+	@include rem-fallback(margin-left, 8px / 16px);
+}
+
+.ml-sm {
+	@include rem-fallback(margin-left, 16px / 16px);
+}
+
+.ml-md {
+	@include rem-fallback(margin-left, 32px / 16px);
+}
+
+.ml-lg {
+	@include rem-fallback(margin-left, 48px / 16px);
+}
+
+.mr-xs {
+	@include rem-fallback(margin-right, 8px / 16px);
+}
+
+.mr-sm {
+	@include rem-fallback(margin-right, 16px / 16px);
+}
+
+.mr-md {
+	@include rem-fallback(margin-right, 32px / 16px);
+}
+
+.mr-lg {
+	@include rem-fallback(margin-right, 48px / 16px);
+}

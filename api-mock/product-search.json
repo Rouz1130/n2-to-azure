@@ -1,0 +1,226 @@
+﻿{
+	"results": [
+		{
+			"title": "Oltiva DTE 732",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva DTE 732",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva DTE 28",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva DTE 28",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva DTE 26",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva DTE 26",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva DTE 24",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva DTE 24",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva DTE 25",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva DTE 25",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva Centaur Moly",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Product Series/Oltiva Centaur Moly",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-drums-resource.jpg",
+			"col0": null,
+			"col2": "Product details and SDS",
+			"col3": null
+		},
+		{
+			"title": "Oltiva Glygoyle Series Oils",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Product Series/Oltiva Glygoyle Series Oils",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-drums-resource.jpg",
+			"col0": null,
+			"col2": "Product details and SDS",
+			"col3": null
+		},
+		{
+			"title": "Oltiva Vactra Oil Medium",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva Vactra Oil Medium",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva Vactra Oil Light",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva Vactra Oil Light",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		},
+		{
+			"title": "Oltiva Vactra Oil HH",
+			"url": "https://fnlstage-Oltiva-ca.avndscxom.com/industrial/Lubricants/Products/Oltiva Vactra Oil HH",
+			"desc": null,
+			"imgurl": "https://fnlstage-Oltiva-ca.avndscxom.com:443/industrial/~/media/amer/us/industrial/industiral lubricants/default icons/lubricant-oil-pour-resource.jpg",
+			"col0": null,
+			"col2": "Product",
+			"col3": null
+		}
+	],
+	"facets": [
+		{
+			"key": "ContentType",
+			"name": "ContentType",
+			"values": [
+				{
+					"key": "Equipment Builder",
+					"name": "Equipment Builder"
+				},
+				{
+					"key": "Product",
+					"name": "Product"
+				},
+				{
+					"key": "Product Series",
+					"name": "Product Series"
+				}
+			]
+		},
+		{
+			"key": "Application",
+			"name": "Applications",
+			"values": [
+				{
+					"key": "Air Compressors",
+					"name": "Air Compressors"
+				},
+				{
+					"key": "Auxilliary Equipment",
+					"name": "Auxilliary Equipment"
+				},
+				{
+					"key": "Bearings and Couplings - Grease Lubricated",
+					"name": "Bearings and Couplings - Grease Lubricated"
+				},
+				{
+					"key": "Food Machinery",
+					"name": "Food Machinery"
+				},
+				{
+					"key": "Gas Engines",
+					"name": "Gas Engines"
+				},
+				{
+					"key": "Gears",
+					"name": "Gears"
+				},
+				{
+					"key": "Hydraulics",
+					"name": "Hydraulics"
+				},
+				{
+					"key": "Machining",
+					"name": "Machining"
+				},
+				{
+					"key": "Mobile Equipment",
+					"name": "Mobile Equipment"
+				},
+				{
+					"key": "Natural Gas Compressors",
+					"name": "Natural Gas Compressors"
+				},
+				{
+					"key": "Turbines",
+					"name": "Turbines"
+				},
+				{
+					"key": "Wind Turbines",
+					"name": "Wind Turbines"
+				}
+			]
+		},
+		{
+			"key": "ProductFeature",
+			"name": "Product Features",
+			"values": [
+				{
+					"key": "Conventional",
+					"name": "Conventional"
+				},
+				{
+					"key": "Corrosion protection",
+					"name": "Corrosion protection"
+				},
+				{
+					"key": "Energy efficient",
+					"name": "Energy efficient"
+				},
+				{
+					"key": "Food grade",
+					"name": "Food grade"
+				},
+				{
+					"key": "Low foam",
+					"name": "Low foam"
+				},
+				{
+					"key": "Micropitting",
+					"name": "Micropitting"
+				},
+				{
+					"key": "Synthetic",
+					"name": "Synthetic"
+				},
+				{
+					"key": "Wide temp",
+					"name": "Wide temp"
+				}
+			]
+		},
+		{
+			"key": "ProductType",
+			"name": "Product Types",
+			"values": [
+				{
+					"key": "a2d4c3a6-66c3-4293-90bc-ba4ef064dedb",
+					"name": "a2d4c3a6-66c3-4293-90bc-ba4ef064dedb"
+				},
+				{
+					"key": "Grease",
+					"name": "Grease"
+				},
+				{
+					"key": "Oil",
+					"name": "Oil"
+				}
+			]
+		}
+	],
+	"searchkeyword": null,
+	"totalCount": 4237
+}

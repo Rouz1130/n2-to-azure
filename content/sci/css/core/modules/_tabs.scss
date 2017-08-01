@@ -1,0 +1,52 @@
+﻿@import "../base/colors";
+
+.no-js {
+	.tab-list-items {
+		.tab-content > .active,
+		.tab-content > .tab-pane {
+			display: block !important;
+            margin-bottom: 2em;
+		}
+
+		.content-list-items {
+			border: none !important;
+			padding: 0 !important;
+		}
+
+		.nav-tabs {
+			display: none !important;
+		}
+	}
+}
+
+.tab-list-items {
+	> .nav-tabs {
+		border-bottom: none;
+
+		> li {
+			margin-right: 8px;
+
+			> a {
+				background: $black10;
+				border-radius: 0;
+				color: $black;
+			}
+
+			&.active > a {
+				border-top: 3px solid $cyan;
+				padding: 8px 15px 10px;
+				background: $white;
+                outline:none;
+			}
+
+            &::selection > a {
+                outline:none;
+            }
+		}
+	}
+
+	.content-list-items {
+		border: 1px solid $black10;
+		padding: 15px;
+	}
+}

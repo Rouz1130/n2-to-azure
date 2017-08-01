@@ -1,0 +1,99 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+@import "variables";
+
+.nav-language {
+	float: right;
+	position: relative;
+}
+
+.nav-language-current {
+	padding: 10px 14px;
+
+	&:after {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $nav-top-bar-divider;
+		content: ' ';
+		display: inline-block;
+		height: 0;
+		margin-bottom: 2px;
+		margin-left: 4px;
+		width: 0;
+	}
+}
+
+.nav-language-list {
+	background-color: $nav-top-bar-background;
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		> a {
+			padding: 10px 12px;
+		}
+
+		&.selected {
+			display: block;
+		}
+	}
+}
+
+.nav-language-open {
+	> .nav-language-list {
+		display: block;
+		position: absolute;
+		z-index: 9;
+	}
+
+	> .nav-language-current {
+		&:after {
+			border-bottom: 5px solid $nav-top-bar-divider;
+			border-top: none;
+		}
+	}
+}
+
+@include if-min(md) {
+	.nav-language-current {
+		display: none !important;
+	}
+
+	.nav-language-list {
+		display: block;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+
+		> li {
+			float: left;
+
+			> a {
+				padding: 10px 5px;
+			}
+
+			&.selected {
+				> a:after {
+					border-bottom: 1px solid $nav-top-bar-divider;
+					bottom: 10px;
+					content: '';
+					left: 5px;
+					position: absolute;
+					width: calc(100% - 10px);
+				}
+			}
+		}
+	}
+
+	.nav-language-open > .nav-language-list {
+		position: relative;
+	}
+}
+
+@include if-min(lg) {
+	.nav-language {
+		margin-right: 10px;
+	}
+}

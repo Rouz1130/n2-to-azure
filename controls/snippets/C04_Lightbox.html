@@ -1,0 +1,51 @@
+﻿<!-- C04.1: Default -->
+
+<!-- Trigger  -->
+<a href="#lightbox-sample" type="button" class="btn btn-primary" data-toggle="modal" data-target="#lightbox-sample">
+    Open Lightbox
+</a>
+
+<!-- Content -->
+<div class="modal fade" id="lightbox-sample" tabindex="-1" role="dialog" aria-labelledby="lightbox-sample-label" aria-hidden="true" data-analytics='{ "manual": true, "en": "CTA", "ct": "Link" }'>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				<h2 class="modal-title" id="lightbox-sample-label">Modal title - H2</h2>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Send</button>
+				<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- C04.2: With iframe -->
+
+<!-- Trigger  -->
+<a href="#lightbox-sample-iframe" type="button" class="btn btn-primary" data-toggle="modal" data-target="#lightbox-sample-iframe">
+    Open Lightbox
+</a>
+
+<!-- Content -->
+<div class="modal modal-iframe fade" id="lightbox-sample-iframe" data-iframe-src="path/to/page" tabindex="-1" role="dialog" aria-labelledby="lightbox-sample-iframe-label" aria-hidden="true" data-analytics='{ "manual": true, "en": "CTA", "ct": "Link" }'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h2 class="modal-title" id="lightbox-sample-iframe-label">Modal title - H2</h2>
+            </div>
+            <div class="modal-body">
+                <iframe scrolling="no" class="iframe-height"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

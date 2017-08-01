@@ -1,0 +1,50 @@
+﻿[
+	{
+		"LocationID": 1,
+		"LocationName": "CHINA 1",
+		"DisplayName": "CHINA 1",
+		"Latitude": 34.579466,
+		"Longitude": 105.6577472,
+		"AddressLine1": "1600 E OLIVE WAY",
+		"AddressLine2": "",
+		"City": "SEATTLE",
+		"StateProvince": "WASHINGTON",
+		"PostalCode": "98102",
+		"Telephone": "(206) 568-5185",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">5:00 AM - 11:00 PM</div>",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	},
+	{
+		"LocationID": 2,
+		"LocationName": "CHINA 2",
+		"DisplayName": "CHINA 2",
+		"Latitude": 34.4533389,
+		"Longitude": 105.5111551,
+		"AddressLine1": "2001 8TH AVE",
+		"AddressLine2": "",
+		"City": "SEATTLE",
+		"StateProvince": "WASHINGTON",
+		"PostalCode": "98121",
+		"Telephone": "(206) 467-5103",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			},
+			{
+				"Name": "UBER Master Card",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	}
+]

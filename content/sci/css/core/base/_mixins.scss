@@ -1,0 +1,206 @@
+﻿// https://web-design-weekly.com/2013/05/12/handy-sass-mixins/
+
+@import "../layout/breakpoints";
+
+@function strip-unit($num) {
+	@return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+		$pxValues: #{$pxValues + $value*16}px;
+
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	}
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+		$remValues: #{$remValues + $value}rem;
+
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	}
+
+	#{$property}: $pxValues;
+	#{$property}: $remValues;
+}
+
+@mixin if-min($point) {
+	@if $point == xl {
+		@media (min-width: $xl-min) {
+			@content;
+		}
+	}
+	@else if $point == lg {
+		@media (min-width: $lg-min) {
+			@content;
+		}
+	}
+	@else if $point == md {
+		@media (min-width: $md-min) {
+			@content;
+		}
+	}
+	@else if $point == sm {
+		@media (min-width: $sm-min) {
+			@content;
+		}
+	}
+	@else if $point == xs {
+		@media (min-width: $xs-min) {
+			@content;
+		}
+	}
+}
+
+@mixin font($name, $file) {
+	$path: "../fonts/" + $file;
+
+	@font-face {
+		font-family: $name;
+		src: url($path + ".eot");
+		src: url($path + ".eot?#iefix") format("embedded-opentype"),
+			 url($path + ".woff") format("woff"),
+			 url($path + ".ttf") format("truetype"),
+			 url($path + ".svg#karbonLight") format("svg");
+		font-style: normal;
+		font-weight: normal;
+	}
+}
+
+@mixin font-family($name) {
+	font-family: $name, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; // stops bg color from leaking outside the border
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); // IE8
+}
+
+@mixin text-truncate {
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin word-wrap() {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+@mixin font-size($sizeValue: 12) {
+	font-size: $sizeValue + px; // fallback for old browsers
+	font-size: (0.125 * $sizeValue) + rem;
+}
+
+@mixin line-height($heightValue: 12) {
+	line-height: $heightValue + px; // fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin text-gradient ($start-color, $end-color) {
+	color: $start-color;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right bottom, from($start-color), to($end-color)); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(left top right bottom, $start-color, $end-color); /* W3C */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin transition($transition-property, $transition-time: 0.35s, $method: ease) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin box-shadow($top, $left: 0, $blur: 0, $color: 0, $spread: 0, $inset: false) {
+	@if ($top == "none") {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	@else if $inset {
+		-webkit-box-shadow: inset $top $left $blur $spread $color;
+		-moz-box-shadow: inset $top $left $blur $spread $color;
+		box-shadow: inset $top $left $blur $spread $color;
+	}
+	@else {
+		-webkit-box-shadow: $top $left $blur $spread $color;
+		-moz-box-shadow: $top $left $blur $spread $color;
+		box-shadow: $top $left $blur $spread $color;
+	}
+}
+
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin transform-origin($origin) {
+	-moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}

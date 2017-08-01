@@ -1,0 +1,80 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.component {
+	*zoom: 1;
+	@include rem-fallback(margin-bottom, 48px / 16px);
+
+	&:after,
+	&:before {
+		content: " ";
+		display: table;
+		line-height: 0;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.component-margin-sm {
+	@include rem-fallback(margin-bottom, 32px / 16px);
+}
+
+.component-margin-xs {
+	@include rem-fallback(margin-bottom, 16px / 16px);
+}
+
+.component-margin-none {
+	margin-bottom: 0;
+}
+
+.component-no-child-margin {
+	.component {
+		margin-bottom: 0;
+	}
+}
+
+.component-padded {
+	@include rem-fallback(padding, 16px / 16px);
+}
+
+.component-shaded {
+	background-color: $black5;
+}
+
+.component-invisible {
+	height: 0;
+	margin: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+@include if-min(md) {
+
+	.component-height-sm {
+		height: 200px;
+	}
+
+	.component-height-md {
+		height: 400px;
+	}
+
+	.component-height-lg {
+		height: 600px;
+	}
+
+	.component-scroll {
+		overflow: auto;
+	}
+
+	.component-scroll-vertical {
+		@extend .component-scroll;
+		overflow-x: hidden;
+	}
+
+	.component-scroll-horizontal {
+		@extend .component-scroll;
+		overflow-y: hidden;
+	}
+}

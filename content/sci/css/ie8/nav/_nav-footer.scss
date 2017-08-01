@@ -1,0 +1,24 @@
+﻿@import "../../core/base/mixins";
+
+#footer-logos a {
+	background: none !important;
+	text-indent: 0 !important;
+}
+
+.footer-logo-large {
+	position: relative;
+	top: 9px;
+}
+
+#footer-related-companies {
+	display: block;
+}
+
+#footer-search {
+	padding-right: 40px !important;
+	padding-top: 10px !important;
+}
+
+.body-mask {
+	background-color: #a3a3a3;
+}

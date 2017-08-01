@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+	<asp:ContentPlaceHolder runat="server" ID="MainContent" />
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="PageStyles">
+	<link href="<%=ResolveUrl("~/content/sci/css/product-selector.min.css")%>" rel="stylesheet" type="text/css" />
+	<style type="text/css">.ng-cloak { display: none; }</style>
+	<asp:ContentPlaceHolder runat="server" ID="PageStyles" />
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="PageScript">
+	<script defer src="<%=ResolveUrl("~/content/vendor/angular/angular.min.js")%>"></script>
+	<script defer src="<%=ResolveUrl("~/content/sci/js/apps/product-selector.min.js")%>"></script>
+	<asp:ContentPlaceHolder runat="server" ID="PageScript" />
+</asp:Content>

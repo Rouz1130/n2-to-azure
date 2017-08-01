@@ -1,0 +1,103 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+@mixin accordion-border($size, $sides...) {
+	$max: length($sides);
+
+	@for $i from 1 through $max {
+		border-#{nth($sides, $i)}: #{$size}px solid $black8;
+	}
+}
+
+.no-js {
+	.panel {
+		border-left-width: 1px !important;
+	}
+
+	.panel-heading {
+		background-color: transparent !important;
+		padding-bottom: 0 !important;
+
+		> a > i {
+			display: none !important;
+		}
+	}
+
+	.panel-collapse {
+		display: block;
+	}
+
+	.panel.active {
+		border-left-color: $black8 !important;
+	}
+}
+
+.panel-no-radius {
+	@include border-radius(0);
+}
+
+.panel-group {
+	.panel {
+		@extend .panel-no-radius;
+		border: none;
+		@include accordion-border(6, left);
+		@include box-shadow(none);
+		@include transition(border-left-color);
+
+		> .panel-heading {
+			@extend .panel-no-radius;
+			@include transition(background-color);
+			@include accordion-border(1, top, right);
+			background-color: $black8;
+			padding-right: $icon-circle-plus-width + 20px;
+			position: relative;
+
+			> a {
+				color: $black;
+				display: block;
+				font-weight: bold;
+                outline:none;
+
+				> i {
+					@include sprite-position($icon-circle-plus);
+				}
+			}
+
+			.icon {
+				position: static;
+			}
+
+			.icon-circle-plus, .icon-circle-minus {
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+
+			+ .panel-collapse > .panel-body {
+				@include accordion-border(1, bottom, right);
+				border-top: none;
+			}
+		}
+
+		&.active {
+			border-left-color: $cyan;
+
+			> .panel-heading {
+				background-color: $white;
+
+				a > i {
+					@include sprite-position($icon-circle-minus);
+				}
+			}
+
+			.panel-collapse {
+
+				> .panel-body:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

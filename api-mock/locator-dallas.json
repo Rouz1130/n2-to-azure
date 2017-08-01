@@ -1,0 +1,50 @@
+﻿[
+	{
+		"LocationID": 1,
+		"LocationName": "Oltiva AT FOREST LANE",
+		"DisplayName": "Oltiva AT FOREST LANE",
+		"Latitude": 32.909293,
+		"Longitude": -96.8728011,
+		"AddressLine1": "3082 FOREST LANE",
+		"AddressLine2": "",
+		"City": "DALLAS",
+		"StateProvince": "TEXAS",
+		"PostalCode": "75234",
+		"Telephone": "(972) 241-3101",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	},
+	{
+		"LocationID": 2,
+		"LocationName": "Oltiva AT WALNUT HILL",
+		"DisplayName": "Oltiva AT WALNUT HILL",
+		"Latitude": 32.8969035,
+		"Longitude": -96.8781062,
+		"AddressLine1": "2992 Walnut Hill Ln",
+		"AddressLine2": "",
+		"City": "DALLAS",
+		"StateProvince": "TEXAS",
+		"PostalCode": "75220",
+		"Telephone": "(214) 904-9274",
+		"WeeklyOperatingDays": "<div class=\"hours\">Mon - Sat</div>",
+		"WeeklyOperatingHours": "<div class=\"hours\">6:00 AM - 10:00 PM</div>",
+		"BrandingImage": "../../../content/site/Oltiva-station.png",
+		"StoreAmenities": [
+			{
+				"Name": "Plenti",
+				"ImageSrc": "https://placehold.it/50x25"
+			},
+			{
+				"Name": "UBER Master Card",
+				"ImageSrc": "https://placehold.it/50x25"
+			}
+		]
+	}
+]

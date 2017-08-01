@@ -1,0 +1,889 @@
+﻿{
+	"components": [
+		{
+			"code": "A01",
+			"name": "Breadcrumb",
+			"ascx": "A01_Breadcrumb",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA01%20Breadcrumb%7Cfd72baa4-f435-4875-9891-e1f7c1279d2c%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "With action" },
+				{ "variation": 3, "name": "Back navigation" },
+				{ "variation": 4, "name": "Heading" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A02",
+			"name": "Inline List",
+			"ascx": "A02_InlineList",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA02%20Inline%20List%7C5afb6420-9783-4eeb-8c05-8fcb812d0a55%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A03",
+			"name": "Faux Table",
+			"ascx": "A03_FauxTable",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA03%20Faux%20table%7C21c7123b-9717-4311-8643-c9d00ec50ed3%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A04",
+			"name": "Special Screen Title",
+			"ascx": "A04_SpecialScreenTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA04%20Special%20Screen%20title%7Cc7e96900-b28f-441a-ad6b-2f4a31ab54d5%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "With favorite link" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A05",
+			"name": "Search Box",
+			"ascx": "A05_SearchBox",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA05%20Search%20box%7Ce8a2b5cd-0111-4bd9-833e-cc620b1a41fd%2F%29",
+			"notes": "<b>UI Team:</b> We need to add a top-level attribute called \"data-event-name\" and JavaScript that will put a message on the bus with that name.  The message data would be the search phrase.",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "With change links" },
+				{ "variation": 3, "name": "With suggestions" },
+				{ "variation": 4, "name": "With searchbox only" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A06",
+			"name": "Search Footer",
+			"ascx": "A06_SearchFooter",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA06%20Search%20footer%7C09141eb8-6d6f-4196-a89b-3f0889fb9a0d%2F%29",
+			"notes": "<b>UI Team:</b> Same approach with message bus as A05.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A07",
+			"name": "Search Filter",
+			"ascx": "A07_SearchFilter",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA07%20Search%20facets%7C9c572678-3326-44e8-a819-8d997b064710%2F%29",
+			"notes": "<b>UI Team:</b> Add a 'Cancel' link next to the 'Apply' button that closes the filter without applying.  Use our checkbox component instead of the checkmark icon.",
+			"variations": [
+				{ "variation": 1, "name": "Collapsed" },
+				{ "variation": 2, "name": "Expanded" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A08",
+			"name": "Smart List (Flat)",
+			"ascx": "A08_SmartList",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA08%20Smart%20flat%20list%7C61559e06-405f-4d16-94f3-6625d201f83c%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A09",
+			"name": "Smart List (Alphabetical)",
+			"ascx": "A09_SmartListAlphabetical",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA09%20Smart%20alphabetical%20index%20list%7C247e8cc8-a9e0-4339-9bf9-08c62af65375%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 3
+		},
+		{
+			"code": "A10",
+			"name": "Resource List",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA10%20Resource%20list%7C251d1abf-1ad5-40b3-b227-27e4df2c77eb%2F%29",
+			"notes": "<b>UI Team:</b> A10-A13 will be handled using L01, S01, and S03.",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "One item" },
+				{ "variation": 3, "name": "Two items" },
+				{ "variation": 4, "name": "Four items" }
+			]
+		},
+		{
+			"code": "A14",
+			"name": "Resource List with CTA",
+			"status": "Complete",
+			"ascx": "A14_ResourceList",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA14%20Resource%20list%20-%20variation%20w%5C%2F%20calls-to-%7C97684113-f3bc-49f1-ba06-1673d881ae37%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A15",
+			"name": "Product List",
+			"ascx": "A15_ProductList",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA15%20Product%20list%7Cf50eef23-8fac-4d1a-97ed-46a435d7c807%2F%29",
+			"notes": "<b>UI Team:</b> We changed A16.1 to A15.2.",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+			],
+			"batch": 4
+		},
+		{
+			"code": "A16",
+			"name": "Product List with Data Table",
+			"ascx": "A16_ProductListWithDataTable",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA16%20Product%20list%20w%5C%2F%20reference%20chart%7C3a03b4c0-be14-4b07-b4c9-a4175f5ab37c%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A17",
+			"name": "Alert",
+			"ascx": "A17_Alert",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA17%20Alerts%7Ced0e6b88-d4b2-473a-88e9-156de552c1ce%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Information" },
+				{ "variation": 2, "name": "Danger" },
+				{ "variation": 3, "name": "Warning" },
+				{ "variation": 4, "name": "Success" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A18",
+			"name": "List Items",
+			"ascx": "A18_ListItems",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA18%20Viewed%20Items%7C54752458-db42-4d47-9fa8-36b7bf798668%2F%29",
+			"notes": "",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A19",
+			"name": "Saved Items",
+			"ascx": "A19_SavedItems",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA19%20Saved%20Items%7C89bf8c9a-87a2-4673-99c2-5bb35333d292%2F%29",
+			"notes": "<b>UI Team:</b> Covered by A18.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			]
+		},
+		{
+			"code": "A20",
+			"name": "Event List",
+			"ascx": "A20_EventList",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA20%20Events%20List%7Cc474d5c6-7ebd-4164-b368-c2cdab6291de%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A21",
+			"name": "White Oil Product",
+			"ascx": "A21_WhiteOilProduct",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA21%20White%20Oil%20Product%7C5910feb7-8f4b-46b0-9e87-85be2ebce0a8%2F%29",
+			"notes":"<b>UI Team:</b> HMTL is almost done but we have to wait for Visual Desing that help us to finish well this task",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A22",
+			"name": "Search Suggestions",
+			"ascx": "A22_SearchSuggestions",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA07a%20Did%20you%20mean%7Cb63ffdbb-a2bf-4ad3-8ede-c37f41976d5e%2F%29",
+			"notes": "",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A23",
+			"name": "Product Comparison",
+			"ascx": "A23_ProductComparison",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA16a%20Product%20comparison%20chart%7C836b5a9d-d3ab-4a79-8bf5-6458871cf2cc%2F%29",
+			"notes": "<b>UI Team:</b> This was originally A16a.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A24",
+			"name": "Product Applications",
+			"ascx": "A24_ProductApplication",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA16b%20Product%20applications%7Cd233e10c-a8ea-4662-b408-e31e90095fe8%2F%29",
+			"notes": "<b>UI Team:</b> This was originally A16b.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A25",
+			"name": "Wax Product",
+			"ascx": "A25_WaxProduct",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA16c%20Wax%20Product%7Cadb4f0e9-5974-4b30-bdfb-ffd2960bfc65%2F%29",
+			"notes": "<b>UI Team:</b> This was originally A16c.  Make a best guess on visual design. HMTL is almost done but we have to wait for Visual Desing that help us to finish well this task",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A26",
+			"name": "Wholesale Fuel Product",
+			"ascx": "A26_WholesaleFuelProduct",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA16d%20Whole%20Sale%20Fuel%20Product%7C2b9d446e-c4aa-41b4-89fe-5b7f7d96f3f3%2F%29",
+			"notes": "<b>UI Team:</b> This was originally A16d.  Make a best guess on visual design.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "A27",
+			"name": "Legacy App",
+			"ascx": "A27_LegacyApp",
+			"status": "Complete",
+			"variations": [
+				{ "variation": 1, "name": "Pairs-Game" },
+				{ "variation": 2, "name": "Calculator" },
+				{ "variation": 3, "name": "Nose-To-Tail" },
+				{ "variation": 4, "name": "Industrial-Schematics" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "B01",
+			"name": "Paragraph",
+			"ascx": "B01_Paragraph",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB01%20Paragraph%7C8d5bd358-4da2-4203-b0a5-6fb60760ccb5%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "Large" },
+				{ "variation": 3, "name": "Small" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B02",
+			"name": "Table",
+			"ascx": "B02_Table",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB02%20Table%7C15faa122-bc6c-4d60-ad90-5840ecd8a86d%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Maximized" },
+				{ "variation": 2, "name": "Minimized" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B03",
+			"name": "Image",
+			"ascx": "B03_Image",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB03%20Image%7Cebf0f26d-b10a-4e83-9bb3-024e97bc7a9e%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Block" },
+				{ "variation": 2, "name": "Floated left" },
+				{ "variation": 3, "name": "Floated right" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B04",
+			"name": "Link",
+			"ascx": "B04_Link",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB04%20Hyperlink%7Cce2f9690-e7a6-477f-91f9-dbaa6b449f80%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "With arrow" },
+				{ "variation": 3, "name": "With icon" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B05",
+			"name": "Button",
+			"ascx": "B05_Button",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB05%20Button%7Cbf25eb94-eb0c-4f00-920b-07efb3341126%2F%29",
+			"notes": "<b>UI Team:</b> We're building a few representative variations.  Color, size, and icon will be three rendering parameters in Sitecore.",
+			"variations": [
+				{ "variation": 1, "name": "Primary color" },
+				{ "variation": 2, "name": "Secondary color" },
+				{ "variation": 3, "name": "Tertiary color" },
+				{ "variation": 4, "name": "Deemphasized" },
+				{ "variation": 5, "name": "Small" },
+				{ "variation": 6, "name": "Large" },
+				{ "variation": 7, "name": "Icon" },
+				{ "variation": 8, "name": "Badge" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B06",
+			"name": "Heading",
+			"ascx": "B06_Heading",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB06%20Rich%20text%20area%7C77df1ea3-9d4f-4b36-b982-6b7d8d479bef%2F%29",
+			"notes": "<b>UI Team:</b> This was originally a Rich Text component, but we're using it for headings.",
+			"variations": [
+				{ "variation": 1, "name": "H1" },
+				{ "variation": 2, "name": "H2" },
+				{ "variation": 3, "name": "H2 large" },
+				{ "variation": 4, "name": "H3" },
+				{ "variation": 5, "name": "H3 bold" },
+				{ "variation": 6, "name": "H4" },
+				{ "variation": 7, "name": "H5" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "B07",
+			"name": "Secondary Title",
+			"ascx": "B07_SecondaryTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FB01a%20Secondary%20title%7C4e221b48-8077-4527-a490-3e024ebad535%2F%29",
+			"notes": "<b>UI Team:</b> This was originally B01a.  Make a best guess on visual design.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "C01",
+			"name": "Accordion",
+			"ascx": "C01_Accordion",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FC01%20Accordion%7Cbccc1dc1-ac66-4583-9383-700f2a997def%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"children": [ "B01", "B03", "F01", "F02", "F03", "F04", "F05" ],
+			"defaultChild": "B01.1",
+			"batch": 1
+		},
+		{
+			"code": "C02",
+			"name": "Tabs",
+			"ascx": "C02_Tabs",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FC02%20Tabs%7C0a63ab15-8018-4fb9-81b0-6840b629e3e9%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"children": [ "B01", "B03", "F01", "F02", "F03", "F04", "F05" ],
+			"defaultChild": "B01.1",
+			"batch": 1
+		},
+		{
+			"code": "C03",
+			"name": "Carousel",
+			"ascx": "C03_Carousel",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FC03%20Carousel%7Cc4080d1f-98cb-4093-abe1-c39467d44c2d%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 3, "name": "Thumbnails below" }
+			],
+			"children": [ "T01", "T02", "T03", "T04", "F01", "F02", "F03", "F04", "F05" ],
+			"defaultChild": "T04.1",
+			"batch": 1
+		},
+		{
+			"code": "C04",
+			"name": "Lightbox",
+			"ascx": "C04_Lightbox",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FC04%20Lightbox%7Cdeb9f6aa-d2ca-4822-81b6-b9c8e8938390%2F%29",
+			"variations": [
+                { "variation": 1, "name": "Default" },
+                { "variation": 2, "name": "With iframe" }
+			],
+			"children": [ "B01", "B02", "B03", "B04", "B05", "B06", "F01", "F02", "F03", "F04", "F05", "A27" ],
+			"defaultChild": "B01.1",
+			"batch": 1
+		},
+		{
+			"code": "C05",
+			"name": "Expanding Box",
+			"ascx": "C05_ExpandingBox",
+			"status": "Complete",
+			"variations": [
+                { "variation": 1, "name": "Default" }
+			],
+			"children": [ "A08", "A09", "B01", "B02", "B03", "B04", "B05", "B06", "F01", "F02", "F03", "F04", "F05", "A27" ],
+			"defaultChild": "A08.1",
+			"batch": 1
+		},
+		{
+			"code": "F01",
+			"name": "Featured Item (Title Overlay)",
+			"ascx": "F01_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF01%20Featured%20Item%20%28title%20overlay%5C%29%7C4a88cca6-2b0c-4f18-9c50-46334602fbb6%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "F02",
+			"name": "Featured Item (Full Overlay)",
+			"ascx": "F02_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF02%20Featured%20Item%20%28full%20overlay%5C%29%7Ca38e5654-905e-46a7-afee-91f0ad4acc79%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Light text" },
+				{ "variation": 2, "name": "Dark text" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "F03",
+			"name": "Featured Item (Split)",
+			"ascx": "F03_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF03%20Featured%20Item%20%28split%5C%29%7C68cf39be-081e-427a-b1ff-b4db2fa655bb%2F%29",
+			"notes": "<b>UI Team:</b> Use an H2 tag.  Assigned to Andres.",
+			"variations": [
+				{ "variation": 1, "name": "Image right" },
+				{ "variation": 2, "name": "Image left" },
+				{ "variation": 3, "name": "Small image right" },
+				{ "variation": 4, "name": "Small image left" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "F04",
+			"name": "Featured Item (Slide Topic)",
+			"ascx": "F04_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF04%20Featured%20Item%20%28slide%20topic%5C%29%7C296d4059-eea8-4b3f-9236-ae18b27b902d%2F%29",
+			"notes": "<b>UI Team:</b> Use an H2 tag.  Assigned to Luciano.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "F05",
+			"name": "Featured Item (Location & Weather)",
+			"ascx": "F05_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF05%20Featured%20Item%20%28location%20%20weather%5C%29%7C66125e25-9c75-48ce-a317-42efcbf531e0%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "F06",
+			"name": "Featured Item (In-Page App)",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF06%20Featured%20Item%20%28In-page%20app%5C%29%7C2aa6f63a-150b-4259-93f9-e8c3bab2f136%2F%29",
+			"notes": "<b>UI Team:</b> Austin said this is not a separate component; it's a 2-2 with two Featured Items.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+		},
+		{
+			"code": "FO01",
+			"name": "Text Input",
+			"ascx": "FO01_TextInput",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO01%20Text%20input%7C2285afcd-effb-4de8-b814-7be50e19b076%2F%29",
+			"notes": "<b>Anshul:</b> We need to discuss your expectations of us regarding form field validation (e.g. who will author client-side validation scripts).",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "With optional marker" },
+				{ "variation": 3, "name": "With error marker" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO02",
+			"name": "Select Box",
+			"ascx": "FO02_SelectBox",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO02%20Select%20box%7C6fcbfcbc-5bd6-499c-a7e2-696120aceb3b%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO03",
+			"name": "Fieldset",
+			"ascx": "FO03_Fieldset",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO03%20Fieldset%20label%7Ca1b87edd-d294-4018-8e42-9bb8da442746%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO04",
+			"name": "Checkbox",
+			"ascx": "FO04_Checkbox",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO04%20Radio%20buttons%20and%20Checkboxes%7C407e996e-b28e-40df-a9dd-5ace239fedab%2F%29",
+			"notes": "<b>UI Team:</b> We split Checkbox and Radio Button into separate components with default and inline variations.",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "Inline" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO05",
+			"name": "Radio Button",
+			"ascx": "FO05_RadioButton",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO04%20Radio%20buttons%20and%20Checkboxes%7C407e996e-b28e-40df-a9dd-5ace239fedab%2F%29",
+			"notes": "<b>UI Team:</b> Same note as FO04.",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "Inline" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO06",
+			"name": "Text Area",
+			"ascx": "FO06_TextArea",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO06%20Text%20area%7C9f08e33c-fa8f-4435-b1e0-35d653f0eaa2%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "FO07",
+			"name": "Button",
+			"ascx": "FO07_Button",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FFO07%20Submit%20and%20Cancel%20button%7Cbfebd6c6-77af-47a8-8336-43b4a0fc978c%2F%29",
+			"notes": "<b>UI Team:</b> We need to combine the two variations into one with both buttons.  The 'Cancel' button is actually a link.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "L01",
+			"name": "List",
+			"ascx": "L01_List",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FL01%20List%7Cbd48d2b6-abdb-4693-8c20-956602de7068%2F%29",
+			"notes": "<b>UI Team:</b> We need to add a top-level attribute called \"data-event-name\" and JavaScript that will put a message on the bus with that name.  An AJAX call will return HTML for the additional items to show, and our script will update the DOM.",
+			"variations": [
+				{ "variation": 1, "name": "1-up" },
+				{ "variation": 2, "name": "2-up" },
+				{ "variation": 3, "name": "3-up" },
+				{ "variation": 4, "name": "4-up" },
+				{ "variation": 5, "name": "5-up" },
+				{ "variation": 6, "name": "6-up" }
+			],
+			"children": [ "B01", "B03", "B04", "B05", "B06", "S01", "S03" ],
+			"defaultChild": "S01.1",
+			"batch": 2
+		},
+		{
+			"code": "L02",
+			"name": "List (Query)",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FL02%20List%20%28query%5C%29%7Cd22281db-5884-4c6c-94fb-f5b994d69ca1%2F%29",
+			"notes": "<b>UI Team:</b> This will use the L01 template.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			]
+		},
+		{
+			"code": "L03",
+			"name": "List (Bound)",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FL03%20List%20%28bound%5C%29%7C67b10010-0f4a-413e-877d-49b2d7f3bccd%2F%29",
+			"notes": "<b>UI Team:</b> This will use the L01 template.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			]
+		},
+		{
+			"code": "R01",
+			"name": "Resource",
+			"ascx": "R01_Resource",
+			"status": "Complete",
+			"notes": "Had to add this to build BBDO mockups",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 5
+		},
+		{
+			"code": "S01",
+			"name": "Surfaced Item (No Overlay)",
+			"ascx": "S01_SurfacedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS01%20Surfaced%20Item%20%28horizontal%5C%29%7C0d4e9150-1e3f-4a84-9891-8fca3d8f8ee8%2F%29",
+			"notes": "<b>UI Team:</b> This covers Lautaro's S01, S02, S04, and S04a (horizontal and vertical, optional heading, optional static map image)",
+			"variations": [
+				{ "variation": 1, "name": "Horizontal" },
+				{ "variation": 2, "name": "Vertical" },
+				{ "variation": 3, "name": "Horizontal with intro text" },
+				{ "variation": 4, "name": "Vertical with intro text" },
+				{ "variation": 5, "name": "Horizontal with static map" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "S02",
+			"name": "Surfaced Item (Vertical)",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS02%20Surfaced%20Item%20%28vertical%5C%29%7Ccdac7034-d09c-4968-abf4-2b6c247c7263%2F%29",
+			"notes": "<b>UI Team:</b> Replaced by S01.2",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			]
+		},
+		{
+			"code": "S03",
+			"name": "Surfaced Item (Overlay)",
+			"ascx": "S03_SurfacedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS03%20Surfaced%20Item%20%28overlay%5C%29%7C49e91169-d604-44e8-9a12-1043afaeeda4%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "No text" },
+				{ "variation": 2, "name": "With text" }
+			],
+			"batch": 2
+		},
+		{
+			"code": "S04",
+			"name": "Surfaced Item (Intro Text)",
+			"status": "NotRequired",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS04%20Surfaced%20Item%20%28intro%20text%5C%29%7Cff6f75a1-01ee-4b67-9fc8-9a620a39f838%2F%29",
+			"notes": "<b>UI Team:</b> Replaced by S01.1 and S01.4; static map image is just like any other image from a template perspective",
+			"variations": [
+				{ "variation": 1, "name": "Default" },
+				{ "variation": 2, "name": "Static map" }
+			]
+		},
+		{
+			"code": "SP01",
+			"name": "Map",
+			"ascx": "SP01_Map",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP01%20Map%7Cb27d6429-586f-4639-985d-d487e7bd1060%2F%29",
+			"notes": "<b>BBDO:</b> Visual design should be available 6/19 for popups and polygon overlays.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP02",
+			"name": "Video (YouTube)",
+			"ascx": "SP02_YouTube",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP02%20Video%20%28youtube%5C%29%7C9043a6af-1647-44d6-b0fa-407dc2716e97%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "16:9" },
+				{ "variation": 2, "name": "4:3" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP03",
+			"name": "Video (Brightcove)",
+			"ascx": "SP03_Brightcove",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP03%20Video%20%28brightcove%5C%29%7C94186c42-cb98-41e0-9481-80972766c408%2F%29",
+			"notes": "<b>UI Team:</b> We need to determine if customizations (removing info/share icons, etc) can be done via HTML parameters or if it must be done in the Brightcove admin.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP04",
+			"name": "Sidebar Navigation",
+			"ascx": "SP04_SidebarNav",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP04%20Sidebar%20navigation%7C93b34189-b054-424c-b0ef-5533dc1d819d%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Left" },
+				{ "variation": 2, "name": "Right" },
+				{ "variation": 3, "name": "Icons" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP05",
+			"name": "Button Bar",
+			"ascx": "SP05_ButtonBar",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP05%20Button%20bar%7Ca39b2ea7-cded-4867-8178-237a8476cc92%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP06",
+			"name": "Social Share",
+			"ascx": "SP06_SocialShare",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FSP05%20Button%20bar%7Ca39b2ea7-cded-4867-8178-237a8476cc92%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP07",
+			"name": "App Promotion",
+			"ascx": "SP07_AppPromotion",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FSC-SP1%20App%20promotion%7C19ad0a5c-9399-46ca-884a-279501fa2769%2F%29",
+			"notes": "<b>Lautaro:</b> Was coded SC-SP1.<br/>",
+			"variations": [
+                { "variation": 1, "name": "Default" },
+                { "variation": 2, "name": "Mini" } 
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP08",
+			"name": "Station Locator",
+			"ascx": "SP08_StationLocator",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FSC-SP2%20Station%20locator%7C5a23ddba-d862-4e9d-8491-3c33b55fce2c%2F%29",
+			"notes": "",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP09",
+			"name": "Social",
+			"ascx": "SP09_Social",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FSC-SP3%20Twitter%7Ca6058e3c-e743-4aa0-a0dc-f9a0fb999f02%2F%29",
+			"notes": "<b>UI Team:</b> Was originally coded SC-SP3.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
+		{
+			"code": "SP10",
+			"name": "Data Visualization",
+			"ascx": "SP10_DataVisualization",
+			"status": "Complete",
+			"variations": [
+				{ "variation": 1, "name": "Image" },
+				{ "variation": 2, "name": "Text" }
+			],
+			"batch": 5
+		},
+		{
+			"code": "T01",
+			"name": "Screen Title (Default)",
+			"ascx": "T01_ScreenTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT01%20Screen%20Title%20%28default%5C%29%7C1f6294ba-fbd7-4c9a-b82f-288d2aaa373a%2F%29",
+			"notes": "<b>UI Team:</b> Use an H1 tag.",
+			"variations": [
+				{ "variation": 1, "name": "Title overlay" },
+				{ "variation": 2, "name": "Title only" },
+				{ "variation": 3, "name": "No image" },
+				{ "variation": 4, "name": "Title above" },
+				{ "variation": 5, "name": "Title below" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "T02",
+			"name": "Screen Title (Full-Width Intro)",
+			"ascx": "T02_ScreenTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT02%20Screen%20Title%20%28full-width%20intro%5C%29%7Cb5fe01b2-c266-4382-82ec-063d9c28fc20%2F%29",
+			"notes": "<b>UI Team:</b> Use an H1 tag.",
+			"variations": [
+				{ "variation": 1, "name": "Image right" },
+				{ "variation": 2, "name": "Image left" },
+				{ "variation": 3, "name": "No image" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "T03",
+			"name": "Screen Title (Split)",
+			"ascx": "T03_ScreenTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT03%20Screen%20Title%20%28split%5C%29%7C23a06303-ec32-4b9a-912f-a04c1a00ad4c%2F%29",
+			"notes": "<b>UI Team:</b> Use an H1 tag.",
+			"variations": [
+				{ "variation": 1, "name": "Image left" },
+				{ "variation": 2, "name": "Image right" }
+			],
+			"batch": 1
+		},
+		{
+			"code": "T04",
+			"name": "Screen Title (Full Overlay)",
+			"ascx": "T04_ScreenTitle",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT03%20Screen%20Title%20%28split%5C%29%7C23a06303-ec32-4b9a-912f-a04c1a00ad4c%2F%29",
+			"notes": "<b>UI Team:</b> Use an H1 tag.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 1
+		}
+	]
+}

@@ -1,0 +1,106 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.social {
+
+    .social-data {
+        border: 1px solid $black10;
+
+        > .social-follow {
+            background-color: $black5;
+            @include rem-fallback(padding, 20px / 16px);
+
+            > .social-app {
+                text-align: center;
+
+                > .icon {
+                    margin: auto;
+                    @include rem-fallback(margin-bottom, 40px / 16px);
+
+                    &:after {
+                        @include box-shadow(0px, 110px, 8px, $black10);
+                        content: "";
+                        display: block;
+                        height: 5px;
+                        position: relative;
+                        width: 100%;
+                    }
+                }
+
+                > .social-app-text {
+                    display: block;
+
+                    > .icon {
+                        margin-right: 3px;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+
+        > .social-message {
+            @include rem-fallback(padding, 20px / 16px);
+
+            > .social-options {
+                > a {
+                    float: right;
+                }
+            }
+
+            > .social-talk {
+
+                > p {
+                    font-family: "EMprintLight";
+                    @include word-wrap();
+                }
+            }
+        }
+    }
+}
+
+@include if-min(md) {
+
+    .col-2, .col-3, .col-4 {
+
+        .social-data {
+
+            .social-follow,
+            .social-message {
+                display: table-cell;
+                width: percentage(1 / 2);
+            }
+
+            .social-follow {
+                text-align: center;
+                vertical-align: middle;
+
+                > .social-app {
+                    float: left;
+                    width: 50%;
+                }
+            }
+
+            .social-message {
+                vertical-align: top;
+
+                .social-talk {
+                    > p {
+                        @include rem-fallback(font-size, 40px / 16px);
+                    }
+                }
+            }
+        }
+    }
+
+    .col-1{
+        .social-data {
+            > .social-follow {
+                > .social-app {
+                    @include rem-fallback(padding, 20px / 16px);
+                }
+            }
+        }
+    }
+
+}

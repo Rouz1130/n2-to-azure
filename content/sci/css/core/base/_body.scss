@@ -1,0 +1,72 @@
+﻿@import "colors";
+@import "mixins";
+@import "../layout/breakpoints";
+
+.body-wrapper {
+	background-color: $white;
+	@include box-shadow(0, 4px, 16px, rgba(0, 0, 0, 0.3));
+	margin: 0 auto;
+	max-width: $xl-max;
+	position: relative;
+	right: 0;
+	@include transition(right, 0.35s);
+}
+
+.body-frameless {
+	background-color: $white;
+}
+
+.body-content {
+	padding-top: 20px;
+}
+
+.body-mask {
+	background-color: $body-mask;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 8;
+}
+
+html.nav-search-open {
+	.body-mask {
+		display: block;
+	}
+}
+
+html.nav-main-mobile-transition,
+html.nav-main-mobile-open,
+html.nav-global-selector-open {
+	body {
+		overflow: hidden;
+	}
+}
+
+html.nav-main-mobile-open {
+	.body-wrapper {
+		right: 80%;
+	}
+}
+
+@include if-min(md) {
+	.body-content {
+		padding-top: 30px;
+	}
+}
+
+@include if-min(lg) {
+	html.nav-main-mobile-open {
+		.body-wrapper {
+			right: 0;
+		}
+	}
+
+	html.nav-meganav-open {
+		.body-mask {
+			display: block;
+		}
+	}
+}

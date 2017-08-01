@@ -1,0 +1,31 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+@import "variables";
+
+.nav-top-bar {
+	background-color: $nav-top-bar-background;
+	height: $nav-top-bar-height;
+	position: relative;
+
+	a,
+	a:hover,
+	a:active,
+	a:focus {
+		color: $nav-top-bar-text;
+		display: block;
+		@include font-family(EMprintSemibold);
+		@include rem-fallback(font-size, 13px / 16px);
+		white-space: nowrap;
+	}
+}
+
+.nav-top-bar-left {
+	float: left;
+	height: $nav-top-bar-height;
+}
+
+.nav-top-bar-right {
+	float: right;
+	height: $nav-top-bar-height;
+}

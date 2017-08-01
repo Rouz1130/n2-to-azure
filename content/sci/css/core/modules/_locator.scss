@@ -1,0 +1,144 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.station-locator-panel {
+
+	.station-locator-data {
+
+		.station-locator-titles {
+
+			> span {
+				display: block;
+			}
+
+			h2 {
+				margin: 0, 0, 10px, 0;
+			}
+
+			.station-locator-open {
+				color: $dark-secondary-blue;
+				font-family: "EMprintSemibold";
+			}
+		}
+
+		.station-locator-point {
+			display: table;
+
+			.icon-map-pin-blue-small {
+				background-image: none;
+				display: table-cell;
+				vertical-align: middle;
+
+				&:after {
+					content: " ";
+					display: block;
+					@include sprite($icon-map-pin-blue-small);
+				}
+			}
+
+			> span {
+				display: table-cell;
+				@include rem-fallback(padding-left, 15px / 16px);
+			}
+		}
+
+		.station-locator-information {
+
+			.station-telephone {
+				margin-bottom: 10px;
+
+				.icon-telephone-list {
+					@include sprite($icon-telephone-list);
+					vertical-align: middle;
+				}
+
+				> span {
+					@include rem-fallback(padding-left, 7px / 16px);
+				}
+			}
+		}
+
+		.station-locator-titles,
+		.station-locator-point,
+		.station-locator-information {
+			margin-bottom: 15px;
+		}
+	}
+
+	.station-locator-options {
+
+		.station-direction,
+		.station-find {
+			@include rem-fallback(padding, 10px / 16px);
+
+			> a {
+				text-align: center;
+				display: block;
+				color: $white;
+
+				i {
+					vertical-align: sub;
+				}
+
+				> span {
+					@include rem-fallback(padding-left, 10px / 16px);
+				}
+			}
+		}
+
+		.station-direction {
+			margin-bottom: 10px;
+			background-color: $dark-secondary-blue;
+
+			.icon-world-white {
+				@include sprite($icon-world-white);
+			}
+		}
+
+		.station-find {
+			background-color: $cyan-secondary;
+
+			.icon-search-white {
+				@include sprite($icon-search-white);
+			}
+		}
+	}
+}
+
+@include if-min(md) {
+
+	.col-2, .col-3, .col-4 {
+
+		.station-locator-panel {
+
+			.station-locator-data {
+
+				.station-locator-information {
+
+					> div {
+						display: inline-block;
+					}
+
+					.station-telephone {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.station-locator-options {
+
+				.station-direction,
+				.station-find {
+					display: inline-block;
+					text-align: center;
+					width: 48%;
+				}
+
+				.station-direction {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

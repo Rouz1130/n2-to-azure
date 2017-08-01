@@ -1,0 +1,41 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.search-suggestions {
+	background-color: $black10;
+	@include rem-fallback(padding, 20px / 16px);
+	position: relative;
+
+	> .icon {
+		position: absolute;
+	}
+
+	> .search-suggestions-text {
+		margin: -4px 0 0 50px;
+
+		> .search-suggestions-title {
+			color: $green;
+			margin-bottom: 0;
+		}
+
+		> .list {
+			margin-left: 8px;
+
+			> li {
+				> a {
+					color: $black;
+					position: relative;
+
+					&.glyph-link-bullet {
+						&:before {
+							content: "\203A";
+							left: -8px;
+							margin-right: 5px;
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+}

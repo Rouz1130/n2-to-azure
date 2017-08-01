@@ -1,0 +1,25 @@
+﻿@import "../base/colors";
+
+.index {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		border-right: 1px solid $black15;
+		float: left;
+		height: 1em;
+		margin-bottom: 1em;
+		position: relative;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		> a {
+			padding: 0 12px;
+			position: relative;
+			top: -2px;
+		}
+	}
+}

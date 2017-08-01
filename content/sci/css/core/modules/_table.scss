@@ -1,0 +1,257 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.no-js {
+	.table-faux {
+		.tables {
+			h3.h5, p {
+				min-height: 72px;
+			}
+
+			h3.h5 {
+				padding: 0;
+
+				> span {
+					position: absolute;
+					top: 20%;
+					padding: 4%;
+				}
+			}
+		}
+	}
+}
+
+.table-border {
+	border: 1px solid $black10;
+}
+
+.table {
+	@extend .table-border;
+	border-collapse: collapse;
+	margin-bottom: 0;
+
+	> thead {
+		background-color: $black10;
+
+		> tr > th {
+			@extend .table-border;
+			border-left-color: $white;
+			border-right-color: $white;
+			font-family: "EMprintSemibold";
+
+			&:first-child {
+				border-left-color: $black10;
+			}
+
+			&:last-child {
+				border-right-color: $black10;
+			}
+		}
+	}
+
+	tbody td {
+		@extend .table-border;
+	}
+
+	&.table-minimized {
+		width: auto;
+	}
+
+	&.table-maximized {
+		width: 100%;
+	}
+}
+
+@mixin common-rows {
+	display: block;
+	padding: 10px;
+	margin: 0;
+}
+
+.table-faux {
+	.tables {
+		border-bottom: 1px solid $black10;
+		float: left;
+		padding: 0;
+		position: relative;
+		text-align: left;
+		width: 100%;
+
+		h3.h5 {
+			@include common-rows;
+			background-color: $black10;
+			margin-left: -1px;
+
+			> span {
+				display: block;
+				position: relative;
+				top: 50%;
+				@include transform(translateY(-50%));
+			}
+		}
+
+		& + .tables h3.h5 {
+			border-left: 1px solid $white;
+		}
+
+		p {
+			@include common-rows;
+			@include rem-fallback(font-size, 16px / 16px);
+			border-left: 1px solid $black10;
+			border-right: 1px solid $black10;
+			margin-left: -1px;
+		}
+	}
+
+	.tables:first-child p {
+		color: $blue;
+		font-family: "EMprintSemibold";
+	}
+
+	.tables:last-child p {
+		border-right: 1px solid $black10;
+	}
+}
+
+
+.col-2 {
+	.tables {
+		width: percentage(1 / 2);
+	}
+}
+
+.col-3 {
+	.tables {
+		width: percentage(1 / 3);
+	}
+}
+
+.col-4 {
+	.tables {
+		width: percentage(1 / 4);
+	}
+}
+
+@include if-min(md) {
+	.col-1 {
+		.tables {
+			width: percentage(1 / 2);
+		}
+
+		.table-responsive {
+			> .table {
+				> tbody {
+					> tr {
+						> td {
+							p.table-image {
+								width: 350px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.col-2 {
+		.tables {
+			width: percentage(1 / 3);
+		}
+	}
+
+	.col-3 {
+		.tables {
+			width: percentage(1 / 4);
+		}
+	}
+
+	.col-4 {
+		.tables {
+			width: percentage(1 / 6);
+		}
+	}
+}
+
+@include if-min(lg) {
+	.col-1 {
+		.tables {
+			width: percentage(1 / 2);
+		}
+	}
+
+	.col-2 {
+		.tables {
+			width: percentage(1 / 4);
+		}
+	}
+
+	.col-3 {
+		.tables {
+			width: percentage(1 / 7);
+		}
+	}
+
+	.col-4 {
+		.tables {
+			width: percentage(1 / 7);
+		}
+	}
+}
+
+.bp-max-xs, .bp-max-sm, .bp-max-md {
+	.table.table-vertical {
+		> thead {
+			> tr {
+				> th {
+					display: none;
+				}
+			}
+		}
+
+		> tbody {
+			> tr {
+				> td {
+					border-right: none;
+					border-bottom: none;
+					display: block;
+					padding: 0;
+
+					&:before {
+						background-color: #e6e6e6;
+						border-bottom: 1px solid #fff;
+						content: attr(data-th) ": ";
+						display: inline-block;
+						font-family: EMprintSemibold;
+						margin-right: 10px;
+						padding: 10px;
+						vertical-align: middle;
+						width: 8em;
+					}
+				}
+			}
+		}
+	}
+
+	table.table-no-header {
+		> tbody {
+			> tr {
+				&:nth-child(odd) {
+					background: $black10;
+					border-bottom: 1px solid #ddd;
+					border-top: 1px solid #ddd;
+				}
+
+				&:nth-child(even) {
+					border-bottom: 2px solid #ddd;
+				}
+
+				> td {
+					border-bottom: 1px solid #fff;
+					display: block;
+					width: 100%;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}

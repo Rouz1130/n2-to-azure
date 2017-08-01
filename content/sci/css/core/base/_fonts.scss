@@ -1,0 +1,11 @@
+﻿@import "mixins";
+
+@include font("EMprintLight", "EMprintW05-Light");
+@include font("EMprintLightItalic", "EMprintW05-LightItalic");
+@include font("EMprint", "EMprintW05-Regular");
+@include font("EMprintItalic", "EMprintW05-RegularItalic");
+@include font("EMprintSemibold", "EMprintW05-Semibold");
+@include font("EMprintSemiboldItalic", "EMprintW05-SemiboldItalic");
+@include font("EMprintBold", "EMprintW05-Bold");
+@include font("EMprintBoldItalic", "EMprintW05-BoldItalic");
+@include font("em", "em");

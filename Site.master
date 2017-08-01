@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Base.master" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XOMFL.CommonComponents.SiteMaster" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="BodyContent">
+	<xom:MobileMenu runat="server" />
+	<div class="body-wrapper">
+		<xom:Header runat="server" />
+		<div class="body-content container-fluid">
+			<asp:ContentPlaceHolder runat="server" ID="MainContent" />
+		</div>
+		<xom:Footer runat="server" />
+		<div class="body-mask"></div>
+	</div>
+	<xom:GlobalSelector runat="server" />
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="PageStyles">
+	<asp:ContentPlaceHolder runat="server" ID="PageStyles" />
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="PageScript">
+	<asp:ContentPlaceHolder runat="server" ID="PageScript" />
+	<script defer>
+
+		// Two other test cases we have to consider
+		//var wepAnalytics = ;
+		//var wepAnalytics = null;
+
+		var wepAnalytics = {
+			"https://localexca.com:443/en": [{
+				"sc_goals": "RTL-G2,RTL-G24",
+				"sc_tags": null,
+				"sc_engagement_plan": null,
+				"sc_engagement_plan_state": null,
+				"sc_campaigns": null
+			}],
+			"https://localexca.com:443/en/car-maintenance-tips": [{
+				"sc_goals": null,
+				"sc_tags": "Cancel transaction1,Rate1"
+			}, {
+				"sc_goals": null,
+				"sc_tags": "Cancel transaction2,Rate2"
+			}, {
+				"sc_goals": null,
+				"sc_tags": "Cancel transaction3,Rate3"
+			}, {
+				"sc_goals": null,
+				"sc_tags": "Cancel transaction4,Rate4"
+			}, {
+				"sc_goals": null,
+				"sc_tags": "Cancel transaction5,Rate5"
+			}],
+			"~/link.aspx?_id=443C8370CAE048BA9255F98FEF17F57A\u0026amp;_z=z": [{
+				"sc_goals": "RTL-G15,RTL-G20",
+				"sc_tags": null,
+				"sc_engagement_plan": null,
+				"sc_engagement_plan_state": null,
+				"sc_campaigns": null
+			}]
+		};
+	</script>
+</asp:Content>

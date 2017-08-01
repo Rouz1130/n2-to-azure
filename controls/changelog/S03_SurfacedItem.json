@@ -1,0 +1,30 @@
+﻿{
+	"component": "Surfaced Item",
+	"versions": [
+		{
+			"version": 1,
+			"date": "6/17/2015",
+			"changes": [ "Initial version." ]
+		},
+		{
+			"version": 2,
+			"date": "6/30/2015",
+			"changes": [ "Added global component class." ]
+		},
+		{
+			"version": 3,
+			"date": "7/7/2015",
+			"changes": [ "Replaced H4 elements with H3." ]
+		},
+		{
+			"version": 4,
+			"date": "10/29/2015",
+			"changes": [ "Removed image width restrictions." ]
+		},
+		{
+			"version": 5,
+			"date": "11/17/2015",
+			"changes": [ "Updated to support latest requirements." ]
+		}
+	]
+}

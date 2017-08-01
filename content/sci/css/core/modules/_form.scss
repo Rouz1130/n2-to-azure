@@ -1,0 +1,335 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+$input-lg-height: 56px;
+
+@mixin checkables() {
+	background-color: $black10;
+	border: 1px solid $black35;
+	cursor: pointer;
+}
+
+@mixin formGroupLabel {
+	@include rem-fallback(font-size, 20px / 16px);
+	font-weight: normal;
+	width: 100%;
+}
+
+.checkboxes, .radio-buttons {
+
+	> label {
+		@include formGroupLabel;
+	}
+
+	> .form-group {
+		@include rem-fallback(margin-bottom, 10px / 16px);
+
+		> label {
+			margin-bottom: 0;
+		}
+	}
+
+	> label.error {
+		background-color: $red;
+		color: #fff;
+		display: block;
+		font-weight: normal;
+		@include rem-fallback(font-size, 16px / 16px);
+		@include rem-fallback(margin-top, 10px / 16px);
+		@include rem-fallback(padding, 10px / 16px);
+	}
+}
+
+.form-control {
+	@include box-shadow(none);
+	@include rem-fallback(font-size, 16px / 16px);
+}
+
+.form-group-lg {
+	margin-bottom: 1.85em;
+	display: table;
+
+	.form-control {
+		@include border-radius(0);
+		@include text-truncate;
+
+		@include placeholder() {
+			color: $black;
+			font-family: "EMprintLight";
+		}
+
+		background-color: $black10;
+		display: table-cell;
+		font-family: "EMprintSemibold";
+		@include rem-fallback(font-size, 16px / 16px);
+		height: $input-lg-height;
+		line-height: 1.5rem;
+		padding-left: 24px;
+
+		&:focus {
+			background-color: $white;
+		}
+	}
+
+	.form-group-btn {
+		display: table-cell;
+		vertical-align: middle;
+		width: 1%;
+	}
+}
+
+.form-group-lg.info {
+	margin-bottom: 0;
+}
+
+.group-info {
+	border-bottom: 1px solid $black10;
+	border-left: 1px solid $black10;
+	border-right: 1px solid $black10;
+	color: $grey;
+	display: table;
+	height: 55px;
+	margin-bottom: 1.85em;
+	padding-top: 15px;
+	position: relative;
+	width: 100%;
+
+	p {
+		display: table-cell;
+		text-align: center;
+		width: auto;
+
+		span {
+			font-family: "EMprintSemibold";
+		}
+	}
+}
+
+.form-group {
+	margin-bottom: 20px;
+
+	label {
+		cursor: pointer;
+	}
+
+	> input[type="checkbox"] {
+		display: none;
+
+		+ label {
+			@include rem-fallback(font-size, 16px / 16px);
+			padding-left: 27px;
+
+			&:before {
+				@include checkables;
+				content: "";
+				display: inline-block;
+				height: 20px;
+				margin-right: 7px;
+				margin-left: -27px;
+				vertical-align: sub;
+				width: 20px;
+			}
+
+			.icon {
+				display: none;
+			}
+		}
+
+		&:checked + label {
+			border: none;
+			background: transparent;
+
+			&:before {
+				@include sprite($icon-checked);
+				@include box-shadow(0, 0, 5px, $cyan);
+				border: 1px solid $cyan;
+			}
+
+			.icon {
+				left: -1px;
+				margin: 0;
+				position: relative;
+				top: 4px;
+			}
+		}
+
+		&:disabled + label {
+			border: none;
+			cursor: not-allowed;
+		}
+	}
+
+	> input[type="radio"] {
+		display: none;
+
+		+ label {
+			@include rem-fallback(font-size, 16px / 16px);
+			position: relative;
+			padding-left: 25px;
+
+			&:before {
+				@include checkables;
+				@include border-radius(100%);
+				content: "";
+				display: inline-block;
+				height: 18px;
+				margin-right: 7px;
+				margin-left: -25px;
+				position: relative;
+				top: 3px;
+				width: 18px;
+			}
+		}
+
+		&:checked + label {
+			&:before {
+				@include border-radius(100%);
+				@include box-shadow(0, 0, 5px, $cyan);
+				background-color: $white;
+				border: 1px solid $cyan;
+				display: inline-block;
+				height: 18px;
+				position: relative;
+				width: 18px;
+			}
+
+			.icon {
+				@include border-radius(100%);
+				@include box-shadow(0, 0, 3px, $cyan);
+				background-color: $cyan;
+				display: inline-block;
+				height: 6px;
+				left: 6px;
+				position: absolute;
+				top: 9px;
+				width: 6px;
+			}
+		}
+
+		&:disabled + label {
+			border: none;
+			cursor: not-allowed;
+		}
+	}
+}
+
+.form-group .form-control,
+.input-group .form-control {
+	@include border-radius(0);
+	font-family: EMprintSemibold;
+	background-color: $black10;
+	border: 1px solid $black10;
+	color: #2b2626;
+	height: 50px;
+}
+
+.form-control:focus {
+	background-color: $white;
+	border: 1px solid $cyan;
+}
+
+.form-control.error {
+	background-color: #fff;
+	border: solid 1px #d42e12;
+}
+
+.form-group label {
+	@include formGroupLabel;
+
+	&.error {
+		background-color: $red;
+		color: #fff;
+		display: block;
+		@include rem-fallback(font-size, 16px / 16px);
+		@include rem-fallback(padding, 10px / 16px);
+	}
+}
+
+.form-group .input-optional {
+	@include rem-fallback(font-size, 13px / 16px);
+	font-family: "EMprintSemibold";
+	float: right;
+	color: #808080;
+	margin-top: 10px;
+}
+
+.form-group textarea.form-control {
+	resize: none;
+	height: 250px;
+	position: relative;
+}
+
+.select {
+	background-color: $black10;
+	overflow: hidden;
+	height: $icon-drop-arrow-bg-height;
+	position: relative;
+	width: 100%;
+
+	.icon-drop-arrow {
+		position: absolute;
+		right: 0;
+		top: 0;
+		pointer-events: none;
+		background-color: $black20;
+		z-index: 2;
+	}
+
+	> .select-wrapper {
+		left: 0;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+
+		> select {
+			-webkit-appearance: none;
+			background-color: transparent !important;
+		}
+	}
+}
+
+/* Fix for inability to hide IE8-10 dropdown arrow */
+.ie8 .select-wrapper,
+.ie9 .select-wrapper,
+.ie10 .select-wrapper {
+	right: -45px;
+	z-index: 3;
+}
+
+.form-inline {
+	.form-group {
+		margin-right: 25px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+/* 
+	This is for the A05 modals, but is too generic and needs to be refactored
+	so we don't have to override for ajax-form below.
+*/
+.modal-body {
+	.form-inline {
+		margin-bottom: 20px;
+
+		.form-group {
+			display: block;
+			margin-bottom: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+.ajax-form {
+	.modal-body {
+		.form-inline {
+			.form-group {
+				display: inline-block;
+				margin-right: 25px;
+			}
+		}
+	}
+}

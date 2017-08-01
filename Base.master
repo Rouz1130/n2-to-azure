@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="XOMFL.CommonComponents.BaseMaster" %>
+
+<!DOCTYPE html>
+<html lang="en" class="no-js <%= Request.QueryString["Test"] == "yes" ? "test" : "" %>">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="DCSext.vs" content="emfl-kitchen-sink-sessionid-test">
+	<meta name="wep_analytics" content="<%= ResolveUrl("~/api-mock/AnalyticsHandler.ashx") %>">
+	<meta name="bingMapKey" content="AosRPyeyN8q-MWILWvfNCQikd8sy0_e4RFdjJu_QHuGHX6n9bzqdFdU9Cx9lYcGT">
+    <title><%: Page.Title %> - EMFL</title>
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="<%=ResolveUrl("~/content/vendor/ie8/html5shiv.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/ie8/selectivizr-min.js")%>"></script>
+	<![endif]-->
+    <!-- We'll combine framework and core styles into a single stylesheet (e.g. global.min.css) -->
+    <link href="~/content/vendor/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="~/content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/sci/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="<%=ResolveUrl("~/content/sci/css/" + HttpContext.Current.Items["skin"] + ".min.css")%>" rel="stylesheet" type="text/css">
+    <!--[if (lt IE 9) & (!IEMobile)]>
+	<link href="~/content/sci/css/ie8.min.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<style type="text/css">.ng-cloak { display: none; }</style>
+    <asp:ContentPlaceHolder ID="PageStyles" runat="server" />
+    <!-- Stylesheets below are only used on this temporary site, not XOMFL -->
+    <link href="~/content/site/site.css" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="ExxonMobil">
+	<meta name="application-name" content="ExxonMobil">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<form runat="server">
+		<asp:ContentPlaceHolder ID="BodyContent" runat="server" />
+	</form>
+	<div id="wait-message">Loading...</div>
+
+	<script src="<%=ResolveUrl("~/content/vendor/jquery/jquery.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/bootstrap/js/bootstrap.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/slick/slick.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/jquery/jquery.validate.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/jquery/jquery.cookie.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/typeahead/typeahead.bundle.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/moment/moment.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/content/sci/js/core.min.js")%>"></script>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="<%=ResolveUrl("~/content/vendor/ie8/respond.min.js")%>"></script>
+	<script src="<%=ResolveUrl("~/content/vendor/ie8/rem.min.js")%>"></script>
+	<![endif]-->
+    <asp:ContentPlaceHolder ID="PageScript" runat="server" />
+    <!-- Scripts below are only used on this temporary site, not XOMFL -->
+
+    <% if (Request.QueryString["Test"] != "yes") { %>
+	<!--[if (gt IE 8)]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	<![endif]-->
+    <% } %>
+
+    <script src="<%=ResolveUrl("~/content/site/site.js")%>"></script>
+	<!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+	<!-- Copyright (c) 2015 Webtrends Inc.  All rights reserved. -->
+	<script>
+	window.webtrendsAsyncInit=function(){
+		var dcs=new Webtrends.dcs().init({
+			dcsid:"dcs222tj28dj2dwbbcjngfur9_8z6e",
+			domain:"statse.webtrendslive.com",
+			timezone:-6,
+			i18n:true,
+			offsite:true,
+			download:true,
+			downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip,ppt,pptx,flv,mp4",
+			onsitedoms:"<%= Request.ServerVariables["SERVER_NAME"] %>",
+			fpcdom: ".esso.com",
+			plugins:{
+				//hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+			}
+			}).track();
+	};
+	(function(){
+		var s=document.createElement("script"); s.async=true; s.src="<%= ResolveUrl("~/content/vendor/webtrends/webtrends.min.js") %>";    
+		var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+	}());
+	</script>
+	<noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcs222tj28dj2dwbbcjngfur9_8z6e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.23&amp;dcssip=www.esso.com"/></noscript>
+	<!-- END OF SmartSource Data Collector TAG v10.4.23 -->
+</body>
+</html>

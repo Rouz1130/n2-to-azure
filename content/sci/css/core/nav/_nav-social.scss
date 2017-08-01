@@ -1,0 +1,143 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+@import "../modules/icons-generated";
+@import "variables";
+
+.nav-social {
+	float: right;
+	margin-right: 8px;
+	position: relative;
+	top: 0;
+
+	&.nav-social-on {
+		> .nav-social-icons {
+			left: 50%;
+			@include transform(scale(1) translateX(-50%) translateY(0px));
+		}
+	}
+
+	> .nav-social-trigger {
+		color: $nav-top-bar-text;
+		display: block;
+		@include font-family(EMprintSemibold);
+		@include rem-fallback(font-size, 13px / 16px);
+		margin: 0 9px;
+		position: relative;
+		top: 10px;
+	}
+
+	> .nav-social-icons {
+		background-color: $nav-social-popup-background;
+		@include border-radius(3px);
+		display: table;
+		left: 0;
+		padding: 0 8px;
+		position: absolute;
+		@include transform(scale(0) translateX(-50%) translateY(-10px));
+		@include transform-origin(25% 0);
+		@include transition(all, 240ms, ease-out);
+		top: 35px;
+		z-index: 5;
+
+		&:after {
+			border-bottom: 8px solid $nav-social-popup-background;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 0;
+			content: '';
+			left: 50%;
+			height: 0;
+			top: -5px;
+			margin-left: -8px;
+			position: absolute;
+			width: 0;
+		}
+
+		> li {
+			display: table-cell;
+			padding: 0 3px;
+
+			> a {
+				padding: 9px 5px 5px;
+
+				> .icon-facebook-round {
+					@include sprite-position($icon-facebook-round-clear);
+				}
+
+				> .icon-linkedin-round {
+					@include sprite-position($icon-linkedin-round-clear);
+				}
+
+				> .icon-twitter-round {
+					@include sprite-position($icon-twitter-round-clear);
+				}
+
+				> .icon-youtube-round {
+					@include sprite-position($icon-youtube-round-clear);
+				}
+			}
+		}
+	}
+}
+
+@include if-min(md) {
+	.nav-social-few {
+		margin-right: 0;
+
+		> .nav-social-trigger {
+			display: none !important;
+		}
+
+		> .nav-social-icons {
+			background: none;
+			border: none;
+			position: relative;
+			top: 9px;
+			@include transform(none);
+			@include transform-origin(none);
+
+			&:after {
+				display: none;
+			}
+
+			> li {
+				> a {
+					padding-top: 0;
+
+					> .icon-facebook-round {
+						@include sprite-position($icon-facebook-round);
+					}
+
+					> .icon-facebook-round:hover {
+						@include sprite-position($icon-facebook-round-hover);
+					}
+
+					> .icon-linkedin-round {
+						@include sprite-position($icon-linkedin-round);
+					}
+
+					> .icon-linkedin-round:hover {
+						@include sprite-position($icon-linkedin-round-hover);
+					}
+
+					> .icon-twitter-round {
+						@include sprite-position($icon-twitter-round);
+					}
+
+					> .icon-twitter-round:hover {
+						@include sprite-position($icon-twitter-round-hover);
+					}
+
+					> .icon-youtube-round {
+						@include sprite-position($icon-youtube-round);
+					}
+
+					> .icon-youtube-round:hover {
+						@include sprite-position($icon-youtube-round-hover);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+﻿@import "../base/mixins";
+
+.text-red-orange {
+	@include text-gradient(#D42E12, #ED8B00);
+}
+.text-blue-cyan {
+	@include text-gradient(#0047BA, #00A3E0);
+}
+.text-green-lime {
+	@include text-gradient(#00A14D, #B4D405);
+}
+.text-plum-ruby {
+	@include text-gradient(#890C58, #D73872);
+}
+.text-seablue-turquoise {
+	@include text-gradient(#007096, #00ACA8);
+}

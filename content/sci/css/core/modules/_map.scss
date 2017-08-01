@@ -1,0 +1,105 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.map {
+	height: 500px;
+	position: relative;
+	width: 100%;
+}
+
+.map-popup {
+	background-color: $white;
+	border: 1px solid $black35;
+	@include box-shadow(1px, 1px, 3px, rgba($black, .2), 2px);
+	@include rem-fallback(font-size, 13px / 16px);
+	line-height: 1.5;
+	@include rem-fallback(padding, 16px / 16px, 48px / 16px, 16px / 16px, 16px / 16px);
+	position: relative;
+	white-space: nowrap;
+
+	> .close {
+		font-size: 48px;
+		font-weight: normal;
+		@include rem-fallback(line-height, 16px / 16px);
+		position: absolute;
+		right: 5px;
+		top: 10px;
+	}
+
+	> .icon-popup-arrow {
+		bottom: -$icon-popup-arrow-height;
+		left: 50%;
+		margin-left: -($icon-popup-arrow-width / 2);
+		position: absolute;
+	}
+}
+
+.map-popup-baidu {
+	left: -50%;
+	margin-left: -5px;
+	top: -($icon-map-pin-blue-small-height + $icon-popup-arrow-height + 6);
+}
+
+.map-popup-info {
+	display: table;
+	min-width: 100%;
+}
+
+.map-popup-address,
+.map-popup-logo {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.map-popup-logo {
+	padding-left: 25px;
+	text-align: right;
+
+	> img {
+		max-width: none;
+	}
+}
+
+.map-popup-title {
+	@include rem-fallback(font-size, 13px / 16px);
+	font-family: "EMprintSemibold";
+	margin-top: 0;
+}
+
+.map-popup-links {
+	margin-bottom: 0;
+
+	> li {
+		display: inline-block;
+
+		&:after {
+			content: "|";
+			@include rem-fallback(margin, 0, 8px / 16px);
+		}
+
+		&:last-child:after {
+			content: "";
+		}
+	}
+}
+
+.map-baidu {
+	.BMap_shadow {
+		display: none;
+	}
+
+	.BMap_pop {
+		@include rem-fallback(font-size, 13px / 16px);
+	}
+
+	img {
+		max-width: none;
+	}
+}
+
+.map-pin {
+	display: inline-block;
+	height: $icon-pin-dark-blue-height;
+	width: $icon-pin-dark-blue-width;
+}

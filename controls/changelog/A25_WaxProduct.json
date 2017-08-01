@@ -1,0 +1,10 @@
+﻿{
+    "component": "Wax Product",
+	"versions": [
+		{
+			"version": 1,
+			"date": "6/19/2015",
+			"changes": [ "Initial version." ]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+/.vs/*
+/packages/*
+/node_modules/*
+/bin/*
+/obj/*
+/Properties/PublishProfiles/*.user
+*.user
+*.vspscc

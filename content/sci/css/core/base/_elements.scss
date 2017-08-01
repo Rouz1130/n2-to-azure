@@ -1,0 +1,56 @@
+﻿@import "colors";
+@import "mixins";
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	background-color: $body-background;
+	color: $black;
+	font-size: 16px;
+	height: 100%;
+}
+
+body, p {
+	@include font-family(EMprint);
+	line-height: 1.5;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+
+	&:active {
+		outline: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.disabled {
+		color: $silver;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+em {
+	@include font-family(EMprintItalic);
+	font-style: normal;
+}
+
+strong {
+	@include font-family(EMprintBold);
+	font-weight: normal;
+}
+
+em > strong,
+strong > em {
+	@include font-family(EMprintBoldItalic);
+	font-style: normal;
+	font-weight: normal;
+}

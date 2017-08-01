@@ -1,0 +1,91 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../layout/breakpoints";
+
+.surfaced-item {
+	position: relative;
+
+	.glyph-link {
+		font-family: "EMprintSemibold";
+	}
+}
+
+.surfaced-item-image {
+	border: 1px solid $black12;
+	@include rem-fallback(margin-bottom, 1);
+	width: 100%;
+
+	&.static-map {
+		width: auto;
+	}
+}
+
+.surfaced-intro-text,
+.surfaced-item-copy {
+	> h3 {
+		font-family: "EMprintSemibold";
+		@include rem-fallback(font-size, 20px / 16px);
+		margin-top: 0;
+	}
+}
+
+.surfaced-item-overlay {
+	.surfaced-item-content-image {
+		display: block;
+		@include rem-fallback(margin-bottom, 1);
+		position: relative;
+
+		> img {
+			max-width: percentage(1 / 1);
+			width: percentage(1 / 1);
+		}
+
+		> .surfaced-item-label-image {
+			@include rem-fallback(padding, 10px / 16px);
+			background-color: rgba(0,0,0,.8);
+			bottom: 0;
+			position: absolute;
+			width: percentage(1 / 1);
+
+			> h3 {
+				color: $white;
+				font-family: "EMprintSemibold";
+				@include rem-fallback(font-size, 20px / 16px);
+				@include rem-fallback(margin, 2px / 16px);
+				text-align: center;
+			}
+		}
+	}
+}
+
+.bp-md {
+	> .surfaced-item.surfaced-item-horizontal {
+		display: table;
+		width: 100%;
+
+		.surfaced-intro-text {
+			display: table-caption;
+		}
+
+		.surfaced-item-horizontal-row {
+			display: table-row;
+		}
+
+		.surfaced-item-image {
+			display: table-cell;
+			vertical-align: top;
+
+			&.static-map {
+				display: inline-block;
+			}
+		}
+
+		.surfaced-item-copy {
+			display: table-cell;
+			@include rem-fallback(padding-bottom, 16px / 16px);
+			@include rem-fallback(padding-left, 1);
+			vertical-align: top;
+			width: 75%;
+		}
+	}
+}

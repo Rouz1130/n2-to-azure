@@ -1,0 +1,22 @@
+﻿@import "../base/mixins";
+
+.product-application-table {
+	> tbody {
+		> tr {
+			> td {
+				margin: 0;
+				font-family: "EMprintSemibold";
+			}
+		}
+	}
+}
+
+.product-application > h2{
+    padding-left:10px;
+}
+
+@include if-min(lg) {
+    .product-application > h2{
+        padding-left:0;
+    }
+}

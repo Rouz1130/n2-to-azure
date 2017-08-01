@@ -1,0 +1,22 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+#wait-message {
+	background-color: $white;
+	@include box-shadow(0, 0, 10px, $black20, 1px);
+	color: $dark-secondary-blue;
+	@include rem-fallback(font-size, 13px / 16px);
+	left: 50%;
+	@include opacity(0);
+	padding: 5px 30px;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	@include transition(opacity, 0.2s);
+	z-index: -1;
+
+	&.active {
+		@include opacity(1);
+		z-index: 999;
+	}
+}

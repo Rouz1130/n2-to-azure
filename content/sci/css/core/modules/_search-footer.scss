@@ -1,0 +1,10 @@
+﻿@import "../base/mixins";
+
+.search-footer {
+	text-align: center;
+
+	> button {
+		display: inline-block;
+		@include rem-fallback(margin-bottom, 25px / 16px);
+	}
+}

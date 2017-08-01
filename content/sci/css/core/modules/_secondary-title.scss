@@ -1,0 +1,28 @@
+﻿@import "../base/mixins";
+
+.secondary-title{
+    .secondary-title-title{
+        >h3{
+            margin:0;
+        }
+    }
+}
+
+@include if-min(md){
+
+    .col-2, .col-3, .col-4{
+
+        .secondary-title{
+            >div{
+                display:inline-block;
+            }
+        }
+
+        .secondary-title-link{
+            float:right;
+        }
+
+    }
+}
+
+

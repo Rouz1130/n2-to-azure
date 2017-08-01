@@ -1,0 +1,625 @@
+﻿$weather-height-lg: 540px;
+$weather-height-md: 400px;
+$weather-height-sm: 189px;
+
+.weather {
+	height: $weather-height-sm;
+	position: relative;
+
+	.weather-animation {
+		background-color: #4584b4;
+		bottom: 0;
+		display: block;
+		height: $weather-height-sm;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+
+	.no-weather,
+	.lens-flare-img {
+		display: none;
+	}
+
+	.station-img {
+		display: none;
+		height: 160px;
+		max-width: none;
+		position: absolute;
+		right: -30px;
+		top: 30px;
+		width: 533px;
+		z-index: 1;
+	}
+
+	&.weather-day .station-img.day,
+	&.weather-day .station-img.no-shadow.show,
+	&.weather-eve .station-img.eve {
+		display: block;
+	}
+
+	&.weather-eve .lens-flare-img,
+	&.weather-eve .station-img.no-shadow.show,
+	&.weather-eve .station-img.no-shadow {
+		display: none !important;
+	}
+
+	&.weather-eve .Clouds .viewport {
+		background-color: #262d30;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#191e20), to(#262d30));
+		background-image: -webkit-linear-gradient(top, #191e20, #262d30);
+		background-image: -moz-linear-gradient(top, #191e20, #262d30);
+		background-image: -ms-linear-gradient(top, #191e20, #262d30);
+		background-image: -o-linear-gradient(top, #191e20, #262d30);
+		background-image: linear-gradient(to bottom, #191e20, #262d30);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#191e20', EndColorStr='#262d30')";
+	}
+
+	&.weather-eve .Clouds .viewport.lot {
+		background-color: #191f21;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#262d30), to(#191f21));
+		background-image: -webkit-linear-gradient(top, #262d30, #191f21);
+		background-image: -moz-linear-gradient(top, #262d30, #191f21);
+		background-image: -ms-linear-gradient(top, #262d30, #191f21);
+		background-image: -o-linear-gradient(top, #262d30, #191f21);
+		background-image: linear-gradient(to bottom, #262d30, #191f21);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#262d30', EndColorStr='#191f21')";
+	}
+
+	&.weather-eve .Clouds .viewport-wrapper .background-fade {
+		background-color: #052c3b;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#020a19), to(#052c3b));
+		background-image: -webkit-linear-gradient(top, #020a19, #052c3b);
+		background-image: -moz-linear-gradient(top, #020a19, #052c3b);
+		background-image: -ms-linear-gradient(top, #020a19, #052c3b);
+		background-image: -o-linear-gradient(top, #020a19, #052c3b);
+		background-image: linear-gradient(to bottom, #020a19, #052c3b);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#020a19', EndColorStr='#052c3b')";
+	}
+
+	&.weather-eve .Snow .viewport-wrapper .background-fade {
+		background-color: #051f2a;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#000409), to(#051f2a));
+		background-image: -webkit-linear-gradient(top, #000409, #051f2a);
+		background-image: -moz-linear-gradient(top, #000409, #051f2a);
+		background-image: -ms-linear-gradient(top, #000409, #051f2a);
+		background-image: -o-linear-gradient(top, #000409, #051f2a);
+		background-image: linear-gradient(to bottom, #000409, #051f2a);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#000409', EndColorStr='#051f2a')";
+	}
+
+	.Clouds.Clear .lens-flare-img {
+		display: block;
+		max-width: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 400px;
+		height: 269px;
+		-webkit-animation: fade 3s linear infinite;
+		-moz-animation: fade 3s linear infinite;
+		-ms-animation: fade 3s linear infinite;
+		-o-animation: fade 3s linear infinite;
+		animation: fade 3s linear infinite;
+	}
+
+	.Clouds.Clear .lens-flare-img.sml {
+		-webkit-animation: fade 3.5s linear infinite;
+		-moz-animation: fade 3.5s linear infinite;
+		-ms-animation: fade 3.5s linear infinite;
+		-o-animation: fade 3.5s linear infinite;
+		animation: fade 3.5s linear infinite;
+	}
+
+	.Clouds .viewport-wrapper {
+		position: relative;
+		height: $weather-height-sm;
+		overflow: hidden;
+	}
+
+	.Clouds .viewport-wrapper .background-fade {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: $weather-height-sm;
+		display: none;
+		background-color: #a8aeb2;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#d1d6da), to(#a8aeb2));
+		background-image: -webkit-linear-gradient(top, #d1d6da, #a8aeb2);
+		background-image: -moz-linear-gradient(top, #d1d6da, #a8aeb2);
+		background-image: -ms-linear-gradient(top, #d1d6da, #a8aeb2);
+		background-image: -o-linear-gradient(top, #d1d6da, #a8aeb2);
+		background-image: linear-gradient(to bottom, #d1d6da, #a8aeb2);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#d1d6da', EndColorStr='#a8aeb2')";
+	}
+
+	.Clouds .viewport {
+		-webkit-perspective: 1000;
+		-moz-perspective: 1000px;
+		-o-perspective: 1000;
+		perspective: 1000px;
+		box-sizing: content-box;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: $weather-height-sm;
+		overflow: hidden;
+		background-color: #5cabdc;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#99caed), to(#5cabdc));
+		background-image: -webkit-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -moz-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -ms-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -o-linear-gradient(top, #99caed, #5cabdc);
+		background-image: linear-gradient(to bottom, #99caed, #5cabdc);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#99caed', EndColorStr='#5cabdc')";
+	}
+
+	.Clouds .world {
+		box-sizing: content-box;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		margin-left: -256px;
+		margin-top: -256px;
+		height: 512px;
+		width: 512px;
+		-moz-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		pointer-events: none;
+	}
+
+	.Clouds .world div {
+		box-sizing: content-box;
+		-moz-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+
+	.Clouds .cloud-base {
+		position: absolute;
+		left: 256px;
+		top: 256px;
+		width: 20px;
+		height: 20px;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+
+	.Clouds .cloud-layer {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 256px;
+		max-width: 256px;
+		height: 256px;
+		margin-left: -128px;
+		margin-top: -128px;
+		-moz-transition-property: opacity;
+		-o-transition-property: opacity;
+		-webkit-transition-property: opacity;
+		transition-property: opacity;
+		-moz-transition-duration: 0.5s;
+		-o-transition-duration: 0.5s;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+		-moz-transition-timing-function: ease-out;
+		-o-transition-timing-function: ease-out;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+
+	.Snow .viewport-wrapper .background-fade {
+		background-color: #fff;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#efe3e3), to(#fff));
+		background-image: -webkit-linear-gradient(top, #efe3e3, #fff);
+		background-image: -moz-linear-gradient(top, #efe3e3, #fff);
+		background-image: -ms-linear-gradient(top, #efe3e3, #fff);
+		background-image: -o-linear-gradient(top, #efe3e3, #fff);
+		background-image: linear-gradient(to bottom, #efe3e3, #ffffff);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#efe3e3', EndColorStr='#fff')";
+	}
+
+	.Snow .station-img {
+		z-index: 0;
+	}
+
+	.Snow .snowflake {
+		padding-left: 15px;
+		font-family: Cambria, Georgia, serif;
+		font-size: 14px;
+		line-height: 24px;
+		position: fixed;
+		color: #FFFFFF;
+		user-select: none;
+		z-index: 1000;
+	}
+
+	.Snow .snow-canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.Rain .station-img {
+		z-index: 1;
+	}
+
+	.Rain .viewport-wrapper .background-fade {
+		background-color: #78a1bb;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#78a1bb));
+		background-image: -webkit-linear-gradient(top, #999, #78a1bb);
+		background-image: -moz-linear-gradient(top, #999, #78a1bb);
+		background-image: -ms-linear-gradient(top, #999, #78a1bb);
+		background-image: -o-linear-gradient(top, #999, #78a1bb);
+		background-image: linear-gradient(to bottom, #999999, #78a1bb);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#999', EndColorStr='#78a1bb')";
+	}
+
+	.Rain .rain-base {
+		width: 100%;
+		height: $weather-height-sm;
+		border: 1px dashed green;
+	}
+
+	.Rain .drop {
+		width: 10px;
+		height: 30px;
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		-webkit-animation: fall 0.8s linear infinite;
+		-moz-animation: fall 0.8s linear infinite;
+		-ms-animation: fall 0.8s linear infinite;
+		-o-animation: fall 0.8s linear infinite;
+		animation: fall 0.8s linear infinite;
+	}
+
+	.Rain .drop.angled {
+		z-index: 1;
+		-webkit-animation: fallangled 0.8s linear infinite;
+		-moz-animation: fallangled 0.8s linear infinite;
+		-ms-animation: fallangled 0.8s linear infinite;
+		-o-animation: fallangled 0.8s linear infinite;
+		animation: fallangled 0.8s linear infinite;
+	}
+
+	&.weather-eve .Rain .drop span {
+		background: transparent url("../img/weather/rain-night.png") 0 0 no-repeat;
+	}
+
+	.Rain .drop span {
+		background: transparent url("../img/weather/rain-day.png") 0 0 no-repeat;
+		width: 10px;
+		height: 100%;
+		float: left;
+	}
+
+	.Rain .drop.light {
+		-webkit-animation: fall 0.5s linear infinite;
+		-moz-animation: fall 0.5s linear infinite;
+		-ms-animation: fall 0.5s linear infinite;
+		-o-animation: fall 0.5s linear infinite;
+		animation: fall 0.5s linear infinite;
+	}
+
+	.Rain .drop.heavy {
+		-webkit-animation: fall 0.6s linear infinite;
+		-moz-animation: fall 0.6s linear infinite;
+		-ms-animation: fall 0.6s linear infinite;
+		-o-animation: fall 0.6s linear infinite;
+		animation: fall 0.6s linear infinite;
+	}
+
+	.Rain .drop.angled.light {
+		-webkit-animation: fallangled 0.6s linear infinite;
+		-moz-animation: fallangled 0.6s linear infinite;
+		-ms-animation: fallangled 0.6s linear infinite;
+		-o-animation: fallangled 0.6s linear infinite;
+		animation: fallangled 0.6s linear infinite;
+	}
+
+	.Rain .drop.angled.heavy {
+		-webkit-animation: fallangled 0.33s linear infinite;
+		-moz-animation: fallangled 0.33s linear infinite;
+		-ms-animation: fallangled 0.33s linear infinite;
+		-o-animation: fallangled 0.33s linear infinite;
+		animation: fallangled 0.33s linear infinite;
+	}
+
+	.ie .viewport {
+		height: 600px;
+	}
+
+	.ie .station-img.no-shadow {
+		display: block !important;
+	}
+
+	.ie.do-show-shadow .station-img.no-shadow {
+		display: none !important;
+	}
+
+	&.weather-day .ie .clouds-clear {
+		background-color: #5cabdc;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#99caed), to(#5cabdc));
+		background-image: -webkit-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -moz-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -ms-linear-gradient(top, #99caed, #5cabdc);
+		background-image: -o-linear-gradient(top, #99caed, #5cabdc);
+		background-image: linear-gradient(to bottom, #99caed, #5cabdc);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#99caed', EndColorStr='#5cabdc')";
+	}
+
+	&.weather-day .ie .clouds-few {
+		background: transparent url("../img/weather/ie-clouds-few.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .clouds-scattered {
+		background: transparent url("../img/weather/ie-clouds-scattered.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .clouds-overcast {
+		background: transparent url("../img/weather/ie-clouds-overcast.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .hail {
+		background: transparent url("../img/weather/ie-hail.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .rain-heavy {
+		background: transparent url("../img/weather/ie-rain-heavy.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .rain-med {
+		background: transparent url("../img/weather/ie-rain-med.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .rain-light {
+		background: transparent url("../img/weather/ie-rain-light.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .snow-light {
+		background: transparent url("../img/weather/ie-snow-light.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .snow_sleet {
+		background: transparent url("../img/weather/ie-snow_sleet.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .snow-med {
+		background: transparent url("../img/weather/ie-snow-med.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-day .ie .snow-heavy {
+		background: transparent url("../img/weather/ie-snow-heavy.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .clouds-clear {
+		background-color: #262d30;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#191e20), to(#262d30));
+		background-image: -webkit-linear-gradient(top, #191e20, #262d30);
+		background-image: -moz-linear-gradient(top, #191e20, #262d30);
+		background-image: -ms-linear-gradient(top, #191e20, #262d30);
+		background-image: -o-linear-gradient(top, #191e20, #262d30);
+		background-image: linear-gradient(to bottom, #191e20, #262d30);
+		filter: "progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#191e20', EndColorStr='#262d30')";
+	}
+
+	&.weather-eve .ie .clouds-few {
+		background: transparent url("../img/weather/ie-eve-clouds-few.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .clouds-scattered {
+		background: transparent url("../img/weather/ie-eve-clouds-scattered.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .clouds-overcast {
+		background: transparent url("../img/weather/ie-eve-clouds-overcast.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .hail {
+		background: transparent url("../img/weather/ie-eve-hail.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .rain-heavy {
+		background: transparent url("../img/weather/ie-eve-rain-heavy.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .rain-med {
+		background: transparent url("../img/weather/ie-eve-rain-med.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .rain-light {
+		background: transparent url("../img/weather/ie-eve-rain-light.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .snow-light {
+		background: transparent url("../img/weather/ie-eve-snow-light.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .snow_sleet {
+		background: transparent url("../img/weather/ie-eve-snow_sleet.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .snow-med {
+		background: transparent url("../img/weather/ie-eve-snow-med.jpg") 0 0 repeat-x;
+	}
+
+	&.weather-eve .ie .snow-heavy {
+		background: transparent url("../img/weather/ie-eve-snow-heavy.jpg") 0 0 repeat-x;
+	}
+
+	@-moz-keyframes fade {
+		0%, 100% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes fade {
+		0%, 100% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	@-o-keyframes fade {
+		0%, 100% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes fade {
+		0%, 100% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fade {
+		0%, 100% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes fall {
+		to {
+			margin-top: 954px;
+			margin-left: 90px;
+		}
+	}
+
+	@-webkit-keyframes fall {
+		to {
+			margin-top: 954px;
+			margin-left: 90px;
+		}
+	}
+
+	@-o-keyframes fall {
+		to {
+			margin-top: 954px;
+			margin-left: 90px;
+		}
+	}
+
+	@-ms-keyframes fall {
+		to {
+			margin-top: 954px;
+			margin-left: 90px;
+		}
+	}
+
+	@keyframes fall {
+		to {
+			margin-top: 954px;
+			margin-left: 90px;
+		}
+	}
+
+	@-moz-keyframes fallangled {
+		to {
+			margin-top: 954px;
+			margin-left: 120px;
+		}
+	}
+
+	@-webkit-keyframes fallangled {
+		to {
+			margin-top: 954px;
+			margin-left: 120px;
+		}
+	}
+
+	@-o-keyframes fallangled {
+		to {
+			margin-top: 954px;
+			margin-left: 120px;
+		}
+	}
+
+	@-ms-keyframes fallangled {
+		to {
+			margin-top: 954px;
+			margin-left: 120px;
+		}
+	}
+
+	@keyframes fallangled {
+		to {
+			margin-top: 954px;
+			margin-left: 120px;
+		}
+	}
+}
+
+@media (min-width: 721px) {
+	.weather {
+		height: $weather-height-md;
+
+		.weather-animation,
+		.Clouds .viewport-wrapper,
+		.Clouds .viewport-wrapper .background-fade,
+		.Clouds .viewport,
+		.Rain .rain-base {
+			height: $weather-height-md;
+		}
+
+		.station-img {
+			width: 850px;
+			height: 255px;
+			right: -60px;
+			top: 146px;
+		}
+
+		.Clouds.Clear .lens-flare-img {
+			width: 818px;
+			height: 558px;
+		}
+	}
+}
+
+@media (min-width: 977px) {
+	.weather {
+		height: $weather-height-lg;
+
+		.weather-animation,
+		.Clouds .viewport-wrapper,
+		.Clouds .viewport-wrapper .background-fade,
+		.Clouds .viewport,
+		.Rain .rain-base {
+			height: $weather-height-lg;
+		}
+
+		.station-img {
+			top: 225px;
+			right: -50px;
+			width: 1065px;
+			height: 320px;
+		}
+	}
+}

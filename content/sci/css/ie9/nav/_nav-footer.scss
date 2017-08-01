@@ -1,0 +1,36 @@
+﻿@import "../../core/base/mixins";
+
+#footer-search-form {
+	position: relative;
+	width: 100%;
+
+	> .footer-search-icon {
+		background: transparent;
+		border: none;
+		color: #808080;
+		font-size: 16px;
+		outline: 0;
+		padding: 9px 12px;
+		position: absolute;
+		right: 0;
+		text-decoration: none;
+		top: 1px;
+
+		&:focus {
+			content: '';
+			font-family: 'em';
+
+            &:before{
+            content: '';
+			font-family: 'em';
+            }
+		}
+         &:before{
+            content: '\e001';
+			font-family: 'em';
+        }
+         
+	}
+    
+  
+}

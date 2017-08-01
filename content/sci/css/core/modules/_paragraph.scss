@@ -1,0 +1,11 @@
+﻿@import "../base/mixins";
+
+p.paragraph {
+	&.large {
+		@include rem-fallback(font-size, 20px / 16px);
+	}
+
+	&.small {
+		@include rem-fallback(font-size, 13px / 16px);
+	}
+}

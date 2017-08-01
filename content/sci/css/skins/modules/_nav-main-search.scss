@@ -1,0 +1,55 @@
+﻿@import "../../core/base/mixins";
+
+.nav-main-search-trigger {
+	&:before {
+		color: $nav-main-item-hover-text;
+	}
+}
+
+.nav-main-search {
+	&:before {
+		color: $nav-main-search-icon;
+	}
+
+	> input {
+		color: $nav-main-search-text;
+	}
+}
+
+.nav-search-open {
+	.nav-main-search-trigger {
+		&:after,
+		&:before {
+			background-color: $nav-main-item-hover-text;
+		}
+	}
+}
+
+@include if-min(md) {
+	.nav-main-search.search-box {
+		.nav-main-search-submit {
+			color: $nav-main-search-text;
+
+			&:hover {
+				color: $nav-main-search-text-hover;
+			}
+
+			&:before {
+				background-color: $nav-main-search-icon;
+			}
+		}
+	}
+}
+
+@include if-min(lg) {
+	.nav-main-search-trigger {
+
+		&:before {
+			color: $nav-main-bar-text-dark;
+		}
+
+		&:hover:before {
+			color: $nav-main-item-hover-text;
+		}
+	}
+}

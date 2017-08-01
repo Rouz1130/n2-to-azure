@@ -1,0 +1,91 @@
+﻿<!-- A01.1: Breadcrumb -->
+<div class="component breadcrumb-panel">
+	<ul class="breadcrumb-list">
+		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
+		<li class="glyph-link"><a href="#">Products</a></li>
+		<li class="glyph-link"><a href="#">Aviation lubricants</a></li>
+		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> oils</a></li>
+		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> Oil 387</a></li>
+	</ul>
+</div>
+
+<!-- A01.2: Breadcrumb with action -->
+<div class="component breadcrumb-panel-action clearfix">
+	<ul class="breadcrumb-list">
+		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
+		<li class="glyph-link"><a href="#">Products</a></li>
+		<li class="glyph-link"><a href="#">Aviation lubricants</a></li>
+		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> oils</a></li>
+		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> Oil 387</a></li>
+	</ul>
+	<span class="change-language small">Interface language: <span class="current-language">English</span> (<a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId(" lb")%>">change</a>)</span>
+</div>
+
+<!-- Model Content for A01.2 -->
+<div class="modal fade" id="lightbox1" tabindex="-1" role="dialog" aria-labelledby="lightbox1-label" aria-hidden="true" data-cookie-name="emfl-language" data-query-param="language">
+	<div class="modal-dialog modal-breadcrumb">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="#" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				<h3 class="h4 modal-title" id="lightbox1-label">Modal title - H2</h3>
+				<p class="small">Select the language you would like to use. (This does not limit what documents are returned.)</p>
+			</div>
+			<div class="modal-body">
+				<div class="row form-inline">
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb1a" name="rb1" />
+							<label for="rb1a"><span class="icon"></span>Option 1</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb1b" name="rb1" />
+							<label for="rb1b"><span class="icon"></span>Option 2</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb1c" name="rb1" />
+							<label for="rb1c"><span class="icon"></span>Option 3</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb2a" name="rb1" />
+							<label for="rb2a"><span class="icon"></span>Option 4</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb2b" name="rb1" />
+							<label for="rb2b"><span class="icon"></span>Option 5</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb2c" name="rb1" />
+							<label for="rb2c"><span class="icon"></span>Option 6</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb3a" name="rb1" />
+							<label for="rb3a"><span class="icon"></span>Option 7</label>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-submit-btn">
+					<input type="submit" value="Change" class="btn btn-primary" />
+					<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- A01.3: Breadcrumb back nav -->
+		<div class="component breadcrumb-back">
+			<ul class="breadcrumb-list">
+				<li class="glyph-link"><a href="#">[Application N1]</a></li>
+			</ul>
+		</div>
+
+		<!-- A01.4: Breadcrumb heading -->
+		<div class="component breadcrumb-heading">
+			<ul class="breadcrumb-list">
+				<li class="glyph-link"><a href="#">[Application N1]</a></li>
+				<li class="glyph-link"><a href="#">[Application N2]</a></li>
+				<li class="glyph-link"><a href="#">[Application N3]</a></li>
+			</ul>
+		</div>

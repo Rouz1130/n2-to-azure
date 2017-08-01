@@ -1,0 +1,98 @@
+﻿<!-- A05.1: Search Box - Default -->
+<div class="component search-box">
+	<div class="form-group form-group-lg">
+		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or distributor name" />
+		<span class="form-group-btn">
+			<button class="btn btn-primary search" type="button">Search</button>
+		</span>
+	</div>
+</div>
+
+<!-- A05.2: Search Box - With change links -->
+<div class="component search-box search-box-with-settings" data-event-name="xom.site-search" data-search-key="q" data-cookie-name="some_cookie" data-settings-cookie="kitchen-sink-search-settings">
+	<div class="form-group form-group-lg">
+		<input type="text" class="form-control" placeholder="Search MSDS and PDS">
+		<span class="form-group-btn">
+			<button class="btn btn-primary search" type="button">Search</button>
+		</span>
+	</div>
+	<ul class="search-box-settings">
+		<li>Product family: <span class="search-box-setting" data-key="lob" data-value="AVA">Aviation</span> <a href="#" data-toggle="modal" data-target="lightbox-unique-id">(change)</a></li>
+		<li>Country: <span class="search-box-setting" data-key="country" data-value="USA">United States</span> <a href="#" data-toggle="modal" data-target="lightbox-unique-id">(change)</a></li>
+	</ul>
+	<div class="recent-searches">
+		Your recent searches: <span class="recent-searches-links"></span>
+	</div>
+</div>
+
+<!-- Sample Lightbox content for A05.2 -->
+<div class="modal fade" id="lightbox-unique-id" tabindex="-1" role="dialog" aria-labelledby="lightbox-unique-id-label" aria-hidden="true" data-search-key="country">
+	<div class="modal-dialog modal-breadcrumb">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				<h3 class="modal-title" id="lightbox-unique-id-label">Modal title - H2</h3>
+				<p class="small">Select the option you would like to use.</p>
+			</div>
+			<div class="modal-body">
+				<div class="row form-inline">
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb1-unique-id" name="rb1" />
+							<label for="rb1-unique-id"><span class="icon"></span>Option 1</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb2-unique-id" name="rb1" />
+							<label for="rb2-unique-id"><span class="icon"></span>Option 2</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb3-unique-id" name="rb1" />
+							<label for="rb3-unique-id"><span class="icon"></span>Option 3</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb4-unique-id" name="rb1" />
+							<label for="rb4-unique-id"><span class="icon"></span>Option 4</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb5-unique-id" name="rb1" />
+							<label for="rb5-unique-id"><span class="icon"></span>Option 5</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="rb6-unique-id" name="rb1" />
+							<label for="rb6-unique-id"><span class="icon"></span>Option 6</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="rb7-unique-id" name="rb1" />
+							<label for="rb7-unique-id"><span class="icon"></span>Option 7</label>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-submit-btn">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Change</button>
+					<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- A05.3: Search Box - With Suggestions -->
+	<div class="component search-box">
+		<div class="form-group form-group-lg">
+			<input type="text" class="form-control typeahead" data-url="<%=ResolveUrl(" ~ />CoveoMock.ashx?q=%QUERY")%>" data-wildcard="%QUERY" data-options='{"minLength":2}' placeholder="Search for 'in' to get suggestions" />
+			<span class="form-group-btn">
+				<button class="btn btn-primary search" type="button">Search</button>
+			</span>
+		</div>
+	</div>
+
+	<!-- A05.4: Search Box - With search box only -->
+	<div class="component search-box search-box-small">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Search" />
+			<span class="form-group-btn"></span>
+		</div>
+	</div>

@@ -1,0 +1,60 @@
+﻿@import "../../core/base/_colors.scss";
+
+.nav-main-bar {
+	border-bottom-color: #e6e6e6;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+
+	.logo {
+		top: 17px;
+	}
+
+	.logo-global-nav-svg {
+		display: none;
+	}
+
+	.logo-global-nav-ie8 {
+		display: block !important;
+	}
+}
+
+#gs-bg {
+	background-color: $global-selector-background;
+}
+
+.nav-main-item {
+	border-top: 2px solid transparent;
+}
+
+.nav-main-item-active, .nav-main-item:hover {
+	border-top-color: $nav-main-item-hover-border;
+}
+
+.gs-close-ie8 {
+	display: block !important;
+}
+
+#gs-close-wrapper {
+
+	&:before, &:after {
+		background-color: none !important;
+		display: none !important;
+	}
+}
+
+.nav-meganav-close {
+	top: 30px;
+
+	.nav-close-ie8 {
+		display: block !important;
+		position: absolute;
+	}
+
+	.nav-meganav-close-inner {
+
+		&:before, &:after {
+			background-color: none !important;
+			display: none !important;
+		}
+	}
+}

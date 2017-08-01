@@ -1,0 +1,31 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.expanding-box {
+	.component {
+		@include rem-fallback(margin-top, 32px / 16px);
+	}
+}
+
+@include if-min(md) {
+	.col-3, .col-4 {
+		.expanding-box-static {
+			display: table;
+			width: 100%;
+		}
+
+		.expanding-box-text,
+		.expanding-box-trigger {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		.expanding-box-text {
+			@include rem-fallback(padding-right, 32px / 16px);
+		}
+
+		.expanding-box-trigger {
+			text-align: right;
+		}
+	}
+}

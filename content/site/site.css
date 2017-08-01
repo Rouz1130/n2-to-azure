@@ -1,0 +1,213 @@
+﻿/*
+	!! No XOMFL styles should be entered here !!
+	The styles defined here are only used on this temporary site.
+*/
+
+html.test .hide-for-test {
+   display: none !important;
+}
+
+/*body {
+	padding-top: 75px;
+}*/
+
+html.test body {
+	padding-top: 0;
+}
+
+/* Kitchen sink */
+
+.ks-nav {
+	padding-left: 40px;
+}
+
+	.ks-nav > li {
+		list-style-type: none;
+	}
+
+		.ks-nav > li.heading {
+			font-weight: bold;
+			margin-top: 15px;
+		}
+
+			.ks-nav > li.heading:first-child {
+				margin-top: 0;
+			}
+
+.ks-components > h2 {
+	background-color: #eee;
+	padding: 10px 15px;
+}
+
+.ks-item {
+	border-bottom: 5px solid #f0f0f0;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+	.ks-item:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	.ks-item > h3 {
+		color: #d42e12;
+	}
+
+		.ks-item > h3 > a {
+			margin-left: 15px;
+		}
+
+		.ks-item > h3 .glyphicon {
+			color: #ccc;
+			float: right;
+			font-size: 15px;
+		}
+
+	.ks-item > .status {
+		position: relative;
+	}
+
+		.ks-item > .status > .glyphicon {
+			background-color: #eee;
+			font-size: 20px;
+			margin-right: 4px;
+			padding: 4px;
+		}
+
+		.ks-item > .status > .glyphicon-ok {
+			color: #090;
+		}
+
+		.ks-item > .status > .glyphicon-wrench {
+			color: #900;
+		}
+
+		.ks-item > .status > .text {
+			position: relative;
+			top: -3px;
+		}
+
+.ks-control {
+	margin: 15px 0;
+}
+
+.ks-variation {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.ks-variation:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.ks-snippet {
+	border: 1px solid #eee;
+	padding: 0;
+}
+
+
+/* highlightjs - visual studio theme */
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #fafafa;
+	color: black;
+	-webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.apache .hljs-cbracket {
+	color: #008000;
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-built_in, .css .smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.tex .hljs-command,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title,
+.xml .hljs-tag,
+.xml .hljs-tag .hljs-value {
+	color: #00f;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.apache .hljs-tag,
+.hljs-date,
+.tex .hljs-formula,
+.coffeescript .hljs-attribute,
+.hljs-name {
+	color: #a31515;
+}
+
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-pi,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.hljs-preprocessor,
+.hljs-pragma,
+.userType,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-special,
+.hljs-prompt {
+	color: #2b91af;
+}
+
+.hljs-phpdoc,
+.hljs-dartdoc,
+.hljs-javadoc,
+.hljs-xmlDocTag {
+	color: #808080;
+}
+
+.hljs-type,
+.hljs-typename {
+	font-weight: bold;
+}
+
+.vhdl .hljs-string {
+	color: #666666;
+}
+
+.vhdl .hljs-literal {
+	color: #a31515;
+}
+
+.vhdl .hljs-attribute {
+	color: #00b0e8;
+}
+
+.xml .hljs-attribute {
+	color: #f00;
+}

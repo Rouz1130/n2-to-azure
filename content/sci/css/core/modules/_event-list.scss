@@ -1,0 +1,59 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.event-list {
+	> tbody {
+		> tr {
+			> td {
+				@include rem-fallback(padding, 10px / 16px);
+				text-align: center;
+				vertical-align: middle;
+
+				&.event-list-description {
+					text-align: left;
+
+					> .event-list-description-details {
+						display: table;
+
+						> .event-list-img,
+						> .event-list-name {
+							display: table-cell;
+							vertical-align: top;
+						}
+
+						> .event-list-img {
+							@include rem-fallback(padding-right, 10px / 16px);
+                        }
+					}
+				}
+
+				.event-list-month,
+				.event-list-title {
+					display: block;
+					font-family: "EMprintSemibold";
+				}
+			}
+		}
+	}
+}
+
+
+@include if-min(lg) {
+    .col-1{
+        .event-list {
+            > tbody {
+                > tr {
+                    > td {
+                        &.event-list-description {
+                            > .event-list-description-details {
+                                > .event-list-img {
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

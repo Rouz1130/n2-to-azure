@@ -1,0 +1,110 @@
+﻿@import "../core/base/mixins";
+
+.wizard-lists {
+	position: relative;
+
+	.nav-prev,
+	.nav-next {
+		background: white;
+		border-radius: 50%;
+		border: 1px solid blue;
+		color: blue;
+		display: none;
+		height: 22px;
+		padding: 0 0 5px;
+		width: 22px;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 0.2;
+		outline: 0;
+
+		&:active {
+			background: #eee;
+			color: rgba(0, 0, 255, 0.8);
+		}
+	}
+
+	&.lists-to-left {
+		.nav-prev {
+			display: inline-block;
+		}
+	}
+
+	&.lists-to-right {
+		.nav-next {
+			display: inline-block;
+		}
+	}
+
+	.lists-slider {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+
+		> .list {
+			padding-right: 10px;
+		}
+	}
+
+	.list-title {
+		border-bottom: 1px solid #eee;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	.list-item-selected {
+		font-weight: bold;
+	}
+
+	.list-count {
+		left: -9999px;
+		position: absolute;
+		z-index: -999;
+
+		> i {
+			display: none;
+
+			&.sm {
+				display: block;
+			}
+		}
+	}
+
+	.view-recommendations {
+		display: none;
+		height: 45px;
+		margin: 0;
+		padding: 10px 20px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		vertical-align: top;
+	}
+
+	.view-recommendations-active {
+		display: block;
+	}
+
+	.list,
+	.view-recommendations {
+		left: 100%;
+		position: absolute;
+		@include transition(left);
+	}
+}
+
+@include if-min(md) {
+	.wizard-lists {
+		.list-count > i.md {
+			display: block;
+		}
+	}
+}
+
+@include if-min(lg) {
+	.wizard-lists {
+		.list-count > i.lg {
+			display: block;
+		}
+	}
+}
