@@ -259,13 +259,16 @@
     <Content Include="content\sci\fonts\mrseavrom.eot" />
     <Content Include="content\sci\fonts\mrseavrom.ttf" />
     <Content Include="content\sci\fonts\mrseavrom.woff" />
+    <Content Include="content\sci\fonts\Lato-Regular.ttf" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />
     <Content Include="content\sci\js\core\utils\_analytics.js" />
     <Content Include="content\sci\js\core\utils\_local-time.js" />
     <Content Include="content\sci\js\data\esso-topo.json" />
+    <Content Include="controls\sci\S04_StaffListItem.ascx" />
     <Content Include="controls\snippets\R01_Resource.html" />
+    <Content Include="controls\snippets\S04_StaffListItem.html" />
     <Content Include="controls\snippets\SP10_DataVisualization.html" />
     <Content Include="controls\sci\R01_Resource.ascx" />
     <Content Include="controls\sci\SP10_DataVisualization.ascx" />

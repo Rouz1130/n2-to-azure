@@ -700,17 +700,39 @@
 			],
 			"batch": 2
 		},
-		{
-			"code": "S04",
-			"name": "Surfaced Item (Intro Text)",
-			"status": "NotRequired",
-			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS04%20Surfaced%20Item%20%28intro%20text%5C%29%7Cff6f75a1-01ee-4b67-9fc8-9a620a39f838%2F%29",
-			"notes": "<b>UI Team:</b> Replaced by S01.1 and S01.4; static map image is just like any other image from a template perspective",
-			"variations": [
-				{ "variation": 1, "name": "Default" },
-				{ "variation": 2, "name": "Static map" }
-			]
-		},
+    {
+      "code": "S04",
+      "name": "Surfaced Item (Intro Text)",
+      "status": "NotRequired",
+      "specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS04%20Surfaced%20Item%20%28intro%20text%5C%29%7Cff6f75a1-01ee-4b67-9fc8-9a620a39f838%2F%29",
+      "notes": "<b>UI Team:</b> Replaced by S01.1 and S01.4; static map image is just like any other image from a template perspective",
+      "variations": [
+        {
+          "variation": 1,
+          "name": "Default"
+        },
+        {
+          "variation": 2,
+          "name": "Static map"
+        }
+      ]
+    },
+    {
+     "code": "S04",
+     "name": "Staff List Item",
+     "ascx": "S04_StaffListItem",
+     "status": "InWork",
+     "specs": "",
+     "notes": "",
+      "variations": [
+        {
+          "variation": 1,
+          "name": "Default"
+        }
+      ],
+         "batch": 1
+             },
+
 		{
 			"code": "SP01",
 			"name": "Map",
@@ -873,17 +895,20 @@
 			],
 			"batch": 1
 		},
-		{
-			"code": "T04",
-			"name": "Screen Title (Full Overlay)",
-			"ascx": "T04_ScreenTitle",
-			"status": "Complete",
-			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT03%20Screen%20Title%20%28split%5C%29%7C23a06303-ec32-4b9a-912f-a04c1a00ad4c%2F%29",
-			"notes": "<b>UI Team:</b> Use an H1 tag.",
-			"variations": [
-				{ "variation": 1, "name": "Default" }
-			],
-			"batch": 1
-		}
+    {
+      "code": "T04",
+      "name": "Screen Title (Full Overlay)",
+      "ascx": "T04_ScreenTitle",
+      "status": "Complete",
+      "specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT03%20Screen%20Title%20%28split%5C%29%7C23a06303-ec32-4b9a-912f-a04c1a00ad4c%2F%29",
+      "notes": "<b>UI Team:</b> Use an H1 tag.",
+      "variations": [
+        {
+          "variation": 1,
+          "name": "Default"
+        }
+      ],
+      "batch": 1
+    }
 	]
 }
