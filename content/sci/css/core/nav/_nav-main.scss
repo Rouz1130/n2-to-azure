@@ -5,7 +5,7 @@
 @import "variables";
 
 .nav-main-bar {
-	background-color: $nav-main-bar-background;
+	background-color: $white;
 	clear: both;
 	padding-left: $nav-small-gutter;
 	padding-right: 0;
@@ -84,7 +84,7 @@
 		}
 
 		> a {
-			color: $nav-main-bar-text-dark;
+			color: $grey;
 			@include rem-fallback(font-size, 15px / 16px);
 			height: 100%;
 			padding-top: 10px;

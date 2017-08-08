@@ -9,24 +9,24 @@
 
 /* Base styles for undecorated tables */
 table {
-	border: 1px solid $black10;
+	border: 1px solid $black8;
 	border-collapse: collapse;
 	margin-bottom: 0;
 }
 
 table th,
 table td {
-	border: 1px solid $black10;
+	border: 1px solid $black8;
 	padding: 8px;
 }
 
 table tr:nth-child(odd) {
-	background-color: $black10;
+	background-color: $black8;
 }
 
 table th,
 table tr:first-child td {
-	background-color: $black10;
+	background-color: $black8;
 	border-left-color: #fff;
 	border-right-color: #fff;
 	font-family: EMprintSemibold;
@@ -34,7 +34,7 @@ table tr:first-child td {
 
 /* Undo TD header style for pdstable tables */
 table.pdstable > thead {
-	background-color: $black10;
+	background-color: $black8;
 }
 
 table.table > tbody > tr:nth-child(odd),
@@ -44,12 +44,12 @@ table.pdstable > tbody > tr:nth-child(odd) {
 
 table.table > tbody > tr:nth-child(even),
 table.pdstable > tbody > tr:nth-child(even) {
-	background-color: $black10;
+	background-color: $black8;
 }
 
 table.table > tbody > tr > td,
 table.pdstable > tbody > tr > td {
 	background-color: transparent;
-	border: 1px solid $black10;
+	border: 1px solid $black8;
 	font-family: EMprint;
 }

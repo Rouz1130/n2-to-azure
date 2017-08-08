@@ -1,9 +1,7 @@
 ﻿<%@ Control Language="C#" Inherits="XOMFL.CommonComponents.Controls.VariantControlBase" %>
 
 <div id="footer">
-	<div id="footer-cap">
-		Energy lives here<sup>&trade;</sup>
-	</div>
+	
 	<footer id="footer-top" class="clearfix">
 		<div id="footer-top-wrapper">
 			<nav id="footer-nav" class="footer-links-wrapper">
