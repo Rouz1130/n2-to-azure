@@ -5,8 +5,8 @@
 $input-lg-height: 56px;
 
 @mixin checkables() {
-	background-color: $black10;
-	border: 1px solid $black35;
+	background-color: $black8;
+	border: 1px solid $black;
 	cursor: pointer;
 }
 
@@ -56,10 +56,10 @@ $input-lg-height: 56px;
 
 		@include placeholder() {
 			color: $black;
-			font-family: "EMprintLight";
+			font-family: "Lato-Regular";
 		}
 
-		background-color: $black10;
+		background-color: $black8;
 		display: table-cell;
 		font-family: "EMprintSemibold";
 		@include rem-fallback(font-size, 16px / 16px);
@@ -84,9 +84,9 @@ $input-lg-height: 56px;
 }
 
 .group-info {
-	border-bottom: 1px solid $black10;
-	border-left: 1px solid $black10;
-	border-right: 1px solid $black10;
+	border-bottom: 1px solid $black8;
+	border-left: 1px solid $black8;
+	border-right: 1px solid $black8;
 	color: $grey;
 	display: table;
 	height: 55px;
@@ -142,8 +142,8 @@ $input-lg-height: 56px;
 
 			&:before {
 				@include sprite($icon-checked);
-				@include box-shadow(0, 0, 5px, $cyan);
-				border: 1px solid $cyan;
+				@include box-shadow(0, 0, 5px, $teal);
+				border: 1px solid $teal;
 			}
 
 			.icon {
@@ -185,9 +185,9 @@ $input-lg-height: 56px;
 		&:checked + label {
 			&:before {
 				@include border-radius(100%);
-				@include box-shadow(0, 0, 5px, $cyan);
+				@include box-shadow(0, 0, 5px, $teal);
 				background-color: $white;
-				border: 1px solid $cyan;
+				border: 1px solid $teal;
 				display: inline-block;
 				height: 18px;
 				position: relative;
@@ -196,8 +196,8 @@ $input-lg-height: 56px;
 
 			.icon {
 				@include border-radius(100%);
-				@include box-shadow(0, 0, 3px, $cyan);
-				background-color: $cyan;
+				@include box-shadow(0, 0, 3px, $teal);
+				background-color: $teal;
 				display: inline-block;
 				height: 6px;
 				left: 6px;
@@ -218,15 +218,15 @@ $input-lg-height: 56px;
 .input-group .form-control {
 	@include border-radius(0);
 	font-family: EMprintSemibold;
-	background-color: $black10;
-	border: 1px solid $black10;
+	background-color: $black8;
+	border: 1px solid $black8;
 	color: #2b2626;
 	height: 50px;
 }
 
 .form-control:focus {
 	background-color: $white;
-	border: 1px solid $cyan;
+	border: 1px solid $teal;
 }
 
 .form-control.error {
@@ -261,7 +261,7 @@ $input-lg-height: 56px;
 }
 
 .select {
-	background-color: $black10;
+	background-color: $black8;
 	overflow: hidden;
 	height: $icon-drop-arrow-bg-height;
 	position: relative;

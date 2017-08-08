@@ -8,7 +8,7 @@
 }
 
 .smart-list-disabled {
-	color: $silver;
+	color: $grey;
 }
 
 .smart-list-alphabetical-index {
@@ -19,11 +19,11 @@
 
 	> li {
 		@include rem-fallback(margin-right, 10px / 16px);
-		color: $silver;
+		color: $grey;
 		float: left;
 
 		&:before {
-			color: $black15;
+			color: $black;
 			content: "|";
 			@include rem-fallback(margin-right, 10px / 16px);
 		}

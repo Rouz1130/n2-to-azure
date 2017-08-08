@@ -53,24 +53,24 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 html, body {
-  background-color: #e0e0e0;
-  color: #2b2626;
+  background-color: #fff;
+  color: #4a3c31;
   font-size: 16px;
   height: 100%; }
 
 body, p {
-  font-family: EMprint, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-family: "Lato-Regular", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   line-height: 1.5; }
 
 a {
-  color: #0c479d;
+  color: #4a3c31;
   text-decoration: none; }
   a:active {
     outline: none; }
   a:hover {
     text-decoration: none; }
   a.disabled {
-    color: #b5b5b5; }
+    color: #605f5e; }
 
 img {
   max-width: 100%; }
@@ -90,57 +90,15 @@ strong > em {
   font-weight: normal; }
 
 @font-face {
-  font-family: "EMprintLight";
-  src: url("../fonts/EMprintW05-Light.eot");
-  src: url("../fonts/EMprintW05-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-Light.woff") format("woff"), url("../fonts/EMprintW05-Light.ttf") format("truetype"), url("../fonts/EMprintW05-Light.svg#karbonLight") format("svg");
+  font-family: "MrsEaves";
+  src: url("../fonts/mrseavrom.eot");
+  src: url("../fonts/mrseavrom.eot?#iefix") format("embedded-opentype"), url("../fonts/mrseavrom.woff") format("woff"), url("../fonts/mrseavrom.ttf") format("truetype"), url("../fonts/mrseavrom.svg#karbonLight") format("svg");
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: "EMprintLightItalic";
-  src: url("../fonts/EMprintW05-LightItalic.eot");
-  src: url("../fonts/EMprintW05-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-LightItalic.woff") format("woff"), url("../fonts/EMprintW05-LightItalic.ttf") format("truetype"), url("../fonts/EMprintW05-LightItalic.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprint";
-  src: url("../fonts/EMprintW05-Regular.eot");
-  src: url("../fonts/EMprintW05-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-Regular.woff") format("woff"), url("../fonts/EMprintW05-Regular.ttf") format("truetype"), url("../fonts/EMprintW05-Regular.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprintItalic";
-  src: url("../fonts/EMprintW05-RegularItalic.eot");
-  src: url("../fonts/EMprintW05-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-RegularItalic.woff") format("woff"), url("../fonts/EMprintW05-RegularItalic.ttf") format("truetype"), url("../fonts/EMprintW05-RegularItalic.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprintSemibold";
-  src: url("../fonts/EMprintW05-Semibold.eot");
-  src: url("../fonts/EMprintW05-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-Semibold.woff") format("woff"), url("../fonts/EMprintW05-Semibold.ttf") format("truetype"), url("../fonts/EMprintW05-Semibold.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprintSemiboldItalic";
-  src: url("../fonts/EMprintW05-SemiboldItalic.eot");
-  src: url("../fonts/EMprintW05-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-SemiboldItalic.woff") format("woff"), url("../fonts/EMprintW05-SemiboldItalic.ttf") format("truetype"), url("../fonts/EMprintW05-SemiboldItalic.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprintBold";
-  src: url("../fonts/EMprintW05-Bold.eot");
-  src: url("../fonts/EMprintW05-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-Bold.woff") format("woff"), url("../fonts/EMprintW05-Bold.ttf") format("truetype"), url("../fonts/EMprintW05-Bold.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "EMprintBoldItalic";
-  src: url("../fonts/EMprintW05-BoldItalic.eot");
-  src: url("../fonts/EMprintW05-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EMprintW05-BoldItalic.woff") format("woff"), url("../fonts/EMprintW05-BoldItalic.ttf") format("truetype"), url("../fonts/EMprintW05-BoldItalic.svg#karbonLight") format("svg");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "em";
-  src: url("../fonts/em.eot");
-  src: url("../fonts/em.eot?#iefix") format("embedded-opentype"), url("../fonts/em.woff") format("woff"), url("../fonts/em.ttf") format("truetype"), url("../fonts/em.svg#karbonLight") format("svg");
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#karbonLight") format("svg");
   font-style: normal;
   font-weight: normal; }
 .row {
@@ -148,7 +106,7 @@ strong > em {
   margin-right: -20px; }
 
 .row-band {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   margin-bottom: 32px;
   margin-bottom: 2rem;
   margin-left: -20px;
@@ -313,7 +271,7 @@ The `sprites` mixin generates identical output to the CSS template
 .no-js .panel-collapse {
   display: block; }
 .no-js .panel.active {
-  border-left-color: #ebebeb !important; }
+  border-left-color: #f8f7f3 !important; }
 
 .panel-no-radius, .panel-group .panel, .panel-group .panel > .panel-heading {
   -webkit-border-radius: 0;
@@ -324,7 +282,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .panel-group .panel {
   border: none;
-  border-left: 6px solid #ebebeb;
+  border-left: 6px solid #f8f7f3;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -339,13 +297,13 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-transition: background-color 0.35s ease;
     -o-transition: background-color 0.35s ease;
     transition: background-color 0.35s ease;
-    border-top: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-    background-color: #ebebeb;
+    border-top: 1px solid #f8f7f3;
+    border-right: 1px solid #f8f7f3;
+    background-color: #f8f7f3;
     padding-right: 44px;
     position: relative; }
     .panel-group .panel > .panel-heading > a {
-      color: #2b2626;
+      color: #4a3c31;
       display: block;
       font-weight: bold;
       outline: none; }
@@ -359,11 +317,11 @@ The `sprites` mixin generates identical output to the CSS template
       right: 10px;
       top: 10px; }
     .panel-group .panel > .panel-heading + .panel-collapse > .panel-body {
-      border-bottom: 1px solid #ebebeb;
-      border-right: 1px solid #ebebeb;
+      border-bottom: 1px solid #f8f7f3;
+      border-right: 1px solid #f8f7f3;
       border-top: none; }
   .panel-group .panel.active {
-    border-left-color: #00a3e0; }
+    border-left-color: #47d5cd; }
     .panel-group .panel.active > .panel-heading {
       background-color: #fff; }
       .panel-group .panel.active > .panel-heading a > i {
@@ -377,9 +335,9 @@ The `sprites` mixin generates identical output to the CSS template
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background-color: #e6e6e6;
+  background-color: #E12c2c;
   border: none;
-  color: #2b2626;
+  color: #fff;
   padding: 20px; }
   .alert .icon, .alert-warning .icon, .alert-danger .icon {
     position: absolute; }
@@ -387,18 +345,8 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 1.2;
     padding-left: 45px; }
 
-.alert-warning {
-  background-color: #fdf6d1; }
-  .alert-warning .alert-title {
-    color: #ed8b00; }
-
-.alert-danger {
-  background-color: #fbe8cc; }
-  .alert-danger .alert-title {
-    color: #bb0000; }
-
 .alert-success .alert-title {
-  color: #00a14d; }
+  background-color: #e1ebd4; }
 
 .alert-title {
   display: block; }
@@ -408,7 +356,7 @@ html.ios .app-promotion-android {
   display: none !important; }
 
 .app-promotion {
-  background-color: #e6e6e6;
+  background-color: #f8f7f3;
   padding: 32px;
   padding: 2rem; }
   .app-promotion .app-content {
@@ -471,22 +419,24 @@ html.ios .app-promotion-android {
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font-size: 18px;
-  font-size: 1.125rem;
-  padding: 10px 50px;
-  padding: 0.625rem 3.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 11.42857px 34.28571px;
+  padding: 0.71429rem 2.14286rem;
   margin: 2px;
   margin: 0.125rem;
-  background-color: #b5b5b5;
-  border: none;
-  color: #fff;
-  font-family: "EMprintSemibold";
+  background-color: transparent;
+  border: 2px solid #47d5cd;
+  color: #4a3c31;
+  font-family: "Lato-Regular";
   position: relative;
-  max-width: 100%; }
+  text-transform: uppercase;
+  max-width: 100%;
+  font-weight: bold; }
   .btn:active, .btn-primary:active, .btn-secondary:active, .btn-tertiary:active, .btn-deemphasized:active, .btn-light:active, .btn-badge:active, .btn-icon:active, .btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-tertiary:focus, .btn-deemphasized:focus, .btn-light:focus, .btn-badge:focus, .btn-icon:focus, .btn:visited, .btn-primary:visited, .btn-secondary:visited, .btn-tertiary:visited, .btn-deemphasized:visited, .btn-light:visited, .btn-badge:visited, .btn-icon:visited, .btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover, .btn-deemphasized:hover, .btn-light:hover, .btn-badge:hover, .btn-icon:hover {
-    color: #fff; }
-  .btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover, .btn-deemphasized:hover, .btn-light:hover, .btn-badge:hover, .btn-icon:hover {
-    background-color: #c4c4c4; }
+    color: #4a3c31;
+    background-color: transparent;
+    border-color: #47d5cd; }
 
 .btn-sm {
   font-size: 16px;
@@ -506,36 +456,10 @@ html.ios .app-promotion-android {
     text-align: left;
     white-space: normal; }
 
-.btn-primary {
-  background-color: #0c479d; }
-  .btn-primary:hover {
-    background-color: #3d6cb1; }
-
-.btn-secondary {
-  background-color: #00a3e0; }
-  .btn-secondary:hover {
-    background-color: #33b5e6; }
-
-.btn-tertiary {
-  background-color: #ed8b00; }
-  .btn-tertiary:hover {
-    background-color: #f1a233; }
-
 .btn-link {
   background-color: transparent; }
   .btn-link:hover {
     background-color: transparent; }
-
-.btn-light {
-  background-color: #e6e6e6;
-  color: #2b2626; }
-  .btn-light:active, .btn-light:focus, .btn-light:visited, .btn-light:hover {
-    color: #2b2626; }
-
-.btn-cancel.btn-link {
-  color: #d42e12; }
-  .btn-cancel.btn-link:active, .btn-cancel.btn-link:focus, .btn-cancel.btn-link:visited, .btn-cancel.btn-link:hover {
-    color: #d42e12; }
 
 .btn-badge > .icon {
   display: block;
@@ -569,9 +493,6 @@ html.ios .app-promotion-android {
   margin-right: 0.75rem; }
   .breadcrumb-back .breadcrumb-list li:first-child:before {
     content: "\2039 \0020"; }
-  .breadcrumb-back .breadcrumb-list li a,
-  .breadcrumb-back .breadcrumb-list li:last-child a {
-    color: #0c479d; }
 
 .breadcrumb-list {
   margin-bottom: 0;
@@ -581,28 +502,28 @@ html.ios .app-promotion-android {
     .breadcrumb-list > li > a {
       margin-right: 12px;
       margin-right: 0.75rem;
-      color: #808080; }
+      color: #605f5e; }
     .breadcrumb-list > li:last-child:after {
       content: none; }
     .breadcrumb-list > li:last-child > a {
-      color: #2b2626; }
+      color: #4a3c31; }
   .breadcrumb-list .glyph-link:after {
-    color: #808080;
+    color: #605f5e;
     margin-right: 12px;
     margin-right: 0.75rem; }
 
 .breadcrumb-panel,
 .breadcrumb-panel-action {
-  background: #f2f2f2;
-  border-bottom: 1px solid #e6e6e6;
-  color: #808080;
+  background: #f7f7f7;
+  border-bottom: 1px solid #f8f7f3;
+  color: #605f5e;
   padding: 10px 30px;
   padding: 0.625rem 1.875rem;
   width: 100%; }
   .breadcrumb-panel .current-language,
   .breadcrumb-panel-action .current-language {
-    color: #2b2626;
-    font-family: "EMprintSemibold"; }
+    color: #4a3c31;
+    font-family: "Lato-Regular"; }
 
 .modal-change-language .wrapper-submit-btn {
   clear: both;
@@ -771,18 +692,18 @@ The `sprites` mixin generates identical output to the CSS template
       -moz-background-clip: padding-box;
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
-      background-color: #b5b5b5;
+      background-color: #47d5cd;
       display: inline-block;
       height: 18px;
       width: 18px; }
       .slick-dots > li > .pager:hover {
-        background-color: #72b8d4; }
+        background-color: #605f5e; }
       .slick-dots > li > .pager > img, .slick-dots > li > .pager > p {
         display: none; }
     .slick-dots > li.slick-active > .pager {
-      background-color: #00a3e0; }
+      background-color: #47d5cd; }
       .slick-dots > li.slick-active > .pager:hover {
-        background-color: #00a3e0; }
+        background-color: #47d5cd; }
 
 .slick-slide {
   background-repeat: no-repeat;
@@ -798,7 +719,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 15px;
   padding: 20px; }
   .slide-title > p {
-    color: #5a5a5a;
+    color: #605f5e;
     margin: 0;
     padding: 0; }
   .slide-title > h2 {
@@ -823,7 +744,7 @@ The `sprites` mixin generates identical output to the CSS template
     position: relative;
     top: 15px; }
     .col-3 .carousel-thumb.carousel-thumb-out .slick-dots > .pager, .col-4 .carousel-thumb.carousel-thumb-out .slick-dots > .pager {
-      background-color: #f2f2f2; }
+      background-color: #f7f7f7; }
       .col-3 .carousel-thumb.carousel-thumb-out .slick-dots > .pager > img, .col-4 .carousel-thumb.carousel-thumb-out .slick-dots > .pager > img {
         padding: 0; }
   .col-3 .carousel-thumb .slick-dots, .col-4 .carousel-thumb .slick-dots {
@@ -837,14 +758,14 @@ The `sprites` mixin generates identical output to the CSS template
       float: left;
       width: 17%; }
       .col-3 .carousel-thumb .slick-dots > li > .pager, .col-4 .carousel-thumb .slick-dots > li > .pager {
-        background-color: #f2f2f2;
+        background-color: #f7f7f7;
         border: 0;
         -webkit-border-radius: 0;
         border-radius: 0;
         -moz-background-clip: padding-box;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
-        color: #2b2626;
+        color: #4a3c31;
         cursor: pointer;
         font-size: 13px;
         font-size: 0.8125rem;
@@ -889,7 +810,7 @@ The `sprites` mixin generates identical output to the CSS template
           opacity: 1;
           filter: alpha(opacity=100); }
       .col-3 .carousel-thumb .slick-dots > li.slick-active, .col-4 .carousel-thumb .slick-dots > li.slick-active {
-        border-bottom: 2px solid #00a3e0; }
+        border-bottom: 2px solid #47d5cd; }
 
   .col-3 .carousel-thumb.carousel-thumb-in .slick-dots {
     left: -10px;
@@ -897,7 +818,7 @@ The `sprites` mixin generates identical output to the CSS template
     top: 10px; }
 
   .col-4 .carousel-thumb .slick-dots > li.slick-active > .pager {
-    background-color: #f2f2f2; }
+    background-color: #f7f7f7; }
   .col-4 .slide-title {
     max-width: 30%; }
   .col-4 .carousel-thumb .slick-dots > li {
@@ -935,7 +856,7 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 1rem; }
 
 .component-shaded {
-  background-color: #f2f2f2; }
+  background-color: #f7f7f7; }
 
 .component-invisible {
   height: 0;
@@ -965,7 +886,7 @@ The `sprites` mixin generates identical output to the CSS template
   background-color: #7086b8; }
 
 .data-visualization {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   padding: 15px;
   line-height: 1.2; }
 
@@ -1111,7 +1032,7 @@ The `sprites` mixin generates identical output to the CSS template
       float: left;
       width: 50%; }
     .featured-item-weather .featured-item-copy > .weather-right-now > .weather-detail {
-      color: #00a3e0;
+      color: #47d5cd;
       display: inline-block;
       float: right;
       font-family: "EMprintSemibold";
@@ -1125,7 +1046,7 @@ The `sprites` mixin generates identical output to the CSS template
         top: 10px;
         top: 0.625rem; }
     .featured-item-weather .featured-item-copy > .weather-right-now .weather-location {
-      color: #00a3e0;
+      color: #47d5cd;
       display: block;
       font-weight: bold; }
     .featured-item-weather .featured-item-copy > .weather-right-now .weather-provider {
@@ -1393,7 +1314,7 @@ The `sprites` mixin generates identical output to the CSS template
   .checkboxes > .form-group > label, .radio-buttons > .form-group > label {
     margin-bottom: 0; }
 .checkboxes > label.error, .radio-buttons > label.error {
-  background-color: #d42e12;
+  background-color: #E12c2c;
   color: #fff;
   display: block;
   font-weight: normal;
@@ -1425,7 +1346,7 @@ The `sprites` mixin generates identical output to the CSS template
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: #e6e6e6;
+    background-color: #f8f7f3;
     display: table-cell;
     font-family: "EMprintSemibold";
     font-size: 16px;
@@ -1434,17 +1355,17 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 1.5rem;
     padding-left: 24px; }
     .form-group-lg .form-control.placeholder {
-      color: #2b2626;
-      font-family: "EMprintLight"; }
+      color: #4a3c31;
+      font-family: "Lato-Regular"; }
     .form-group-lg .form-control:-moz-placeholder {
-      color: #2b2626;
-      font-family: "EMprintLight"; }
+      color: #4a3c31;
+      font-family: "Lato-Regular"; }
     .form-group-lg .form-control::-moz-placeholder {
-      color: #2b2626;
-      font-family: "EMprintLight"; }
+      color: #4a3c31;
+      font-family: "Lato-Regular"; }
     .form-group-lg .form-control::-webkit-input-placeholder {
-      color: #2b2626;
-      font-family: "EMprintLight"; }
+      color: #4a3c31;
+      font-family: "Lato-Regular"; }
     .form-group-lg .form-control:focus {
       background-color: #fff; }
   .form-group-lg .form-group-btn {
@@ -1456,10 +1377,10 @@ The `sprites` mixin generates identical output to the CSS template
   margin-bottom: 0; }
 
 .group-info {
-  border-bottom: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  color: #5a5a5a;
+  border-bottom: 1px solid #f8f7f3;
+  border-left: 1px solid #f8f7f3;
+  border-right: 1px solid #f8f7f3;
+  color: #605f5e;
   display: table;
   height: 55px;
   margin-bottom: 1.85em;
@@ -1484,8 +1405,8 @@ The `sprites` mixin generates identical output to the CSS template
       font-size: 1rem;
       padding-left: 27px; }
       .form-group > input[type="checkbox"] + label:before {
-        background-color: #e6e6e6;
-        border: 1px solid #a6a6a6;
+        background-color: #f8f7f3;
+        border: 1px solid #4a3c31;
         cursor: pointer;
         content: "";
         display: inline-block;
@@ -1504,10 +1425,10 @@ The `sprites` mixin generates identical output to the CSS template
         background-position: -268px -233px;
         width: 20px;
         height: 20px;
-        -webkit-box-shadow: 0 0 5px 0 #00a3e0;
-        -moz-box-shadow: 0 0 5px 0 #00a3e0;
-        box-shadow: 0 0 5px 0 #00a3e0;
-        border: 1px solid #00a3e0; }
+        -webkit-box-shadow: 0 0 5px 0 #47d5cd;
+        -moz-box-shadow: 0 0 5px 0 #47d5cd;
+        box-shadow: 0 0 5px 0 #47d5cd;
+        border: 1px solid #47d5cd; }
       .form-group > input[type="checkbox"]:checked + label .icon {
         left: -1px;
         margin: 0;
@@ -1524,8 +1445,8 @@ The `sprites` mixin generates identical output to the CSS template
       position: relative;
       padding-left: 25px; }
       .form-group > input[type="radio"] + label:before {
-        background-color: #e6e6e6;
-        border: 1px solid #a6a6a6;
+        background-color: #f8f7f3;
+        border: 1px solid #4a3c31;
         cursor: pointer;
         -webkit-border-radius: 100%;
         border-radius: 100%;
@@ -1546,11 +1467,11 @@ The `sprites` mixin generates identical output to the CSS template
       -moz-background-clip: padding-box;
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
-      -webkit-box-shadow: 0 0 5px 0 #00a3e0;
-      -moz-box-shadow: 0 0 5px 0 #00a3e0;
-      box-shadow: 0 0 5px 0 #00a3e0;
+      -webkit-box-shadow: 0 0 5px 0 #47d5cd;
+      -moz-box-shadow: 0 0 5px 0 #47d5cd;
+      box-shadow: 0 0 5px 0 #47d5cd;
       background-color: #fff;
-      border: 1px solid #00a3e0;
+      border: 1px solid #47d5cd;
       display: inline-block;
       height: 18px;
       position: relative;
@@ -1561,10 +1482,10 @@ The `sprites` mixin generates identical output to the CSS template
       -moz-background-clip: padding-box;
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
-      -webkit-box-shadow: 0 0 3px 0 #00a3e0;
-      -moz-box-shadow: 0 0 3px 0 #00a3e0;
-      box-shadow: 0 0 3px 0 #00a3e0;
-      background-color: #00a3e0;
+      -webkit-box-shadow: 0 0 3px 0 #47d5cd;
+      -moz-box-shadow: 0 0 3px 0 #47d5cd;
+      box-shadow: 0 0 3px 0 #47d5cd;
+      background-color: #47d5cd;
       display: inline-block;
       height: 6px;
       left: 6px;
@@ -1583,14 +1504,14 @@ The `sprites` mixin generates identical output to the CSS template
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   font-family: EMprintSemibold;
-  background-color: #e6e6e6;
-  border: 1px solid #e6e6e6;
+  background-color: #f8f7f3;
+  border: 1px solid #f8f7f3;
   color: #2b2626;
   height: 50px; }
 
 .form-control:focus {
   background-color: #fff;
-  border: 1px solid #00a3e0; }
+  border: 1px solid #47d5cd; }
 
 .form-control.error {
   background-color: #fff;
@@ -1602,7 +1523,7 @@ The `sprites` mixin generates identical output to the CSS template
   font-weight: normal;
   width: 100%; }
   .form-group label.error {
-    background-color: #d42e12;
+    background-color: #E12c2c;
     color: #fff;
     display: block;
     font-size: 16px;
@@ -1624,7 +1545,7 @@ The `sprites` mixin generates identical output to the CSS template
   position: relative; }
 
 .select {
-  background-color: #e6e6e6;
+  background-color: #f8f7f3;
   overflow: hidden;
   height: 50px;
   position: relative;
@@ -1679,7 +1600,7 @@ The `sprites` mixin generates identical output to the CSS template
   content: " \02C6"; }
 
 h1, h2, h3 {
-  font-family: "EMprintLight"; }
+  font-family: MrsEavesRoman; }
 
 h1 {
   font-size: 30px;
@@ -2079,7 +2000,7 @@ a.link-icon {
 .img-bordered {
   padding: 10px;
   padding: 0.625rem;
-  border: 1px solid #d9d9d9; }
+  border: 1px solid #f8f7f3; }
 
 .img-rounded {
   -webkit-border-radius: 12px;
@@ -2107,7 +2028,7 @@ a.link-icon {
   margin: 0;
   padding: 0; }
   .index > li {
-    border-right: 1px solid #d9d9d9;
+    border-right: 1px solid #f8f7f3;
     float: left;
     height: 1em;
     margin-bottom: 1em;
@@ -2263,7 +2184,7 @@ a.link-icon {
     float: left; }
   .alphabetic-order li.divider:before {
     content: "|";
-    color: #d9d9d9; }
+    color: #f8f7f3; }
   .alphabetic-order li a {
     margin: 0 10px 0 9px; }
 
@@ -2274,7 +2195,7 @@ a.link-icon {
     font-size: 1rem; }
 
 .list-item-disabled > h3, .list-item-disabled ul a {
-  color: #b5b5b5; }
+  color: #605f5e; }
 
 /*Items list*/
 .list-items ul {
@@ -2285,12 +2206,9 @@ a.link-icon {
     padding-bottom: 0;
     font-size: 13px;
     font-size: 0.8125rem; }
-    .list-items ul li span {
-      color: #0c479d; }
     .list-items ul li.title {
       font-size: 16px;
       font-size: 1rem;
-      color: #0c479d;
       font-family: EMprintSemibold; }
     .list-items ul li.address {
       font-size: 16px;
@@ -2300,16 +2218,13 @@ a.link-icon {
   font-family: EMprintSemibold;
   font-size: 16px;
   font-size: 1rem; }
-  .list-items p span {
-    color: #0c479d; }
 
 /*List Bold*/
 .list-bold li {
   padding: 0;
   font-family: EMprintSemibold;
   font-size: 16px;
-  font-size: 1rem;
-  color: #0c479d; }
+  font-size: 1rem; }
 
 /*Icon list*/
 .list-icons .block-list li {
@@ -2329,10 +2244,9 @@ a.link-icon {
 .list-icons .block-list li:last-child {
   border-bottom: none; }
 .list-icons .block-list .items-icon-list {
-  color: #2b2626;
+  color: #4a3c31;
   font-size: 16px;
   font-size: 1rem;
-  font-family: EMprint;
   padding-left: 50px;
   display: table-cell;
   min-height: 24px;
@@ -2403,7 +2317,7 @@ The `sprites` mixin generates identical output to the CSS template
 .station-locator-panel .station-locator-data .station-locator-titles h2 {
   margin: 0, 0, 10px, 0; }
 .station-locator-panel .station-locator-data .station-locator-titles .station-locator-open {
-  color: #11499b;
+  color: #47d5cd;
   font-family: "EMprintSemibold"; }
 .station-locator-panel .station-locator-data .station-locator-point {
   display: table; }
@@ -2455,14 +2369,14 @@ The `sprites` mixin generates identical output to the CSS template
       padding-left: 0.625rem; }
 .station-locator-panel .station-locator-options .station-direction {
   margin-bottom: 10px;
-  background-color: #11499b; }
+  background-color: #47d5cd; }
   .station-locator-panel .station-locator-options .station-direction .icon-world-white {
     background-image: url(../img/icons.png);
     background-position: -172px -234px;
     width: 21px;
     height: 21px; }
 .station-locator-panel .station-locator-options .station-find {
-  background-color: #3da4de; }
+  background-color: #47d5cd; }
   .station-locator-panel .station-locator-options .station-find .icon-search-white {
     background-image: url(../img/icons.png);
     background-position: -193px -234px;
@@ -2535,10 +2449,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 .map-popup {
   background-color: #fff;
-  border: 1px solid #a6a6a6;
-  -webkit-box-shadow: 1px 1px 3px 2px rgba(43, 38, 38, 0.2);
-  -moz-box-shadow: 1px 1px 3px 2px rgba(43, 38, 38, 0.2);
-  box-shadow: 1px 1px 3px 2px rgba(43, 38, 38, 0.2);
+  border: 1px solid #4a3c31;
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(74, 60, 49, 0.2);
+  -moz-box-shadow: 1px 1px 3px 2px rgba(74, 60, 49, 0.2);
+  box-shadow: 1px 1px 3px 2px rgba(74, 60, 49, 0.2);
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.5;
@@ -2677,7 +2591,6 @@ p.paragraph.small {
     font-family: "EMprintSemibold";
     text-align: left; }
 .product-comparison > .table > tbody > tr.product-names > td {
-  color: #0c479d;
   font-family: "EMprintSemibold"; }
 .product-comparison > .product-legend {
   margin-top: 16px;
@@ -2778,7 +2691,7 @@ p.paragraph.small {
   width: 1%; }
 
 .resource-list-action > a {
-  color: #2b2626;
+  color: #4a3c31;
   font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   position: relative;
   top: -6px;
@@ -2991,23 +2904,23 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 .search-box-placeholder.placeholder, .search-box .placeholder.form-control, .search-box-small .placeholder.form-control {
-  color: #2b2626;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  color: #4a3c31;
+  font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 20px;
   font-size: 1.25rem; }
 .search-box-placeholder:-moz-placeholder, .search-box .form-control:-moz-placeholder, .search-box-small .form-control:-moz-placeholder {
-  color: #2b2626;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  color: #4a3c31;
+  font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 20px;
   font-size: 1.25rem; }
 .search-box-placeholder::-moz-placeholder, .search-box .form-control::-moz-placeholder, .search-box-small .form-control::-moz-placeholder {
-  color: #2b2626;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  color: #4a3c31;
+  font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 20px;
   font-size: 1.25rem; }
 .search-box-placeholder::-webkit-input-placeholder, .search-box .form-control::-webkit-input-placeholder, .search-box-small .form-control::-webkit-input-placeholder {
-  color: #2b2626;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  color: #4a3c31;
+  font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 20px;
   font-size: 1.25rem; }
 
@@ -3030,14 +2943,14 @@ The `sprites` mixin generates identical output to the CSS template
     .search-box .btn.search:focus, .search-box .search.btn-primary:focus, .search-box .search.btn-secondary:focus, .search-box .search.btn-tertiary:focus, .search-box .search.btn-deemphasized:focus, .search-box .search.btn-light:focus, .search-box .search.btn-badge:focus, .search-box .search.btn-icon:focus {
       color: #fff; }
   .search-box .recent-searches {
-    color: #808080;
+    color: #605f5e;
     margin-top: 10px;
     margin-top: 0.625rem; }
   .search-box .twitter-typeahead {
     width: 100%; }
   .search-box .tt-menu {
     background-color: #fff;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #f8f7f3;
     padding: 10px;
     padding: 0.625rem;
     width: 100%; }
@@ -3051,9 +2964,8 @@ The `sprites` mixin generates identical output to the CSS template
   margin-bottom: 0; }
 
 .search-box-settings {
-  border-bottom: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
+  border: 1px solid #f8f7f3;
+  border-top: none;
   margin: 0;
   padding: 16px;
   padding: 1rem;
@@ -3102,7 +3014,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin-bottom: 1.5625rem; }
 
 .search-suggestions {
-  background-color: #e6e6e6;
+  background-color: #f8f7f3;
   padding: 20px;
   padding: 1.25rem;
   position: relative; }
@@ -3111,12 +3023,12 @@ The `sprites` mixin generates identical output to the CSS template
   .search-suggestions > .search-suggestions-text {
     margin: -4px 0 0 50px; }
     .search-suggestions > .search-suggestions-text > .search-suggestions-title {
-      color: #00a14d;
+      color: #e1ebd4;
       margin-bottom: 0; }
     .search-suggestions > .search-suggestions-text > .list {
       margin-left: 8px; }
       .search-suggestions > .search-suggestions-text > .list > li > a {
-        color: #2b2626;
+        color: #4a3c31;
         position: relative; }
         .search-suggestions > .search-suggestions-text > .list > li > a.glyph-link-bullet:before {
           content: "\203A";
@@ -3125,7 +3037,7 @@ The `sprites` mixin generates identical output to the CSS template
           position: absolute; }
 
 .sidebar-nav > li {
-  border-bottom: 1px solid #e6e6e6; }
+  border-bottom: 1px solid #f8f7f3; }
   .sidebar-nav > li:last-child {
     border-bottom: none; }
   .sidebar-nav > li.sidebar-nav-title {
@@ -3139,16 +3051,16 @@ The `sprites` mixin generates identical output to the CSS template
     .sidebar-nav > li > a.active {
       padding: 18px 27px;
       padding: 1.125rem 1.6875rem;
-      background-color: #f2f2f2;
-      border-left: 3px solid #00a3e0;
-      color: #00a3e0;
+      background-color: #f7f7f7;
+      border-left: 3px solid #47d5cd;
+      color: #47d5cd;
       font-family: "EMprintSemibold"; }
     .sidebar-nav > li > a:hover {
-      color: #00a3e0; }
+      color: #47d5cd; }
 .sidebar-nav.sidebar-nav-right > li {
   text-align: right; }
   .sidebar-nav.sidebar-nav-right > li > a.active {
-    border-right: 3px solid #00a3e0;
+    border-right: 3px solid #47d5cd;
     border-left: none; }
 .sidebar-nav.sidebar-nav-icons > li > a {
   margin-top: -13px;
@@ -3200,9 +3112,9 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 .social .social-data {
-  border: 1px solid #e6e6e6; }
+  border: 1px solid #f8f7f3; }
   .social .social-data > .social-follow {
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding: 20px;
     padding: 1.25rem; }
     .social .social-data > .social-follow > .social-app {
@@ -3212,9 +3124,9 @@ The `sprites` mixin generates identical output to the CSS template
         margin-bottom: 40px;
         margin-bottom: 2.5rem; }
         .social .social-data > .social-follow > .social-app > .icon:after {
-          -webkit-box-shadow: 0px 110px 8px 0 #e6e6e6;
-          -moz-box-shadow: 0px 110px 8px 0 #e6e6e6;
-          box-shadow: 0px 110px 8px 0 #e6e6e6;
+          -webkit-box-shadow: 0px 110px 8px 0 #f8f7f3;
+          -moz-box-shadow: 0px 110px 8px 0 #f8f7f3;
+          box-shadow: 0px 110px 8px 0 #f8f7f3;
           content: "";
           display: block;
           height: 5px;
@@ -3231,7 +3143,6 @@ The `sprites` mixin generates identical output to the CSS template
     .social .social-data > .social-message > .social-options > a {
       float: right; }
     .social .social-data > .social-message > .social-talk > p {
-      font-family: "EMprintLight";
       -ms-word-break: break-all;
       word-break: break-all;
       word-break: break-word;
@@ -3310,7 +3221,7 @@ The `sprites` mixin generates identical output to the CSS template
 .social-share {
   padding: 20px;
   padding: 1.25rem;
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   text-align: center; }
   .social-share > .social-share-title {
     font-size: 18px;
@@ -3340,7 +3251,7 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 0; }
 
 .smart-list-disabled {
-  color: #b5b5b5; }
+  color: #605f5e; }
 
 .smart-list-alphabetical-index {
   margin-bottom: 20px;
@@ -3351,10 +3262,10 @@ The `sprites` mixin generates identical output to the CSS template
   .smart-list-alphabetical-index > li {
     margin-right: 10px;
     margin-right: 0.625rem;
-    color: #b5b5b5;
+    color: #605f5e;
     float: left; }
     .smart-list-alphabetical-index > li:before {
-      color: #d9d9d9;
+      color: #4a3c31;
       content: "|";
       margin-right: 10px;
       margin-right: 0.625rem; }
@@ -3389,7 +3300,7 @@ The `sprites` mixin generates identical output to the CSS template
   float: left; }
 
 .special-screen-title-favorite.link-icon {
-  color: #b5b5b5; }
+  color: #605f5e; }
   .special-screen-title-favorite.link-icon > .icon {
     margin-right: 4px;
     margin-right: 0.25rem;
@@ -3464,7 +3375,7 @@ The `sprites` mixin generates identical output to the CSS template
     font-family: "EMprintSemibold"; }
 
 .surfaced-item-image {
-  border: 1px solid #dedede;
+  border: 1px solid #bbad8f;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   width: 100%; }
@@ -3533,28 +3444,28 @@ The `sprites` mixin generates identical output to the CSS template
     padding: 4%; }
 
 .table-border, .table, .table > thead > tr > th, .table tbody td {
-  border: 1px solid #e6e6e6; }
+  border: 1px solid #f8f7f3; }
 
 .table {
   border-collapse: collapse;
   margin-bottom: 0; }
   .table > thead {
-    background-color: #e6e6e6; }
+    background-color: #f8f7f3; }
     .table > thead > tr > th {
       border-left-color: #fff;
       border-right-color: #fff;
       font-family: "EMprintSemibold"; }
       .table > thead > tr > th:first-child {
-        border-left-color: #e6e6e6; }
+        border-left-color: #f8f7f3; }
       .table > thead > tr > th:last-child {
-        border-right-color: #e6e6e6; }
+        border-right-color: #f8f7f3; }
   .table.table-minimized {
     width: auto; }
   .table.table-maximized {
     width: 100%; }
 
 .table-faux .tables {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #f8f7f3;
   float: left;
   padding: 0;
   position: relative;
@@ -3564,7 +3475,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     padding: 10px;
     margin: 0;
-    background-color: #e6e6e6;
+    background-color: #f8f7f3;
     margin-left: -1px; }
     .table-faux .tables h3.h5 > span {
       display: block;
@@ -3583,14 +3494,13 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0;
     font-size: 16px;
     font-size: 1rem;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #f8f7f3;
+    border-right: 1px solid #f8f7f3;
     margin-left: -1px; }
 .table-faux .tables:first-child p {
-  color: #0c479d;
   font-family: "EMprintSemibold"; }
 .table-faux .tables:last-child p {
-  border-right: 1px solid #e6e6e6; }
+  border-right: 1px solid #f8f7f3; }
 
 .col-2 .tables {
   width: 50%; }
@@ -3645,7 +3555,7 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align: middle;
     width: 8em; }
 .bp-max-xs table.table-no-header > tbody > tr:nth-child(odd), .bp-max-sm table.table-no-header > tbody > tr:nth-child(odd), .bp-max-md table.table-no-header > tbody > tr:nth-child(odd) {
-  background: #e6e6e6;
+  background: #f8f7f3;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd; }
 .bp-max-xs table.table-no-header > tbody > tr:nth-child(even), .bp-max-sm table.table-no-header > tbody > tr:nth-child(even), .bp-max-md table.table-no-header > tbody > tr:nth-child(even) {
@@ -3684,18 +3594,18 @@ The `sprites` mixin generates identical output to the CSS template
   .tab-list-items > .nav-tabs > li {
     margin-right: 8px; }
     .tab-list-items > .nav-tabs > li > a {
-      background: #e6e6e6;
+      background: #f8f7f3;
       border-radius: 0;
-      color: #2b2626; }
+      color: #4a3c31; }
     .tab-list-items > .nav-tabs > li.active > a {
-      border-top: 3px solid #00a3e0;
+      border-top: 3px solid #47d5cd;
       padding: 8px 15px 10px;
       background: #fff;
       outline: none; }
     .tab-list-items > .nav-tabs > li::selection > a {
       outline: none; }
 .tab-list-items .content-list-items {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #f8f7f3;
   padding: 15px; }
 
 .text-red-orange {
@@ -3753,7 +3663,6 @@ The `sprites` mixin generates identical output to the CSS template
   -webkit-box-shadow: 0 0 10px 1px #ccc;
   -moz-box-shadow: 0 0 10px 1px #ccc;
   box-shadow: 0 0 10px 1px #ccc;
-  color: #11499b;
   font-size: 13px;
   font-size: 0.8125rem;
   left: 50%;
@@ -3854,7 +3763,7 @@ The `sprites` mixin generates identical output to the CSS template
 .has-social .nav-country > li > a {
   padding-left: 0; }
   .has-social .nav-country > li > a:before {
-    color: #808080;
+    color: #605f5e;
     content: '|';
     font-size: 12px;
     left: 0;
@@ -3867,7 +3776,7 @@ The `sprites` mixin generates identical output to the CSS template
 .has-languages .nav-country > li > a {
   padding-right: 0; }
   .has-languages .nav-country > li > a:after {
-    color: #808080;
+    color: #605f5e;
     content: '|';
     font-size: 12px;
     padding-right: 13px;
@@ -3948,27 +3857,6 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 0.8125rem; }
     #footer .social-share-icons > a {
       margin-right: 8px; }
-
-#footer-cap {
-  font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
-  height: 52px;
-  background: #06459f;
-  background: -webkit-linear-gradient(legacy-direction(to right), #06459f, #33a2df);
-  background: linear-gradient(to right, #06459f, #33a2df);
-  padding: 14px 20px;
-  position: relative; }
-  #footer-cap:after {
-    background: url("../img/footer-cap.png") no-repeat;
-    content: "";
-    left: 0;
-    height: 52px;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    position: absolute;
-    top: 0;
-    width: 100%; }
 
 #footer-top {
   background-color: #383838;
@@ -4068,7 +3956,7 @@ The `sprites` mixin generates identical output to the CSS template
   border-radius: 0;
   border-top: 1px solid rgba(17, 17, 17, 0.1);
   color: #d4d4d4;
-  font-family: "EMprint", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-family: "Lato-Regular", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   height: 45px;
@@ -4329,7 +4217,7 @@ The `sprites` mixin generates identical output to the CSS template
   background: none;
   border: none;
   color: #fff;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   height: 55px;
@@ -4446,7 +4334,6 @@ The `sprites` mixin generates identical output to the CSS template
   color: #808080;
   cursor: pointer;
   display: inline-block;
-  font-family: EMprintLight, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 36px;
   font-size: 2.25rem;
   margin: 6px 0; }
@@ -4633,7 +4520,7 @@ The `sprites` mixin generates identical output to the CSS template
   .nav-language-current:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #808080;
+    border-top: 5px solid #605f5e;
     content: ' ';
     display: inline-block;
     height: 0;
@@ -4642,7 +4529,7 @@ The `sprites` mixin generates identical output to the CSS template
     width: 0; }
 
 .nav-language-list {
-  background-color: #f0f0f0;
+  background-color: #bbad8f;
   display: none;
   margin: 0;
   padding: 0; }
@@ -4656,7 +4543,7 @@ The `sprites` mixin generates identical output to the CSS template
   position: absolute;
   z-index: 9; }
 .nav-language-open > .nav-language-current:after {
-  border-bottom: 5px solid #808080;
+  border-bottom: 5px solid #605f5e;
   border-top: none; }
 
 @media (min-width: 768px) {
@@ -4673,7 +4560,7 @@ The `sprites` mixin generates identical output to the CSS template
       .nav-language-list > li > a {
         padding: 10px 5px; }
       .nav-language-list > li.selected > a:after {
-        border-bottom: 1px solid #808080;
+        border-bottom: 1px solid #605f5e;
         bottom: 10px;
         content: '';
         left: 5px;
@@ -4694,7 +4581,7 @@ The `sprites` mixin generates identical output to the CSS template
     .nav-lines-brands > li:first-child {
       padding-left: 0; }
       .nav-lines-brands > li:first-child:after {
-        color: #d6d6d6;
+        color: #605f5e;
         content: '\02022';
         display: block;
         font-family: 'serif';
@@ -4790,8 +4677,8 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 25px 15px 0;
   text-align: center; }
   .nav-main-item:hover {
-    background-color: #f4f4f4;
-    color: #dc241f; }
+    background-color: #f7f7f7;
+    color: #47d5cd; }
   .nav-main-item > a {
     display: block;
     font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
@@ -4802,15 +4689,15 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0 auto 4px; }
 
 .nav-main-item:hover, .nav-main-item-active {
-  -webkit-box-shadow: inset 0 3px 0 0 #dc241f;
-  -moz-box-shadow: inset 0 3px 0 0 #dc241f;
-  box-shadow: inset 0 3px 0 0 #dc241f; }
+  -webkit-box-shadow: inset 0 3px 0 0 #47d5cd;
+  -moz-box-shadow: inset 0 3px 0 0 #47d5cd;
+  box-shadow: inset 0 3px 0 0 #47d5cd; }
 
 .nav-main-item-active {
-  background-color: #fafafa; }
+  background-color: #f7f7f7; }
 
 .nav-main-item-text {
-  color: #808080;
+  color: #605f5e;
   font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 12px;
   font-size: 0.75rem; }
@@ -4820,19 +4707,19 @@ The `sprites` mixin generates identical output to the CSS template
     padding-left: 30px; }
 
   .nav-main-item:hover {
-    color: #dc241f; }
+    color: #47d5cd; }
     .nav-main-item:hover > a {
       color: inherit; }
   .nav-main-item > a {
-    color: #454545;
+    color: #605f5e;
     font-size: 15px;
     font-size: 0.9375rem;
     height: 100%;
     padding-top: 10px; }
 
   .nav-main-item-active:hover {
-    background-color: #fafafa;
-    color: #454545; }
+    background-color: #f7f7f7;
+    color: #605f5e; }
 
   .nav-main-item-text {
     display: none; } }
@@ -4847,14 +4734,14 @@ The `sprites` mixin generates identical output to the CSS template
 .nav-main-list-trigger {
   padding-top: 21px; }
   .nav-main-list-trigger > .icon-hamburger {
-    background-color: #dc241f;
+    background-color: #47d5cd;
     display: block;
     height: 2px;
     margin: 11px auto 15px;
     position: relative;
     width: 25px; }
     .nav-main-list-trigger > .icon-hamburger:before, .nav-main-list-trigger > .icon-hamburger:after {
-      background-color: #dc241f;
+      background-color: #47d5cd;
       content: " ";
       display: block;
       height: 2px;
@@ -4952,7 +4839,7 @@ html.nav-main-mobile-open #nav-main-mobile {
   top: 0; }
 
 .nav-main-mobile-arrow, .nav-main-mobile-panel.nav-main-mobile-panel-menu > li > a:after, .nav-main-mobile-panel > li.nav-main-mobile-back > a:after {
-  border: 2px solid #808080;
+  border: 2px solid #605f5e;
   border-left: transparent;
   border-top: transparent;
   content: "";
@@ -4997,17 +4884,14 @@ html.nav-main-mobile-open #nav-main-mobile {
   .nav-main-mobile-panel > li {
     padding: 0 30px; }
     .nav-main-mobile-panel > li.nav-main-mobile-back {
-      background-color: #f3f3f3;
+      background-color: #bbad8f;
       padding-left: 0; }
       .nav-main-mobile-panel > li.nav-main-mobile-back:before {
-        background-color: #ccc;
+        background-color: #bbad8f;
         content: "";
         display: block;
         height: 80px;
         left: 0;
-        background: #eaeaea;
-        background: -webkit-linear-gradient(legacy-direction(to bottom), #eaeaea, #f3f3f3);
-        background: linear-gradient(to bottom, #eaeaea, #f3f3f3);
         position: absolute;
         width: 80px; }
       .nav-main-mobile-panel > li.nav-main-mobile-back > a {
@@ -5026,8 +4910,8 @@ html.nav-main-mobile-open #nav-main-mobile {
         border-bottom: 1px solid #d6d6d6; }
     .nav-main-mobile-panel > li > a {
       background-color: transparent;
-      border-bottom: 1px solid #d6d6d6;
-      color: #454545;
+      border-bottom: 1px solid #f7f7f7;
+      color: #605f5e;
       display: block;
       font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
       font-size: 14px;
@@ -5100,7 +4984,7 @@ The `sprites` mixin generates identical output to the CSS template
   padding-top: 18px;
   width: 75px; }
   .nav-main-search-trigger:before {
-    color: #dc241f;
+    color: #47d5cd;
     content: "\e007";
     display: block;
     font-family: em, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
@@ -5123,7 +5007,7 @@ The `sprites` mixin generates identical output to the CSS template
     top: 21px; }
   .nav-main-search > input {
     border: none;
-    color: #808080;
+    color: #605f5e;
     font-size: 21px;
     outline: none;
     overflow: hidden;
@@ -5138,7 +5022,7 @@ The `sprites` mixin generates identical output to the CSS template
 .nav-search-open .nav-main-search-trigger {
   position: relative; }
   .nav-search-open .nav-main-search-trigger:after, .nav-search-open .nav-main-search-trigger:before {
-    background-color: #dc241f;
+    background-color: #47d5cd;
     content: "";
     height: 1px;
     margin: 0;
@@ -5179,7 +5063,7 @@ The `sprites` mixin generates identical output to the CSS template
     .nav-main-search.search-box .nav-main-search-submit {
       background: transparent;
       border: none;
-      color: #808080;
+      color: #605f5e;
       display: block;
       font-family: EMprint, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
       font-size: 18px;
@@ -5202,10 +5086,10 @@ The `sprites` mixin generates identical output to the CSS template
   .nav-main-search-trigger {
     padding-top: 35px; }
     .nav-main-search-trigger:before {
-      color: #454545;
+      color: #605f5e;
       font-size: 15px; }
     .nav-main-search-trigger:hover:before {
-      color: #dc241f; }
+      color: #47d5cd; }
 
   .nav-main-search.search-box {
     height: 100px;
@@ -5282,7 +5166,7 @@ The `sprites` mixin generates identical output to the CSS template
     position: relative; }
 
   .nav-meganav-active {
-    background-color: #fafafa;
+    background-color: #f7f7f7;
     padding: 25px 0 50px;
     top: 0; }
 
@@ -5312,11 +5196,11 @@ The `sprites` mixin generates identical output to the CSS template
   .nav-meganav-subitem {
     padding: 10px 0; }
     .nav-meganav-subitem > a {
-      color: #808080;
+      color: #605f5e;
       font-size: 14px;
       font-size: 0.875rem; }
       .nav-meganav-subitem > a:hover {
-        border-bottom: 1px solid #d4d4d4; }
+        border-bottom: 1px solid #47d5cd; }
 
   .nav-meganav-close {
     cursor: pointer;
@@ -5408,7 +5292,7 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-transform: scale(1) translateX(-50%) translateY(0px);
     transform: scale(1) translateX(-50%) translateY(0px); }
   .nav-social > .nav-social-trigger {
-    color: #454545;
+    color: #4a3c31;
     display: block;
     font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
     font-size: 13px;
@@ -5511,14 +5395,14 @@ The `sprites` mixin generates identical output to the CSS template
         .nav-social-few > .nav-social-icons > li > a > .icon-youtube-round:hover {
           background-position: -62px -150px; } }
 .nav-top-bar {
-  background-color: #f0f0f0;
+  background-color: #bbad8f;
   height: 40px;
   position: relative; }
   .nav-top-bar a,
   .nav-top-bar a:hover,
   .nav-top-bar a:active,
   .nav-top-bar a:focus {
-    color: #454545;
+    color: #4a3c31;
     display: block;
     font-family: EMprintSemibold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
     font-size: 13px;

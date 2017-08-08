@@ -100,7 +100,7 @@
 
 	li.divider:before {
 		content: "|";
-		color: $black15;
+		color: $black8;
 	}
 
 	li a {
@@ -117,7 +117,7 @@
 }
 
 .list-item-disabled > h3, .list-item-disabled ul a {
-	color: $silver;
+	color: $grey;
 }
 
 /*Items list*/
@@ -135,12 +135,12 @@
 			@include rem-fallback(font-size, 13px / 16px);
 
 			span {
-				color: $blue;
+				
 			}
 
 			&.title {
 				@include rem-fallback(font-size, 16px / 16px);
-				color: $blue;
+				
 				font-family: EMprintSemibold;
 			}
 
@@ -156,7 +156,7 @@
 		@include rem-fallback(font-size, 16px / 16px);
 
 		span {
-			color: $blue;
+		
 		}
 	}
 }
@@ -168,7 +168,7 @@
 		padding: 0;
 		font-family: EMprintSemibold;
 		@include rem-fallback(font-size, 16px / 16px);
-		color: $blue;
+		
 	}
 }
 
@@ -201,7 +201,7 @@
 		.items-icon-list {
 			color: $black;
 			@include rem-fallback(font-size, 16px / 16px);
-			font-family: EMprint;
+		
 			padding-left: 50px;
 			display: table-cell;
 			min-height: 24px;

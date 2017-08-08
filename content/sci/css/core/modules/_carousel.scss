@@ -160,13 +160,13 @@ $slick-opacity-not-active: 0.5 !default;
 
 		> .pager {
 			@include border-radius(50%);
-			background-color: $silver;
+			background-color:  $teal;
 			display: inline-block;
 			height: 18px;
 			width: 18px;
 
 			&:hover {
-				background-color: $carousel-inactive-dot-hover;
+				background-color: $grey;
 			}
 
 			> img, > p {
@@ -175,10 +175,10 @@ $slick-opacity-not-active: 0.5 !default;
 		}
 
 		&.slick-active > .pager {
-			background-color: $cyan;
+			background-color: $teal;
 
 			&:hover {
-				background-color: $cyan;
+				background-color: $teal;
 			}
 		}
 	}
@@ -322,7 +322,7 @@ $slick-opacity-not-active: 0.5 !default;
 					}
 
 					&.slick-active {
-						border-bottom: 2px solid $cyan;
+						border-bottom: 2px solid $teal;
 					}
 				}
 			}

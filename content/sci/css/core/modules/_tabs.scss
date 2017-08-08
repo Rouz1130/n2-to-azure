@@ -27,13 +27,13 @@
 			margin-right: 8px;
 
 			> a {
-				background: $black10;
+				background: $black8;
 				border-radius: 0;
 				color: $black;
 			}
 
 			&.active > a {
-				border-top: 3px solid $cyan;
+				border-top: 3px solid $teal;
 				padding: 8px 15px 10px;
 				background: $white;
                 outline:none;
@@ -46,7 +46,7 @@
 	}
 
 	.content-list-items {
-		border: 1px solid $black10;
+		border: 1px solid $black8;
 		padding: 15px;
 	}
 }
