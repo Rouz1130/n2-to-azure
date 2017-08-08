@@ -9,7 +9,6 @@
 a.sm-more { 
 text-decoration:none; 
 outline: none;
-
 } 
 
 </style>
