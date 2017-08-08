@@ -27,25 +27,6 @@
 	}
 }
 
-#footer-cap {
-	@include font-family(EMprintSemibold);
-	@include rem-fallback(font-size, 18px / 16px);
-	height: 52px;
-	@include linear-gradient(to right, $footer-cap-start-color, $footer-cap-end-color);
-	padding: 14px $nav-small-gutter;
-	position: relative;
-
-	&:after {
-		background: url("../img/footer-cap.png") no-repeat;
-		content: "";
-		left: 0;
-		height: 52px;
-		@include opacity(.5);
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-}
 
 #footer-top {
 	background-color: #383838;
@@ -173,7 +154,7 @@
 	border-radius: 0;
 	border-top: 1px solid rgba(17, 17, 17, 0.1);
 	color: #d4d4d4;
-	@include font-family("EMprint");
+	@include font-family("Lato-Regular");
 	@include rem-fallback(font-size, 15px / 16px);
 	height: 45px;
 	outline: 0;

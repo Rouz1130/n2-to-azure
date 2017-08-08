@@ -17,7 +17,7 @@
 			}
 
 			.station-locator-open {
-				color: $dark-secondary-blue;
+				color: $teal;
 				font-family: "EMprintSemibold";
 			}
 		}
@@ -89,7 +89,7 @@
 
 		.station-direction {
 			margin-bottom: 10px;
-			background-color: $dark-secondary-blue;
+			background-color: $teal;
 
 			.icon-world-white {
 				@include sprite($icon-world-white);
@@ -97,7 +97,7 @@
 		}
 
 		.station-find {
-			background-color: $cyan-secondary;
+			background-color: $teal;
 
 			.icon-search-white {
 				@include sprite($icon-search-white);

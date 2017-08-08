@@ -22,7 +22,7 @@
 }
 
 .table-border {
-	border: 1px solid $black10;
+	border: 1px solid $black8;
 }
 
 .table {
@@ -31,7 +31,7 @@
 	margin-bottom: 0;
 
 	> thead {
-		background-color: $black10;
+		background-color: $black8;
 
 		> tr > th {
 			@extend .table-border;
@@ -40,11 +40,11 @@
 			font-family: "EMprintSemibold";
 
 			&:first-child {
-				border-left-color: $black10;
+				border-left-color: $black8;
 			}
 
 			&:last-child {
-				border-right-color: $black10;
+				border-right-color: $black8;
 			}
 		}
 	}
@@ -70,7 +70,7 @@
 
 .table-faux {
 	.tables {
-		border-bottom: 1px solid $black10;
+		border-bottom: 1px solid $black8;
 		float: left;
 		padding: 0;
 		position: relative;
@@ -79,7 +79,7 @@
 
 		h3.h5 {
 			@include common-rows;
-			background-color: $black10;
+			background-color: $black8;
 			margin-left: -1px;
 
 			> span {
@@ -97,19 +97,19 @@
 		p {
 			@include common-rows;
 			@include rem-fallback(font-size, 16px / 16px);
-			border-left: 1px solid $black10;
-			border-right: 1px solid $black10;
+			border-left: 1px solid $black8;
+			border-right: 1px solid $black8;
 			margin-left: -1px;
 		}
 	}
 
 	.tables:first-child p {
-		color: $blue;
+	
 		font-family: "EMprintSemibold";
 	}
 
 	.tables:last-child p {
-		border-right: 1px solid $black10;
+		border-right: 1px solid $black8;
 	}
 }
 
@@ -236,7 +236,7 @@
 		> tbody {
 			> tr {
 				&:nth-child(odd) {
-					background: $black10;
+					background: $black8;
 					border-bottom: 1px solid #ddd;
 					border-top: 1px solid #ddd;
 				}

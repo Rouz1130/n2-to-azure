@@ -13,14 +13,7 @@
 			    files: 'content/sci/css/ie8/**/*.scss',
 				tasks: ['ie8-css']
 			},
-			lobCSS: {
-			    files: 'content/sci/css/lob/**/*.scss',
-				tasks: ['lob-css']
-			},
-			skinsCSS: {
-			    files: 'content/sci/css/skins/**/*.scss',
-				tasks: ['skins-css']
-			},
+			
 			pdsCSS: {
 			    files: 'content/sci/css/pds/**/*.scss',
 				tasks: ['pds-css']

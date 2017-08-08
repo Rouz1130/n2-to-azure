@@ -5,7 +5,7 @@
 @import "variables";
 
 #nav-main-mobile {
-	background-color: $nav-main-bar-background;
+	background-color: $white;
 	height: 100%;
 	overflow-x: hidden;
 	position: fixed;
@@ -40,7 +40,7 @@ html.nav-main-mobile-open {
 }
 
 .nav-main-mobile-panel {
-	background-color: $nav-main-bar-background;
+	background-color: $white;
 	bottom: 0;
 	display: block;
 	height: 0;
@@ -84,16 +84,15 @@ html.nav-main-mobile-open {
 		padding: 0 30px;
 
 		&.nav-main-mobile-back {
-			background-color: $nav-main-mobile-backnav-background;
+			background-color: $tan;
 			padding-left: 0;
 
 			&:before {
-				background-color: #ccc;
+				background-color: $tan;
 				content: "";
 				display: block;
 				height: 80px;
 				left: 0;
-				@include linear-gradient(to bottom, $nav-main-mobile-backnav-arrow-gradient-top, $nav-main-mobile-backnav-arrow-gradient-bottom);
 				position: absolute;
 				width: 80px;
 			}
@@ -111,7 +110,7 @@ html.nav-main-mobile-open {
 		}
 
 		&.nav-main-mobile-logo {
-			background-color: $nav-main-bar-background;
+			background-color: $white;
 
 			> a {
 				border-bottom: 1px solid $nav-main-mobile-divider;
@@ -120,8 +119,8 @@ html.nav-main-mobile-open {
 
 		> a {
 			background-color: transparent;
-			border-bottom: 1px solid $nav-main-mobile-divider;
-			color: $nav-main-bar-text-dark;
+			border-bottom: 1px solid $black5;
+			color: $grey;
 			display: block;
 			@include font-family(EMprintSemibold);
 			font-size: 14px;

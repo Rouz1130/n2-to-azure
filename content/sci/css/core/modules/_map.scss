@@ -10,7 +10,7 @@
 
 .map-popup {
 	background-color: $white;
-	border: 1px solid $black35;
+	border: 1px solid $black;
 	@include box-shadow(1px, 1px, 3px, rgba($black, .2), 2px);
 	@include rem-fallback(font-size, 13px / 16px);
 	line-height: 1.5;

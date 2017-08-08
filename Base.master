@@ -19,7 +19,7 @@
     <link href="~/content/vendor/slick/slick.css" rel="stylesheet" type="text/css">
     <link href="~/content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="~/content/sci/css/core.min.css" rel="stylesheet" type="text/css">
-	<link href="<%=ResolveUrl("~/content/sci/css/" + HttpContext.Current.Items["skin"] + ".min.css")%>" rel="stylesheet" type="text/css">
+	
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<link href="~/content/sci/css/ie8.min.css" rel="stylesheet" type="text/css">
 	<![endif]-->

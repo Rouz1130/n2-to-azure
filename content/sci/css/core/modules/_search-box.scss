@@ -5,7 +5,7 @@
 .search-box-placeholder {
 	@include placeholder() {
 		color: $black;
-		@include font-family(EMprintLight);
+		@include font-family(Lato-Regular);
 		@include rem-fallback(font-size, 20px / 16px);
 	}
 }
@@ -36,7 +36,7 @@
 	}
 
 	.recent-searches {
-		color: $black50;
+		color: $grey;
 		@include rem-fallback(margin-top, 10px / 16px);
 	}
 
@@ -46,7 +46,7 @@
 
 	.tt-menu {
 		background-color: $white;
-		border: 1px solid $black10;
+		border: 1px solid $black8;
 		@include rem-fallback(padding, 10px / 16px);
 		width: 100%;
 	}
@@ -67,9 +67,8 @@
 }
 
 .search-box-settings {
-	border-bottom: 1px solid $black10;
-	border-left: 1px solid $black10;
-	border-right: 1px solid $black10;
+	border: 1px solid $black8;
+	border-top: none;
 	margin: 0;
 	@include rem-fallback(padding, 16px / 16px);
 	text-align: center;

@@ -99,11 +99,8 @@
 			<p><a runat="server" href="~/pages/private/industrial/EquipmentBuilders.aspx" class="glyph-link">Equipment Builders</a></p>
 		</div>
 		<div class="col-md-4">
-			<h3>Skins</h3>
-			<p><a href="?skin=red">Red (Retail, Asphalt, Basestocks, Waxes, White oils)</a></p>
-			<p><a href="?skin=blue">Blue (Industrial)</a></p>
-			<p><a href="?skin=blue-muted">Muted Blue (Marine)</a></p>
-			<p><a href="?skin=gray">Gray (Aviation)</a></p>
+		
+			
 			<h3>Legacy</h3>
 			<p><a runat="server" href="~/pages/private/legacy/NoseToTail.aspx" class="glyph-link">Nose to Tail</a></p>
 			<p><a runat="server" href="~/pages/private/legacy/PairsGame.aspx" class="glyph-link">Pairs Game</a></p>

@@ -3,7 +3,7 @@
 
 .sidebar-nav {
 	> li {
-		border-bottom: 1px solid $black10;
+		border-bottom: 1px solid $black8;
 
 		&:last-child {
 			border-bottom: none;
@@ -21,13 +21,13 @@
 			&.active {
 				@include rem-fallback(padding, 18px / 16px, 27px / 16px);
 				background-color: $black5;
-				border-left: 3px solid $cyan;
-				color: $cyan;
+				border-left: 3px solid $teal;
+				color: $teal;
 				font-family: "EMprintSemibold";
 			}
 
 			&:hover {
-				color: $cyan;
+				color: $teal;
 			}
 		}
 	}
@@ -37,7 +37,7 @@
 
 		> a {
 			&.active {
-				border-right: 3px solid $cyan;
+				border-right: 3px solid $teal;
 				border-left: none;
 			}
 		}

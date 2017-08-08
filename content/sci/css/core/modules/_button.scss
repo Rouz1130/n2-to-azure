@@ -3,23 +3,23 @@
 
 .btn {
 	@include border-radius(0);
-	@include rem-fallback(font-size, 18px / 16px);
-	@include rem-fallback(padding, 10px / 16px, 50px / 16px);
+	@include rem-fallback(font-size, 14px / 16px);
+	@include rem-fallback(padding, 10px / 14px, 30px / 14px);
 	@include rem-fallback(margin, 2px / 16px);
-	background-color: $silver;
-	border: none;
-	color: $white;
-	font-family: "EMprintSemibold";
+	background-color: transparent;
+	border: 2px solid $teal;
+	color: $black;
+	font-family: "Lato-Regular";
 	position: relative;
+    text-transform: uppercase;
 	max-width: 100%;
+    font-weight: bold; // TODO: should be lato-bold maybe?
 
 	&:active, &:focus, &:visited, &:hover {
-		color: $white;
-	}
-
-	&:hover {
-		background-color: $silver-hover;
-	}
+		color: $black;
+        background-color: transparent;
+        border-color: $teal;
+	}	
 }
 
 .btn-sm {
@@ -43,30 +43,15 @@
 }
 
 .btn-primary {
-	@extend .btn;
-	background-color: $blue;
-
-	&:hover {
-		background-color: $blue-hover;
-	}
+	 @extend .btn;	
 }
 
 .btn-secondary {
-	@extend .btn;
-	background-color: $cyan;
-
-	&:hover {
-		background-color: $cyan-hover;
-	}
+	 @extend .btn;	
 }
 
 .btn-tertiary {
-	@extend .btn;
-	background-color: $orange;
-
-	&:hover {
-		background-color: $orange-hover;
-	}
+	 @extend .btn;	
 }
 
 .btn-deemphasized {
@@ -83,19 +68,13 @@
 
 .btn-light {
 	@extend .btn;
-	background-color: $black10;
-	color: $black;
-
-	&:active, &:focus, &:visited, &:hover {
-		color: $black;
-	}
 }
 
 .btn-cancel.btn-link {
-	color: $red;
+	
 
 	&:active, &:focus, &:visited, &:hover {
-		color: $red;
+		
 	}
 }
 

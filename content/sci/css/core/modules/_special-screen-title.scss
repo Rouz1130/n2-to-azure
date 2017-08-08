@@ -25,7 +25,7 @@
 }
 
 .special-screen-title-favorite.link-icon {
-	color: $silver;
+	color: $grey;
 
 	> .icon {
 		@include rem-fallback(margin-right, 4px / 16px);

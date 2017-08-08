@@ -4,7 +4,7 @@
 #wait-message {
 	background-color: $white;
 	@include box-shadow(0, 0, 10px, $black20, 1px);
-	color: $dark-secondary-blue;
+	
 	@include rem-fallback(font-size, 13px / 16px);
 	left: 50%;
 	@include opacity(0);

@@ -13,7 +13,7 @@
 
 .img-bordered {
 	@include rem-fallback(padding, 10px / 16px);
-	border: 1px solid $black15;
+	border: 1px solid $black8;
 }
 
 .img-rounded {

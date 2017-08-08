@@ -14,7 +14,7 @@
         li,
         li:last-child {
             a {
-                color: $blue;
+               
             }
         }
     }
@@ -29,7 +29,7 @@
 
         > a {
             @include rem-fallback(margin-right, 12px / 16px);
-            color: $black50;
+            color: $grey;
         }
 
         &:last-child {
@@ -45,7 +45,7 @@
     }
 
     .glyph-link:after {
-        color: $black50;
+        color: $grey;
         @include rem-fallback(margin-right, 12px / 16px);
     }
 }
@@ -53,14 +53,14 @@
 .breadcrumb-panel,
 .breadcrumb-panel-action {
     background: $black5;
-    border-bottom: 1px solid $black10;
-    color: $black50;
+    border-bottom: 1px solid $black8;
+    color: $grey;
     @include rem-fallback(padding, 10px / 16px, 30px / 16px);
     width: 100%;
 
     .current-language {
         color: $black;
-        font-family: "EMprintSemibold";
+        font-family: "Lato-Regular";
     }
 }
 

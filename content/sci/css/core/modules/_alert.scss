@@ -1,11 +1,11 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
 
-.alert {
+.alert, .alert-warning, .alert-danger {
 	@include border-radius(0);
-	background-color: $alert-background;
+	background-color: $red;
 	border: none;
-	color: $alert-text;
+	color: $white;
 	padding: 20px;
 
 	.icon {
@@ -18,28 +18,10 @@
 	}
 }
 
-.alert-warning {
-	@extend .alert;
-	background-color: $alert-warning-background;
-
-	.alert-title {
-		color: $alert-warning-title;
-	}
-}
-
-.alert-danger {
-	@extend .alert;
-	background-color: $alert-danger-background;
-
-	.alert-title {
-		color: $alert-danger-title;
-	}
-}
-
 .alert-success {
 
 	.alert-title {
-		color: $alert-success-title;
+		background-color: $green;
 	}
 }
 

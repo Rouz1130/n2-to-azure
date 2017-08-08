@@ -2,7 +2,7 @@
 @import "../base/mixins";
 
 .search-suggestions {
-	background-color: $black10;
+	background-color: $black8;
 	@include rem-fallback(padding, 20px / 16px);
 	position: relative;
 
