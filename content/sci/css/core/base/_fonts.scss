@@ -1,6 +1,7 @@
 ﻿@import "mixins";
 
 @include font("MrsEaves", "mrseavrom");
+@include font('MrsEaves-Italic', 'MrsEaves-Italic');
 @include font("Lato-Regular", "Lato-Regular");
 @include font("Lato-Black", "Lato-Black");
 @include font("Lato-BlackItalic", "Lato-BlackItalic");
