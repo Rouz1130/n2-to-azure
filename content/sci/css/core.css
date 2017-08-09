@@ -66,9 +66,12 @@ a {
   color: #4a3c31;
   text-decoration: none; }
   a:active {
+    color: #4a3c31;
     outline: none; }
   a:hover {
-    text-decoration: none; }
+    color: #4a3c31;
+    text-decoration: none;
+    border-bottom: 2px solid #47d5cd; }
   a.disabled {
     color: #605f5e; }
 
@@ -76,17 +79,11 @@ img {
   max-width: 100%; }
 
 em {
-  font-family: EMprintItalic, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-family: "Lato-Italic", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-style: normal; }
 
 strong {
-  font-family: EMprintBold, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-  font-weight: normal; }
-
-em > strong,
-strong > em {
-  font-family: EMprintBoldItalic, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-  font-style: normal;
+  font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-weight: normal; }
 
 @font-face {
@@ -96,9 +93,33 @@ strong > em {
   font-style: normal;
   font-weight: normal; }
 @font-face {
+  font-family: "MrsEaves-Italic";
+  src: url("../fonts/MrsEaves-Italic.eot");
+  src: url("../fonts/MrsEaves-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MrsEaves-Italic.woff") format("woff"), url("../fonts/MrsEaves-Italic.ttf") format("truetype"), url("../fonts/MrsEaves-Italic.svg#karbonLight") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
   font-family: "Lato-Regular";
   src: url("../fonts/Lato-Regular.eot");
   src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#karbonLight") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Lato-Italic";
+  src: url("../fonts/Lato-Italic.eot");
+  src: url("../fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Italic.woff") format("woff"), url("../fonts/Lato-Italic.ttf") format("truetype"), url("../fonts/Lato-Italic.svg#karbonLight") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#karbonLight") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg#karbonLight") format("svg");
   font-style: normal;
   font-weight: normal; }
 .row {
@@ -341,6 +362,8 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 20px; }
   .alert .icon, .alert-warning .icon, .alert-danger .icon {
     position: absolute; }
+  .alert a, .alert a:link, .alert a:hover, .alert a:visited, .alert a:active, .alert-warning a, .alert-warning a:link, .alert-warning a:hover, .alert-warning a:visited, .alert-warning a:active, .alert-danger a, .alert-danger a:link, .alert-danger a:hover, .alert-danger a:visited, .alert-danger a:active {
+    color: #fff; }
   .alert > p, .alert-warning > p, .alert-danger > p {
     line-height: 1.2;
     padding-left: 45px; }
@@ -428,11 +451,10 @@ html.ios .app-promotion-android {
   background-color: transparent;
   border: 2px solid #47d5cd;
   color: #4a3c31;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Bold";
   position: relative;
   text-transform: uppercase;
-  max-width: 100%;
-  font-weight: bold; }
+  max-width: 100%; }
   .btn:active, .btn-primary:active, .btn-secondary:active, .btn-tertiary:active, .btn-deemphasized:active, .btn-light:active, .btn-badge:active, .btn-icon:active, .btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-tertiary:focus, .btn-deemphasized:focus, .btn-light:focus, .btn-badge:focus, .btn-icon:focus, .btn:visited, .btn-primary:visited, .btn-secondary:visited, .btn-tertiary:visited, .btn-deemphasized:visited, .btn-light:visited, .btn-badge:visited, .btn-icon:visited, .btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover, .btn-deemphasized:hover, .btn-light:hover, .btn-badge:hover, .btn-icon:hover {
     color: #4a3c31;
     background-color: transparent;
@@ -899,7 +921,7 @@ The `sprites` mixin generates identical output to the CSS template
   .data-visualization-title span {
     font-size: 51px;
     font-size: 3.1875rem;
-    font-family: EMprintBold; }
+    font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif; }
 
 .data-visualization-title,
 .data-visualization-image {
@@ -950,7 +972,7 @@ The `sprites` mixin generates identical output to the CSS template
   .event-list > tbody > tr > td .event-list-month,
   .event-list > tbody > tr > td .event-list-title {
     display: block;
-    font-family: "EMprintSemibold"; }
+    font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif; }
 
 @media (min-width: 992px) {
   .col-1 .event-list > tbody > tr > td.event-list-description > .event-list-description-details > .event-list-img {
@@ -1405,7 +1427,7 @@ The `sprites` mixin generates identical output to the CSS template
       font-size: 1rem;
       padding-left: 27px; }
       .form-group > input[type="checkbox"] + label:before {
-        background-color: #f8f7f3;
+        background-color: #fff;
         border: 1px solid #4a3c31;
         cursor: pointer;
         content: "";
@@ -1425,10 +1447,8 @@ The `sprites` mixin generates identical output to the CSS template
         background-position: -268px -233px;
         width: 20px;
         height: 20px;
-        -webkit-box-shadow: 0 0 5px 0 #47d5cd;
-        -moz-box-shadow: 0 0 5px 0 #47d5cd;
-        box-shadow: 0 0 5px 0 #47d5cd;
-        border: 1px solid #47d5cd; }
+        border: 1px solid #47d5cd;
+        background-color: #47d5cd; }
       .form-group > input[type="checkbox"]:checked + label .icon {
         left: -1px;
         margin: 0;
@@ -1445,7 +1465,7 @@ The `sprites` mixin generates identical output to the CSS template
       position: relative;
       padding-left: 25px; }
       .form-group > input[type="radio"] + label:before {
-        background-color: #f8f7f3;
+        background-color: #fff;
         border: 1px solid #4a3c31;
         cursor: pointer;
         -webkit-border-radius: 100%;
@@ -1600,7 +1620,7 @@ The `sprites` mixin generates identical output to the CSS template
   content: " \02C6"; }
 
 h1, h2, h3 {
-  font-family: MrsEavesRoman; }
+  font-family: 'MrsEaves-Italic'; }
 
 h1 {
   font-size: 30px;

@@ -9,11 +9,10 @@
 	background-color: transparent;
 	border: 2px solid $teal;
 	color: $black;
-	font-family: "Lato-Regular";
+	font-family: "Lato-Bold";
 	position: relative;
     text-transform: uppercase;
 	max-width: 100%;
-    font-weight: bold; // TODO: should be lato-bold maybe?
 
 	&:active, &:focus, &:visited, &:hover {
 		color: $black;

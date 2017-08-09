@@ -5,7 +5,7 @@
 $input-lg-height: 56px;
 
 @mixin checkables() {
-	background-color: $black8;
+	background-color: $white;
 	border: 1px solid $black;
 	cursor: pointer;
 }
@@ -142,8 +142,8 @@ $input-lg-height: 56px;
 
 			&:before {
 				@include sprite($icon-checked);
-				@include box-shadow(0, 0, 5px, $teal);
 				border: 1px solid $teal;
+                background-color: $teal;
 			}
 
 			.icon {

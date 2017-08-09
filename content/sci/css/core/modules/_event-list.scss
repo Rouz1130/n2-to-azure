@@ -30,7 +30,7 @@
 				.event-list-month,
 				.event-list-title {
 					display: block;
-					font-family: "EMprintSemibold";
+					@include font-family("Lato-Bold");
 				}
 			}
 		}

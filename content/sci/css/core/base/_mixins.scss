@@ -204,3 +204,9 @@
 		@content;
 	}
 }
+
+
+@mixin small-date() {
+    @include font-family("Lato-Black");
+    text-transform: uppercase;
+}
