@@ -47,7 +47,7 @@
 
 		> a {
 			color: $nav-meganav-title;
-			@include font-family(EMprintSemibold);
+			@include font-family("Lato-Bold");
 			@include rem-fallback(font-size, 17px / 16px);
 
 			&:hover {

@@ -252,7 +252,7 @@
 }
 
 .gs-region-title {
-	@include font-family(EMprintSemibold);
+	@include font-family("Lato-Bold");
 	@include rem-fallback(font-size, 15px / 16px);
 	display: block;
 	margin-top: 25px;
@@ -304,7 +304,7 @@
 .gs-website-title {
 	color: #d4d4d4;
 	display: block;
-	@include font-family(EMprintSemibold);
+	@include font-family("Lato-Bold");
 	@include rem-fallback(font-size, 15px / 16px);
 	padding: 8px 0 0;
 }
@@ -403,7 +403,7 @@
 			&.gs-sidebar-item-active {
 				> a {
 					color: #fafafa;
-					@include font-family(EMprintSemibold);
+					@include font-family("Lato-Bold");
 				}
 			}
 		}
@@ -412,7 +412,7 @@
 	.gs-sidebar-title {
 		border-top: 1px solid #333;
 		color: #555555;
-		@include font-family(EMprintSemibold);
+		@include font-family("Lato-Bold");
 		@include rem-fallback(font-size, 14px / 16px);
 		margin-top: 14px !important;
 		padding: 20px 0 10px;

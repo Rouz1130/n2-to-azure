@@ -14,7 +14,7 @@
 	a:focus {
 		color: $nav-top-bar-text;
 		display: block;
-		@include font-family(EMprintSemibold);
+		@include font-family("Lato-Bold");
 		@include rem-fallback(font-size, 13px / 16px);
 		white-space: nowrap;
 	}

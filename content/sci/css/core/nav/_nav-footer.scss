@@ -68,7 +68,7 @@
 
 	> li {
 		display: inline-block;
-		@include font-family("EMprintSemibold");
+		@include font-family("Lato-Bold");
 		@include rem-fallback(font-size, 14px / 16px);
 		margin: 0 15px 15px 0;
 		text-shadow: 0 -1px 1px rgba(17, 17, 17, 0.15);
@@ -273,7 +273,7 @@
 
 #footer-copyright {
 	color: #d4d4d4;
-	@include font-family("EMprintSemibold");
+	@include font-family("Lato-Bold");
 	@include rem-fallback(font-size, 12px / 16px);
 	@include rem-fallback(line-height, 20px / 16px);
 	margin-top: 4px;

@@ -109,7 +109,7 @@
 			border: none;
 			color: $nav-main-search-text;
 			display: block;
-			@include font-family(EMprint);
+			@include font-family("Lato-Regular");
 			font-size: 18px;
 			outline: none;
 			padding: 5px $nav-small-gutter 5px 30px;
