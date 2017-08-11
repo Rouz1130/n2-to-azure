@@ -23,7 +23,7 @@
 					vertical-align: middle;
 
 					&:first-child {
-						font-family: "EMprintSemibold";
+						font-family: "Lato-Bold";
 						text-align: left;
 					}
 				}
@@ -31,7 +31,7 @@
 				&.product-names {
 					> td {
 						
-						font-family: "EMprintSemibold";
+						font-family: "Lato-Bold";
 					}
 				}
 			}
@@ -43,7 +43,7 @@
 		text-align: right;
 
 		> span {
-			font-family: "EMprintSemibold";
+			font-family: "Lato-Bold";
 			@include rem-fallback(font-size, 13px / 16px);
 			@include rem-fallback(margin-left, 32px / 16px);
 			white-space: nowrap;

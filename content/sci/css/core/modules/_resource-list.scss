@@ -22,7 +22,7 @@
 
 	> a {
 		color: $black;
-		@include font-family(EMprintSemibold);
+		@include font-family("Lato-Bold");
 		position: relative;
 		@include rem-fallback(top, -6px / 16px);
 	}
@@ -41,5 +41,5 @@
 
 .resource-list-title {
 	display: block;
-	@include font-family(EMprintSemibold);
+	@include font-family("Lato-Bold");
 }

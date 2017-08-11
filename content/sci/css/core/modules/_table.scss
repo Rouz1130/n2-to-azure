@@ -37,7 +37,7 @@
 			@extend .table-border;
 			border-left-color: $white;
 			border-right-color: $white;
-			font-family: "EMprintSemibold";
+			font-family: "Lato-Bold";
 
 			&:first-child {
 				border-left-color: $black8;
@@ -105,7 +105,7 @@
 
 	.tables:first-child p {
 	
-		font-family: "EMprintSemibold";
+		font-family: "Lato-Bold";
 	}
 
 	.tables:last-child p {
@@ -221,7 +221,7 @@
 						border-bottom: 1px solid #fff;
 						content: attr(data-th) ": ";
 						display: inline-block;
-						font-family: EMprintSemibold;
+						font-family: "Lato-Bold";
 						margin-right: 10px;
 						padding: 10px;
 						vertical-align: middle;

@@ -11,7 +11,7 @@
 
 		&.sidebar-nav-title {
 			@include rem-fallback(padding, 18px / 16px, 30px / 16px);
-			font-family: "EMprintSemibold";
+			font-family: "Lato-Bold";
 		}
 
 		> a {
@@ -23,7 +23,7 @@
 				background-color: $black5;
 				border-left: 3px solid $teal;
 				color: $teal;
-				font-family: "EMprintSemibold";
+				font-family: "Lato-Bold";
 			}
 
 			&:hover {

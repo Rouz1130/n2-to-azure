@@ -62,7 +62,7 @@ $world-map-transition-speed: 0.25s;
 		border: $world-map-label-border-width solid $world-map-label-border-color;
 		color: $world-map-label-text-color;
 		display: none;
-		@include font-family(EMprintSemibold);
+		@include font-family("Lato-Bold");
 		@include rem-fallback(font-size, 14px / 16px);
 		padding: 0 5px;
 		pointer-events: none;

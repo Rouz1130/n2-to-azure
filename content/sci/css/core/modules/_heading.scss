@@ -2,7 +2,7 @@
 @import "../base/mixins";
 
 h1, h2, h3 {
-	font-family: 'MrsEaves-Italic';
+	font-family: "Lato-Italic";
 }
 
 h1 {
@@ -21,7 +21,7 @@ h3 {
 	@include rem-fallback(font-size, 16px / 16px);
 
 	&.strong, &.h4, &.h5, &.h6 {
-		font-family: "EMprintSemibold";
+		font-family: "Lato-Bold";
 	}
 }
 

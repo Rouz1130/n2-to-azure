@@ -16,14 +16,14 @@
 }
 
 .screen-title-subtitle {
-    font-family: "EMprintSemibold";
+    font-family: "Lato-Bold";
 }
 
 .screen-title-full-overlay {
     .screen-title-subtitle,
     .screen-title-cta {
         @include rem-fallback(font-size, 20px / 16px);
-        font-family: "EMprint";
+        font-family: "Lato-Regular";
     }
 }
 

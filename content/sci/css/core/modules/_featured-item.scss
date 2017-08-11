@@ -30,7 +30,7 @@
 
 .featured-item-subtitle {
 	@include rem-fallback(font-size, 16px / 16px);
-	@include font-family(EMprintSemibold);
+	@include font-family("Lato-Bold");
 	margin-top: 0;
 }
 
@@ -86,7 +86,7 @@
 				color: $teal;
 				display: inline-block;
 				float: right;
-				font-family: "EMprintSemibold";
+                @include font-family("Lato-Bold");
 				@include rem-fallback(font-size, 30px / 16px);
 				text-align: right;
 				width: percentage(2 / 4);

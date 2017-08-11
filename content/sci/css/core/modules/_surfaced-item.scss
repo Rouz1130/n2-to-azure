@@ -6,7 +6,7 @@
 	position: relative;
 
 	.glyph-link {
-		font-family: "EMprintSemibold";
+		font-family: "Lato-Bold";
 	}
 }
 
@@ -23,7 +23,7 @@
 .surfaced-intro-text,
 .surfaced-item-copy {
 	> h3 {
-		font-family: "EMprintSemibold";
+		font-family: "Lato-Bold";
 		@include rem-fallback(font-size, 20px / 16px);
 		margin-top: 0;
 	}
@@ -49,7 +49,7 @@
 
 			> h3 {
 				color: $white;
-				font-family: "EMprintSemibold";
+				font-family: "Lato-Bold";
 				@include rem-fallback(font-size, 20px / 16px);
 				@include rem-fallback(margin, 2px / 16px);
 				text-align: center;

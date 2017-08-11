@@ -61,7 +61,7 @@ $input-lg-height: 56px;
 
 		background-color: $black8;
 		display: table-cell;
-		font-family: "EMprintSemibold";
+		font-family: "Lato-Bold";
 		@include rem-fallback(font-size, 16px / 16px);
 		height: $input-lg-height;
 		line-height: 1.5rem;
@@ -101,7 +101,7 @@ $input-lg-height: 56px;
 		width: auto;
 
 		span {
-			font-family: "EMprintSemibold";
+			font-family: "Lato-Bold";
 		}
 	}
 }
@@ -217,7 +217,7 @@ $input-lg-height: 56px;
 .form-group .form-control,
 .input-group .form-control {
 	@include border-radius(0);
-	font-family: EMprintSemibold;
+	font-family: "Lato-Bold"; 
 	background-color: $black8;
 	border: 1px solid $black8;
 	color: #2b2626;
@@ -248,7 +248,7 @@ $input-lg-height: 56px;
 
 .form-group .input-optional {
 	@include rem-fallback(font-size, 13px / 16px);
-	font-family: "EMprintSemibold";
+	font-family: "Lato-Bold"; 
 	float: right;
 	color: #808080;
 	margin-top: 10px;

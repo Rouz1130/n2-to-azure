@@ -31,7 +31,7 @@
 
 .data-visualization-text {
     @include rem-fallback(font-size, 20px / 16px);
-    font-family: EMprintItalic;
+    @include font-family("Lato-Italic");
     @include rem-fallback(padding, 20px / 16px, 0);
 }
 
