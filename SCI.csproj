@@ -290,6 +290,7 @@
     <Content Include="controls\sci\R01_Resource.ascx" />
     <Content Include="controls\sci\SP10_DataVisualization.ascx" />
     <Content Include="controls\sci\T05_ScreenTitle.ascx" />
+    <Content Include="controls\snippets\Layout08.html" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-194x194.png" />
     <Content Include="favicon-32x32.png" />
@@ -307,6 +308,7 @@
     <Content Include="grunt\pds-css.js" />
     <Content Include="grunt\unit-tests.js" />
     <Content Include="ImageSpecs.aspx" />
+    <Content Include="layouts\Layout08.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x310.png" />
