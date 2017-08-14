@@ -9,8 +9,7 @@
 				<div class="featured-item-copy">
 					<h2>Good morning</h2>
 					<p>
-						Oltiva is always nearby. Where are you today?<br />
-						Tell us your location to find your nearest service station.
+						Tell us your location to find a funeral home near you.
 					</p>
 					<div class="form-group">
 						<input type="text" class="form-control" />
@@ -37,12 +36,13 @@
 				<div class="featured-title-copy-wrap">
 					<img class="featured-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
 					<div class="featured-title-copy">
-						<h2 class="featured-item-title">Improve hydraulic efficiency</h2>
-						<h3 class="featured-item-subtitle">The cost effective solution</h3>
+						<h2 class="featured-item-title">Virginia Sparks</h2>
+						<h3 class="featured-item-subtitle">1923-2017</h3>
 						<p>
-							Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+							Virginia Sparks, 97, of Signal Mountain, passed away Tuesday August 1 2017 at her home.
+
 						</p>
-						<a class="glyph-link">Talk to an expert</a>
+						<a class="glyph-link">Send flowers</a>
 					</div>
 				</div>
 			</div>

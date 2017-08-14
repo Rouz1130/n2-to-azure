@@ -1162,13 +1162,12 @@
 											</ul>
 										</div>
 									</li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Heavy-duty engine oils</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Industrial lubricants</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Technology Sales &amp; Licensing</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Marine</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Aviation Lubricants</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Aviation Fuels</a></li>
-									<li class="gs-country"><a class="gs-country-title" href="#">Motor Oils</a></li>
+									<li class="gs-country"><a class="gs-country-title" href="#">Events</a></li>
+									<li class="gs-country"><a class="gs-country-title" href="#">Services</a></li>
+					
+									<li class="gs-country"><a class="gs-country-title" href="#">About</a></li>
+									<li class="gs-country"><a class="gs-country-title" href="#">Counseling</a></li>
+									
 								</ul>
 							</li>
 						</section>

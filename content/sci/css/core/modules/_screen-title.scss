@@ -12,18 +12,25 @@
 
 .screen-title-title {
     margin-top: 0;
-    @include rem-fallback(font-size, 40px / 16px);
+    @include rem-fallback(font-size, 60px / 26px);
 }
 
 .screen-title-subtitle {
-    font-family: "Lato-Bold";
+    font-family: "Lato";
 }
 
 .screen-title-full-overlay {
-    .screen-title-subtitle,
-    .screen-title-cta {
+    .screen-title-subtitle {
         @include rem-fallback(font-size, 20px / 16px);
-        font-family: "Lato-Regular";
+        font-family: "Lato";
+    }
+
+    .screen-title-cta {
+        font-family: "Lato-Bold";
+        text-transform: uppercase;
+        border-bottom: 2px solid $teal;
+        padding-bottom: 6px;
+        cursor: pointer;
     }
 }
 
@@ -71,8 +78,7 @@
         }
 
         .screen-title-overlay-block {
-            @include opacity(.9);
-            background-color: #fff;
+          
             display: block;
             padding: 15px 20px;
             position: absolute;
@@ -84,9 +90,11 @@
 
                 > .screen-title-title {
                     @extend .screen-title-overlay-block;
-                    bottom: 0;
-                    left: 0;
-                    margin: 0 0 10px 10px;
+                  
+                    color: $white;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
 

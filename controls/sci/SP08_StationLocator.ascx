@@ -6,7 +6,7 @@
 	<div class="station-locator-data">
 		<img src="<%=ResolveUrl("~/content/site/Oltiva-station.png")%>" />
 		<div class="station-locator-titles">
-			<h2 class="large">30th Street Service Station, Inc.</h2>
+			<h2 class="large">Chattanooga Funeral Home</h2>
 			<span>Mon - Sat 06:00 - 22:00 <span class="station-locator-open">Open Now</span>, Sun 07:00 - 22:00</span>
 		</div>
 		<div class="station-locator-point">

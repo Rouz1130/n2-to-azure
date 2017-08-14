@@ -7,8 +7,8 @@
 	<div class="featured-item-copy">
 		<h2>Good morning</h2>
 		<p>
-			Oltiva is always nearby. Where are you today?<br />
-			Tell us your location to find your nearest service station.
+			
+			Tell us your location to find a funeral home near you.
 		</p>
 		<div class="form-group">
 			<input type="text" class="form-control" />

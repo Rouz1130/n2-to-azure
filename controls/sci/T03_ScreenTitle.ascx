@@ -3,7 +3,7 @@
 <% if (Variation == 1) { %>
 
 	<div class="component screen-title screen-title-split-left">
-		<h1 class="screen-title-title">Hydraulic oil lubricants</h1>
+		<h1 class="screen-title-title">Recent Obituaries</h1>
 		<div class="screen-title-copy-wrap">
 			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
 			<div class="screen-title-copy">
@@ -19,7 +19,7 @@
 <% } else if (Variation == 2) { %>
 
 	<div class="component screen-title screen-title-split-right">
-		<h1 class="screen-title-title">Hydraulic oil lubricants</h1>
+		<h1 class="screen-title-title">Recent Obituaries</h1>
 		<div class="screen-title-copy-wrap">
 			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
 			<div class="screen-title-copy">

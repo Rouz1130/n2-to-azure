@@ -17,7 +17,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td data-th="Type">Hydraulic oil</td>
+				<td data-th="Type">Services</td>
 				<td data-th="SAE Grade">50</td>
 				<td data-th="cSt @ 40&deg; C">32</td>
 				<td data-th="cSt @ 100&deg; C">6.3</td>

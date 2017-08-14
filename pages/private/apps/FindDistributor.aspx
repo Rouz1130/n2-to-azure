@@ -35,7 +35,7 @@
 				<!-- A05.1: Search box -->
 				<div class="component search-box" data-event-name="xom.search-requested" data-search-key="q">
 					<div class="form-group form-group-lg">
-						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or distributor name" ng-model="filters.q" />
+						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" ng-model="filters.q" />
 						<span class="form-group-btn">
 							<button class="btn btn-primary search" type="button">Search</button>
 						</span>

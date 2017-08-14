@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Oltiva SHC Synthetic Lubricants" %>
+﻿<%@ Page Title="Funeral Homes" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 	<div class="row">
@@ -14,7 +14,7 @@
 			<ks:Component runat="server" Code="A16.1" ContentFile="product-detail-Oltiva-shc" />
 		</div>
 		<div class="col-md-3 col-1">
-			[ Product fact sheet ]
+			[ About funeral home ]
 		</div>
 	</div>
 </asp:Content>

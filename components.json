@@ -207,7 +207,7 @@
 		},
 		{
 			"code": "A21",
-			"name": "White Oil Product",
+			"name": "Text box",
 			"ascx": "A21_WhiteOilProduct",
 			"status": "Complete",
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA21%20White%20Oil%20Product%7C5910feb7-8f4b-46b0-9e87-85be2ebce0a8%2F%29",
@@ -277,19 +277,7 @@
 			],
 			"batch": 4
 		},
-		{
-			"code": "A27",
-			"name": "Legacy App",
-			"ascx": "A27_LegacyApp",
-			"status": "Complete",
-			"variations": [
-				{ "variation": 1, "name": "Pairs-Game" },
-				{ "variation": 2, "name": "Calculator" },
-				{ "variation": 3, "name": "Nose-To-Tail" },
-				{ "variation": 4, "name": "Industrial-Schematics" }
-			],
-			"batch": 4
-		},
+		
 		{
 			"code": "B01",
 			"name": "Paragraph",
@@ -819,7 +807,7 @@
 		},
 		{
 			"code": "SP08",
-			"name": "Station Locator",
+			"name": "Funeral Home Locator",
 			"ascx": "SP08_StationLocator",
 			"status": "Complete",
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FSC-SP2%20Station%20locator%7C5a23ddba-d862-4e9d-8491-3c33b55fce2c%2F%29",

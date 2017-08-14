@@ -39,7 +39,7 @@
 					<span class="icon icon-warning"></span>
 					<p>
 						<span class="alert-title">Warning</span>
-						We could not find any distributors for your location. Please try a search for a different location.
+						We could not find any cemeteries for your location. Please try a search for a different location.
 						Can't find a location are looking for? Try searching for a province, state, or country.
 					</p>
 				</div>

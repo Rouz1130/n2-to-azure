@@ -5,10 +5,9 @@
 <div class="component breadcrumb-panel">
 	<ul class="breadcrumb-list">
 		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
-		<li class="glyph-link"><a href="#">Products</a></li>
-		<li class="glyph-link"><a href="#">Aviation lubricants</a></li>
-		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> oils</a></li>
-		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> Oil 387</a></li>
+		<li class="glyph-link"><a href="#">Cemeteries</a></li>	
+		<li class="glyph-link"><a href="#">Chatatoonga Cemetery</a></li>
+		<li class="glyph-link"><a href="#">Chatatoonga Cemetery Events</a></li>
 	</ul>
 </div>
 
@@ -17,10 +16,9 @@
 <div class="component breadcrumb-panel-action">
 	<ul class="breadcrumb-list">
 		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
-		<li class="glyph-link"><a href="#">Products</a></li>
-		<li class="glyph-link"><a href="#">Aviation lubricants</a></li>
-		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> oils</a></li>
-		<li class="glyph-link"><a href="#">Oltiva Jet<sup>TM</sup> Oil 387</a></li>
+		<li class="glyph-link"><a href="#">Cemeteries</a></li>	
+		<li class="glyph-link"><a href="#">Chatatoonga Cemetery</a></li>
+		<li class="glyph-link"><a href="#">Chatatoonga Cemetery Events</a></li>
 	</ul>
 	<span class="change-language small">Interface language: <span class="current-language">English</span> (<a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>">change</a>)</span>
 </div>

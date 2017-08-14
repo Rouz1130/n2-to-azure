@@ -5,7 +5,7 @@
 <div class="component data-visualization">
 	<div class="data-visualization-title">
 		<p>Up to</p>
-		<span class="text-plum-ruby">6 times longer oil life</span>
+		<span class="text-plum-ruby">Virginia Sparks</span>
 	</div>
 	<div class="data-visualization-image">
 		<img src="<%= ResolveUrl("~/content/site/data-visualization-graph.png") %>" />
@@ -17,12 +17,10 @@
 <div class="component data-visualization">
 	<div class="data-visualization-title">
 		<p>Up to</p>
-		<span class="text-plum-ruby">6 times longer oil life</span>
+		<span class="text-plum-ruby">Virginia Sparks</span>
 	</div>
 	<div class="data-visualization-text">
-		Oltiva SHC 600 lubricants provide excellent performance 
-        in extreme service applicants at high and low temperatures - 
-        well beyond the capabilities of standard mineral oils
+		Virginia Sparks, 93, born in Chatatoonga TX, died at her home on August 23rd, 2017
 	</div>
 </div>
 

@@ -11,15 +11,7 @@
 			<p><a runat="server" href="~/KitchenSink.aspx" class="glyph-link">Kitchen Sink</a></p>
 			<p><a runat="server" href="~/layouts/ComponentTest.aspx" class="glyph-link">Component Test Page</a></p>
 			<p><a runat="server" href="~/ImageSpecs.aspx" class="glyph-link">Image Specifications</a></p>
-			<p>Sample Layouts: 
-				<a runat="server" href="~/layouts/Layout01.aspx">1</a>
-				<a runat="server" href="~/layouts/Layout02.aspx">2</a>
-				<a runat="server" href="~/layouts/Layout03.aspx">3</a>
-				<a runat="server" href="~/layouts/Layout04.aspx">4</a>
-				<a runat="server" href="~/layouts/Layout05.aspx">5</a>
-				<a runat="server" href="~/layouts/Layout06.aspx">6</a>
-				<a runat="server" href="~/layouts/Layout07.aspx">7</a>
-			</p>
+		
 			<h3>Header Scenarios</h3>
 			<table class="table table-bordered">
 				<thead>
@@ -100,11 +92,15 @@
 		</div>
 		<div class="col-md-4">
 		
-			
-			<h3>Legacy</h3>
-			<p><a runat="server" href="~/pages/private/legacy/NoseToTail.aspx" class="glyph-link">Nose to Tail</a></p>
-			<p><a runat="server" href="~/pages/private/legacy/PairsGame.aspx" class="glyph-link">Pairs Game</a></p>
-			<p><a runat="server" href="~/pages/private/legacy/IndustrialSchematics.aspx" class="glyph-link">Industrial Schematics</a></p>
+				
+			<h3>Sample Layouts</h3>
+			<p><a runat="server" href="~/layouts/Layout01.aspx">Single column</a></p>
+			<p><a runat="server" href="~/layouts/Layout02.aspx">2 column with right sidebar  (hero on top)</a></p>
+			<p><a runat="server" href="~/layouts/Layout03.aspx">2 column with left sidebar (hero on top)</a></p>
+            <p><a runat="server" href="~/layouts/Layout04.aspx">2 column 2-2</a></p>
+            <p><a runat="server" href="~/layouts/Layout05.aspx">2 column with left sidebar</a></p>
+            <p><a runat="server" href="~/layouts/Layout06.aspx">2 column with right sidebar</a></p>
+             <p><a runat="server" href="~/layouts/Layout07.aspx">3 column (hero on top)</a></p>
 		</div>
 		<% } %>
 	</div>

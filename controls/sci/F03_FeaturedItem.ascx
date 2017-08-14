@@ -6,12 +6,12 @@
 		<div class="featured-title-copy-wrap">
 			<img class="featured-title-image" src="<%=ResolveUrl("~/content/site/screen-title-679x319.jpg")%>">
 			<div class="featured-title-copy">
-				<h2 class="featured-item-title">Improve hydraulic efficiency</h2>
-				<h3 class="featured-item-subtitle">The cost effective solution</h3>
+				<h2 class="featured-item-title">Under the care of</h2>
+				<h3 class="featured-item-subtitle">Chattanooga Funeral Home</h3>
 				<p>
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+					The Dignity Memorial network of more than 2,000 licensed providers is North America's largest and most trusted brand for funeral, cremation or cemetary needs. We proudly serve over 300,000 families a year.
 				</p>
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary">Learn more</button>
 			</div>
 		</div>
 	</div>
@@ -22,12 +22,12 @@
 		<div class="featured-title-copy-wrap">
 			<img class="featured-title-image" src="<%=ResolveUrl("~/content/site/screen-title-679x319.jpg")%>">
 			<div class="featured-title-copy">
-				<h2 class="featured-item-title">Improve hydraulic efficiency</h2>
-				<h3 class="featured-item-subtitle">The cost effective solution</h3>
-				<p>
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+				<h2 class="featured-item-title">Under the care of</h2>
+				<h3 class="featured-item-subtitle">Chattanooga Funeral Home</h3>
+			    <p>
+					The Dignity Memorial network of more than 2,000 licensed providers is North America's largest and most trusted brand for funeral, cremation or cemetary needs. We proudly serve over 300,000 families a year.
 				</p>
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary">Learn more</button>
 			</div>
 		</div>
 	</div>
@@ -38,12 +38,12 @@
 		<div class="featured-title-copy-wrap">
 			<img class="featured-title-image" src="<%=ResolveUrl("~/content/site/header-small.jpg")%>">
 			<div class="featured-title-copy">
-				<h2 class="featured-item-title">Improve hydraulic efficiency</h2>
-				<h3 class="featured-item-subtitle">The cost effective solution</h3>
+				<h2 class="featured-item-title">Under the care of</h2>
+				<h3 class="featured-item-subtitle">Chattanooga Funeral Home</h3>
 				<p>
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+					The Dignity Memorial network of more than 2,000 licensed providers is North America's largest and most trusted brand for funeral, cremation or cemetary needs. We proudly serve over 300,000 families a year.
 				</p>
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary">Learn more</button>
 			</div>
 		</div>
 	</div>
@@ -54,12 +54,12 @@
 		<div class="featured-title-copy-wrap">
 			<img class="featured-title-image" src="<%=ResolveUrl("~/content/site/header-small.jpg")%>">
 			<div class="featured-title-copy">
-				<h2 class="featured-item-title">Improve hydraulic efficiency</h2>
-				<h3 class="featured-item-subtitle">The cost effective solution</h3>
+				<h2 class="featured-item-title">Under the care of</h2>
+				<h3 class="featured-item-subtitle">Chattanooga Funeral Home</h3>
 				<p>
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+					The Dignity Memorial network of more than 2,000 licensed providers is North America's largest and most trusted brand for funeral, cremation or cemetary needs. We proudly serve over 300,000 families a year.
 				</p>
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary">Learn more</button>
 			</div>
 		</div>
 	</div>

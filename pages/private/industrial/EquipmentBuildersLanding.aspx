@@ -20,7 +20,7 @@
 		<div class="col-md-12 col-4">
 			<div class="component screen-title screen-title-overlay">
 				<div class="screen-title-copy-wrap">
-					<h3>[Equip. Builder] lubricants</h3>
+					<h3>Header</h3>
 					<p class="paragraph screen-title-copy">
 						Oditatiis vendigni que ne vollupta sant aut veriam fugianis consectia quis explam, sint etur, quod que quam voluptiassum dolo quasperi to ommoluptae ped moloriatum.
 					</p>
@@ -36,7 +36,7 @@
 		<div class="col-md-12 col-4">
 			<div class="component screen-title screen-title-overlay">
 				<div class="screen-title-copy-wrap">
-					<h3>[Equip. Builder] lubricants</h3>
+					<h3>Header</h3>
 					<p class="paragraph screen-title-copy">
 						Oditatiis vendigni que ne vollupta sant aut veriam fugianis consectia quis explam, sint etur, quod que quam voluptiassum dolo quasperi to ommoluptae ped moloriatum.
 					</p>
@@ -50,7 +50,7 @@
 
 	<div class="row" ng-controller="SelectorCtrl" ng-cloak>
 		<div class="col-md-12 col-4">
-			<h2>Recommended lubricants for [Equip. Builder] equipment</h2>
+			<h2>Funeral homes</h2>
 		</div>
 		<div class="col-md-3 col-1">
 			<div class="component filter-form-wrapper">

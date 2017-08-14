@@ -6,7 +6,7 @@
 	<div class="panel-group" id="<%=UniqueDomId("filter-accordion")%>" role="tablist" aria-multiselectable="true">
 		<div class="panel active">
 			<div class="panel-heading" role="tab" id="heading-filter-one">
-				<p><strong>Category: </strong>hydraulic oil, filter two, filter three <a data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>"><strong>(edit)</strong></a></p>
+				<p><strong>Category: </strong>filter one, filter two, filter three <a data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>"><strong>(edit)</strong></a></p>
 			</div>
 		</div>
 		<div id="<%=UniqueDomId("filter-form-panel")%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-filter-one">
@@ -46,7 +46,7 @@
 	<div class="panel-group" id="<%=UniqueDomId("filter-accordion")%>" role="tablist" aria-multiselectable="true">
 		<div class="panel active">
 			<div class="panel-heading" role="tab" id="heading-filter-one">
-				<p><strong>Category: </strong>hydraulic oil, filter two, filter three <a data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>"><strong>(edit)</strong></a></p>
+				<p><strong>Category: </strong>filter one, filter two, filter three <a data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>"><strong>(edit)</strong></a></p>
 			</div>
 		</div>
 		<div id="<%=UniqueDomId("filter-form-panel")%>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-filter-one">

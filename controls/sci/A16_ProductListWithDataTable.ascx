@@ -20,7 +20,7 @@
 					<img class="product-list-img" src="~/content/site/faux-img.png" runat="server" />
 				</td>
 				<td class="product-list-description">
-					<span class="product-list-title">Oltiva Dynagear Series</span>
+					<span class="product-list-title">Mother's Day service</span>
 					<p class="small">for [category 1] and [category 2]</p>
 				</td>
 				<td>25</td>
@@ -34,7 +34,7 @@
 					<img class="product-list-img" src="~/content/site/faux-img.png" runat="server" />
 				</td>
 				<td class="product-list-description">
-					<span class="product-list-title">Oltiva Dynagear Series</span>
+					<span class="product-list-title">Mother's Day service</span>
 					<p class="small">for [category 1] and [category 2]</p>
 				</td>
 				<td>25</td>
@@ -48,7 +48,7 @@
 					<img class="product-list-img" src="~/content/site/faux-img.png" runat="server" />
 				</td>
 				<td class="product-list-description">
-					<span class="product-list-title">Oltiva Dynagear Series</span>
+					<span class="product-list-title">Easter service</span>
 					<p class="small">for [category 1] and [category 2]</p>
 				</td>
 				<td>25</td>

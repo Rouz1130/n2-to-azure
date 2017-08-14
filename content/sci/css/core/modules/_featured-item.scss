@@ -364,6 +364,7 @@
 
 				> .btn {
 					@include rem-fallback(margin-top, 16px / 16px);
+                    color:  $white;
 				}
 			}
 		}

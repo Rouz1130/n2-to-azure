@@ -4,7 +4,7 @@
 
 <div class="component search-box" data-cookie-name="kitchen-sink-searches">
 	<div class="form-group form-group-lg">
-		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or distributor name" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
+		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
 		<span class="form-group-btn">
 			<button type="button" class="btn btn-primary search" data-analytics='{ "manual": true, "cg": "Search", "ct": "Button" }'>Search</button>
 		</span>

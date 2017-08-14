@@ -51,7 +51,7 @@
 				<!-- A05.1: Search box -->
 				<div class="component component-margin-sm search-box" data-event-name="xom.search-requested" data-search-key="q" data-cookie-name="EXXON_GLOBAL_COOKIE">
 					<div class="form-group form-group-lg">
-						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or distributor name" ng-model="filters.q" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }' />
+						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" ng-model="filters.q" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }' />
 						<span class="form-group-btn">
 							<button class="btn btn-primary search" type="button" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }'>Search</button>
 						</span>

@@ -5,7 +5,7 @@
 <div class="component table-faux min match-height" data-match-height-selectors=".hdr,.data">
 	<div class="tables">
 		<h3 class="h5 hdr"><span>Type</span></h3>
-		<p class="table-text data">Hydraulic oil</p>
+		<p class="table-text data">Services</p>
 	</div>
 	<div class="tables">
 		<h3 class="h5 hdr"><span>SAE Grade</span></h3>
