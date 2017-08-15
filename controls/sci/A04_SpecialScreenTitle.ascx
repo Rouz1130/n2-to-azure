@@ -32,7 +32,7 @@
 				1233 James Ave, Chattatoonga TX<br />
 			United States
 		</p>
-		<p><a class="special-screen-title-favorite link-icon small" href="javascript:;"><i class="icon icon-favorite-off"></i>Save as favorite</a></p>
+		<p><a class="special-screen-title-favorite link-icon small" href="javascript:;"><i class="icon icon-favorite-off"></i><i class="icon icon-favorite-off"></i><i class="icon icon-favorite-off"></i><i class="icon icon-favorite-off"></i><i class="icon icon-favorite-off"></i></a></p>
 	</div>
 	<a href="#" class="special-screen-title-cta btn btn-primary">Contact us</a>
 </div>

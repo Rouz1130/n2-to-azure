@@ -7,10 +7,10 @@
 		</div>
 		<div class="col-md-9 col-3">
 			<ks:Component runat="server" Code="C03.1" Child="T04.1" />
-			<ks:Component runat="server" Code="C01.1" Child="B01.1" />
-			<ks:Component runat="server" Code="SP01.1" />
-			<ks:Component runat="server" Code="C02.1" Child="B01.1" />
-			<ks:Component runat="server" Code="SP02.1" />
+	
+	
+			<ks:Component runat="server" Code="SP08.1" />
+		
 		</div>
 	</div>
 	<hr />

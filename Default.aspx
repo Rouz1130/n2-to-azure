@@ -10,9 +10,9 @@
 			<h3>Utilities</h3>
 			<p><a runat="server" href="~/KitchenSink.aspx" class="glyph-link">Kitchen Sink</a></p>
 			<p><a runat="server" href="~/layouts/ComponentTest.aspx" class="glyph-link">Component Test Page</a></p>
-			<p><a runat="server" href="~/ImageSpecs.aspx" class="glyph-link">Image Specifications</a></p>
+			<!--<p><a runat="server" href="~/ImageSpecs.aspx" class="glyph-link">Image Specifications</a></p> -->
 		
-			<h3>Header Scenarios</h3>
+			<!--<h3>Header Scenarios</h3>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -66,16 +66,16 @@
 						<td>4</td>
 					</tr>
 				</tbody>
-			</table>
+			</table> -->
 		</div>
 		<% if (HttpContext.Current.IsNotRestricted()) { %>
-		<div class="col-md-4">
+		<!--<div class="col-md-4">
 			<h3>Apps</h3>
 			<p><a runat="server" href="~/pages/private/apps/DrillDown.aspx" class="glyph-link">Drill-Down: Equipment Builder</a></p>
 			<p><a runat="server" href="~/pages/private/apps/List.aspx" class="glyph-link">List</a></p>
 			<p><a runat="server" href="~/pages/private/apps/List.aspx?q=events&amp;pageSize=2&amp;pageNumber=2" class="glyph-link">List: Deep-link</a></p>
 			<p><a runat="server" href="~/pages/private/apps/List.aspx?Q=Oltiva&PAGESIZE=10&PAGENUMBER=1&SELECTEDFACETS=Application:Bearings" class="glyph-link">List: Case-insensitive URL</a></p>
-			<p><a runat="server" href="~/pages/private/apps/FindStation.aspx" class="glyph-link">Locator: Find a Station</a></p>
+			 <p><a runat="server" href="~/pages/private/apps/FindStation.aspx" class="glyph-link">Locator: Find a Station</a></p>
 			<p><a runat="server" href="~/pages/private/apps/FindDistributor.aspx" class="glyph-link">Locator: Find a Distributor</a></p>
 			<p><a runat="server" href="~/pages/private/apps/FindTerminal.aspx" class="glyph-link">Locator: Find a Terminal</a></p>
 			<p><a runat="server" href="~/pages/private/apps/GDL.aspx" class="glyph-link">Global Distributor Locator (GDL)</a></p>
@@ -88,19 +88,16 @@
 			<p><a runat="server" href="~/pages/private/retail/StationDetails.aspx" class="glyph-link">Station Details</a></p>
 			<p><a runat="server" href="~/pages/private/retail/HomeEsso2.aspx" class="glyph-link">Oltiva Home</a></p>
 			<h3>Industrial</h3>
-			<p><a runat="server" href="~/pages/private/industrial/EquipmentBuilders.aspx" class="glyph-link">Equipment Builders</a></p>
-		</div>
+			<p><a runat="server" href="~/pages/private/industrial/EquipmentBuilders.aspx" class="glyph-link">Equipment Builders</a></p> 
+		</div>-->
 		<div class="col-md-4">
 		
 				
 			<h3>Sample Layouts</h3>
 			<p><a runat="server" href="~/layouts/Layout01.aspx">Single column</a></p>
-			<p><a runat="server" href="~/layouts/Layout02.aspx">2 column with right sidebar  (hero on top)</a></p>
-			<p><a runat="server" href="~/layouts/Layout03.aspx">2 column with left sidebar (hero on top)</a></p>
-            <p><a runat="server" href="~/layouts/Layout04.aspx">2 column 2-2</a></p>
-            <p><a runat="server" href="~/layouts/Layout05.aspx">2 column with left sidebar</a></p>
-            <p><a runat="server" href="~/layouts/Layout06.aspx">2 column with right sidebar</a></p>
-             <p><a runat="server" href="~/layouts/Layout07.aspx">3 column (hero on top)</a></p>
+			<p><a runat="server" href="~/layouts/Layout05.aspx">3-1 column layout</a> | <a runat="server" href="~/layouts/Layout02.aspx">hero on top</a></p>
+			<p><a runat="server" href="~/layouts/Layout06.aspx">1-3 column layout</a> | <a runat="server" href="~/layouts/Layout03.aspx">hero on top</a></p>
+            <p><a runat="server" href="~/layouts/Layout04.aspx">2-2 column layout</a></p>
 		</div>
 		<% } %>
 	</div>

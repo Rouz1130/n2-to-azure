@@ -21,18 +21,6 @@
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 	<div ng-app="locator" ng-controller="LocatorCtrl" class="ng-cloak">
 
-		<div class="row">
-			<div class="col-md-12 col-4">
-				<div class="component breadcrumb-panel">
-					<ul class="breadcrumb-list">
-						<li class="glyph-link"><a href="#">Oltiva and Oltiva Fuels</a></li>
-						<li class="glyph-link"><a href="#">Our stations</a></li>
-						<li class="glyph-link"><a href="#">Find a station</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
 		<div class="component">
 			<p>Notes:
 				<ul>
@@ -88,11 +76,10 @@
 					<!-- SP07.2: App Promotion -->
 					<div class="component app-promotion app-promotion-mini">
 						<div class="app-content">
-							<p>Get real time maps, directions and station information with the Oltiva Fuel Finder app.</p>
+							<p>This is a callout box</p>
 						</div>
 						<div class="app-content-links">
-							<a href="#" class="app-promotion-ios"><img src="<%=ResolveUrl("~/content/site/app-apple-store.png")%>" /></a>
-							<a href="#" class="app-promotion-android"><img src="<%=ResolveUrl("~/content/site/app-google-play.png")%>" /></a>
+							 <a href="#" class="app-promotion-ios">CTA link</a>
 						</div>
 					</div>
 				</div>

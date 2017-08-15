@@ -9,9 +9,9 @@
 					<li><a href="#">Careers</a></li>
 					<li><a href="#">Contact us</a></li>
 					<li><a href="#">Corporate</a></li>
-					<li><a href="#">Investors</a></li>
+					
 					<li><a href="#">News and updates</a></li>
-					<li><a href="#">Perspectives blog</a></li>
+					
 					<li class="footer-nav-global-selector"><a href="#" data-global-selector="Oltiva">Select country</a></li>
 				</ul>
 			</nav>
@@ -45,7 +45,7 @@
 			</ul>
 		</nav>
 		<div id="footer-copyright">
-			&copy; Copyright 2003-2015 Oltiva Oltiva Corporation.  All Rights Reserved.
+			&copy; Copyright 2003-2017.  All Rights Reserved.
 		</div>
 	</section>
 </div>

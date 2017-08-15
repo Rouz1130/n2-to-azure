@@ -21,8 +21,8 @@
 		</div>
 	</div>
 	<div class="station-locator-options">
-		<a class="btn btn-primary btn-sm btn-icon" href="#"><img class="icon" src="<%=ResolveUrl("~/content/sci/img/icons/icon-world-white.png")%>" /> Get directions</a>
-		<a class="btn btn-secondary btn-sm btn-icon" href="#"><img class="icon" src="<%=ResolveUrl("~/content/sci/img/icons/icon-search-white.png")%>" /> Find a station</a>
+		<a class="btn btn-primary btn-sm btn-icon" href="#">Get directions</a>
+		
 	</div>
 </div>
 

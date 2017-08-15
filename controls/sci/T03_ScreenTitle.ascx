@@ -8,8 +8,8 @@
 			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
 			<div class="screen-title-copy">
 				<p>
-					<span class="screen-title-subtitle">Improve hydraulic efficiency</span><br />
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+					<span class="screen-title-subtitle">in Texas</span><br />
+					Search for obituaries near you.
 				</p>
 				<button class="btn btn-primary">Talk to an expert</button>
 			</div>
@@ -24,8 +24,8 @@
 			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
 			<div class="screen-title-copy">
 				<p>
-					<span class="screen-title-subtitle">Improve hydraulic efficiency</span><br />
-					Mobilgard 5100 is specially formulated to help protect engines that are susceptible to high levels of 'cold corrosion'.  It has been proven to be a more cost effective solution for engines suffering from cold corrosion versus the use of a lower BN oil at a higher feed rate.
+					<span class="screen-title-subtitle">in Texas</span><br />
+					Search for obituaries near you.
 				</p>
 				<button class="btn btn-primary">Talk to an expert</button>
 			</div>

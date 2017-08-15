@@ -403,8 +403,9 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 1.2;
     padding-left: 45px; }
 
-.alert-success .alert-title {
-  background-color: #e1ebd4; }
+.alert-success {
+  background-color: #e1ebd4;
+  color: #4a3c31; }
 
 .alert-title {
   display: block; }

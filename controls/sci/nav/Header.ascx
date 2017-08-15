@@ -56,12 +56,12 @@
 				<span class="nav-main-item-text">Search</span>
 			</a>
 			<ul class="nav-main-list">
-				<li class="nav-main-item" rel="energy"><a href="#" data-analytics='{ "cg": "Quality fuels", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Quality fuels</span></a></li>
-				<li class="nav-main-item" rel="technology"><a href="#" data-analytics='{ "cg": "Gas cards and payment", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Gas cards and payment</span></a></li>
-				<li class="nav-main-item" rel="issues"><a href="#" data-analytics='{ "cg": "Motor oil", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Motor oil</span></a></li>
-				<li class="nav-main-item" rel="environment"><a href="#" data-analytics='{ "cg": "Our stations", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Our stations</span></a></li>
-				<li class="nav-main-item" rel="community"><a href="#" data-analytics='{ "cg": "Rewards and promotions", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Rewards and promotions</span></a></li>
-				<li class="nav-main-item" rel="company"><a href="#" data-analytics='{ "cg": "About Oltiva and Oltiva", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>About Oltiva and Oltiva</span></a></li>
+				<li class="nav-main-item" rel="energy"><a href="#" data-analytics='{ "cg": "Quality fuels", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 1</span></a></li>
+				
+				<li class="nav-main-item" rel="issues"><a href="#" data-analytics='{ "cg": "Motor oil", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 2</span></a></li>
+				<li class="nav-main-item" rel="environment"><a href="#" data-analytics='{ "cg": "Our stations", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 3</span></a></li>
+				<li class="nav-main-item" rel="community"><a href="#" data-analytics='{ "cg": "Rewards and promotions", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 4</span></a></li>
+
 			</ul>
 		</div>
 		<xom:MegaNav runat="server" />

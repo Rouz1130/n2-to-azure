@@ -5,9 +5,8 @@
 		<div class="col-md-12 col-4">
 			<ks:Component runat="server" Code="T01.1" />
 			<ks:Component runat="server" Code="L01.4" Child="S01.1" />
-			<ks:Component runat="server" Code="B02.1" />
-			<ks:Component runat="server" Code="C01.1" />
-			<ks:Component runat="server" Code="C02.1" />
+
+
 		</div>
 	</div>
 	<hr />
