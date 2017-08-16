@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Test Page" %>
+﻿<%@ Page Title="Layout08" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 
@@ -19,39 +19,70 @@
             background-color: transparent;
             border: none;
         }
-h4.i-amphtml-accordion-header:focus{
-    border: none;
-    border-color:transparent;
-}
-amp-youtube{
-    width: 100%;
-}
+        h4.i-amphtml-accordion-header:focus{
+            border: none !important;
+            border-color:transparent;
+        }
+        h4.show{
+            color:blue;
+            font-size:15px;
+        }
+       
+        
+        amp-youtube{
+            width: 100%;
+        }
 
-.fixed-container {
-   position: relative;
-   width: 200px;
-   height: 200px;
-   top:-30px;
- }
-amp-img.cover img {
-    object-fit: cover;
-}
-
-
-.w-content{
-    text-align:left;
-    margin: auto;
-    width: 70%;
-   
-}
-amp-iframe{
-    width:100%;
-}
-.wrapper-c{
-    padding-top:20px;
-    padding-left:20px;
-    margin-left:20px;
-}
+        .fixed-container {
+           position: relative;
+           width: 250px;
+           height: 250px;
+           top:-70px;
+         }
+        amp-img.cover img {
+            object-fit: cover;
+        }
+        .w-content{
+            text-align:left;
+            margin: auto;
+            width: 70%;
+        }
+        amp-iframe{
+            width:100%;
+        }
+        .wrapper-c{
+            padding-top:20px;
+            padding-left:20px;
+            margin-left:20px;
+        }
+        section.services{
+            margin-top:5%;
+            width:98%;
+            margin:auto;
+            
+        }
+        .box{
+            width:320px;
+            padding: 0 20px 10px 10px;
+            border: 1px black solid;
+            display:inline-block;
+        }
+        a, a:active, a:hover{
+            color:blue;
+        }
+        .marg-md{
+            margin-top:30px;
+        }
+        .box-others{
+            width:320px;
+        }
+        .bar-options{
+            margin-top:5%;
+            margin-bottom: 5%;
+            width: 70%;
+            margin-left:auto;
+            margin-right:auto;
+        }
     </style>
     
     <div>
@@ -64,7 +95,7 @@ amp-iframe{
 
         <div class="w-content">
             <div class="row"> 
-                <div class="col col-sm-12 col-md-3 col-lg-3 col-3">
+                <div class="col col-sm-12 col-md-4 col-lg-4">
                     <div class="fixed-container">
                         <amp-img  class="cover" src="../content/site/placeholder.png"
                           alt="user-photo"
@@ -73,10 +104,16 @@ amp-iframe{
                         </amp-img>
                      </div>
                 </div>
-                <div  class="col col-sm-12 col-md-9 col-lg-9 col-9">
+                <div  class="col col-sm-12 col-md-8 col-lg-8">
                     <div class="wrapper-c">
                         <span>Obituary of</span>
-                        <h2><b>John "Nickname" Deer Doe</b></h2>
+                        <h2><b>
+                            <span>John</span>
+                            <span>"Nickname"</span>
+                            <span>Deer</span>
+                            <span>Doe</span>
+                             </b>
+                        </h2>
                         <span>December 13 th, 1945</span><br />
                         <span>December 14 th, 2017</span><br />
                         <span><b>The Huston Lawn Mower King</b></span>
@@ -112,9 +149,9 @@ amp-iframe{
                 </p>
                 <amp-accordion disable-session-states>
                       <section>
-                        <h4>
-                          <span class="show-more">Show more</span>
-                          <span class="show-less">Show less</span>
+                        <h4 class="show">
+                          <span class="show-more">Read more</span>
+                          <span class="show-less">Read less</span>
                         </h4>
                         <p>Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin fermentum odio, odio arcu
                           in eu wisi. </p>
@@ -140,6 +177,24 @@ amp-iframe{
 
         </div>
 
+        <%-- bar options --%>
+        <div class="container bar-options"> 
+            <div class="row">
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Donate</span>
+                </div>
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Send flowers</span>
+                </div>
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Share Obituary</span>
+                </div>
+                 <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>How to support</span>
+                </div>
+            </div>
+        </div>
+
         <h3><b>Upcoming Services</b></h3>
         <amp-iframe width="600"
           height="150"
@@ -148,26 +203,91 @@ amp-iframe{
           frameborder="0"
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2eUgeAK6j4ARbn5u_wAGqWA&key=AIzaSyCNCZ0Twm_HFRaZ5i-FuPDYs3rLwm4_848">
         </amp-iframe>
-   
+ 
+        <section class="services">
         <div class="row">
-            <div class="col col-sm-12 col-md-3 col-lg-3">
-                <h3><b>1. Funeral Service</b></h3>
-                <span>Wednesday, December 23, 2017 2:30pm - 5:00pm
-                </span>
-                <br />
-                <span>Bring your Guitar with</span>
-
+            <div class="col col-sm-12 col-md-4 col-lg-4 marg-md">
+                <div class="box">
+                    <h3><b>1. Funeral Service</b></h3>
+                    <span>Wednesday, December 23, 2017 2:30pm - 5:00pm</span><br />
+                    <br />
+                    <p>Bring your Guitar with</p><br />
+                    <span><b>Height Funeral Home</b></span><br />
+                    <span>6873 Rainbow Road</span><br />
+                    <span>Houston, TX 77008</span><br />
+                    <a href="#">Directions</a><br />
+                    <a href="#">Add to calendar</a>
+                </div>
             </div>
-            <div class="col col-sm-12 col-md-3 col-lg-3">
-
+            <div class="col col-sm-12 col-md-4 col-lg-4 marg-md">
+                <div class="box">
+                    <h3><b>1. Funeral Service</b></h3>
+                    <span>Wednesday, December 23, 2017 2:30pm - 5:00pm</span><br />
+                    <br />
+                    <p>Bring your Guitar with</p><br />
+                    <span><b>Height Funeral Home</b></span><br />
+                    <span>6873 Rainbow Road</span><br />
+                    <span>Houston, TX 77008</span><br />
+                    <a href="#">Directions</a><br />
+                    <a href="#">Add to calendar</a>
+                </div>
             </div>
-             <div class="col col-sm-12 col-md-3 col-lg-3">
-
+             <div class="col col-sm-12 col-md-4 col-lg-4 marg-md">
+                 <div class="box">
+                    <h3><b>1. Funeral Service</b></h3>
+                    <span>Wednesday, December 23, 2017 2:30pm - 5:00pm</span><br />
+                    <br />
+                    <p>Bring your Guitar with</p><br />
+                    <span><b>Height Funeral Home</b></span><br />
+                    <span>6873 Rainbow Road</span><br />
+                    <span>Houston, TX 77008</span><br />
+                    <a href="#">Directions</a><br />
+                    <a href="#">Add to calendar</a>
+                </div>
             </div>
-
+            <div class="col col-sm-12 col-md-4 col-lg-4 marg-md">
+                 <div class="box">
+                    <h3><b>1. Funeral Service</b></h3>
+                    <span>Wednesday, December 23, 2017 2:30pm - 5:00pm</span><br />
+                    <br />
+                    <p>Bring your Guitar with</p><br />
+                    <span><b>Height Funeral Home</b></span><br />
+                    <span>6873 Rainbow Road</span><br />
+                    <span>Houston, TX 77008</span><br />
+                    <a href="#">Directions</a><br />
+                    <a href="#">Add to calendar</a>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-4 marg-md">
+                 <div class="box-others">
+                    <h3><b>Other Services</b></h3>
+                    <p>Family Viewing</p>
+                    <br />
+                    <h3><b>Previous Services</b></h3>
+                    <span><b>Viewing</b></span><span>Tuesday, December 22, 2017</span>
+                    <br />
+                </div>
+            </div>
         </div>
-
+    </section>
     
+      <%-- bar options --%>
+        <div class="container bar-options"> 
+            <div class="row">
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Donate</span>
+                </div>
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Send flowers</span>
+                </div>
+                <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>Share Obituary</span>
+                </div>
+                 <div class="col col-sm-12 col-md-3 col-lg-3">
+                    <span>How to support</span>
+                </div>
+            </div>
+        </div>
 
 
 
