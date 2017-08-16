@@ -21,6 +21,7 @@
         amp-accordion section:not([expanded]) .show-less {
           display: none;
         }
+      
         .i-amphtml-accordion-header {
             cursor: pointer;
             background-color: transparent;
@@ -29,11 +30,13 @@
         h4.i-amphtml-accordion-header:focus{
             border: none !important;
             border-color:transparent;
+            outline:0px;
         }
         h4.show{
             color:blue;
             font-size:15px;
         }
+      
         amp-youtube{
             width: 100%;
         }
