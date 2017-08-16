@@ -8,6 +8,13 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <style type="text/css">
+        header{
+            background-color:black;
+            width:100%;  
+        }
+        amp-youtube{
+            margin-top:10px;
+        }
         amp-accordion section[expanded] .show-more {
           display: none;
         }
@@ -15,7 +22,7 @@
           display: none;
         }
         .i-amphtml-accordion-header {
-                cursor: pointer;
+            cursor: pointer;
             background-color: transparent;
             border: none;
         }
@@ -27,12 +34,9 @@
             color:blue;
             font-size:15px;
         }
-       
-        
         amp-youtube{
             width: 100%;
         }
-
         .fixed-container {
            position: relative;
            width: 250px;
@@ -83,15 +87,53 @@
             margin-left:auto;
             margin-right:auto;
         }
+        .bio{
+            width:70%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:10%;
+            margin-top:10%;
+        }
+        .content-bio{
+            padding-top:10px;
+        }
+        .mem{
+            height:300px;
+            width:100%;
+            background-color:lightgray;
+        }
+        footer{
+            width:100%;
+            height:30%;
+            background-color:lightgray;
+            text-align:center;
+            padding-top:5%;
+            padding-bottom: 5%;
+        }
+        .color-g{
+            color:gray;
+        }
+        .color-b{
+            color:black;
+        }
+        .font40{
+            font-size:40px;
+        }
+        .font25{
+            font-size:25px;
+        }
+       
     </style>
     
     <div>
-        <amp-youtube 
-              width="475"
-              height="150"
-              layout="responsive"
-              data-videoid="lBTCB7yLs8Y">
-        </amp-youtube>
+        <header>
+            <amp-youtube 
+                  width="475"
+                  height="150"
+                  layout="responsive"
+                  data-videoid="lBTCB7yLs8Y">
+            </amp-youtube>
+        </header>
 
         <div class="w-content">
             <div class="row"> 
@@ -106,7 +148,7 @@
                 </div>
                 <div  class="col col-sm-12 col-md-8 col-lg-8">
                     <div class="wrapper-c">
-                        <span>Obituary of</span>
+                        <span class="color-g font25">Obituary of</span>
                         <h2><b>
                             <span>John</span>
                             <span>"Nickname"</span>
@@ -290,7 +332,52 @@
         </div>
 
 
+        <%-- Memories & condolences --%>
 
+        <section>
+            <div class="container-fluid">
+                <div class="mem">
+
+                </div>
+            </div>
+        </section>
+
+        <%-- Biography --%>
+        <section class="bio">
+                <h2>Biography</h2>
+            <div class="content-bio">
+                <p>
+                    Morbi sed libero quis dui fringilla venenatis. Donec eleifend leo sed tellus facilisis, eu ornare quam laoreet. Duis augue massa, rutrum a scelerisque ut, dapibus et sem. Proin elementum porta nunc, eget commodo turpis vehicula eget. Phasellus eu magna eros. Integer sagittis mauris id cursus tristique. Nam dapibus, lacus nec egestas hendrerit, ante nisi congue augue, eget fringilla eros enim a mauris. Nullam sapien massa, dignissim eu nisi commodo, mattis faucibus tellus. Donec felis nunc, tempor vel lectus molestie, auctor luctus erat. Aliquam tempor suscipit lacus a porttitor. Suspendisse potenti. Nulla luctus dapibus tristique. Mauris vitae sapien quis felis congue finibus at quis risus. In hac habitasse platea dictumst.
+                </p>
+                <p>
+                    Proin gravida mauris et enim sagittis fermentum. Fusce quis ullamcorper felis, at viverra diam. Vivamus id vehicula tellus. In ut fermentum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vitae viverra ligula, sed vulputate nisl. Suspendisse lorem nulla, porttitor ac felis vel, porta ultrices ex.
+                </p>
+                <p>
+                    Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
+                </p>
+                <p>
+                    Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
+                </p>
+                <p>
+                    Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
+                </p>
+                <p>
+                  Morbi sed libero quis dui fringilla venenatis. Donec eleifend leo sed tellus facilisis, eu ornare quam laoreet. Duis augue massa, rutrum a scelerisque ut, dapibus et sem. Proin elementum porta nunc, eget commodo turpis vehicula eget. Phasellus eu magna eros. Integer sagittis mauris id cursus tristique. Nam dapibus, lacus nec egestas hendrerit, ante nisi congue augue, eget fringilla eros enim a mauris. Nullam sapien massa, dignissim eu nisi commodo, mattis faucibus tellus. Donec felis nunc, tempor vel lectus molestie, auctor luctus erat. Aliquam tempor suscipit lacus a porttitor. Suspendisse potenti. Nulla luctus dapibus tristique. Mauris vitae sapien quis felis congue finibus at quis risus. In hac habitasse platea dictumst.
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="container-footer">
+                    <span class="color-g font25">Under the care of</span><br />
+                    <h2 class="font40">Height Funeral Home</h2>
+                    <a href="#" class="color-b">View location site</a>
+                    <h2 class="font40">Another Funeral Home</h2>
+                    <a href="#" class="color-b">View location site</a>
+            </div>
+        </footer>
     </div>
 	<ks:Snippet runat="server" Name="Layout08" />
 </asp:Content>
