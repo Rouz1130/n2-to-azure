@@ -125,6 +125,11 @@
         .font25{
             font-size:25px;
         }
+        @media only screen and (max-width: 400px) {
+            .w-content{
+                text-align:center;
+            }
+        }
        
     </style>
     
