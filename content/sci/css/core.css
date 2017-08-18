@@ -1,10 +1,6 @@
 .body-wrapper {
   background-color: #fff;
-  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto;
-  max-width: 1400px;
   position: relative;
   right: 0;
   -webkit-transition: right 0.35s ease;
@@ -272,51 +268,6 @@ strong {
 .display-table-cell {
   display: table-cell; }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .no-js .panel {
   border-left-width: 1px !important; }
 .no-js .panel-heading {
@@ -364,7 +315,7 @@ The `sprites` mixin generates identical output to the CSS template
       font-weight: bold;
       outline: none; }
       .panel-group .panel > .panel-heading > a > i {
-        background-position: -82px -234px; }
+        background-position: -126px -372px; }
     .panel-group .panel > .panel-heading .icon {
       position: static; }
     .panel-group .panel > .panel-heading .icon-circle-plus, .panel-group .panel > .panel-heading .icon-circle-minus {
@@ -381,7 +332,7 @@ The `sprites` mixin generates identical output to the CSS template
     .panel-group .panel.active > .panel-heading {
       background-color: #fff; }
       .panel-group .panel.active > .panel-heading a > i {
-        background-position: -58px -234px; }
+        background-position: -400px -375px; }
     .panel-group .panel.active .panel-collapse > .panel-body:last-child {
       margin-bottom: 0; }
 
@@ -574,15 +525,6 @@ html.ios .app-promotion-android {
   padding: 10px 30px;
   padding: 0.625rem 1.875rem;
   width: 100%; }
-  .breadcrumb-panel .current-language,
-  .breadcrumb-panel-action .current-language {
-    color: #4a3c31;
-    font-family: "Lato-Regular"; }
-
-.modal-change-language .wrapper-submit-btn {
-  clear: both;
-  margin-top: 32px;
-  margin-top: 2rem; }
 
 @media (min-width: 480px) {
   .modal-breadcrumb .form-group > input[type=radio] + label {
@@ -593,61 +535,7 @@ html.ios .app-promotion-android {
     display: table; }
     .breadcrumb-panel-action .breadcrumb-list {
       display: table-cell;
-      vertical-align: top; }
-    .breadcrumb-panel-action .change-language {
-      display: table-cell;
-      padding-left: 10px;
-      padding-left: 0.625rem;
-      text-align: right;
-      vertical-align: top; }
-
-  .col-3 .breadcrumb-panel-action .change-language, .col-4 .breadcrumb-panel-action .change-language {
-    white-space: nowrap; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
+      vertical-align: top; } }
 .no-js .slide {
   background-repeat: no-repeat;
   background-size: cover;
@@ -694,9 +582,9 @@ The `sprites` mixin generates identical output to the CSS template
 .slick-prev {
   left: 0;
   background-image: url(../img/icons.png);
-  background-position: -240px -120px;
-  width: 20px;
-  height: 44px; }
+  background-position: -100px -100px;
+  width: 100px;
+  height: 100px; }
   [dir="rtl"] .slick-prev {
     left: auto;
     right: 15px; }
@@ -708,9 +596,9 @@ The `sprites` mixin generates identical output to the CSS template
 .slick-next {
   right: 0;
   background-image: url(../img/icons.png);
-  background-position: -240px -76px;
-  width: 20px;
-  height: 44px; }
+  background-position: 0px -100px;
+  width: 100px;
+  height: 100px; }
   [dir="rtl"] .slick-next {
     left: 15px;
     right: auto; }
@@ -1313,55 +1201,11 @@ input.check-filter[type="checkbox"] {
 .filter-form-wrapper .panel-body {
   padding: 0; }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .checkboxes > label, .radio-buttons > label {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18.66667px;
+  font-size: 1.16667rem;
   font-weight: normal;
+  text-transform: uppercase;
   width: 100%; }
 .checkboxes > .form-group, .radio-buttons > .form-group {
   margin-bottom: 10px;
@@ -1401,26 +1245,27 @@ The `sprites` mixin generates identical output to the CSS template
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: #f8f7f3;
+    background-color: #fff;
     display: table-cell;
-    font-family: "Lato-Bold";
+    font-family: "Lato";
     font-size: 16px;
     font-size: 1rem;
     height: 56px;
     line-height: 1.5rem;
-    padding-left: 24px; }
+    padding-left: 24px;
+    border: 2px solid #4a3c31; }
     .form-group-lg .form-control.placeholder {
       color: #4a3c31;
-      font-family: "Lato-Regular"; }
+      font-family: "Lato"; }
     .form-group-lg .form-control:-moz-placeholder {
       color: #4a3c31;
-      font-family: "Lato-Regular"; }
+      font-family: "Lato"; }
     .form-group-lg .form-control::-moz-placeholder {
       color: #4a3c31;
-      font-family: "Lato-Regular"; }
+      font-family: "Lato"; }
     .form-group-lg .form-control::-webkit-input-placeholder {
       color: #4a3c31;
-      font-family: "Lato-Regular"; }
+      font-family: "Lato"; }
     .form-group-lg .form-control:focus {
       background-color: #fff; }
   .form-group-lg .form-group-btn {
@@ -1458,7 +1303,8 @@ The `sprites` mixin generates identical output to the CSS template
     .form-group > input[type="checkbox"] + label {
       font-size: 16px;
       font-size: 1rem;
-      padding-left: 27px; }
+      padding-left: 27px;
+      text-transform: none; }
       .form-group > input[type="checkbox"] + label:before {
         background-color: #fff;
         border: 1px solid #4a3c31;
@@ -1477,7 +1323,7 @@ The `sprites` mixin generates identical output to the CSS template
       background: transparent; }
       .form-group > input[type="checkbox"]:checked + label:before {
         background-image: url(../img/icons.png);
-        background-position: -268px -233px;
+        background-position: -430px -288px;
         width: 20px;
         height: 20px;
         border: 1px solid #47d5cd;
@@ -1556,24 +1402,25 @@ The `sprites` mixin generates identical output to the CSS template
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font-family: "Lato-Bold";
-  background-color: #f8f7f3;
-  border: 1px solid #f8f7f3;
-  color: #2b2626;
+  font-family: "Lato";
+  background-color: #fff;
+  border: 2px solid #4a3c31;
+  color: #4a3c31;
   height: 50px; }
 
 .form-control:focus {
   background-color: #fff;
-  border: 1px solid #47d5cd; }
+  border: 2px solid #47d5cd; }
 
 .form-control.error {
-  background-color: #fff;
-  border: solid 1px #d42e12; }
+  background-color: #fffaba;
+  border: solid 2px #E12c2c; }
 
 .form-group label {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18.66667px;
+  font-size: 1.16667rem;
   font-weight: normal;
+  text-transform: uppercase;
   width: 100%; }
   .form-group label.error {
     background-color: #E12c2c;
@@ -1598,17 +1445,16 @@ The `sprites` mixin generates identical output to the CSS template
   position: relative; }
 
 .select {
-  background-color: #f8f7f3;
+  background-color: #fff;
   overflow: hidden;
   height: 50px;
   position: relative;
   width: 100%; }
   .select .icon-drop-arrow {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
     pointer-events: none;
-    background-color: #ccc;
     z-index: 2; }
   .select > .select-wrapper {
     left: 0;
@@ -1695,51 +1541,6 @@ h3 {
 	generated file imported below.  If images are added/removed from the sprite, adjust the styles in this
 	file accordingly.
 */
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .icon {
   background-repeat: no-repeat;
   display: inline-block;
@@ -1747,277 +1548,277 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-badge-star {
   background-image: url(../img/icons.png);
-  background-position: -240px 0px;
+  background-position: -400px -90px;
   width: 28px;
   height: 32px; }
 
 .icon-blue-diamond {
   background-image: url(../img/icons.png);
-  background-position: -288px -117px;
+  background-position: -430px -324px;
   width: 15px;
   height: 15px; }
 
 .icon-carousel-child-next {
   background-image: url(../img/icons.png);
-  background-position: -240px -76px;
+  background-position: -400px -122px;
   width: 20px;
   height: 44px; }
 
 .icon-carousel-child-prev {
   background-image: url(../img/icons.png);
-  background-position: -240px -120px;
+  background-position: -400px -166px;
   width: 20px;
   height: 44px; }
 
 .icon-circle-minus {
   background-image: url(../img/icons.png);
-  background-position: -58px -234px;
+  background-position: -400px -375px;
   width: 24px;
   height: 24px; }
 
 .icon-circle-plus {
   background-image: url(../img/icons.png);
-  background-position: -82px -234px;
+  background-position: -126px -372px;
   width: 24px;
   height: 24px; }
 
 .icon-cloud {
   background-image: url(../img/icons.png);
-  background-position: -140px -100px;
+  background-position: -190px -300px;
   width: 36px;
   height: 36px; }
 
 .icon-danger {
   background-image: url(../img/icons.png);
-  background-position: -90px -204px;
+  background-position: -400px -210px;
   width: 30px;
   height: 28px; }
 
 .icon-disabled {
   background-image: url(../img/icons.png);
-  background-position: -150px -204px;
+  background-position: -400px -322px;
   width: 28px;
   height: 28px; }
 
 .icon-document {
   background-image: url(../img/icons.png);
-  background-position: -62px -172px;
+  background-position: -352px -300px;
   width: 30px;
   height: 30px; }
 
 .icon-download {
   background-image: url(../img/icons.png);
-  background-position: -92px -172px;
-  width: 30px;
-  height: 30px; }
+  background-position: -200px -200px;
+  width: 100px;
+  height: 100px; }
 
 .icon-drop-arrow {
   background-image: url(../img/icons.png);
-  background-position: -90px -100px;
-  width: 50px;
-  height: 50px; }
+  background-position: -430px -339px;
+  width: 19px;
+  height: 10px; }
 
 .icon-envelope-list {
   background-image: url(../img/icons.png);
-  background-position: -152px -172px;
-  width: 30px;
-  height: 30px; }
+  background-position: -300px -200px;
+  width: 100px;
+  height: 100px; }
 
 .icon-facebook {
   background-image: url(../img/icons.png);
-  background-position: -120px 0px;
-  width: 120px;
+  background-position: -100px -200px;
+  width: 100px;
   height: 100px; }
 
 .icon-facebook-round {
   background-image: url(../img/icons.png);
-  background-position: -216px -150px;
+  background-position: -140px -350px;
   width: 22px;
   height: 22px; }
 
 .icon-facebook-small {
   background-image: url(../img/icons.png);
-  background-position: -235px -234px;
+  background-position: -235px -372px;
   width: 21px;
   height: 17px; }
 
 .icon-favorite-off {
   background-image: url(../img/icons.png);
-  background-position: -288px -87px;
-  width: 15px;
-  height: 15px; }
+  background-position: 0px -200px;
+  width: 100px;
+  height: 100px; }
 
 .icon-favorite-on {
   background-image: url(../img/icons.png);
-  background-position: -288px -102px;
-  width: 15px;
-  height: 15px; }
+  background-position: -100px 0px;
+  width: 100px;
+  height: 100px; }
 
 .icon-findmsds-list {
   background-image: url(../img/icons.png);
-  background-position: -122px -172px;
+  background-position: -400px -60px;
   width: 30px;
   height: 30px; }
 
 .icon-globe-large {
   background-image: url(../img/icons.png);
-  background-position: -240px -208px;
+  background-position: -100px -372px;
   width: 26px;
   height: 26px; }
 
 .icon-globe-small {
   background-image: url(../img/icons.png);
-  background-position: -288px -71px;
+  background-position: -430px -308px;
   width: 16px;
   height: 16px; }
 
 .icon-linkedin-round {
   background-image: url(../img/icons.png);
-  background-position: -84px -150px;
+  background-position: -272px -350px;
   width: 22px;
   height: 22px; }
 
 .icon-map-pin-blue {
   background-image: url(../img/icons.png);
-  background-position: 0px -100px;
+  background-position: -100px -300px;
   width: 40px;
   height: 72px; }
 
 .icon-map-pin-blue-small {
   background-image: url(../img/icons.png);
-  background-position: -268px -34px;
+  background-position: -430px -34px;
   width: 20px;
   height: 34px; }
 
 .icon-map-pin-red-small {
   background-image: url(../img/icons.png);
-  background-position: -268px 0px;
+  background-position: -430px 0px;
   width: 20px;
   height: 34px; }
 
 .icon-nav-main-menu {
   background-image: url(../img/icons.png);
-  background-position: -29px -234px;
-  width: 29px;
-  height: 24px; }
+  background-position: -300px 0px;
+  width: 100px;
+  height: 100px; }
 
 .icon-nav-main-search {
   background-image: url(../img/icons.png);
-  background-position: 0px -234px;
-  width: 29px;
-  height: 24px; }
+  background-position: -200px 0px;
+  width: 100px;
+  height: 100px; }
 
 .icon-newsletter-list {
   background-image: url(../img/icons.png);
-  background-position: -182px -172px;
+  background-position: -292px -300px;
   width: 30px;
   height: 30px; }
 
 .icon-popup-arrow {
   background-image: url(../img/icons.png);
-  background-position: -206px -204px;
+  background-position: -400px -350px;
   width: 30px;
   height: 25px; }
 
 .icon-primary-pin {
   background-image: url(../img/icons.png);
-  background-position: -210px -100px;
-  width: 30px;
-  height: 30px; }
+  background-position: 0px -300px;
+  width: 100px;
+  height: 100px; }
 
 .icon-question {
   background-image: url(../img/icons.png);
-  background-position: -178px -204px;
+  background-position: -400px -294px;
   width: 28px;
   height: 28px; }
 
 .icon-search {
   background-image: url(../img/icons.png);
-  background-position: 0px -172px;
+  background-position: -260px -300px;
   width: 32px;
   height: 32px; }
 
 .icon-search-white {
   background-image: url(../img/icons.png);
-  background-position: -193px -234px;
+  background-position: -193px -372px;
   width: 21px;
   height: 21px; }
 
 .icon-share {
   background-image: url(../img/icons.png);
-  background-position: -288px -33px;
+  background-position: -430px -266px;
   width: 19px;
   height: 22px; }
 
 .icon-share-orange {
   background-image: url(../img/icons.png);
-  background-position: -60px -204px;
+  background-position: -322px -300px;
   width: 30px;
   height: 30px; }
 
 .icon-success {
   background-image: url(../img/icons.png);
-  background-position: -212px -172px;
+  background-position: -400px -266px;
   width: 28px;
   height: 28px; }
 
 .icon-success-filled {
   background-image: url(../img/icons.png);
-  background-position: -176px -100px;
+  background-position: -226px -300px;
   width: 34px;
   height: 34px; }
 
 .icon-telephone {
   background-image: url(../img/icons.png);
-  background-position: 0px -204px;
-  width: 30px;
-  height: 30px; }
+  background-position: -300px -100px;
+  width: 100px;
+  height: 100px; }
 
 .icon-telephone-list {
   background-image: url(../img/icons.png);
-  background-position: -30px -204px;
+  background-position: -400px 0px;
   width: 30px;
   height: 30px; }
 
 .icon-twitter {
   background-image: url(../img/icons.png);
-  background-position: 0px 0px;
-  width: 120px;
+  background-position: -200px -100px;
+  width: 100px;
   height: 100px; }
 
 .icon-twitter-round {
   background-image: url(../img/icons.png);
-  background-position: -150px -234px;
+  background-position: -338px -350px;
   width: 22px;
   height: 22px; }
 
 .icon-twitter-small {
   background-image: url(../img/icons.png);
-  background-position: -214px -234px;
+  background-position: -214px -372px;
   width: 21px;
   height: 17px; }
 
 .icon-warning {
   background-image: url(../img/icons.png);
-  background-position: -120px -204px;
+  background-position: -400px -238px;
   width: 30px;
   height: 28px; }
 
 .icon-world-list {
   background-image: url(../img/icons.png);
-  background-position: -32px -172px;
+  background-position: -400px -30px;
   width: 30px;
   height: 30px; }
 
 .icon-world-white {
   background-image: url(../img/icons.png);
-  background-position: -172px -234px;
+  background-position: -172px -372px;
   width: 21px;
   height: 21px; }
 
 .icon-youtube-round {
   background-image: url(../img/icons.png);
-  background-position: -172px -150px;
+  background-position: -206px -350px;
   width: 22px;
   height: 22px; }
 
@@ -2317,51 +2118,6 @@ a.link-icon {
 .col-1 .alphabetical-column {
   width: 100%; }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .station-locator-panel .station-locator-data .station-locator-titles > span {
   display: block; }
 .station-locator-panel .station-locator-data .station-locator-titles h2 {
@@ -2379,7 +2135,7 @@ The `sprites` mixin generates identical output to the CSS template
       content: " ";
       display: block;
       background-image: url(../img/icons.png);
-      background-position: -268px -34px;
+      background-position: -430px -34px;
       width: 20px;
       height: 34px; }
   .station-locator-panel .station-locator-data .station-locator-point > span {
@@ -2390,7 +2146,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin-bottom: 10px; }
   .station-locator-panel .station-locator-data .station-locator-information .station-telephone .icon-telephone-list {
     background-image: url(../img/icons.png);
-    background-position: -30px -204px;
+    background-position: -400px 0px;
     width: 30px;
     height: 30px;
     vertical-align: middle; }
@@ -2422,14 +2178,14 @@ The `sprites` mixin generates identical output to the CSS template
   background-color: #47d5cd; }
   .station-locator-panel .station-locator-options .station-direction .icon-world-white {
     background-image: url(../img/icons.png);
-    background-position: -172px -234px;
+    background-position: -172px -372px;
     width: 21px;
     height: 21px; }
 .station-locator-panel .station-locator-options .station-find {
   background-color: #47d5cd; }
   .station-locator-panel .station-locator-options .station-find .icon-search-white {
     background-image: url(../img/icons.png);
-    background-position: -193px -234px;
+    background-position: -193px -372px;
     width: 21px;
     height: 21px; }
 
@@ -2447,51 +2203,6 @@ The `sprites` mixin generates identical output to the CSS template
     width: 48%; }
   .col-2 .station-locator-panel .station-locator-options .station-direction, .col-3 .station-locator-panel .station-locator-options .station-direction, .col-4 .station-locator-panel .station-locator-options .station-direction {
     margin-right: 10px; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .map {
   height: 500px;
   position: relative;
@@ -2757,51 +2468,6 @@ p.paragraph.small {
   display: block;
   font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif; }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .screen-title {
   position: relative; }
 
@@ -2911,51 +2577,6 @@ The `sprites` mixin generates identical output to the CSS template
     display: inline-block; }
   .col-2 .secondary-title-link, .col-3 .secondary-title-link, .col-4 .secondary-title-link {
     float: right; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .search-box-placeholder.placeholder, .search-box .placeholder.form-control, .search-box-small .placeholder.form-control {
   color: #4a3c31;
   font-family: Lato-Regular, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
@@ -3051,7 +2672,7 @@ The `sprites` mixin generates identical output to the CSS template
     font-size: 1rem; }
 .search-box-small .form-group-btn {
   background-image: url(../img/icons.png);
-  background-position: 0px -172px;
+  background-position: -260px -300px;
   width: 32px;
   height: 32px;
   bottom: 0;
@@ -3119,51 +2740,6 @@ The `sprites` mixin generates identical output to the CSS template
   margin-top: -13px;
   margin-top: -0.8125rem; }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .social .social-data {
   border: 1px solid #f8f7f3; }
   .social .social-data > .social-follow {
@@ -3226,51 +2802,6 @@ The `sprites` mixin generates identical output to the CSS template
   .col-1 .social-data > .social-follow > .social-app {
     padding: 20px;
     padding: 1.25rem; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .social-share {
   padding: 20px;
   padding: 1.25rem;
@@ -3363,51 +2894,6 @@ The `sprites` mixin generates identical output to the CSS template
 @media (min-width: 992px) {
   .col-3 .special-screen-title-cta.btn, .col-3 .special-screen-title-cta.btn-primary, .col-3 .special-screen-title-cta.btn-secondary, .col-3 .special-screen-title-cta.btn-tertiary, .col-3 .special-screen-title-cta.btn-deemphasized, .col-3 .special-screen-title-cta.btn-light, .col-3 .special-screen-title-cta.btn-badge, .col-3 .special-screen-title-cta.btn-icon, .col-4 .special-screen-title-cta.btn, .col-4 .special-screen-title-cta.btn-primary, .col-4 .special-screen-title-cta.btn-secondary, .col-4 .special-screen-title-cta.btn-tertiary, .col-4 .special-screen-title-cta.btn-deemphasized, .col-4 .special-screen-title-cta.btn-light, .col-4 .special-screen-title-cta.btn-badge, .col-4 .special-screen-title-cta.btn-icon {
     float: right; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .static-map {
   display: inline-block;
   position: relative; }
@@ -3853,62 +3339,11 @@ The `sprites` mixin generates identical output to the CSS template
 @media (min-width: 992px) {
   .no-languages .nav-country > li:first-child > a {
     padding-right: 30px; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-.footer-pseudo-image, #footer-top:before, #footer-top:after {
-  content: '';
-  left: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
 #footer {
   color: #fff;
-  margin-top: 40px; }
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center; }
   #footer .social-share-icons {
     display: block;
     margin-top: 13px;
@@ -3917,27 +3352,12 @@ The `sprites` mixin generates identical output to the CSS template
       margin-right: 8px; }
 
 #footer-top {
-  background-color: #383838;
-  box-shadow: inset 0 3px rgba(17, 17, 17, 0.1);
-  padding: 35px 20px 30px;
-  position: relative;
-  z-index: 0; }
-  #footer-top:before {
-    background: url("../img/gradient-v.png") repeat;
-    background-size: 1% 100%;
-    opacity: 0.07;
-    filter: alpha(opacity=7);
-    z-index: -2; }
-  #footer-top:after {
-    background: url("../img/noise.png") repeat;
-    background-size: contain;
-    opacity: 0.1;
-    filter: alpha(opacity=10);
-    z-index: -1; }
+  background-color: #eeebe6;
+  padding: 50px 20px 20px; }
 
 #footer-bottom {
-  background-color: #262626;
-  padding: 35px 20px 25px; }
+  background-color: #605f5e;
+  padding: 10px 20px; }
 
 .footer-links-wrapper {
   overflow: hidden; }
@@ -3949,30 +3369,28 @@ The `sprites` mixin generates identical output to the CSS template
   .footer-links > li {
     display: inline-block;
     font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 13.53846px;
+    font-size: 0.84615rem;
     margin: 0 15px 15px 0;
-    text-shadow: 0 -1px 1px rgba(17, 17, 17, 0.15);
     vertical-align: middle; }
     .footer-links > li > a {
-      color: #d4d4d4;
+      color: #4a3c31;
       margin-left: 15px;
       outline: none;
-      position: relative;
-      text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32); }
+      position: relative; }
       .footer-links > li > a:before {
-        color: #808080;
-        content: '\02022';
+        color: #4a3c31;
+        content: '|';
         font-family: 'serif';
         font-size: 9px;
         font-size: 0.5625rem;
         left: -19px;
         position: absolute;
-        text-shadow: 0 -1px 0 rgba(17, 17, 17, 0.4);
         top: 3px; }
       .footer-links > li > a:hover {
-        border-bottom: 1px solid rgba(212, 212, 212, 0.4);
         outline: none; }
+    .footer-links > li:first-child > a:before {
+      content: ''; }
 
 #footer-nav-items {
   margin-bottom: 10px; }
@@ -3992,7 +3410,7 @@ The `sprites` mixin generates identical output to the CSS template
   position: relative;
   width: 100%; }
   #footer-search-form > .footer-search-icon {
-    background: #262626;
+    background: #605f5e;
     border: none;
     color: #808080;
     font-size: 16px;
@@ -4008,7 +3426,7 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: 'em'; }
 
 #footer-search {
-  background-color: #262626;
+  background-color: #605f5e;
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0;
@@ -4022,7 +3440,7 @@ The `sprites` mixin generates identical output to the CSS template
   padding-left: 17px;
   width: 100%; }
 
-.footer-logo, #footer-logos .footer-logo-large, #footer-related-companies > li > .exxon, #footer-related-companies > li > .mobil, #footer-related-companies > li > .esso, #footer-related-companies > li > .xto, #footer-related-companies > li > .imperial {
+.footer-logo, #footer-logos .footer-logo-large, #footer-related-companies > li > .esso {
   background-image: url(../img/footer-logos.svg);
   background-repeat: no-repeat;
   background-size: 1100px 30px;
@@ -4030,15 +3448,14 @@ The `sprites` mixin generates identical output to the CSS template
   height: 30px;
   text-indent: -9999em; }
 
-#footer-logos .logo-footer-ie8 {
-  display: none; }
-#footer-logos .footer-logo-large {
-  background-position: -300px center;
-  height: 25px;
-  margin-bottom: 20px;
-  width: 122px; }
-  #footer-logos .footer-logo-large:hover {
-    background-position: -450px center; }
+#footer-logos {
+  margin-bottom: 50px; }
+  #footer-logos .logo-footer-ie8 {
+    display: none; }
+  #footer-logos .footer-logo-large {
+    height: 25px;
+    margin-bottom: 20px;
+    width: 122px; }
 
 #footer-related-companies {
   margin-bottom: 2px;
@@ -4048,31 +3465,11 @@ The `sprites` mixin generates identical output to the CSS template
   #footer-related-companies > li {
     display: inline-block;
     list-style: none; }
-    #footer-related-companies > li > .exxon {
-      background-position: -600px center;
-      width: 37px; }
-      #footer-related-companies > li > .exxon:hover {
-        background-position: -650px center; }
-    #footer-related-companies > li > .mobil {
-      background-position: -700px center;
-      width: 38px; }
-      #footer-related-companies > li > .mobil:hover {
-        background-position: -750px center; }
     #footer-related-companies > li > .esso {
       background-position: -800px center;
       width: 33px; }
       #footer-related-companies > li > .esso:hover {
         background-position: -850px center; }
-    #footer-related-companies > li > .xto {
-      background-position: -900px center;
-      width: 40px; }
-      #footer-related-companies > li > .xto:hover {
-        background-position: -950px center; }
-    #footer-related-companies > li > .imperial {
-      background-position: -1000px center;
-      width: 47px; }
-      #footer-related-companies > li > .imperial:hover {
-        background-position: -1050px center; }
 
 #footer-nav-terms > .footer-links {
   margin-bottom: 0; }
@@ -4085,13 +3482,12 @@ The `sprites` mixin generates identical output to the CSS template
         left: -16px; }
 
 #footer-copyright {
-  color: #d4d4d4;
-  font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-  font-size: 12px;
-  font-size: 0.75rem;
+  color: #fff;
+  font-family: "Lato", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-size: 13.09091px;
+  font-size: 0.81818rem;
   line-height: 20px;
   line-height: 1.25rem;
-  margin-top: 4px;
   max-width: 280px; }
 
 @media screen and (min-width: 606px) {
@@ -4106,12 +3502,7 @@ The `sprites` mixin generates identical output to the CSS template
 
   #footer-search-social,
   #footer-nav {
-    display: table-cell;
     padding: 0; }
-
-  #footer-nav {
-    padding-right: 40px;
-    width: 60%; }
 
   #footer-search-social {
     width: 40%; }
@@ -4136,20 +3527,8 @@ The `sprites` mixin generates identical output to the CSS template
     padding-left: 30px;
     padding-right: 30px; }
 
-  #footer-nav {
-    width: 70%; }
-
   #footer-search-social {
     width: 30%; }
-
-  #footer-logos {
-    float: left; }
-
-  #footer-nav-terms,
-  #footer-copyright {
-    clear: right;
-    float: right;
-    text-align: right; }
 
   #footer-nav-terms > .footer-links {
     margin-right: -10px; } }
@@ -4522,22 +3901,15 @@ The `sprites` mixin generates identical output to the CSS template
     float: right;
     width: 400px; } }
 .nav-header {
-  background-color: #fff;
+  background-color: #edeae5;
   margin: 0 auto;
-  max-width: 1400px;
   position: relative;
   z-index: 9; }
   .nav-header > .nav-wrapper {
-    -webkit-box-shadow: 0 1px 1px 0 rgba(17, 17, 17, 0.15);
-    -moz-box-shadow: 0 1px 1px 0 rgba(17, 17, 17, 0.15);
-    box-shadow: 0 1px 1px 0 rgba(17, 17, 17, 0.15);
     position: relative;
     z-index: 1; }
     .nav-header > .nav-wrapper:before, .nav-header > .nav-wrapper:after {
       bottom: 18px;
-      -webkit-box-shadow: 0 2px 5px 0 rgba(17, 17, 17, 0.08);
-      -moz-box-shadow: 0 2px 5px 0 rgba(17, 17, 17, 0.08);
-      box-shadow: 0 2px 5px 0 rgba(17, 17, 17, 0.08);
       content: '';
       left: 0;
       position: absolute;
@@ -4587,7 +3959,6 @@ The `sprites` mixin generates identical output to the CSS template
     width: 0; }
 
 .nav-language-list {
-  background-color: #bbad8f;
   display: none;
   margin: 0;
   padding: 0; }
@@ -4630,82 +4001,7 @@ The `sprites` mixin generates identical output to the CSS template
 @media (min-width: 992px) {
   .nav-language {
     margin-right: 10px; } }
-.nav-lines-brands {
-  margin: 0;
-  padding: 0; }
-  .nav-lines-brands > li {
-    float: left;
-    position: relative; }
-    .nav-lines-brands > li:first-child {
-      padding-left: 0; }
-      .nav-lines-brands > li:first-child:after {
-        color: #605f5e;
-        content: '\02022';
-        display: block;
-        font-family: 'serif';
-        font-size: 15px;
-        position: absolute;
-        right: -2px;
-        top: 9px; }
-    .nav-lines-brands > li > a {
-      padding: 10px 15px; }
-      .nav-lines-brands > li > a:hover {
-        background-color: #d9d9d9; }
-  .nav-lines-brands:hover > li:after {
-    visibility: hidden; }
-
-@media (min-width: 992px) {
-  .nav-lines-brands > li > a {
-    padding: 10px 20px; }
-  .nav-lines-brands > li:first-child > a {
-    padding-left: 30px; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .nav-main-bar {
-  background-color: #fff;
   clear: both;
   padding-left: 20px;
   padding-right: 0;
@@ -4833,51 +4129,6 @@ The `sprites` mixin generates identical output to the CSS template
           height: 90px;
           padding: 0;
           vertical-align: middle; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 #nav-main-mobile {
   background-color: #fff;
   height: 100%;
@@ -4992,51 +4243,6 @@ html.nav-main-mobile-transition #nav-main-mobile {
 @media (min-width: 992px) {
   #nav-main-mobile {
     display: none; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .nav-main-search-trigger {
   float: right;
   padding-top: 18px;
@@ -5168,51 +4374,6 @@ The `sprites` mixin generates identical output to the CSS template
     display: none; }
   .nav-search-open .nav-main-search {
     display: block; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .nav-meganav {
   display: block;
   top: -9999px;
@@ -5292,51 +4453,6 @@ The `sprites` mixin generates identical output to the CSS template
       width: 2px;
       margin-left: -1px;
       margin-top: -8px; } }
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .nav-social {
   float: right;
   margin-right: 8px;
@@ -5350,7 +4466,7 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-transform: scale(1) translateX(-50%) translateY(0px);
     transform: scale(1) translateX(-50%) translateY(0px); }
   .nav-social > .nav-social-trigger {
-    color: #4a3c31;
+    color: #656565;
     display: block;
     font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
     font-size: 13px;
@@ -5404,13 +4520,13 @@ The `sprites` mixin generates identical output to the CSS template
       .nav-social > .nav-social-icons > li > a {
         padding: 9px 5px 5px; }
         .nav-social > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -128px -234px; }
+          background-position: -316px -350px; }
         .nav-social > .nav-social-icons > li > a > .icon-linkedin-round {
-          background-position: -40px -150px; }
+          background-position: -250px -350px; }
         .nav-social > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -150px -150px; }
+          background-position: -360px -350px; }
         .nav-social > .nav-social-icons > li > a > .icon-youtube-round {
-          background-position: -128px -150px; }
+          background-position: -184px -350px; }
 
 @media (min-width: 768px) {
   .nav-social-few {
@@ -5437,35 +4553,53 @@ The `sprites` mixin generates identical output to the CSS template
       .nav-social-few > .nav-social-icons > li > a {
         padding-top: 0; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -216px -150px; }
+          background-position: -140px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round:hover {
-          background-position: -106px -234px; }
+          background-position: -294px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-linkedin-round {
-          background-position: -84px -150px; }
+          background-position: -272px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-linkedin-round:hover {
-          background-position: -194px -150px; }
+          background-position: -228px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -150px -234px; }
+          background-position: -338px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round:hover {
-          background-position: -106px -150px; }
+          background-position: -150px -372px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-youtube-round {
-          background-position: -172px -150px; }
+          background-position: -206px -350px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-youtube-round:hover {
-          background-position: -62px -150px; } }
+          background-position: -162px -350px; } }
 .nav-top-bar {
-  background-color: #bbad8f;
+  max-width: 1400px;
   height: 40px;
-  position: relative; }
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Lato", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
+  font-size: 13px;
+  font-size: 0.8125rem; }
   .nav-top-bar a,
   .nav-top-bar a:hover,
   .nav-top-bar a:active,
   .nav-top-bar a:focus {
-    color: #4a3c31;
-    display: block;
-    font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-    font-size: 13px;
-    font-size: 0.8125rem;
+    display: inline-block;
+    color: #656565;
     white-space: nowrap; }
+  .nav-top-bar ul {
+    margin: 0;
+    padding: 0; }
+    .nav-top-bar ul > li {
+      float: left;
+      position: relative; }
+      .nav-top-bar ul > li:first-child {
+        padding-left: 0; }
+      .nav-top-bar ul > li a {
+        padding: 10px 15px; }
+        .nav-top-bar ul > li a:hover {
+          background-color: #d9d9d9; }
+      @media (min-width: 992px) {
+        .nav-top-bar ul > li a {
+          padding: 10px 20px; }
+        .nav-top-bar ul > li:first-child a {
+          padding-left: 30px; } }
 
 .nav-top-bar-left {
   float: left;

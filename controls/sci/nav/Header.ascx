@@ -4,46 +4,19 @@
 <header class="nav-header">
 	<div class="nav-wrapper">
 		<div class="nav-top-bar">
-			<div class="nav-top-bar-left">
-				<ul class="nav-lines-brands">
-					<li><a href="#" data-global-selector="business_lines"><span class="nav-mobile">Business</span><span class="nav-tablet-up">Business lines</span></a></li>
-					<li><a href="#" data-global-selector="global_brands"><span class="nav-mobile">Brands</span><span class="nav-tablet-up">Global brands</span></a></li>
-				</ul>
-			</div>
-			<div class="nav-top-bar-right <%= Social.Any() ? "has-social" : "no-social" %>  <%= Languages.Length > 1 ? "has-languages" : "no-languages" %>">
-				<% if (Languages.Length > 1) { %>
-				<div class="nav-language">
-					<a href="#" class="nav-language-current class-toggle" data-target=".nav-language" data-class-name="nav-language-open"><%= Language %></a>
-					<ul class="nav-language-list">
-						<% foreach (var lang in Languages) { %>
-						<li <%= lang == Language ? "class=\"selected\"" : "" %>><a href="?lang=<%= lang %>"><%= lang %></a></li>
-						<% } %>
-					</ul>
-				</div>
-				<% } %>
-				<ul class="nav-country">
-					<li>
-						<a href="#" data-global-selector="Oltiva">
-							<i class="icon icon-globe-small"></i>
-							<span class="nav-country-text <%= !HasCountrySelection ? "hidden-xs" : "" %>">
-								<span class="hidden-xs"><%= CountryName %></span>
-								<span class="visible-xs-inline"><%= CountryAbbrev %></span>
-							</span>
-						</a>
-					</li>
-				</ul>
-				<% if (Social.Any()) { %>
-				<div class="nav-social <%= Social.Length < 4 ? "nav-social-few" : null %>">
-					<a href="#" class="nav-social-trigger">Social</a>
-					<ul class="nav-social-icons">
-						<% foreach (var social in Social) { %>
-						<li><a href="#" class="nav-<%= social.ToLower() %>"><i class="icon icon-<%= social.ToLower() %>-round"></i></a></li>
-						<% } %>
-					</ul>
-				</div>
-				<% } %>
+			<div class="nav-top-bar-left"></div>
+			
+			<div class="nav-top-bar-right">
+			
+                <ul>
+					<li><a href="#" data-global-selector="business_lines"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
+					<li><a href="#" data-global-selector="global_brands"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
+				    <li class="change-language"><a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>"><span class="current-language">English</span> ^</a></li>
+                </ul>
+				
 			</div>
 		</div>
+        
 		<div class="nav-main-bar">
 			<a href="<%=ResolveUrl("~/")%>" class="logo">
 				<img src="<%= ResolveUrl("~/content/sci/img/logos/exxon_fuels.svg") %>" data-no-svg="<%= ResolveUrl("~/content/sci/img/logos/logo-nav-ie8.png") %>" />
@@ -64,7 +37,7 @@
 
 			</ul>
 		</div>
-		<xom:MegaNav runat="server" />
+		
 	</div>
 	<fieldset class="nav-main-search search-box" data-url="<%= ResolveUrl("~/pages/SearchResults.aspx") %>" data-search-key="q">
 		<input type="text" autocomplete="off" placeholder="Search for topics, articles, data..." aria-relevant="all" aria-autocomplete="both" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }'>
@@ -73,3 +46,58 @@
 	<div class="nav-header-divider"></div>
 </header>
 <ks:Component runat="server" Code="A01.2" Margin="none" />
+
+
+<div class="modal modal-change-language fade" id="<%=UniqueDomId("lb")%>" tabindex="-1" role="dialog" aria-labelledby="<%=UniqueDomId("lb")%>-label" aria-hidden="true" data-cookie-name="emfl-language" data-query-param="language">
+	<div class="modal-dialog modal-breadcrumb">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				<h3 class="modal-title" id="<%=UniqueDomId("lb")%>-label">Select Language</h3>
+				<p class="small">Select the language you would like to use (this does not limit what documents are returned).</p>
+			</div>
+			<div class="modal-body">
+				<div class="row form-inline">
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb3a")%>" name="rb1" value="ar" />
+							<label for="<%=UniqueDomId("rb3a")%>"><span class="icon"></span>Arabic</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb2c")%>" name="rb1" value="zh" />
+							<label for="<%=UniqueDomId("rb2c")%>"><span class="icon"></span>Chinese</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb1a")%>" name="rb1" value="en" />
+							<label for="<%=UniqueDomId("rb1a")%>"><span class="icon"></span>English</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb1b")%>" name="rb1" value="fr" />
+							<label for="<%=UniqueDomId("rb1b")%>"><span class="icon"></span>French</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb2a")%>" name="rb1" value="de" />
+							<label for="<%=UniqueDomId("rb2a")%>"><span class="icon"></span>German</label>
+						</div>
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb1c")%>" name="rb1" value="es" />
+							<label for="<%=UniqueDomId("rb1c")%>"><span class="icon"></span>Spanish</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<input type="radio" id="<%=UniqueDomId("rb2b")%>" name="rb1" value="th" />
+							<label for="<%=UniqueDomId("rb2b")%>"><span class="icon"></span>Thai</label>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-submit-btn">
+					<button type="button" class="btn btn-primary">Change</button>
+					<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

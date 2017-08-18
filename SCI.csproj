@@ -165,6 +165,7 @@
     <Content Include="content\sci\fonts\Lato-LightItalic.svg" />
     <Content Include="content\sci\fonts\Lato-Regular.svg" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.svg" />
+    <Content Include="content\sci\img\logos\bottom-logo.png" />
     <Content Include="content\site\coal-339x159.jpg" />
     <Content Include="content\site\coal-439x206.jpg" />
     <Content Include="content\site\data-visualization-graph.png" />
@@ -637,7 +638,6 @@
     <None Include="content\sci\css\core\modules\_glyph.scss" />
     <Content Include="content\sci\css\ie8\modules\_form.scss" />
     <None Include="content\sci\css\core\nav\_nav-top-bar.scss" />
-    <None Include="content\sci\css\core\nav\_nav-lines-brands.scss" />
     <None Include="content\sci\css\core\nav\_nav-country.scss" />
     <None Include="content\sci\css\core\nav\_nav-social.scss" />
     <None Include="content\sci\css\core\nav\_nav-utility.scss" />
@@ -1029,7 +1029,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="content\sci\img\logos\" />
     <Folder Include="content\sci\img\weather\" />
     <Folder Include="content\sci\js\apps\locator\directives\" />
     <Folder Include="content\sci\js\apps\region-selector\directives\" />

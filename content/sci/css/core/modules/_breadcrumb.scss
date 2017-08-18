@@ -53,19 +53,9 @@
     color: $grey;
     @include rem-fallback(padding, 10px / 16px, 30px / 16px);
     width: 100%;
-
-    .current-language {
-        color: $black;
-        font-family: "Lato-Regular";
-    }
 }
 
-.modal-change-language {
-    .wrapper-submit-btn {
-        clear: both;
-        @include rem-fallback(margin-top, 32px / 16px);
-    }
-}
+
 
 @include if-min(sm) {
     .modal-breadcrumb {
@@ -85,19 +75,8 @@
             vertical-align: top;
         }
 
-        .change-language {
-            display: table-cell;
-            @include rem-fallback(padding-left, 10px / 16px);
-            text-align: right;
-            vertical-align: top;
-        }
+      
     }
 
-    .col-3, .col-4 {
-        .breadcrumb-panel-action {
-            .change-language {
-                white-space: nowrap;
-            }
-        }
-    }
+   
 }

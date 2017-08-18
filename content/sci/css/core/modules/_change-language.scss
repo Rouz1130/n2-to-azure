@@ -1,0 +1,32 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+
+
+
+    .current-language {
+        color: $black;
+        font-family: "Lato-Regular";
+    }
+
+
+.modal-change-language {
+    .wrapper-submit-btn {
+        clear: both;
+        @include rem-fallback(margin-top, 32px / 16px);
+    }
+}
+
+
+@include if-min(md) {
+   
+
+        .change-language {
+            display: table-cell;
+            @include rem-fallback(padding-left, 10px / 16px);
+            text-align: right;
+            white-space: nowrap;
+            vertical-align: top;
+        }
+    
+}

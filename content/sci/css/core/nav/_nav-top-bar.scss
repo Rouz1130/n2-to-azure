@@ -4,28 +4,64 @@
 @import "variables";
 
 .nav-top-bar {
-	background-color: $nav-top-bar-background;
-	height: $nav-top-bar-height;
-	position: relative;
+    max-width: $xl-max;
+    height: $nav-top-bar-height;
+    position: relative;
+    text-transform: uppercase;
+    @include font-family("Lato");
+    @include rem-fallback(font-size, 13px / 16px);
+    
 
-	a,
-	a:hover,
-	a:active,
-	a:focus {
-		color: $nav-top-bar-text;
-		display: block;
-		@include font-family("Lato-Bold");
-		@include rem-fallback(font-size, 13px / 16px);
-		white-space: nowrap;
-	}
+    a,
+    a:hover,
+    a:active,
+    a:focus {
+        display: inline-block;
+        color: $nav-top-bar-text;
+        white-space: nowrap;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+            float: left;
+            position: relative;
+
+            &:first-child {
+                padding-left: 0;
+            }
+            
+            a {
+                padding: 10px 15px;
+
+                &:hover {
+                    background-color: $nav-top-bar-link-hover-background;
+                }
+            }
+
+            @include if-min(lg) {
+                a {
+                    padding: 10px 20px;
+                }
+
+                &:first-child a {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
 }
 
+
+
 .nav-top-bar-left {
-	float: left;
-	height: $nav-top-bar-height;
+    float: left;
+    height: $nav-top-bar-height;
 }
 
 .nav-top-bar-right {
-	float: right;
-	height: $nav-top-bar-height;
+    float: right;
+    height: $nav-top-bar-height;
 }

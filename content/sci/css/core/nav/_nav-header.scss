@@ -4,20 +4,20 @@
 @import "variables";
 
 .nav-header {
-    background-color: $white;
+    background-color: #edeae5;
     margin: 0 auto;
-    max-width: $xl-max;
+   
     position: relative;
     z-index: 9;
 
     > .nav-wrapper {
-        @include box-shadow(0, 1px, 1px, rgba(17, 17, 17, 0.15));
+        
         position: relative;
         z-index: 1;
 
         &:before, &:after {
             bottom: 18px;
-            @include box-shadow(0, 2px, 5px, rgba(17, 17, 17, 0.08));
+          
             content: '';
             left: 0;
             position: absolute;
