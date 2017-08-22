@@ -4,9 +4,9 @@
 
 .search-box-placeholder {
 	@include placeholder() {
-		color: $black;
+		color: $nav-top-bar-text;
 		@include font-family(Lato-Regular);
-		@include rem-fallback(font-size, 20px / 16px);
+		font-size: 16px;
 	}
 }
 
@@ -24,15 +24,12 @@
 
 	.btn.search {
 		border: none;
-		color: $white;
+		color: $black;
 		margin: 0;
 		top: 0;
+        @include rem-fallback(font-size, 14px / 12px);
 		@include rem-fallback(height, 50px / 16px);
 		@include rem-fallback(padding, 13px / 16px, 20px / 16px);
-
-		&:focus {
-			color: $white;
-		}
 	}
 
 	.recent-searches {
@@ -64,19 +61,46 @@
 
 .search-box-with-settings {
 	margin-bottom: 0;
+     padding: 30px 30px 0;
+     background-color: rgba(239,239,239,.88);
+     border-top: 5px solid rgba(71,213,205,.75);
+
+   .form-group .form-control {
+       border: none;
+       padding: 20px;
+   }
+
+   .form-group-btn {
+       background: $white;
+       
+       .btn.search {
+           font-size: 12px;         
+       }
+   }
 }
 
 .search-box-settings {
-	border: 1px solid $black8;
-	border-top: none;
+	
 	margin: 0;
-	@include rem-fallback(padding, 16px / 16px);
+	padding: 20px 0 0;
 	text-align: center;
+    text-transform: uppercase;
 
 	> li {
 		display: inline-block;
 		list-style: none;
-		@include rem-fallback(padding, 0, 16px / 16px);
+        vertical-align: top;
+        line-height: 1em;
+        margin: 0 40px 25px;
+        min-width: 17%;
+
+        a {
+            padding-bottom: 5px;
+        }
+      
+        &.selected a {
+            border-bottom: 3px solid $teal;
+        }
 	}
 }
 

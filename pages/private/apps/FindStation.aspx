@@ -2,16 +2,10 @@
 <%@ Register TagPrefix="xom" TagName="Component" Src="~/controls/Component.ascx" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="PageScript">
-	<% if (MapProvider == "baidu") { %>
-	<script src="//api.map.baidu.com/api?v=2.0&ak=4Kq2FM6g8buv7oQaYzt3t9cY"></script>
-	<script src="<%=ResolveUrl("~/content/sci/js/plugins/mapify-baidu.min.js")%>"></script>
-	<% } else if (MapProvider == "google") { %>
+	
 	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA-KGBXETEq7H2ZKilTKAkwMY2hWIN4zro"></script>
 	<script src="<%=ResolveUrl("~/content/sci/js/plugins/mapify-google.js")%>"></script>
-	<% } else { %>
-	<script src="//ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&s=1" charset="utf-8"></script>
-	<script src="<%=ResolveUrl("~/content/sci/js/plugins/mapify-bing.js")%>"></script>
-	<% } %>
+	
 
 	<script src="<%=ResolveUrl("~/content/vendor/angular/angular.min.js") %>"></script>
 	<script src="<%=ResolveUrl("~/content/vendor/angular/angular-sanitize.min.js") %>"></script>
@@ -27,11 +21,10 @@
 					<li>If you allow browser geodetection, the map should appear for your location.</li>
 					<li>The API results are mocked, and the following searches are supported: "seattle", "dallas", and "china".</li>
 					<li>If you drag/zoom the map, a boundary search will occur.  If your latitude is 47, 32, or 34, then you'll get the static results for Seattle, Dallas, or China, respectively.</li>
-					<li>Baidu only maps China, so if you allow browser geodetection and you're not in China, the map will appear blank at first.</li>
+					
 				</ul>
 			</p>
-			<p>Switch map provider: <a href="?map=bing" target="_self">Bing</a> | <a href="?map=google" target="_self">Google</a> | <a href="?map=baidu" target="_self">Baidu</a></p>
-		</div>
+				</div>
 
 		<div class="row">
 			<div class="col-lg-9 col-3 breakpoints">
@@ -39,7 +32,7 @@
 				<!-- A05.1: Search box -->
 				<div class="component component-margin-sm search-box" data-event-name="xom.search-requested" data-search-key="q" data-cookie-name="EXXON_GLOBAL_COOKIE">
 					<div class="form-group form-group-lg">
-						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" ng-model="filters.q" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }' />
+						<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or cemetery" ng-model="filters.q" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }' />
 						<span class="form-group-btn">
 							<button class="btn btn-primary search" type="button" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field", "sc_goals": "RTL-G7" }'>Search</button>
 						</span>

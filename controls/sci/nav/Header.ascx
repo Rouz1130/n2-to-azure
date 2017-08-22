@@ -7,7 +7,11 @@
 			<div class="nav-top-bar-left"></div>
 			
 			<div class="nav-top-bar-right">
-			
+			<!-- Search icon
+                	<a href="#" class="nav-main-item nav-main-search-trigger">
+				<span class="nav-main-item-text">Search</span>
+			</a> -->
+
                 <ul>
 					<li><a href="#" data-global-selector="business_lines"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
 					<li><a href="#" data-global-selector="global_brands"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
@@ -19,25 +23,23 @@
         
 		<div class="nav-main-bar">
 			<a href="<%=ResolveUrl("~/")%>" class="logo">
-				<img src="<%= ResolveUrl("~/content/sci/img/logos/exxon_fuels.svg") %>" data-no-svg="<%= ResolveUrl("~/content/sci/img/logos/logo-nav-ie8.png") %>" />
+				<img src="<%= ResolveUrl("~/content/sci/img/logos/logo.png") %>" />
 			</a>
 			<a href="#" class="nav-main-item nav-main-list-trigger">
 				<i class="icon-hamburger"></i>
 				<span class="nav-main-item-text">Menu</span>
 			</a>
-			<a href="#" class="nav-main-item nav-main-search-trigger">
-				<span class="nav-main-item-text">Search</span>
-			</a>
+		
 			<ul class="nav-main-list">
-				<li class="nav-main-item" rel="energy"><a href="#" data-analytics='{ "cg": "Quality fuels", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 1</span></a></li>
+			    <li class="nav-main-item" rel="energy"><a href="#" data-analytics='{ "cg": "Quality fuels", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>plan a funeral<br/>or cremation</span></a></li>
 				
-				<li class="nav-main-item" rel="issues"><a href="#" data-analytics='{ "cg": "Motor oil", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 2</span></a></li>
-				<li class="nav-main-item" rel="environment"><a href="#" data-analytics='{ "cg": "Our stations", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 3</span></a></li>
-				<li class="nav-main-item" rel="community"><a href="#" data-analytics='{ "cg": "Rewards and promotions", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>Mega menu 4</span></a></li>
+				<li class="nav-main-item" rel="issues"><a href="#" data-analytics='{ "cg": "Motor oil", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>obituaries<br/>and services</span></a></li>
+				<li class="nav-main-item" rel="environment"><a href="#" data-analytics='{ "cg": "Our stations", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>support friends<br/>and family</span></a></li>
+				<li class="nav-main-item" rel="community"><a href="#" data-analytics='{ "cg": "Rewards and promotions", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>find funeral home<br/>or cemetery</span></a></li>
 
 			</ul>
 		</div>
-		
+		<xom:MegaNav runat="server" />
 	</div>
 	<fieldset class="nav-main-search search-box" data-url="<%= ResolveUrl("~/pages/SearchResults.aspx") %>" data-search-key="q">
 		<input type="text" autocomplete="off" placeholder="Search for topics, articles, data..." aria-relevant="all" aria-autocomplete="both" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }'>
@@ -45,7 +47,6 @@
 	</fieldset>
 	<div class="nav-header-divider"></div>
 </header>
-<ks:Component runat="server" Code="A01.2" Margin="none" />
 
 
 <div class="modal modal-change-language fade" id="<%=UniqueDomId("lb")%>" tabindex="-1" role="dialog" aria-labelledby="<%=UniqueDomId("lb")%>-label" aria-hidden="true" data-cookie-name="emfl-language" data-query-param="language">

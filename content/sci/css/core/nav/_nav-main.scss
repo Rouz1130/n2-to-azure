@@ -6,9 +6,10 @@
 
 .nav-main-bar {
 	
+    margin: 0 auto;
 	clear: both;
 	padding-left: $nav-small-gutter;
-	padding-right: 0;
+	padding-right: $nav-small-gutter;
 	height: $nav-main-height;
 	position: relative;
 	z-index: 1;
@@ -20,9 +21,11 @@
 		top: 50%;
 		@include transform(translateY(-50%));
 
-		.logo-global-nav-ie8 {
-			display: none;
-		}
+        img {
+            width: 160px;
+            margin-top: -10px;
+        }
+
 	}
 
 	a {
@@ -35,7 +38,7 @@
 	float: left;
 	height: 100%;
 	min-width: 57px;
-	padding: 25px 15px 0;
+	padding: 0 15px;
 	text-align: center;
 
 	&:hover {
@@ -55,13 +58,6 @@
 	}
 }
 
-.nav-main-item:hover, .nav-main-item-active {
-	@include box-shadow(0, 3px, 0, $nav-main-item-hover-border, 0, true);
-}
-
-.nav-main-item-active {
-	background-color: $nav-main-item-active-background;
-}
 
 .nav-main-item-text {
 	color: $nav-main-bar-text-light;
@@ -71,7 +67,7 @@
 
 @include if-min(lg) {
 	.nav-main-bar {
-		padding-left: $nav-large-gutter;
+        max-width: $xl-max;
 	}
 
 	.nav-main-item {
@@ -87,7 +83,7 @@
 			color: $grey;
 			@include rem-fallback(font-size, 15px / 16px);
 			height: 100%;
-			padding-top: 10px;
+			padding-top: 20px;
 		}
 	}
 
@@ -103,7 +99,7 @@
 
 @include if-min(xl) {
 	.nav-main-item {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }

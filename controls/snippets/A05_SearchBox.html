@@ -1,7 +1,7 @@
 ﻿<!-- A05.1: Search Box - Default -->
 <div class="component search-box">
 	<div class="form-group form-group-lg">
-		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" />
+		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or cemetery" />
 		<span class="form-group-btn">
 			<button class="btn btn-primary search" type="button">Search</button>
 		</span>
@@ -11,18 +11,16 @@
 <!-- A05.2: Search Box - With change links -->
 <div class="component search-box search-box-with-settings" data-event-name="xom.site-search" data-search-key="q" data-cookie-name="some_cookie" data-settings-cookie="kitchen-sink-search-settings">
 	<div class="form-group form-group-lg">
-		<input type="text" class="form-control" placeholder="Search MSDS and PDS">
+		<input type="text" class="form-control" placeholder="Find an obituary...">
 		<span class="form-group-btn">
 			<button class="btn btn-primary search" type="button">Search</button>
 		</span>
 	</div>
-	<ul class="search-box-settings">
-		<li>Product family: <span class="search-box-setting" data-key="lob" data-value="AVA">Aviation</span> <a href="#" data-toggle="modal" data-target="lightbox-unique-id">(change)</a></li>
-		<li>Country: <span class="search-box-setting" data-key="country" data-value="USA">United States</span> <a href="#" data-toggle="modal" data-target="lightbox-unique-id">(change)</a></li>
-	</ul>
-	<div class="recent-searches">
-		Your recent searches: <span class="recent-searches-links"></span>
-	</div>
+    <ul class="search-box-settings">
+        <li><a class="search-box-setting" data-toggle="modal" data-key="lob" data-target="lightbox-unique-id">Obituaries</a></li>
+		<li><a class="search-box-setting" data-key="country" href="#" data-toggle="modal" data-target="lightbox-unique-id">Funeral Homes<br/>& cemeteries</a></li>
+     </ul>
+	
 </div>
 
 <!-- Sample Lightbox content for A05.2 -->

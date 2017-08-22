@@ -165,7 +165,10 @@
     <Content Include="content\sci\fonts\Lato-LightItalic.svg" />
     <Content Include="content\sci\fonts\Lato-Regular.svg" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.svg" />
+    <Content Include="content\sci\img\icons\flourish-vert.png" />
     <Content Include="content\sci\img\logos\bottom-logo.png" />
+    <Content Include="content\sci\img\logos\logo.png" />
+    <Content Include="content\sci\js\data\static-googlemaps.html" />
     <Content Include="content\site\coal-339x159.jpg" />
     <Content Include="content\site\coal-439x206.jpg" />
     <Content Include="content\site\data-visualization-graph.png" />
@@ -380,6 +383,7 @@
     <Content Include="content\sci\js\core\modules\_wait-message.js" />
     <Content Include="controls\changelog\SP10_DataVisualization.json" />
     <Content Include="controls\changelog\R01_Resource.json" />
+    <Content Include="content\sci\js\data\google-maps.json" />
     <None Include="grunt\app-locator.js" />
     <Content Include="content\sci\js\plugins\mapify-google.min.js" />
     <Content Include="grunt\app-list.js" />

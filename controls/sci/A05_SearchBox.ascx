@@ -4,7 +4,7 @@
 
 <div class="component search-box" data-cookie-name="kitchen-sink-searches">
 	<div class="form-group form-group-lg">
-		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or Cemetery" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
+		<input type="text" class="form-control" placeholder="Search by country, state, city, postal code, or cemetery" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
 		<span class="form-group-btn">
 			<button type="button" class="btn btn-primary search" data-analytics='{ "manual": true, "cg": "Search", "ct": "Button" }'>Search</button>
 		</span>
@@ -18,18 +18,18 @@
 
 <div class="component search-box search-box-with-settings" data-url="<%= ResolveUrl("~/pages/SearchResults.aspx") %>" data-event-name="xom.site-search" data-search-key="q" data-cookie-name="kitchen-sink-searches" data-settings-cookie="kitchen-sink-search-settings">
 	<div class="form-group form-group-lg">
-		<input type="text" class="form-control" placeholder="Search MSDS and PDS" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
+		<input type="text" class="form-control" placeholder="Find an obituary..." data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
 		<span class="form-group-btn">
 			<button class="btn btn-primary search" type="button" data-analytics='{ "manual": true, "cg": "Search", "ct": "Button" }'>Search</button>
 		</span>
 	</div>
 	<ul class="search-box-settings">
-		<li>Product family: <span class="search-box-setting" data-key="lob" data-value="Aviation">Aviation</span> <a href="#" data-toggle="modal" data-target="#<%=UniqueDomId("lb-lob")%>">(change)</a></li>
-		<li>Country: <span class="search-box-setting" data-key="country" data-value="BRA">Brazil</span> <a href="#" data-toggle="modal" data-target="#<%=UniqueDomId("lb-country")%>">(change)</a></li>
-	</ul>
-	<div class="recent-searches">
-		Your recent searches: <span class="recent-searches-links"></span>
-	</div>
+		<li class="selected"><a class="search-box-setting" data-toggle="modal" data-target="#<%=UniqueDomId("lb-lob")%>" data-key="obits" data-value="Obituaries">Obituaries</a></li>
+		<li><a class="search-box-setting" data-key="funeral" data-value="Funeral Homes&lt;br/&gt;&amp; cemeteries" href="#" data-toggle="modal" data-target="#<%=UniqueDomId("lb-country")%>">Funeral Homes<br/>& cemeteries</a></li>
+	    <li><a class="search-box-setting" data-key="site" data-value="Search Site" href="#" data-toggle="modal">Search site</a></li>
+
+    </ul>
+	
 </div>
 
 <!-- Content -->
@@ -38,43 +38,30 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-				<h3 class="modal-title" id="<%=UniqueDomId("lb-lob")%>-label">Line of Business</h3>
+				<h3 class="modal-title" id="<%=UniqueDomId("lb-lob")%>-label">Obituaries</h3>
 				<p class="small">Select the options you would like to use.</p>
 			</div>
 			<div class="modal-body">
 				<div class="row form-inline">
 					<div class="col-sm-4">
 						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb1a")%>" value="Ancillary" />
-							<label for="<%=UniqueDomId("cb1a")%>"><span class="icon"></span>Ancillary</label>
+							<input type="checkbox" id="<%=UniqueDomId("cb1a")%>" value="Obituaries" />
+							<label for="<%=UniqueDomId("cb1a")%>"><span class="icon"></span>Obituaries</label>
 						</div>
 						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb1b")%>" value="Asphalt" />
-							<label for="<%=UniqueDomId("cb1b")%>"><span class="icon"></span>Asphalt</label>
+							<input type="checkbox" id="<%=UniqueDomId("cb1b")%>" value="Obituaries" />
+							<label for="<%=UniqueDomId("cb1b")%>"><span class="icon"></span>Obituaries</label>
 						</div>
 						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb1c")%>" value="Aviation" />
-							<label for="<%=UniqueDomId("cb1c")%>"><span class="icon"></span>Aviation</label>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb2a")%>" value="Basestocks" />
-							<label for="<%=UniqueDomId("cb2a")%>"><span class="icon"></span>Basestocks</label>
-						</div>
-						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb2b")%>" value="Commercial Fuel" />
-							<label for="<%=UniqueDomId("cb2b")%>"><span class="icon"></span>Commercial Fuel</label>
-						</div>
-						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb2c")%>" value="Commercial Vehicle Lube" />
-							<label for="<%=UniqueDomId("cb2c")%>"><span class="icon"></span>Commercial Vehicle Lube</label>
+							<input type="checkbox" id="<%=UniqueDomId("cb1c")%>" value="Obituaries" />
+							<label for="<%=UniqueDomId("cb1c")%>"><span class="icon"></span>Obituaries</label>
 						</div>
 					</div>
+				
 					<div class="col-sm-4">
 						<div class="form-group">
-							<input type="checkbox" id="<%=UniqueDomId("cb3a")%>" value="Grease" />
-							<label for="<%=UniqueDomId("cb3a")%>"><span class="icon"></span>Grease</label>
+							<input type="checkbox" id="<%=UniqueDomId("cb3a")%>" value="Obituaries" />
+							<label for="<%=UniqueDomId("cb3a")%>"><span class="icon"></span>Obituaries</label>
 						</div>
 					</div>
 				</div>

@@ -1,4 +1,4 @@
-/*! 2016-09-06 15:20:37 */
+/*! 2017-08-18 11:27:23 */
 angular.module('region-selector', ['ngSanitize', 'xom.shared']);;
 
 angular.module('region-selector').controller('RegionSelectorCtrl', ['$scope', '$timeout', 'eventBusSvc', 'INITIAL_COUNTRY', 'REGIONS', 'TOPO_URL',

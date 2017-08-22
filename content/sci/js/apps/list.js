@@ -1,4 +1,4 @@
-/*! 2016-09-06 15:20:32 */
+/*! 2017-08-18 11:27:19 */
 angular.module('list', ['ngSanitize', 'xom.shared'])
 	.config(['$locationProvider', function ($locationProvider) {
 		$locationProvider.html5Mode(true);

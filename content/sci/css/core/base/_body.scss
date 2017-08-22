@@ -14,9 +14,6 @@
 	background-color: $white;
 }
 
-.body-content {
-	padding-top: 20px;
-}
 
 .body-mask {
 	background-color: $body-mask;
@@ -49,11 +46,6 @@ html.nav-main-mobile-open {
 	}
 }
 
-@include if-min(md) {
-	.body-content {
-		padding-top: 30px;
-	}
-}
 
 @include if-min(lg) {
 	html.nav-main-mobile-open {

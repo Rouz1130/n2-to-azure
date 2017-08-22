@@ -12,6 +12,15 @@
         padding-bottom: 6px;
         @include rem-fallback(font-size, 10px / 12px);
 	}
+
+    &.surfaced-item-vertical {
+       text-align: center;
+
+        h3 {
+		   font-size: 48px;
+		    margin-top: 0;
+	    }
+    }
 }
 
 .surfaced-item-image {
@@ -46,7 +55,7 @@
 
 		> .surfaced-item-label-image {
 			@include rem-fallback(padding, 10px / 16px);
-			background-color: rgba(0,0,0,.8);
+			
 			bottom: 0;
 			position: absolute;
 			width: percentage(1 / 1);
