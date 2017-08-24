@@ -5,6 +5,7 @@
     <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>    
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     
@@ -91,18 +92,7 @@
             border:0.1px #4a3c31 solid;
             border-radius: 400px/5px;  
         }
-        /*.line-card{
-            width: 175px;
-            border: 0.1px #4a3c31 solid;
-            border-radius: 400px/5px;
-            position: relative;
-            display: -webkit-box;
-            top: -40px;
-            left: 20px;
-            -webkit-transform: rotate(-90deg); 
-            -moz-transform: rotate(-90deg);
-
-        }*/
+      
         .container-line{
             height: 100px;
             float: right;
@@ -153,8 +143,6 @@
         }
         
         amp-accordion,.show-more,.show-less{
-            /*float: right;
-            top: -29px;*/
             margin-bottom:5px;
         }
                
@@ -251,20 +239,6 @@
         .content-bio{
             padding-top:10px;
         }
-        /*.mem{
-            height:300px;
-            width:100%;
-            background-color:lightgray;
-        }
-        footer{
-            width:100%;
-            height:30%;
-            background-color:lightgray;
-            text-align:center;
-            padding-top:5%;
-            padding-bottom: 5%;
-        }*/
-       
        
         .container-line-h { width: 70%; }
         .line-h {
@@ -282,6 +256,211 @@
           right: 20%;
           box-shadow: 0px 0px 30px 20px grey;
         }
+        amp-social-share[type="facebook"] {
+            background:transparent;
+            /*background-image: url(datauri:svg/myownsvgicon);*/
+            background-image: url("../favicon-32x32.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+         
+/*   ---------- box ----------------*/
+
+           .date-cont{
+              position: relative;
+               margin-top: 50%;
+           }
+           .link-cont{
+                position: relative;
+               margin-top: 50%;
+           }
+
+         
+
+            /*------section remembering------*/
+
+            /*-----nav----*/
+
+           #sub-nav{
+               text-align:center;
+               width:auto;
+           }
+            #sub-nav ul{
+                list-style-type: none;
+                /*margin-left: auto;
+                margin-right: auto;*/
+            }
+           #sub-nav li{
+               margin-right:15px;
+               margin-left:15px;
+               display: inline-block;
+               float: none;
+           }
+          #sub-nav li a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+          .active{
+              border-bottom: dashed 0.5px;
+          }
+
+
+        #buttons-rem{
+            text-align:center;
+            width:auto;
+        }
+        #buttons-rem a{
+               margin-right:15px;
+               margin-left:15px;
+               display: inline-block;
+               float: none;
+        }
+
+          
+         /*------- media queries  -----*/
+
+           /*@screen-xs-max*/
+       
+        @media (max-width: 768px) { 
+
+           .container-line{top:-50px;}
+                 
+           .link-cont{
+                position: relative;
+               margin-top: 0;
+           }
+           .box {
+                    width: auto;
+                    height: 350px;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                }
+
+        }
+
+        /* @screen-sm-min @screen-sm-max*/
+        @media (min-width: 768px) and (max-width: 992px) { 
+
+
+        }
+          
+
+         /* @screen-md-min and max-width: @screen-md-max*/
+        @media (min-width: 992px) and (max-width: 1170px) {  }
+
+
+
+
+        /*@screen-lg-min*/
+        @media (min-width: 1170px) {  }
+
+
+
+
+
+
+
+
+/**/
+        @media (max-width: 961px) {
+            .font40 {
+                font-size: 30px;
+            }
+            .font15 {font-size: 10px;}
+            /*.h2-style {font-size: 35px;}*/
+
+            .h3-style {
+                font-size: 25px;
+            }
+            .h5-style {
+                font-size: 15px;
+            }
+            .h4-style {font-size: 20px;}
+            .hyperlink {
+                font-size: 10px;
+            }
+
+            .fixed-container {
+                width: 120px;
+                height: 170px;
+            }
+
+            .fixed-container-img {
+                height: 150px;
+            }
+
+            .w-content {
+                width: 90%;
+                top: -80px;
+                padding-top: 30px;
+            }
+
+            .full {
+                padding-left: 0;
+                padding-right: 0;
+                margin-right: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .line-border {
+                border: 2px solid rgba(71, 212, 204, .7);
+                top: -34px;
+            }
+
+            .line-border-img {
+                border: 2px solid rgba(71, 212, 204, .7);
+            }
+
+            .content-msg {
+                width: 80%;
+                min-height: 170px;
+            }
+
+            .bar-options {
+                width: 95%;
+            }
+            mt-30{
+                margin-top:10px;
+            }
+            .capitalLetter:first-letter{font-size:80px;  line-height:40px;}
+            .box{
+                width: 90%;
+                height: 370px;
+            }
+        
+           
+        }
+            @media (min-width:641px) { 
+                /*.box{
+                width: 90%;
+                height: 320px;
+            }*/
+                /*.box {
+                    width: auto;
+                    height: 350px;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                }*/
+              
+
+            }
+         @media (max-width: 400px){
+              .font40{font-size:20px}
+              .h2-style{font-size:20px;}
+              .h3-style{font-size:15px;}
+              .nav{font-size:7px;}
+              .p-style{font-size:12px;}
+              .box{
+               
+                width:auto;
+                height: 270px;
+            }
+              .cont-dates{
+                 padding-top: 5px;
+            }
+         }
         
     </style>
     
@@ -289,7 +468,7 @@
     
     <div class="content-body">
       
-        
+      <%-- section message --%>  
         <div class="content-msg mb-30">
             <div class="row"> 
                 <div class="col col-xs-12 col-md-12 col-lg-12">
@@ -320,9 +499,9 @@
                 </div>
         </div>
         
-        <div class="container-fluid mt-30">
+        <div class="  full mt-30">
             <div class="fixed-container-img">
-                        <amp-img  class="cover" src="../content/site/header.jpg"
+                        <amp-img  class="cover" src="../content/site/header.jpg" 
                           alt="photo"
                           layout="fill"
                           >
@@ -356,9 +535,9 @@
                     <p class="text-left p-style mt-30">
                         Proin luctus posuere rutrum. Nullam facilisis tincidunt maximus. Proin porta risus massa, at iaculis est ultrices nec. Suspendisse eleifend sodales tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas in tempor purus. Praesent eleifend suscipit lacus, at tempus ex commodo non.
                     </p>
-                     <p class="text-left p-style mt-30">
+                     <%--<p class="text-left p-style mt-30">
                           Quisque magna libero, iaculis sed posuere in, molestie a neque. Nunc ut vehicula ipsum. Maecenas ut aliquet nulla. Maecenas justo nisi, tempor aliquet mi vel, tincidunt dignissim dolor. Vestibulum ullamcorper urna a nunc luctus consequat. Vivamus at sapien imperdiet ante porta rutrum ac in metus.
-                    </p>
+                    </p>--%>
 
                 </div>
                            
@@ -382,10 +561,11 @@
         </div> 
            
             <%-- bar options --%>
-        <div class="container bar-options text-center nav font10"> 
+       <%-- <div class="container bar-options text-center nav font10">--%> 
+            <div class=" bar-options text-center nav font10">
             <div class="row">
                 <div class="col-xs-3 col-md-3 col-lg-3 shape">
-                    <a href="#"><span class="text-uppercase">the family requests donations to lorem ipsum</span></a>
+                    <a href="#"><p class="text-uppercase text-center">the family requests donations to lorem ipsum</p></a>
                 </div>
                 <div class=" col-xs-3 col-md-3 col-lg-3">
                     <a href="#"><span class="text-uppercase">Send flowers</span></a>
@@ -403,58 +583,103 @@
  
         <section class="container-fluid mt-30 pt-40 bg-gray pb-40">
             <h2 class="text-center h2-style  mb-30">Services</h2>
-           <div class="row mb-30 ">
-                <div class="box bg-white ">
-                    <div class="col col-xs-3 col-md-3 col-lg-3 text-center"> 
-                        <h2 class="h2-style mbp-50">23</h2>
-                        <span class="text-uppercase p-style ">december</span>
-                        <div  class="container-line" >
-                            <div class="line-card">
-                                  <div class="line-af"></div>
+         
+       
+
+            <%--  --%>
+
+      <div class="box bg-white ">
+                    <div class="row mt-30 ">
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <div class="col col-xs-5 col-sm-5 col-md-4 col-lg-3 text-center ">
+                                <div class="date-cont">
+                                            <h2 class="h2-style">23</h2>
+                                            <span class="text-uppercase p-style ">december</span>     
+                                            <div  class="container-line" >
+                                                <div class="line-card">
+                                                      <div class="line-af"></div>
+                                                </div>
+                                            </div>
+                                        
+                                 </div>             
                             </div>
-                       </div>                  
-                    </div>
-                    <div class="col col-xs-6 col-md-6 col-lg-6 ">
-                        <h4 class="h4-style mt-30">Visitation</h4>
-                        <p class="p-style ">5:30pm - 9:00pm</p>
-                        <h6 class="h6-style text-uppercase font15 mt-30">heights funeral home</h6>
-                        <span class="p-style">6873 Rainbow Rd</span><br />
-                        <span class="p-style">Houston, TX 77008</span><br />
-                        <span class="h5-style mt-30">Don't wear black.</span><br />
-                    </div>
-                    <div class="col col-xs-3 col-md-3 col-lg-3">
-                        <p class="text-center text-uppercase mt-30 pt-30"><a class="link" href="#">get directions</a></p>
-                        <p class="text-center text-uppercase mt-30 "><a class="link" href="#">send flowers</a></p>  
-                                
+                            <div class="col col-xs-7 col-sm-7 col-md-7 col-lg-9 ">
+                                <%--<div class="cont-dates">--%>
+                                <div class="">
+                                        <h4 class="h4-style mt-30">Visitation</h4>
+                                        <p class="p-style ">5:30pm - 9:00pm</p>
+                                        <h6 class="h6-style text-uppercase font15 mt-30">heights funeral home</h6>
+                                        <span class="p-style">6873 Rainbow Rd</span><br />
+                                        <span class="p-style">Houston, TX 77008</span><br />
+                                        <span class="h5-style mt-30">Don't wear black.</span><br />
+                                    </div>
+                            </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                  <div class="row">
+                                      <div class="link-cont">                      
+                                              <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 ">
+                                                     <p class="text-center text-uppercase  h6-style font15 "><a class="link" href="#">get directions</a></p>
+                                                </div>
+                                               <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
+                                                    <p class="text-center text-uppercase h6-style font15"><a class="link" href="#">send flowers</a></p>  
+                                                </div> 
+                                      </div> 
+                                </div>
+                          </div>
                     </div>
                 </div>
-            </div>
-             <div class="row mb-30 ">
-                <div class="box bg-white ">
-                    <div class="col col-xs-6 col-md-3 col-lg-3 text-center"> 
-                        <h2 class="h2-style mbp-50">24</h2>
-                        <span class="text-uppercase p-style ">december</span>
-                        <div  class="container-line" >
-                            <div class="line-card">
-                                  <div class="line-af"></div>
+            
+
+
+
+            <div class="box bg-white ">
+                    <div class="row mt-30 ">
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <div class="col col-xs-5 col-sm-5 col-md-4 col-lg-3 text-center ">
+                                <div class="date-cont">
+                                            <h2 class="h2-style">24</h2>
+                                            <span class="text-uppercase p-style ">december</span>     
+                                            <div  class="container-line" >
+                                                <div class="line-card">
+                                                      <div class="line-af"></div>
+                                                </div>
+                                            </div>
+                                        
+                                 </div>             
                             </div>
-                       </div>                  
-                    </div>
-                    <div class="col col-xs-6 col-md-6 col-lg-6 ">
-                        <h4 class="h4-style mt-30">Funeral Service</h4>
-                        <p class="p-style ">2:30pm - 5:00pm</p>
-                        <h6 class="h6-style text-uppercase font15 mt-30">heights funeral home</h6>
-                        <span class="p-style">6873 Rainbow Rd</span><br />
-                        <span class="p-style">Houston, TX 77008</span><br />
-                        <span class="h5-style mt-30">Bring your guitar.</span><br />
-                    </div>
-                    <div class="col col-xs-12 col-md-3 col-lg-3">
-                        <p class="text-center text-uppercase mt-30 h6-style font15 pt-30"><a class="link" href="#">get directions</a></p>
-                        <p class="text-center text-uppercase mt-30 h6-style font15"><a class="link" href="#">send flowers</a></p>  
-                                
+                            <div class="col col-xs-7 col-sm-7 col-md-7 col-lg-9 ">
+                                <%--<div class="cont-dates">--%>
+                                <div class="">
+                                        <h4 class="h4-style mt-30">Funeral Service</h4>
+                                        <p class="p-style ">2:30pm - 5:00pm</p>
+                                        <h6 class="h6-style text-uppercase font15 mt-30">heights funeral home</h6>
+                                        <span class="p-style">6873 Rainbow Rd</span><br />
+                                        <span class="p-style">Houston, TX 77008</span><br />
+                                        <span class="h5-style mt-30">Bring your guitar.</span><br />
+                                    </div>
+                            </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                  <div class="row">
+                                      <div class="link-cont">                      
+                                              <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 ">
+                                                     <p class="text-center text-uppercase  h6-style font15 "><a class="link" href="#">get directions</a></p>
+                                                </div>
+                                               <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
+                                                    <p class="text-center text-uppercase h6-style font15"><a class="link" href="#">send flowers</a></p>  
+                                                </div> 
+                                      </div> 
+                                </div>
+                          </div>
                     </div>
                 </div>
-            </div>
+
+           
+            
+
+
+
             <h6 class="text-center mt-30 pt-30"><span class="text-uppercase h6-style font15">other services: </span><span class="h5-style">Family Viewing</span></h6>
              <div class="container bar-options nav font10 text-center"> 
             <div class="row">
@@ -473,9 +698,68 @@
             </div>
         </div>
     </section>
+
+
+<section id="remembering">
+     <div class="  full ">
+            <div class="fixed-container-img">
+                        <amp-img  class="cover"  src="../content/site/wind-439x206.jpg" 
+                          alt="photo"
+                          layout="fill"
+                          >
+                        </amp-img>
+             </div>
+        </div>
+         <div class="w-content bg-white">
+           <div class="line-border"></div>
+            <div class="row"> 
+                <div class="col col-xs-12 col-md-12 col-lg-12">
+
+                     <div class="mt-30 mb-30 pt-40 pb-40">
+                        <h6  class="text-center text-uppercase h6-style color-gr ">REMEMBERING</h6>
+                        <h2 class="text-center h2-style">Gladys Marion Dunton</h2>
+                   </div>
+                   
+                    <div class="">
+                        <div id="sub-nav">
+                            <ul>
+                                <li class="text-uppercase nav active font12 "><a href="#">all memories</a></li>
+                                <li class="text-uppercase nav font12 "><a href="#">from the family</a></li>
+                                <li class="text-uppercase nav font12 "><a href="#">another filter</a></li>
+                            </ul>
+                        </div>
+                     </div>
+                    
+                    <br />
+
+                    <h6 class="text-left h6-style font15">Jennifer Dunton</h6>
+                    <h6 class="text-left h6-style font12">July 22, 2017</h6>
+                    <h4 class="text-left h4-style font30 mt-30 mb-30">I'll never forget Gladys and I love her so much. She taught me to never compromise who I am wheter people like it or not... showing me how to be strong and independient... And for showing me how to be a mom. I am proud of who I am... Thank you mom for raising me for many years alone and the sacrifices you made.</h4>
+                    
+                    <div id="buttons-rem" class="mt-30">
+                                <a href="#" ><h6 class="text-uppercase">like</h6></a>
+                                <a href="#" >
+                                    <amp-social-share type="facebook"width="60" height="44"
+                                      data-param-text="Share memory"
+                                      data-param-url="https://www.facebook.com/dialog/share">
+                                    </amp-social-share>
+                                    <h6 class="text-uppercase">Share memory</h6>
+                                </a>
+                    </div>
+                </div>
+             </div>              
+        </div>
+
+</section>
+
+
+
+
+
     
      <%-- Remembering --%>
-        <div class="mt-30 mb-30 pt-40 pb-40">
+
+<%--        <div class="mt-30 mb-30 pt-40 pb-40">
             <h6  class="text-center text-uppercase h6-style color-gr mb-10">REMEMBERING</h6>
             <h2 class="text-center h2-style">Gladys Marion Dunton</h2>
        </div>
@@ -520,7 +804,7 @@
         <div class="mt-30 mb-30 pt-40 pb-40 text-center">
             <h4 class="text-center h4-style">Have a memory or condolence to share?</h4>
             <h6 class="text-uppercase h6-style font12">share a memory</h6>
-       </div>
+       </div>--%>
 
         <%-- Biography --%>
         <section class="container-fluid bg-gray mb-30">
@@ -547,19 +831,19 @@
 
         
             <div class="text-center pb-40 pt-40">
-                <span class="text-uppercase">in the care of</span>
-                <p class="">
+                <span class="text-uppercase nav ">in the care of</span>
+                <h4 class="h4-style mt-30">
                     Chattanooga Funeral Home North Chapel
-                </p>
-                <p class="">
+                </h4>
+                <h4 class="h4-style">
                     Hamilton Memorial Gardens Chattanooga, TN
-                </p>
+                </h4>
             </div>
 
-            <div class="container-fluid bg-gray text-center pb-40 pt-40">
+           <%-- <div class="container-fluid bg-gray text-center pb-40 pt-40">
                     <h2 class="text-uppercase">life well celebrated</h2>
-            </div>
+            </div>--%>
         
     </div>
-	<ks:Snippet runat="server" Name="Layout08" />
+	<%--<ks:Snippet runat="server" Name="Layout08" />--%>
 </asp:Content>
