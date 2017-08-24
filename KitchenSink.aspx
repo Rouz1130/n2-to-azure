@@ -19,8 +19,8 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="PageScript">
-	<script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0" charset="utf-8"></script>
-	<script src="<%=ResolveUrl("~/content/sci/js/plugins/mapify-bing.js")%>"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA-KGBXETEq7H2ZKilTKAkwMY2hWIN4zro"></script>
+	<script src="<%=ResolveUrl("~/content/sci/js/plugins/mapify-google.min.js")%>"></script>
 	<script>
 		jQuery(function ($) {
 

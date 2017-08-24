@@ -309,7 +309,7 @@ strong {
       font-weight: bold;
       outline: none; }
       .panel-group .panel > .panel-heading > a > i {
-        background-position: -400px -375px; }
+        background-position: -348px -403px; }
     .panel-group .panel > .panel-heading .icon {
       position: static; }
     .panel-group .panel > .panel-heading .icon-circle-plus, .panel-group .panel > .panel-heading .icon-circle-minus {
@@ -326,7 +326,7 @@ strong {
     .panel-group .panel.active > .panel-heading {
       background-color: #fff; }
       .panel-group .panel.active > .panel-heading a > i {
-        background-position: -126px -372px; }
+        background-position: -324px -403px; }
     .panel-group .panel.active .panel-collapse > .panel-body:last-child {
       margin-bottom: 0; }
 
@@ -435,10 +435,11 @@ html.ios .app-promotion-android {
   font-family: "Lato-Bold";
   position: relative;
   text-transform: uppercase;
-  max-width: 100%; }
+  max-width: 100%;
+  transition: all .25s ease; }
   .btn:active, .btn-primary:active, .btn-secondary:active, .btn-tertiary:active, .btn-deemphasized:active, .btn-light:active, .btn-badge:active, .btn-icon:active, .btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-tertiary:focus, .btn-deemphasized:focus, .btn-light:focus, .btn-badge:focus, .btn-icon:focus, .btn:visited, .btn-primary:visited, .btn-secondary:visited, .btn-tertiary:visited, .btn-deemphasized:visited, .btn-light:visited, .btn-badge:visited, .btn-icon:visited, .btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover, .btn-deemphasized:hover, .btn-light:hover, .btn-badge:hover, .btn-icon:hover {
-    color: #4a3c31;
-    background-color: transparent;
+    color: #fff;
+    background-color: #47d5cd;
     border-color: #47d5cd; }
 
 .btn-sm {
@@ -576,7 +577,7 @@ html.ios .app-promotion-android {
 .slick-prev {
   left: 0;
   background-image: url(../img/icons.png);
-  background-position: -200px 0px;
+  background-position: -200px -200px;
   width: 100px;
   height: 100px; }
   [dir="rtl"] .slick-prev {
@@ -590,7 +591,7 @@ html.ios .app-promotion-android {
 .slick-next {
   right: 0;
   background-image: url(../img/icons.png);
-  background-position: -100px -100px;
+  background-position: -100px -200px;
   width: 100px;
   height: 100px; }
   [dir="rtl"] .slick-next {
@@ -762,6 +763,19 @@ html.ios .app-promotion-android {
 @media (min-width: 1200px) {
   .col-4 .carousel-thumb .slick-dots > li {
     width: 11%; } }
+.cta-box {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid rgba(71, 213, 205, 0.75);
+  margin: 0 auto;
+  max-width: 700px; }
+  .cta-box h2 {
+    font-size: 50px;
+    margin-bottom: 30px; }
+  .cta-box .button-bar .btn + .btn, .cta-box .button-bar .btn-primary + .btn, .cta-box .button-bar .btn-secondary + .btn, .cta-box .button-bar .btn-tertiary + .btn, .cta-box .button-bar .btn-deemphasized + .btn, .cta-box .button-bar .btn-light + .btn, .cta-box .button-bar .btn-badge + .btn, .cta-box .button-bar .btn-icon + .btn, .cta-box .button-bar .btn + .btn-primary, .cta-box .button-bar .btn-primary + .btn-primary, .cta-box .button-bar .btn-secondary + .btn-primary, .cta-box .button-bar .btn-tertiary + .btn-primary, .cta-box .button-bar .btn-deemphasized + .btn-primary, .cta-box .button-bar .btn-light + .btn-primary, .cta-box .button-bar .btn-badge + .btn-primary, .cta-box .button-bar .btn-icon + .btn-primary, .cta-box .button-bar .btn + .btn-secondary, .cta-box .button-bar .btn-primary + .btn-secondary, .cta-box .button-bar .btn-secondary + .btn-secondary, .cta-box .button-bar .btn-tertiary + .btn-secondary, .cta-box .button-bar .btn-deemphasized + .btn-secondary, .cta-box .button-bar .btn-light + .btn-secondary, .cta-box .button-bar .btn-badge + .btn-secondary, .cta-box .button-bar .btn-icon + .btn-secondary, .cta-box .button-bar .btn + .btn-tertiary, .cta-box .button-bar .btn-primary + .btn-tertiary, .cta-box .button-bar .btn-secondary + .btn-tertiary, .cta-box .button-bar .btn-tertiary + .btn-tertiary, .cta-box .button-bar .btn-deemphasized + .btn-tertiary, .cta-box .button-bar .btn-light + .btn-tertiary, .cta-box .button-bar .btn-badge + .btn-tertiary, .cta-box .button-bar .btn-icon + .btn-tertiary, .cta-box .button-bar .btn + .btn-deemphasized, .cta-box .button-bar .btn-primary + .btn-deemphasized, .cta-box .button-bar .btn-secondary + .btn-deemphasized, .cta-box .button-bar .btn-tertiary + .btn-deemphasized, .cta-box .button-bar .btn-deemphasized + .btn-deemphasized, .cta-box .button-bar .btn-light + .btn-deemphasized, .cta-box .button-bar .btn-badge + .btn-deemphasized, .cta-box .button-bar .btn-icon + .btn-deemphasized, .cta-box .button-bar .btn + .btn-light, .cta-box .button-bar .btn-primary + .btn-light, .cta-box .button-bar .btn-secondary + .btn-light, .cta-box .button-bar .btn-tertiary + .btn-light, .cta-box .button-bar .btn-deemphasized + .btn-light, .cta-box .button-bar .btn-light + .btn-light, .cta-box .button-bar .btn-badge + .btn-light, .cta-box .button-bar .btn-icon + .btn-light, .cta-box .button-bar .btn + .btn-badge, .cta-box .button-bar .btn-primary + .btn-badge, .cta-box .button-bar .btn-secondary + .btn-badge, .cta-box .button-bar .btn-tertiary + .btn-badge, .cta-box .button-bar .btn-deemphasized + .btn-badge, .cta-box .button-bar .btn-light + .btn-badge, .cta-box .button-bar .btn-badge + .btn-badge, .cta-box .button-bar .btn-icon + .btn-badge, .cta-box .button-bar .btn + .btn-icon, .cta-box .button-bar .btn-primary + .btn-icon, .cta-box .button-bar .btn-secondary + .btn-icon, .cta-box .button-bar .btn-tertiary + .btn-icon, .cta-box .button-bar .btn-deemphasized + .btn-icon, .cta-box .button-bar .btn-light + .btn-icon, .cta-box .button-bar .btn-badge + .btn-icon, .cta-box .button-bar .btn-icon + .btn-icon {
+    margin-left: 20px; }
+
 .component {
   *zoom: 1;
   margin-bottom: 48px;
@@ -1317,7 +1331,7 @@ input.check-filter[type="checkbox"] {
       background: transparent; }
       .form-group > input[type="checkbox"]:checked + label:before {
         background-image: url(../img/icons.png);
-        background-position: -430px -288px;
+        background-position: -360px -433px;
         width: 20px;
         height: 20px;
         border: 1px solid #47d5cd;
@@ -1509,6 +1523,13 @@ h3 {
   h3.strong, h3.h4, h3.h5, h3.h6 {
     font-family: "Lato-Bold"; }
 
+.header-subtitle {
+  font-family: Lato-Bold;
+  text-transform: uppercase;
+  font-size: 16px; }
+  .header-subtitle.strong {
+    font-family: Lato-Black; }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 50px;
@@ -1542,285 +1563,273 @@ h3 {
 
 .icon-badge-star {
   background-image: url(../img/icons.png);
-  background-position: -400px -90px;
+  background-position: 0px -433px;
   width: 28px;
   height: 32px; }
 
 .icon-blue-diamond {
   background-image: url(../img/icons.png);
-  background-position: -430px -324px;
+  background-position: -422px -403px;
   width: 15px;
   height: 15px; }
 
-.icon-carousel-child-next {
-  background-image: url(../img/icons.png);
-  background-position: -400px -122px;
-  width: 20px;
-  height: 44px; }
-
-.icon-carousel-child-prev {
-  background-image: url(../img/icons.png);
-  background-position: -400px -166px;
-  width: 20px;
-  height: 44px; }
-
 .icon-circle-minus {
   background-image: url(../img/icons.png);
-  background-position: -126px -372px;
+  background-position: -324px -403px;
   width: 24px;
   height: 24px; }
 
 .icon-circle-plus {
   background-image: url(../img/icons.png);
-  background-position: -400px -375px;
+  background-position: -348px -403px;
   width: 24px;
   height: 24px; }
 
 .icon-cloud {
   background-image: url(../img/icons.png);
-  background-position: -231px -300px;
+  background-position: -400px -350px;
   width: 36px;
   height: 36px; }
 
 .icon-danger {
   background-image: url(../img/icons.png);
-  background-position: -400px -210px;
+  background-position: -150px -403px;
   width: 30px;
   height: 28px; }
 
 .icon-disabled {
   background-image: url(../img/icons.png);
-  background-position: -400px -322px;
+  background-position: -210px -403px;
   width: 28px;
   height: 28px; }
 
 .icon-document {
   background-image: url(../img/icons.png);
-  background-position: -400px -30px;
+  background-position: -470px -350px;
   width: 30px;
   height: 30px; }
 
 .icon-download {
   background-image: url(../img/icons.png);
-  background-position: 0px -300px;
+  background-position: -400px 0px;
   width: 100px;
   height: 100px; }
 
 .icon-drop-arrow {
   background-image: url(../img/icons.png);
-  background-position: -430px -339px;
+  background-position: -450px -338px;
   width: 19px;
   height: 10px; }
 
 .icon-envelope-list {
   background-image: url(../img/icons.png);
-  background-position: -300px -100px;
+  background-position: -400px -100px;
   width: 100px;
   height: 100px; }
 
 .icon-facebook {
   background-image: url(../img/icons.png);
-  background-position: -300px 0px;
+  background-position: -200px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-facebook-round {
   background-image: url(../img/icons.png);
-  background-position: -304px -372px;
+  background-position: -164px -433px;
   width: 22px;
   height: 22px; }
 
 .icon-facebook-small {
   background-image: url(../img/icons.png);
-  background-position: -64px -400px;
+  background-position: -401px -433px;
   width: 21px;
   height: 17px; }
 
 .icon-favorite-off {
   background-image: url(../img/icons.png);
-  background-position: -100px 0px;
+  background-position: -100px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-favorite-on {
   background-image: url(../img/icons.png);
-  background-position: -200px -200px;
+  background-position: 0px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-findmsds-list {
   background-image: url(../img/icons.png);
-  background-position: -400px -60px;
+  background-position: 0px -403px;
   width: 30px;
   height: 30px; }
 
 .icon-globe-large {
   background-image: url(../img/icons.png);
-  background-position: -100px -372px;
+  background-position: -28px -433px;
   width: 26px;
   height: 26px; }
 
 .icon-globe-small {
   background-image: url(../img/icons.png);
-  background-position: -430px -308px;
+  background-position: -406px -403px;
   width: 16px;
   height: 16px; }
 
 .icon-linkedin-round {
   background-image: url(../img/icons.png);
-  background-position: -172px -372px;
+  background-position: -296px -433px;
   width: 22px;
   height: 22px; }
 
 .icon-map-pin-blue {
   background-image: url(../img/icons.png);
-  background-position: -100px -300px;
-  width: 40px;
-  height: 72px; }
+  background-position: -300px -100px;
+  width: 100px;
+  height: 100px; }
 
 .icon-map-pin-blue-small {
   background-image: url(../img/icons.png);
-  background-position: -430px 0px;
+  background-position: -20px -465px;
   width: 20px;
   height: 34px; }
 
 .icon-map-pin-red-small {
   background-image: url(../img/icons.png);
-  background-position: -430px -34px;
+  background-position: 0px -465px;
   width: 20px;
   height: 34px; }
 
 .icon-nav-main-menu {
   background-image: url(../img/icons.png);
-  background-position: 0px -100px;
+  background-position: 0px -200px;
   width: 100px;
   height: 100px; }
 
 .icon-nav-main-search {
   background-image: url(../img/icons.png);
-  background-position: -100px -200px;
+  background-position: 0px -100px;
   width: 100px;
   height: 100px; }
 
 .icon-newsletter-list {
   background-image: url(../img/icons.png);
-  background-position: -301px -300px;
+  background-position: -30px -403px;
   width: 30px;
   height: 30px; }
 
 .icon-popup-arrow {
   background-image: url(../img/icons.png);
-  background-position: -400px -350px;
+  background-position: -294px -403px;
   width: 30px;
   height: 25px; }
 
 .icon-primary-pin {
   background-image: url(../img/icons.png);
-  background-position: -200px -100px;
+  background-position: -100px 0px;
   width: 100px;
   height: 100px; }
 
 .icon-question {
   background-image: url(../img/icons.png);
-  background-position: -400px -294px;
+  background-position: -238px -403px;
   width: 28px;
   height: 28px; }
 
 .icon-search {
   background-image: url(../img/icons.png);
-  background-position: -190px -300px;
+  background-position: -450px -300px;
   width: 41px;
   height: 38px; }
 
 .icon-search-white {
   background-image: url(../img/icons.png);
-  background-position: -43px -400px;
+  background-position: -318px -433px;
   width: 21px;
   height: 21px; }
 
 .icon-share {
   background-image: url(../img/icons.png);
-  background-position: -430px -266px;
-  width: 19px;
-  height: 22px; }
+  background-position: -300px -300px;
+  width: 100px;
+  height: 100px; }
 
 .icon-share-orange {
   background-image: url(../img/icons.png);
-  background-position: -361px -300px;
+  background-position: -60px -403px;
   width: 30px;
   height: 30px; }
 
 .icon-success {
   background-image: url(../img/icons.png);
-  background-position: -400px -266px;
+  background-position: -266px -403px;
   width: 28px;
   height: 28px; }
 
 .icon-success-filled {
   background-image: url(../img/icons.png);
-  background-position: -267px -300px;
+  background-position: -436px -350px;
   width: 34px;
   height: 34px; }
 
 .icon-telephone {
   background-image: url(../img/icons.png);
-  background-position: 0px 0px;
+  background-position: -400px -200px;
   width: 100px;
   height: 100px; }
 
 .icon-telephone-list {
   background-image: url(../img/icons.png);
-  background-position: -331px -300px;
+  background-position: -90px -403px;
   width: 30px;
   height: 30px; }
 
 .icon-twitter {
   background-image: url(../img/icons.png);
-  background-position: -300px -200px;
+  background-position: -300px 0px;
   width: 100px;
   height: 100px; }
 
 .icon-twitter-round {
   background-image: url(../img/icons.png);
-  background-position: -282px -372px;
+  background-position: -274px -433px;
   width: 22px;
   height: 22px; }
 
 .icon-twitter-small {
   background-image: url(../img/icons.png);
-  background-position: -85px -400px;
+  background-position: -380px -433px;
   width: 21px;
   height: 17px; }
 
 .icon-warning {
   background-image: url(../img/icons.png);
-  background-position: -400px -238px;
+  background-position: -180px -403px;
   width: 30px;
   height: 28px; }
 
 .icon-world-list {
   background-image: url(../img/icons.png);
-  background-position: -400px 0px;
+  background-position: -120px -403px;
   width: 30px;
   height: 30px; }
 
 .icon-world-white {
   background-image: url(../img/icons.png);
-  background-position: -22px -400px;
+  background-position: -339px -433px;
   width: 21px;
   height: 21px; }
 
 .icon-youtube-round {
   background-image: url(../img/icons.png);
-  background-position: -194px -372px;
+  background-position: -120px -433px;
   width: 22px;
   height: 22px; }
 
-.icon-vert-flourish {
+.icon-flowers {
   background-image: url(../img/icons.png);
-  background-position: -450px 0px;
-  width: 2px;
-  height: 55px; }
+  background-position: -100px -100px;
+  width: 100px;
+  height: 100px; }
 
 a.link-icon {
   display: table; }
@@ -2118,91 +2127,64 @@ a.link-icon {
 .col-1 .alphabetical-column {
   width: 100%; }
 
-.station-locator-panel .station-locator-data .station-locator-titles > span {
-  display: block; }
-.station-locator-panel .station-locator-data .station-locator-titles h2 {
-  margin: 0, 0, 10px, 0; }
-.station-locator-panel .station-locator-data .station-locator-titles .station-locator-open {
-  color: #47d5cd;
-  font-family: "Lato-Bold"; }
-.station-locator-panel .station-locator-data .station-locator-point {
-  display: table; }
-  .station-locator-panel .station-locator-data .station-locator-point .icon-map-pin-blue-small {
-    background-image: none;
-    display: table-cell;
-    vertical-align: middle; }
-    .station-locator-panel .station-locator-data .station-locator-point .icon-map-pin-blue-small:after {
-      content: " ";
-      display: block;
-      background-image: url(../img/icons.png);
-      background-position: -430px 0px;
-      width: 20px;
-      height: 34px; }
-  .station-locator-panel .station-locator-data .station-locator-point > span {
-    display: table-cell;
-    padding-left: 15px;
-    padding-left: 0.9375rem; }
-.station-locator-panel .station-locator-data .station-locator-information .station-telephone {
-  margin-bottom: 10px; }
-  .station-locator-panel .station-locator-data .station-locator-information .station-telephone .icon-telephone-list {
-    background-image: url(../img/icons.png);
-    background-position: -331px -300px;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle; }
-  .station-locator-panel .station-locator-data .station-locator-information .station-telephone > span {
-    padding-left: 7px;
-    padding-left: 0.4375rem; }
-.station-locator-panel .station-locator-data .station-locator-titles,
-.station-locator-panel .station-locator-data .station-locator-point,
-.station-locator-panel .station-locator-data .station-locator-information {
-  margin-bottom: 15px; }
-.station-locator-panel .station-locator-options .station-direction,
-.station-locator-panel .station-locator-options .station-find {
-  padding: 10px;
-  padding: 0.625rem; }
-  .station-locator-panel .station-locator-options .station-direction > a,
-  .station-locator-panel .station-locator-options .station-find > a {
-    text-align: center;
+.locator-panel {
+  background-color: #eeebe6; }
+  .locator-panel .location-copy {
+    background-color: #fff; }
+  .locator-panel .locator-data .locator-titles {
+    clear: both;
+    font-size: 16px; }
+    .locator-panel .locator-data .locator-titles h2 {
+      margin: 0, 0, 10px, 0; }
+    .locator-panel .locator-data .locator-titles .locator-open {
+      color: #47d5cd;
+      font-family: "Lato-Bold"; }
+  .locator-panel .locator-data .locator-information .icon-telephone {
+    float: left; }
+  .locator-panel .locator-data .locator-information:after {
+    clear: both;
+    margin-top: 20px;
     display: block;
-    color: #fff; }
-    .station-locator-panel .station-locator-options .station-direction > a i,
-    .station-locator-panel .station-locator-options .station-find > a i {
-      vertical-align: sub; }
-    .station-locator-panel .station-locator-options .station-direction > a > span,
-    .station-locator-panel .station-locator-options .station-find > a > span {
-      padding-left: 10px;
-      padding-left: 0.625rem; }
-.station-locator-panel .station-locator-options .station-direction {
-  margin-bottom: 10px;
-  background-color: #47d5cd; }
-  .station-locator-panel .station-locator-options .station-direction .icon-world-white {
+    content: ' ';
     background-image: url(../img/icons.png);
-    background-position: -22px -400px;
-    width: 21px;
-    height: 21px; }
-.station-locator-panel .station-locator-options .station-find {
-  background-color: #47d5cd; }
-  .station-locator-panel .station-locator-options .station-find .icon-search-white {
-    background-image: url(../img/icons.png);
-    background-position: -43px -400px;
-    width: 21px;
-    height: 21px; }
+    background-position: 0px -400px;
+    width: 313px;
+    height: 3px;
+    width: 313px;
+    height: 3px; }
+  .locator-panel .locator-data .locator-information .telephone {
+    margin-bottom: 10px;
+    font-family: 'Lato-Black';
+    font-size: 24px; }
+  .locator-panel .locator-data .locator-titles,
+  .locator-panel .locator-data .locator-point,
+  .locator-panel .locator-data .locator-information {
+    margin-bottom: 15px; }
+  .locator-panel .locator-options a {
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    font-family: Lato-Bold;
+    font-size: 10px; }
+    .locator-panel .locator-options a .icon {
+      vertical-align: sub;
+      display: block; }
+  .locator-panel .static-map img {
+    width: 100%; }
 
 @media (min-width: 768px) {
-  .col-2 .station-locator-panel .station-locator-data .station-locator-information > div, .col-3 .station-locator-panel .station-locator-data .station-locator-information > div, .col-4 .station-locator-panel .station-locator-data .station-locator-information > div {
-    display: inline-block; }
-  .col-2 .station-locator-panel .station-locator-data .station-locator-information .station-telephone, .col-3 .station-locator-panel .station-locator-data .station-locator-information .station-telephone, .col-4 .station-locator-panel .station-locator-data .station-locator-information .station-telephone {
-    margin-bottom: 0; }
-  .col-2 .station-locator-panel .station-locator-options .station-direction,
-  .col-2 .station-locator-panel .station-locator-options .station-find, .col-3 .station-locator-panel .station-locator-options .station-direction,
-  .col-3 .station-locator-panel .station-locator-options .station-find, .col-4 .station-locator-panel .station-locator-options .station-direction,
-  .col-4 .station-locator-panel .station-locator-options .station-find {
-    display: inline-block;
-    text-align: center;
-    width: 48%; }
-  .col-2 .station-locator-panel .station-locator-options .station-direction, .col-3 .station-locator-panel .station-locator-options .station-direction, .col-4 .station-locator-panel .station-locator-options .station-direction {
-    margin-right: 10px; } }
+  .locator-panel .locator-row {
+    display: table-row;
+    margin: 0 auto;
+    width: 90%; }
+    .locator-panel .locator-row > div {
+      display: table-cell; }
+  .locator-panel .location-copy {
+    padding-right: 1rem;
+    vertical-align: top;
+    width: 40%; }
+  .locator-panel .locator-options a {
+    width: 30%; } }
 .map {
   height: 500px;
   position: relative;
@@ -2664,8 +2646,6 @@ p.paragraph.small {
   font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif; }
 
 .search-box-small .form-control {
-  height: 32px;
-  height: 2rem;
   padding-right: 32px;
   padding-right: 2rem; }
   .search-box-small .form-control.placeholder {
@@ -2682,13 +2662,12 @@ p.paragraph.small {
     font-size: 1rem; }
 .search-box-small .form-group-btn {
   background-image: url(../img/icons.png);
-  background-position: -190px -300px;
+  background-position: -450px -300px;
   width: 41px;
   height: 38px;
-  bottom: 0;
+  bottom: 5px;
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: 5px; }
 
 .search-footer {
   text-align: center; }
@@ -2930,8 +2909,7 @@ p.paragraph.small {
   .surfaced-item.surfaced-item-vertical {
     text-align: center; }
     .surfaced-item.surfaced-item-vertical h3 {
-      font-size: 30.72px;
-      font-size: 1.92rem;
+      font-size: 48px;
       margin-top: 0; }
 
 .surfaced-item-image {
@@ -4130,7 +4108,7 @@ p.paragraph.small {
     .nav-main-list > li:after {
       content: ' ';
       background-image: url(../img/icons.png);
-      background-position: -450px 0px;
+      background-position: -500px 0px;
       width: 2px;
       height: 55px;
       overflow: hidden;
@@ -4546,13 +4524,13 @@ html.nav-main-mobile-transition #nav-main-mobile {
       .nav-social > .nav-social-icons > li > a {
         padding: 9px 5px 5px; }
         .nav-social > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -348px -372px; }
+          background-position: -208px -433px; }
         .nav-social > .nav-social-icons > li > a > .icon-linkedin-round {
-          background-position: -216px -372px; }
+          background-position: -98px -433px; }
         .nav-social > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -370px -372px; }
+          background-position: -252px -433px; }
         .nav-social > .nav-social-icons > li > a > .icon-youtube-round {
-          background-position: -260px -372px; }
+          background-position: -230px -433px; }
 
 @media (min-width: 768px) {
   .nav-social-few {
@@ -4579,21 +4557,21 @@ html.nav-main-mobile-transition #nav-main-mobile {
       .nav-social-few > .nav-social-icons > li > a {
         padding-top: 0; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -304px -372px; }
+          background-position: -164px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round:hover {
-          background-position: -326px -372px; }
+          background-position: -186px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-linkedin-round {
-          background-position: -172px -372px; }
+          background-position: -296px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-linkedin-round:hover {
-          background-position: 0px -400px; }
+          background-position: -76px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -282px -372px; }
+          background-position: -274px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round:hover {
-          background-position: -150px -372px; }
+          background-position: -54px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-youtube-round {
-          background-position: -194px -372px; }
+          background-position: -120px -433px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-youtube-round:hover {
-          background-position: -238px -372px; } }
+          background-position: -142px -433px; } }
 .nav-top-bar {
   max-width: 1400px;
   height: 40px;

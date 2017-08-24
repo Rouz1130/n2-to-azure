@@ -20,13 +20,6 @@
 	@include sprite($icon-blue-diamond);
 }
 
-.icon-carousel-child-next {
-	@include sprite($icon-carousel-child-next);
-}
-
-.icon-carousel-child-prev {
-	@include sprite($icon-carousel-child-prev);
-}
 
 .icon-circle-minus {
 	@include sprite($icon-circle-minus);
@@ -196,6 +189,6 @@
 	@include sprite($icon-youtube-round);
 }
 
-.icon-vert-flourish {
-	@include sprite($flourish-vert);
+.icon-flowers {
+	@include sprite($flower);
 }

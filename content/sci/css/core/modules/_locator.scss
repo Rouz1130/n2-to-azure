@@ -2,143 +2,114 @@
 @import "../base/mixins";
 @import "icons-generated";
 
-.station-locator-panel {
+.locator-panel {
+    background-color: $greystripe;
 
-	.station-locator-data {
+    .location-copy {
+        background-color: $white;
+    }
 
-		.station-locator-titles {
+    .locator-data {
 
-			> span {
-				display: block;
-			}
+        .locator-titles {
+            clear: both;
+            font-size: 16px;
 
-			h2 {
-				margin: 0, 0, 10px, 0;
-			}
+            h2 {
+                margin: 0, 0, 10px, 0;
+            }
 
-			.station-locator-open {
-				color: $teal;
-				font-family: "Lato-Bold";
-			}
-		}
+            .locator-open {
+                color: $teal;
+                font-family: "Lato-Bold";
+            }
+        }
 
-		.station-locator-point {
-			display: table;
+        .locator-information {
 
-			.icon-map-pin-blue-small {
-				background-image: none;
-				display: table-cell;
-				vertical-align: middle;
+            .icon-telephone {
+                float: left;
+            }
 
-				&:after {
-					content: " ";
-					display: block;
-					@include sprite($icon-map-pin-blue-small);
-				}
-			}
+            &:after {
+                clear: both;
+                margin-top: 20px;
+                display: block;
+                content: ' ';
+                @include sprite($flourish-horiz);
+                width: $flourish-horiz-width;
+                height: $flourish-horiz-height;
 
-			> span {
-				display: table-cell;
-				@include rem-fallback(padding-left, 15px / 16px);
-			}
-		}
+            }
 
-		.station-locator-information {
+            .telephone {
+                margin-bottom: 10px;
+                font-family: 'Lato-Black';
+                font-size: 24px;
+            }
+        }
 
-			.station-telephone {
-				margin-bottom: 10px;
+        .locator-titles,
+        .locator-point,
+        .locator-information {
+            margin-bottom: 15px;
+        }
+    }
 
-				.icon-telephone-list {
-					@include sprite($icon-telephone-list);
-					vertical-align: middle;
-				}
+    .locator-options {
 
-				> span {
-					@include rem-fallback(padding-left, 7px / 16px);
-				}
-			}
-		}
+        a {
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            font-family: Lato-Bold;
+            font-size: 10px;
 
-		.station-locator-titles,
-		.station-locator-point,
-		.station-locator-information {
-			margin-bottom: 15px;
-		}
-	}
+            .icon {
+                vertical-align: sub;
+                display: block;
+            }
+        }
+    }
 
-	.station-locator-options {
-
-		.station-direction,
-		.station-find {
-			@include rem-fallback(padding, 10px / 16px);
-
-			> a {
-				text-align: center;
-				display: block;
-				color: $white;
-
-				i {
-					vertical-align: sub;
-				}
-
-				> span {
-					@include rem-fallback(padding-left, 10px / 16px);
-				}
-			}
-		}
-
-		.station-direction {
-			margin-bottom: 10px;
-			background-color: $teal;
-
-			.icon-world-white {
-				@include sprite($icon-world-white);
-			}
-		}
-
-		.station-find {
-			background-color: $teal;
-
-			.icon-search-white {
-				@include sprite($icon-search-white);
-			}
-		}
-	}
+    .static-map img {
+        width: 100%;
+    }
 }
 
 @include if-min(md) {
+    .locator-panel {
 
-	.col-2, .col-3, .col-4 {
+        .locator-row {
+            display: table-row;
+            margin: 0 auto;
+            width: 90%;
 
-		.station-locator-panel {
+            > div {
+                display: table-cell;
+            }
+        }
 
-			.station-locator-data {
+        .location-copy {
+            padding-right: 1rem;
+            vertical-align: top;
+            width: 40%;
+        }
 
-				.station-locator-information {
+        .locator-options a {
+            width: 30%;
+        }
+    }
 
-					> div {
-						display: inline-block;
-					}
+    .col-2, .col-3, .col-4 {
 
-					.station-telephone {
-						margin-bottom: 0;
-					}
-				}
-			}
+        .locator-panel {
 
-			.station-locator-options {
+            .locator-data {
 
-				.station-direction,
-				.station-find {
-					display: inline-block;
-					text-align: center;
-					width: 48%;
-				}
-
-				.station-direction {
-					margin-right: 10px;
-				}
-			}
-		}
-	}
+                .locator-information {
+                }
+            }
+        }
+    }
 }

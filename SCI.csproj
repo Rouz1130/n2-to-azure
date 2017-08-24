@@ -281,6 +281,8 @@
     <Content Include="content\sci\fonts\MrsEaves-Italic.eot" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.woff" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.ttf" />
+    <Content Include="full-components.json" />
+    <Content Include="content\sci\css\core\modules\_cta-box.scss" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />
@@ -312,6 +314,7 @@
     <Content Include="grunt\pds-css.js" />
     <Content Include="grunt\unit-tests.js" />
     <Content Include="ImageSpecs.aspx" />
+    <Content Include="layouts\Location-detail.aspx" />
     <Content Include="layouts\Layout08.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />

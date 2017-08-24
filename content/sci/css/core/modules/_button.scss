@@ -14,9 +14,11 @@
     text-transform: uppercase;
 	max-width: 100%;
 
+    @include transition(all .25s ease);
+
 	&:active, &:focus, &:visited, &:hover {
-		color: $black;
-        background-color: transparent;
+		color: $white;
+        background-color: $teal;
         border-color: $teal;
 	}	
 }

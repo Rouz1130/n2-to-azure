@@ -11,8 +11,6 @@
 <% } else if (Variation == 3) { %>
 
 <p><a href="#" class="link-icon"><i class="icon icon-download"></i>Download</a></p>
-<p><a href="#" class="link-icon"><i class="icon icon-share-orange"></i>Share</a></p>
-<p><a href="#" class="link-icon"><i class="icon icon-document"></i>Read more</a></p>
 <p><a href="#" class="link-icon"><i class="icon icon-primary-pin"></i>Directions</a></p>
 <p><a href="#" class="link-icon"><i class="icon icon-telephone"></i>Call us</a></p>
 

@@ -114,7 +114,8 @@ namespace XOMFL.CommonComponents.layouts
 					{
 						var childCode = metadata.Children.First();
 						var childMetadata = list.Components.FirstOrDefault(x => x.Code == childCode);
-						childQuery += String.Format("&Child={0}.{1}", childMetadata.Code, childMetadata.Variations.First().Variation);
+                        if (childMetadata != null)
+						    childQuery += String.Format("&Child={0}.{1}", childMetadata.Code, childMetadata.Variations.First().Variation);
 					}
 
 					var item = new ListItem(name, componentQuery + childQuery);

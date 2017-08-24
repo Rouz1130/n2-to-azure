@@ -7,12 +7,12 @@
 		<thead>
 			<tr>
 				<th>Type</th>
-				<th>SAE Grade</th>
-				<th>cSt @ 40&deg; C</th>
-				<th>cSt @ 100&deg; C</th>
-				<th>Viscosity Index ASTM D 2270</th>
-				<th>Pour Point ASTM D 97</th>
-				<th>Flash Point ASTM D 97</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,13 +44,13 @@
 	<table class="table table-minimized">
 		<thead>
 			<tr>
-				<th>Type</th>
-				<th>SAE Grade</th>
-				<th>cSt @ 40&deg; C</th>
-				<th>cSt @ 100&deg; C</th>
-				<th>Viscosity Index ASTM D 2270</th>
-				<th>Pour Point ASTM D 97</th>
-				<th>Flash Point ASTM D 97</th>
+			<th>Type</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
+				<th>Header</th>
 			</tr>
 		</thead>
 		<tbody>

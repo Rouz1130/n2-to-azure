@@ -206,7 +206,7 @@
 					"field": "BrandingIcon",
 					"values": {
 						"A": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-dark-blue.png")%>",
-						"B": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-red.png")%>",
+						"B": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-dark-blue.png")%>",
 						"P": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-gray.png")%>"
 					}
 				}
