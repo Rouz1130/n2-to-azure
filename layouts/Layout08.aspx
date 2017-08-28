@@ -64,7 +64,7 @@
             font-size: 24px;
             font-weight: bold;
         }
-
+        .h-110{height:110px;}
         .nav {
             font-family: 'Lato-Bold';
             color: #4A3C31;
@@ -142,7 +142,7 @@
         .mbp-30 {
             margin-bottom: 30%;
         }
-
+        .pt-10{padding-top:10px;}
         .pt-30 {
             padding-top: 30px;
         }
@@ -158,7 +158,7 @@
         .pb-40 {
             padding-bottom: 40px;
         }
-
+        .pl-10{padding-left:10px;}
         .ptp-20 {
             padding-top: 20%;
         }
@@ -450,6 +450,7 @@
             background: url("../content/sci/img/icons/icon-share.png") center no-repeat;
             background-size: cover;
             /*border:solid 1px #47D5CD;*/
+            outline:0;
         }
 
         /*   ---------- box ----------------*/
@@ -462,7 +463,7 @@
             position: relative;
             /*margin-top: 50%;*/
         }
-
+        .w-40{width:40px;}
 
         /*---------card services---------*/
 
@@ -612,8 +613,8 @@
 
         .container-icon {
             position: relative;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             margin: auto;
         }
 
@@ -664,7 +665,13 @@
         }
 
 
+        .close-msg{
+                position: relative;
+                top: -53px;
+                padding-right: 10px;
+                margin-right: 5%;
 
+        }
 
 
 
@@ -683,7 +690,7 @@
                 font-size: 10px;
             }
             /*.h2-style {font-size: 35px;}*/
-
+            .h2-style-sm{font-size:55px;}
             .h3-style {
                 font-size: 25px;
             }
@@ -1054,8 +1061,11 @@
             .container-line {
                 left: -10px;
             }
+            .pl-0-xs{
+                padding-left:0;
+            }
         }
-
+        
         /*.icon {
 	        background-repeat: no-repeat;
 	        display: inline-block;
@@ -1070,9 +1080,15 @@
 
 
     <div class="content-body mt-30 pt-30">
-
+        <a class="close-msg f-right"  href="#">
+                  <div class="container-icon">
+                        <amp-img class="cover" src="../content/sci/img/icons/icon-nav-main-search-close.png" alt="icon" layout="fill"></amp-img>
+                      </div>
+               </a>
         <%-- section message --%>
         <div class="content-msg mb-30">
+                 
+                
             <div class="row">
                 <div class="col col-xs-12 col-md-12 col-lg-12">
                     <p class="text-center text-uppercase mb-20 nav">A message from the family</p>
@@ -1115,7 +1131,7 @@
             <div class="line-border"></div>
             <div class="row">
                 <div class="col col-xs-12 col-md-12 col-lg-12">
-                    <h2 class="text-center  h2-style">Gladys Marion Dunton</h2>
+                    <h2 class="text-center  h2-style h2-style-sm">Gladys Marion Dunton</h2>
                     <h6 class="text-center text-uppercase font15 h6-style">october 21, 1923 - august 4, 2017</h6>
                     <p class="text-center text-uppercase mb-30 p-style">"the plant whisperer"</p>
 
@@ -1231,8 +1247,8 @@
                         </div>
 
                         <div class="col col-xs-7 col-sm-7 col-md-7 col-lg-9 ">
-                            <div class="">
-                                <h4 class="h4-style mt-30">Visitation</h4>
+                            <div class="pl-10">
+                                <h4 class="h4-style pl-0-xs mt-30">Visitation</h4>
                                 <p class="p-style ">5:30pm - 9:00pm</p>
                                 <h6 class="h6-style text-uppercase font15 mt-10">heights funeral home</h6>
                                 <span class="p-style">6873 Rainbow Rd</span><br />
@@ -1274,7 +1290,7 @@
                         </div>
 
                         <div class="col col-xs-7 col-sm-7 col-md-7 col-lg-9 ">
-                            <div class="">
+                            <div class="pl-10 pl-0-xs">
                                 <h4 class="h4-style mt-30">Funeral Service</h4>
                                 <p class="p-style ">2:30pm - 5:00pm</p>
                                 <h6 class="h6-style text-uppercase font15 mt-10">heights funeral home</h6>
@@ -1354,7 +1370,7 @@
                     <div class="col col-xs-12 col-md-12 col-lg-12">
                         <div class="mt-30 mb-30 pt-40 pb-40">
                             <h6 class="text-center text-uppercase h6-style color-gr ">REMEMBERING</h6>
-                            <h2 class="text-center h2-style">Gladys Marion Dunton</h2>
+                            <h2 class="text-center h2-style h2-style-sm">Gladys Marion Dunton</h2>
                         </div>
 
                         <div class="nav-buttons text-uppercase hidden-xs hidden-sm hidden-md">
@@ -1408,7 +1424,7 @@
                         <div class="">
                             <div class="sub-nav-main">
                                 <ul>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
@@ -1416,36 +1432,26 @@
                                             like
                                         </a>
                                     </li>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
 
                                         <a href="#">
                                             <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             share this memory
+                                             <%--<amp-social-share type="facebook"width="60" height="60"
+                                                  data-param-text="Share memory"
+                                                  data-param-url="https://www.facebook.com/dialog/share">
+                                                </amp-social-share>
+                                            <h6 class="text-uppercase">Share this memory</h6>--%>
                                         </a>
+
+
                                     </li>
 
                                 </ul>
                             </div>
                         </div>
-
-
-
-                        <%--<div id="buttons-rem" class="mt-30">
-                                <a href="#" >
-                                    <i class="icon-hamburger"></i>
-                                    <h6 class="text-uppercase">like</h6>
-                                </a>
-                                <a href="#" >
-                                  
-                                        <amp-social-share type="facebook"width="40" height="20"
-                                      data-param-text="Share memory"
-                                      data-param-url="https://www.facebook.com/dialog/share">
-                                    </amp-social-share>
-                                    <h6 class="text-uppercase">Share memory</h6>
-                                </a>
-                    </div>--%>
 
                         <div class="container-line-h mt-30 mb-30 ">
                             <div class="line-h">
@@ -1475,7 +1481,7 @@
 
                             <div class="sub-nav-main">
                                 <ul>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
@@ -1483,10 +1489,10 @@
                                             like
                                         </a>
                                     </li>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
 
                                         <a href="#">
-                                            <div class="container-icon">
+                                           <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             share this memory
@@ -1509,7 +1515,7 @@
                         <div class="mt-30">
                             <div class="sub-nav-main">
                                 <ul>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
@@ -1517,10 +1523,10 @@
                                             like
                                         </a>
                                     </li>
-                                    <li class="text-uppercase text-center nav font12 ">
+                                    <li class="text-uppercase text-center nav font10 ">
 
                                         <a href="#">
-                                            <div class="container-icon">
+                                           <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             share this memory
@@ -1559,7 +1565,7 @@
                             <div class="mt-30">
                                 <div class="sub-nav-main">
                                     <ul>
-                                        <li class="text-uppercase text-center nav font12 ">
+                                        <li class="text-uppercase text-center nav font10 ">
                                             <a href="#">
                                                 <div class="container-icon">
                                                     <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
@@ -1567,13 +1573,13 @@
                                                 like
                                             </a>
                                         </li>
-                                        <li class="text-uppercase text-center nav font12 ">
+                                        <li class="text-uppercase text-center nav font10 ">
 
                                             <a href="#">
-                                                <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                share this memory
+                                               <div class="container-icon">
+                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
+                                            </div>
+                                            share this memory
                                             </a>
                                         </li>
 
@@ -1603,30 +1609,84 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-30">
+                            
+                           <div class="mt-30 mb-30">
                                 <div class="sub-nav-main">
                                     <ul>
-                                        <li class="text-uppercase text-center nav font12 ">
+                                        <li class="text-uppercase text-center nav font10 ">
                                             <a href="#">
                                                 <div class="container-icon">
                                                     <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
                                                 </div>
                                                 like
+                                                <%--<amp-img src="../content/sci/img/icons/donate.png"
+                                                    width="30"
+                                                    height="30"
+                                                    layout="responsive"
+                                                    alt="icon image">
+                                                </amp-img>--%>
+                                                
                                             </a>
                                         </li>
-                                        <li class="text-uppercase text-center nav font12 ">
+                                        <li class="text-uppercase text-center nav  font10 ">
 
                                             <a href="#">
+                                          <%--     <amp-social-share type="facebook" width="50" height="50"
+                                                  
+                                                  data-param-text="Share memory"
+                                                  data-param-url="https://www.facebook.com/dialog/share">
+                                                                                                 
+                                                </amp-social-share>--%>
                                                 <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                share this memory
+                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
+                                            </div>
+                                            share this memory
+                                               
                                             </a>
                                         </li>
 
                                     </ul>
                                 </div>
                             </div>
+
+                            <%--  --%>
+
+                            <%--<div class="mt-30 mb-30">
+                                <div class="sub-nav-main h-110">
+                                    <ul>
+                                        <li class="text-uppercase text-center nav  ">
+                                            <a class="pt-10" href="#">--%>
+                                                <%--<div class="container-icon">
+                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                </div>
+                                                like--%>
+                                                <%--<amp-img class="w-40" src="../content/sci/img/icons/donate.png"
+                                                    width="40"
+                                                    height="40"
+                                                    layout="responsive"
+                                                    alt="icon image">
+                                                </amp-img>
+                                                <h5 class="font10 mt-10">like</h5>
+                                            </a>
+                                        </li>
+                                        <li class="text-uppercase text-center nav   ">
+
+                                            <a href="#">
+                                              <div class="container-icon">
+                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
+                                            </div>
+                                            share this memory
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>--%>
+
+                             
+
+                            <%--  --%>
+
                         </div>
 
                         <div class="mt-30  mb-10 text-center">
