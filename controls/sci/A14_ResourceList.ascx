@@ -17,7 +17,7 @@
 					<a href="#" class="link-icon"><i class="icon icon-download"></i>Download</a>
 				</td>
 				<td class="resource-list-action">
-					<a href="#" class="link-icon"><i class="icon icon-share-orange"></i>Share</a>
+					<a href="#" class="link-icon"><i class="icon icon-share"></i>Share</a>
 				</td>
 			</tr>
 			<tr>
@@ -32,7 +32,7 @@
 					<a href="#" class="link-icon"><i class="icon icon-download"></i>Download</a>
 				</td>
 				<td class="resource-list-action">
-					<a href="#" class="link-icon"><i class="icon icon-share-orange"></i>Share</a>
+					<a href="#" class="link-icon"><i class="icon icon-share"></i>Share</a>
 				</td>
 			</tr>
 		</tbody>

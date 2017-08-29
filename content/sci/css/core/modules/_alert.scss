@@ -7,26 +7,16 @@
 	border: none;
 	color: $white;
 	padding: 20px;
-
-	.icon {
-		position: absolute;
-	}
+    text-transform: uppercase;
+    text-align: center;
 
     a, a:link, a:hover, a:visited, a:active {
         color: $white;
+        text-decoration: underline;
     }
 
 	> p {
 		line-height: 1.2;
-		padding-left: 45px;
 	}
 }
 
-.alert-success {
-    background-color: $green;
-    color: $black;
-}
-
-.alert-title {
-	display: block;
-}

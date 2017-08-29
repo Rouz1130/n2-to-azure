@@ -33,7 +33,6 @@
 		<div class="surfaced-item-horizontal-row">
 			<img class="surfaced-item-image" runat="server" src="~/content/site/surfaced-item.jpg">
 			<div class="surfaced-item-copy">
-				<p>Sagittis vel judging you vestibulum, run vehicula faucibus non jump leap meow. Claw eat the grass neque tortor, knock over the lamp scratched lay down in your way lay down in your way eat the grass chase the red dot eat. Enim ut tristique give me fish rip the couch.</p>
 				<a class="glyph-link">Find out how</a>
 			</div>
 		</div>

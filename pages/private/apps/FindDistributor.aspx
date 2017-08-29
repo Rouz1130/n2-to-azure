@@ -95,7 +95,7 @@
 						</div>
 						<div class="station-locator-information">
 							<div class="station-telephone">
-								<i class="icon icon-telephone-list"></i>
+								<i class="icon icon-telephone"></i>
 								<span>{{r.Telephone1}}</span>
 							</div>
 						</div>
