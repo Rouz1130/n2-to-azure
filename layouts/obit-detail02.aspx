@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Layout08" %>
+﻿<%@ Page Title="ObitDetail" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
@@ -22,6 +22,10 @@
 
         .lato-regular {
             font-family: 'Lato-Regular';
+        }
+
+        .lato-bold {
+            font-family: 'Lato-Bold';
         }
 
         .lato-italic {
@@ -693,6 +697,24 @@
             font-family: Lato-Regular, sans-serif;
         }
 
+        .container-p {
+            width: 250px;
+            padding: 10px 15px;
+            margin: auto;
+        }
+
+        .container-share {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container-icon-share {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            margin: auto;
+        }
         /*------- media queries  -----*/
 
         /*@screen-xs-max*/
@@ -795,6 +817,10 @@
             .container-line {
                 top: -70px;
                 left: 0;
+            }
+
+            .container-p {
+                width: auto;
             }
         }
 
@@ -1055,6 +1081,10 @@
             .f-right-sm {
                 float: right;
             }
+
+            .link, .link:visited {
+                padding-bottom: 1px;
+            }
         }
 
         @media (max-width: 400px) {
@@ -1117,14 +1147,12 @@
                     <h2 class="text-center  h2-style h2-style-sm">Gladys Marion Dunton</h2>
                     <h3 class="text-center fs-40 mt-30 h3-style">Gladys Marion Dutton was born October 21, 1923 in Dallas, TX, and passed away August 4, 2017 in Houston, TX</h3>
 
-                    <div class="content-m mt-30  ">
+                    <div class="content-m mt-30  hidden-xs">
                         <h6 class="text-center p-style  font15 color-g mt-30 mb-30">Obituary and service information are unavailable at this time. Please check back later for updates.
                         </h6>
                     </div>
                     <div class="mt-30 ">
-                        <a href="#">
-                            <p class="text-uppercase hyperlink text-center">Recieve updates</p>
-                        </a>
+                        <p class="text-uppercase text-center nav font12 first"><a class="link" href="#">Recieve updates</a></p>
                     </div>
                 </div>
             </div>
@@ -1135,467 +1163,64 @@
 
 
 
-        <%-- services --%>
+        <%-- share the memories --%>
 
-        <section class="container-fluid mt-30 pt-30 bg-gg pb-40">
-            <h3 class="text-center h3-style  mb-30">Share the memories</h3>
+        <section class="container-fluid pt-40  bg-gg pb-40">
+            <h3 class="text-center h3-style h2-style-sm mb-30">Share the memories</h3>
 
 
-            <div class="">
-                <p class="p-style font15 color-gr text-center">
+            <div class="mt-30">
+                <p class="p-style font15 color-gr text-center container-share mb-30">
                     Even the simplest memory providers comfort to family and friends. Share a favorite memory or anything that made you laught or smile.
                 </p>
                 <a href="#">
-                    <div class="container-icon">
-                        <amp-img class="cover" src="../content/sci/img/icons/icon-envelope-list.png" alt="icon" layout="fill"></amp-img>
+                    <div class="container-icon-share mt-30">
+                        <amp-img class="cover" src="../content/sci/img/icons/chat.png" alt="icon" layout="fill"></amp-img>
                     </div>
-                    <h5 class="nav text-center text-uppercase font12">share a memory</h5>
+                    <h5 class="nav text-center text-uppercase font12 ">share a memory</h5>
                 </a>
 
             </div>
+            <div class="mt-30 mb-30">
+                <div class="row">
+                    <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 
+                        <p class="text-center text-uppercase font12  nav mt-30"><a class="link" href="#">recieve updates</a></p>
+                        <div class="container-p">
+                            <p class="text-center nav text-uppercase font10 mt-10 color-gr">when friends and family add new memories</p>
+                        </div>
+                    </div>
+                    <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                        <p class="text-center text-uppercase  font12 nav mt-30"><a class="link" href="#">tips</a></p>
+                        <div class="container-p">
+                            <p class="text-center nav text-uppercase font10 mt-10 color-gr">for sharing memories and condolences</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
             <%--  --%>
             <div class="clearfix"></div>
-            <h6 class="text-center mt-30 pt-30"><span class="text-uppercase h6-style font15">other services: </span><span class="h5-style">Family Viewing</span></h6>
 
-            <div class="mt-30">
-                <div class="sub-nav-main">
-                    <ul>
-                        <li class="text-uppercase text-center nav font12 ">
-                            <a href="#">
-                                <div class="container-icon">
-                                    <amp-img class="cover" src="../content/sci/img/icons/icon-envelope-list.png" alt="icon" layout="fill"></amp-img>
-                                </div>
-                                get event updates
-                            </a>
-                        </li>
-                        <li class="text-uppercase text-center nav font12 ">
-                            <a href="#">
-                                <div class="container-icon">
-                                    <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                </div>
-                                share services
-                            </a>
-                        </li>
-                        <li class="text-uppercase text-center nav font12 ">
-                            <a href="#">
-                                <div class="container-icon">
-                                    <amp-img class="cover" src="../content/sci/img/icons/chat.png" alt="icon" layout="fill"></amp-img>
-                                </div>
-                                how to support
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
         </section>
 
 
-        <section id="remembering">
-            <div class="  full ">
-                <div class="fixed-container-img">
-                    <amp-img class="cover" src="../content/site/header-narrow.jpg"
-                        alt="photo"
-                        layout="fill">
-                        </amp-img>
-                </div>
-            </div>
-            <div class="w-content bg-white">
-                <div class="line-border"></div>
-                <div class="row">
-                    <div class="col col-xs-12 col-md-12 col-lg-12">
-                        <div class="mt-30 mb-30 pt-40 pb-40">
-                            <h6 class="text-center text-uppercase h6-style color-gr ">REMEMBERING</h6>
-                            <h2 class="text-center h2-style h2-style-sm">Gladys Marion Dunton</h2>
-                        </div>
-
-                        <div class="nav-buttons text-uppercase hidden-xs hidden-sm hidden-md">
-                            <p class="nav font12 text-center color-gr">have a memory or condolence to add?</p>
-                            <div class="text-center mb-30">
-                                <button class="btn-nav">
-                                    add memory
-                                </button>
-                            </div>
-                            <p class="nav font12 text-center color-gr">
-                                receive updates when new memories are posted
-                            </p>
-                            <div class="text-center">
-                                <button class="btn-nav">receive updates</button>
-                            </div>
-                        </div>
-                        <div class="nav-buttons-hor text-uppercase hidden-lg">
-                            <div class="row">
-                                <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="text-center mb-30">
-                                        <button class="btn-nav f-right">
-                                            add memory
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                    <div class="text-center">
-                                        <button class="btn-nav f-left">receive updates</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="mt-30">
-                            <div id="sub-nav">
-                                <ul>
-                                    <li class="text-uppercase nav active font12 "><a href="#">all memories</a></li>
-                                    <li class="text-uppercase nav font12 "><a href="#">from the family</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <br />
-
-                        <h6 class="text-left h6-style font15">Jennifer Dunton</h6>
-                        <h6 class="text-left h6-style font12">July 22, 2017</h6>
-                        <h4 class="text-left h4-style  mt-30 mb-30">I'll never forget Gladys and I love her so much. She taught me to never compromise who I am wheter people like it or not... showing me how to be strong and independient... And for showing me how to be a mom. I am proud of who I am... Thank you mom for raising me for many years alone and the sacrifices you made.</h4>
-
-
-                        <div class="">
-                            <div class="sub-nav-main">
-                                <ul>
-                                    <li class="text-uppercase text-center nav font10 ">
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            like
-                                        </a>
-                                    </li>
-                                    <li class="text-uppercase text-center nav font10 ">
-
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            share this memory
-                                             <%--<amp-social-share type="facebook"width="60" height="60"
-                                                  data-param-text="Share memory"
-                                                  data-param-url="https://www.facebook.com/dialog/share">
-                                                </amp-social-share>
-                                            <h6 class="text-uppercase">Share this memory</h6>--%>
-                                        </a>
-
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="container-line-h mt-30 mb-30 ">
-                            <div class="line-h">
-                                <div class="line-h-inner"></div>
-                            </div>
-                        </div>
-
-
-                        <h6 class="text-left h6-style font15">Salley Dunton</h6>
-                        <h6 class="text-left h6-style font12">July 24, 2017</h6>
-                        <div class="row mt-30 ">
-                            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-10">
-                                <h4 class="text-left h4-style">Gladys made me who I am.... And I love her so much for showing me to never compromise who I am whether people like or not... showing me how to be strong and independient... And for showing me how to be a mom. I am proud of who I am... Thank you mom for raising me for many years alone and the sacrifices you made. And showing me how to be a mom.</h4>
-                            </div>
-                            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                <div class="fixed-container-rem01">
-                                    <amp-img class="cover" src="../content/site/header.jpg"
-                                        alt="user-photo"
-                                        layout="fill">
-                                        </amp-img>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="mt-30">
-
-                            <div class="sub-nav-main">
-                                <ul>
-                                    <li class="text-uppercase text-center nav font10 ">
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            like
-                                        </a>
-                                    </li>
-                                    <li class="text-uppercase text-center nav font10 ">
-
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            share this memory
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="container-line-h mt-30 mb-30 ">
-                            <div class="line-h">
-                                <div class="line-h-inner"></div>
-                            </div>
-                        </div>
-
-                        <h6 class="text-left h6-style font15">Jennifer Dunton</h6>
-                        <h6 class="text-left h6-style font12">July 22, 2017</h6>
-                        <h4 class="text-left h4-style  mt-30 mb-30">I'll never forget Gladys and I love her so much. She taught me to never compromise who I am wheter people like it or not... showing me how to be strong and independient... And for showing me how to be a mom. I am proud of who I am... Thank you mom for raising me for many years alone and the sacrifices you made.</h4>
-
-                        <div class="mt-30">
-                            <div class="sub-nav-main">
-                                <ul>
-                                    <li class="text-uppercase text-center nav font10 ">
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            like
-                                        </a>
-                                    </li>
-                                    <li class="text-uppercase text-center nav font10 ">
-
-                                        <a href="#">
-                                            <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            share this memory
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="container-line-h mt-30 mb-30 ">
-                            <div class="line-h">
-                                <div class="line-h-inner"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="mt-30">
-                            <h6 class="text-left h6-style font15">Salley Dunton</h6>
-                            <h6 class="text-left h6-style font12">July 24, 2017</h6>
-                            <div class="row mt-30 ">
-                                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-10">
-                                    <h4 class="text-left h4-style">Gladys made me who I am.... And I love her so much for showing me to never compromise who I am whether people like or not... showing me how to be strong and independient... And for showing me how to be a mom. I am proud of who I am... Thank you mom for raising me for many years alone and the sacrifices you made. And showing me how to be a mom.</h4>
-                                </div>
-                                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="fixed-container-rem02">
-                                        <amp-img class="cover" src="../content/site/header-narrow.jpg"
-                                            alt="photo-remembering"
-                                            layout="fill">
-                                            </amp-img>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-30">
-                                <div class="sub-nav-main">
-                                    <ul>
-                                        <li class="text-uppercase text-center nav font10 ">
-                                            <a href="#">
-                                                <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                like
-                                            </a>
-                                        </li>
-                                        <li class="text-uppercase text-center nav font10 ">
-
-                                            <a href="#">
-                                                <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                share this memory
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="container-line-h mt-30 mb-30 ">
-                            <div class="line-h">
-                                <div class="line-h-inner"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="mb-10">
-                            <h6 class="text-left h6-style font15">Salley Dunton</h6>
-                            <h6 class="text-left h6-style font12">July 24, 2017</h6>
-                            <div class="row mt-30 ">
-                                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="fixed-container-rem02">
-                                        <amp-img class="cover" src="../content/site/carousel-01.jpg"
-                                            alt="photo-remembering"
-                                            layout="fill">
-                                            </amp-img>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-30 mb-30">
-                                <div class="sub-nav-main">
-                                    <ul>
-                                        <li class="text-uppercase text-center nav font10 ">
-                                            <a href="#">
-                                                <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                like
-                                                <%--<amp-img src="../content/sci/img/icons/donate.png"
-                                                    width="30"
-                                                    height="30"
-                                                    layout="responsive"
-                                                    alt="icon image">
-                                                </amp-img>--%>
-                                                
-                                            </a>
-                                        </li>
-                                        <li class="text-uppercase text-center nav  font10 ">
-
-                                            <a href="#">
-                                                <%--     <amp-social-share type="facebook" width="50" height="50"
-                                                  
-                                                  data-param-text="Share memory"
-                                                  data-param-url="https://www.facebook.com/dialog/share">
-                                                                                                 
-                                                </amp-social-share>--%>
-                                                <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                share this memory
-                                               
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <%--  --%>
-
-                            <%--<div class="mt-30 mb-30">
-                                <div class="sub-nav-main h-110">
-                                    <ul>
-                                        <li class="text-uppercase text-center nav  ">
-                                            <a class="pt-10" href="#">--%>
-                            <%--<div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                like--%>
-                            <%--<amp-img class="w-40" src="../content/sci/img/icons/donate.png"
-                                                    width="40"
-                                                    height="40"
-                                                    layout="responsive"
-                                                    alt="icon image">
-                                                </amp-img>
-                                                <h5 class="font10 mt-10">like</h5>
-                                            </a>
-                                        </li>
-                                        <li class="text-uppercase text-center nav   ">
-
-                                            <a href="#">
-                                              <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            share this memory
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>--%>
-
-
-
-                            <%--  --%>
-                        </div>
-
-                        <div class="mt-30  mb-10 text-center">
-                            <button class="btn">Load More</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-        <%-- Biography --%>
-        <section class="container-fluid bg-gray mb-30">
-            <div class="bio">
-                <h2 class="text-center h2-style mb-30">Biography</h2>
-                <div class="content-bio">
-                    <p class="p-style">
-                        Morbi sed libero quis dui fringilla venenatis. Donec eleifend leo sed tellus facilisis, eu ornare quam laoreet. Duis augue massa, rutrum a scelerisque ut, dapibus et sem. Proin elementum porta nunc, eget commodo turpis vehicula eget. Phasellus eu magna eros. Integer sagittis mauris id cursus tristique. Nam dapibus, lacus nec egestas hendrerit, ante nisi congue augue, eget fringilla eros enim a mauris. 
-                    </p>
-
-                    <div class="hidden-sm hidden-md hidden-lg">
-                        <amp-accordion disable-session-states>
-                      <section>
-                        <h4 class="nav font15">
-                          <span class="show-more text-uppercase ">see more</span>
-                          <span class="show-less text-uppercase ">see less</span>
-                        </h4>
-                          <div>
-                              <p class="p-style ">
-                                Proin gravida mauris et enim sagittis fermentum. Fusce quis ullamcorper felis, at viverra diam. Vivamus id vehicula tellus. In ut fermentum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vitae viverra ligula, sed vulputate nisl. Suspendisse lorem nulla, porttitor ac felis vel, porta ultrices ex.
-                                 Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
-                              </p>
-                              <p class="p-style ">
-                                Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
-                                Proin gravida mauris et enim sagittis fermentum. Fusce quis ullamcorper felis, at viverra diam. Vivamus id vehicula tellus. In ut fermentum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vitae viverra ligula, sed vulputate nisl. Suspendisse lorem nulla, porttitor ac felis vel, porta ultrices ex.
-                            </p>
-                        </div>
-                       
-                      </section>
-                    </amp-accordion>
-                    </div>
-
-                    <p class="p-style hidden-xs">
-                        Proin gravida mauris et enim sagittis fermentum. Fusce quis ullamcorper felis, at viverra diam. Vivamus id vehicula tellus. In ut fermentum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vitae viverra ligula, sed vulputate nisl. Suspendisse lorem nulla, porttitor ac felis vel, porta ultrices ex.
-                     Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
-                    </p>
-                    <p class="p-style hidden-xs">
-                        Mauris quis eleifend nisl. Nullam lacus velit, malesuada at cursus a, imperdiet eget tellus. Nullam varius, nunc sed porta efficitur, eros libero congue ex, tempor laoreet odio sapien sagittis sem. Ut condimentum eros pharetra, maximus tellus sed, aliquam lacus. Integer congue eleifend tellus a eleifend. Morbi pellentesque sit amet nulla ac malesuada. Phasellus elementum vel arcu et porttitor. Duis eget est placerat, fermentum ex ut, ultricies massa. Curabitur non tincidunt justo. Pellentesque vel tellus lectus. Proin vitae orci pharetra, accumsan turpis non, malesuada mauris. Etiam ut metus id dolor imperdiet tempus nec vel diam. Ut finibus massa sapien. Aliquam quis egestas erat. Ut tellus orci, ullamcorper ac accumsan sed, efficitur at sem.
-                    Proin gravida mauris et enim sagittis fermentum. Fusce quis ullamcorper felis, at viverra diam. Vivamus id vehicula tellus. In ut fermentum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vitae viverra ligula, sed vulputate nisl. Suspendisse lorem nulla, porttitor ac felis vel, porta ultrices ex.
-                    </p>
-
-
-                </div>
-            </div>
-        </section>
 
 
         <div class="text-center pb-40 pt-40">
-            <span class="text-uppercase nav ">in the care of</span>
+            <span class="text-uppercase nav hidden-xs">in the care of</span>
+            <span class="text-uppercase nav hidden-sm hidden-md hidden-lg">under the care of</span>
             <h4 class="h4-style mt-30">Chattanooga Funeral Home North Chapel
             </h4>
             <h4 class="h4-style">Hamilton Memorial Gardens Chattanooga, TN
             </h4>
         </div>
 
-        <%-- <div class="container-fluid bg-gray text-center pb-40 pt-40">
-                    <h2 class="text-uppercase">life well celebrated</h2>
-            </div>--%>
+
     </div>
     <%--<ks:Snippet runat="server" Name="Layout08" />--%>
 </asp:Content>
