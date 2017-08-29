@@ -4,27 +4,33 @@
 
 .surfaced-item {
 	position: relative;
+    background: $white;
+    padding-bottom: 40px;
+
+    h3 {		
+	    font-size: 35px;
+		margin-top: 0;
+        padding: 0 5%;
+	}
 
 	.glyph-link {
 		font-family: "Lato-Bold";
         text-transform: uppercase;
         border-bottom: 2px solid $teal;
         padding-bottom: 6px;
+        margin-top: 20px;
+        display: inline-block;
+        cursor: pointer;
         @include rem-fallback(font-size, 10px / 12px);
 	}
 
     &.surfaced-item-vertical {
        text-align: center;
-
-        h3 {
-		   font-size: 48px;
-		    margin-top: 0;
-	    }
     }
 }
 
 .surfaced-item-image {
-	border: 1px solid $tan;
+	
 	@include rem-fallback(margin-bottom, 1);
 	width: 100%;
 
@@ -33,19 +39,14 @@
 	}
 }
 
-.surfaced-intro-text,
-.surfaced-item-copy {
-	> h3 {
-		font-family: "Lato-Bold";
-		@include rem-fallback(font-size, 20px / 16px);
-		margin-top: 0;
-	}
-}
 
 .surfaced-item-overlay {
+
+    padding-bottom: 0;
+    text-align: center;
+
 	.surfaced-item-content-image {
 		display: block;
-		@include rem-fallback(margin-bottom, 1);
 		position: relative;
 
 		> img {
@@ -56,19 +57,52 @@
 		> .surfaced-item-label-image {
 			@include rem-fallback(padding, 10px / 16px);
 			
-			bottom: 0;
+			bottom: 50%;
+            @include transform(translate(0,50%));
 			position: absolute;
 			width: percentage(1 / 1);
 
-			> h3 {
+			h3 {
 				color: $white;
+                text-transform: uppercase;
 				font-family: "Lato-Bold";
-				@include rem-fallback(font-size, 20px / 16px);
+				@include rem-fallback(font-size, 30px / 20px);
 				@include rem-fallback(margin, 2px / 16px);
 				text-align: center;
+                line-height: 1.5em;
 			}
 		}
-	}
+    }
+
+     .surfaced-item-copy {
+        display: none;
+    }
+
+    @include if-min(md) {
+        .surfaced-item-content-image {
+              
+            > .surfaced-item-label-image {
+                position: static;
+                background: $white;
+                padding: 30px 5% 10px;
+                @include transform(unset);
+
+                h3 {
+                    font-family: "MrsEaves-Italic";
+                    color: $black;
+                    text-transform: none;      
+                    font-size: 48px;
+                    margin: 0;     
+                    line-height: 1em;      
+                }
+            }
+        }
+
+        .surfaced-item-copy {
+            display: block;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .bp-md {
@@ -100,5 +134,9 @@
 			vertical-align: top;
 			width: 75%;
 		}
+
+        h3 {
+            font-size: 48px;
+        }
 	}
 }

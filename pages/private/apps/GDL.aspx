@@ -27,18 +27,18 @@
 
 				<!-- A17.3: Warning -->
 				<div class="component component-margin-sm alert alert-warning" role="alert" ng-class="{ hidden: !countryIsSelected }">
-					<span class="icon icon-warning"></span>
+				
 					<p>
-						<span class="alert-title">Warning</span>
+						
 						You have selected a country.  Please enter a city or state name to narrow your search.
 					</p>
 				</div>
 
 				<!-- A17.3: Warning -->
 				<div class="component component-margin-sm alert alert-warning" role="alert" ng-class="{ hidden: !searchFailed }">
-					<span class="icon icon-warning"></span>
+					
 					<p>
-						<span class="alert-title">Warning</span>
+						
 						We could not find any cemeteries for your location. Please try a search for a different location.
 						Can't find a location are looking for? Try searching for a province, state, or country.
 					</p>

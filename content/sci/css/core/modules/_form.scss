@@ -32,7 +32,7 @@ $input-lg-height: 56px;
 	}
 
 	> label.error {
-		background-color: $red;
+		background-color: $error-color;
 		color: #fff;
 		display: block;
 		font-weight: normal;
@@ -234,14 +234,14 @@ $input-lg-height: 56px;
 
 .form-control.error {
 	background-color: #fffaba;
-	border: solid 2px $red;
+	border: solid 2px $error-color;
 }
 
 .form-group label {
 	@include formGroupLabel;
 
 	&.error {
-		background-color: $red;
+		background-color: $error-color;
 		color: #fff;
 		display: block;
 		@include rem-fallback(font-size, 16px / 16px);

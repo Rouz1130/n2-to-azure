@@ -72,7 +72,7 @@
 				<div class="component social-share">
 					<a href="#" class="glyph-link">Submit station feedback</a>
 					<span class="social-share-station-detail">
-						<a href="#"><i class="icon icon-share-orange"></i>Share</a>
+						<a href="#"><i class="icon icon-share"></i>Share</a>
 					</span>
 				</div>
 			</div>

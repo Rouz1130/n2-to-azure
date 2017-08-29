@@ -48,8 +48,8 @@
 
 .breadcrumb-panel,
 .breadcrumb-panel-action {
-    background: $black5;
-    border-bottom: 1px solid $black8;
+    background: $white;
+   
     color: $grey;
     @include rem-fallback(padding, 10px / 16px, 30px / 16px);
     width: 100%;

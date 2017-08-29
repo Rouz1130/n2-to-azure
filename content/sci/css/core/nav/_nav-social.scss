@@ -65,16 +65,9 @@
 					@include sprite-position($icon-facebook-round-clear);
 				}
 
-				> .icon-linkedin-round {
-					@include sprite-position($icon-linkedin-round-clear);
-				}
-
+			
 				> .icon-twitter-round {
 					@include sprite-position($icon-twitter-round-clear);
-				}
-
-				> .icon-youtube-round {
-					@include sprite-position($icon-youtube-round-clear);
 				}
 			}
 		}
@@ -113,28 +106,12 @@
 						@include sprite-position($icon-facebook-round-hover);
 					}
 
-					> .icon-linkedin-round {
-						@include sprite-position($icon-linkedin-round);
-					}
-
-					> .icon-linkedin-round:hover {
-						@include sprite-position($icon-linkedin-round-hover);
-					}
-
 					> .icon-twitter-round {
 						@include sprite-position($icon-twitter-round);
 					}
 
 					> .icon-twitter-round:hover {
 						@include sprite-position($icon-twitter-round-hover);
-					}
-
-					> .icon-youtube-round {
-						@include sprite-position($icon-youtube-round);
-					}
-
-					> .icon-youtube-round:hover {
-						@include sprite-position($icon-youtube-round-hover);
 					}
 				}
 			}

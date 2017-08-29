@@ -410,9 +410,7 @@
 			"variations": [
 				{ "variation": 1, "name": "Horizontal" },
 				{ "variation": 2, "name": "Vertical" },
-				{ "variation": 3, "name": "Horizontal with intro text" },
-				{ "variation": 4, "name": "Vertical with intro text" },
-				{ "variation": 5, "name": "Horizontal with static map" }
+				{ "variation": 4, "name": "Vertical with intro text" }
 			],
 			"batch": 2
 		},
@@ -433,8 +431,7 @@
 			"status": "Complete",
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FS03%20Surfaced%20Item%20%28overlay%5C%29%7C49e91169-d604-44e8-9a12-1043afaeeda4%2F%29",
 			"variations": [
-				{ "variation": 1, "name": "No text" },
-				{ "variation": 2, "name": "With text" }
+				{ "variation": 1, "name": "No text" }
 			],
 			"batch": 2
 		},

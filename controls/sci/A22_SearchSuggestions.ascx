@@ -3,7 +3,7 @@
 <% if (Variation == 1) { %>
 
 <div class="component search-suggestions">
-    <i class="icon icon-success-filled"></i>
+    <i class="icon icon-success"></i>
 	<div class="search-suggestions-text">
 		<p class="search-suggestions-title">Is this what you’re looking for?</p>
 		<ul class="list">

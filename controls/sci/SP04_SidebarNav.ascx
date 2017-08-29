@@ -27,8 +27,7 @@
 <ul class="component list sidebar-nav sidebar-nav-icons">
     <li class="sidebar-nav-title">Section name</li>
     <li><a href="#" class="link-icon"><i class="icon icon-download"></i>Download</a></li>
-	<li><a href="#" class="link-icon"><i class="icon icon-share-orange"></i>Share</a></li>
-	<li><a href="#" class="link-icon"><i class="icon icon-document"></i>Read more</a></li>
+	<li><a href="#" class="link-icon"><i class="icon icon-share"></i>Share</a></li>
 	<li><a href="#" class="link-icon"><i class="icon icon-primary-pin"></i>Directions</a></li>
 	<li><a href="#" class="link-icon"><i class="icon icon-telephone"></i>Call us</a></li>
 </ul>

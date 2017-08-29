@@ -7,6 +7,7 @@
 
     .location-copy {
         background-color: $white;
+        padding: 20px;
     }
 
     .locator-data {
@@ -29,11 +30,17 @@
 
             .icon-telephone {
                 float: left;
+                margin-left: -20px;
+            }
+
+            p { 
+                margin: 0;
+                padding-top: 20px;
             }
 
             &:after {
                 clear: both;
-                margin-top: 20px;
+                margin: 20px auto;
                 display: block;
                 content: ' ';
                 @include sprite($flourish-horiz);
@@ -64,16 +71,21 @@
             display: inline-block;
             font-family: Lato-Bold;
             font-size: 10px;
+            min-width: 30%;
 
             .icon {
                 vertical-align: sub;
                 display: block;
+                margin: 0 auto;
             }
         }
     }
 
-    .static-map img {
-        width: 100%;
+    .static-map {
+         width: 100%;
+         img {
+            width: 100%;
+        }
     }
 }
 
@@ -91,7 +103,7 @@
         }
 
         .location-copy {
-            padding-right: 1rem;
+            
             vertical-align: top;
             width: 40%;
         }
