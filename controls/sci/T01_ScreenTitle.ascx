@@ -13,7 +13,7 @@
 				Sleep on your keyboard claw pharetra et, jump kittens run faucibus sunbathe egestas purr. Sniff nam sniff run dolor chase the red dot, et rhoncus dolor bat. Tail flick enim shed everywhere consectetur, zzz bibendum attack tail flick accumsan eat the grass sleep on your keyboard.
 			</p>
 			<p class="screen-title-cta">
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary"><span>Talk to an expert</span></button>
 			</p>
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 		<div class="screen-title-copy-wrap">
 			<p class="paragraph screen-title-copy">Sleep on your keyboard claw pharetra et, jump kittens run faucibus sunbathe egestas purr. Sniff nam sniff run dolor chase the red dot, et rhoncus dolor bat. Tail flick enim shed everywhere consectetur, zzz bibendum attack tail flick accumsan eat the grass sleep on your keyboard.</p>
 			<p class="screen-title-cta">
-				<button class="btn btn-primary">Talk to an expert</button>
+				<button class="btn btn-primary"><span>Talk to an expert</span></button>
 			</p>
 		</div>
 	</div>

@@ -8,6 +8,7 @@
     .location-copy {
         background-color: $white;
         padding: 20px;
+        position: relative;
     }
 
     .locator-data {
@@ -24,6 +25,11 @@
                 color: $teal;
                 font-family: "Lato-Bold";
             }
+
+            .hours {
+                color: #969594; // TODO: is this color used elsewhere??
+                margin-top: 20px;
+            }
         }
 
         .locator-information {
@@ -33,9 +39,10 @@
                 margin-left: -20px;
             }
 
-            p { 
+            p {
                 margin: 0;
                 padding-top: 20px;
+                font-size: 18px;
             }
 
             &:after {
@@ -46,13 +53,13 @@
                 @include sprite($flourish-horiz);
                 width: $flourish-horiz-width;
                 height: $flourish-horiz-height;
-
             }
 
             .telephone {
                 margin-bottom: 10px;
                 font-family: 'Lato-Black';
                 font-size: 24px;
+                letter-spacing: 2.4px;
             }
         }
 
@@ -68,23 +75,47 @@
         a {
             text-transform: uppercase;
             text-align: center;
-            display: inline-block;
+            display: block;
             font-family: Lato-Bold;
             font-size: 10px;
             min-width: 30%;
+            letter-spacing: 2.4px;
+            vertical-align: top;
+          
 
             .icon {
-                vertical-align: sub;
                 display: block;
                 margin: 0 auto;
             }
+
         }
     }
 
     .static-map {
-         width: 100%;
-         img {
+        width: 100%;
+
+        img {
             width: 100%;
+        }
+    }
+}
+
+@include if-min(sm) {
+    .locator-panel {
+
+        .locator-data {
+            margin-bottom: 120px; // To give enough room for abs positioned locator-options to fit
+        }
+
+        .locator-options {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+
+            a {
+                display: inline-block;
+                width: 30%;
+            }
         }
     }
 }
@@ -103,13 +134,8 @@
         }
 
         .location-copy {
-            
             vertical-align: top;
             width: 40%;
-        }
-
-        .locator-options a {
-            width: 30%;
         }
     }
 

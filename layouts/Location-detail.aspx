@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Layout 1" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
+    
+    <ks:Component runat="server" Code="A01.1" />
     <ks:Component runat="server" Code="T01.1" />
 
 	<div class="row">

@@ -23,9 +23,7 @@
                     309 11th Ave. Northern Boulevard
 		            <br/>New York, New York 10001-1213 
             
-                    <p>
-                        <span>Mon - Sat 06:00 - 22:00 <span class="locator-open">Open Now</span>, Sun 07:00 - 22:00</span>
-                    </p>
+                    <p class="hours">Available 24-7 or call any time.</p>
 			
 		        </div>
 		

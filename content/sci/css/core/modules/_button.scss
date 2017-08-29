@@ -1,7 +1,7 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
 
-.btn {
+.btn, .btn:visited {
 	@include border-radius(0);
 	@include rem-fallback(font-size, 14px / 16px);
 	@include rem-fallback(padding, 10px / 14px, 30px / 14px);
@@ -13,13 +13,37 @@
 	position: relative;
     text-transform: uppercase;
 	max-width: 100%;
+    letter-spacing: 2.4px;
 
-    @include transition(all .25s ease);
-
-	&:active, &:focus, &:visited, &:hover {
-		color: $white;
+     &:before {
+           
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        display: block;
         background-color: $teal;
+        @include transform(scaleY(0));
+        @include transform-origin(center bottom);
+       
+    }
+
+     span {
+        position: relative;
+        z-index: 1;
+     }
+   
+	&:active, &:focus, &:hover {
+        background-color: transparent;
         border-color: $teal;
+        color: $white;
+
+        &:before {
+            @include transform(scaleY(1));
+            @include transition(all);
+        }
 	}	
 }
 
@@ -49,6 +73,13 @@
 
 .btn-secondary {
 	 @extend .btn;	
+     background-color: $teal;
+     color: $white;
+
+     &:hover {
+         // TODO darken teal
+     }
+
 }
 
 .btn-tertiary {

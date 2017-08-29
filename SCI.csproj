@@ -451,7 +451,6 @@
     <Content Include="content\sci\img\icons\icon-carousel-next.png" />
     <Content Include="content\sci\img\icons\icon-carousel-prev.png" />
     <Content Include="content\sci\img\icons\icon-cloud.png" />
-    <Content Include="content\sci\img\icons\icon-drop-arrow-bg.jpg" />
     <Content Include="content\sci\img\icons\icon-favorite-on.png" />
     <Content Include="content\sci\img\icons\icon-favorite-off.png" />
     <Content Include="content\vendor\slick\fonts\slick.svg" />
@@ -460,16 +459,12 @@
     <Content Include="content\sci\css\contact-us.min.css" />
     <Content Include="content\sci\css\core.min.css" />
     <Content Include="content\sci\img\icons\icon-checked.png" />
-    <Content Include="content\sci\img\icons\icon-danger.png" />
     <Content Include="content\sci\img\icons\icon-download.png" />
     <Content Include="content\sci\img\icons\icon-drop-arrow.png" />
     <Content Include="content\sci\img\icons\icon-envelope-list.png" />
     <Content Include="content\sci\img\icons\icon-facebook.png" />
     <Content Include="content\sci\img\icons\icon-globe-large.png" />
     <Content Include="content\sci\img\icons\icon-globe-small.png" />
-    <Content Include="content\sci\img\icons\icon-linkedin-round-hover.png" />
-    <Content Include="content\sci\img\icons\icon-linkedin-round.png" />
-    <Content Include="content\sci\img\icons\icon-linkedin-round-clear.png" />
     <Content Include="content\sci\img\icons\icon-map-pin-blue-small.png" />
     <Content Include="content\sci\img\icons\icon-map-pin-blue.png" />
     <Content Include="content\sci\img\icons\icon-nav-main-menu.png" />

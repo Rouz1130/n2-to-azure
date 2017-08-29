@@ -13,7 +13,7 @@
 				Sleep on your keyboard claw pharetra et, jump kittens run faucibus sunbathe egestas purr. Sniff nam sniff run dolor chase the red dot, et rhoncus dolor bat. Tail flick enim shed everywhere consectetur, zzz bibendum attack tail flick accumsan eat the grass sleep on your keyboard.
 			</p>
 			<p class="featured-item-cta">
-				<button class="btn btn-primary">Call to action</button>
+				<button class="btn btn-primary"><span>Call to action</span></button>
 			</p>
 		</div>
 	</div>

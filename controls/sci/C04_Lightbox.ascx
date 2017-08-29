@@ -2,7 +2,7 @@
 
 <!-- Trigger -->
 <a href="#<%=UniqueDomId("lb")%>" type="button" class="btn btn-primary" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>">
-	Open Lightbox
+	<span>Open Lightbox</span>
 </a>
 
 <% if (Variation == 1) { %>
@@ -16,8 +16,8 @@
 			</div>
 			<div class="modal-body"><ks:Component runat="server" Code="<%# Child %>" /></div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Send</button>
-				<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary"><span>Send</span></button>
+				<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal"><span>Cancel</span></button>
 			</div>
 		</div>
 	</div>
@@ -34,8 +34,8 @@
 			</div>
 			<div class="modal-body"><iframe scrolling="no" class="iframe-height"></iframe></div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Send</button>
-				<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary"><span>Send</span></button>
+				<button type="button" class="btn btn-link btn-cancel" data-dismiss="modal"><span>Cancel</span></button>
 			</div>
 		</div>
 	</div>

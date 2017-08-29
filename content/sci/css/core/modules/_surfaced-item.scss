@@ -6,12 +6,27 @@
 	position: relative;
     background: $white;
     padding-bottom: 40px;
+    @include transform(scale(1));
+    @include transition(all, .15s);
+
+    &:hover {
+        @include transform(scale(1.01));
+        box-shadow: 2px 8px 20px rgba(31,32,68,.25);
+    }
 
     h3 {		
 	    font-size: 35px;
 		margin-top: 0;
         padding: 0 5%;
 	}
+
+    .surfaced-item-copy {
+          padding: 0 5%;
+
+          h3 {
+               padding: 0;
+          }
+    }
 
 	.glyph-link {
 		font-family: "Lato-Bold";
@@ -21,12 +36,15 @@
         margin-top: 20px;
         display: inline-block;
         cursor: pointer;
+        letter-spacing: 2.4px;
         @include rem-fallback(font-size, 10px / 12px);
 	}
 
     &.surfaced-item-vertical {
        text-align: center;
     }
+
+ 
 }
 
 .surfaced-item-image {
@@ -39,12 +57,11 @@
 	}
 }
 
-
 .surfaced-item-overlay {
 
     padding-bottom: 0;
     text-align: center;
-
+  
 	.surfaced-item-content-image {
 		display: block;
 		position: relative;
@@ -56,7 +73,7 @@
 
 		> .surfaced-item-label-image {
 			@include rem-fallback(padding, 10px / 16px);
-			
+		    
 			bottom: 50%;
             @include transform(translate(0,50%));
 			position: absolute;
