@@ -533,7 +533,7 @@
                 }
 
         .active {
-            border-bottom: dashed 0.5px;
+            border-bottom: dashed 0.5px #888;
         }
 
 
@@ -1040,6 +1040,9 @@
             .sub-nav-main li {
                 font-size: 7px;
             }
+            .btn-nav{
+                font-size:8px;
+            }
         }
 
         @media(max-width:310px) {
@@ -1170,9 +1173,7 @@
                 </div>
                 <div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 col-4">
                     <h6 class="text-uppercase font15 h6-style">Donations</h6>
-                    <span class="h5-style border-b">ASPCA of Williamson Country</span><br />
-                    <span class="h5-style border-b">Cancer Care of Houston</span><br />
-
+                    <span class="h5-style border-b">ASPCA of Williamson Country Cancer Care of Houston</span><br />
                 </div>
             </div>
 
@@ -1202,7 +1203,7 @@
                     <li class="text-uppercase text-center nav font12 ">
                         <a href="#">
                             <div class="container-icon">
-                                <amp-img class="cover" src="../content/sci/img/icons/chat.png" alt="icon" layout="fill"></amp-img>
+                                <amp-img class="cover"  src="../content/sci/img/icons/support.png" alt="icon" layout="fill"></amp-img>
                             </div>
                             how to support
                         </a>
@@ -1343,7 +1344,7 @@
                         <li class="text-uppercase text-center nav font12 ">
                             <a href="#">
                                 <div class="container-icon">
-                                    <amp-img class="cover" src="../content/sci/img/icons/chat.png" alt="icon" layout="fill"></amp-img>
+                                    <amp-img class="cover" src="../content/sci/img/icons/support.png" alt="icon" layout="fill"></amp-img>
                                 </div>
                                 how to support
                             </a>
@@ -1409,7 +1410,7 @@
                             <div id="sub-nav">
                                 <ul>
                                     <li class="text-uppercase nav active font12 "><a href="#">all memories</a></li>
-                                    <li class="text-uppercase nav font12 "><a href="#">from the family</a></li>
+                                    <li class="text-uppercase nav font12 "><a class="color-gr" href="#">from the family</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1427,7 +1428,7 @@
                                     <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                <amp-img class="cover"  src="../content/sci/img/icons/favorite-off.png"  alt="icon" layout="fill"></amp-img>
                                             </div>
                                             like
                                         </a>
@@ -1484,7 +1485,7 @@
                                     <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                <amp-img class="cover"  src="../content/sci/img/icons/favorite-on.png"  alt="icon" layout="fill"></amp-img>
                                             </div>
                                             like
                                         </a>
@@ -1518,7 +1519,7 @@
                                     <li class="text-uppercase text-center nav font10 ">
                                         <a href="#">
                                             <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                <amp-img class="cover" src="../content/sci/img/icons/favorite-off.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             like
                                         </a>
@@ -1568,7 +1569,7 @@
                                         <li class="text-uppercase text-center nav font10 ">
                                             <a href="#">
                                                 <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                    <amp-img class="cover" src="../content/sci/img/icons/favorite-off.png" alt="icon" layout="fill"></amp-img>
                                                 </div>
                                                 like
                                             </a>
@@ -1616,16 +1617,9 @@
                                         <li class="text-uppercase text-center nav font10 ">
                                             <a href="#">
                                                 <div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
+                                                    <amp-img class="cover" src="../content/sci/img/icons/favorite-off.png" alt="icon" layout="fill"></amp-img>
                                                 </div>
                                                 like
-                                                <%--<amp-img src="../content/sci/img/icons/donate.png"
-                                                    width="30"
-                                                    height="30"
-                                                    layout="responsive"
-                                                    alt="icon image">
-                                                </amp-img>--%>
-                                                
                                             </a>
                                         </li>
                                         <li class="text-uppercase text-center nav  font10 ">
@@ -1648,44 +1642,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                            <%--  --%>
-
-                            <%--<div class="mt-30 mb-30">
-                                <div class="sub-nav-main h-110">
-                                    <ul>
-                                        <li class="text-uppercase text-center nav  ">
-                                            <a class="pt-10" href="#">--%>
-                                                <%--<div class="container-icon">
-                                                    <amp-img class="cover" src="../content/sci/img/icons/donate.png" alt="icon" layout="fill"></amp-img>
-                                                </div>
-                                                like--%>
-                                                <%--<amp-img class="w-40" src="../content/sci/img/icons/donate.png"
-                                                    width="40"
-                                                    height="40"
-                                                    layout="responsive"
-                                                    alt="icon image">
-                                                </amp-img>
-                                                <h5 class="font10 mt-10">like</h5>
-                                            </a>
-                                        </li>
-                                        <li class="text-uppercase text-center nav   ">
-
-                                            <a href="#">
-                                              <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
-                                            </div>
-                                            share this memory
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>--%>
-
-                             
-
-                            <%--  --%>
 
                         </div>
 
