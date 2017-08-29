@@ -316,6 +316,7 @@
     <Content Include="ImageSpecs.aspx" />
     <Content Include="layouts\Location-detail.aspx" />
     <Content Include="layouts\Layout08.aspx" />
+    <Content Include="layouts\Obit-detail02.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x310.png" />
