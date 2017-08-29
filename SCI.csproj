@@ -322,6 +322,7 @@
     <Content Include="grunt\pds-css.js" />
     <Content Include="grunt\unit-tests.js" />
     <Content Include="ImageSpecs.aspx" />
+    <Content Include="layouts\Home.aspx" />
     <Content Include="layouts\Location-detail.aspx" />
     <Content Include="layouts\Layout08.aspx" />
     <Content Include="layouts\Obit-detail02.aspx" />
