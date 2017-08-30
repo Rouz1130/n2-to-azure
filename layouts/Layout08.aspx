@@ -4,6 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
@@ -252,7 +253,18 @@
             min-height: 250px;
             font-family: Lato-Regular, sans-serif;
         }
-
+        .lightbox{
+              background: rgba(0,0,0,0.8);
+              width: 10%;
+              height: 10%;
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+        }
+        .lightbox h1 {
+          color: white;
+        }
         .line {
             width: 170px;
             margin: auto;
@@ -667,7 +679,7 @@
 
         .close-msg{
                 position: relative;
-                top: -53px;
+                top: 0;
                 padding-right: 10px;
                 margin-right: 5%;
 
@@ -1068,7 +1080,9 @@
                 padding-left:0;
             }
         }
-        
+        .content-body{
+            background-color:#fff;
+        }
         /*.icon {
 	        background-repeat: no-repeat;
 	        display: inline-block;
@@ -1089,7 +1103,7 @@
                       </div>
                </a>
         <%-- section message --%>
-        <div class="content-msg mb-30">
+        <div class="content-msg mb-30 pt-40">
                  
                 
             <div class="row">
@@ -1434,12 +1448,13 @@
                                         </a>
                                     </li>
                                     <li class="text-uppercase text-center nav font10 ">
-
-                                        <a href="#">
+                                         <a href="#">
                                             <div class="container-icon">
                                                 <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             share this memory
+                                             
+                                             
                                              <%--<amp-social-share type="facebook"width="60" height="60"
                                                   data-param-text="Share memory"
                                                   data-param-url="https://www.facebook.com/dialog/share">

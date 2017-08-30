@@ -7,9 +7,12 @@
 
             <div class="component featured-item featured-item-full-overlay">
                 <img class="featured-item-image" src="../content/site/header.jpg">
+                <ks:Component runat="server" Code="B06.1" />
+                <ks:Component runat="server" Code="B06.6" />
                 <ks:Component runat="server" Code="A05.2" />
+
             </div>
-            <ks:Component runat="server" Code="A17.1" />
+            <ks:Component runat="server" Code="A17.1" />   
         </div>
 
     </div>
