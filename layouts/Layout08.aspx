@@ -2,6 +2,7 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    
     <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
@@ -9,7 +10,7 @@
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-
+    
     <meta name="viewport" content="width=device-width,minimum-scale=1">
 
     <style amp-custom>
@@ -254,16 +255,27 @@
             font-family: Lato-Regular, sans-serif;
         }
         .lightbox{
-              background: rgba(0,0,0,0.8);
-              width: 10%;
-              height: 10%;
-              position: absolute;
-              display: flex;
+              background: #fff;
+              width: 300px;
+              height: 100px;
+              position: relative;
+              display: inline-flex;
               align-items: center;
               justify-content: center;
+              top:40px;
+              border:2px solid #47d5cd;
         }
-        .lightbox h1 {
-          color: white;
+        /*.lightbox::after{
+            content: '';
+            border-bottom: 15px solid #47d5cd;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            position: absolute;
+            left: 45%;
+            top: -14px;
+        }*/
+        .lightbox h5 {
+          font-size:10px;
         }
         .line {
             width: 170px;
@@ -459,12 +471,30 @@
             /*background-image: url("../content/sci/img/icons/icon-share.png");
             background-repeat: no-repeat;
             background-position: center center;*/
-            background: url("../content/sci/img/icons/icon-share.png") center no-repeat;
+            background: url("../content/sci/img/icons/icon-facebook.png") center no-repeat;
             background-size: cover;
             /*border:solid 1px #47D5CD;*/
             outline:0;
         }
-
+        amp-social-share[type="email"] {
+            background: url("../content/sci/img/icons/icon-envelope-list.png") center no-repeat;
+            background-size: cover;
+            outline:0;
+        }
+        
+        amp-social-share[type="link"] {
+            background: url("../content/sci/img/icons/icon-share.png") center no-repeat;
+            background-size: cover;
+            outline:0;
+        }
+        .item-share h5{
+                top: -20px;
+                position: relative;
+                font-family: 'Lato-Bold';
+                color: #4A3C31;
+                font-size: 10px;
+                letter-spacing: 0.3em;
+        }
         /*   ---------- box ----------------*/
         .date-cont {
             position: relative;
@@ -1092,6 +1122,19 @@
         (200px, 300px, -200px, -300px, 100px, 100px, 502px, 499px, '../content/sci/img/icons.png', 'icon-facebook', );
 
         }*/
+        button.ampstart-btn.caps.m2{
+            background: transparent;
+            border: 0;
+            outline:0;
+            font-family: 'Lato-Bold';
+            color: #4A3C31;
+            font-size: 10px;
+            letter-spacing: 0.3em;
+        }
+
+            
+
+
     </style>
 
 
@@ -1448,20 +1491,60 @@
                                         </a>
                                     </li>
                                     <li class="text-uppercase text-center nav font10 ">
-                                         <a href="#">
+                                         <%--<a href="#">
                                             <div class="container-icon">
-                                                <amp-img class="cover" src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
+                                                <amp-img class="cover " src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
                                             </div>
                                             share this memory
-                                             
+                                          </a>--%>
                                              
                                              <%--<amp-social-share type="facebook"width="60" height="60"
                                                   data-param-text="Share memory"
                                                   data-param-url="https://www.facebook.com/dialog/share">
                                                 </amp-social-share>
                                             <h6 class="text-uppercase">Share this memory</h6>--%>
-                                        </a>
+                                        
+                                        <amp-lightbox id="my-lightbox" layout="nodisplay">
+                                            <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+                                                <div class="item-share">
+                                                   <amp-social-share type="facebook"width="60" height="60"
+                                                 data-param-app_id="254325784911610"
+                                                  data-param-url="https://www.facebook.com/dialog/share">
+                                                    </amp-social-share>
+                                                 <h5 class="text-uppercase">share to facebook </h5>
+                                                </div>
+                                              <div class="item-share">
+                                                   <amp-social-share type="email"width="60" height="60">
+                                                    </amp-social-share>
+                                                 <h5 class="text-uppercase">share by email</h5>
+                                                </div>
+                                                <div class="item-share">
+                                                   <amp-social-share type="link" width="60" height="60"
+                                                  data-param-text="Share memory"
+                                                  data-param-url="https://www.facebook.com/dialog/share">
+                                                  </amp-social-share>
+                                                 <h5 class="text-uppercase">share link</h5>
+                                                </div>
+                                             
+                                            </div>
+                                          </amp-lightbox>
+                                        <%-- <div class="item-share">
+                                                   <amp-social-share type="facebook"width="60" height="60"
+                                                 data-param-app_id="1637036423034179"
+                                                       data-param-text="test"
+                                                       data-param-attribution=""
+                                                       data-param-quote="hi"
+                                                  data-param-url="http://dignitymemorial.com">
+                                                    </amp-social-share>
+                                                 <h5 class="text-uppercase">share to facebook </h5>
+                                                </div>--%>
 
+                                        <button class="ampstart-btn caps m2" on="tap:my-lightbox" role="button" tabindex="0">
+                                           <div class="container-icon">
+                                                <amp-img class="cover " src="../content/sci/img/icons/icon-share.png" alt="icon" layout="fill"></amp-img>
+                                            </div>
+                                            share this memory
+                                          </button>
 
                                     </li>
 

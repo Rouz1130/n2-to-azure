@@ -1117,7 +1117,9 @@
                 padding-left: 0;
             }
         }
-
+          .content-body{
+            background-color:#fff;
+        }
         /*.icon {
 	        background-repeat: no-repeat;
 	        display: inline-block;
