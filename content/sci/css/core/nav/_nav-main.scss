@@ -6,10 +6,10 @@
 
 .nav-main-bar {
 	
-    margin: 0 auto;
+    @include inner-component();
+
 	clear: both;
-	padding-left: $nav-small-gutter;
-	padding-right: $nav-small-gutter;
+	
 	height: $nav-main-height;
 	position: relative;
 	z-index: 1;

@@ -25,12 +25,12 @@
 
 #footer-top {
 	background-color: #eeebe6;
-	padding: 50px $nav-small-gutter 20px;
+	padding: 50px $gutter-mobile 20px;
 }
 
 #footer-bottom {
 	background-color: $footer-bottom-background;
-	padding: 10px $nav-small-gutter;
+	padding: 10px $gutter-mobile;
    
 }
 
@@ -217,6 +217,7 @@
 	@include rem-fallback(font-size, 9px / 11px);
 	@include rem-fallback(line-height, 20px / 16px);
 	max-width: 280px;
+    text-align: center;
 }
 
 @media screen and (min-width: 606px) {
@@ -268,8 +269,8 @@
 	#footer-bottom,
 	#footer-cap,
 	#footer-top {
-		padding-left: $nav-large-gutter;
-		padding-right: $nav-large-gutter;
+		padding-left: $gutter-desktop;
+		padding-right: $gutter-desktop;
 	}
 
 	

@@ -4,7 +4,8 @@
 @import "variables";
 
 .nav-top-bar {
-    max-width: $xl-max;
+    @include inner-component();
+
     height: $nav-top-bar-height;
     position: relative;
     text-transform: uppercase;

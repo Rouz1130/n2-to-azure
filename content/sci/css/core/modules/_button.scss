@@ -14,6 +14,7 @@
     text-transform: uppercase;
 	max-width: 100%;
     letter-spacing: 2.4px;
+    @include transition(all);
 
      &:before {
            
@@ -38,8 +39,7 @@
 	&:active, &:focus, &:hover {
         background-color: transparent;
         border-color: $teal;
-        color: $white;
-
+      
         &:before {
             @include transform(scaleY(1));
             @include transition(all);
@@ -102,12 +102,22 @@
 	@extend .btn;
 }
 
-.btn-cancel.btn-link {
-	
+.btn-cancel {
+	background: transparent;
+    border-color: transparent;
+
+    &:before {
+        background: transparent;
+    }
 
 	&:active, &:focus, &:visited, &:hover {
-		
+		background: transparent;
+        border-color: transparent;
 	}
+
+    &:active, &:focus, &:hover {
+        color: $black;
+    }
 }
 
 .btn-badge {

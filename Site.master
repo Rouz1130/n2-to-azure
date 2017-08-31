@@ -4,7 +4,7 @@
 	<xom:MobileMenu runat="server" />
 	<div class="body-wrapper">
 		<xom:Header runat="server" />
-		<div class="body-content container-fluid">
+		<div class="body-content">
 			<asp:ContentPlaceHolder runat="server" ID="MainContent" />
 		</div>
 		<xom:Footer runat="server" />

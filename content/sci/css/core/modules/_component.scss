@@ -4,6 +4,8 @@
 .component {
 	*zoom: 1;
 	@include rem-fallback(margin-bottom, 48px / 16px);
+    padding-left: $gutter-mobile;
+	padding-right: $gutter-mobile;
 
 	&:after,
 	&:before {
@@ -51,6 +53,11 @@
 }
 
 @include if-min(md) {
+
+    .component {
+        padding-left: $gutter-desktop;
+	    padding-right: $gutter-desktop;
+    }
 
 	.component-height-sm {
 		height: 200px;

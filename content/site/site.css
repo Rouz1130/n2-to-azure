@@ -3,6 +3,10 @@
 	The styles defined here are only used on this temporary site.
 */
 
+.hide-for-test, .padded-over {
+    padding: 0 30px;
+}
+
 html.test .hide-for-test {
    display: none !important;
 }

@@ -70,11 +70,9 @@
 
 	<asp:PlaceHolder runat="server" Visible="<%# !String.IsNullOrEmpty(Component) %>">
 
-		<hr class="hide-for-test" />
+		<h3 class="padded-over"><asp:Literal runat="server" ID="ComponentCode" /> <span class="small"><asp:Literal runat="server" ID="VariationDescription" /></span></h3>
 
-		<h3><asp:Literal runat="server" ID="ComponentCode" /> <span class="small"><asp:Literal runat="server" ID="VariationDescription" /></span></h3>
-
-		<div id="layout-wrap">
+		<div id="layout-wrap ">
 
 			<div class="links hide-for-test">
 				Layouts:
@@ -85,14 +83,14 @@
 				<a href="#changelog" class="padded">Changelog</a>
 			</div>
 
-			<h2 id="full" class="separator">Full Layout</h2>
+			<h2 id="full" class="separator padded-over">Full Layout</h2>
 			<div class="row">
 				<div class="col-md-12 col-4 breakpoints">
 					<asp:PlaceHolder runat="server" ID="FourColumn" />
 				</div>
 			</div>
 
-			<h2 id="3-1" class="separator">3-1 Layout</h2>
+			<h2 id="3-1" class="separator padded-over">3-1 Layout</h2>
 			<div class="row">
 				<div class="col-md-9 col-3 breakpoints">
 					<asp:PlaceHolder runat="server" ID="ThreeColumn" />
@@ -102,7 +100,7 @@
 				</div>
 			</div>
 
-			<h2 id="2-2" class="separator">2-2 Layout</h2>
+			<h2 id="2-2" class="separator padded-over">2-2 Layout</h2>
 			<div class="row">
 				<div class="col-md-6 col-2 breakpoints">
 					<asp:PlaceHolder runat="server" ID="TwoColumn1" />
@@ -114,7 +112,7 @@
 
 			<% if (HttpContext.Current.IsNotRestricted()) { %>
 			<div class="hide-for-test">
-				<h2 id="snippet" class="separator">Snippet</h2>
+				<h2 id="snippet" class="separator padded-over">Snippet</h2>
 				<ks:Snippet runat="server" ID="Snippet" />
 
 				<h2 id="changelog" class="separator">Changelog</h2>

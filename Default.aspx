@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" Inherits="System.Web.UI.Page" %>
 
-<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+<asp:Content runat="server" ContentPlaceHolderID="MainContent" >
+    <div class="component">
 	<div class="jumbotron">
 		<h1>EMFL Common Templates</h1>
 		<p class="lead">Repository of front-end layouts and components</p>
@@ -96,11 +97,12 @@
 			<h3>Sample Layouts</h3>
 			<p><a runat="server" href="~/layouts/Layout01.aspx">Single column</a></p>
             <p><a runat="server" href="~/layouts/Location-detail.aspx">Location detail page</a></p>
+            <p><a runat="server" href="~/layouts/Layout08.aspx">Obits detail page</a></p>
 			<p><a runat="server" href="~/layouts/Layout05.aspx">3-1 column layout</a> | <a runat="server" href="~/layouts/Layout02.aspx">hero on top</a></p>
 			<p><a runat="server" href="~/layouts/Layout06.aspx">1-3 column layout</a> | <a runat="server" href="~/layouts/Layout03.aspx">hero on top</a></p>
             <p><a runat="server" href="~/layouts/Layout04.aspx">2-2 column layout</a></p>
 		</div>
 		<% } %>
 	</div>
-
+    </div>
 </asp:Content>

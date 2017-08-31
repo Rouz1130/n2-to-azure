@@ -3,7 +3,7 @@
 @import "../layout/breakpoints";
 
 .surfaced-item {
-	position: relative;
+    position: relative;
     background: $white;
     padding-bottom: 40px;
     @include transform(scale(1));
@@ -11,25 +11,25 @@
 
     &:hover {
         @include transform(scale(1.01));
-        box-shadow: 2px 8px 20px rgba(31,32,68,.25);
+        @include  box-shadow(2px, 8px, 20px,  rgba(0,0,0,.2));
     }
 
-    h3 {		
-	    font-size: 35px;
-		margin-top: 0;
+    h3 {
+        font-size: 35px;
+        margin-top: 0;
         padding: 0 5%;
-	}
+    }
 
     .surfaced-item-copy {
-          padding: 0 5%;
+        padding: 0 5%;
 
-          h3 {
-               padding: 0;
-          }
+        h3 {
+            padding: 0;
+        }
     }
 
-	.glyph-link {
-		font-family: "Lato-Bold";
+    .glyph-link {
+        font-family: "Lato-Bold";
         text-transform: uppercase;
         border-bottom: 2px solid $teal;
         padding-bottom: 6px;
@@ -38,66 +38,81 @@
         cursor: pointer;
         letter-spacing: 2.4px;
         @include rem-fallback(font-size, 10px / 12px);
-	}
+        position: relative;
 
-    &.surfaced-item-vertical {
-       text-align: center;
+        &:after {
+            content: '';
+            display: block;
+            width: 0;           
+            background: $teal;
+            @include transition(width);
+            height: .1rem;
+            margin-top: 6px;
+            position: absolute;
+        }
+
+        &:hover {
+            border-bottom-color: #26a9a1; //transparent;
+
+            &:after {
+                width: 100%;
+            }
+        }
     }
 
- 
+    &.surfaced-item-vertical {
+        text-align: center;
+    }
 }
 
 .surfaced-item-image {
-	
-	@include rem-fallback(margin-bottom, 1);
-	width: 100%;
 
-	&.static-map {
-		width: auto;
-	}
+    @include rem-fallback(margin-bottom, 1);
+    width: 100%;
+
+    &.static-map {
+        width: auto;
+    }
 }
 
 .surfaced-item-overlay {
-
     padding-bottom: 0;
     text-align: center;
-  
-	.surfaced-item-content-image {
-		display: block;
-		position: relative;
 
-		> img {
-			max-width: percentage(1 / 1);
-			width: percentage(1 / 1);
-		}
+    .surfaced-item-content-image {
+        display: block;
+        position: relative;
 
-		> .surfaced-item-label-image {
-			@include rem-fallback(padding, 10px / 16px);
-		    
-			bottom: 50%;
+        > img {
+            max-width: percentage(1 / 1);
+            width: percentage(1 / 1);
+        }
+
+        > .surfaced-item-label-image {
+            @include rem-fallback(padding, 10px / 16px);
+            bottom: 50%;
             @include transform(translate(0,50%));
-			position: absolute;
-			width: percentage(1 / 1);
+            position: absolute;
+            width: percentage(1 / 1);
 
-			h3 {
-				color: $white;
-                text-transform: uppercase;
-				font-family: "Lato-Bold";
-				@include rem-fallback(font-size, 30px / 20px);
-				@include rem-fallback(margin, 2px / 16px);
-				text-align: center;
+            h3 {
+                color: $white;
+
+                @include rem-fallback(font-size, 30px / 20px);
+                @include rem-fallback(margin, 2px / 16px);
+                text-align: center;
                 line-height: 1.5em;
-			}
-		}
+            }
+        }
     }
 
-     .surfaced-item-copy {
+    .surfaced-item-copy {
         display: none;
     }
 
     @include if-min(md) {
         .surfaced-item-content-image {
-              
+
             > .surfaced-item-label-image {
                 position: static;
                 background: $white;
@@ -107,10 +122,10 @@
                 h3 {
                     font-family: "MrsEaves-Italic";
                     color: $black;
-                    text-transform: none;      
+                    text-transform: none;
                     font-size: 48px;
-                    margin: 0;     
-                    line-height: 1em;      
+                    margin: 0;
+                    line-height: 1em;
                 }
             }
         }
@@ -123,37 +138,37 @@
 }
 
 .bp-md {
-	> .surfaced-item.surfaced-item-horizontal {
-		display: table;
-		width: 100%;
+    > .surfaced-item.surfaced-item-horizontal {
+        display: table;
+        width: 100%;
 
-		.surfaced-intro-text {
-			display: table-caption;
-		}
+        .surfaced-intro-text {
+            display: table-caption;
+        }
 
-		.surfaced-item-horizontal-row {
-			display: table-row;
-		}
+        .surfaced-item-horizontal-row {
+            display: table-row;
+        }
 
-		.surfaced-item-image {
-			display: table-cell;
-			vertical-align: top;
+        .surfaced-item-image {
+            display: table-cell;
+            vertical-align: top;
 
-			&.static-map {
-				display: inline-block;
-			}
-		}
+            &.static-map {
+                display: inline-block;
+            }
+        }
 
-		.surfaced-item-copy {
-			display: table-cell;
-			@include rem-fallback(padding-bottom, 16px / 16px);
-			@include rem-fallback(padding-left, 1);
-			vertical-align: top;
-			width: 75%;
-		}
+        .surfaced-item-copy {
+            display: table-cell;
+            @include rem-fallback(padding-bottom, 16px / 16px);
+            @include rem-fallback(padding-left, 1);
+            vertical-align: top;
+            width: 75%;
+        }
 
         h3 {
             font-size: 48px;
         }
-	}
+    }
 }

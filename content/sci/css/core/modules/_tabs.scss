@@ -1,4 +1,5 @@
 ﻿@import "../base/colors";
+@import "../base/mixins";
 
 .no-js {
 	.tab-list-items {
@@ -20,23 +21,49 @@
 }
 
 .tab-list-items {
+    
 	> .nav-tabs {
 		border-bottom: none;
 
 		> li {
 			margin-right: 8px;
+            float: none;
+            display: inline-block;
 
 			> a {
-				background: $black8;
+				background: transparent;
 				border-radius: 0;
-				color: $black;
+				color: $grey;
+                text-transform: uppercase;
+                font-size: 18px;
+                border: none;
+                letter-spacing: 2.4px;
+                font-family: Lato-Bold;
+                display: inline-block;
+                line-height: 35px;
+
+                &:hover {
+                     font-family: Lato-Black;
+                     background: transparent;
+                     color: $black;
+                }
 			}
 
 			&.active > a {
-				border-top: 3px solid $teal;
-				padding: 8px 15px 10px;
-				background: $white;
+			    font-family: Lato-Black;
+                border: none;
                 outline:none;
+                background: transparent;
+                color: $black;
+              
+                &:after {
+                    content: '';
+                    height: 2px;
+                    width: 100%;
+                    background: linear-gradient(to left, #b7b1ad 50%, transparent 0%) repeat-x bottom;
+                    background-size: 7px 2px;
+                    display: block;
+                }
 			}
 
             &::selection > a {
@@ -46,7 +73,7 @@
 	}
 
 	.content-list-items {
-		border: 1px solid $black8;
+		border: none;
 		padding: 15px;
 	}
 }

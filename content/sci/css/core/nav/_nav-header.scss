@@ -6,7 +6,8 @@
 .nav-header {
     background-color: #f8f7f4;
     margin: 0 auto;
-   
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
     position: relative;
     z-index: 9;
 
@@ -57,4 +58,12 @@
 
 .nav-header-divider {
     display: none;
+}
+
+@include if-min(md) {
+
+    .nav-header {
+        padding-left: $gutter-desktop;
+	    padding-right: $gutter-desktop;
+    }
 }

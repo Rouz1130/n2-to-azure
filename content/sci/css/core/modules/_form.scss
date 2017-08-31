@@ -6,7 +6,7 @@ $input-lg-height: 56px;
 
 @mixin checkables() {
 	background-color: $white;
-	border: 1px solid $black;
+	border: 1px solid $light-tan;
 	cursor: pointer;
 }
 
@@ -67,7 +67,7 @@ $input-lg-height: 56px;
 		height: $input-lg-height;
 		line-height: 1.5rem;
 		padding-left: 24px;
-        border: 2px solid $black;
+        border: 1px solid $light-tan;
 
 		&:focus {
 			background-color: $white;
@@ -86,9 +86,7 @@ $input-lg-height: 56px;
 }
 
 .group-info {
-	border-bottom: 1px solid $black8;
-	border-left: 1px solid $black8;
-	border-right: 1px solid $black8;
+	
 	color: $grey;
 	display: table;
 	height: 55px;
@@ -222,19 +220,19 @@ $input-lg-height: 56px;
 	@include border-radius(0);
 	font-family: "Lato"; 
 	background-color: $white;
-	border: 2px solid $black;
+	border: 1px solid $light-tan;
 	color: $black;
 	height: 50px;
 }
 
 .form-control:focus {
 	background-color: $white;
-	border: 2px solid $teal;
+	border: 1px solid $teal;
 }
 
 .form-control.error {
 	background-color: #fffaba;
-	border: solid 2px $error-color;
+	border: solid 1px $error-color;
 }
 
 .form-group label {

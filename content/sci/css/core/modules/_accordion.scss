@@ -2,14 +2,6 @@
 @import "../base/mixins";
 @import "icons-generated";
 
-@mixin accordion-border($size, $sides...) {
-	$max: length($sides);
-
-	@for $i from 1 through $max {
-		border-#{nth($sides, $i)}: #{$size}px solid $black8;
-	}
-}
-
 .no-js {
 	.panel {
 		border-left-width: 1px !important;
@@ -41,26 +33,30 @@
 	.panel {
 		@extend .panel-no-radius;
 		border: none;
-		@include accordion-border(6, left);
 		@include box-shadow(none);
-		@include transition(border-left-color);
+        background: transparent;
 
 		> .panel-heading {
 			@extend .panel-no-radius;
-			@include transition(background-color);
-			@include accordion-border(1, top, right);
-			background-color: $black8;
-			padding-right: $icon-circle-plus-width + 20px;
+			border: 1px solid $tan;
+			background-color: $white;
+            padding: 0 $caret-width + 20px 0 20px; 
 			position: relative;
+            margin: 20px 0;
 
 			> a {
 				color: $black;
 				display: block;
-				font-weight: bold;
+				font-family: "MrsEaves-Italic";
+                font-size: 30px;
                 outline:none;
 
+                &:focus {
+                    text-decoration: none;
+                }
+
 				> i {
-					@include sprite-position($icon-circle-plus);
+					@include sprite-position($caret);
 				}
 			}
 
@@ -73,31 +69,31 @@
 				position: absolute;
 				right: 10px;
 				top: 10px;
+				@include sprite-position($caret);
+                width: $caret-width;
+                height: $caret-height;
 			}
 
 			+ .panel-collapse > .panel-body {
-				@include accordion-border(1, bottom, right);
+				
 				border-top: none;
 			}
 		}
 
+        .panel-body {
+            padding: 0 20px;
+        }
+
 		&.active {
-			border-left-color: $teal;
+			
 
 			> .panel-heading {
-				background-color: $white;
-
+				
 				a > i {
-					@include sprite-position($icon-circle-minus);
+					@include transform(rotate(180deg));
 				}
 			}
 
-			.panel-collapse {
-
-				> .panel-body:last-child {
-					margin-bottom: 0;
-				}
-			}
 		}
 	}
 }

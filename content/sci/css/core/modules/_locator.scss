@@ -81,22 +81,19 @@
             min-width: 30%;
             letter-spacing: 2.4px;
             vertical-align: top;
-          
+
 
             .icon {
                 display: block;
                 margin: 0 auto;
             }
-
         }
     }
 
     .static-map {
         width: 100%;
-
-        img {
-            width: 100%;
-        }
+        background-size: cover;
+        min-height: 350px;
     }
 }
 
@@ -124,30 +121,19 @@
     .locator-panel {
 
         .locator-row {
-            display: table-row;
+
+            @include flex();
             margin: 0 auto;
-            width: 90%;
+            max-width: 1200px;
 
             > div {
-                display: table-cell;
+                @include flex-item();
             }
         }
 
         .location-copy {
             vertical-align: top;
-            width: 40%;
-        }
-    }
-
-    .col-2, .col-3, .col-4 {
-
-        .locator-panel {
-
-            .locator-data {
-
-                .locator-information {
-                }
-            }
+            width: 30%;
         }
     }
 }
