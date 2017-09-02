@@ -5,14 +5,9 @@
 .surfaced-item {
     position: relative;
     background: $white;
-    padding-bottom: 40px;
-    @include transform(scale(1));
-    @include transition(all, .15s);
+    padding: 0 0 40px;
+    @include lift-card();
 
-    &:hover {
-        @include transform(scale(1.01));
-        @include  box-shadow(2px, 8px, 20px,  rgba(0,0,0,.2));
-    }
 
     h3 {
         font-size: 35px;
@@ -29,35 +24,7 @@
     }
 
     .glyph-link {
-        font-family: "Lato-Bold";
-        text-transform: uppercase;
-        border-bottom: 2px solid $teal;
-        padding-bottom: 6px;
         margin-top: 20px;
-        display: inline-block;
-        cursor: pointer;
-        letter-spacing: 2.4px;
-        @include rem-fallback(font-size, 10px / 12px);
-        position: relative;
-
-        &:after {
-            content: '';
-            display: block;
-            width: 0;           
-            background: $teal;
-            @include transition(width);
-            height: .1rem;
-            margin-top: 6px;
-            position: absolute;
-        }
-
-        &:hover {
-            border-bottom-color: #26a9a1; //transparent;
-
-            &:after {
-                width: 100%;
-            }
-        }
     }
 
     &.surfaced-item-vertical {
@@ -120,7 +87,6 @@
                 @include transform(unset);
 
                 h3 {
-                    font-family: "MrsEaves-Italic";
                     color: $black;
                     text-transform: none;
                     font-size: 48px;

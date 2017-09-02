@@ -5,54 +5,84 @@
 
 .nav-main-list-trigger,
 .nav-main-list {
-	float: right;
+    float: right;
 }
 
 .nav-main-list-trigger {
-	padding-top: 21px;
+    padding-top: 21px;
 
-	> .icon-hamburger {
-		background-color: $nav-main-item-hover-text;
-		display: block;
-		height: 2px;
-		margin: 11px auto 15px;
-		position: relative;
-		width: 25px;
+    > .icon-hamburger {
+        position: relative;
+        width: 25px;
+        display: block;
+        margin: 8px auto 20px;
 
-		&:before, &:after {
-			background-color: $teal;
-			content: " ";
-			display: block;
-			height: 2px;
-			position: absolute;
-			top: -8px;
-			width: 25px;
-		}
+        .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+            background-color: $teal;
+            height: 2px;
+            position: absolute;
+            width: 25px;
+            display: block;
+        }
 
-		&:after {
-			top: 8px;
-		}
-	}
+        .hamburger-inner {
+            top: auto;
+            @include transition(transform, 75ms, cubic-bezier(.55,.055,.675,.19));
+
+            &:before, &:after {
+                content: " ";
+            }
+
+            &:after {
+                transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+                bottom: -8px;
+            }
+
+            &:before {
+                top: -8px;
+                @include transition(transform, .15s, ease);
+                transition: top 75ms ease .12s,opacity 75ms ease;
+            }
+        }
+    }
+
+    &.nav-main-item-active > .icon-hamburger .hamburger-inner {
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(.215,.61,.355,1);
+        @include transform(rotate(45deg));
+
+        &:before {
+            top: 0;
+            transition: top 75ms ease,opacity 75ms ease .12s;
+            opacity: 0;
+        }
+
+        &:after {
+            bottom: 0;
+            transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+            @include transform(rotate(-90deg));
+        }
+    }
 }
 
 .nav-main-list {
-	display: none;
+    display: none;
 }
 
 @include if-min(lg) {
-	.nav-main-list-trigger {
-		display: none;
-	}
+    .nav-main-list-trigger {
+        display: none;
+    }
 
-	.nav-main-list {
-		display: block;
-		height: 100%;
-		margin-bottom: 0;
+    .nav-main-list {
+        display: block;
+        height: 100%;
+        margin-bottom: 0;
         padding-left: 0;
         text-transform: uppercase;
 
         > li {
-                      
+
             &:after {
                 content: ' ';
                 @include sprite($flourish-vert);
@@ -66,28 +96,28 @@
             }
 
             &:last-child:after {
-               display: none;
+                display: none;
             }
         }
 
-		&.nav-main-list-condensed {
-			display: table;
+        &.nav-main-list-condensed {
+            display: table;
 
-			> li {
-				display: table-cell;
-				float: none;
-				padding-bottom: 0;
-				padding-top: 0;
-				vertical-align: middle;
-                
+            > li {
+                display: table-cell;
+                float: none;
+                padding-bottom: 0;
+                padding-top: 0;
+                vertical-align: middle;
 
-				> a {
-					display: table-cell;
-					height: $nav-main-height;
-					padding: 0;
-					vertical-align: middle;
-				}
-			}
-		}
-	}
+
+                > a {
+                    display: table-cell;
+                    height: $nav-main-height;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 }

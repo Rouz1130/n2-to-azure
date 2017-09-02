@@ -53,19 +53,26 @@
                 </div>
                 
                 <div id="obits">
-                       <h2>Obituraries</h2>
-                      <ks:Component runat="server" Code="L01.4" Child="S01.1" />
+                       <h2>Recent Obituraries</h2>
+                    <div class="col-md-10 col-4 centered-col breakpoints bp-xs bp-sm bp-md bp-lg bp-xl bp-max-xl">
+					
+                      <ks:Component runat="server" Code="L01.2" Child="T03.2" />
                      <ks:Component runat="server" Code="B05.1" />
                 </div>
+                    </div>
                 
                 <div id="events">
-                    
-
+                      <h2>Events</h2>
+                    <div class="col-md-10 col-4 centered-col breakpoints bp-xs bp-sm bp-md bp-lg bp-xl bp-max-xl">
+                      <ks:Component runat="server" Code="L01.2" Child="A20.1" />
+                      <ks:Component runat="server" Code="B05.1" />
+                        </div>
                 </div>
                 
                 <div id="associates">
-                    
-
+                     <div class="col-lg-8 col-md-10 centered-col">
+                    <h2>Lorem ipsum dolor sit amet, erat consectetur elit donec </h2>
+                         </div>
                 </div>
 
             </div>

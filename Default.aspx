@@ -9,8 +9,8 @@
 	<div class="row">
 		<div class="col-md-4">
 			<h3>Utilities</h3>
-			<p><a runat="server" href="~/KitchenSink.aspx" class="glyph-link">Kitchen Sink</a></p>
-			<p><a runat="server" href="~/layouts/ComponentTest.aspx" class="glyph-link">Component Test Page</a></p>
+			<p><a runat="server" href="~/KitchenSink.aspx" >Kitchen Sink</a></p>
+			<p><a runat="server" href="~/layouts/ComponentTest.aspx" >Component Test Page</a></p>
 			<!--<p><a runat="server" href="~/ImageSpecs.aspx" class="glyph-link">Image Specifications</a></p> -->
 		
 			<!--<h3>Header Scenarios</h3>

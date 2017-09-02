@@ -1,24 +1,24 @@
 ﻿<%@ Control Language="C#" Inherits="XOMFL.CommonComponents.Controls.VariantControlBase" %>
 
-<div class="component table-responsive">
-	<table class="table table-bordered event-list">
+<div class="component ">
+	<table class="event-list">
 		<tbody>
 			<tr>
 				<td class="event-list-date">
-					<span class="event-list-month">Apr</span>
+					
 					<span class="event-list-day">15</span>
+                    <span class="header-subtitle">April</span>
 				</td>
 				<td class="event-list-description">
-					<span class="event-list-description-details">
-						<img class="event-list-img" src="~/content/site/faux-img.png" runat="server" />
-						<span class="event-list-name">
-							<span class="event-list-title">[Event Name] ([Type])</span>
-							Event description shows here and should take a couple of lines<br />this is the second line
-						</span>
-					</span>
+					
+						<h3>Mother's Day Service</h3>
+						<p class="event-list-name">
+							1:00pm - 3:30pm<br/>
+                            Garden of Angels
+						</p>
+				
+                    <a class="glyph-link">Learn more</a>
 				</td>
-				<td>[City - State]</td>
-				<td>[Country]</td>
 			</tr>
 		</tbody>
 	</table>

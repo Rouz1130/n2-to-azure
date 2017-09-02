@@ -5,306 +5,309 @@
 $input-lg-height: 56px;
 
 @mixin checkables() {
-	background-color: $white;
-	border: 1px solid $light-tan;
-	cursor: pointer;
+    background-color: $white;
+    border: 1px solid $light-tan;
+    cursor: pointer;
 }
 
 @mixin formGroupLabel {
-	@include rem-fallback(font-size, 14px / 12px);
-	font-weight: normal;
-    text-transform: uppercase;
-	width: 100%;
+    @include font-uppercase();
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    color: $grey;
 }
 
 .checkboxes, .radio-buttons {
 
-	> label {
-		@include formGroupLabel;
-	}
+    > label {
+        @include formGroupLabel;
+    }
 
-	> .form-group {
-		@include rem-fallback(margin-bottom, 10px / 16px);
+    > .form-group {
+        @include rem-fallback(margin-bottom, 10px / 16px);
 
-		> label {
-			margin-bottom: 0;
-		}
-	}
+        > label {
+            margin-bottom: 0;
+        }
+    }
 
-	> label.error {
-		background-color: $error-color;
-		color: #fff;
-		display: block;
-		font-weight: normal;
-		@include rem-fallback(font-size, 16px / 16px);
-		@include rem-fallback(margin-top, 10px / 16px);
-		@include rem-fallback(padding, 10px / 16px);
-	}
+    > label.error {
+        background-color: $error-color;
+        color: #fff;
+        display: block;
+        font-weight: normal;
+        @include rem-fallback(font-size, 16px / 16px);
+        @include rem-fallback(margin-top, 10px / 16px);
+        @include rem-fallback(padding, 10px / 16px);
+    }
 }
 
 .form-control {
-	@include box-shadow(none);
-	@include rem-fallback(font-size, 16px / 16px);
+    @include box-shadow(none);
+    @include rem-fallback(font-size, 16px / 16px);
 }
 
 .form-group-lg {
-	margin-bottom: 1.85em;
-	display: table;
+    margin-bottom: 1.85em;
+    display: table;
 
-	.form-control {
-		@include border-radius(0);
-		@include text-truncate;
+    .form-control {
+        @include border-radius(0);
+        @include text-truncate;
 
-		@include placeholder() {
-			color: $black;
-			font-family: "Lato";
-		}
+        @include placeholder() {
+            color: $grey;
+            font-family: "Lato";
+        }
 
-		background-color: $white;
-		display: table-cell;
-		font-family: "Lato";
-		@include rem-fallback(font-size, 16px / 16px);
-		height: $input-lg-height;
-		line-height: 1.5rem;
-		padding-left: 24px;
+        background-color: $white;
+        display: table-cell;
+        font-family: "Lato";
+        @include rem-fallback(font-size, 16px / 16px);
+        height: $input-lg-height;
+        line-height: 1.5rem;
+        padding-left: 24px;
         border: 1px solid $light-tan;
 
-		&:focus {
-			background-color: $white;
-		}
-	}
+        &:focus {
+            background-color: $white;
+        }
+    }
 
-	.form-group-btn {
-		display: table-cell;
-		vertical-align: middle;
-		width: 1%;
-	}
+    .form-group-btn {
+        display: table-cell;
+        vertical-align: middle;
+        width: 1%;
+    }
+
+    &.info {
+        margin-bottom: 0;
+    }
 }
 
-.form-group-lg.info {
-	margin-bottom: 0;
-}
 
 .group-info {
-	
-	color: $grey;
-	display: table;
-	height: 55px;
-	margin-bottom: 1.85em;
-	padding-top: 15px;
-	position: relative;
-	width: 100%;
+    color: $grey;
+    display: table;
+    height: 55px;
+    margin-bottom: 1.85em;
+    padding-top: 15px;
+    position: relative;
+    width: 100%;
 
-	p {
-		display: table-cell;
-		text-align: center;
-		width: auto;
+    p {
+        display: table-cell;
+        text-align: center;
+        width: auto;
 
-		span {
-			font-family: "Lato-Bold";
-		}
-	}
+        span {
+            font-family: "Lato-Bold";
+        }
+    }
 }
 
 .form-group {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 
-	label {
-		cursor: pointer;
-	}
+    label {
+        cursor: pointer;
+    }
 
-	> input[type="checkbox"] {
-		display: none;
+    > input[type="checkbox"] {
+        display: none;
 
-		+ label {
-			@include rem-fallback(font-size, 16px / 16px);
-			padding-left: 27px;
+        + label {
+            @include rem-fallback(font-size, 16px / 16px);
+            padding-left: 27px;
             text-transform: none;
 
-			&:before {
-				@include checkables;
-				content: "";
-				display: inline-block;
-				height: 20px;
-				margin-right: 7px;
-				margin-left: -27px;
-				vertical-align: sub;
-				width: 20px;
-			}
+            &:before {
+                @include checkables;
+                content: "";
+                display: inline-block;
+                height: 20px;
+                margin-right: 7px;
+                margin-left: -27px;
+                vertical-align: sub;
+                width: 20px;
+            }
 
-			.icon {
-				display: none;
-			}
-		}
+            .icon {
+                display: none;
+            }
+        }
 
-		&:checked + label {
-			border: none;
-			background: transparent;
+        &:checked + label {
+            border: none;
+            background: transparent;
 
-			&:before {
-				@include sprite($icon-checked);
-				border: 1px solid $teal;
+            &:before {
+                @include sprite($icon-checked);
+                border: 1px solid $teal;
+                background-color: #d3f4f2;
+            }
+
+            .icon {
+                left: -1px;
+                margin: 0;
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        &:disabled + label {
+            border: none;
+            cursor: not-allowed;
+        }
+    }
+
+    > input[type="radio"] {
+        display: none;
+
+        + label {
+            @include rem-fallback(font-size, 16px / 16px);
+            position: relative;
+            padding-left: 25px;
+            text-transform: none;
+
+            &:before {
+                @include checkables;
+                @include border-radius(100%);
+                content: "";
+                display: inline-block;
+                height: 18px;
+                margin-right: 7px;
+                margin-left: -25px;
+                position: relative;
+                top: 3px;
+                width: 18px;
+            }
+        }
+
+        &:checked + label {
+            &:before {
+                @include border-radius(100%);
+               
+                background-color: #d3f4f2;
+                border: 1px solid $teal;
+                display: inline-block;
+                height: 18px;
+                position: relative;
+                width: 18px;
+            }
+
+            .icon {
+                @include border-radius(100%);
+                @include box-shadow(0, 0, 3px, $teal);
                 background-color: $teal;
-			}
+                display: inline-block;
+                height: 6px;
+                left: 6px;
+                position: absolute;
+                top: 9px;
+                width: 6px;
+            }
+        }
 
-			.icon {
-				left: -1px;
-				margin: 0;
-				position: relative;
-				top: 4px;
-			}
-		}
-
-		&:disabled + label {
-			border: none;
-			cursor: not-allowed;
-		}
-	}
-
-	> input[type="radio"] {
-		display: none;
-
-		+ label {
-			@include rem-fallback(font-size, 16px / 16px);
-			position: relative;
-			padding-left: 25px;
-
-			&:before {
-				@include checkables;
-				@include border-radius(100%);
-				content: "";
-				display: inline-block;
-				height: 18px;
-				margin-right: 7px;
-				margin-left: -25px;
-				position: relative;
-				top: 3px;
-				width: 18px;
-			}
-		}
-
-		&:checked + label {
-			&:before {
-				@include border-radius(100%);
-				@include box-shadow(0, 0, 5px, $teal);
-				background-color: $white;
-				border: 1px solid $teal;
-				display: inline-block;
-				height: 18px;
-				position: relative;
-				width: 18px;
-			}
-
-			.icon {
-				@include border-radius(100%);
-				@include box-shadow(0, 0, 3px, $teal);
-				background-color: $teal;
-				display: inline-block;
-				height: 6px;
-				left: 6px;
-				position: absolute;
-				top: 9px;
-				width: 6px;
-			}
-		}
-
-		&:disabled + label {
-			border: none;
-			cursor: not-allowed;
-		}
-	}
+        &:disabled + label {
+            border: none;
+            cursor: not-allowed;
+        }
+    }
 }
 
 .form-group .form-control,
 .input-group .form-control {
-	@include border-radius(0);
-	font-family: "Lato"; 
-	background-color: $white;
-	border: 1px solid $light-tan;
-	color: $black;
-	height: 50px;
+    @include border-radius(0);
+    font-family: "Lato";
+    background-color: $white;
+    border: 1px solid $light-tan;
+    color: $grey;
+    height: 50px;
 }
 
 .form-control:focus {
-	background-color: $white;
-	border: 1px solid $teal;
+    background-color: $white;
+    border: 1px solid $teal;
 }
 
 .form-control.error {
-	background-color: #fffaba;
-	border: solid 1px $error-color;
+    background-color: #fffaba;
+    border: solid 1px $error-color;
 }
 
-.form-group label {
-	@include formGroupLabel;
+.form-group {
 
-	&.error {
-		background-color: $error-color;
-		color: #fff;
-		display: block;
-		@include rem-fallback(font-size, 16px / 16px);
-		@include rem-fallback(padding, 10px / 16px);
-	}
-}
+    label {
+        @include formGroupLabel;
 
-.form-group .input-optional {
-	@include rem-fallback(font-size, 13px / 16px);
-	font-family: "Lato-Bold"; 
-	float: right;
-	color: #808080;
-	margin-top: 10px;
-}
+        &.error {
+            background-color: $error-color;
+            color: #fff;
+            display: block;
+            @include rem-fallback(font-size, 16px / 16px);
+            @include rem-fallback(padding, 10px / 16px);
+        }
+    }
 
-.form-group textarea.form-control {
-	resize: none;
-	height: 250px;
-	position: relative;
+    .input-optional {
+        @include rem-fallback(font-size, 13px / 16px);
+        float: right;
+        color: $grey;
+    }
+
+    textarea.form-control {
+        resize: none;
+        height: 250px;
+        position: relative;
+    }
 }
 
 .select {
-	background-color: $white;
-	overflow: hidden;
-	height: 50px;
-	position: relative;
-	width: 100%;
+    background-color: $white;
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+    width: 100%;
 
-	.icon-drop-arrow {
-		position: absolute;
-		right: 20px;
-		top: 20px;
-		pointer-events: none;
-		z-index: 2;
-	}
+    .icon-drop-arrow {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        pointer-events: none;
+        z-index: 2;
+    }
 
-	> .select-wrapper {
-		left: 0;
-		position: absolute;
-		right: 0;
-		z-index: 1;
+    > .select-wrapper {
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
 
-		> select {
-			-webkit-appearance: none;
-			background-color: transparent !important;
-		}
-	}
+        > select {
+            -webkit-appearance: none;
+            background-color: transparent !important;
+        }
+    }
 }
 
 /* Fix for inability to hide IE8-10 dropdown arrow */
 .ie8 .select-wrapper,
 .ie9 .select-wrapper,
 .ie10 .select-wrapper {
-	right: -45px;
-	z-index: 3;
+    right: -45px;
+    z-index: 3;
 }
 
 .form-inline {
-	.form-group {
-		margin-right: 25px;
+    .form-group {
+        margin-right: 25px;
 
-		&:last-child {
-			margin-right: 0;
-		}
-	}
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 /* 
@@ -312,24 +315,24 @@ $input-lg-height: 56px;
 	so we don't have to override for ajax-form below.
 */
 .modal-body {
-	.form-inline {
-		margin-bottom: 20px;
+    .form-inline {
+        margin-bottom: 20px;
 
-		.form-group {
-			display: block;
-			margin-bottom: 0;
-			margin-right: 0;
-		}
-	}
+        .form-group {
+            display: block;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+    }
 }
 
 .ajax-form {
-	.modal-body {
-		.form-inline {
-			.form-group {
-				display: inline-block;
-				margin-right: 25px;
-			}
-		}
-	}
+    .modal-body {
+        .form-inline {
+            .form-group {
+                display: inline-block;
+                margin-right: 25px;
+            }
+        }
+    }
 }

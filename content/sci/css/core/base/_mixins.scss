@@ -78,6 +78,17 @@
     font-family: $name, Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
 }
 
+@mixin font-header() {
+    font-family: "MrsEaves-Italic", Georgia, Times, Times New Roman, serif;
+    display: block;
+    font-style: italic;
+}
+
+@mixin font-uppercase() {
+    text-transform: uppercase;  
+    letter-spacing: 2.4px;
+}
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     border-radius: $radius;
@@ -224,4 +235,14 @@
 @mixin inner-component() {
       max-width: $xl-max;
       margin: 0 auto;
+}
+
+@mixin lift-card() {
+    @include transform(scale(1));
+    @include transition(all, .15s);
+
+    &:hover {
+        @include transform(scale(1.01));
+        @include  box-shadow(2px, 8px, 20px,  rgba(0,0,0,.2));
+   }
 }

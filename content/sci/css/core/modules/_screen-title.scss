@@ -41,10 +41,31 @@
 }
 
 .special-screen-title-text {
-	> h1 {
-		margin-top: 0;
-	}
+    > h1 {
+        margin-top: 0;
+    }
 }
+
+
+.screen-title-split-left, .screen-title-split-right {
+    background: $white;
+
+    .screen-title-image {
+        margin-left: -$gutter-mobile;
+        margin-right: -$gutter-mobile;
+    }
+}
+
+.screen-title-split-right {
+
+    .screen-title-image {
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
 
 @include if-min(lg) {
 
@@ -78,7 +99,6 @@
         }
 
         .screen-title-overlay-block {
-          
             display: block;
             padding: 15px 20px;
             position: absolute;
@@ -90,7 +110,6 @@
 
                 > .screen-title-title {
                     @extend .screen-title-overlay-block;
-                  
                     color: $white;
                     top: 50%;
                     left: 50%;
@@ -136,15 +155,23 @@
         }
 
         .screen-title-split-left, .screen-title-split-right {
+
+
             .screen-title-image, .screen-title-copy {
                 float: left;
                 position: relative;
                 padding: 0 15px;
                 width: 50%;
             }
+
+            .screen-title-copy {
+                padding: 15px;
+            }
         }
 
         .screen-title-split-left {
+            padding-left: 0;
+
             .screen-title-image {
                 padding-left: 0;
             }
@@ -153,15 +180,36 @@
                 padding-right: 0;
             }
         }
-
+        // This is used for location details - recent obits cards
         .screen-title-split-right {
+            padding-right: 0;
+
+            @include lift-card();
+
+            .screen-title-copy-wrap {
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            .header-subtitle {
+                margin-bottom: 0;
+            }
+
             .screen-title-image {
                 float: right;
                 padding-right: 0;
+                overflow: hidden;
+                height: 100%;
+                width: 35%;
             }
 
             .screen-title-copy {
-                padding-left: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include transform(translate(-80%, -50%));
             }
         }
 
@@ -184,7 +232,7 @@
                 max-width: none;
                 top: 0;
                 position: static;
-                padding:10px 0 0 0;
+                padding: 10px 0 0 0;
             }
         }
     }

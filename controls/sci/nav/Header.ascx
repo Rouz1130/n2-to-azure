@@ -26,7 +26,7 @@
 				<img src="<%= ResolveUrl("~/content/sci/img/logos/logo.png") %>" />
 			</a>
 			<a href="#" class="nav-main-item nav-main-list-trigger">
-				<i class="icon-hamburger"></i>
+				<i class="icon-hamburger"><span class="hamburger-inner"></span></i>
 				<span class="nav-main-item-text">Menu</span>
 			</a>
 		

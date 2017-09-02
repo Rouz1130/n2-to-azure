@@ -45,9 +45,8 @@
             margin: 20px 0;
 
 			> a {
+                @include font-header();
 				color: $black;
-				display: block;
-				font-family: "MrsEaves-Italic";
                 font-size: 30px;
                 outline:none;
 
@@ -72,6 +71,7 @@
 				@include sprite-position($caret);
                 width: $caret-width;
                 height: $caret-height;
+                @include transition(all .12s);
 			}
 
 			+ .panel-collapse > .panel-body {

@@ -4,10 +4,10 @@
 
 <div class="component breadcrumb-panel">
 	<ul class="breadcrumb-list">
-		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
-		<li class="glyph-link"><a href="#">Cemeteries</a></li>	
-		<li class="glyph-link"><a href="#">Chatatoonga Cemetery</a></li>
-		<li class="glyph-link"><a href="#">Chatatoonga Cemetery Events</a></li>
+		<li><a href="#">Breadcrumb trail</a></li>
+		<li ><a href="#">Cemeteries</a></li>	
+		<li ><a href="#">Chatatoonga Cemetery</a></li>
+		<li ><a href="#">Chatatoonga Cemetery Events</a></li>
 	</ul>
 </div>
 
@@ -15,10 +15,10 @@
 
 <div class="component breadcrumb-panel-action">
 	<ul class="breadcrumb-list">
-		<li class="glyph-link"><a href="#">Breadcrumb trail</a></li>
-		<li class="glyph-link"><a href="#">Cemeteries</a></li>	
-		<li class="glyph-link"><a href="#">Chatatoonga Cemetery</a></li>
-		<li class="glyph-link"><a href="#">Chatatoonga Cemetery Events</a></li>
+		<li ><a href="#">Breadcrumb trail</a></li>
+		<li><a href="#">Cemeteries</a></li>	
+		<li ><a href="#">Chatatoonga Cemetery</a></li>
+		<li><a href="#">Chatatoonga Cemetery Events</a></li>
 	</ul>
 	
 </div>
@@ -28,7 +28,7 @@
 
 <div class="component breadcrumb-back">
 	<ul class="breadcrumb-list">
-		<li class="glyph-link"><a href="#">[Application N1]</a></li>
+		<li><a href="#">[Application N1]</a></li>
 	</ul>
 </div>
 
@@ -36,9 +36,9 @@
 
 <div class="component breadcrumb-heading">
 	<ul class="breadcrumb-list">
-		<li class="glyph-link"><a href="#">[Application N1]</a></li>
-		<li class="glyph-link"><a href="#">[Application N2]</a></li>
-		<li class="glyph-link"><a href="#">[Application N3]</a></li>
+		<li ><a href="#">[Application N1]</a></li>
+		<li><a href="#">[Application N2]</a></li>
+		<li ><a href="#">[Application N3]</a></li>
 	</ul>
 </div>
 

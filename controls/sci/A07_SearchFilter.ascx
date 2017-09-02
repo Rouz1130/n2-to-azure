@@ -32,8 +32,8 @@
 						<input type="checkbox" id="<%=UniqueDomId("cb1e")%>" />
 						<label for="<%=UniqueDomId("cb1e")%>"><span class="icon"></span>Option 5</label>
 					</div>
-					<input type="submit" class="btn-secondary btn-sm" value="Apply Filter" />
-					<input type="reset" class="btn-deemphasized btn-sm" value="Cancel" data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>" />
+					<input type="submit" class="btn btn-secondary btn-sm" value="Apply Filter" />
+					<input type="reset" class="btn btn-sm" value="Cancel" data-toggle="collapse" data-parent="#<%=UniqueDomId("filter-accordion")%>" href="#<%=UniqueDomId("filter-form-panel")%>" aria-expanded="true" aria-controls="<%=UniqueDomId("filter-form")%>" />
 				</div>
 			</div>
 		</div>

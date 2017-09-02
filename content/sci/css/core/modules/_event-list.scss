@@ -1,59 +1,41 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
+@import "../modules/icons-generated";
 
 .event-list {
-	> tbody {
-		> tr {
-			> td {
-				@include rem-fallback(padding, 10px / 16px);
-				text-align: center;
-				vertical-align: middle;
+    background-color: $greystripe;
+    width: 100%;
 
-				&.event-list-description {
-					text-align: left;
+    .event-list-date {
+        position: relative;
 
-					> .event-list-description-details {
-						display: table;
-
-						> .event-list-img,
-						> .event-list-name {
-							display: table-cell;
-							vertical-align: top;
-						}
-
-						> .event-list-img {
-							@include rem-fallback(padding-right, 10px / 16px);
-                        }
-					}
-				}
-
-				.event-list-month,
-				.event-list-title {
-					display: block;
-					@include font-family("Lato-Bold");
-				}
-			}
-		}
-	}
-}
-
-
-@include if-min(lg) {
-    .col-1{
-        .event-list {
-            > tbody {
-                > tr {
-                    > td {
-                        &.event-list-description {
-                            > .event-list-description-details {
-                                > .event-list-img {
-                                    display:none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        &:after {
+            content: ' ';
+            @include sprite($flourish-vert);
+            overflow: hidden;
+            width: $flourish-vert-width;
+            height: $flourish-vert-height;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            right: 0;
         }
+    }
+
+    .event-list-date {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .event-list-day {
+
+        @include font-header();
+        margin: -20px 0;
+        padding: 0 20px;
+        font-size: 100px;
+    }
+
+    .event-list-description {
+        padding: 10px 30px 20px;
     }
 }

@@ -1,5 +1,38 @@
-﻿.glyph-arrow-up {
-	&:after {
-		content: " \02C6";
-	}
+﻿@import "../base/colors";
+@import "../base/mixins";
+
+.glyph-arrow-up {
+    &:after {
+        content: " \02C6";
+    }
+}
+
+.glyph-link {
+    @include font-family("Lato-Bold");
+    border-bottom: 2px solid $teal;
+    padding-bottom: 6px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    @include font-uppercase();
+    @include rem-fallback(font-size, 10px / 12px);
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        background: $teal;
+        @include transition(width);
+        height: .1rem;
+        margin-top: 6px;
+        position: absolute;
+    }
+
+    &:hover {
+        border-bottom-color: #26a9a1; //transparent;
+        &:after {
+            width: 100%;
+        }
+    }
 }

@@ -34,10 +34,9 @@
 				background: transparent;
 				border-radius: 0;
 				color: $grey;
-                text-transform: uppercase;
+                @include font-uppercase();
                 font-size: 18px;
                 border: none;
-                letter-spacing: 2.4px;
                 font-family: Lato-Bold;
                 display: inline-block;
                 line-height: 35px;

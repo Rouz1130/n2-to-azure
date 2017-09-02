@@ -365,7 +365,7 @@
 				{ "variation": 5, "name": "5-up" },
 				{ "variation": 6, "name": "6-up" }
 			],
-			"children": [ "B01", "B03", "B04", "B05", "B06", "S01", "S03" ],
+			"children": [ "B01", "B03", "B04", "B05", "B06", "S01", "S03", "T03", "A20" ],
 			"defaultChild": "S01.1",
 			"batch": 2
 		},
@@ -574,7 +574,7 @@
 		},
 		{
 			"code": "T03",
-			"name": "Screen Title (Split)",
+			"name": "Search result card",
 			"ascx": "T03_ScreenTitle",
 			"status": "Complete",
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FT03%20Screen%20Title%20%28split%5C%29%7C23a06303-ec32-4b9a-912f-a04c1a00ad4c%2F%29",

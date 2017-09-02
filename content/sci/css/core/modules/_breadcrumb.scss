@@ -16,10 +16,10 @@
 .breadcrumb-list {
     
     @include inner-component();
+    @include font-uppercase();
     padding: 0;
     font-size: 14px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
+    
 
     > li {
         display: inline-block;

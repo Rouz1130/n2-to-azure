@@ -2,22 +2,21 @@
 @import "../base/mixins";
 
 .btn, .btn:visited {
-	@include border-radius(0);
-	@include rem-fallback(font-size, 14px / 16px);
-	@include rem-fallback(padding, 10px / 14px, 30px / 14px);
-	@include rem-fallback(margin, 2px / 16px);
-	background-color: transparent;
-	border: 2px solid $teal;
-	color: $black;
-	font-family: "Lato-Bold";
-	position: relative;
-    text-transform: uppercase;
-	max-width: 100%;
-    letter-spacing: 2.4px;
+    @include border-radius(0);
+    @include rem-fallback(font-size, 14px / 16px);
+    @include rem-fallback(padding, 10px / 14px, 30px / 14px);
+    @include rem-fallback(margin, 2px / 16px);
+    background-color: transparent;
+    border: 2px solid $teal;
+    color: $black;
+    @include font-family("Lato-Bold");
+    @include font-uppercase();
+    position: relative;
+    max-width: 100%;
+    font-weight: bold;
     @include transition(all);
 
-     &:before {
-           
+    &:before {
         position: absolute;
         top: 0;
         right: 0;
@@ -28,92 +27,80 @@
         background-color: $teal;
         @include transform(scaleY(0));
         @include transform-origin(center bottom);
-       
     }
 
-     span {
+    span {
         position: relative;
         z-index: 1;
-     }
-   
-	&:active, &:focus, &:hover {
+    }
+
+    &:active, &:focus, &:hover {
         background-color: transparent;
         border-color: $teal;
-      
+
         &:before {
             @include transform(scaleY(1));
             @include transition(all);
         }
-	}	
+    }
 }
 
 .btn-sm {
-	@include rem-fallback(font-size, 16px / 16px);
-	@include rem-fallback(padding, 5px / 16px, 50px / 16px);
+    @include rem-fallback(font-size, 16px / 16px);
+    @include rem-fallback(padding, 5px / 16px, 50px / 16px);
 
-	&.btn-icon {
-		@include rem-fallback(padding, 10px / 16px, 50px / 16px);
-	}
+    &.btn-icon {
+        @include rem-fallback(padding, 10px / 16px, 50px / 16px);
+    }
 }
 
 .btn-lg {
-	@include rem-fallback(font-size, 20px / 16px);
+    @include rem-fallback(font-size, 20px / 16px);
 
-	> .text {
-		display: inline-block;
-		max-width: 200px;
-		text-align: left;
-		white-space: normal;
-	}
+    > .text {
+        display: inline-block;
+        max-width: 200px;
+        text-align: left;
+        white-space: normal;
+    }
 }
 
-.btn-primary {
-	 @extend .btn;	
-}
 
 .btn-secondary {
-	 @extend .btn;	
-     background-color: $teal;
-     color: $white;
+    @extend .btn;
+    background-color: $teal;
+    color: $white;
 
-     &:hover {
-         // TODO darken teal
-     }
-
+    &:hover {
+        // TODO darken teal
+    }
 }
 
-.btn-tertiary {
-	 @extend .btn;	
-}
-
-.btn-deemphasized {
-	@extend .btn;
-}
 
 .btn-link {
-	background-color: transparent;
+    background-color: transparent;
 
-	&:hover {
-		background-color: transparent;
-	}
+    &:hover {
+        background-color: transparent;
+    }
 }
 
 .btn-light {
-	@extend .btn;
+    @extend .btn;
 }
 
 .btn-cancel {
-	background: transparent;
+    background: transparent;
     border-color: transparent;
 
     &:before {
         background: transparent;
     }
 
-	&:active, &:focus, &:visited, &:hover {
-		background: transparent;
+    &:active, &:focus, &:visited, &:hover {
+        background: transparent;
         border-color: transparent;
-	}
+    }
 
     &:active, &:focus, &:hover {
         color: $black;
@@ -121,42 +108,42 @@
 }
 
 .btn-badge {
-	@extend .btn;
+    @extend .btn;
 
-	> .icon {
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
+    > .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 .btn-icon {
-	@extend .btn;
+    @extend .btn;
 
-	> .icon {
-		@include rem-fallback(top, -1.6px / 16px);
-		display: inline-block;
-		position: relative;
-		margin-right: 10px;
-		vertical-align: middle;
-	}
+    > .icon {
+        @include rem-fallback(top, -1.6px / 16px);
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 
-	&.btn-lg {
-		max-width: 300px;
-		min-height: 82px;
-		text-align: left;
-		white-space: normal;
+    &.btn-lg {
+        max-width: 300px;
+        min-height: 82px;
+        text-align: left;
+        white-space: normal;
 
-		> .icon {
-			@include rem-fallback(top, 10px / 16px);
-			float: left;
-		}
-	}
+        > .icon {
+            @include rem-fallback(top, 10px / 16px);
+            float: left;
+        }
+    }
 }
 
 .col-1 {
-	> .btn {
-		width: 100%;
-	}
+    > .btn {
+        width: 100%;
+    }
 }
