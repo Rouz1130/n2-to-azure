@@ -75,12 +75,12 @@
 }
 
 
-.icon-map-pin-blue {
-	@include sprite($icon-map-pin-blue);
+.icon-pin {
+	@include sprite($icon-pin);
 }
 
-.icon-map-pin-blue-small {
-	@include sprite($icon-map-pin-blue-small);
+.icon-pin-small {
+	@include sprite($icon-pin-small);
 }
 
 .icon-map-pin-red-small {

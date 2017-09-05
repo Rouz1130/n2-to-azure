@@ -291,7 +291,7 @@ strong {
       .panel-group .panel > .panel-heading > a:focus {
         text-decoration: none; }
       .panel-group .panel > .panel-heading > a > i {
-        background-position: -522px -274px; }
+        background-position: -544px -279px; }
     .panel-group .panel > .panel-heading .icon {
       position: static; }
     .panel-group .panel > .panel-heading .icon-circle-plus, .panel-group .panel > .panel-heading .icon-circle-minus {
@@ -299,7 +299,7 @@ strong {
       position: absolute;
       right: 10px;
       top: 10px;
-      background-position: -522px -274px;
+      background-position: -544px -279px;
       width: 26px;
       height: 18px;
       -webkit-transition: all 0.12s 0.35s ease;
@@ -619,7 +619,7 @@ html.ios .app-promotion-android {
 .slick-prev {
   left: 0;
   background-image: url(../img/icons.png);
-  background-position: -100px -300px;
+  background-position: 0px -300px;
   width: 100px;
   height: 100px; }
   [dir="rtl"] .slick-prev {
@@ -633,7 +633,7 @@ html.ios .app-promotion-android {
 .slick-next {
   right: 0;
   background-image: url(../img/icons.png);
-  background-position: 0px -300px;
+  background-position: -300px -200px;
   width: 100px;
   height: 100px; }
   [dir="rtl"] .slick-next {
@@ -937,7 +937,7 @@ html.ios .app-promotion-android {
     .event-list .event-list-date:after {
       content: ' ';
       background-image: url(../img/icons.png);
-      background-position: -500px -317px;
+      background-position: -500px -339px;
       width: 2px;
       height: 55px;
       overflow: hidden;
@@ -1381,7 +1381,7 @@ input.check-filter[type="checkbox"] {
       background: transparent; }
       .form-group > input[type="checkbox"]:checked + label:before {
         background-image: url(../img/icons.png);
-        background-position: -542px -296px;
+        background-position: -542px -301px;
         width: 20px;
         height: 20px;
         border: 1px solid #47d5cd;
@@ -1641,25 +1641,25 @@ h3 {
 
 .icon-badge-star {
   background-image: url(../img/icons.png);
-  background-position: -500px -140px;
+  background-position: -500px -150px;
   width: 28px;
   height: 32px; }
 
 .icon-blue-diamond {
   background-image: url(../img/icons.png);
-  background-position: -566px -230px;
+  background-position: -550px -241px;
   width: 15px;
   height: 15px; }
 
 .icon-circle-minus {
   background-image: url(../img/icons.png);
-  background-position: -558px -140px;
+  background-position: -560px -110px;
   width: 24px;
   height: 24px; }
 
 .icon-circle-plus {
   background-image: url(../img/icons.png);
-  background-position: -500px -206px;
+  background-position: -530px -182px;
   width: 24px;
   height: 24px; }
 
@@ -1671,97 +1671,97 @@ h3 {
 
 .icon-download {
   background-image: url(../img/icons.png);
-  background-position: -400px -200px;
+  background-position: -400px -100px;
   width: 100px;
   height: 100px; }
 
 .icon-drop-arrow {
   background-image: url(../img/icons.png);
-  background-position: -566px -252px;
+  background-position: -530px -140px;
   width: 19px;
   height: 10px; }
 
 .icon-envelope-list {
   background-image: url(../img/icons.png);
-  background-position: 0px -400px;
+  background-position: -400px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-facebook {
   background-image: url(../img/icons.png);
-  background-position: -100px -400px;
+  background-position: -400px -200px;
   width: 100px;
   height: 100px; }
 
 .icon-facebook-round {
   background-image: url(../img/icons.png);
-  background-position: -544px -252px;
+  background-position: -558px -207px;
   width: 22px;
   height: 22px; }
 
 .icon-facebook-small {
   background-image: url(../img/icons.png);
-  background-position: -562px -296px;
+  background-position: -562px -301px;
   width: 21px;
   height: 17px; }
 
 .icon-favorite-off {
   background-image: url(../img/icons.png);
-  background-position: -400px -300px;
+  background-position: 0px -200px;
   width: 100px;
   height: 100px; }
 
 .icon-favorite-on {
   background-image: url(../img/icons.png);
-  background-position: -300px -300px;
+  background-position: -100px -400px;
   width: 100px;
   height: 100px; }
 
 .icon-globe-large {
   background-image: url(../img/icons.png);
-  background-position: -558px -110px;
+  background-position: -556px -150px;
   width: 26px;
   height: 26px; }
 
 .icon-globe-small {
   background-image: url(../img/icons.png);
-  background-position: -558px -206px;
+  background-position: -534px -241px;
   width: 16px;
   height: 16px; }
 
-.icon-map-pin-blue {
+.icon-pin {
   background-image: url(../img/icons.png);
-  background-position: -100px -200px;
+  background-position: 0px -400px;
   width: 100px;
   height: 100px; }
 
-.icon-map-pin-blue-small {
+.icon-pin-small {
   background-image: url(../img/icons.png);
-  background-position: -500px -172px;
-  width: 20px;
-  height: 34px; }
+  background-position: -500px -110px;
+  width: 30px;
+  height: 40px; }
 
 .icon-map-pin-red-small {
   background-image: url(../img/icons.png);
-  background-position: -520px -172px;
+  background-position: -500px -207px;
   width: 20px;
   height: 34px; }
 
 .icon-nav-main-menu {
   background-image: url(../img/icons.png);
-  background-position: -200px -100px;
+  background-position: -200px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-nav-main-search {
   background-image: url(../img/icons.png);
-  background-position: -300px -100px;
+  background-position: -200px 0px;
   width: 100px;
   height: 100px; }
 
 .icon-popup-arrow {
   background-image: url(../img/icons.png);
-  background-position: -528px -140px;
+  background-position: -500px -182px;
   width: 30px;
   height: 25px; }
 
@@ -1779,7 +1779,7 @@ h3 {
 
 .icon-search-white {
   background-image: url(../img/icons.png);
-  background-position: -500px -296px;
+  background-position: -500px -301px;
   width: 21px;
   height: 21px; }
 
@@ -1791,7 +1791,7 @@ h3 {
 
 .icon-success {
   background-image: url(../img/icons.png);
-  background-position: -530px -110px;
+  background-position: -528px -150px;
   width: 28px;
   height: 28px; }
 
@@ -1803,31 +1803,31 @@ h3 {
 
 .icon-twitter {
   background-image: url(../img/icons.png);
-  background-position: -400px 0px;
+  background-position: -300px -300px;
   width: 100px;
   height: 100px; }
 
 .icon-twitter-round {
   background-image: url(../img/icons.png);
-  background-position: -500px -274px;
+  background-position: -544px -257px;
   width: 22px;
   height: 22px; }
 
 .icon-twitter-small {
   background-image: url(../img/icons.png);
-  background-position: -548px -274px;
+  background-position: -500px -322px;
   width: 21px;
   height: 17px; }
 
 .icon-world-list {
   background-image: url(../img/icons.png);
-  background-position: -500px -110px;
+  background-position: -530px -110px;
   width: 30px;
   height: 30px; }
 
 .icon-world-white {
   background-image: url(../img/icons.png);
-  background-position: -521px -296px;
+  background-position: -521px -301px;
   width: 21px;
   height: 21px; }
 
@@ -2286,7 +2286,7 @@ a.link-icon {
 .map-popup-baidu {
   left: -50%;
   margin-left: -5px;
-  top: -65px; }
+  top: -71px; }
 
 .map-popup-info {
   display: table;
@@ -3008,8 +3008,8 @@ p.paragraph.small {
   .static-map > .icon {
     display: block;
     left: 50%;
-    margin-left: -10px;
-    margin-top: -34px;
+    margin-left: -15px;
+    margin-top: -40px;
     position: absolute;
     top: 50%; }
 
@@ -4327,7 +4327,7 @@ p.paragraph.small {
     .nav-main-list > li:after {
       content: ' ';
       background-image: url(../img/icons.png);
-      background-position: -500px -317px;
+      background-position: -500px -339px;
       width: 2px;
       height: 55px;
       overflow: hidden;
@@ -4743,9 +4743,9 @@ html.nav-main-mobile-transition #nav-main-mobile {
       .nav-social > .nav-social-icons > li > a {
         padding: 9px 5px 5px; }
         .nav-social > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -544px -230px; }
+          background-position: -522px -257px; }
         .nav-social > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -500px -230px; }
+          background-position: -500px -279px; }
 
 @media (min-width: 768px) {
   .nav-social-few {
@@ -4772,13 +4772,13 @@ html.nav-main-mobile-transition #nav-main-mobile {
       .nav-social-few > .nav-social-icons > li > a {
         padding-top: 0; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round {
-          background-position: -544px -252px; }
+          background-position: -558px -207px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-facebook-round:hover {
-          background-position: -522px -230px; }
+          background-position: -500px -257px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round {
-          background-position: -500px -274px; }
+          background-position: -544px -257px; }
         .nav-social-few > .nav-social-icons > li > a > .icon-twitter-round:hover {
-          background-position: -500px -252px; } }
+          background-position: -522px -279px; } }
 .nav-top-bar {
   max-width: 1400px;
   margin: 0 auto;

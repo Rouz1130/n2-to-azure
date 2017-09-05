@@ -128,8 +128,8 @@
 				"disableZoom": true,
 				"mapType": "road",
 				"pin": {
-					"cssClass": "icon-map-pin-blue-small",
-					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-map-pin-blue-small.png")%>",
+					"cssClass": "icon-pin-small",
+					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-small.png")%>",
 					"height": 34,
 					"width": 20
 				},

@@ -172,7 +172,7 @@
 				"languageCode": null,
 				"mapType": "road",
 				"pin": {
-					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-map-pin-blue-small.png")%>",
+					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-small.png")%>",
 					"height": 34,
 					"width": 20
 				},
@@ -192,7 +192,7 @@
 				"pinStyleMap": {
 					"field": "BrandingIcon",
 					"values": {
-						"A": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-dark-blue.png")%>",
+						"A": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin.png")%>",
 						"B": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-dark-blue.png")%>",
 						"P": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-gray.png")%>"
 					}

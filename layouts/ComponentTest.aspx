@@ -47,7 +47,7 @@
 				.mapify('addPins', [{
 					details: '<b>Avanade</b>',
 					position: { latitude: 47.6155157, longitude: -122.3349151 },
-					cssClass: 'icon-map-pin-blue-small',
+					cssClass: 'icon-pin-small',
 					popup: '<div class="map-popup"><a type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></a><i class="icon-popup-arrow"></i><span class="map-popup-title">Avanade</span><br/>818 Stewart Street<br/>Suite 400<br/>Seattle, WA 98101<br/>Phone: +1 206 239 5600<ul class="list map-popup-links"><li><a href="#">Get Directions</a></li><li><a href="#">Station Details</a></li></ul></div>'
 				}]);
 		});

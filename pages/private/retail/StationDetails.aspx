@@ -84,7 +84,7 @@
 
 				<div class="static-map">
 					<img class="static-map-map" src="http://dev.virtualearth.net/REST/v1/Imagery/Map/road/47.610,-122.107/14?mapSize=900,400&key=AifyqHviQoc5IJoiRfQJaUGtykDVrae0hqX0Nw22r04YLpRXwkdIOWRu_TLzGOH_" />
-					<i class="icon icon-map-pin-blue-small"></i>
+					<i class="icon icon-pin-small"></i>
 				</div>
 
 				<div class="station-locator-options">

@@ -90,7 +90,7 @@
 							<p ng-bind-html="r.WeeklyOperatingDays + ' ' + r.WeeklyOperatingHours"></p>
 						</div>
 						<div class="station-locator-point">
-							<i class="icon icon-map-pin-blue-small"></i>
+							<i class="icon icon-pin-small"></i>
 							<span>{{r.Address1}} {{r.City}}, {{r.StateProvince}} {{r.PostalCode}}</span>
 						</div>
 						<div class="station-locator-information">
@@ -148,8 +148,8 @@
 				"disableZoom": false,
 				"mapType": "road",
 				"pin": {
-					"cssClass": "icon-map-pin-blue-small",
-					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-map-pin-blue-small.png")%>",
+					"cssClass": "icon-pin-small",
+					"image": "<%=ResolveUrl("~/content/sci/img/icons/icon-pin-small.png")%>",
 					"height": 34,
 					"width": 20
 				},
