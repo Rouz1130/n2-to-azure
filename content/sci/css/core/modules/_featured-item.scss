@@ -2,12 +2,7 @@
 @import "../base/colors";
 
 .no-js {
-	.featured-item-weather {
-		.featured-item-copy {
-			display: none;
-		}
-	}
-
+	
 	.featured-title-split-left,
 	.featured-title-split-right {
 		margin-bottom: 2em;
@@ -312,12 +307,23 @@
 			> .featured-item-title {
 				@extend .featured-item-overlay-block;
 				bottom: 0;
-				left: 0;
-				margin: 0 0 10px 10px;
+				right: 0;
+				margin: 0;
+
+                h2 {
+                    font-size: 40px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    @include font-uppercase();
+                }
 			}
 
 			> .featured-item-image {
 				margin-bottom: 0;
+                width: 100%;
 			}
 		}
 

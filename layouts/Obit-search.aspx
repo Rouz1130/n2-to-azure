@@ -1,7 +1,14 @@
-﻿<%@ Page Title="Layout 3" %>
+﻿<%@ Page Title="Obits search" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-	<div class="row">
+    
+    <div class="row">
+        <div class="col-md-12 col-4">
+			<ks:Component runat="server" Code="T02.3" />
+		</div>
+    </div>
+
+	<div class="row row-band">
 		<div class="col-md-3 col-1">
 			<ks:Component runat="server" Code="FO04.1" />
 		</div>

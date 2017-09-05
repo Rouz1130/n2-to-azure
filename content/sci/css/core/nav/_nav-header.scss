@@ -14,24 +14,7 @@
     > .nav-wrapper {
         
         position: relative;
-        z-index: 1;
-
-        &:before, &:after {
-            bottom: 18px;
-          
-            content: '';
-            left: 0;
-            position: absolute;
-            top: 80%;
-            @include transform(rotate(-3deg));
-            width: 50%;
-        }
-
-        &:after {
-            left: auto;
-            right: 0;
-            @include transform(rotate(3deg));
-        }
+        z-index: 1; 
     }
 
     ul {

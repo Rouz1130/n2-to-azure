@@ -251,7 +251,17 @@
 			"defaultChild": "A08.1",
 			"batch": 1
 		},
-	
+		{
+			"code": "F01",
+			"name": "Featured Item (Corner overlay)",
+			"ascx": "F01_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF01%20Featured%20Item%20%28title%20overlay%5C%29%7C4a88cca6-2b0c-4f18-9c50-46334602fbb6%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 2
+		},
 		{
 			"code": "F02",
 			"name": "Featured Item (Full Overlay)",
@@ -261,10 +271,21 @@
 			"variations": [
 				{ "variation": 1, "name": "Light text" },
 				{ "variation": 2, "name": "Dark text" }
+      ],
+			"batch": 2
+		},
+			{
+			"code": "F04",
+			"name": "Featured Item (Slide Topic)",
+			"ascx": "F04_FeaturedItem",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FF04%20Featured%20Item%20%28slide%20topic%5C%29%7C296d4059-eea8-4b3f-9236-ae18b27b902d%2F%29",
+			"notes": "<b>UI Team:</b> Use an H2 tag.  Assigned to Luciano.",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
 			],
 			"batch": 2
 		},
-		
 		{
 			"code": "FO01",
 			"name": "Text Input",

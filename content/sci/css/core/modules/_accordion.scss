@@ -61,17 +61,17 @@
 
 			.icon {
 				position: static;
-			}
 
-			.icon-circle-plus, .icon-circle-minus {
-				display: block;
-				position: absolute;
-				right: 10px;
-				top: 10px;
-				@include sprite-position($caret);
-                width: $caret-width;
-                height: $caret-height;
-                @include transition(all .12s);
+                i {
+                    display: block;
+				    position: absolute;
+				    right: 10px;
+				    top: 10px;
+				    @include sprite-position($caret);
+                    width: $caret-width;
+                    height: $caret-height;
+                    @include transition(all .12s);
+                }
 			}
 
 			+ .panel-collapse > .panel-body {

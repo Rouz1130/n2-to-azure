@@ -21,14 +21,6 @@
 }
 
 
-.icon-circle-minus {
-	@include sprite($icon-circle-minus);
-}
-
-.icon-circle-plus {
-	@include sprite($icon-circle-plus);
-}
-
 .icon-cloud {
 	@include sprite($icon-cloud);
 }

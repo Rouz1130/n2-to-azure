@@ -15,8 +15,18 @@
     @include rem-fallback(font-size, 60px / 26px);
 }
 
+
 .screen-title-subtitle {
     font-family: "Lato";
+}
+
+.screen-title-full {
+    background-color: $white;
+
+    > div {
+        @include inner-component();
+        padding: 30px 0;
+    }
 }
 
 .screen-title-full-overlay {

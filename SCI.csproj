@@ -165,6 +165,7 @@
     <Content Include="content\sci\fonts\Lato-LightItalic.svg" />
     <Content Include="content\sci\fonts\Lato-Regular.svg" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.svg" />
+    <Content Include="content\sci\img\icons\caret-smallest.png" />
     <Content Include="content\sci\img\icons\caret.png" />
     <Content Include="content\sci\img\icons\chat.png" />
     <Content Include="content\sci\img\icons\donate.png" />
@@ -175,6 +176,8 @@
     <Content Include="content\sci\img\icons\flower.png" />
     <Content Include="content\sci\img\icons\funeral.png" />
     <Content Include="content\sci\img\icons\gift.png" />
+    <Content Include="content\sci\img\icons\icon-pin-small.png" />
+    <Content Include="content\sci\img\icons\icon-pin.png" />
     <Content Include="content\sci\img\icons\left-caret.png" />
     <Content Include="content\sci\img\icons\locate.png" />
     <Content Include="content\sci\img\icons\return.png" />
@@ -326,8 +329,8 @@
     <Content Include="ImageSpecs.aspx" />
     <Content Include="layouts\Home.aspx" />
     <Content Include="layouts\Location-detail.aspx" />
-    <Content Include="layouts\Layout08.aspx" />
-    <Content Include="layouts\Obit-detail02.aspx" />
+    <Content Include="layouts\Obit-detail.aspx" />
+    <Content Include="layouts\Obit-detail-empty.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x310.png" />
@@ -469,8 +472,6 @@
     <Content Include="content\sci\img\icons\icon-facebook.png" />
     <Content Include="content\sci\img\icons\icon-globe-large.png" />
     <Content Include="content\sci\img\icons\icon-globe-small.png" />
-    <Content Include="content\sci\img\icons\icon-map-pin-blue-small.png" />
-    <Content Include="content\sci\img\icons\icon-map-pin-blue.png" />
     <Content Include="content\sci\img\icons\icon-nav-main-menu.png" />
     <Content Include="content\sci\img\icons\icon-nav-main-search-close.png" />
     <Content Include="content\sci\img\icons\icon-nav-main-search.png" />
@@ -836,7 +837,7 @@
     <Content Include="layouts\Layout06.aspx" />
     <Content Include="layouts\Layout05.aspx" />
     <Content Include="layouts\Layout04.aspx" />
-    <Content Include="layouts\Layout03.aspx" />
+    <Content Include="layouts\Obit-search.aspx" />
     <Content Include="layouts\Layout02.aspx" />
     <Content Include="layouts\Layout01.aspx" />
     <Content Include="pages\private\misc\IframeContent.aspx" />
