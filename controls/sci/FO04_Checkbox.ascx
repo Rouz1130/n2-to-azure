@@ -3,18 +3,28 @@
 <% if (Variation == 1) { %>
 
 <div class="component checkboxes">
-	<div class="form-group">
+    
+   <h4>Filter</h4>
+		
+		<p>Select boxes below to reduce the number of results</p>
+        
+        <fieldset class="form-group">
+		<legend>Date of Death</legend>
+
 		<input type="checkbox" id="<%=UniqueDomId("cb1a")%>" />
 		<label for="<%=UniqueDomId("cb1a")%>"><span class="icon"></span>Option 1</label>
-	</div>
-	<div class="form-group">
+	
 		<input type="checkbox" id="<%=UniqueDomId("cb1b")%>" />
 		<label for="<%=UniqueDomId("cb1b")%>"><span class="icon"></span>Option 2</label>
-	</div>
-	<div class="form-group">
+	
 		<input type="checkbox" id="<%=UniqueDomId("cb1c")%>" />
 		<label for="<%=UniqueDomId("cb1c")%>"><span class="icon"></span>Option 3</label>
-	</div>
+
+
+	</fieldset>
+    
+
+	
 </div>
 
 <% } else if (Variation == 2) { %>
