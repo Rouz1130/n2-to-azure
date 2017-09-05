@@ -258,13 +258,17 @@
               background: #fff;
               width: 300px;
               height: 100px;
-              position: relative;
-              display: inline-flex;
+              position: absolute;
+              display: flex;
+              left:50%;
               align-items: center;
-              justify-content: center;
+              justify-content: space-between;
               top:40px;
               border:2px solid #47d5cd;
+              
+
         }
+      
         /*.lightbox::after{
             content: '';
             border-bottom: 15px solid #47d5cd;
@@ -277,6 +281,19 @@
         .lightbox h5 {
           font-size:10px;
         }
+        .f-flecha {
+            width: 0px;
+            height: 0px;
+            border-left: 25px solid transparent; /* izquierda flecha */
+            border-right: 25px solid transparent; /* derecha flecha */
+            border-top: 25px solid #47d5cd; /* base flecha y color*/
+            font-size: 0px;
+            line-height: 0px;
+
+                position: absolute;
+                top: 97px
+        }
+
         .line {
             width: 170px;
             margin: auto;
@@ -466,14 +483,8 @@
         }
 
         amp-social-share[type="facebook"] {
-            /*background:transparent;*/
-            /*background-image: url(datauri:svg/myownsvgicon);*/
-            /*background-image: url("../content/sci/img/icons/icon-share.png");
-            background-repeat: no-repeat;
-            background-position: center center;*/
             background: url("../content/sci/img/icons/icon-facebook.png") center no-repeat;
             background-size: cover;
-            /*border:solid 1px #47D5CD;*/
             outline:0;
         }
         amp-social-share[type="email"] {
@@ -486,6 +497,9 @@
             background: url("../content/sci/img/icons/icon-share.png") center no-repeat;
             background-size: cover;
             outline:0;
+        }
+        .item-share{
+            width:100px;
         }
         .item-share h5{
                 top: -20px;
@@ -1506,10 +1520,13 @@
                                         
                                         <amp-lightbox id="my-lightbox" layout="nodisplay">
                                             <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+                                               
                                                 <div class="item-share">
+                                                    <div class="f-flecha"></div>
                                                    <amp-social-share type="facebook"width="60" height="60"
-                                                 data-param-app_id="254325784911610"
-                                                  data-param-url="https://www.facebook.com/dialog/share">
+                                                 data-param-app_id="1637036423034179"
+                                                       data-param-text="hello world"
+                                                  data-param-url="http://url.com">
                                                     </amp-social-share>
                                                  <h5 class="text-uppercase">share to facebook </h5>
                                                 </div>
@@ -1527,17 +1544,8 @@
                                                 </div>
                                              
                                             </div>
+                                          
                                           </amp-lightbox>
-                                        <%-- <div class="item-share">
-                                                   <amp-social-share type="facebook"width="60" height="60"
-                                                 data-param-app_id="1637036423034179"
-                                                       data-param-text="test"
-                                                       data-param-attribution=""
-                                                       data-param-quote="hi"
-                                                  data-param-url="http://dignitymemorial.com">
-                                                    </amp-social-share>
-                                                 <h5 class="text-uppercase">share to facebook </h5>
-                                                </div>--%>
 
                                         <button class="ampstart-btn caps m2" on="tap:my-lightbox" role="button" tabindex="0">
                                            <div class="container-icon">
