@@ -296,6 +296,7 @@
     <Content Include="content\sci\css\core\modules\_cta-box.scss" />
     <Content Include="content\sci\css\core\modules\_change-language.scss" />
     <Content Include="content\sci\css\core\modules\_location-container.scss" />
+    <Content Include="content\sci\css\core\modules\_see-more.scss" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />

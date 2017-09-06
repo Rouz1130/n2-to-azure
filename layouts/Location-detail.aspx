@@ -43,6 +43,8 @@
 
                     <h2>Gallery</h2>
                     
+                    <ks:Component runat="server" Code="F01.1" />
+
                      <div class="col-lg-8 col-md-10 centered-col">
                          
                          <h6 class="header-subtitle">History</h6>

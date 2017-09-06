@@ -54,9 +54,6 @@
                     text-decoration: none;
                 }
 
-				> i {
-					@include sprite-position($caret);
-				}
 			}
 
 			.icon {
@@ -67,9 +64,7 @@
 				    position: absolute;
 				    right: 10px;
 				    top: 10px;
-				    @include sprite-position($caret);
-                    width: $caret-width;
-                    height: $caret-height;
+				    @include sprite($caret);
                     @include transition(all .12s);
                 }
 			}

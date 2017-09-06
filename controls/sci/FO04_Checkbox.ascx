@@ -20,7 +20,15 @@
 		<input type="checkbox" id="<%=UniqueDomId("cb1c")%>" />
 		<label for="<%=UniqueDomId("cb1c")%>"><span class="icon"></span>Option 3</label>
 
-
+            
+        <input type="checkbox" id="<%=UniqueDomId("cb1d")%>" />
+		<label for="<%=UniqueDomId("cb1d")%>"><span class="icon"></span>Option 1</label>
+	
+		<input type="checkbox" id="<%=UniqueDomId("cb1e")%>" />
+		<label for="<%=UniqueDomId("cb1e")%>"><span class="icon"></span>Option 2</label>
+	
+		<input type="checkbox" id="<%=UniqueDomId("cb1f")%>" />
+		<label for="<%=UniqueDomId("cb1f")%>"><span class="icon"></span>Option 3</label>
 	</fieldset>
     
 
