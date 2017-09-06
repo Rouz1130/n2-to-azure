@@ -95,6 +95,7 @@
 		
 				
 			<h3>Sample Layouts</h3>
+            <p><a runat="server" href="~/layouts/Home.aspx">Home page</a></p>
 			<p><a runat="server" href="~/layouts/Layout01.aspx">Single column</a></p>
             <p><a runat="server" href="~/layouts/Location-detail.aspx">Location detail page</a></p>
             <p><a runat="server" href="~/layouts/Obit-search.aspx">Obits search page</a></p>

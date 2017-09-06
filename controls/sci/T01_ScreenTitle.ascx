@@ -5,17 +5,12 @@
 	<div class="component screen-title screen-title-overlay">
 		<div class="screen-title-image-wrap">
 			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header.jpg")%>">
-			<h1 class="screen-title-title"><ks:Content runat="server" DefaultContent="Obituaries" ContentKey="title" /></h1>
+            <div class="screen-title-title">
+                 <p class="header-subtitle">FUNERAL, Cremation & CEMETERY </p>
+			    <h1><ks:Content runat="server" DefaultContent="Chattanooga Funeral Home, Crematory & Florist-North Chapel and Hamilton Memorial Gardens" ContentKey="title" /></h1>
+            </div>
 		</div>
-		<div class="screen-title-copy-wrap">
-			<h3>Title subheading</h3>
-			<p class="paragraph screen-title-copy">
-				Sleep on your keyboard claw pharetra et, jump kittens run faucibus sunbathe egestas purr. Sniff nam sniff run dolor chase the red dot, et rhoncus dolor bat. Tail flick enim shed everywhere consectetur, zzz bibendum attack tail flick accumsan eat the grass sleep on your keyboard.
-			</p>
-			<p class="screen-title-cta">
-				<button class="btn btn-primary"><span>Talk to an expert</span></button>
-			</p>
-		</div>
+       <ks:Component runat="server" Code="SP05.1" />
 	</div>
 
 <% } else if (Variation == 2) { %>

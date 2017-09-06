@@ -3,7 +3,7 @@
 <% if (Variation == 1) { %>
 
 	<fieldset>
-		<label>Fieldset label</label>
+		<legend>Fieldset legend</legend>
 		<p>Fieldset content</p>
 	</fieldset>
 

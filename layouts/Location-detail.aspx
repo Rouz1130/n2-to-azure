@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Layout 1" %>
+﻿<%@ Page Title="Location detail" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 
@@ -7,9 +7,8 @@
 
     <div class="row">
         <div class="col-md-12 col-4">
-            <ks:Component runat="server" Code="SP05.1" />
+            
             <ks:Component runat="server" Code="SP08.1" />
-
 
             <div class="location-container component">
                 <div class="tab-list-items" role="tabpanel">
@@ -23,7 +22,8 @@
                 
                 <div id="about">
                     <div class="col-lg-8 col-md-10 centered-col">
-                        <p>Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>                         <p>Ullamcorper elit. Duis condimentum neque placerat arcu feugiat volutpat. Duis commodo nibh tortor, id molestie est eleifend at. Curabitur posuere eget erat ac faucibus.</p>
+                        <p>Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p> 
+                        <p>Ullamcorper elit. Duis condimentum neque placerat arcu feugiat volutpat. Duis commodo nibh tortor, id molestie est eleifend at. Curabitur posuere eget erat ac faucibus.</p>
                     
                         <h6 class="header-subtitle">Services</h6>
                          <ul>
@@ -38,7 +38,8 @@
                               <li>Suspendisse eu odio eget lectus</li> 
                              <li>In ultrices nisl sed felis blandit  quis</li> 
                              <li>Vivamus convallis sapien a orci    rhoncus, sit amet finibus mauris tempus.</li>
-                         </ul>                    </div>
+                         </ul>
+                    </div>
 
                     <h2>Gallery</h2>
                     

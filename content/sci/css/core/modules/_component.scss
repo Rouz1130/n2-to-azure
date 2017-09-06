@@ -3,19 +3,12 @@
 
 .component {
 	*zoom: 1;
-	@include rem-fallback(margin-bottom, 48px / 16px);
-    padding-left: $gutter-mobile;
-	padding-right: $gutter-mobile;
-
-	&:after,
-	&:before {
-		content: " ";
-		display: table;
-		line-height: 0;
-	}
+    padding: 0 $gutter-mobile $gutter-mobile;
 
 	&:after {
-		clear: both;
+        content: "";
+        display: block;
+        clear: both;
 	}
 }
 
@@ -55,8 +48,7 @@
 @include if-min(md) {
 
     .component {
-        padding-left: $gutter-desktop;
-	    padding-right: $gutter-desktop;
+        padding: 0 $gutter-desktop $gutter-desktop;
     }
 
 	.component-height-sm {

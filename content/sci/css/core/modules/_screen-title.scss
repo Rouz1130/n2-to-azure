@@ -29,6 +29,42 @@
     }
 }
 
+.screen-title-overlay {
+    background: $greystripe;
+    padding: 0 0 40px;
+
+    .screen-title-image-wrap {
+
+        > .screen-title-title {
+            @extend .screen-title-overlay-block;
+            color: $white;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            position: absolute;
+            width: 100%;
+
+            .header-subtitle:after {
+                clear: both;
+                margin: 20px auto;
+                display: block;
+                content: ' ';
+                @include sprite($flourish-white-horiz);
+                width: $flourish-white-horiz-width;
+                height: $flourish-white-horiz-height;
+            }
+        }
+    }
+
+    .cta-box {
+        margin-top: -30px;
+        position: relative;
+    }
+}
+
+
+
 .screen-title-full-overlay {
     .screen-title-subtitle {
         @include rem-fallback(font-size, 20px / 16px);
@@ -75,185 +111,187 @@
     }
 }
 
+.screen-title-image-wrap {
+    position: relative;
+}
 
 
 @include if-min(lg) {
+    .screen-title-overlay {
 
-    .col-3, .col-4 {
-
-        .screen-title-image {
-            margin-bottom: 0;
+        .screen-title-title {
+            width: auto;
         }
 
-        .screen-title-table {
-            display: table;
-            width: 100%;
+        .cta-box {
+            margin-top: -90px;
         }
 
-        .screen-title-table-cell {
-            display: table-cell;
-            vertical-align: top;
-        }
-
-        .screen-title-image-wrap {
-            position: relative;
-        }
-
-        .screen-title-padded-copy {
-            padding-right: 4em;
-        }
-
-        .screen-title-lifted-copy {
-            position: relative;
-            top: -0.3rem;
-        }
-
-        .screen-title-overlay-block {
-            display: block;
-            padding: 15px 20px;
-            position: absolute;
-        }
-
-        .screen-title-overlay, .screen-title-no-image {
-            > .screen-title-image-wrap {
-                margin-bottom: 1.2em;
-
-                > .screen-title-title {
-                    @extend .screen-title-overlay-block;
-                    color: $white;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-
-            > .screen-title-copy-wrap {
-                @extend .screen-title-table;
-
-                > h3 {
-                    display: table-caption;
-                    margin-top: 0;
-                }
-
-                > .screen-title-copy {
-                    @extend .screen-title-lifted-copy;
-                    @extend .screen-title-table-cell;
-                    @extend .screen-title-padded-copy;
-                }
-
-                > .screen-title-cta {
-                    @extend .screen-title-table-cell;
-                    text-align: right;
-                }
-            }
-        }
-
-        .screen-title-full-left {
-            .screen-title-image {
-                float: left;
-                margin: 0 2em 0 0;
-                max-width: 50%;
-            }
-        }
-
-        .screen-title-full-right {
-            .screen-title-image {
-                float: right;
-                margin: 0 0 0 2em;
-                max-width: 50%;
-            }
-        }
-
-        .screen-title-split-left, .screen-title-split-right {
-
-
-            .screen-title-image, .screen-title-copy {
-                float: left;
-                position: relative;
-                padding: 0 15px;
-                width: 50%;
-            }
-
-            .screen-title-copy {
-                padding: 15px;
-            }
-        }
-
-        .screen-title-split-left {
-            padding-left: 0;
+        .col-3, .col-4 {
 
             .screen-title-image {
-                padding-left: 0;
-            }
-
-            .screen-title-copy {
-                padding-right: 0;
-            }
-        }
-        // This is used for location details - recent obits cards
-        .screen-title-split-right {
-            padding-right: 0;
-
-            @include lift-card();
-
-            .screen-title-copy-wrap {
-
-                &:hover {
-                    color: $black;
-                }
-            }
-
-            .header-subtitle {
                 margin-bottom: 0;
             }
 
-            .screen-title-image {
-                float: right;
-                padding-right: 0;
-                overflow: hidden;
-                height: 100%;
-                width: 35%;
+            .screen-title-table {
+                display: table;
+                width: 100%;
             }
 
-            .screen-title-copy {
+            .screen-title-table-cell {
+                display: table-cell;
+                vertical-align: top;
+            }
+
+
+
+            .screen-title-padded-copy {
+                padding-right: 4em;
+            }
+
+            .screen-title-lifted-copy {
+                position: relative;
+                top: -0.3rem;
+            }
+
+            .screen-title-overlay-block {
+                display: block;
+                padding: 15px 20px;
                 position: absolute;
-                left: 50%;
-                top: 50%;
-                @include transform(translate(-80%, -50%));
             }
-        }
 
-        .screen-title-full-overlay {
-            > .screen-title-copy {
-                @extend .screen-title-overlay-block;
-                left: 10px;
-                max-width: 33%;
-                top: 10px;
+            .screen-title-overlay, .screen-title-no-image {
+                > .screen-title-image-wrap {
+                    margin-bottom: 1.2em;
+                }
+
+                > .screen-title-copy-wrap {
+                    @extend .screen-title-table;
+
+                    > h3 {
+                        display: table-caption;
+                        margin-top: 0;
+                    }
+
+                    > .screen-title-copy {
+                        @extend .screen-title-lifted-copy;
+                        @extend .screen-title-table-cell;
+                        @extend .screen-title-padded-copy;
+                    }
+
+                    > .screen-title-cta {
+                        @extend .screen-title-table-cell;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .screen-title-full-left {
+                .screen-title-image {
+                    float: left;
+                    margin: 0 2em 0 0;
+                    max-width: 50%;
+                }
+            }
+
+            .screen-title-full-right {
+                .screen-title-image {
+                    float: right;
+                    margin: 0 0 0 2em;
+                    max-width: 50%;
+                }
+            }
+
+            .screen-title-split-left, .screen-title-split-right {
+
+
+                .screen-title-image, .screen-title-copy {
+                    float: left;
+                    position: relative;
+                    padding: 0 15px;
+                    width: 50%;
+                }
+
+                .screen-title-copy {
+                    padding: 15px;
+                }
+            }
+
+            .screen-title-split-left {
+                padding-left: 0;
+
+                .screen-title-image {
+                    padding-left: 0;
+                }
+
+                .screen-title-copy {
+                    padding-right: 0;
+                }
+            }
+            // This is used for location details - recent obits cards
+            .screen-title-split-right {
+                padding-right: 0;
+
+                @include lift-card();
+
+                .screen-title-copy-wrap {
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                .header-subtitle {
+                    margin-bottom: 0;
+                }
+
+                .screen-title-image {
+                    float: right;
+                    padding-right: 0;
+                    overflow: hidden;
+                    height: 100%;
+                    width: 35%;
+                }
+
+                .screen-title-copy {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    @include transform(translate(-80%, -50%));
+                }
+            }
+
+            .screen-title-full-overlay {
+                > .screen-title-copy {
+                    @extend .screen-title-overlay-block;
+                    left: 10px;
+                    max-width: 33%;
+                    top: 10px;
+                }
             }
         }
     }
-}
 
-@include if-min(md) {
-    .col-3 {
-        .screen-title-full-overlay {
-            > .screen-title-copy {
-                left: 0;
-                max-width: none;
-                top: 0;
-                position: static;
-                padding: 10px 0 0 0;
+    @include if-min(md) {
+        .col-3 {
+            .screen-title-full-overlay {
+                > .screen-title-copy {
+                    left: 0;
+                    max-width: none;
+                    top: 0;
+                    position: static;
+                    padding: 10px 0 0 0;
+                }
             }
         }
     }
-}
 
-@include if-min(sm) {
-    .col-3, .col-2, .col-1 {
-        .special-screen-title {
-            > .special-screen-title-text {
-                @include rem-fallback(padding-right, 25px / 16px);
+    @include if-min(sm) {
+        .col-3, .col-2, .col-1 {
+            .special-screen-title {
+                > .special-screen-title-text {
+                    @include rem-fallback(padding-right, 25px / 16px);
+                }
             }
         }
     }
-}

@@ -24,15 +24,19 @@ fieldset {
         @include font-uppercase();
         font-size: 16px;
         margin-bottom: 10px;
+        padding-top: 10px;
         color: $grey;
     }
 }
 
 
 .checkboxes, .radio-buttons {
-    border: 1px solid $light-tan;
-    padding: 0 10px 10px;
-    background: $white;
+
+    &:not(.form-inline) {
+        border: 1px solid $light-tan;
+        padding: 0 10px 10px;
+        background: $white;
+    }
 
     p {
         color: $grey;
