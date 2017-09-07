@@ -1,25 +1,26 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
 
-.alert, .alert-warning, .alert-danger {
-	@include border-radius(0);
-    @include font-uppercase();
-	background-color: $red;
-	border: none;
-	color: $white;
-	padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-   
-
-    a, a:link, a:hover, a:visited, a:active {
+.component {
+    &.alert, &.alert-warning, &.alert-danger {
+        @include border-radius(0);
+        @include font-uppercase();
+        background-color: $red;
+        border: none;
         color: $white;
-        text-decoration: underline;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+
+        a, a:link, a:hover, a:visited, a:active {
+            color: $white;
+            text-decoration: underline;
+        }
+
+        > p {
+            @include inner-component();
+            line-height: 1.2;
+        }
     }
-
-	> p {
-        @include inner-component();
-		line-height: 1.2;
-	}
 }
-
