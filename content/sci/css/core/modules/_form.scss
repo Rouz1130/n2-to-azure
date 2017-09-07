@@ -46,6 +46,9 @@ fieldset {
     border: 1px solid $light-tan;
     padding: 20px;
     background: $white;
+    position: absolute;
+    z-index: 300;
+    width: 100%;
 }
 
 
@@ -63,6 +66,7 @@ fieldset {
         @include font-family('Lato-Bold');
         font-size: 20px;
         position: absolute;
+        cursor: pointer;
         top: -40px;
         right: 0;
     }
@@ -95,6 +99,11 @@ fieldset {
 
     .filter-panel {
         border-top: none;
+        position: static;
+
+        // To keep the bootstrap collapse from happening
+        display: block !important; 
+        height: auto !important;
     }
 
     .checkboxes, .radio-buttons {
@@ -112,6 +121,7 @@ fieldset {
             border: 1px solid $light-tan;
             border-bottom: none;
             font-size: 18px;
+            cursor: default;
 
             &:after {
                 display: none;
@@ -119,7 +129,6 @@ fieldset {
         }
     }
 }
-
 
 .form-control {
     @include box-shadow(none);
