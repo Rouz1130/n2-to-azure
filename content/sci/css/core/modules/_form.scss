@@ -8,6 +8,9 @@ $input-lg-height: 56px;
     background-color: $white;
     border: 1px solid $light-tan;
     cursor: pointer;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
 }
 
 @mixin formGroupLabel {
@@ -23,59 +26,114 @@ fieldset {
     legend {
         @include font-uppercase();
         font-size: 16px;
+        color: $grey;
         margin-bottom: 10px;
         padding-top: 10px;
-        color: $grey;
     }
+
+    .form-group {
+        display: inline-block;
+        width: 48%;
+        vertical-align: middle;
+    }
+
+    & + fieldset {
+        margin-top: 20px;
+    }
+}
+
+.filter-panel {
+    border: 1px solid $light-tan;
+    padding: 20px;
+    background: $white;
 }
 
 
 .checkboxes, .radio-buttons {
-
-    &:not(.form-inline) {
-        border: 1px solid $light-tan;
-        padding: 0 10px 10px;
-        background: $white;
-    }
+    margin-top: 40px; // To give room for absolutely positioned header
+    position: relative;
+    padding: 0;
 
     p {
         color: $grey;
     }
 
-    h4 {
+    h4.see-more {
         @include font-uppercase();
         @include font-family('Lato-Bold');
-        background-color: $greystripe;
-        padding: 10px;
-        margin: 0 -10px 10px;
+        font-size: 20px;
+        position: absolute;
+        top: -40px;
+        right: 0;
     }
 
-    > label {
+    label {
         @include formGroupLabel;
-    }
 
-    > .form-group {
-        @include rem-fallback(margin-bottom, 10px / 16px);
-
-        label {  
-            margin-bottom: 10px;
+        &.error {
+            background-color: $error-color;
+            color: #fff;
+            display: block;
+            font-weight: normal;
+            @include rem-fallback(font-size, 16px / 16px);
+            @include rem-fallback(margin-top, 10px / 16px);
+            @include rem-fallback(padding, 10px / 16px);
         }
     }
 
-    > label.error {
-        background-color: $error-color;
-        color: #fff;
-        display: block;
-        font-weight: normal;
-        @include rem-fallback(font-size, 16px / 16px);
-        @include rem-fallback(margin-top, 10px / 16px);
-        @include rem-fallback(padding, 10px / 16px);
+    .form-group {
+        margin-bottom: 10px;
     }
 }
+
+@include if-min(md) {
+    fieldset {
+        .form-group {
+            width: 100%;
+        }
+    }
+
+    .filter-panel {
+        border-top: none;
+    }
+
+    .checkboxes, .radio-buttons {
+        margin-top: 0;
+
+        &:not(.form-inline) {
+            padding-top: 0;
+        }
+
+        h4.see-more {
+            background-color: $greystripe;
+            padding: 10px 20px;
+            margin: 0;
+            position: static;
+            border: 1px solid $light-tan;
+            border-bottom: none;
+            font-size: 18px;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
 
 .form-control {
     @include box-shadow(none);
     @include rem-fallback(font-size, 16px / 16px);
+
+    &:focus {
+        background-color: $white;
+        border: 1px solid $teal;
+    }
+
+    &.error {
+        background-color: #fffaba;
+        border: solid 1px $error-color;
+    }
 }
 
 .form-group-lg {
@@ -116,7 +174,6 @@ fieldset {
     }
 }
 
-
 .group-info {
     color: $grey;
     display: table;
@@ -144,20 +201,16 @@ fieldset {
         cursor: pointer;
     }
 
-    > input[type="checkbox"] {
+    input[type="checkbox"] {
         display: none;
 
         + label {
-          
             padding-left: 27px;
             text-transform: none;
 
             &:before {
                 @include checkables;
-                content: "";
-                display: inline-block;
                 height: 20px;
-                margin-right: 7px;
                 margin-left: -27px;
                 vertical-align: sub;
                 width: 20px;
@@ -192,7 +245,7 @@ fieldset {
         }
     }
 
-    > input[type="radio"] {
+    input[type="radio"] {
         display: none;
 
         + label {
@@ -204,10 +257,7 @@ fieldset {
             &:before {
                 @include checkables;
                 @include border-radius(100%);
-                content: "";
-                display: inline-block;
                 height: 18px;
-                margin-right: 7px;
                 margin-left: -25px;
                 position: relative;
                 top: 3px;
@@ -218,7 +268,6 @@ fieldset {
         &:checked + label {
             &:before {
                 @include border-radius(100%);
-               
                 background-color: #d3f4f2;
                 border: 1px solid $teal;
                 display: inline-block;
@@ -249,6 +298,7 @@ fieldset {
 
 .form-group .form-control,
 .input-group .form-control {
+
     @include border-radius(0);
     font-family: "Lato";
     background-color: $white;
@@ -257,15 +307,7 @@ fieldset {
     height: 50px;
 }
 
-.form-control:focus {
-    background-color: $white;
-    border: 1px solid $teal;
-}
 
-.form-control.error {
-    background-color: #fffaba;
-    border: solid 1px $error-color;
-}
 
 .form-group {
 
