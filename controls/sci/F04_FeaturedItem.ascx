@@ -13,3 +13,11 @@
 </div>
 
 <% } %>
+
+<% if (Variation == 2) { %>
+
+<div class="component featured-item featured-item-slide-topic">
+	<img class="featured-item-slide-image" src="<%=ResolveUrl("~/content/site/carousel-01.jpg")%>">
+</div>
+
+<% } %>
