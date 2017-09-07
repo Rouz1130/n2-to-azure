@@ -1,36 +1,58 @@
 ﻿@import "../base/mixins";
 
 .modal-content {
-	@include border-radius(0);
-	padding: 10px;
+    @include border-radius(0);
+    padding: 10px;
 }
 
 .modal-header {
-	border-bottom: none;
+    border-bottom: none;
 
-	> .close {
-		font-size: 48px;
-		font-weight: normal;
-		margin-right: -5px;
-		margin-top: -16px;
-	}
+    > .close {
+        font-size: 48px;
+        font-weight: normal;
+        margin-right: -5px;
+        margin-top: -16px;
+    }
 }
 
 .modal-footer {
-	border-top: none;
-	text-align: left;
+    border-top: none;
+    text-align: left;
 }
 
 .modal-iframe {
-	iframe {
-		border: none;
-		width: 100%;
-	}
+    iframe {
+        border: none;
+        width: 100%;
+    }
 }
 
 /** Modal Gallery **/
+.modal-background {
+    background: whitesmoke;
+    .modal-content {
+        padding: 0px!important;
+        .modal-header{
+            a{
+                padding-right: 8px;
+            }
+        }
+    }
+    .modal-body{
+        padding: 0px!important;
+    }
+}
+
+.carousel-gallery {
+    .component {
+        padding: 0px!important;
+    }
+}
+
 .modal-title-gallery {
-    padding: 0px;
+    padding: 0px!important;
+
     h2 {
         margin: 0px !important;
         margin-top: 20px !important;
@@ -39,18 +61,18 @@
 
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
 .modal.fade.modal-layer-hide {
-	display: block !important;
-	opacity: 1 !important;
-	z-index: -9999;
+    display: block !important;
+    opacity: 1 !important;
+    z-index: -9999;
 
-	&.in {
-		z-index: 1050;
-	}
+    &.in {
+        z-index: 1050;
+    }
 }
 
 @include if-min(md) {
-	.modal-dialog {
-		max-width: 763px;
-		width: 80%;
-	}
+    .modal-dialog {
+        max-width: 763px;
+        width: 80%;
+    }
 }
