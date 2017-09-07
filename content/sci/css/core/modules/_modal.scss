@@ -28,6 +28,15 @@
 	}
 }
 
+/** Modal Gallery **/
+.modal-title-gallery {
+    padding: 0px;
+    h2 {
+        margin: 0px !important;
+        margin-top: 20px !important;
+    }
+}
+
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
 .modal.fade.modal-layer-hide {
 	display: block !important;

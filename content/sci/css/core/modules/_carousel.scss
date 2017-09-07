@@ -369,3 +369,64 @@ $slick-opacity-not-active: 0.5 !default;
 		}
 	}
 }
+
+/** Carousel-gallery */
+.carousel-gallery {
+    .component {
+        padding: 0px;
+
+        .slick-next {
+            width: 35px;
+            height: 50px;
+            top: 32%;
+            background: $grey;
+            opacity: 0.7;
+            background-image: url(/content/sci/img/arrow-left-rigth.png);
+            background-position: -58px 0px;
+        }
+
+        .slick-prev {
+            width: 35px;
+            height: 50px;
+            top: 32%;
+            background: $grey;
+            opacity: 0.7;
+            background-image: url(/content/sci/img/arrow-left-rigth.png);
+            background-position: -4px 0px;
+        }
+
+        .slick-dots {
+            text-align: center;
+        }
+    }
+}
+
+/** Responsive Gallery tablet **/
+@media screen and (min-width: 450px) and (max-width: 799px) {
+.carousel-gallery {
+        .component {
+            .slick-next {
+                top: 38%;
+            }
+
+            .slick-prev {
+                top: 38%;
+            }
+        }
+    }
+}
+
+/** Responsive Gallery Desktop **/
+@media screen and (min-width: 800px) {
+    .carousel-gallery {
+        .component {
+            .slick-next {
+                top: 45%;
+            }
+
+            .slick-prev {
+                top: 45%;
+            }
+        }
+    }
+}

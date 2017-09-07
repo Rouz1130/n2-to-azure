@@ -40,7 +40,7 @@
                     </div>
 
                     <h2>Gallery</h2>
-                            <ks:Component runat="server" Code="F01.2" />  
+                        <ks:Component runat="server" Code="F01.2" />  
                      <div class="col-lg-8 col-md-10 centered-col">
                          
                          <h6 class="header-subtitle">History</h6>
