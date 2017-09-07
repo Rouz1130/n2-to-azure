@@ -6,7 +6,7 @@
 <div class="component checkboxes">
 
     <h4 class="see-more" data-toggle="collapse" data-target="#filter-panel" aria-expanded="true">Filter</h4>
-    <div id="filter-panel" class="filter-panel collapse in">
+    <div id="filter-panel" class="filter-panel collapse">
         
         <p>Select boxes below to reduce the number of results</p>
 

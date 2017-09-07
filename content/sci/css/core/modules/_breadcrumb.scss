@@ -1,6 +1,7 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
 
+
 .breadcrumb-back {
 
     .breadcrumb-list {
@@ -44,8 +45,8 @@
  
 }
 
-.breadcrumb-panel,
-.breadcrumb-panel-action {
+.component.breadcrumb-panel,
+.component.breadcrumb-panel-action {
     background: $white;
     color: $black;
     padding-top: 20px;
