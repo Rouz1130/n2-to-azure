@@ -52,7 +52,6 @@
 		<div class="modal-content">
 			<div class="modal-header  modal-title-gallery">
 				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-				<h2 class="modal-title" id="<%=UniqueDomId("lb")%>-label">Gallery</h2>
 			</div>
 			<div class="modal-body carousel-gallery">
                 <!-- carousel -->

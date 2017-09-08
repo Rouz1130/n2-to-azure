@@ -3,6 +3,7 @@
 .modal-content {
     @include border-radius(0);
     padding: 10px;
+    margin: $gutter-mobile;
 }
 
 .modal-header {
@@ -31,32 +32,32 @@
 /** Modal Gallery **/
 .modal-background {
     background: whitesmoke;
+
     .modal-content {
-        padding: 0px!important;
-        .modal-header{
-            a{
-                padding-right: 8px;
-            }
-        }
+        padding: 0px !important;
     }
-    .modal-body{
-        padding: 0px!important;
+
+    .modal-body {
+        padding: 0px !important;
     }
 }
 
+
 .carousel-gallery {
+
     .component {
-        padding: 0px!important;
+        padding: 0px !important;
+        margin: 0px !important;
     }
+
 }
 
 .modal-title-gallery {
-    padding: 0px!important;
-
-    h2 {
-        margin: 0px !important;
-        margin-top: 20px !important;
-    }
+    padding: 0px !important;
+    position: absolute;
+    z-index: 1;
+    right: 1%;
+    top: 2%;
 }
 
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
@@ -72,7 +73,14 @@
 
 @include if-min(md) {
     .modal-dialog {
-        max-width: 763px;
-        width: 80%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-content {
+        margin: $gutter-desktop;
+        max-height: 100%;
     }
 }
