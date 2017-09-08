@@ -31,11 +31,19 @@
 
 .screen-title-overlay {
     background: $greystripe;
-    padding: 0 0 40px;
+    padding: 0;
 
     .screen-title-image-wrap {
 
+        .screen-title-image {
+            width: 100%;
+        }
+
         > .screen-title-title {
+            @include inner-component();
+            padding-left: $gutter-mobile;
+            padding-right: $gutter-mobile;
+
             @extend .screen-title-overlay-block;
             color: $white;
             top: 40%;
@@ -114,9 +122,16 @@
     position: relative;
 }
 
+@include if-min(md) {
+    .screen-title-overlay .screen-title-image-wrap > .screen-title-title {
+        padding-left: $gutter-desktop;
+        padding-right: $gutter-desktop;
+    }
+}
 
 @include if-min(lg) {
     .screen-title-overlay {
+        padding-bottom: 40px;
 
         .screen-title-title {
             width: auto;
@@ -228,7 +243,6 @@
                 padding-right: 0;
             }
         }
-
         // This is used for location details - recent obits cards
         .screen-title-split-right {
             padding-right: 0;

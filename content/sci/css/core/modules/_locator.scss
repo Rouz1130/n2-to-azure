@@ -5,13 +5,21 @@
 .locator-panel {
     background-color: $greystripe;
 
+    .locator-row {
+        @include inner-component();
+
+        &:first-child {
+            padding: 0;
+        }
+    }
+
     .location-copy {
-        background-color: $white;
-        padding: 20px;
+        padding: 20px 0;
         position: relative;
     }
 
     .locator-data {
+        text-align: center;
 
         .locator-titles {
             clear: both;
@@ -33,15 +41,15 @@
         }
 
         .locator-information {
+            margin: 0 auto;
 
             .icon-telephone {
-                float: left;
-                margin-left: -20px;
+                display: block;
+                margin: 0 auto;
             }
 
             p {
                 margin: 0;
-                padding-top: 20px;
                 font-size: 18px;
             }
 
@@ -64,8 +72,7 @@
         }
 
         .locator-titles,
-        .locator-point,
-        .locator-information {
+        .locator-point {
             margin-bottom: 15px;
         }
     }
@@ -75,12 +82,11 @@
         a {
             @include font-uppercase();
             text-align: center;
-            display: block;
+            display: inline-block;
             font-family: Lato-Bold;
             font-size: 10px;
-            min-width: 30%;
+            width: 30%;
             vertical-align: top;
-
 
             .icon {
                 display: block;
@@ -90,14 +96,30 @@
     }
 
     .static-map {
-        width: 100%;
+        padding: 0;
         background-size: cover;
-        min-height: 350px;
+        width: 100%;
+        min-height: 400px;
     }
-}
 
-@include if-min(sm) {
-    .locator-panel {
+    @include if-min(sm) {
+
+        .locator-data .locator-information {
+            display: inline-block;
+
+            .icon-telephone {
+                float: left;
+                display: inline-block;
+            }
+        }
+    }
+
+
+    @include if-min(md) {
+
+        .location-copy {
+            padding: 20px;
+        }
 
         .locator-data {
             margin-bottom: 120px; // To give enough room for abs positioned locator-options to fit
@@ -107,32 +129,23 @@
             position: absolute;
             bottom: 20px;
             width: 100%;
-
-            a {
-                display: inline-block;
-                width: 30%;
-            }
         }
     }
-}
 
-@include if-min(md) {
-    .locator-panel {
+    @include if-min(lg) {
+
+        .locator-data {
+            text-align: left;
+        }
+
 
         .locator-row {
-
-            @include flex();
-            margin: 0 auto;
-            max-width: 1200px;
-
-            > div {
-                @include flex-item();
-            }
+            position: relative;
         }
 
         .location-copy {
+            background-color: $white;
             vertical-align: top;
-            width: 30%;
         }
     }
 }
