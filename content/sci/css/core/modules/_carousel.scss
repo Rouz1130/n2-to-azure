@@ -481,53 +481,30 @@ img.featured-item-slide-image {
     }
 }
 
-@media screen and (min-width: 750px) and (max-width:850px) {
-    .carousel-gallery {
 
-        .screen-title {
-
-            .screen-title-copy {
-                min-width: 40% !important;
-                max-width: 50% !important;
-
-                .screen-title-subtitle {
-                }
-            }
-        }
-    }
-}
 
 @media screen and (min-width:750px) {
     .carousel-gallery {
 
+
         .screen-title {
 
             .screen-title-copy {
-                position: absolute !important;
-                padding: 10px 20px 20px 20px;
-                background: $grey;
-                opacity: .85;
-                color: white;
+                @include opacity(.85);
+                background-color: $black;
+                display: block;
+                padding: 10px 20px 20px;
+                color: $white;
+                position: absolute;
+                text-align: center;
                 right: 15% !important;
                 bottom: 0px !important;
                 min-width: 30% !important;
                 max-width: 40% !important;
                 height: 50%;
 
-                .screen-title-title {
-                    text-align: center;
-                }
-
-                .screen-title-subtitle {
-                    text-align: center;
-                }
-
-                p {
-                    text-align: center;
-
-                    a {
-                        color: white !important;
-                    }
+                  a, .glyph-link {
+                    color: white;
                 }
             }
         }
@@ -569,34 +546,9 @@ img.featured-item-slide-image {
         .screen-title {
 
             .screen-title-copy {
-                position: absolute !important;
-                padding: 10px 20px 20px 20px;
-                background: $grey;
-                opacity: .85;
-                color: white;
-                right: 15% !important;
-                bottom: 0px !important;
-                min-width: 20% !important;
-                max-width: 30% !important;
-                height: 50%;
-                top:auto!important;
-                left:auto!important;
-
-                .screen-title-title {
-                    text-align: center;
-                }
-
-                .screen-title-subtitle {
-                    text-align: center;
-                }
-
-                p {
-                    text-align: center;
-
-                    a {
-                        color: white !important;
-                    }
-                }
+            
+                top: auto !important;
+                left: auto !important;
             }
         }
     }
@@ -608,21 +560,9 @@ img.featured-item-slide-image {
         .screen-title {
 
             .screen-title-copy {
-                position: absolute !important;
-                padding: 10px 20px 20px 20px;
-                background: $grey;
-                opacity: .85;
-                color: white;
-                right: 15% !important;
                 bottom: 15% !important;
-                min-width: 20% !important;
                 max-width: 20% !important;
-                height: 50%;
-                top:auto!important;
-                left:auto!important;
-
             }
         }
     }
 }
-

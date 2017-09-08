@@ -13,7 +13,7 @@
 			var self = $(this);
 			var useThumbs = self.hasClass('carousel-thumb');
 			var defaults = {
-				dots: true,
+				dots: false,
 				customPaging: function (slider, i) {
 					var pager = '<a href="javascript:;" class="pager">';
 					if (useThumbs) {

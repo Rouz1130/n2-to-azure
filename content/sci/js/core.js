@@ -1,4 +1,4 @@
-/*! 2017-09-06 13:09:29 */
+/*! 2017-09-08 12:06:08 */
 (function ($) {
 
 	var o = $({});
@@ -343,7 +343,7 @@
 			var self = $(this);
 			var useThumbs = self.hasClass('carousel-thumb');
 			var defaults = {
-				dots: true,
+				dots: false,
 				customPaging: function (slider, i) {
 					var pager = '<a href="javascript:;" class="pager">';
 					if (useThumbs) {

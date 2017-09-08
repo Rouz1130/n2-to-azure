@@ -1,4 +1,6 @@
-﻿$color-item-title: #4a3c31;
+﻿@import "../base/colors";
+@import "../base/mixins";
+
 
 /** Gallery */
 .featured-item-gallery {
@@ -12,7 +14,7 @@
         .featured-item-title {
             cursor: pointer;
             position: absolute;
-            background: $color-item-title;
+            background: $black;
             color: white;
             display: block;
             padding: 15px 20px;

@@ -870,30 +870,23 @@ img.featured-item-slide-image {
     top: 40%; }
   .carousel-gallery .component .slick-prev {
     top: 40%; } }
-@media screen and (min-width: 750px) and (max-width: 850px) {
-  .carousel-gallery .screen-title .screen-title-copy {
-    min-width: 40% !important;
-    max-width: 50% !important; } }
 @media screen and (min-width: 750px) {
   .carousel-gallery .screen-title .screen-title-copy {
-    position: absolute !important;
-    padding: 10px 20px 20px 20px;
-    background: #605f5e;
-    opacity: .85;
-    color: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    background-color: #4a3c31;
+    display: block;
+    padding: 10px 20px 20px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
     right: 15% !important;
     bottom: 0px !important;
     min-width: 30% !important;
     max-width: 40% !important;
     height: 50%; }
-    .carousel-gallery .screen-title .screen-title-copy .screen-title-title {
-      text-align: center; }
-    .carousel-gallery .screen-title .screen-title-copy .screen-title-subtitle {
-      text-align: center; }
-    .carousel-gallery .screen-title .screen-title-copy p {
-      text-align: center; }
-      .carousel-gallery .screen-title .screen-title-copy p a {
-        color: white !important; } }
+    .carousel-gallery .screen-title .screen-title-copy a, .carousel-gallery .screen-title .screen-title-copy .glyph-link {
+      color: white; } }
 @media screen and (min-width: 800px) {
   .carousel-gallery .component .slick-next {
     opacity: 0;
@@ -909,40 +902,12 @@ img.featured-item-slide-image {
     opacity: .7; } }
 @media (min-width: 992px) {
   .carousel-gallery .screen-title .screen-title-copy {
-    position: absolute !important;
-    padding: 10px 20px 20px 20px;
-    background: #605f5e;
-    opacity: .85;
-    color: white;
-    right: 15% !important;
-    bottom: 0px !important;
-    min-width: 20% !important;
-    max-width: 30% !important;
-    height: 50%;
-    top: auto !important;
-    left: auto !important; }
-    .carousel-gallery .screen-title .screen-title-copy .screen-title-title {
-      text-align: center; }
-    .carousel-gallery .screen-title .screen-title-copy .screen-title-subtitle {
-      text-align: center; }
-    .carousel-gallery .screen-title .screen-title-copy p {
-      text-align: center; }
-      .carousel-gallery .screen-title .screen-title-copy p a {
-        color: white !important; } }
-@media (min-width: 1240px) {
-  .carousel-gallery .screen-title .screen-title-copy {
-    position: absolute !important;
-    padding: 10px 20px 20px 20px;
-    background: #605f5e;
-    opacity: .85;
-    color: white;
-    right: 15% !important;
-    bottom: 15% !important;
-    min-width: 20% !important;
-    max-width: 20% !important;
-    height: 50%;
     top: auto !important;
     left: auto !important; } }
+@media (min-width: 1240px) {
+  .carousel-gallery .screen-title .screen-title-copy {
+    bottom: 15% !important;
+    max-width: 20% !important; } }
 .cta-box {
   padding: 30px;
   text-align: center;
@@ -1206,12 +1171,15 @@ img.featured-item-slide-image {
   width: auto; }
 
 .bp-lg > .featured-item .featured-item-overlay-block, .bp-lg > .featured-item.featured-item-title-overlay > .featured-item-image-wrap > .featured-item-title, .bp-xl.bp-lg > .featured-item.featured-item-slide-topic > .featured-item-slide-title-copy {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  background-color: #fff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  background-color: #4a3c31;
   display: block;
-  padding: 15px 20px;
+  padding: 10px 20px 20px;
+  color: #fff;
   position: absolute; }
+  .bp-lg > .featured-item .featured-item-overlay-block a, .bp-lg > .featured-item.featured-item-title-overlay > .featured-item-image-wrap > .featured-item-title a, .bp-xl.bp-lg > .featured-item.featured-item-slide-topic > .featured-item-slide-title-copy a, .bp-lg > .featured-item .featured-item-overlay-block .glyph-link, .bp-lg > .featured-item.featured-item-title-overlay > .featured-item-image-wrap > .featured-item-title .glyph-link, .bp-xl.bp-lg > .featured-item.featured-item-slide-topic > .featured-item-slide-title-copy .glyph-link {
+    color: white; }
 .bp-lg > .featured-item .featured-item-table, .bp-lg > .featured-item.featured-item-title-overlay > .featured-item-copy-wrap {
   display: table;
   width: 100%; }
