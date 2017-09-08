@@ -8,8 +8,10 @@
     .locator-row {
         @include inner-component();
 
-        &:first-child {
+        > div:first-child {
             padding: 0;
+            margin-left: -$gutter-mobile;
+            margin-right: -$gutter-mobile;
         }
     }
 
@@ -141,6 +143,10 @@
 
         .locator-row {
             position: relative;
+
+            > div:first-child {
+                margin: 0;
+            }
         }
 
         .location-copy {

@@ -2291,8 +2291,10 @@ a.link-icon {
   .locator-panel .locator-row {
     max-width: 1400px;
     margin: 0 auto; }
-    .locator-panel .locator-row:first-child {
-      padding: 0; }
+    .locator-panel .locator-row > div:first-child {
+      padding: 0;
+      margin-left: -20px;
+      margin-right: -20px; }
   .locator-panel .location-copy {
     padding: 20px 0;
     position: relative; }
@@ -2373,6 +2375,8 @@ a.link-icon {
       text-align: left; }
     .locator-panel .locator-row {
       position: relative; }
+      .locator-panel .locator-row > div:first-child {
+        margin: 0; }
     .locator-panel .location-copy {
       background-color: #fff;
       vertical-align: top; } }
