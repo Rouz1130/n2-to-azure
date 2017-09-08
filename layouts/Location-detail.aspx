@@ -41,14 +41,28 @@
 
                     <h2>Gallery</h2>
                         <ks:Component runat="server" Code="F01.2" />  
-                     <div class="col-lg-8 col-md-10 centered-col">
+                     <div class="col-lg-8 col-md-10 centered-col hide-extra-paragraphs">
                          
-                         <h6 class="header-subtitle">History</h6>
-                        <p>Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                         <h3>History</h3>
+                        <p>1 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                          <p>2 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                          <p>3 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                          <p>4 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
 
-                         <h6 class="header-subtitle">personalized services</h6>
+                         <h6>personalized services</h6>
                          <p>Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
-                    </div>
+                    
+                         
+                          <h6>both chapel and cremation gardens</h6>
+                         <p>1 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                          <p>2 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+                          <p>3 Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p>
+
+
+                        <div id="see-more-container">
+                            <a class="see-more collapsed" aria-expanded="false"><span class="more">See more</span><span class="less">See less</span></a>
+                        </div>
+                     </div>
                 </div>
                 
                 <div id="obits">

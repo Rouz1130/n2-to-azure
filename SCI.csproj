@@ -185,6 +185,7 @@
     <Content Include="content\sci\img\icons\support.png" />
     <Content Include="content\sci\img\logos\bottom-logo.png" />
     <Content Include="content\sci\img\logos\logo.png" />
+    <Content Include="content\sci\js\core\modules\_hide-extra-paragraphs.js" />
     <Content Include="content\sci\js\data\static-googlemaps.html" />
     <Content Include="content\site\coal-339x159.jpg" />
     <Content Include="content\site\coal-439x206.jpg" />

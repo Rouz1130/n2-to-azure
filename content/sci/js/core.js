@@ -1,4 +1,4 @@
-/*! 2017-09-08 12:06:08 */
+/*! 2017-09-08 15:12:49 */
 (function ($) {
 
 	var o = $({});
@@ -341,7 +341,7 @@
 
 		$('.carousel').each(function () {
 			var self = $(this);
-			var useThumbs = self.hasClass('carousel-thumb');
+			var useThumbs = self.hasClass('carousel-thumb'); // TODO remove this, replace with check for multiple items
 			var defaults = {
 				dots: false,
 				customPaging: function (slider, i) {
@@ -418,6 +418,42 @@
 		analytics.et = $field.val() ? '1' : '0';
 		$.publish('xom.analytics', analytics);
 	}
+
+}(window.jQuery));;
+
+(function ($) {
+    
+    $(function () {
+
+	    $('.hide-extra-paragraphs').find('h3,h4,h5,h6').each(function () {
+
+	        var $para = $(this).nextUntil('h2,h3,h4,h5,h6,div');
+	      
+	        if ($para.length > 1) {
+
+	            var $showmore = $('#see-more-container').find('.see-more').clone();
+	            var $showless = $showmore.clone().attr('aria-expanded', true);
+
+	            $showmore.click(function () {
+                    $(this).parent().nextUntil('h2,h3,h4,h5,h6,div').show();
+	                $(this).hide();
+	            });
+
+	            $showless.click(function () {
+	                $(this).parent().hide().prevUntil('h2,h3,h4,h5,h6,div').hide();
+	                $showmore.show();
+	            });
+
+	            $para.first().append($showmore);
+	            $para.last().append($showless);
+            }
+	    });
+
+
+	   
+	});
+
+	
 
 }(window.jQuery));;
 

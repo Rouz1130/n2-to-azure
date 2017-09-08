@@ -35,6 +35,28 @@
             background: $greystripe;
         }
     }
+    
+    // The content in this container is raw HTML entered by the client
+    .hide-extra-paragraphs {
+
+        .see-more {
+            text-align: left;
+            display: inline;
+            margin-left: 10px;
+        }
+
+        h3, h4, h5, h6 {
+            @extend .header-subtitle;
+
+            & + p {
+                display: block !important; // To force this to always display even when the "see less" js runs
+            }
+        }
+
+        p, #see-more-container {
+            display: none;
+        }
+    }
 
     @include if-min(md) {
         .btn {

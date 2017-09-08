@@ -4,7 +4,6 @@
 	<ul class="nav-main-mobile-panel nav-main-mobile-panel-menu nav-main-mobile-panel-active" id="mm-0">
 		<li class="nav-main-mobile-logo">
 			<a href="#" class="logo">
-				<img class="nav-mobile-logo-svg" src="<%= ResolveUrl("~/content/sci/img/logos/logo-red.svg") %>" />
 				<img class="nav-mobile-logo-ie8" src="<%= ResolveUrl("~/content/sci/img/logos/logo-nav-ie8.png") %>" />
 			</a>
 		</li>
@@ -101,12 +100,7 @@
 		<li><a href="#">Remote reservoir resistivity mapping</a></li>
 		<li><a href="#">Seismic mapping</a></li>
 	</ul>
-	<ul class="nav-main-mobile-panel" id="mm-12">
-		<li class="nav-main-mobile-back"><a href="#mm-8">Extended reach technology</a></li>
-		<li><a href="#">Overview</a></li>
-		<li><a href="#">Environment and safety</a></li>
-		<li><a href="#">Techology</a></li>
-	</ul>
+	
 	<ul class="nav-main-mobile-panel" id="mm-13">
 		<li class="nav-main-mobile-back"><a href="#mm-8">Hydraulic fracturing</a></li>
 		<li><a href="#">Environment and safety</a></li>
@@ -149,19 +143,7 @@
 		<li><a href="#">Climate policy principles</a></li>
 		<li><a href="#">Emissions reduction</a></li>
 	</ul>
-	<ul class="nav-main-mobile-panel" id="mm-19">
-		<li class="nav-main-mobile-back"><a href="#mm-16">Energy policy</a></li>
-		<li><a href="#">Overview</a></li>
-		<li><a href="#">LNG exports</a></li>
-		<li><a href="#">U.S. energy policy</a></li>
-	</ul>
-	<ul class="nav-main-mobile-panel" id="mm-20">
-		<li class="nav-main-mobile-back"><a href="#mm-16">U.S. tax policy</a></li>
-		<li><a href="#">Overview</a></li>
-		<li><a href="#">American competitiveness</a></li>
-		<li><a href="#">Current tax issues</a></li>
-		<li><a href="#">U.S. tax and duty payments</a></li>
-	</ul>
+	
 	<ul class="nav-main-mobile-panel" id="mm-21">
 		<li class="nav-main-mobile-back"><a href="#mm-16">Water</a></li>
 		<li><a href="#">Overview</a></li>
@@ -182,19 +164,7 @@
 		<li><a href="#">Spill prevention and response</a></li>
 		<li><a href="#">Tropical weather preparedness</a></li>
 	</ul>
-	<ul class="nav-main-mobile-panel" id="mm-24">
-		<li class="nav-main-mobile-back"><a href="#mm-22">Environmental performance</a></li>
-		<li><a href="#">Overview</a></li>
-		<li><a href="#">Air emissions reductions</a></li>
-		<li><a href="#">Ecosystem services</a></li>
-		<li><a href="#">Environmental drilling initiatives</a></li>
-		<li><a href="#">Environmental stewardship</a></li>
-		<li><a href="#">Freshwater management</a></li>
-		<li><a href="#">Managing Arctic resources</a></li>
-		<li><a href="#">Site remediation</a></li>
-		<li><a href="#">Spill performance</a></li>
-		<li><a href="#">Waste management</a></li>
-	</ul>
+	
 	<ul class="nav-main-mobile-panel" id="mm-25">
 		<li class="nav-main-mobile-back"><a href="#mm-22">Global climate change</a></li>
 		<li><a href="#">Overview</a></li>

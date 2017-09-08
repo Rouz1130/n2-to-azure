@@ -219,7 +219,7 @@
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FAuthoring%20Components%20Sets.one%7C543cf98e-e6fc-4ffa-b61c-5a42d40ce359%2FC03%20Carousel%7Cc4080d1f-98cb-4093-abe1-c39467d44c2d%2F%29",
 			"variations": [
 				{ "variation": 1, "name": "Default" },
-				{ "variation": 3, "name": "Thumbnails below" }
+				{ "variation": 2, "name": "Multiple items per slide" }
 			],
 			"children": [ "T01", "T02", "T03", "T04", "F01", "F02", "F03", "F04", "F05" ],
 			"defaultChild": "T04.1",
