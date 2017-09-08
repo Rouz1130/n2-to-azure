@@ -55,7 +55,7 @@
 			</div>
 			<div class="modal-body carousel-gallery">
                 <!-- carousel -->
-			    <ks:Component runat="server" Code="C03.1" Child="F04.2" />  
+			    <ks:Component runat="server" Code="C03.1" Child="T04.2" />  
                 <!-- end carousel -->
 			</div>
 		</div>
