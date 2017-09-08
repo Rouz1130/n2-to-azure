@@ -52,11 +52,10 @@
 		<div class="modal-content">
 			<div class="modal-header  modal-title-gallery">
 				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-				<h2 class="modal-title" id="<%=UniqueDomId("lb")%>-label">Gallery</h2>
 			</div>
 			<div class="modal-body carousel-gallery">
                 <!-- carousel -->
-			    <ks:Component runat="server" Code="C03.1" Child="F04.2" />  
+			    <ks:Component runat="server" Code="C03.1" Child="T04.2" />  
                 <!-- end carousel -->
 			</div>
 		</div>

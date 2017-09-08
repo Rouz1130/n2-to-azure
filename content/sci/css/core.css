@@ -579,7 +579,13 @@ html.ios .app-promotion-android {
 
 /* Slider */
 .slick-list {
-  margin-bottom: 25px; }
+  margin-bottom: 0px;
+  display: block;
+  max-height: 600px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1; }
   .slick-loading .slick-list {
     background: none; }
 
@@ -799,9 +805,26 @@ html.ios .app-promotion-android {
 @media (min-width: 1200px) {
   .col-4 .carousel-thumb .slick-dots > li {
     width: 11%; } }
+/** Image Setting */
+img.featured-item-slide-image {
+  margin-bottom: 0px !important; }
+
 /** Carousel-gallery */
+.carousel-gallery .screen-title .screen-title-image {
+  margin-bottom: 0px !important; }
+.carousel-gallery .screen-title .screen-title-copy {
+  padding: 10px 20px 20px 20px;
+  background: #f2f0ec; }
+  .carousel-gallery .screen-title .screen-title-copy .screen-title-title {
+    text-align: center; }
+  .carousel-gallery .screen-title .screen-title-copy .screen-title-subtitle {
+    text-align: center; }
+  .carousel-gallery .screen-title .screen-title-copy p {
+    text-align: center; }
 .carousel-gallery .component {
   padding: 0px; }
+  .carousel-gallery .component .slick-dots {
+    display: none !important; }
   .carousel-gallery .component .slick-next {
     right: 0;
     top: 24%;
@@ -842,17 +865,84 @@ html.ios .app-promotion-android {
     text-align: center; }
 
 /** Responsive Gallery tablet **/
-@media screen and (min-width: 450px) and (max-width: 799px) {
-  .carousel-gallery .component .slick-next {
-    top: 30%; }
-  .carousel-gallery .component .slick-prev {
-    top: 30%; } }
-/** Responsive Gallery Desktop **/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 450px) {
   .carousel-gallery .component .slick-next {
     top: 40%; }
   .carousel-gallery .component .slick-prev {
     top: 40%; } }
+@media screen and (min-width: 750px) and (max-width: 850px) {
+  .carousel-gallery .screen-title .screen-title-copy {
+    min-width: 40% !important;
+    max-width: 50% !important; } }
+@media screen and (min-width: 750px) {
+  .carousel-gallery .screen-title .screen-title-copy {
+    position: absolute !important;
+    padding: 10px 20px 20px 20px;
+    background: #605f5e;
+    opacity: .85;
+    color: white;
+    right: 15% !important;
+    bottom: 0px !important;
+    min-width: 30% !important;
+    max-width: 40% !important;
+    height: 50%; }
+    .carousel-gallery .screen-title .screen-title-copy .screen-title-title {
+      text-align: center; }
+    .carousel-gallery .screen-title .screen-title-copy .screen-title-subtitle {
+      text-align: center; }
+    .carousel-gallery .screen-title .screen-title-copy p {
+      text-align: center; }
+      .carousel-gallery .screen-title .screen-title-copy p a {
+        color: white !important; } }
+@media screen and (min-width: 800px) {
+  .carousel-gallery .component .slick-next {
+    opacity: 0;
+    top: 47%;
+    transition-duration: 0.8s; }
+  .carousel-gallery .component .slick-prev {
+    opacity: 0;
+    top: 47%;
+    transition-duration: 0.8s; }
+  .carousel-gallery .component:hover .slick-next {
+    opacity: .7; }
+  .carousel-gallery .component:hover .slick-prev {
+    opacity: .7; } }
+@media (min-width: 992px) {
+  .carousel-gallery .screen-title .screen-title-copy {
+    position: absolute !important;
+    padding: 10px 20px 20px 20px;
+    background: #605f5e;
+    opacity: .85;
+    color: white;
+    right: 15% !important;
+    bottom: 0px !important;
+    min-width: 20% !important;
+    max-width: 30% !important;
+    height: 50%;
+    top: auto !important;
+    left: auto !important; }
+    .carousel-gallery .screen-title .screen-title-copy .screen-title-title {
+      text-align: center; }
+    .carousel-gallery .screen-title .screen-title-copy .screen-title-subtitle {
+      text-align: center; }
+    .carousel-gallery .screen-title .screen-title-copy p {
+      text-align: center; }
+      .carousel-gallery .screen-title .screen-title-copy p a {
+        color: white !important; } }
+@media (min-width: 1240px) {
+  .carousel-gallery .screen-title .screen-title-copy {
+    position: absolute !important;
+    padding: 10px 20px 20px 20px;
+    background: #605f5e;
+    opacity: .85;
+    color: white;
+    right: 15% !important;
+    bottom: 15% !important;
+    min-width: 20% !important;
+    max-width: 20% !important;
+    height: 50%;
+    top: auto !important;
+    left: auto !important; } }
 .cta-box {
   padding: 30px;
   text-align: center;
@@ -2469,7 +2559,8 @@ a.link-icon {
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 10px; }
+  padding: 10px;
+  margin: 20px; }
 
 .modal-header {
   border-bottom: none; }
@@ -2492,19 +2583,19 @@ a.link-icon {
   background: whitesmoke; }
   .modal-background .modal-content {
     padding: 0px !important; }
-    .modal-background .modal-content .modal-header a {
-      padding-right: 8px; }
   .modal-background .modal-body {
     padding: 0px !important; }
 
 .carousel-gallery .component {
-  padding: 0px !important; }
+  padding: 0px !important;
+  margin: 0px !important; }
 
 .modal-title-gallery {
-  padding: 0px !important; }
-  .modal-title-gallery h2 {
-    margin: 0px !important;
-    margin-top: 20px !important; }
+  padding: 0px !important;
+  position: absolute;
+  z-index: 1;
+  right: 1%;
+  top: 2%; }
 
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
 .modal.fade.modal-layer-hide {
@@ -2516,8 +2607,14 @@ a.link-icon {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    max-width: 763px;
-    width: 80%; } }
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .modal-content {
+    margin: 30px;
+    max-height: 100%; } }
 p.paragraph.large {
   font-size: 20px;
   font-size: 1.25rem; }

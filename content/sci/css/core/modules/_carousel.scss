@@ -55,12 +55,19 @@ $slick-opacity-not-active: 0.5 !default;
 /* Slider */
 
 .slick-list {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    display: block;
+    max-height: 600px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
 
     .slick-loading & {
         background: none;
     }
 }
+
 
 /* Icons */
 @if $slick-font-family == "slick" {
@@ -369,11 +376,43 @@ $slick-opacity-not-active: 0.5 !default;
         }
     }
 }
+/** Image Setting */
 
+img.featured-item-slide-image {
+    margin-bottom: 0px !important;
+}
 /** Carousel-gallery */
 .carousel-gallery {
+
+    .screen-title {
+        .screen-title-image {
+            margin-bottom: 0px !important;
+        }
+
+        .screen-title-copy {
+            padding: 10px 20px 20px 20px;
+            background: #f2f0ec;
+
+            .screen-title-title {
+                text-align: center;
+            }
+
+            .screen-title-subtitle {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
     .component {
         padding: 0px;
+
+        .slick-dots {
+            display: none !important;
+        }
 
         .slick-next {
             right: 0;
@@ -420,6 +459,7 @@ $slick-opacity-not-active: 0.5 !default;
                 }
             }
         }
+
         .slick-dots {
             text-align: center;
         }
@@ -427,31 +467,162 @@ $slick-opacity-not-active: 0.5 !default;
 }
 
 /** Responsive Gallery tablet **/
-@media screen and (min-width: 450px) and (max-width: 799px) {
+@media screen and (min-width: 450px) {
     .carousel-gallery {
         .component {
             .slick-next {
-                top: 30%;
+                top: 40%;
             }
 
             .slick-prev {
-                top: 30%;
+                top: 40%;
             }
         }
     }
 }
 
-/** Responsive Gallery Desktop **/
+@media screen and (min-width: 750px) and (max-width:850px) {
+    .carousel-gallery {
+
+        .screen-title {
+
+            .screen-title-copy {
+                min-width: 40% !important;
+                max-width: 50% !important;
+
+                .screen-title-subtitle {
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:750px) {
+    .carousel-gallery {
+
+        .screen-title {
+
+            .screen-title-copy {
+                position: absolute !important;
+                padding: 10px 20px 20px 20px;
+                background: $grey;
+                opacity: .85;
+                color: white;
+                right: 15% !important;
+                bottom: 0px !important;
+                min-width: 30% !important;
+                max-width: 40% !important;
+                height: 50%;
+
+                .screen-title-title {
+                    text-align: center;
+                }
+
+                .screen-title-subtitle {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (min-width: 800px) {
     .carousel-gallery {
         .component {
             .slick-next {
-                top: 40%;
+                opacity: 0;
+                top: 47%;
+                transition-duration: 0.8s;
             }
 
             .slick-prev {
-                top: 40%;
+                opacity: 0;
+                top: 47%;
+                transition-duration: 0.8s;
+            }
+        }
+
+        .component:hover {
+            .slick-next {
+                opacity: .7;
+            }
+
+            .slick-prev {
+                opacity: .7;
             }
         }
     }
 }
+
+@media (min-width: 992px) {
+    .carousel-gallery {
+
+        .screen-title {
+
+            .screen-title-copy {
+                position: absolute !important;
+                padding: 10px 20px 20px 20px;
+                background: $grey;
+                opacity: .85;
+                color: white;
+                right: 15% !important;
+                bottom: 0px !important;
+                min-width: 20% !important;
+                max-width: 30% !important;
+                height: 50%;
+                top:auto!important;
+                left:auto!important;
+
+                .screen-title-title {
+                    text-align: center;
+                }
+
+                .screen-title-subtitle {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    .carousel-gallery {
+
+        .screen-title {
+
+            .screen-title-copy {
+                position: absolute !important;
+                padding: 10px 20px 20px 20px;
+                background: $grey;
+                opacity: .85;
+                color: white;
+                right: 15% !important;
+                bottom: 15% !important;
+                min-width: 20% !important;
+                max-width: 20% !important;
+                height: 50%;
+                top:auto!important;
+                left:auto!important;
+
+            }
+        }
+    }
+}
+
