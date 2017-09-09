@@ -23,7 +23,7 @@
                         <p>Suspendisse ac tellus aliquam, pellentesque metus rutrum, molestie tortor. Pellentesque quis semper mi. Vivamus dignissim, elit non accumsan feugiat, dui dolor pulvinar odio, ac pretium eros est nec odio. Ut eu augue tincidunt, luctus lectus.</p> 
                         <p>Ullamcorper elit. Duis condimentum neque placerat arcu feugiat volutpat. Duis commodo nibh tortor, id molestie est eleifend at. Curabitur posuere eget erat ac faucibus.</p>
                     
-                        <h6 class="header-subtitle">Services</h6>
+                        <h6 class="header-subtitle services">Services</h6>
                          <ul>
                              <li>Lorem ipsum dolor sit amet </li>
                               <li>Maecenas pretium libero vitae </li>

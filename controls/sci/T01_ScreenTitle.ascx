@@ -4,7 +4,8 @@
 
 	<div class="component screen-title screen-title-overlay">
 		<div class="screen-title-image-wrap">
-			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header.jpg")%>">
+			<img class="screen-title-image hidden-xs hidden-sm" src="<%=ResolveUrl("~/content/site/header.jpg")%>">
+            <img class="screen-title-image hidden-md hidden-lg" src="<%=ResolveUrl("~/content/site/location-hero-mobile.png")%>">
             <div class="screen-title-title">
                  <p class="header-subtitle">FUNERAL, Cremation & CEMETERY </p>
 			    <h1><ks:Content runat="server" DefaultContent="Chattanooga Funeral Home, Crematory & Florist-North Chapel and Hamilton Memorial Gardens" ContentKey="title" /></h1>
