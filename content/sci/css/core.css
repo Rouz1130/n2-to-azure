@@ -983,7 +983,8 @@ img.featured-item-slide-image {
     padding: 0 20px;
     font-size: 100px; }
   .event-list .event-list-description {
-    padding: 10px 30px 20px; }
+    padding: 10px 30px 20px;
+    text-align: left; }
 
 .expanding-box .component {
   margin-top: 32px;

@@ -2,6 +2,7 @@
 
 <% if (Variation == 1) { %>
 
+<!-- This is used for heros -->
 	<div class="component screen-title screen-title-overlay">
 		<div class="screen-title-image-wrap">
 			<img class="screen-title-image hidden-xs hidden-sm" src="<%=ResolveUrl("~/content/site/header.jpg")%>">

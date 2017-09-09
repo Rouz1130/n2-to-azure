@@ -81,7 +81,9 @@
                       <ks:Component runat="server" Code="B05.1" />
                         </div>
                 </div>
-                
+                <div id="images">
+                    <ks:Component runat="server" Code="C03.1" Child="F04.1" />  
+                </div>
                 <div id="associates">
                      <div class="col-lg-8 col-md-10 centered-col">
                     <h2>Lorem ipsum dolor sit amet, erat consectetur elit donec </h2>
