@@ -5,160 +5,122 @@
 @import "variables";
 
 #nav-main-mobile {
-	background-color: $white;
-	height: 100%;
-	overflow-x: hidden;
-	position: fixed;
-	right: 0;
-	top: -9999px;
-	width: 80%;
-
-	.nav-mobile-logo-ie8{
-		display:none;
-	}
+    background-color: $greystripe;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    right: 0;
+    top: -9999px;
+    width: 80%;
 }
 
 html.nav-main-mobile-open {
-	#nav-main-mobile {
-		top: 0;
+    #nav-main-mobile {
+        top: 0;
+    }
+
+    .body-wrapper {
+		right: 80%;
+
+        
 	}
 }
 
-.nav-main-mobile-visible {
-	height: auto;
-	top: 0;
-}
 
-.nav-main-mobile-arrow {
-	border: 2px solid $nav-main-mobile-arrow;
-	border-left: transparent;
-	border-top: transparent;
-	content: "";
-	height: 15px;
-	position: absolute;
-	width: 15px;
+.nav-main-mobile-visible {
+    height: auto;
+    top: 0;
 }
 
 .nav-main-mobile-panel {
-	background-color: $white;
-	bottom: 0;
-	display: block;
-	height: 0;
-	left: 100%;
-	list-style-type: none;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	@include transition(left, 0.35s);
-	top: -9999px;
-	width: 100%;
-	
-	&.nav-main-mobile-panel-parent {
-		@extend .nav-main-mobile-visible;
-		left: -70px;
-		z-index: 1;
-	}
+    display: block;
+    height: 0;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    text-align: center;
 
-	&.nav-main-mobile-panel-active {
-		@extend .nav-main-mobile-visible;
-		left: 0;
-		overflow: visible;
-		z-index: 2;
-	}
+    &.nav-main-mobile-panel-parent {
+        @extend .nav-main-mobile-visible;
+        left: -70px;
+        z-index: 1;
+    }
 
-	&.nav-main-mobile-panel-highest {
-		@extend .nav-main-mobile-visible;
-		z-index: 3 !important;
-	}
+    &.nav-main-mobile-panel-active {
+        @extend .nav-main-mobile-visible;
+        left: 0;
+        overflow: visible;
+        z-index: 2;
+    }
 
-	&.nav-main-mobile-panel-menu {
-		> li > a:after {
-			@extend .nav-main-mobile-arrow;
-			@include transform(rotate(-45deg));
-			right: 0;
-		}
-	}
+    &.nav-main-mobile-panel-highest {
+        @extend .nav-main-mobile-visible;
+        z-index: 3 !important;
+    }
 
-	> li {
-		padding: 0 30px;
 
-		&.nav-main-mobile-back {
-			background-color: $tan;
-			padding-left: 0;
 
-			&:before {
-				background-color: $tan;
-				content: "";
-				display: block;
-				height: 80px;
-				left: 0;
-				position: absolute;
-				width: 80px;
-			}
+    > li {
+        padding: 0 30px;
 
-			> a {
-				border-bottom: none;
-				padding-left: 110px;
+        &.top-level {
+            > a {
+                @include font-family("Lato-Bold");
+            }
 
-				&:after {
-					@extend .nav-main-mobile-arrow;
-					@include transform(rotate(135deg));
-					left: 36px;
-				}
-			}
-		}
+            &:after {
+                clear: both;
+                display: block;
+                content: ' ';
+                @include sprite($flourish-horiz);
+                width: $flourish-horiz-width;
+                height: $flourish-horiz-height;
+                margin: 10px auto;
+            }
+        }
 
-		&.nav-main-mobile-logo {
-			background-color: $white;
+        &:not(.top-level) > a {
+            color: $grey;
+        }
 
-			> a {
-				border-bottom: 1px solid $nav-main-mobile-divider;
-			}
-		}
+        > a {
+            @include font-uppercase();
+            display: block;
+            font-size: 14px;
+            padding: 20px 0;
+            position: relative;
 
-		> a {
-			background-color: transparent;
-			border-bottom: 1px solid $black5;
-			color: $grey;
-			display: block;
-			@include font-family("Lato-Bold");
-			font-size: 14px;
-			padding: 30px 0;
-			position: relative;
+            &:hover, &:focus, &:active {
+                text-decoration: none;
+            }
 
-			&:hover, &:focus, &:active {
-				text-decoration: none;
-			}
-
-			&.logo {
-				&:after {
-					display: none;
-				}
-
-				> img {
-					width: auto;
-				}
-			}
-		}
-	}
+            &.logo {
+                text-align: left;
+                > img {
+                    width: 170px;
+                }
+            }
+        }
+    }
 }
 
 html.nav-main-mobile-open {
-	#nav-main-mobile {
-		overflow-x: hidden;
-		overflow-y: auto;
-	}
+    #nav-main-mobile {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
 
 html.nav-main-mobile-transition {
-	#nav-main-mobile {
-		overflow: hidden;
-	}
+    #nav-main-mobile {
+        overflow: hidden;
+    }
 }
 
 @include if-min(lg) {
-	#nav-main-mobile {
-		display: none;
-	}
+    #nav-main-mobile {
+        display: none;
+    }
 }

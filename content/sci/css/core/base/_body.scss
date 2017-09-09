@@ -40,11 +40,7 @@ html.nav-global-selector-open {
 	}
 }
 
-html.nav-main-mobile-open {
-	.body-wrapper {
-		right: 80%;
-	}
-}
+
 
 
 @include if-min(lg) {
