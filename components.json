@@ -430,7 +430,8 @@
 			"variations": [
 				{ "variation": 1, "name": "Horizontal" },
 				{ "variation": 2, "name": "Vertical" },
-				{ "variation": 4, "name": "Vertical with intro text" }
+        {  "variation": 4, "name": "Vertical with intro text" },
+       { "variation": 5, "name": "Associates card" }
 			],
 			"batch": 2
 		},

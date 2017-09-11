@@ -87,6 +87,7 @@
                 <div id="associates">
                      <div class="col-lg-8 col-md-10 centered-col">
                     <h2>Lorem ipsum dolor sit amet, erat consectetur elit donec </h2>
+                         <ks:Component runat="server" Code="C03.2" Child="S01.5" /> 
                          </div>
                 </div>
 
