@@ -53,7 +53,7 @@
 			<div class="modal-header  modal-title-gallery">
 				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
 			</div>
-			<div class="modal-body carousel-gallery">
+			<div class="modal-body">
                 <!-- carousel -->
 			    <ks:Component runat="server" Code="C03.1" Child="T04.2" />  
                 <!-- end carousel -->
