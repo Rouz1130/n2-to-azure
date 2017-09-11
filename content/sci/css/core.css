@@ -581,6 +581,24 @@ html.ios .app-promotion-android {
 .no-js .slide:first-child {
   display: block; }
 
+/**Close Carousel */
+.modal .modal-header {
+  height: 30px;
+  padding: 0 !important;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+  width: 30px; }
+  .modal .modal-header a {
+    color: #47d5cd;
+    font-size: 38px !important;
+    font-weight: 400;
+    width: 30px;
+    margin-right: 0px !important;
+    margin-top: 0px !important;
+    height: 30px; }
+
 /* Slider */
 .slick-dots {
   display: none !important; }
@@ -695,7 +713,7 @@ html.ios .app-promotion-android {
   .component .slick-prev {
     top: 40% !important; }
 
-  .screen-title-full-overlay .screen-title-copy {
+  .featured-item-slide-topic .featured-item-slide-title-copy {
     opacity: 0.85;
     filter: alpha(opacity=85);
     background-color: #605f5e !important;
@@ -707,9 +725,8 @@ html.ios .app-promotion-android {
     right: 15% !important;
     bottom: 0px !important;
     min-width: 25% !important;
-    max-width: 35% !important;
-    height: 50%; }
-    .screen-title-full-overlay .screen-title-copy a, .screen-title-full-overlay .screen-title-copy .glyph-link {
+    max-width: 35% !important; }
+    .featured-item-slide-topic .featured-item-slide-title-copy a, .featured-item-slide-topic .featured-item-slide-title-copy .glyph-link {
       color: white; } }
 @media (min-width: 992px) {
   .col-3 .slick-list, .col-4 .slick-list {
@@ -718,34 +735,31 @@ html.ios .app-promotion-android {
   .col-4 .slide-title {
     max-width: 30%; }
 
-  .screen-title-full-overlay .screen-title-copy {
-    top: auto !important;
-    left: auto !important; }
-
   .component .slick-next, .component .slick-prev {
     opacity: 0 !important;
     transition-duration: 0.8s !important; }
   .component:hover .slick-next, .component:hover .slick-prev {
     opacity: .7 !important; } }
 @media (min-width: 1200px) {
-  .screen-title-full-overlay .screen-title-copy {
-    bottom: 15% !important;
-    max-width: 20% !important; } }
+  .featured-item-slide-topic .featured-item-slide-title-copy {
+    max-width: 25% !important;
+    height: 100%;
+    top: 20%; } }
 /** Image Setting */
 img.featured-item-slide-image {
   margin-bottom: 0px !important; }
 
 /** Carousel-gallery */
-.screen-title-full-overlay .screen-title-image {
+.featured-item-slide-topic .featured-item-slide-image {
   margin-bottom: 0px !important; }
-.screen-title-full-overlay .screen-title-copy {
+.featured-item-slide-topic .featured-item-slide-title-copy {
   padding: 10px 20px 20px 20px;
   background: #f2f0ec; }
-  .screen-title-full-overlay .screen-title-copy .screen-title-title {
+  .featured-item-slide-topic .featured-item-slide-title-copy .screen-title-title {
     text-align: center; }
-  .screen-title-full-overlay .screen-title-copy .screen-title-subtitle {
+  .featured-item-slide-topic .featured-item-slide-title-copy .screen-title-subtitle {
     text-align: center; }
-  .screen-title-full-overlay .screen-title-copy p {
+  .featured-item-slide-topic .featured-item-slide-title-copy p {
     text-align: center; }
 
 .component {
@@ -1896,6 +1910,8 @@ h3 {
     display: block !important; }
   .location-container .hide-extra-paragraphs p, .location-container .hide-extra-paragraphs #see-more-container {
     display: none; }
+  .location-container #images {
+    padding: 0; }
   @media (min-width: 768px) {
     .location-container .btn, .location-container .btn-secondary, .location-container .btn-light, .location-container .btn-badge, .location-container .btn-icon {
       width: auto; } }
@@ -2441,29 +2457,12 @@ a.link-icon {
   width: 100%; }
 
 /** Modal Gallery **/
-.modal-background {
+.modal {
   background: white; }
-  .modal-background .modal-content {
+  .modal .modal-content {
     padding: 0px !important; }
-  .modal-background .modal-body {
+  .modal .modal-body {
     padding: 0px !important; }
-
-.modal-title-gallery {
-  height: 30px;
-  padding: 0 !important;
-  position: absolute;
-  z-index: 1;
-  right: 0px;
-  top: 0px;
-  width: 30px; }
-  .modal-title-gallery a {
-    color: #47d5cd;
-    font-size: 38px !important;
-    font-weight: 400;
-    width: 30px;
-    margin-right: 0px !important;
-    margin-top: 0px !important;
-    height: 30px; }
 
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
 .modal.fade.modal-layer-hide {

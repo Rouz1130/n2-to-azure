@@ -72,6 +72,11 @@
         }
     }
 
+    // Dirty
+    #images {
+        padding: 0;
+    }
+
     @include if-min(md) {
         .btn {
             width: auto;
