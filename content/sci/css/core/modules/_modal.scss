@@ -33,13 +33,23 @@
 /** Modal Gallery **/
 .modal {
     background: white;
-
+     .modal-header {
+        a {
+            color: $teal;
+        }
+    }
     .modal-content {
         padding: 0px !important;
     }
 
     .modal-body {
         padding: 0px !important;
+    }
+}
+
+.location-container {
+    h2{
+        margin:0px;
     }
 }
 
