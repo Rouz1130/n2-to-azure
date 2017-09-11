@@ -51,6 +51,29 @@ $slick-opacity-not-active: 0.5 !default;
     }
 }
 
+/**Close Carousel */
+.modal {
+    .modal-header {
+        height: 30px;
+        padding: 0 !important;
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 0px;
+        width: 30px;
+
+        a {
+            color: $teal;
+            font-size: 38px !important;
+            font-weight: 400;
+            width: 30px;
+            margin-right: 0px !important;
+            margin-top: 0px !important;
+            height: 30px;
+        }
+    }
+}
+
 
 /* Slider */
 
@@ -249,9 +272,9 @@ $slick-opacity-not-active: 0.5 !default;
         }
     }
 
-    .screen-title-full-overlay {
+    .featured-item-slide-topic {
 
-        .screen-title-copy {
+        .featured-item-slide-title-copy {
             @include opacity(.85);
             background-color: $grey !important;
             display: block;
@@ -263,8 +286,6 @@ $slick-opacity-not-active: 0.5 !default;
             bottom: 0px !important;
             min-width: 25% !important;
             max-width: 35% !important;
-            height: 50%;
-
             a, .glyph-link {
                 color: white;
             }
@@ -282,122 +303,9 @@ $slick-opacity-not-active: 0.5 !default;
             margin-bottom: 0;
         }
 
-        .carousel-thumb {
-            .slick-prev, .slick-next {
-                visibility: hidden;
-            }
-
-            &.carousel-thumb-out {
-                .slick-dots {
-                    position: relative;
-                    top: 15px;
-
-                    > .pager {
-                        background-color: $black5;
-
-                        > img {
-                            padding: 0;
-                        }
-                    }
-                }
-            }
-
-            .slick-dots {
-                bottom: 15px;
-                height: auto;
-                margin: 0;
-                padding: 0 $slick-dot-horizontal-padding;
-                left: -$slick-dot-horizontal-padding;
-                position: relative;
-
-                > li {
-                    float: left;
-                    width: 17%;
-
-                    > .pager {
-                        background-color: $black5;
-                        border: 0;
-                        @include border-radius(0);
-                        color: $black;
-                        cursor: pointer;
-                        @include rem-fallback(font-size, 13px / 16px);
-                        height: auto;
-                        min-height: 80px;
-                        padding: 0;
-                        position: relative;
-                        text-decoration: none;
-                        width: 100%;
-                        z-index: 9999;
-
-                        > p {
-                            display: block;
-                            height: auto;
-                            @include rem-fallback(padding, 3px / 16px, 7px / 16px);
-                            text-align: left;
-                            min-height: 50px;
-                        }
-
-                        > img {
-                            @include opacity($slick-opacity-default);
-                            display: block;
-                            padding: 1px;
-                            width: 100%;
-                        }
-
-                        &:hover, &:focus {
-                            outline: none;
-
-                            > img {
-                                @include opacity($slick-opacity-on-hover);
-                            }
-                        }
-
-                        &:after {
-                            background-color: transparent;
-                            content: " ";
-                            height: 100%;
-                            left: 0;
-                            position: absolute;
-                            top: 0;
-                            width: inherit;
-                        }
-                    }
-
-                    &.slick-active > .pager {
-                        border-top: none;
-                        border-left: none;
-                        border-right: none;
-
-                        > img {
-                            @include opacity($slick-opacity-on-hover);
-                        }
-                    }
-
-                    &.slick-active {
-                        border-bottom: 2px solid $teal;
-                    }
-                }
-            }
-        }
-    }
-
-    .col-3 .carousel-thumb.carousel-thumb-in .slick-dots {
-        left: -10px;
-        position: relative;
-        top: 10px;
     }
 
     .col-4 {
-
-        .carousel-thumb {
-            .slick-dots {
-                > li {
-                    &.slick-active > .pager {
-                        background-color: $black5;
-                    }
-                }
-            }
-        }
 
         .slide-title {
             max-width: 30%;
@@ -407,13 +315,6 @@ $slick-opacity-not-active: 0.5 !default;
             > li {
                 width: 13%;
             }
-        }
-    }
-
-    .screen-title-full-overlay {
-        .screen-title-copy {
-            top: auto !important;
-            left: auto !important;
         }
     }
 
@@ -450,11 +351,12 @@ $slick-opacity-not-active: 0.5 !default;
         }
     }
 
-    .screen-title-full-overlay {
+    .featured-item-slide-topic {
 
-        .screen-title-copy {
-            bottom: 15% !important;
-            max-width: 20% !important;
+        .featured-item-slide-title-copy {
+            max-width: 25% !important;
+            height:100%;
+            top:20%;
         }
     }
 }
@@ -464,12 +366,12 @@ img.featured-item-slide-image {
     margin-bottom: 0px !important;
 }
 /** Carousel-gallery */
-.screen-title-full-overlay {
-    .screen-title-image {
+.featured-item-slide-topic {
+    .featured-item-slide-image {
         margin-bottom: 0px !important;
     }
 
-    .screen-title-copy {
+    .featured-item-slide-title-copy {
         padding: 10px 20px 20px 20px;
         background: #f2f0ec;
 

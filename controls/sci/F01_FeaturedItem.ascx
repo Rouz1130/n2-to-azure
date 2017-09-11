@@ -47,15 +47,15 @@
 		
 	</div>
 
-<div class="modal fade modal-background" id="<%=UniqueDomId("featuredLightbox")%>" tabindex="-1" role="dialog" aria-labelledby="<%=UniqueDomId("featuredLightbox")%>-label" aria-hidden="true" data-analytics='{ "manual": true, "en": "CTA", "cg": "Contact our technical help desk", "cn": "Contact expert", "ct": "Link" }'>
+<div class="modal fade" id="<%=UniqueDomId("featuredLightbox")%>" tabindex="-1" role="dialog" aria-labelledby="<%=UniqueDomId("featuredLightbox")%>-label" aria-hidden="true" data-analytics='{ "manual": true, "en": "CTA", "cg": "Contact our technical help desk", "cn": "Contact expert", "ct": "Link" }'>
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header  modal-title-gallery">
+			<div class="modal-header">
 				<a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
 			</div>
 			<div class="modal-body">
                 <!-- carousel -->
-			    <ks:Component runat="server" Code="C03.1" Child="T04.2" />  
+			    <ks:Component runat="server" Code="C03.1" Child="F04.2" />  
                 <!-- end carousel -->
 			</div>
 		</div>
