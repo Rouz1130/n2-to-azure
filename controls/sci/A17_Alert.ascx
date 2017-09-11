@@ -10,4 +10,12 @@
 	</p>
 </div>
 
+<% } if (Variation == 2) { %>
+<div class="component alert alert-danger" role="alert">
+	
+	<p>
+		This is a high alert.
+        <a href="#">Click here for more details</a>
+	</p>
+</div>
 <% } %>
