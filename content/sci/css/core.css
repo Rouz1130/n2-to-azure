@@ -581,24 +581,6 @@ html.ios .app-promotion-android {
 .no-js .slide:first-child {
   display: block; }
 
-/**Close Carousel */
-.modal .modal-header {
-  height: 30px;
-  padding: 0 !important;
-  position: absolute;
-  z-index: 1;
-  right: 0px;
-  top: 0px;
-  width: 30px; }
-  .modal .modal-header a {
-    color: #47d5cd;
-    font-size: 38px !important;
-    font-weight: 400;
-    width: 30px;
-    margin-right: 0px !important;
-    margin-top: 0px !important;
-    height: 30px; }
-
 /* Slider */
 .slick-dots {
   display: none !important; }
@@ -2459,10 +2441,15 @@ a.link-icon {
 /** Modal Gallery **/
 .modal {
   background: white; }
+  .modal .modal-header a {
+    color: #47d5cd; }
   .modal .modal-content {
     padding: 0px !important; }
   .modal .modal-body {
     padding: 0px !important; }
+
+.location-container h2 {
+  margin: 0px; }
 
 /* Alternative "hide" behavior using z-index; primarily used to avoid problems with map boundaries when showing maps in lightboxes */
 .modal.fade.modal-layer-hide {
