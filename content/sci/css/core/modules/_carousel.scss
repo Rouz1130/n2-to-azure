@@ -51,30 +51,6 @@ $slick-opacity-not-active: 0.5 !default;
     }
 }
 
-/**Close Carousel */
-.modal {
-    .modal-header {
-        height: 30px;
-        padding: 0 !important;
-        position: absolute;
-        z-index: 1;
-        right: 0px;
-        top: 0px;
-        width: 30px;
-
-        a {
-            color: $teal;
-            font-size: 38px !important;
-            font-weight: 400;
-            width: 30px;
-            margin-right: 0px !important;
-            margin-top: 0px !important;
-            height: 30px;
-        }
-    }
-}
-
-
 /* Slider */
 .slick-dots {
     display: none !important;
