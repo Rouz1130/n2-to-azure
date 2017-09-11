@@ -192,7 +192,9 @@
     <Content Include="content\site\data-visualization-graph.png" />
     <Content Include="content\site\esso-station.png" />
     <Content Include="content\site\exxon-station.png" />
+    <Content Include="content\site\flower-carousel.png" />
     <Content Include="content\site\fuel-truck.png" />
+    <Content Include="content\site\location-hero-mobile.png" />
     <Content Include="content\site\mobil-station.png" />
     <Content Include="content\site\paper-339x217.jpg" />
     <Content Include="content\site\paper-439x281.jpg" />
