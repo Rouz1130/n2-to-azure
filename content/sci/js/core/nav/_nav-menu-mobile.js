@@ -22,25 +22,25 @@
 	}
 
 	function onMenuItemClick(e) {
-		var $link = $(this),
-			target = $link.attr('href'),
-			isMenuNav = (target[0] === '#');
+		//var $link = $(this),
+		//	target = $link.attr('href'),
+		//	isMenuNav = (target[0] === '#');
 
-		if (!isMenuNav) return;
+		//if (!isMenuNav) return;
 
-		e.preventDefault();
+		//e.preventDefault();
 
-		if (target === '#') {
-			toggleMobileMenu();
-			return;
-		}
+		//if (target === '#') {
+		//	toggleMobileMenu();
+		//	return;
+		//}
 
-		var $thisPanel = $link.closest('.' + PANEL),
-			$targetPanel = $(target),
-			isBackNav = ($link.parent().index() === 0);
+		//var $thisPanel = $link.closest('.' + PANEL),
+		//	$targetPanel = $(target),
+		//	isBackNav = ($link.parent().index() === 0);
 
-		setActivePanel($targetPanel);
-		setTransitionClass(isBackNav ? $thisPanel : $targetPanel, PANEL_HIGHEST);
+		//setActivePanel($targetPanel);
+		//setTransitionClass(isBackNav ? $thisPanel : $targetPanel, PANEL_HIGHEST);
 	}
 
 	function setTransitionClass(element, className) {

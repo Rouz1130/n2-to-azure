@@ -3,12 +3,12 @@
 <% if (Variation == 1) { %>
 
 <div class="component featured-item featured-item-slide-topic">
-	<img class="featured-item-slide-image" src="<%=ResolveUrl("~/content/site/carousel-01.jpg")%>">
+	<img class="featured-item-slide-image" src="<%=ResolveUrl("~/content/site/flower-carousel.png")%>">
 	<div class="featured-item-slide-title-copy">
 		
-		<h2 class="featured-item-title">Virginia Sparks</h2>
-		<p class="featured-item-subtitle">Virginia Sparks, 97, of Signal Mountain, passed away Tuesday August 1 2017 at her home.</p>
-		<p><a href="#" class="featured-item-cta glyph-link">Learn more</a></p>
+		<h2 class="featured-item-title"><span class="current">3</span> / 4 </h2>
+		<h2>Lorum ipsum et all dolor sit amert, erat elit donc feugiat</h2>
+		<p><a href="#" class="glyph-link">Send flowers</a></p>
 	</div>
 </div>
 
