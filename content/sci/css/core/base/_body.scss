@@ -6,53 +6,11 @@
 	background-color: $white;
 	margin: 0 auto;
 	position: relative;
-	right: 0;
-	@include transition(right, 0.35s);
 }
 
-.body-frameless {
-	background-color: $white;
-}
-
-
-.body-mask {
-	background-color: $body-mask;
-	display: none;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 8;
-}
-
-html.nav-search-open {
-	.body-mask {
-		display: block;
-	}
-}
-
-html.nav-main-mobile-transition,
-html.nav-main-mobile-open,
-html.nav-global-selector-open {
-	body {
-		overflow: hidden;
-	}
-}
-
-
-
-
-@include if-min(lg) {
-	html.nav-main-mobile-open {
-		.body-wrapper {
-			right: 0;
-		}
-	}
-
-	html.nav-meganav-open {
-		.body-mask {
-			display: block;
-		}
+// If the mobile menu is open when the browser is resized to desktop, force close it
+@include if-min(md) {
+	html.nav-main-mobile-open #nav-main-mobile {
+		display: none !important;
 	}
 }

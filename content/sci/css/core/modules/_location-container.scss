@@ -21,6 +21,8 @@
     }
 
     .services + ul {
+        padding-left: 20px;
+
         li {
             margin-bottom: 10px;
             line-height: 1.3em;
@@ -72,7 +74,7 @@
         }
     }
 
-    // Dirty
+    // Dirty - no other way
     #images {
         padding: 0;
     }
@@ -95,7 +97,7 @@
             & + ul li {
                 width: 50%;
                 float: left;
-                padding-left: 10px;
+                padding-right: 30px;
             }
         }
     }

@@ -4,6 +4,7 @@
 @import "variables";
 
 .nav-top-bar {
+    display: none; 
     @include inner-component();
 
     height: $nav-top-bar-height;
@@ -53,14 +54,18 @@
             }
         }
     }
-}
 
+    @include if-min(md) {
+        display: block;
+    }
+}
 
 
 .nav-top-bar-left {
     float: left;
     height: $nav-top-bar-height;
 }
+
 
 .nav-top-bar-right {
     float: right;

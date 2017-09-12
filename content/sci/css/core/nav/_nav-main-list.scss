@@ -11,7 +11,7 @@
 .nav-main-list-trigger {
     padding-top: 21px;
 
-    > .icon-hamburger {
+    .icon-hamburger {
         position: relative;
         width: 35px;
         display: block;
@@ -19,7 +19,7 @@
 
         .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
             background-color: $teal;
-            height: 2px;
+            height: 3px;
             position: absolute;
             width: 35px;
             display: block;
@@ -45,8 +45,9 @@
             }
         }
     }
+}
 
-    &.nav-main-item-active > .icon-hamburger .hamburger-inner {
+ .nav-main-mobile-open .nav-main-list-trigger .icon-hamburger .hamburger-inner {
         transition-delay: .12s;
         transition-timing-function: cubic-bezier(.215,.61,.355,1);
         @include transform(rotate(45deg));
@@ -63,7 +64,6 @@
             @include transform(rotate(-90deg));
         }
     }
-}
 
 .nav-main-list {
     display: none;
