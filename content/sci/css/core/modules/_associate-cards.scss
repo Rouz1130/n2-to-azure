@@ -7,7 +7,7 @@
         margin-bottom: 15px !important;
     }
 
-    .col-md-4 {
+    .col-md-3 {
         h2 {
             font-size: 2.6em;
         }
@@ -18,6 +18,19 @@
             color: $grey;
             margin-top: 3%;
             letter-spacing: 2px;
+
+            a {
+                margin-top: 20px;
+                display: none;
+            }
+        }
+    }
+
+    .associate-link {
+        p {
+            a {
+                display: inline-block !important;
+            }
         }
     }
 
@@ -54,11 +67,8 @@
             }
         }
     }
-}
-
-/**Responsive Associate cards*/
-@include if-min(sm) {
-    #associates {
+    /**Responsive Associate cards*/
+    @include if-min(sm) {
         .carousel {
             .associates-card {
                 h3 {
@@ -75,19 +85,33 @@
             }
         }
     }
-}
 
-@include if-min(md) {
-}
+    @include if-min(md) {
+        .col-md-3 {
+            h2 {
+                font-size: 2.4em;
+            }
+        }
+    }
 
-@include if-min(lg) {
-    #associates {
+    @include if-min(lg) {
+        .col-md-3 {
+            p {
+
+                a {
+                    margin-top: 20px;
+                    display: inline-block !important;
+                }
+            }
+        }
+
         .associate-link {
-            margin-top: -8%;
+            display: none;
         }
 
         .carousel {
             .associates-card {
+                width:175px;
                 h3 {
                     font-size: 1.6em;
                 }
@@ -102,7 +126,4 @@
             }
         }
     }
-}
-
-@include if-min(xl) {
 }
