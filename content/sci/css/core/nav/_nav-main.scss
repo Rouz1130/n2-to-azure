@@ -5,103 +5,66 @@
 @import "variables";
 
 .nav-main-bar {
-	
+
     @include inner-component();
+    clear: both;
+    height: $nav-main-height;
+    position: relative;
+    z-index: 1;
 
-	clear: both;
-	
-	height: $nav-main-height;
-	position: relative;
-	z-index: 1;
-
-	.logo {
-		display: inline-block;
-		max-width: 50%;
-		position: relative;
-		top: 50%;
-		@include transform(translateY(-50%));
+    .logo {
+        display: inline-block;
+        max-width: 50%;
+        position: relative;
+        top: 50%;
+        @include transform(translateY(-50%));
 
         img {
             width: 160px;
             margin-top: -10px;
         }
+    }
 
-	}
-
-	a {
-		outline: none;
-	}
+    a {
+        outline: none;
+    }
 }
 
 .nav-main-item {
-	display: block;
-	float: left;
-	height: 100%;
-	min-width: 57px;
-	padding: 0 15px;
-	text-align: center;
+    display: block;
+    float: left;
+    height: 100%;
+    min-width: 57px;
+    padding: 0 15px;
+    text-align: center;
 
-	&:hover {
-		background-color: $nav-main-item-hover-background;
-		color: $nav-main-item-hover-text;
-	}
-
-	> a {
-		display: block;
-		@include font-family("Lato-Bold");
-		@include rem-fallback(font-size, 15px / 16px);
-	}
-
-	> .icon {
-		display: block;
-		margin: 0 auto 4px;
-	}
+    > a {
+        display: block;
+        color: $grey;
+        @include font-family("Lato-Bold");
+        @include rem-fallback(font-size, 15px / 16px);
+        height: 100%;
+        padding-top: 20px;
+    }
 }
 
-
+// This is the text under the hamburger logo
 .nav-main-item-text {
-	
-	font-size: .65em;
+    font-size: .65em;
     color: $grey;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 @include if-min(lg) {
-	.nav-main-bar {
+    .nav-main-bar {
         max-width: $xl-max;
-	}
-
-	.nav-main-item {
-		&:hover {
-			color: $nav-main-item-hover-text;
-
-			> a {
-				color: inherit;
-			}
-		}
-
-		> a {
-			color: $grey;
-			@include rem-fallback(font-size, 15px / 16px);
-			height: 100%;
-			padding-top: 20px;
-		}
-	}
-
-	.nav-main-item-active:hover {
-		background-color: $nav-main-item-active-background;
-		color: $nav-main-item-active-text;
-	}
-
-	.nav-main-item-text {
-		display: none;
-	}
+    }
 }
 
 @include if-min(xl) {
-	.nav-main-item {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
+    .nav-main-item {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

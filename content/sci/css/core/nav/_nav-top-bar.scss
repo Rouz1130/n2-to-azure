@@ -37,10 +37,6 @@
             
             a {
                 padding: 10px 15px;
-
-                &:hover {
-                    background-color: $nav-top-bar-link-hover-background;
-                }
             }
 
             @include if-min(lg) {
