@@ -7,23 +7,15 @@
 #nav-main-mobile {
     background-color: $greystripe;
     height: 100%;
+    width: 100%;
+    z-index: 999999;
     overflow-x: hidden;
-    position: fixed;
-    right: 0;
-    top: -9999px;
-    width: 80%;
+    position: absolute;
+    display: none;
 }
 
-html.nav-main-mobile-open {
-    #nav-main-mobile {
-        top: 0;
-    }
-
-    .body-wrapper {
-		right: 80%;
-
-        
-	}
+html.nav-main-mobile-open #nav-main-mobile {
+    display: block;
 }
 
 
@@ -34,7 +26,6 @@ html.nav-main-mobile-open {
 
 .nav-main-mobile-panel {
     display: block;
-    height: 0;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -42,27 +33,7 @@ html.nav-main-mobile-open {
     width: 100%;
     text-align: center;
 
-    &.nav-main-mobile-panel-parent {
-        @extend .nav-main-mobile-visible;
-        left: -70px;
-        z-index: 1;
-    }
-
-    &.nav-main-mobile-panel-active {
-        @extend .nav-main-mobile-visible;
-        left: 0;
-        overflow: visible;
-        z-index: 2;
-    }
-
-    &.nav-main-mobile-panel-highest {
-        @extend .nav-main-mobile-visible;
-        z-index: 3 !important;
-    }
-
-
-
-    > li {
+    li {
         padding: 0 30px;
 
         &.top-level {
@@ -77,8 +48,13 @@ html.nav-main-mobile-open {
                 @include sprite($flourish-horiz);
                 width: $flourish-horiz-width;
                 height: $flourish-horiz-height;
-                margin: 10px auto;
+                margin: 0 auto;
+                max-width: 100%;
             }
+        }
+
+        &.openPanel:after {
+            display: none;
         }
 
         &:not(.top-level) > a {
@@ -89,28 +65,73 @@ html.nav-main-mobile-open {
             @include font-uppercase();
             display: block;
             font-size: 14px;
-            padding: 20px 0;
+            padding: 25px 0;
             position: relative;
 
             &:hover, &:focus, &:active {
                 text-decoration: none;
             }
 
-            &.logo {
-                text-align: left;
-                > img {
-                    width: 170px;
+            &[data-toggle="collapse"] {
+
+                &:after {
+                    content: '';
+                    margin-left: 8px;
+                    @include sprite($caret-smallest);
+                    display: inline-block;
+                    @include transform(rotate(180deg));
+                    @include transition(all .12s);
+                }
+
+                &[aria-expanded="false"]:after {
+                    @include transform(rotate(0deg));
+                }
+
+                & + * {
+                    width: 100%;
+                    border: 1px solid $tan;
+                    border-top: none;
+                    margin: 0 auto;
+
+                    li:hover, &.row {
+                        background-color: $white;
+                    }
+
+                    &.row > a {
+                        padding-bottom: 10px;
+
+                        &:first-child:after {
+                            content: ' ';
+                            @include sprite($flourish-vert);
+                            width: $flourish-vert-width;
+                            height: $flourish-vert-height;
+                            transform: translate(-50%,-50%);
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                        }
+
+                        h3 {
+                            font-size: 24px;
+                        }
+
+                        p {
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 14px;
+                            color: $grey;
+                            line-height: 1.2em;
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-html.nav-main-mobile-open {
-    #nav-main-mobile {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+html.nav-main-mobile-open #nav-main-mobile {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 html.nav-main-mobile-transition {

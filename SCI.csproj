@@ -187,6 +187,7 @@
     <Content Include="content\sci\img\logos\logo.png" />
     <Content Include="content\sci\js\core\modules\_hide-extra-paragraphs.js" />
     <Content Include="content\sci\js\data\static-googlemaps.html" />
+    <Content Include="content\site\associate.png" />
     <Content Include="content\site\coal-339x159.jpg" />
     <Content Include="content\site\coal-439x206.jpg" />
     <Content Include="content\site\data-visualization-graph.png" />
@@ -301,7 +302,7 @@
     <Content Include="content\sci\css\core\modules\_location-container.scss" />
     <Content Include="content\sci\css\core\modules\_see-more.scss" />
     <Content Include="content\sci\css\core\modules\_featured-item-gallery.scss" />
-    <Content Include="content\sci\css\core\modules\_associate-cards.scss" />
+    <Content Include="content\sci\css\core\modules\_associates-card.scss" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />

@@ -70,10 +70,7 @@
 			case 'meganav-open':
 				$('.nav-main-item[rel=energy]').trigger('click');
 				break;
-			case 'meganav-deep':
-				$('.nav-main-list-trigger').trigger('click');
-				$('a[href=#mm-1]').trigger('click');
-				break;
+		
 			case 'search-open':
 				$('.nav-main-search-trigger').trigger('click');
 				break;

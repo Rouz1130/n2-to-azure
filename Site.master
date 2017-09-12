@@ -1,14 +1,15 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Base.master" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XOMFL.CommonComponents.SiteMaster" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="BodyContent">
-	<xom:MobileMenu runat="server" />
+	
 	<div class="body-wrapper">
 		<xom:Header runat="server" />
+        <xom:MobileMenu runat="server" />
 		<div class="body-content">
 			<asp:ContentPlaceHolder runat="server" ID="MainContent" />
 		</div>
 		<xom:Footer runat="server" />
-		<div class="body-mask"></div>
+		
 	</div>
 	<xom:GlobalSelector runat="server" />
 </asp:Content>
