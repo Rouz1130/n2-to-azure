@@ -397,8 +397,8 @@ html.ios .app-promotion-android {
   background-clip: padding-box;
   font-size: 14px;
   font-size: 0.875rem;
-  padding: 11.42857px 34.28571px;
-  padding: 0.71429rem 2.14286rem;
+  padding: 11.4285714286px 34.2857142857px;
+  padding: 0.7142857143rem 2.1428571429rem;
   margin: 2px;
   margin: 0.125rem;
   background-color: transparent;
@@ -1576,8 +1576,8 @@ fieldset + fieldset {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2.4px;
-  font-size: 13.33333px;
-  font-size: 0.83333rem;
+  font-size: 13.3333333333px;
+  font-size: 0.8333333333rem;
   position: relative; }
   .glyph-link:after {
     content: '';
@@ -2044,7 +2044,7 @@ a.link-icon {
   .bp-lg > .list.list-3-up > li {
     float: left;
     padding: 0 15px;
-    width: 33.33333%; }
+    width: 33.3333333333%; }
 
 .bp-max-lg > .list.list-3-up > li:nth-child(3n+1) {
   clear: left; }
@@ -2077,7 +2077,7 @@ a.link-icon {
   .bp-md > .list.list-5-up > li {
     float: left;
     padding: 0 15px;
-    width: 33.33333%; }
+    width: 33.3333333333%; }
 
 .bp-max-md > .list.list-5-up > li:nth-child(3n+1) {
   clear: left; }
@@ -2099,7 +2099,7 @@ a.link-icon {
   .bp-md > .list.list-6-up > li {
     float: left;
     padding: 0 15px;
-    width: 33.33333%; }
+    width: 33.3333333333%; }
 
 .bp-max-md > .list.list-6-up > li:nth-child(3n+1) {
   clear: left; }
@@ -2110,7 +2110,7 @@ a.link-icon {
   .bp-xl > .list.list-6-up > li {
     float: left;
     padding: 0 15px;
-    width: 16.66667%; }
+    width: 16.6666666667%; }
 
 .bp-max-xl > .list.list-6-up > li:nth-child(6n+1) {
   clear: left; }
@@ -2572,9 +2572,9 @@ p.paragraph.small {
     width: 75%; }
 
 .bp-max-lg > .resource > .resource-image {
-  width: 33.33333%; }
+  width: 33.3333333333%; }
 .bp-max-lg > .resource > .resource-text {
-  width: 66.66667%; }
+  width: 66.6666666667%; }
 
 .resource-list > tbody > tr > td {
   padding: 16px 24px;
@@ -2613,8 +2613,8 @@ p.paragraph.small {
 
 .screen-title-title {
   margin-top: 0;
-  font-size: 36.92308px;
-  font-size: 2.30769rem; }
+  font-size: 36.9230769231px;
+  font-size: 2.3076923077rem; }
 
 .screen-title-subtitle {
   font-family: "Lato"; }
@@ -2841,8 +2841,8 @@ p.paragraph.small {
     color: #4a3c31;
     margin: 0;
     top: 0;
-    font-size: 18.66667px;
-    font-size: 1.16667rem;
+    font-size: 18.6666666667px;
+    font-size: 1.1666666667rem;
     height: 50px;
     height: 3.125rem;
     padding: 13px 20px;
@@ -3145,7 +3145,7 @@ p.paragraph.small {
   .col-2 .smart-list > .list, .col-3 .smart-list > .list, .col-4 .smart-list > .list {
     display: inline-block;
     float: left;
-    width: 33.33333%; } }
+    width: 33.3333333333%; } }
 .special-screen-title .img-bordered {
   margin: 0px 16px 16px 0px;
   margin: 0rem 1rem 1rem 0rem;
@@ -3377,7 +3377,7 @@ p.paragraph.small {
   width: 50%; }
 
 .col-3 .tables {
-  width: 33.33333%; }
+  width: 33.3333333333%; }
 
 .col-4 .tables {
   width: 25%; }
@@ -3389,13 +3389,13 @@ p.paragraph.small {
     width: 350px; }
 
   .col-2 .tables {
-    width: 33.33333%; }
+    width: 33.3333333333%; }
 
   .col-3 .tables {
     width: 25%; }
 
   .col-4 .tables {
-    width: 16.66667%; } }
+    width: 16.6666666667%; } }
 @media (min-width: 992px) {
   .col-1 .tables {
     width: 50%; }
@@ -3404,10 +3404,10 @@ p.paragraph.small {
     width: 25%; }
 
   .col-3 .tables {
-    width: 14.28571%; }
+    width: 14.2857142857%; }
 
   .col-4 .tables {
-    width: 14.28571%; } }
+    width: 14.2857142857%; } }
 .bp-max-xs .table.table-vertical > thead > tr > th, .bp-max-sm .table.table-vertical > thead > tr > th, .bp-max-md .table.table-vertical > thead > tr > th {
   display: none; }
 .bp-max-xs .table.table-vertical > tbody > tr > td, .bp-max-sm .table.table-vertical > tbody > tr > td, .bp-max-md .table.table-vertical > tbody > tr > td {
@@ -3717,8 +3717,8 @@ p.paragraph.small {
   .footer-links > li {
     display: inline-block;
     font-family: "Lato-Bold", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-    font-size: 13.53846px;
-    font-size: 0.84615rem;
+    font-size: 13.5384615385px;
+    font-size: 0.8461538462rem;
     margin: 0 15px 15px 0;
     vertical-align: middle; }
     .footer-links > li > a {
@@ -3832,8 +3832,8 @@ p.paragraph.small {
 #footer-copyright {
   color: #fff;
   font-family: "Lato", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
-  font-size: 13.09091px;
-  font-size: 0.81818rem;
+  font-size: 13.0909090909px;
+  font-size: 0.8181818182rem;
   line-height: 20px;
   line-height: 1.25rem;
   max-width: 280px;

@@ -1,4 +1,4 @@
-/*! 2017-09-11 18:33:33 */
+/*! 2017-09-12 14:20:43 */
 (function ($) {
 
 	var o = $({});
@@ -341,7 +341,7 @@
 
 		$('.carousel').each(function () {
 			var self = $(this);
-			var useThumbs = self.hasClass('carousel-thumb'); // TODO remove this, replace with check for multiple items
+			var useThumbs = self.hasClass('carousel-thumb'); // TODO remove this, replace with check for multiple items			
 			var defaults = {
 				dots: false,
 				customPaging: function (slider, i) {
@@ -360,6 +360,12 @@
 			var options = $.extend(defaults, custom);
 
 			self.slick(options);
+
+			$('.carousel-multiple-items').slick({
+			    infinite: true,
+			    slidesToShow: 2.5,
+			    slidesToScroll: 3
+			});
 		});
 	}
 

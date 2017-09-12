@@ -30,10 +30,11 @@
 			var options = $.extend(defaults, custom);
 
 			self.slick(options);
+
 			$('.carousel-multiple-items').slick({
 			    infinite: true,
 			    slidesToShow: 2.5,
-			    slidesToScroll: 0
+			    slidesToScroll: 3
 			});
 		});
 	}
