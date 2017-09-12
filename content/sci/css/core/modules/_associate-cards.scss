@@ -3,45 +3,78 @@
 
 
 #associates {
-    .col-md-10 {
-        .col-md-4 {
-            p {
-                text-align: center;
-                font-weight: bold;
-                color: $grey;
-                margin-top: 3%;
-                letter-spacing: 2px;
+    h2 {
+        margin-bottom: 15px !important;
+    }
+
+    .col-md-4 {
+        h2 {
+            font-size: 2.6em;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            color: $grey;
+            margin-top: 3%;
+            letter-spacing: 2px;
+        }
+    }
+
+    .carousel {
+        .slick-list {
+            .slick-slide {
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
-        .col-md-6{
-        .carousel {
-            .slick-list{
-                .slick-slide{
-                    margin-left:10px;
-                    margin-right:10px;
-                }
+
+        .associates-card {
+            background: $grey2;
+
+            h3 {
+                font-size: 1.8em;
             }
-            .associates-card {
-                background: $grey2;
 
-                div {
-                    text-align: center;
-                }
+            div {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 0.6em;
+            }
 
-                p {
-                    text-align: center;
-                }
-                img {
-                    width: 100%;
-                }
+            p {
+                text-align: center;
+                font-size: 0.7em;
+                margin: 0px;
+                margin-top: 5px;
+            }
+
+            img {
+                width: 100%;
             }
         }
     }
 }
-}
 
 /**Responsive Associate cards*/
 @include if-min(sm) {
+    #associates {
+        .carousel {
+            .associates-card {
+                h3 {
+                    font-size: 2.5em;
+                }
+
+                div {
+                    font-size: 0.7em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
 }
 
 @include if-min(md) {
@@ -49,10 +82,24 @@
 
 @include if-min(lg) {
     #associates {
-        .col-md-10 {
-                .associate-link {
-                    margin-top: -15%;
+        .associate-link {
+            margin-top: -8%;
+        }
+
+        .carousel {
+            .associates-card {
+                h3 {
+                    font-size: 1.6em;
                 }
+
+                div {
+                    font-size: 0.7em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
         }
     }
 }
