@@ -22,9 +22,7 @@
 		setBreadcrumbBorder();
 	});
 
-	function setBreadcrumbBorder() {
-		$('header .breadcrumb-panel-action').addClass('component-margin-none');
-	}
+
 
 	function getScrollTop(hash) {
 		if (!hash || hash.indexOf('=') > -1) return;

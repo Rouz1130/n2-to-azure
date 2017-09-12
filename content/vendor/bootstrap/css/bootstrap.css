@@ -658,7 +658,7 @@ address {
   @media (min-width: 1200px) {
     .container {
       width: 1170px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     .container {
       width: 1370px; } }
 
@@ -666,8 +666,7 @@ address {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1400px; }
+  padding-right: 15px; }
   .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
@@ -1313,7 +1312,7 @@ address {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
     float: left; }
 
@@ -3606,8 +3605,6 @@ button.close {
     filter: alpha(opacity=50); }
 
 .modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
   min-height: 16.42857px; }
 
 .modal-header .close {
@@ -3623,8 +3620,7 @@ button.close {
 
 .modal-footer {
   padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5; }
+  text-align: right; }
   .modal-footer:before, .modal-footer:after {
     content: " ";
     display: table; }

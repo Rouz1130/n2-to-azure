@@ -4,17 +4,7 @@
 @import "variables";
 
 .nav-main-search-trigger {
-	float: right;
-	padding-top: 18px;
-	width: 75px;
-
-	&:before {
-		color: $nav-main-item-hover-text;
-		content: "\e007";
-		display: block;
-		@include font-family(em);
-		font-size: 21px;
-	}
+	
 }
 
 .nav-main-search {
@@ -24,17 +14,7 @@
 	padding-right: $nav-small-gutter;
 	position: relative;
 	width: 100%;
-
-	&:before {
-		color: $nav-main-search-icon;
-		content: "\e001";
-		@include font-family(em);
-		font-size: 26px;
-		left: $nav-small-gutter;
-		position: absolute;
-		top: 21px;
-	}
-
+	
 	> input {
 		border: none;
 		color: $nav-main-search-text;
