@@ -1,0 +1,63 @@
+﻿@import "../base/mixins";
+@import "../base/colors";
+
+
+#associates {
+    .col-md-10 {
+        .col-md-4 {
+            p {
+                text-align: center;
+                font-weight: bold;
+                color: $grey;
+                margin-top: 3%;
+                letter-spacing: 2px;
+            }
+        }
+        .col-md-6{
+        .carousel {
+            .slick-list{
+                .slick-slide{
+                    margin-left:10px;
+                    margin-right:10px;
+
+                }
+            }
+            .associates-card {
+                background: $grey2;
+
+                div {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+}
+
+/**Responsive Associate cards*/
+@include if-min(sm) {
+}
+
+@include if-min(md) {
+}
+
+@include if-min(lg) {
+    #associates {
+        .col-md-10 {
+                .associate-link {
+                    margin-top: -15%;
+                }
+        }
+    }
+}
+
+@include if-min(xl) {
+}

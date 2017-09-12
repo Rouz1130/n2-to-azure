@@ -285,7 +285,7 @@ img.featured-item-slide-image {
 
     .featured-item-slide-title-copy {
         padding: 10px 20px 20px 20px;
-        background: #f2f0ec;
+        background: $grey2;
 
         .screen-title-title {
             text-align: center;
@@ -301,15 +301,18 @@ img.featured-item-slide-image {
     }
 }
 
-.component {
-    padding: 0px !important; // This affects EVERY component on the entire site - please make more specific to carousel
+.carousel {
+    padding: 0px!important; 
+    .featured-item{
+        padding: 0px!important;
+    }
     .slick-next, .slick-prev {
         top: 24%;
         background-color: $grey;
         opacity: 0.7;
         width: 50px;
     }
-
+              
     .slick-next {
         right: 0;
         background-position: -230px -300px;

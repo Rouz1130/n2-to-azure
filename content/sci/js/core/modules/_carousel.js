@@ -11,7 +11,7 @@
 
 		$('.carousel').each(function () {
 			var self = $(this);
-			var useThumbs = self.hasClass('carousel-thumb'); // TODO remove this, replace with check for multiple items
+			var useThumbs = self.hasClass('carousel-thumb'); // TODO remove this, replace with check for multiple items			
 			var defaults = {
 				dots: false,
 				customPaging: function (slider, i) {
@@ -30,6 +30,11 @@
 			var options = $.extend(defaults, custom);
 
 			self.slick(options);
+			$('.carousel-multiple-items').slick({
+			    infinite: true,
+			    slidesToShow: 2.5,
+			    slidesToScroll: 0
+			});
 		});
 	}
 

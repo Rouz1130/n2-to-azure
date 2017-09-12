@@ -14,4 +14,8 @@
 <p><a href="#" class="link-icon"><i class="icon icon-primary-pin"></i>Directions</a></p>
 <p><a href="#" class="link-icon"><i class="icon icon-telephone"></i>Call us</a></p>
 
+<% } else if (Variation == 4) { %>
+
+<p><a href="#" class="glyph-link">SEE BIOGRAPHIES</a></p> 
+
 <% } %>
