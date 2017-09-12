@@ -93,7 +93,6 @@
             }
         }
     }
-
     @include if-min(lg) {
         .col-md-3 {
             p {
@@ -111,7 +110,6 @@
 
         .carousel {
             .associates-card {
-                width:175px;
                 h3 {
                     font-size: 1.6em;
                 }

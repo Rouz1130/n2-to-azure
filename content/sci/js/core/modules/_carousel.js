@@ -33,7 +33,7 @@
 
 			$('.carousel-multiple-items').slick({
 			    infinite: true,
-			    slidesToShow: 2.5,
+			    slidesToShow: 1.7,
 			    slidesToScroll: 3
 			});
 		});

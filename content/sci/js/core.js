@@ -1,4 +1,4 @@
-/*! 2017-09-12 10:24:05 */
+/*! 2017-09-12 16:22:29 */
 (function ($) {
 
 	var o = $({});
@@ -363,7 +363,7 @@
 
 			$('.carousel-multiple-items').slick({
 			    infinite: true,
-			    slidesToShow: 2.5,
+			    slidesToShow: 1.7,
 			    slidesToScroll: 3
 			});
 		});
