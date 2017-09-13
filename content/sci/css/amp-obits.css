@@ -128,24 +128,10 @@ strong {
     padding-left: 30px;
     padding-right: 30px; } }
 /** popover style Facebook and Email*/
-.f-flecha {
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #47d5cd;
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  left: 43.8%;
-  top: 273px;
-  /**Responsive */ }
-  @media (min-width: 768px) {
-    .f-flecha {
-      top: 134px;
-      left: 91.5%; } }
-
 .popover {
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
   text-align: center;
   height: 280px;
   background: #fff;
@@ -165,13 +151,22 @@ strong {
       top: -20px;
       position: relative;
       color: #4a3c31;
+      font-weight: bold;
       font-size: .65em;
       text-align: center;
       letter-spacing: 0.3em; }
     .popover .popover-content i {
       margin-left: -15px !important; }
   .popover .arrow {
-    z-index: 9; }
+    border-top-color: #47d5cd !important;
+    border-width: 25px !important;
+    bottom: -50px !important;
+    margin-left: -25px !important; }
+    .popover .arrow::after {
+      bottom: -15px !important;
+      margin-left: -20px !important;
+      border-width: 20px !important;
+      border-top-color: white !important; }
   @media (min-width: 768px) {
     .popover {
       height: 140px;

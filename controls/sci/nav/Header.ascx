@@ -7,16 +7,18 @@
 			<div class="nav-top-bar-left"></div>
 			
 			<div class="nav-top-bar-right">
-			<!-- Search icon
-                	<a href="#" class="nav-main-item nav-main-search-trigger">
-				<span class="nav-main-item-text">Search</span>
-			</a> -->
-
+			
                 <ul>
                     <li><a href="#" class="nav-main-search-trigger">Search</a></li>
 					<li><a href="#"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
 					<li><a href="#"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
-				    <li class="change-language"><a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>"><span class="current-language">English</span> ^</a></li>
+				    <li class="change-language"><a href="#" class="dropdown-toggle" data-toggle="dropdown">English</a>
+                        
+                         <ul class="dropdown-menu">
+                             <li><a href="#">Espanol</a></li>
+   				            <li><a href="#">Francais</a></li>
+                        </ul>
+				    </li>
                 </ul>
 				
 			</div>
