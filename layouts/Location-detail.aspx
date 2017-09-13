@@ -95,7 +95,7 @@
                          <div class="col-md-8">
                              <ks:Component runat="server" Code="C03.2" Child="S01.5" /> 
                          </div>
-                          <div class="col-md-3 associate-link">
+                          <div class="associate-link">
                              <ks:Component runat="server" Code="B04.4"/>
                          </div>
 

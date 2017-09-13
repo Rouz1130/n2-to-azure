@@ -317,8 +317,10 @@ strong {
 @media (min-width: 992px) {
   #associates .col-md-4 p a {
     display: inline-block !important; } }
-#associates .associate-link p a {
-  display: inline-block !important; }
+#associates .associate-link {
+  text-align: center; }
+  #associates .associate-link a {
+    display: inline-block !important; }
 #associates .carousel .slick-list .slick-slide {
   margin-left: 10px;
   margin-right: 10px; }

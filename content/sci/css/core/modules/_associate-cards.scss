@@ -3,7 +3,7 @@
 
 .associates-card.surfaced-item {
     background: $grey2;
-    
+
     div {
         margin-top: 15px;
         text-align: center;
@@ -74,8 +74,12 @@
         }
     }
 
-    .associate-link p a {
-        display: inline-block !important;
+    .associate-link {
+        text-align: center;
+
+        a {
+            display: inline-block !important;
+        }
     }
 
     .carousel {
@@ -88,7 +92,7 @@
     }
 
     @include if-min(lg) {
-        
+
         .associate-link {
             display: none;
         }
