@@ -1,0 +1,71 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+/** popover style Facebook and Email*/
+.f-flecha {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $teal;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 43.8%;
+    top: 273px;
+    /**Responsive */
+    @include if-min(md) {
+        top: 134px;
+        left: 91.5%;
+    }
+}
+
+.popover {
+    text-align: center;
+    height: 280px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    align-items: center;
+    justify-content: space-between;
+    top: 40px;
+    border: 3px solid $teal;
+    border-radius: 0px;
+
+    .popover-content {
+        padding: 0px;
+
+        h5 {
+            top: -20px;
+            position: relative;
+            color: $black;
+            font-size: .65em;
+            text-align: center;
+            letter-spacing: 0.3em;
+        }
+
+        i {
+            margin-left: -15px !important;
+        }
+    }
+
+    .arrow {
+        z-index: 9;
+    }
+    /**Responsive */
+    @include if-min(md) {
+        height: 140px;
+        min-width: 350px;
+        left: 50%;
+
+        .popover-content {
+            i {
+                margin-left: -30px !important;
+            }
+        }
+    }
+}
+/**end style popover Facebook and email */

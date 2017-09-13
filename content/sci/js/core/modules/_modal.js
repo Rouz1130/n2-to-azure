@@ -19,5 +19,4 @@
 		analytics.csg = 'Cancel';
 		$.publish('xom.analytics', analytics);
 	}
-
 }(window.jQuery));

@@ -1,7 +1,6 @@
 ﻿@import "../base/mixins";
 @import "../base/colors";
 
-
 #associates {
     h2 {
         margin-bottom: 15px !important;
@@ -86,19 +85,11 @@
         }
     }
 
-    @include if-min(md) {
-        .col-md-3 {
-            h2 {
-                font-size: 2.4em;
-            }
-        }
-    }
     @include if-min(lg) {
         .col-md-3 {
             p {
-
                 a {
-                    margin-top: 20px;
+                    margin-top: 25px;
                     display: inline-block !important;
                 }
             }
