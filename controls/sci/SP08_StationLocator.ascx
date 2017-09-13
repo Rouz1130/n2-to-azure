@@ -41,12 +41,12 @@
                     <div class="col-md-6">
                         <a href="#"><i class="icon icon-facebook"></i></a>
 
-                        <h5 class="text-uppercase">share to facebook </h5>
+                        <h5 class="text-uppercase">FACEBOOK</h5>
                     </div>
                     <div class="col-md-6">
                         <a href="#"><i class="icon icon-envelope-list"></i></a>
 
-                        <h5 class="text-uppercase">share by email</h5>
+                        <h5 class="text-uppercase">EMAIL</h5>
                     </div>
                 </div>
                 <!-- end html share-popover // Facebook and Email -->
