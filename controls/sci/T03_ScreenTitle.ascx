@@ -5,14 +5,11 @@
 	<div class="component screen-title screen-title-split-left">
 		
 		<div class="screen-title-copy-wrap">
-			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/header-narrow.jpg")%>">
+			<img class="screen-title-image" src="<%=ResolveUrl("~/content/site/virginia-sparks.png")%>">
 			<div class="screen-title-copy">
 			    <h3 class="screen-title-title">Virginia Sparks</h3>
-				<p>
-					<span class="screen-title-subtitle">in Texas</span><br />
-					Search for obituaries near you.
-				</p>
-				<button class="btn btn-primary">Talk to an expert</button>
+				<p class="screen-title-subtitle">1931-2017</p>
+				<p>Virginia Sparks, 91, of Chattanooga, went to be with the Lord on Sunday, July 30, 2017. She was a member of Tyner United Methodist Church. active square dancers.</p>
 			</div>
 		</div>
 	</div>

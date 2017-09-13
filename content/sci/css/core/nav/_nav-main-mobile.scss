@@ -35,11 +35,11 @@ html.nav-main-mobile-open #nav-main-mobile {
 
     li {
         padding: 0 30px;
+        @include font-uppercase();
+        font-size: 14px;
 
         &.top-level {
-            > a {
-                @include font-family("Lato-Bold");
-            }
+           @include font-family("Lato-Bold");
 
             &:after {
                 clear: both;
@@ -62,9 +62,8 @@ html.nav-main-mobile-open #nav-main-mobile {
         }
 
         > a {
-            @include font-uppercase();
+            
             display: block;
-            font-size: 14px;
             padding: 25px 0;
             position: relative;
 
@@ -72,6 +71,7 @@ html.nav-main-mobile-open #nav-main-mobile {
                 text-decoration: none;
             }
 
+            // Dropdown menus
             &[data-toggle="collapse"] {
 
                 &:after {
@@ -81,6 +81,10 @@ html.nav-main-mobile-open #nav-main-mobile {
                     display: inline-block;
                     @include transform(rotate(180deg));
                     @include transition(all .12s);
+                }
+
+                &[aria-expanded="true"] {
+                      @include font-family("Lato-Black");
                 }
 
                 &[aria-expanded="false"]:after {
@@ -112,11 +116,12 @@ html.nav-main-mobile-open #nav-main-mobile {
                         }
 
                         h3 {
-                            font-size: 24px;
+                            font-size: 26px;
+                            text-transform: none;
+                            letter-spacing: 0;
                         }
 
-                        p {
-                            text-transform: uppercase;
+                        p {             
                             letter-spacing: 1px;
                             font-size: 14px;
                             color: $grey;
@@ -126,6 +131,12 @@ html.nav-main-mobile-open #nav-main-mobile {
                 }
             }
         }
+    }
+
+    // Searchbox
+    .form-group {
+        margin: 5px auto 25px;
+        position: relative;
     }
 }
 

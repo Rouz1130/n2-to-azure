@@ -5,8 +5,6 @@
 .breadcrumb-back {
 
     .breadcrumb-list {
-        list-style: none;
-        @include rem-fallback(margin-right, 12px / 16px);
 
         li:first-child:before {
             content: "\2039 \0020";
@@ -15,33 +13,33 @@
 }
 
 .breadcrumb-list {
-    
+
     @include inner-component();
     @include font-uppercase();
     padding: 0;
     font-size: 14px;
-    
+    list-style: none;
+    @include rem-fallback(margin-right, 12px / 16px);
 
     > li {
-        display: inline-block;
-
+        display: none;
+       
         > a {
-            @include rem-fallback(margin-right, 12px / 16px);
             color: $black;
         }
+        // Only show the previous page
+        &:nth-last-child(2) {
+            display: inline-block;
 
-        &:after {
-            content: '/';
-        }
-
-        &:last-child {
-
-            &:after {
-                content: none;
+            &:before {
+                content: "\2039 \0020";
             }
         }
+
+        &:last-child:after {
+            content: none;
+        }
     }
- 
 }
 
 .component.breadcrumb-panel,
@@ -55,7 +53,6 @@
 }
 
 
-
 @include if-min(sm) {
     .modal-breadcrumb {
         .form-group > input[type=radio] + label {
@@ -66,12 +63,16 @@
 }
 
 @include if-min(md) {
-    .breadcrumb-panel-action {
-        display: table;
+    .breadcrumb-list > li {
+        display: inline-block;
 
-        .breadcrumb-list {
-            display: table-cell;
-            vertical-align: top;
-        }    
-    }  
+        &:after {
+            content: '/';
+            padding-left: 5px;
+        }
+
+        &:nth-last-child(2):before {
+            content: none;
+        }
+    }
 }

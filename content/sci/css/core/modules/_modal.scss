@@ -3,18 +3,20 @@
 
 .modal-content {
     @include border-radius(0);
-    padding: 10px;
+    padding: 0;
     margin: $gutter-mobile;
 }
 
 .modal-header {
     border-bottom: none;
+    padding: 0;
 
     > .close {
         font-size: 48px;
         font-weight: normal;
         margin-right: -5px;
         margin-top: -16px;
+        color: $teal;
     }
 }
 
@@ -33,23 +35,9 @@
 /** Modal Gallery **/
 .modal {
     background: white;
-     .modal-header {
-        a {
-            color: $teal;
-        }
-    }
-    .modal-content {
-        padding: 0px !important;
-    }
-
+   
     .modal-body {
         padding: 0px !important;
-    }
-}
-
-.location-container {
-    h2{
-        margin:0px;
     }
 }
 

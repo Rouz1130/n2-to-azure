@@ -6,9 +6,7 @@
     position: relative;
     background: $white;
     padding: 0 0 40px;
-    @include lift-card();
-
-
+   
     h3 {
         font-size: 35px;
         margin-top: 0;
@@ -45,6 +43,7 @@
 .surfaced-item-overlay {
     padding-bottom: 0;
     text-align: center;
+    @include lift-card();
 
     .surfaced-item-content-image {
         display: block;

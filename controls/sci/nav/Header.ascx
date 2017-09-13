@@ -13,8 +13,9 @@
 			</a> -->
 
                 <ul>
-					<li><a href="#" data-global-selector="business_lines"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
-					<li><a href="#" data-global-selector="global_brands"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
+                    <li><a href="#" class="nav-main-search-trigger">Search</a></li>
+					<li><a href="#"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
+					<li><a href="#"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
 				    <li class="change-language"><a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>"><span class="current-language">English</span> ^</a></li>
                 </ul>
 				
@@ -31,7 +32,17 @@
 			</a>
 		
 			<ul class="nav-main-list">
-			    <li class="nav-main-item" rel="energy"><a href="#" data-analytics='{ "cg": "Quality fuels", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>plan a funeral<br/>or cremation</span></a></li>
+			    <li class="nav-main-item" ><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>plan a funeral<br/>or cremation</span></a>
+                     <div class="dropdown-menu">
+   				  <a class="col-xs-6">  <h3>Immediate need</h3>
+                    <p>Death has occured or is near</p></a>
+                <a class="col-xs-6"> 
+                    <h3>Plan ahead</h3>
+                    <p>preplan a funeral or cremation</p></a>
+
+  </div>
+
+			    </li>
 				
 				<li class="nav-main-item" rel="issues"><a href="#" data-analytics='{ "cg": "Motor oil", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>obituaries<br/>and services</span></a></li>
 				<li class="nav-main-item" rel="environment"><a href="#" data-analytics='{ "cg": "Our stations", "csg": "test-csg", "cn": "test-cn", "ct": "test-ct", "sc_track": "CLICK-NAV", "sc_goals": "GOAL1,GOAL2" }'><span>support friends<br/>and family</span></a></li>
@@ -39,13 +50,13 @@
 
 			</ul>
 		</div>
-		<xom:MegaNav runat="server" />
+		
 	</div>
 	<fieldset class="nav-main-search search-box" data-url="<%= ResolveUrl("~/pages/SearchResults.aspx") %>" data-search-key="q">
 		<input type="text" autocomplete="off" placeholder="Search for topics, articles, data..." aria-relevant="all" aria-autocomplete="both" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }'>
 		<button type="button" class="nav-main-search-submit search" data-analytics='{ "manual": true, "cg": "Search", "ct": "Button" }'>Search</button>
 	</fieldset>
-	<div class="nav-header-divider"></div>
+	
 </header>
 
 

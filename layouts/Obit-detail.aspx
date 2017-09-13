@@ -20,7 +20,7 @@
             font-family: "Lato-Regular";
             src: url("https://fonts.googleapis.com/css?family=Lato:400,700,900"); 
         }*/
-        @import url("../content/sci/css/core.min.css");
+      
 
         .lato-regular {
             font-family: 'Lato-Regular';
