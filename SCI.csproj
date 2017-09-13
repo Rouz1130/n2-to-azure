@@ -154,7 +154,6 @@
     <Content Include="apple-touch-icon.png" />
     <Content Include="browserconfig.xml" />
     <Content Include="content\hack\analytics-shim.js" />
-    <Content Include="content\sci\css\core\layout\_popover.js" />
     <Content Include="content\sci\fonts\Lato-Black.svg" />
     <Content Include="content\sci\fonts\Lato-BlackItalic.svg" />
     <Content Include="content\sci\fonts\Lato-Bold.svg" />
