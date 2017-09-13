@@ -4249,7 +4249,7 @@ html.nav-main-mobile-transition #nav-main-mobile {
           padding: 10px 20px; }
         .nav-top-bar ul > li:first-child a {
           padding-left: 30px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .nav-top-bar {
       display: block; } }
 
