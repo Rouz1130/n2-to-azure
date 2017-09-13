@@ -36,13 +36,15 @@
 			<ul class="nav-main-list">
 			    <li class="nav-main-item" ><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>plan a funeral<br/>or cremation</span></a>
                      <div class="dropdown-menu">
-   				  <a class="col-xs-6">  <h3>Immediate need</h3>
-                    <p>Death has occured or is near</p></a>
-                <a class="col-xs-6"> 
-                    <h3>Plan ahead</h3>
-                    <p>preplan a funeral or cremation</p></a>
-
-  </div>
+   				        <a class="col-xs-6">  
+                               <h3>Immediate need</h3>
+                               <p>Death has occured or is near</p>
+   				        </a>
+                        <a class="col-xs-6"> 
+                            <h3>Plan ahead</h3>
+                            <p>preplan a funeral or cremation</p>
+                        </a>
+                    </div>
 
 			    </li>
 				
