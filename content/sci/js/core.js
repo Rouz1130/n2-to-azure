@@ -1,4 +1,4 @@
-/*! 2017-09-13 09:56:13 */
+/*! 2017-09-13 15:52:20 */
 (function ($) {
 
 	var o = $({});
@@ -564,7 +564,6 @@
 		$.publish('xom.analytics', analytics);
 	}
 }(window.jQuery));;
-
 
 /*Popover location.detail.aspx // Facebook and Email */
 $(document).ready(function () {

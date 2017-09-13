@@ -51,7 +51,7 @@
         }
     }
 
-    @include if-min(md) {
+    @include if-min(lg) {
         display: block;
     }
 }
