@@ -4,8 +4,6 @@
 
 // Default Variables
 
-$slick-font-path: "../../../../vendor/slick/fonts/" !default;
-$slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: $white !default;
 $slick-dot-color: black !default;
@@ -18,23 +16,6 @@ $slick-opacity-default: 0.5 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.5 !default;
 
-@function slick-image-url($url) {
-    @if function-exists(image-url) {
-        @return image-url($url);
-    }
-    @else {
-        @return url($slick-loader-path + $url);
-    }
-}
-
-@function slick-font-url($url) {
-    @if function-exists(font-url) {
-        @return font-url($url);
-    }
-    @else {
-        @return url($slick-font-path + $url);
-    }
-}
 
 .no-js {
     .slide {
@@ -52,6 +33,16 @@ $slick-opacity-not-active: 0.5 !default;
 }
 
 /* Slider */
+
+.carousel {
+    padding: 0px !important;
+
+    .featured-item {
+        padding: 0;
+    }
+}
+
+
 .slick-dots {
     display: none !important;
 }
@@ -71,81 +62,58 @@ $slick-opacity-not-active: 0.5 !default;
 }
 
 
-/* Icons */
-@if $slick-font-family == "slick" {
-    @font-face {
-        font-family: "slick";
-        src: slick-font-url("slick.eot");
-        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-        font-weight: normal;
-        font-style: normal;
-    }
-}
-
-
 .slick-prev,
 .slick-next {
     position: absolute;
     display: block;
     cursor: pointer;
     color: transparent;
-    margin-top: -10px;
     padding: 0;
     border: none;
     outline: none;
     bottom: 0;
-    background-color: transparent;
+    background: $grey;
+    opacity: 0.7;
     z-index: 2;
+    top: 20%;
+    @include transform(translate(0,50%));
+    transition-duration: 0.8s;
+    height: 100px;
+    width: 50px;
 
     &:hover, &:focus {
         outline: none;
-        background-color: transparent;
         color: transparent;
+    }
+
+    // Icons
+    &:before {
+        content: '';
+        display: block;
+        margin-top: 25px;
     }
 }
 
 
 .slick-prev {
     left: 0;
-    @include sprite($icon-carousel-prev);
-
-    [dir="rtl"] & {
-        left: auto;
-        right: 15px;
-    }
-
+    
     &:before {
-        content: $slick-prev-character;
-
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
+        @include sprite($icon-carousel-prev);
     }
 }
 
 .slick-next {
     right: 0;
-    @include sprite($icon-carousel-next);
-
-    [dir="rtl"] & {
-        left: 15px;
-        right: auto;
-    }
 
     &:before {
-        content: $slick-next-character;
-
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
+        @include sprite($icon-carousel-next);
     }
 }
 
 .slick-slider {
     margin-bottom: 30px;
 }
-
-
 
 .slick-slide {
     background-repeat: no-repeat;
@@ -182,45 +150,27 @@ $slick-opacity-not-active: 0.5 !default;
     }
 }
 
-@include if-min(sm) {
-    .component {
-        .slick-next {
-            top: 20% !important;
-        }
-
-        .slick-prev {
-            top: 20% !important;
-        }
-    }
-}
-
 @include if-min(md) {
-    .component {
-        .slick-next {
-            top: 40% !important;
-        }
+    .carousel {
 
-        .slick-prev {
-            top: 40% !important;
-        }
-    }
+        .featured-item-slide-topic {
 
-    .featured-item-slide-topic {
+            .featured-item-slide-title-copy {
+                @include opacity(.85);
+                background-color: $grey !important;
+                display: block;
+                padding: 10px 20px 20px;
+                color: $white;
+                position: absolute;
+                text-align: center;
+                right: 15% !important;
+                bottom: 0px !important;
+                min-width: 25% !important;
+                max-width: 35% !important;
 
-        .featured-item-slide-title-copy {
-            @include opacity(.85);
-            background-color: $grey !important;
-            display: block;
-            padding: 10px 20px 20px;
-            color: $white;
-            position: absolute;
-            text-align: center;
-            right: 15% !important;
-            bottom: 0px !important;
-            min-width: 25% !important;
-            max-width: 35% !important;
-            a, .glyph-link {
-                color: white;
+                a, .glyph-link {
+                    color: white;
+                }
             }
         }
     }
@@ -228,14 +178,11 @@ $slick-opacity-not-active: 0.5 !default;
 
 @include if-min(lg) {
 
-    $slick-dot-horizontal-padding: 15px;
-
     .col-3, .col-4 {
 
         .slick-list {
             margin-bottom: 0;
         }
-
     }
 
     .col-4 {
@@ -245,20 +192,17 @@ $slick-opacity-not-active: 0.5 !default;
         }
     }
 
-    .component {
-        .slick-next, .slick-prev {
-            opacity: 0 !important;
-            transition-duration: 0.8s !important;
-        }
+    .slick-next, .slick-prev {
+        opacity: 0 !important;
+        top: 30%;
+    }
 
-        &:hover {
-            .slick-next, .slick-prev {
-                opacity: .7 !important;
-            }
+    .carousel:hover {
+        .slick-next, .slick-prev {
+            opacity: .7 !important;
         }
     }
 }
-
 
 @include if-min(xl) {
 
@@ -267,13 +211,12 @@ $slick-opacity-not-active: 0.5 !default;
 
         .featured-item-slide-title-copy {
             max-width: 25% !important;
-            height:100%;
-            top:20%;
+            height: 100%;
+            top: 20%;
         }
     }
 }
 /** Image Setting */
-
 img.featured-item-slide-image {
     margin-bottom: 0px !important;
 }
@@ -284,42 +227,11 @@ img.featured-item-slide-image {
     }
 
     .featured-item-slide-title-copy {
-        padding: 10px 20px 20px 20px;
+        padding: 10px 20px 20px;
         background: $grey2;
 
-        .screen-title-title {
+        .screen-title-title, .screen-title-subtitle, p {
             text-align: center;
         }
-
-        .screen-title-subtitle {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
-    }
-}
-
-.carousel {
-    padding: 0px!important; 
-    .featured-item{
-        padding: 0px!important;
-    }
-    .slick-next, .slick-prev {
-        top: 24%;
-        background-color: $grey;
-        opacity: 0.7;
-        width: 50px;
-    }
-              
-    .slick-next {
-        right: 0;
-        background-position: -230px -300px;
-    }
-
-    .slick-prev {
-        left: 0;
-        background-position: -325px -300px;
     }
 }

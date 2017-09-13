@@ -1,11 +1,44 @@
 ﻿@import "../base/mixins";
 @import "../base/colors";
 
+.associates-card.surfaced-item {
+    background: $grey2;
+    
+    div {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.7em;
+        margin: 5px 0 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+    @include if-min(sm) {
+
+        h3 {
+            font-size: 2.5em;
+        }
+
+        div {
+            font-size: 0.7em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
 
 #associates {
-    h2 {
-        margin-bottom: 15px !important;
-    }
 
     .col-md-4 {
         h2 {
@@ -14,11 +47,35 @@
 
         p {
             text-align: center;
-            font-weight: bold;
+            @include font-family('Lato-Bold');
             color: $grey;
             margin-top: 3%;
-            letter-spacing: 2px;
+            @include font-uppercase();
+
+            a {
+                margin-top: 20px;
+                display: none;
+            }
         }
+
+        @include if-min(md) {
+
+            h2 {
+                font-size: 2.4em;
+            }
+        }
+
+
+        @include if-min(lg) {
+
+            p a {
+                display: inline-block !important;
+            }
+        }
+    }
+
+    .associate-link p a {
+        display: inline-block !important;
     }
 
     .carousel {
@@ -28,81 +85,26 @@
                 margin-right: 10px;
             }
         }
+    }
+
+    @include if-min(lg) {
+        
+        .associate-link {
+            display: none;
+        }
 
         .associates-card {
-            background: $grey2;
-
             h3 {
-                font-size: 1.8em;
+                font-size: 1.6em;
             }
 
             div {
-                margin-top: 15px;
-                text-align: center;
-                font-size: 0.6em;
+                font-size: 0.7em;
             }
 
             p {
-                text-align: center;
-                font-size: 0.7em;
-                margin: 0px;
-                margin-top: 5px;
-            }
-
-            img {
-                width: 100%;
+                font-size: 0.8em;
             }
         }
     }
-}
-
-/**Responsive Associate cards*/
-@include if-min(sm) {
-    #associates {
-        .carousel {
-            .associates-card {
-                h3 {
-                    font-size: 2.5em;
-                }
-
-                div {
-                    font-size: 0.7em;
-                }
-
-                p {
-                    font-size: 0.8em;
-                }
-            }
-        }
-    }
-}
-
-@include if-min(md) {
-}
-
-@include if-min(lg) {
-    #associates {
-        .associate-link {
-            margin-top: -8%;
-        }
-
-        .carousel {
-            .associates-card {
-                h3 {
-                    font-size: 1.6em;
-                }
-
-                div {
-                    font-size: 0.7em;
-                }
-
-                p {
-                    font-size: 0.8em;
-                }
-            }
-        }
-    }
-}
-
-@include if-min(xl) {
 }
