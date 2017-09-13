@@ -42,8 +42,6 @@
                 <div id="share-popover-html" class="row " style="display: none">
 
                     <div class="col-md-6">
-                        <div class="f-flecha"></div>
-
                         <a href="#"><i class="icon icon-facebook"></i></a>
 
                         <h5 class="text-uppercase">share to facebook </h5>
