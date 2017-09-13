@@ -151,8 +151,10 @@ html.nav-main-mobile-transition {
     }
 }
 
+
+// If the mobile menu is open when the browser is resized to desktop, force close it
 @include if-min(lg) {
     #nav-main-mobile {
-        display: none;
+        display: none  !important;
     }
 }

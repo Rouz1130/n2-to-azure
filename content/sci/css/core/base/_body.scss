@@ -7,10 +7,3 @@
 	margin: 0 auto;
 	position: relative;
 }
-
-// If the mobile menu is open when the browser is resized to desktop, force close it
-@include if-min(md) {
-	html.nav-main-mobile-open #nav-main-mobile {
-		display: none !important;
-	}
-}

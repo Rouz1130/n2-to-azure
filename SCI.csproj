@@ -123,6 +123,10 @@
       <DependentUpon>AjaxForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="pages\ObitsDetail.aspx.cs">
+      <DependentUpon>ObitsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="pages\SearchResults.aspx.cs">
       <DependentUpon>SearchResults.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -154,7 +158,7 @@
     <Content Include="apple-touch-icon.png" />
     <Content Include="browserconfig.xml" />
     <Content Include="content\hack\analytics-shim.js" />
-    <Content Include="content\sci\css\core\layout\_popover.js" />
+    <Content Include="content\sci\css\amp-obits.min.css" />
     <Content Include="content\sci\fonts\Lato-Black.svg" />
     <Content Include="content\sci\fonts\Lato-BlackItalic.svg" />
     <Content Include="content\sci\fonts\Lato-Bold.svg" />
@@ -221,7 +225,6 @@
     <Content Include="content\vendor\typeahead\typeahead.bundle.min.js" />
     <Content Include="content\vendor\webtrends\webtrends.min.js" />
     <Content Include="content\sci\css\pds.min.css" />
-    <Content Include="content\sci\css\waxes.min.css" />
     <Content Include="content\sci\css\weather.min.css" />
     <Content Include="content\sci\img\footer-cap.png" />
     <Content Include="content\sci\img\icons\icon-facebook-round-clear.png" />
@@ -307,6 +310,8 @@
     <Content Include="content\sci\css\core\modules\_featured-item-gallery.scss" />
     <Content Include="content\sci\css\core\modules\_associate-cards.scss" />
     <Content Include="content\sci\css\core\layout\_popover.scss" />
+    <Content Include="content\sci\css\core\amp-obits.scss" />
+    <Content Include="content\sci\css\core\modules\_obits-detail.scss" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />
@@ -334,6 +339,7 @@
     <Content Include="api-mock\locator-amenities.json" />
     <Content Include="api-mock\product-search.json" />
     <Content Include="content\sci\css\pds\pds.scss" />
+    <Content Include="grunt\amp-obits.js" />
     <Content Include="grunt\helper.js" />
     <Content Include="grunt\pds-css.js" />
     <Content Include="grunt\unit-tests.js" />
@@ -353,6 +359,7 @@
     <Content Include="pages\private\misc\ContactUsFormWithSidebar.aspx" />
     <Content Include="pages\private\misc\Utilities.aspx" />
     <Content Include="pages\private\retail\HomeEsso2.aspx" />
+    <Content Include="pages\ObitsDetail.aspx" />
     <Content Include="pages\Skin.aspx" />
     <Content Include="pages\SearchResults.aspx" />
     <Content Include="pages\private\misc\Analytics.aspx" />
@@ -377,8 +384,6 @@
     <Content Include="api-mock\distributor-locator.json" />
     <Content Include="content\Web.config" />
     <Content Include="content\sci\css\core\layout\_spacing.scss" />
-    <None Include="content\sci\css\core\modules\_datamap.scss" />
-    <Content Include="content\sci\css\core\modules\_data-visualization.scss" />
     <Content Include="content\sci\css\core\modules\_text-gradient.scss" />
     <Content Include="content\sci\css\core\modules\_resource.scss" />
     <Content Include="content\sci\css\apps\weather.scss" />
@@ -612,7 +617,6 @@
     <Content Include="content\sci\css\core\modules\_wait-message.scss" />
     <None Include="content\sci\css\core\nav\_nav-main-list.scss" />
     <None Include="content\sci\css\core\nav\_nav-main-mobile.scss" />
-    <None Include="content\sci\css\core\nav\_nav-meganav.scss" />
     <None Include="content\sci\css\core\nav\_nav-footer.scss" />
     <None Include="content\sci\css\core\nav\_nav-global-selector.scss" />
     <None Include="content\sci\css\core\nav\_nav-main.scss" />
@@ -653,7 +657,6 @@
     <None Include="content\sci\css\core\modules\_glyph.scss" />
     <Content Include="content\sci\css\ie8\modules\_form.scss" />
     <None Include="content\sci\css\core\nav\_nav-top-bar.scss" />
-    <None Include="content\sci\css\core\nav\_nav-country.scss" />
     <None Include="content\sci\css\core\nav\_nav-social.scss" />
     <None Include="content\sci\css\core\nav\_nav-utility.scss" />
     <None Include="content\sci\css\core\nav\_nav-main-search.scss" />

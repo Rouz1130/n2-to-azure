@@ -7,17 +7,15 @@
 			},
 			coreCSS: {
 			    files: 'content/sci/css/core/**/*.scss',
-				tasks: ['core-css']
+			    tasks: ['core-css', 'amp-obits-css']
 			},
+
 			ie8CSS: {
 			    files: 'content/sci/css/ie8/**/*.scss',
 				tasks: ['ie8-css']
 			},
 			
-			pdsCSS: {
-			    files: 'content/sci/css/pds/**/*.scss',
-				tasks: ['pds-css']
-			},
+			
 			drillDownJS: {
 			    files: ['content/sci/js/apps/drill-down/**/*.js'],
 				tasks: ['drill-down-js']
@@ -54,10 +52,7 @@
 			    files: 'content/sci/css/apps/weather.scss',
 				tasks: ['weather-css']
 			},
-			weatherJS: {
-			    files: 'content/sci/js/apps/weather/*.js',
-				tasks: ['weather-js']
-			},
+		
 			plugins: {
 			    files: ['content/sci/js/plugins/*.js', '!**/*.min.js'],
 				tasks: ['plugins']

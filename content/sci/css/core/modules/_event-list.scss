@@ -13,8 +13,6 @@
             content: ' ';
             @include sprite($flourish-vert);
             overflow: hidden;
-            width: $flourish-vert-width;
-            height: $flourish-vert-height;
             transform: translate(-50%,-50%);
             position: absolute;
             top: 50%;

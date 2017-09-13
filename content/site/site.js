@@ -19,7 +19,7 @@
 
 	$(function () {
 		applyTestUx();
-		setBreadcrumbBorder();
+		
 	});
 
 
