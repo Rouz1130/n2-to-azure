@@ -12,8 +12,8 @@
                     <li><a href="#" class="nav-main-search-trigger">Search</a></li>
 					<li><a href="#"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
 					<li><a href="#"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
-				    <li class="change-language"><a href="#" class="dropdown-toggle" data-toggle="dropdown">English</a>
-                        
+				    <li class="change-language">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</a>
                          <ul class="dropdown-menu">
                              <li><a href="#">Espanol</a></li>
    				            <li><a href="#">Francais</a></li>
@@ -34,7 +34,10 @@
 			</a>
 		
 			<ul class="nav-main-list">
-			    <li class="nav-main-item" ><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>plan a funeral<br/>or cremation</span></a>
+			    <li class="nav-main-item">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			            <span>plan a funeral<br/>or cremation</span>
+			        </a>
                      <div class="dropdown-menu">
    				        <a class="col-xs-6">  
                                <h3>Immediate need</h3>

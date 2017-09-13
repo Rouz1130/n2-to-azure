@@ -74,21 +74,10 @@ html.nav-main-mobile-open #nav-main-mobile {
             // Dropdown menus
             &[data-toggle="collapse"] {
 
-                &:after {
-                    content: '';
-                    margin-left: 8px;
-                    @include sprite($caret-smallest);
-                    display: inline-block;
-                    @include transform(rotate(180deg));
-                    @include transition(all .12s);
-                }
+               @include accordion-icon();
 
                 &[aria-expanded="true"] {
                       @include font-family("Lato-Black");
-                }
-
-                &[aria-expanded="false"]:after {
-                    @include transform(rotate(0deg));
                 }
 
                 & + * {
