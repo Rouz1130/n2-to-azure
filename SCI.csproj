@@ -210,6 +210,7 @@
     <Content Include="content\site\screen-title-439x206.jpg" />
     <Content Include="content\site\screen-title-679x319.jpg" />
     <Content Include="content\site\screen-title-963x400.jpg" />
+    <Content Include="content\site\virginia-sparks.png" />
     <Content Include="content\site\weather-foreground-day-xl.png" />
     <Content Include="content\site\weather-foreground-night-xl.png" />
     <Content Include="content\site\wind-339x159.jpg" />
