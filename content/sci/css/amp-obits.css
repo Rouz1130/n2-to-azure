@@ -3926,7 +3926,46 @@ a.link-icon {
           display: table-cell;
           height: 90px;
           padding: 0;
-          vertical-align: middle; } }
+          vertical-align: middle; }
+
+  .nav-main-list div[class="dropdown-menu"] {
+    cursor: pointer;
+    text-transform: none;
+    text-align: center;
+    min-width: 440px;
+    padding: 15px;
+    border: none !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    box-shadow: none;
+    margin-left: -100px; }
+    .nav-main-list div[class="dropdown-menu"] p {
+      text-transform: uppercase; }
+    .nav-main-list div[class="dropdown-menu"]:before {
+      content: '';
+      border-color: transparent transparent #fff transparent;
+      border-style: solid;
+      border-width: 0px 20px 20px 20px;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      margin-left: -20px; }
+    .nav-main-list div[class="dropdown-menu"] .col-xs-6 {
+      padding: 0px 25px; }
+      .nav-main-list div[class="dropdown-menu"] .col-xs-6:after {
+        content: ' ';
+        background-image: url(../img/icons.png);
+        background-position: -487px -300px;
+        width: 2px;
+        height: 55px;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        right: 0; }
+      .nav-main-list div[class="dropdown-menu"] .col-xs-6:last-child:after {
+        display: none; } }
 #nav-main-mobile {
   background-color: #eeebe6;
   height: 100%;
