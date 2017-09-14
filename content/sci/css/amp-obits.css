@@ -4291,13 +4291,17 @@ html.nav-main-mobile-transition #nav-main-mobile {
     border-radius: 0px 0px 4px 4px; }
     .nav-top-bar .change-language ul li {
       width: 100%; }
-      .nav-top-bar .change-language ul li a:hover {
-        width: 100%;
-        background: #fff; }
-        .nav-top-bar .change-language ul li a:hover:last-child {
-          border-radius: 0px 0px 4px 4px; }
+      .nav-top-bar .change-language ul li a {
+        color: #656565; }
+        .nav-top-bar .change-language ul li a:hover {
+          width: 100%;
+          background: #fff; }
+          .nav-top-bar .change-language ul li a:hover:last-child {
+            border-radius: 0px 0px 4px 4px; }
       .nav-top-bar .change-language ul li:first-child a {
         padding-left: 20px !important; }
+  .nav-top-bar .change-language.open .dropdown-toggle {
+    font-weight: bold; }
   .nav-top-bar ul {
     margin: 0;
     padding: 0; }
