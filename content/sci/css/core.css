@@ -3711,7 +3711,8 @@ p.paragraph.small {
       content: ''; }
 
 #footer-nav-items {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  letter-spacing: 2.4px; }
   #footer-nav-items > li.footer-nav-global-selector {
     padding-left: 24px; }
     #footer-nav-items > li.footer-nav-global-selector > a:before {
@@ -3806,8 +3807,18 @@ p.paragraph.small {
   font-size: 0.8181818182rem;
   line-height: 20px;
   line-height: 1.25rem;
-  max-width: 280px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 2.4px; }
+
+#footer-paragraph {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 35px;
+  color: #4a3c31;
+  text-transform: none;
+  text-align: left; }
+  #footer-paragraph p {
+    padding-bottom: 10px; }
 
 @media screen and (min-width: 606px) {
   #footer-top-wrapper {
