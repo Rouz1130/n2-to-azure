@@ -20,11 +20,9 @@
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-     <link rel="stylesheet" href="~/content/vendor/bootstrap/css/bootstrap.min.css"/>
-    
+
     <link rel="stylesheet" href="~/content/sci/css/amp-obits.min.css"/>
-	
-   
+
 </head>
 <body>
 

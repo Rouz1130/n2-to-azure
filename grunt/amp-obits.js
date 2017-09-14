@@ -16,20 +16,24 @@
 		});
 
 		grunt.config('cssmin', {
-			options: {
-				banner: '/*! <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
-			},
-			dist: {
-				files: {
-				    'content/sci/css/amp-obits.min.css': 'content/sci/css/amp-obits.css' 
-				}
-			}
+		    options: {
+		        banner: '/*! <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
+		    },
+		    dist: {
+		        files: {
+		            'content/sci/css/amp-obits.min.css': 'content/sci/css/amp-obits.css'
+		        }
+		    }
 		});
 
+	
+		
 		grunt.loadNpmTasks('grunt-contrib-sass');
 		grunt.loadNpmTasks('grunt-contrib-cssmin');
+		
 
 		grunt.task.run('sass');
 		grunt.task.run('cssmin');
+
 	});
 };
