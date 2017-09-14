@@ -39,7 +39,7 @@
                 <div id="share-popover-html" class="row " style="display: none">
 
                     <div class="col-md-6">
-                        <a href="#"><i class="icon icon-facebook"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.youtube.com/watch?v=qFLhGq0060w" target="_blank"><i class="icon icon-facebook"></i></a>
 
                         <h5 class="text-uppercase">FACEBOOK</h5>
                     </div>

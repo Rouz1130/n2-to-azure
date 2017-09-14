@@ -23,8 +23,9 @@
         > li {
             margin: 0;
             position: relative;
-        }
+             
     }
+        }
 
     a {
         &:hover,
@@ -37,6 +38,7 @@
             @include accordion-icon();
         }
     }
+   
 }
 
 
