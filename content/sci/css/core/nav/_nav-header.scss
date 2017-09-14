@@ -32,6 +32,10 @@
         &:focus {
             text-decoration: none;
         }
+
+        &.dropdown-toggle {
+            @include accordion-icon();
+        }
     }
 }
 

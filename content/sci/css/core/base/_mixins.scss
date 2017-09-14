@@ -1,6 +1,7 @@
 ﻿// https://web-design-weekly.com/2013/05/12/handy-sass-mixins/
 
 @import "../layout/breakpoints";
+@import "../modules/icons-generated";
 
 @function strip-unit($num) {
     @return $num / ($num * 0 + 1);
@@ -85,7 +86,7 @@
 }
 
 @mixin font-uppercase() {
-    text-transform: uppercase;  
+    text-transform: uppercase;
     letter-spacing: 2.4px;
 }
 
@@ -233,8 +234,8 @@
 
 
 @mixin inner-component() {
-      max-width: $xl-max;
-      margin: 0 auto;
+    max-width: $xl-max;
+    margin: 0 auto;
 }
 
 @mixin lift-card() {
@@ -243,6 +244,22 @@
 
     &:hover {
         @include transform(scale(1.01));
-        @include  box-shadow(2px, 8px, 20px,  rgba(0,0,0,.2));
-   }
+        @include box-shadow(2px, 8px, 20px, rgba(0,0,0,.2));
+    }
+}
+
+@mixin accordion-icon() {
+
+    &:after {
+        content: '';
+        margin-left: 8px;
+        @include sprite($caret-smallest);
+        display: inline-block;
+        @include transform(rotate(180deg));
+        @include transition(all .12s);
+    }
+
+    &[aria-expanded="false"]:after {
+        @include transform(rotate(0deg));
+    }
 }
