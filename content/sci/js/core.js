@@ -1,4 +1,4 @@
-/*! 2017-09-13 15:52:20 */
+/*! 2017-09-13 15:35:32 */
 (function ($) {
 
 	var o = $({});
@@ -1040,13 +1040,16 @@ $(document).ready(function () {
 	}
 
 	function bindEvents() {
+       
 		$(document).on('ready', adjustMainMenu);
 		$(window).off('resize', adjustMainMenu);
 		$(window).on('load resize', adjustMainMenu);
 	}
 
 	function adjustMainMenu() {
-		if (!$navMainBar.is(':visible')) return;
+	  
+	    if (!$navMainBar.is(':visible')) return;
+       
 		applyWidth(true);
 		var availableWidth = getAvailableWidth() - BUFFER;
 		var requiredWidth = $navMainList.outerWidth(true);

@@ -54,6 +54,10 @@
     color: $grey;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    .close-text {
+        display: none;
+    }
 }
 
 @include if-min(lg) {

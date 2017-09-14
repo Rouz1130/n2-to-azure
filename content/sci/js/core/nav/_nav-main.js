@@ -14,13 +14,16 @@
 	}
 
 	function bindEvents() {
+       
 		$(document).on('ready', adjustMainMenu);
 		$(window).off('resize', adjustMainMenu);
 		$(window).on('load resize', adjustMainMenu);
 	}
 
 	function adjustMainMenu() {
-		if (!$navMainBar.is(':visible')) return;
+	  
+	    if (!$navMainBar.is(':visible')) return;
+       
 		applyWidth(true);
 		var availableWidth = getAvailableWidth() - BUFFER;
 		var requiredWidth = $navMainList.outerWidth(true);

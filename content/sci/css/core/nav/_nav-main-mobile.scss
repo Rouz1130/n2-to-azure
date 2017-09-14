@@ -39,7 +39,7 @@ html.nav-main-mobile-open #nav-main-mobile {
         font-size: 14px;
 
         &.top-level {
-           @include font-family("Lato-Bold");
+            @include font-family("Lato-Bold");
 
             &:after {
                 clear: both;
@@ -62,7 +62,6 @@ html.nav-main-mobile-open #nav-main-mobile {
         }
 
         > a {
-            
             display: block;
             padding: 25px 0;
             position: relative;
@@ -70,14 +69,13 @@ html.nav-main-mobile-open #nav-main-mobile {
             &:hover, &:focus, &:active {
                 text-decoration: none;
             }
-
             // Dropdown menus
             &[data-toggle="collapse"] {
 
-               @include accordion-icon();
+                @include accordion-icon();
 
                 &[aria-expanded="true"] {
-                      @include font-family("Lato-Black");
+                    @include font-family("Lato-Black");
                 }
 
                 & + * {
@@ -110,7 +108,7 @@ html.nav-main-mobile-open #nav-main-mobile {
                             letter-spacing: 0;
                         }
 
-                        p {             
+                        p {
                             letter-spacing: 1px;
                             font-size: 14px;
                             color: $grey;
@@ -121,7 +119,6 @@ html.nav-main-mobile-open #nav-main-mobile {
             }
         }
     }
-
     // Searchbox
     .form-group {
         margin: 5px auto 25px;
@@ -129,9 +126,22 @@ html.nav-main-mobile-open #nav-main-mobile {
     }
 }
 
-html.nav-main-mobile-open #nav-main-mobile {
-    overflow-x: hidden;
-    overflow-y: auto;
+html.nav-main-mobile-open {
+
+    .nav-main-item-text {
+        .open-text {
+            display: none;
+        }
+
+        .close-text {
+            display: inline;
+        }
+    }
+
+    #nav-main-mobile {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
 
 html.nav-main-mobile-transition {
@@ -144,6 +154,6 @@ html.nav-main-mobile-transition {
 // If the mobile menu is open when the browser is resized to desktop, force close it
 @include if-min(lg) {
     #nav-main-mobile {
-        display: none  !important;
+        display: none !important;
     }
 }

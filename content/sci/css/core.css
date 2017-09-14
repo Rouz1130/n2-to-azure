@@ -1386,10 +1386,10 @@ fieldset + fieldset {
     cursor: pointer; }
   .form-group input[type="checkbox"] {
     display: none; }
-    .form-group input[type="checkbox"] + label {
+    .form-group input[type="checkbox"] + label, .form-group input[type="checkbox"] + input[type="hidden"] + label {
       padding-left: 27px;
       text-transform: none; }
-      .form-group input[type="checkbox"] + label:before {
+      .form-group input[type="checkbox"] + label:before, .form-group input[type="checkbox"] + input[type="hidden"] + label:before {
         background-color: #fff;
         border: 1px solid #aeaca9;
         cursor: pointer;
@@ -1400,24 +1400,24 @@ fieldset + fieldset {
         margin-left: -27px;
         vertical-align: sub;
         width: 20px; }
-      .form-group input[type="checkbox"] + label .icon {
+      .form-group input[type="checkbox"] + label .icon, .form-group input[type="checkbox"] + input[type="hidden"] + label .icon {
         display: none; }
-    .form-group input[type="checkbox"]:checked + label {
+    .form-group input[type="checkbox"]:checked + label, .form-group input[type="checkbox"]:checked + input[type="hidden"] + label {
       border: none;
       background: transparent; }
-      .form-group input[type="checkbox"]:checked + label:before {
+      .form-group input[type="checkbox"]:checked + label:before, .form-group input[type="checkbox"]:checked + input[type="hidden"] + label:before {
         background-image: url(../img/icons.png);
         background-position: -42px -472px;
         width: 20px;
         height: 20px;
         border: 1px solid #47d5cd;
         background-color: #d3f4f2; }
-      .form-group input[type="checkbox"]:checked + label .icon {
+      .form-group input[type="checkbox"]:checked + label .icon, .form-group input[type="checkbox"]:checked + input[type="hidden"] + label .icon {
         left: -1px;
         margin: 0;
         position: relative;
         top: 4px; }
-    .form-group input[type="checkbox"]:disabled + label {
+    .form-group input[type="checkbox"]:disabled + label, .form-group input[type="checkbox"]:disabled + input[type="hidden"] + label {
       border: none;
       cursor: not-allowed; }
   .form-group input[type="radio"] {
@@ -2623,33 +2623,35 @@ p.paragraph.small {
 .screen-title-overlay {
   background: #eeebe6;
   padding: 0; }
-  .screen-title-overlay .screen-title-image-wrap .screen-title-image {
-    width: 100%; }
-  .screen-title-overlay .screen-title-image-wrap > .screen-title-title {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #fff;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    position: absolute;
-    width: 100%; }
-    .screen-title-overlay .screen-title-image-wrap > .screen-title-title .header-subtitle:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h3:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h3:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h4:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h4:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h5:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h5:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h6:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h6:after {
-      clear: both;
-      margin: 20px auto;
-      display: block;
-      content: ' ';
-      background-image: url(../img/icons.png);
-      background-position: -240px -454px;
-      width: 177px;
-      height: 2px;
-      width: 177px;
-      height: 2px; }
-    .screen-title-overlay .screen-title-image-wrap > .screen-title-title h1 {
-      font-size: 50px; }
+  .screen-title-overlay .screen-title-image-wrap {
+    min-height: 300px; }
+    .screen-title-overlay .screen-title-image-wrap .screen-title-image {
+      width: 100%; }
+    .screen-title-overlay .screen-title-image-wrap > .screen-title-title {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      position: absolute;
+      width: 100%; }
+      .screen-title-overlay .screen-title-image-wrap > .screen-title-title .header-subtitle:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h3:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h3:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h4:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h4:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h5:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h5:after, .screen-title-overlay .screen-title-image-wrap > .screen-title-title .location-container .hide-extra-paragraphs h6:after, .location-container .hide-extra-paragraphs .screen-title-overlay .screen-title-image-wrap > .screen-title-title h6:after {
+        clear: both;
+        margin: 20px auto;
+        display: block;
+        content: ' ';
+        background-image: url(../img/icons.png);
+        background-position: -240px -454px;
+        width: 177px;
+        height: 2px;
+        width: 177px;
+        height: 2px; }
+      .screen-title-overlay .screen-title-image-wrap > .screen-title-title h1 {
+        font-size: 50px; }
   .screen-title-overlay .cta-box {
     margin-top: -180px;
     position: relative; }
@@ -4340,6 +4342,8 @@ p.paragraph.small {
   color: #605f5e;
   text-transform: uppercase;
   letter-spacing: 1px; }
+  .nav-main-item-text .close-text {
+    display: none; }
 
 @media (min-width: 992px) {
   .nav-main-bar {
@@ -4561,6 +4565,10 @@ html.nav-main-mobile-open #nav-main-mobile {
     margin: 5px auto 25px;
     position: relative; }
 
+html.nav-main-mobile-open .nav-main-item-text .open-text {
+  display: none; }
+html.nav-main-mobile-open .nav-main-item-text .close-text {
+  display: inline; }
 html.nav-main-mobile-open #nav-main-mobile {
   overflow-x: hidden;
   overflow-y: auto; }
@@ -4570,7 +4578,7 @@ html.nav-main-mobile-transition #nav-main-mobile {
 
 @media (min-width: 992px) {
   #nav-main-mobile {
-    display: none  !important; } }
+    display: none !important; } }
 .nav-main-search {
   display: none;
   height: 80px;
