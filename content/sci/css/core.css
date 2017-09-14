@@ -173,7 +173,20 @@ strong {
       min-width: 350px;
       left: 50%; }
       .popover .popover-content i {
-        margin-left: -30px !important; } }
+        margin-left: -30px !important; }
+      .popover .popover-content .col-md-6:after {
+        content: ' ';
+        background-image: url(../img/icons.png);
+        background-position: -487px -300px;
+        width: 2px;
+        height: 55px;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        right: 0; }
+      .popover .popover-content .col-md-6:last-child:after {
+        display: none; } }
 
 /**end style popover Facebook and email */
 .mb-xs {

@@ -1,5 +1,6 @@
 ﻿@import "../base/colors";
 @import "../base/mixins";
+@import "../modules/icons-generated";
 
 /** popover style Facebook and Email*/
 
@@ -22,12 +23,12 @@
 
     .popover-content {
         padding: 0px;
-
+          
         h5 {
             top: -20px;
             position: relative;
             color: $black;
-            font-weight:bold;
+            font-weight: bold;
             font-size: .65em;
             text-align: center;
             letter-spacing: 0.3em;
@@ -60,6 +61,22 @@
         .popover-content {
             i {
                 margin-left: -30px !important;
+            }
+              .col-md-6 {
+                &:after{
+                    content: ' ';
+                    @include sprite($flourish-vert);
+                    overflow: hidden;
+                    transform: translate(-50%,-50%);
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    }
+                &:last-child{
+                    &:after{
+                    display:none;
+                    }
+                }
             }
         }
     }
