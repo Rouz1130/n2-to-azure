@@ -281,10 +281,6 @@
         return strings.join(separator);
     }
 
-    $(".hasclear").keyup(function () {
-        var t = $(this);
-        t.next('span').toggle(Boolean(t.val()));
-    });
 
     $(".clearer").show($(this).prev('input').val());
 
@@ -293,12 +289,5 @@
         $(this).show();
     });
       
-
-
-
-
-
-
-
 
 }(window.jQuery));

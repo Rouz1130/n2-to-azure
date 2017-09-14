@@ -3,7 +3,7 @@
 <nav id="nav-main-mobile">
     <ul class="nav-main-mobile-panel">
 
-        <li class="top-level search-box search-box-small">search
+        <li class="top-level search-box">search
        
 	<div class="form-group">
         <input type="text" class="form-control" placeholder="I'm looking for..." />

@@ -1,4 +1,4 @@
-/*! 2017-09-13 15:17:53 */
+/*! 2017-09-14 14:17:46 */
 (function ($) {
 
 	var o = $({});
@@ -859,10 +859,6 @@ $(document).ready(function () {
         return strings.join(separator);
     }
 
-    $(".hasclear").keyup(function () {
-        var t = $(this);
-        t.next('span').toggle(Boolean(t.val()));
-    });
 
     $(".clearer").show($(this).prev('input').val());
 
@@ -871,13 +867,6 @@ $(document).ready(function () {
         $(this).show();
     });
       
-
-
-
-
-
-
-
 
 }(window.jQuery));;
 
@@ -1060,13 +1049,16 @@ $(document).ready(function () {
 	}
 
 	function bindEvents() {
+       
 		$(document).on('ready', adjustMainMenu);
 		$(window).off('resize', adjustMainMenu);
 		$(window).on('load resize', adjustMainMenu);
 	}
 
 	function adjustMainMenu() {
-		if (!$navMainBar.is(':visible')) return;
+	  
+	    if (!$navMainBar.is(':visible')) return;
+       
 		applyWidth(true);
 		var availableWidth = getAvailableWidth() - BUFFER;
 		var requiredWidth = $navMainList.outerWidth(true);

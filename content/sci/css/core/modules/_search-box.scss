@@ -3,95 +3,81 @@
 @import "icons-generated";
 
 .search-box-placeholder {
-	@include placeholder() {
-		color: $nav-top-bar-text;
-		@include font-family(Lato-Regular);
-		font-size: 16px;
-	}
+    @include placeholder() {
+        color: $nav-top-bar-text;
+        @include font-family(Lato-Regular);
+        font-size: 16px;
+    }
 }
 
 .search-box {
-	position: relative;
+ 
+    .form-group {
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+    }
 
-	.form-group {
-		margin-bottom: 0;
-	}
+    .form-control {
+        @extend .search-box-placeholder;
+        font-size: 18px;
+        padding-right: $search-small-width + 30px;
+        position: relative;
+        height: 55px;
+    }
 
-	.form-control {
-		@extend .search-box-placeholder;
-		@include rem-fallback(font-size, 16px / 16px);
-	}
+    .form-group-btn {
+        vertical-align: top;
+        @include sprite($search-small);
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        color: transparent;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
 
-	.btn.search {
-		border: none;
-		color: $black;
-		margin: 0;
-		top: 0;
-        @include rem-fallback(font-size, 14px / 12px);
-		@include rem-fallback(height, 50px / 16px);
-		@include rem-fallback(padding, 13px / 16px, 20px / 16px);
-	}
+    .tt-menu {
+        background-color: $white;
+        border: 1px solid $black8;
+        @include rem-fallback(padding, 10px / 16px);
+        width: 100%;
+    }
 
-	.recent-searches {
-		color: $grey;
-		@include rem-fallback(margin-top, 10px / 16px);
-	}
+    label {
+        @include font-uppercase();
+        font-weight: normal;
+    }
 
-	.twitter-typeahead {
-		width: 100%;
-	}
-
-	.tt-menu {
-		background-color: $white;
-		border: 1px solid $black8;
-		@include rem-fallback(padding, 10px / 16px);
-		width: 100%;
-	}
-
-	> input::-ms-clear {
-		display: none;
-	}
+    > input::-ms-clear {
+        display: none;
+    }
 }
 
-.search-box, .search-box-with-settings {
-	.form-group-btn {
-		vertical-align: top;
-        position:absolute;
-        margin-bottom:0;
-
-	}
-}
 
 .search-box-with-settings {
-	 margin-bottom: 0;
-     padding: 30px 30px 0;
-     background-color: rgba(239,239,239,.88);
-     border-top: 5px solid rgba(71,213,205,.75);
+    margin-bottom: 0;
+    padding: 30px 30px 0;
+    background-color: rgba(239,239,239,.88);
+    border-top: 5px solid rgba(71,213,205,.75);
 
-   .form-group .form-control {
-       border: none;
-       padding: 20px;
-   }
-
-   .form-group-btn {
-       background: $white;
-       
-       .btn.search {
-           font-size: 12px;         
-       }
-   }
+    .form-group .form-control {
+        border: none;
+        padding: 20px;
+    }
 }
 
 .search-box-settings {
-	
-	margin: 0;
-	padding: 20px 0 0;
-	text-align: center;
+    margin: 0;
+    padding: 20px 0 0;
+    text-align: center;
     text-transform: uppercase;
+    @include font-family("Lato-Bold");
 
-	> li {
-		display: inline-block;
-		list-style: none;
+    > li {
+        display: inline-block;
+        list-style: none;
         vertical-align: top;
         line-height: 1em;
         margin: 0 40px 25px;
@@ -100,22 +86,18 @@
         a {
             padding-bottom: 5px;
         }
-      
+
         &.selected a {
             border-bottom: 3px solid $teal;
         }
-	}
+    }
 }
 
-.search-box-setting {
-	@include font-family("Lato-Bold");
-}
 
-.search-box-small {
+.search-box-with-clear {
     .form-control {
-        @extend .search-box-placeholder;
-
-        @include rem-fallback(padding-right, 32px / 16px);
+       
+        padding-right: $close-small-width + $search-small-width + 45px;
 
         @include placeholder() {
             @include rem-fallback(font-size, 12px / 12px);
@@ -123,27 +105,24 @@
     }
 
     .form-group-btn {
-        @include sprite($icon-search);
-        bottom: 10px;
-        position: absolute;
-        right: 100px;
-        top: 10px;
-    }
+        right: 50px + $close-small-width;
 
-    .hasclear {
-        width: 100px;   
+        &.clearer {
+            right: 20px;
+            margin: auto;
+            cursor: pointer;
+            @include sprite($close-small);
 
-    }
-
-    .clearer {
-        position: absolute;
-        right: 33px;
-        top: 10px;
-        height: 14px;
-        margin: auto;
-        cursor: pointer;
-        @include sprite($icon-search-clear);
+            + .form-group-btn:after {
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 30px;
+                background: #afafae;
+                position: absolute;
+                right: -15px;
+                bottom: 2px;
+            }
+        }
     }
 }
-
-
