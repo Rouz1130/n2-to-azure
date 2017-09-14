@@ -4334,6 +4334,9 @@ html.nav-main-mobile-transition #nav-main-mobile {
       width: 100%; }
       .nav-top-bar .change-language ul li a {
         color: #656565; }
+        .nav-top-bar .change-language ul li a:focus {
+          width: 100%;
+          background: #fff; }
         .nav-top-bar .change-language ul li a:hover {
           width: 100%;
           background: #fff; }

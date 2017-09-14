@@ -35,7 +35,10 @@
 
                 a {
                     color: $nav-top-bar-text;
-
+                    &:focus{
+                        width: 100%;
+                        background: $white;
+                    }
                     &:hover {
                         width: 100%;
                         background: $white;
