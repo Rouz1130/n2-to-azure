@@ -4838,7 +4838,8 @@ html.nav-main-mobile-transition #nav-main-mobile {
     min-width: 0px;
     background: #eeebe6;
     border-top: none;
-    border-radius: 0px 0px 4px 4px; }
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: none; }
     .nav-top-bar .change-language ul li {
       width: 100%; }
       .nav-top-bar .change-language ul li a {
