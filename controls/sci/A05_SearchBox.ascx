@@ -141,11 +141,21 @@
 
 <% } else if (Variation == 4) { %>
 
-<div class="component search-box search-box-small">
+<%--<div class="component search-box search-box-small">
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Search" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' />
 		<span class="form-group-btn"></span>
 	</div>
-</div>
+</div>--%>
+
+
+
+    <div class="component search-box search-box-small">
+        <div class="form-group">
+              <input id="txt1" type="text" class="form-control" placeholder="Search" data-analytics='{ "manual": true, "cg": "Search", "ct": "Text field" }' >
+              <span class="clearer glyphicon glyphicon-remove"></span>
+              <span class="form-group-btn"></span>  
+        </div>
+     </div>
 
 <% } %>

@@ -7,16 +7,18 @@
 			<div class="nav-top-bar-left"></div>
 			
 			<div class="nav-top-bar-right">
-			<!-- Search icon
-                	<a href="#" class="nav-main-item nav-main-search-trigger">
-				<span class="nav-main-item-text">Search</span>
-			</a> -->
-
+			
                 <ul>
                     <li><a href="#" class="nav-main-search-trigger">Search</a></li>
 					<li><a href="#"><span class="nav-mobile">Bill pay</span><span class="nav-tablet-up">Bill pay</span></a></li>
 					<li><a href="#"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
-				    <li class="change-language"><a href="#" type="button" class="" data-toggle="modal" data-target="#<%=UniqueDomId("lb")%>"><span class="current-language">English</span> ^</a></li>
+				    <li class="change-language">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</a>
+                         <ul class="dropdown-menu">
+                             <li><a href="#">Espanol</a></li>
+   				            <li><a href="#">Francais</a></li>
+                        </ul>
+				    </li>
                 </ul>
 				
 			</div>
@@ -32,15 +34,20 @@
 			</a>
 		
 			<ul class="nav-main-list">
-			    <li class="nav-main-item" ><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>plan a funeral<br/>or cremation</span></a>
+			    <li class="nav-main-item">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			            <span>plan a funeral<br/>or cremation</span>
+			        </a>
                      <div class="dropdown-menu">
-   				  <a class="col-xs-6">  <h3>Immediate need</h3>
-                    <p>Death has occured or is near</p></a>
-                <a class="col-xs-6"> 
-                    <h3>Plan ahead</h3>
-                    <p>preplan a funeral or cremation</p></a>
-
-  </div>
+   				        <a class="col-xs-6">  
+                               <h3>Immediate need</h3>
+                               <p>Death has occured or is near</p>
+   				        </a>
+                        <a class="col-xs-6"> 
+                            <h3>Plan ahead</h3>
+                            <p>preplan a funeral or cremation</p>
+                        </a>
+                    </div>
 
 			    </li>
 				

@@ -6,6 +6,7 @@
 
     @include font-uppercase();
     @include font-family('Lato-bold');
+    @include accordion-icon();
 
     display: block;
     font-size: 14px;
@@ -16,15 +17,6 @@
         display: none;
     }
 
-    &:after {
-        content: '';
-        margin-left: 8px;
-        @include sprite($caret-smallest);
-        display: inline-block;
-        @include transform(rotate(180deg));
-        @include transition(all .12s);
-    }
-
     &[aria-expanded="false"] {
         .more {
             display: inline;
@@ -32,10 +24,6 @@
 
         .less {
             display: none;
-        }
-
-        &:after {
-            @include transform(rotate(0deg));
         }
     }
 }
