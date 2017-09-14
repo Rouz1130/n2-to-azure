@@ -4,15 +4,14 @@
 @import "variables";
 
 .nav-top-bar {
-    display: none; 
+    display: none;
     @include inner-component();
-
     height: $nav-top-bar-height;
     position: relative;
     text-transform: uppercase;
     @include font-family("Lato");
     @include rem-fallback(font-size, 13px / 16px);
-    
+
 
     a,
     a:hover,
@@ -22,6 +21,36 @@
         color: $nav-top-bar-text;
         white-space: nowrap;
     }
+
+    /**Style Nav language*/
+    .change-language {
+        ul {
+            min-width: 0px;
+            background: $greystripe;
+            border-top: none;
+            border-radius: 0px 0px 4px 4px;
+
+            li {
+                width: 100%;
+
+                a {
+                    &:hover {
+                        width: 100%;
+                        background: $white;
+
+                        &:last-child {
+                            border-radius: 0px 0px 4px 4px;
+                        }
+                    }
+                }
+
+                &:first-child a {
+                    padding-left: 20px !important;
+                }
+            }
+        }
+    }
+    /**Style Nav language end */
 
     ul {
         margin: 0;
@@ -34,12 +63,13 @@
             &:first-child {
                 padding-left: 0;
             }
-            
+
             a {
                 padding: 10px 15px;
             }
 
             @include if-min(lg) {
+
                 a {
                     padding: 10px 20px;
                 }

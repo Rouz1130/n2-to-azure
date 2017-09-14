@@ -15,7 +15,7 @@
 				    <li class="change-language">
 				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</a>
                          <ul class="dropdown-menu">
-                             <li><a href="#">Espanol</a></li>
+                             <li><a href="#">Español</a></li>
    				            <li><a href="#">Francais</a></li>
                         </ul>
 				    </li>

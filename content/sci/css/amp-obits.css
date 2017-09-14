@@ -4274,7 +4274,9 @@ html.nav-main-mobile-transition #nav-main-mobile {
   text-transform: uppercase;
   font-family: "Lato", Arial, Helvetica Neue, Helvetica, Lucida Grande, Sans-serif;
   font-size: 13px;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  /**Style Nav language*/
+  /**Style Nav language end */ }
   .nav-top-bar a,
   .nav-top-bar a:hover,
   .nav-top-bar a:active,
@@ -4282,6 +4284,20 @@ html.nav-main-mobile-transition #nav-main-mobile {
     display: inline-block;
     color: #656565;
     white-space: nowrap; }
+  .nav-top-bar .change-language ul {
+    min-width: 0px;
+    background: #eeebe6;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px; }
+    .nav-top-bar .change-language ul li {
+      width: 100%; }
+      .nav-top-bar .change-language ul li a:hover {
+        width: 100%;
+        background: #fff; }
+        .nav-top-bar .change-language ul li a:hover:last-child {
+          border-radius: 0px 0px 4px 4px; }
+      .nav-top-bar .change-language ul li:first-child a {
+        padding-left: 20px !important; }
   .nav-top-bar ul {
     margin: 0;
     padding: 0; }

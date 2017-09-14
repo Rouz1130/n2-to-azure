@@ -36,8 +36,7 @@
         <li><a href="#languageMobile" data-toggle="collapse" aria-expanded="false">English</a>
             <div class="collapse" id="languageMobile">
                 <ul class="nav-main-mobile-panel">
-
-                    <li><a href="#">Espanol</a></li>
+                    <li><a href="#">Español</a></li>
                     <li><a href="#">Francais</a></li>
                 </ul>
             </div>
