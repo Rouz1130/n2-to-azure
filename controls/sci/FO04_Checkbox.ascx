@@ -14,6 +14,7 @@
             <legend>Date of Death</legend>
             <div class="form-group">
                 <input type="checkbox" id="<%=UniqueDomId("cb1a")%>" />
+                <input type="hidden" id="<%=UniqueDomId("cbha")%>" />
                 <label for="<%=UniqueDomId("cb1a")%>"><span class="icon"></span>Option 1</label>
             </div>
             <div class="form-group">

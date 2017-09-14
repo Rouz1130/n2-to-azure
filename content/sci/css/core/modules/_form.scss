@@ -213,7 +213,7 @@ fieldset {
     input[type="checkbox"] {
         display: none;
 
-        + label {
+        + label, + input[type="hidden"] + label {
             padding-left: 27px;
             text-transform: none;
 
@@ -230,7 +230,7 @@ fieldset {
             }
         }
 
-        &:checked + label {
+        &:checked + label, &:checked + input[type="hidden"] + label {
             border: none;
             background: transparent;
 
@@ -248,7 +248,7 @@ fieldset {
             }
         }
 
-        &:disabled + label {
+        &:disabled + label, &:disabled + input[type="hidden"] + label {
             border: none;
             cursor: not-allowed;
         }
