@@ -7,10 +7,7 @@
 			"status": "Complete",
 			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA01%20Breadcrumb%7Cfd72baa4-f435-4875-9891-e1f7c1279d2c%2F%29",
 			"variations": [
-				{ "variation": 1, "name": "Default" },
-			
-				{ "variation": 3, "name": "Back navigation" }
-
+				{ "variation": 1, "name": "Default" }
 			],
 			"batch": 3
 		},
@@ -37,7 +34,7 @@
 			"variations": [
 				{ "variation": 1, "name": "Default" },
 				{ "variation": 2, "name": "With change links" },
-				{ "variation": 3, "name": "With suggestions" },
+		
 				{ "variation": 4, "name": "With searchbox only" }
 			],
 			"batch": 3
@@ -95,7 +92,17 @@
 			],
 			"batch": 4
 		},
-	
+		{
+			"code": "A28",
+			"name": "Location Search Result Card",
+			"ascx": "A28_LocationCard",
+			"status": "Complete",
+			"specs": "https://onedrive.live.com/edit.aspx?cid=7d5718c14ddeaba1&id=documents&resid=7D5718C14DDEABA1!23396&app=OneNote&authkey=!APFBtFr2w4AXqmI&&wd=target%28%2F%2FApplication%20Components%20Sets.one%7C456b3b6a-fe3d-4a1c-bd93-9833e486cf4f%2FA20%20Events%20List%7Cc474d5c6-7ebd-4164-b368-c2cdab6291de%2F%29",
+			"variations": [
+				{ "variation": 1, "name": "Default" }
+			],
+			"batch": 4
+		},
 		
 		{
 			"code": "B01",

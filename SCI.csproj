@@ -169,19 +169,22 @@
     <Content Include="content\sci\img\icons\caret-smallest.png" />
     <Content Include="content\sci\img\icons\caret.png" />
     <Content Include="content\sci\img\icons\chat.png" />
+    <Content Include="content\sci\img\icons\close-small.png" />
     <Content Include="content\sci\img\icons\donate.png" />
     <Content Include="content\sci\img\icons\favorite-off.png" />
     <Content Include="content\sci\img\icons\favorite-on.png" />
     <Content Include="content\sci\img\icons\flourish-horiz.png" />
     <Content Include="content\sci\img\icons\flourish-vert.png" />
+    <Content Include="content\sci\img\icons\flourish-white-horiz.png" />
     <Content Include="content\sci\img\icons\flower.png" />
     <Content Include="content\sci\img\icons\funeral.png" />
     <Content Include="content\sci\img\icons\gift.png" />
+    <Content Include="content\sci\img\icons\icon-close.png" />
     <Content Include="content\sci\img\icons\icon-pin-small.png" />
     <Content Include="content\sci\img\icons\icon-pin.png" />
-    <Content Include="content\sci\img\icons\left-caret.png" />
     <Content Include="content\sci\img\icons\locate.png" />
     <Content Include="content\sci\img\icons\return.png" />
+    <Content Include="content\sci\img\icons\search-small.png" />
     <Content Include="content\sci\img\icons\selected-triangle.png" />
     <Content Include="content\sci\img\icons\support.png" />
     <Content Include="content\sci\img\logos\bottom-logo.png" />
@@ -198,6 +201,7 @@
     <Content Include="content\site\flower-carousel.png" />
     <Content Include="content\site\fuel-truck.png" />
     <Content Include="content\site\location-hero-mobile.png" />
+    <Content Include="content\site\location.png" />
     <Content Include="content\site\mobil-station.png" />
     <Content Include="content\site\paper-339x217.jpg" />
     <Content Include="content\site\paper-439x281.jpg" />
@@ -298,6 +302,7 @@
     <Content Include="content\sci\fonts\MrsEaves-Italic.eot" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.woff" />
     <Content Include="content\sci\fonts\MrsEaves-Italic.ttf" />
+    <Content Include="controls\sci\A28_LocationCard.ascx" />
     <Content Include="full-components.json" />
     <Content Include="content\sci\css\core\modules\_cta-box.scss" />
     <Content Include="content\sci\css\core\modules\_change-language.scss" />
@@ -308,6 +313,8 @@
     <Content Include="content\sci\css\core\layout\_popover.scss" />
     <Content Include="content\sci\css\core\modules\_obits-detail.scss" />
     <Content Include="content\sci\css\core\amp-obits.scss" />
+    <Content Include="content\sci\css\core\modules\_locator-information.scss" />
+    <Content Include="content\sci\css\core\modules\_location-card.scss" />
     <None Include="content\sci\js\core\polyfills\_svg.js" />
     <Content Include="content\sci\js\core\utils\_url-util.js" />
     <Content Include="content\sci\js\core\utils\_site-search.js" />
@@ -337,7 +344,6 @@
     <Content Include="api-mock\product-search.json" />
     <Content Include="content\sci\css\pds\pds.scss" />
     <Content Include="grunt\helper.js" />
-    <Content Include="grunt\pds-css.js" />
     <Content Include="grunt\unit-tests.js" />
     <Content Include="ImageSpecs.aspx" />
     <Content Include="layouts\Home.aspx" />
@@ -418,7 +424,6 @@
     <Content Include="grunt\app-list.js" />
     <Content Include="grunt\plugins.js" />
     <Content Include="grunt\app-region-selector.js" />
-    <Content Include="grunt\app-weather.js" />
     <Content Include="pages\private\apps\FindDistributor.aspx" />
     <Content Include="pages\private\misc\WhiteOils.aspx" />
     <Content Include="pages\private\apps\List.aspx" />
@@ -839,7 +844,6 @@
     <None Include="grunt\vendor.js" />
     <None Include="grunt\ie8.js" />
     <None Include="grunt\core.js" />
-    <None Include="grunt\app-product-selector.js" />
     <None Include="grunt\sprites.js" />
     <None Include="grunt\bootstrap.js" />
     <None Include="grunt\monitor-files.js" />

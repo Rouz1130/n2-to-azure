@@ -1,0 +1,15 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "icons-generated";
+
+.location-card {
+
+    .locator-information { 
+      
+            .icon-telephone {
+                float: left;
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+}

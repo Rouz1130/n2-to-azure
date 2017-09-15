@@ -42,37 +42,6 @@
             }
         }
 
-        .locator-information {
-            margin: 0 auto;
-
-            .icon-telephone {
-                display: block;
-                margin: 0 auto;
-            }
-
-            p {
-                margin: 0;
-                font-size: 18px;
-            }
-
-            &:after {
-                clear: both;
-                margin: 20px auto;
-                display: block;
-                content: ' ';
-                @include sprite($flourish-horiz);
-                width: $flourish-horiz-width;
-                height: $flourish-horiz-height;
-            }
-
-            .telephone {
-                margin-bottom: 10px;
-                font-family: 'Lato-Black';
-                font-size: 24px;
-                letter-spacing: 2.4px;
-            }
-        }
-
         .locator-titles,
         .locator-point {
             margin-bottom: 15px;
@@ -104,14 +73,25 @@
         min-height: 400px;
     }
 
-    @include if-min(sm) {
+    .locator-information {
 
-        .locator-data .locator-information {
+        &:after {
+            clear: both;
+            margin: 20px auto;
+            display: block;
+            content: ' ';
+            @include sprite($flourish-horiz);
+            width: $flourish-horiz-width;
+            height: $flourish-horiz-height;
+        }
+
+        @include if-min(sm) {
             display: inline-block;
 
             .icon-telephone {
                 float: left;
                 display: inline-block;
+                margin-right: 20px;
             }
         }
     }
