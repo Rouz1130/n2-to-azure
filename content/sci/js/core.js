@@ -1,4 +1,4 @@
-/*! 2017-09-15 17:40:59 */
+/*! 2017-09-15 17:47:47 */
 (function ($) {
 
 	var o = $({});
@@ -629,8 +629,7 @@ $(document).ready(function () {
                 onSearchTriggered($(this));
             })
             .on('click', '.search-box-settings li', function () {
-                onSearchInputPlaceholder(this);
-                
+                onSearchInputPlaceholder(this);        
             });
             
         $.subscribe('xom.geolocation', onGeolocation);

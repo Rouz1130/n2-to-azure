@@ -51,8 +51,7 @@
                 onSearchTriggered($(this));
             })
             .on('click', '.search-box-settings li', function () {
-                onSearchInputPlaceholder(this);
-                
+                onSearchInputPlaceholder(this);        
             });
             
         $.subscribe('xom.geolocation', onGeolocation);
