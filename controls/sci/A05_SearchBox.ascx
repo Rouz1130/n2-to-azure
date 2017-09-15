@@ -21,7 +21,7 @@
 	</div>
 	<ul class="search-box-settings">
 		<li class="selected"><a class="search-box-setting" data-target="#<%=UniqueDomId("lb-lob")%>" data-key="obits" data-value="Obituaries">Obituaries</a></li>
-		<li><a class="search-box-setting" data-key="funeral" data-value="Funeral Homes&lt;br/&gt;&amp; cemeteries" href="#" data-toggle="modal" data-target="#<%=UniqueDomId("lb-country")%>">Funeral Homes</a></li>
+		<li><a class="search-box-setting" data-key="funeral" data-value="Funeral Homes &amp; cemeteries" href="#" data-toggle="modal" data-target="#<%=UniqueDomId("lb-country")%>">Funeral Homes</a></li>
 	    <li><a class="search-box-setting" data-key="site" data-value="Search Site" href="#" data-toggle="modal">Search site</a></li>
 
     </ul>

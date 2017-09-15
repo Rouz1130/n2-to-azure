@@ -1,4 +1,4 @@
-/*! 2017-09-14 17:00:53 */
+/*! 2017-09-15 17:40:59 */
 (function ($) {
 
 	var o = $({});
@@ -627,7 +627,12 @@ $(document).ready(function () {
             })
             .on('click', '.search-box button.search', function () {
                 onSearchTriggered($(this));
+            })
+            .on('click', '.search-box-settings li', function () {
+                onSearchInputPlaceholder(this);
+                
             });
+            
         $.subscribe('xom.geolocation', onGeolocation);
     }
 
@@ -680,6 +685,12 @@ $(document).ready(function () {
                 if (k === COUNTRY_SETTING_KEY) $this.data('countryLoaded', true);
             }
         });
+    }
+
+    function onSearchInputPlaceholder(selected) {
+        $('.search-box-settings li').removeClass("selected");
+        $(selected).addClass("selected");
+        $('.search-box .form-group .form-control').attr('placeholder', 'Find an ' + $('.search-box-settings li.selected a').data('value').toLowerCase() + '...');
     }
 
     function onSearchInputFocus(input) {
