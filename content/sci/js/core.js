@@ -1,4 +1,4 @@
-/*! 2017-09-14 14:17:46 */
+/*! 2017-09-14 17:00:53 */
 (function ($) {
 
 	var o = $({});
@@ -1019,17 +1019,21 @@ $(document).ready(function () {
 
 (function ($) {
 
-	bindEvents();
+    $('.language-selector').on('click', 'li', function() {
+        $.ajax({
+            url: $(this).parent('.language-selector').data('url'),
+            type: "POST",
+            dataType: "text",
+            data: getData( $(this).data('lang')),
+            context: this,
+            success: function (data) {
+                if (window.location.href != data) {
+                    window.location.href = data;
+                }
+            }
+        });
+    });
 
-	function bindEvents() {
-		$('body').on('click', onClickAnywhere);
-	}
-
-	function onClickAnywhere(e) {
-		var $this = $(e.target);
-		if ($this.is('.nav-language-current')) return;
-		$('.nav-language').removeClass('nav-language-open');
-	}
 
 }(window.jQuery));;
 

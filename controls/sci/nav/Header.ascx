@@ -14,7 +14,7 @@
 					<li><a href="#"><span class="nav-mobile">Help</span><span class="nav-tablet-up">Help</span></a></li>
 				    <li class="change-language">
 				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</a>
-                         <ul class="dropdown-menu">
+                         <ul class="dropdown-menu language-selector">
                              <li><a href="#">Español</a></li>
    				            <li><a href="#">Francais</a></li>
                         </ul>
