@@ -1,13 +1,14 @@
 ﻿<%@ Control Language="C#" Inherits="XOMFL.CommonComponents.Controls.VariantControlBase" %>
 
 <div class="component location-card">
-    
+    <div class="row">
     <img src="<%= ResolveUrl("~/content/site/location.png") %>" alt="location name" />
-    <div class="location-overlay">2.1 miles</div>
+    <div class="location-overlay"><span>2.1</span> miles</div>
+        </div>
     <h3>Chattanooga Funeral Home, Crematory & Florist-North Chapel and Hamilton Memorial Gardens</h3>
     <p>151 Northern Boulevard</p>
 	<div class="locator-information">
-       <i class="icon icon-telephone"></i>location-
+       <i class="icon icon-telephone"></i>
                     
         <p>Call us anytime</p>
 		<div class="telephone">
