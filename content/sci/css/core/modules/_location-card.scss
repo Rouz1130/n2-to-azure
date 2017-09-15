@@ -57,19 +57,4 @@
             margin-right: 15px;
         }
     }
-
-    @include if-min(sm) {
-        .row {
-            margin-left: 8%!important;
-            margin-right:8%!important;
-        }
-    }
-
-    @include if-min(md) {
-        .row {
-            margin: auto!important;
-        }
-
-        width: 50%;
-    }
 }

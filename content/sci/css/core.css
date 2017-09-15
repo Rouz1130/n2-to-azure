@@ -2279,15 +2279,6 @@ a.link-icon {
     float: left;
     display: inline-block;
     margin-right: 15px; }
-  @media (min-width: 480px) {
-    .location-card .row {
-      margin-left: 8% !important;
-      margin-right: 8% !important; } }
-  @media (min-width: 768px) {
-    .location-card {
-      width: 50%; }
-      .location-card .row {
-        margin: auto !important; } }
 
 .locator-panel {
   background-color: #eeebe6; }
