@@ -34,7 +34,7 @@
     <div class="content-body mt-30 pt-30">
         <a class="close-msg f-right"  href="#">
                   <div class="container-icon">
-                        <amp-img class="cover" src="../content/sci/img/icons/icon-nav-main-search-close.png" alt="icon" layout="fill"></amp-img>
+                        <amp-img class="cover" src="../content/sci/img/icons/icon-close.png" alt="icon" layout="fill"></amp-img>
                       </div>
                </a>
         <%-- section message --%>

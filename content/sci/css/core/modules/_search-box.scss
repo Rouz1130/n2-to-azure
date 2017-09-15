@@ -11,7 +11,7 @@
 }
 
 .search-box {
- 
+
     .form-group {
         margin-bottom: 0;
         position: relative;
@@ -28,14 +28,18 @@
 
     .form-group-btn {
         vertical-align: top;
-        @include sprite($search-small);
         position: absolute;
         right: 20px;
         bottom: 10px;
-        color: transparent;
-        border: none;
-        background-color: transparent;
-        padding: 0;
+
+        button {
+            @include sprite($search-small);
+            width: $search-small-width - 1px; // This feels wrong...
+            color: transparent;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+        }
     }
 
     .tt-menu {
@@ -72,7 +76,7 @@
     margin: 0;
     padding: 20px 0 0;
     text-align: center;
-    text-transform: uppercase;
+    @include font-uppercase();
     @include font-family("Lato-Bold");
 
     > li {
@@ -96,8 +100,7 @@
 
 .search-box-with-clear {
     .form-control {
-       
-        padding-right: $close-small-width + $search-small-width + 45px;
+        padding-right: $close-small-width + $search-small-width + 55px;
 
         @include placeholder() {
             @include rem-fallback(font-size, 12px / 12px);
@@ -109,11 +112,14 @@
 
         &.clearer {
             right: 20px;
-            margin: auto;
-            cursor: pointer;
-            @include sprite($close-small);
+            
+            button {
+                @include sprite($close-small);
+                height: $close-small-height - 1px; // This feels wrong...
+            }
+        }
 
-            + .form-group-btn:after {
+         + .form-group-btn:after {
                 content: '';
                 display: inline-block;
                 width: 1px;
@@ -123,6 +129,5 @@
                 right: -15px;
                 bottom: 2px;
             }
-        }
     }
 }
