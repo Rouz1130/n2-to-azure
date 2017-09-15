@@ -28,4 +28,7 @@
 			2017 Sci Shared resources, LLC.  All Rights Reserved
 		</div>
 	</section>
+    <section id="footer-paragraph">
+        <ks:Component runat="server" Code="B01.4" />
+    </section>
 </div>
