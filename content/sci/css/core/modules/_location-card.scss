@@ -60,7 +60,8 @@
 
     @include if-min(sm) {
         .row {
-            margin-left: 10%!important;
+            margin-left: 8%!important;
+            margin-right:8%!important;
         }
     }
 
