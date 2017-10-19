@@ -1,3 +1,4 @@
+import {CoursesService} from './courses.service';
 import {Component} from '@angular/core';
 
 
@@ -18,4 +19,8 @@ export class CoursesComponent {
   title = "List of courses";
   courses;
 
+  constructor () {
+    let service = new CoursesService();
+    this.courses = service.getCourses();
+  }
 }
