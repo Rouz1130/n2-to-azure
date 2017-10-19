@@ -1,0 +1,31 @@
+Components 3 steps of creation:
+1- Create Component
+2- Register it in app.module.ts
+3 - add element in our HTML markup.
+
+*Index.html has a <body> tag the 'selector'. by default it is <app-root>. In the app.component file the selctor is also called <app-root>. Just make sure both names always match.
+
+Shortcut to generate component vi command-line: ng g c (name of your component without the curly brace)
+
+*OnInit: we will discuss this later but just know that it has to do with INTERFACE's.
+
+Data-Binding:
+In your export class(in the component) create a var name. for example title = "this is the title". You can use {{title}} to call the title know.
+-String Interpolation: Alternatively you may right a method for the var title you created and instead of using the variable name title you can call the method in the {{getTitle}}
+
+Directives:
+*ngFor=" let title of titles ":... let is variable keyword. the first title is the name of the variable you can name it anything you want. the titles is the actual name of what you are trying to
+output. Code snippet:
+<h2>{{title}}</h2>
+<ul>
+    <li *ngFor="let foo of courses">
+      {{foo}}
+    </li>
+
+</ul>
+`
+})
+
+export class CoursesComponent {
+title = "List of courses";
+courses = ["course1","course2","course3"];
