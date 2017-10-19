@@ -29,3 +29,7 @@ output. Code snippet:
 export class CoursesComponent {
 title = "List of courses";
 courses = ["course1","course2","course3"];
+
+
+Services:
+Create service file for the particular component you want. add the implementation to the service file, but obviously same time referencing it in the actual component
